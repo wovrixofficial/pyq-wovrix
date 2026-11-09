@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wovrix PYQ | Student Reports & Error Resolution Console</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/report-modal.css">
+  <style>
+    .reports-container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .reports-header-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      margin-bottom: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .reports-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      border-radius: 9999px;
+      font-size: 12px;
+      font-weight: 700;
+      background: #eff6ff;
+      color: #2563eb;
+    }
+    .reports-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      margin-bottom: 24px;
+    }
+    .reports-table th, .reports-table td {
+      padding: 12px 16px;
+      text-align: left;
+      border-bottom: 1px solid var(--border-light);
+      font-size: 13px;
+    }
+    .reports-table th {
+      background: #f8fafc;
+      font-weight: 700;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      font-size: 11px;
+      letter-spacing: 0.05em;
+    }
+    .issue-tag {
+      display: inline-block;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: 600;
+      background: #fee2e2;
+      color: #991b1b;
+      margin-right: 4px;
+      margin-bottom: 4px;
+    }
+    .btn-action-primary {
+      background: var(--accent);
+      color: #ffffff;
+      border: none;
+      padding: 8px 16px;
+      border-radius: var(--radius-sm);
+      font-weight: 600;
+      font-size: 13px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .btn-action-secondary {
+      background: var(--surface);
+      color: var(--text);
+      border: 1px solid var(--border);
+      padding: 8px 16px;
+      border-radius: var(--radius-sm);
+      font-weight: 600;
+      font-size: 13px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="reports-container">
+    <div class="reports-header-card">
+      <div>
+        <div class="reports-badge">System Diagnostic</div>
+        <h1 style="font-size: 24px; margin: 8px 0 4px 0;">Student Reports & Error Resolution</h1>
+        <p style="color: var(--text-muted); font-size: 13px; margin: 0;">
+          Inspect all client-side queued question reports, export to <code style="font-family: var(--font-mono); font-size: 12px;">reports_queue.json</code>, or trigger batch resolution.
+        </p>
+      </div>
+      <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+        <button class="btn-action-primary" onclick="exportReportsQueue()">
+          <span>📥 Download reports_queue.json</span>
+        </button>
+        <button class="btn-action-secondary" onclick="copyQueueJson()">
+          <span>📋 Copy Queue JSON</span>
+        </button>
+        <button class="btn-action-secondary" onclick="clearReportsQueue()" style="color: #ef4444;">
+          <span>Clear Local Queue</span>
+        </button>
+      </div>
+    </div>
+
+    <div id="reportsListContainer">
+      <div class="loading-state">Loading reports from local system...</div>
+    </div>
+  </div>
+
+  <script>
+    function loadReports() {
+      const container = document.getElementById('reportsListContainer');
+      let reports = [];
+      try {
+        reports = JSON.parse(localStorage.getItem('wovrix_pyq_reports') || '[]');
+      } catch (e) {
+        reports = [];
+      }
+
+      if (reports.length === 0) {
+        container.innerHTML = `
+          <div style="background: var(--surface); border: 1px dashed var(--border); border-radius: var(--radius-md); padding: 48px 24px; text-align: center;">
+            <div style="font-size: 32px; margin-bottom: 12px;">✅</div>
+            <h3 style="margin: 0 0 6px 0;">No Pending Reports</h3>
+            <p style="color: var(--text-muted); font-size: 13px; margin: 0 0 16px 0;">
+              Zero error reports logged in your browser. Questions reported via the 🚩 button will appear here immediately.
+            </p>
+            <a href="/practice/" class="btn-action-primary" style="text-decoration: none;">Go to Practice Hub</a>
+          </div>
+        `;
+        return;
+      }
+
+      let rowsHtml = '';
+      reports.forEach((r, idx) => {
+        const issuesBadges = (r.issues || []).map(i => `<span class="issue-tag">${i.replace('_', ' ')}</span>`).join('');
+        rowsHtml += `
+          <tr>
+            <td><strong>#${r.qid || 'N/A'}</strong></td>
+            <td>${r.subject || 'General'}</td>
+            <td>${r.year || 'PYQ'}</td>
+            <td>${r.chapter || '—'}</td>
+            <td>${issuesBadges || 'General Issue'}</td>
+            <td>${r.notes ? `<em>${r.notes}</em>` : '<span style="color: var(--text-muted);">None</span>'}</td>
+            <td style="font-family: var(--font-mono); font-size: 11px; color: var(--text-muted);">${new Date(r.timestamp).toLocaleTimeString()}</td>
+          </tr>
+        `;
+      });
+
+      container.innerHTML = `
+        <table class="reports-table">
+          <thead>
+            <tr>
+              <th>QID</th>
+              <th>Subject</th>
+              <th>Year</th>
+              <th>Chapter</th>
+              <th>Issues Reported</th>
+              <th>Student Notes</th>
+              <th>Time</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${rowsHtml}
+          </tbody>
+        </table>
+      `;
+    }
+
+    function exportReportsQueue() {
+      const reports = JSON.parse(localStorage.getItem('wovrix_pyq_reports') || '[]');
+      if (reports.length === 0) {
+        alert('Queue is empty! Report a question first using the 🚩 button on any question card.');
+        return;
+      }
+      const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(reports, null, 2));
+      const downloadAnchor = document.createElement('a');
+      downloadAnchor.setAttribute("href", dataStr);
+      downloadAnchor.setAttribute("download", "reports_queue.json");
+      document.body.appendChild(downloadAnchor);
+      downloadAnchor.click();
+      downloadAnchor.remove();
+      alert('Downloaded reports_queue.json! Place this inside your pyq-wovrix/data/ directory for your morning script to resolve.');
+    }
+
+    function copyQueueJson() {
+      const reports = JSON.parse(localStorage.getItem('wovrix_pyq_reports') || '[]');
+      navigator.clipboard.writeText(JSON.stringify(reports, null, 2)).then(() => {
+        alert(`Copied ${reports.length} report(s) to clipboard in JSON format!`);
+      });
+    }
+
+    function clearReportsQueue() {
+      if (confirm('Clear all queued reports from local storage?')) {
+        localStorage.removeItem('wovrix_pyq_reports');
+        loadReports();
+      }
+    }
+
+    loadReports();
+  </script>
+</body>
+</html>
