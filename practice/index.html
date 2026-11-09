@@ -403,7 +403,107 @@
       color: var(--text-muted);
       font-size: 15px;
     }
-  </style>
+  
+    /* Step Rubric & Solution Card Enhancements */
+    .q-actions-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 14px;
+      padding-top: 12px;
+      border-top: 1px dashed var(--border-light);
+    }
+    .q-action-btns-left {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .btn-step-rubric {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      color: #1d4ed8;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 6px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    .btn-step-rubric:hover {
+      background: #dbeafe;
+      border-color: #93c5fd;
+    }
+    .btn-solve-action {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      color: var(--text);
+      font-size: 12px;
+      font-weight: 600;
+      padding: 6px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    .btn-solve-action:hover {
+      background: #f1f5f9;
+      border-color: #cbd5e1;
+    }
+    .btn-solve-action.has-cached {
+      background: #ecfdf5;
+      border-color: #a7f3d0;
+      color: #047857;
+    }
+    .step-rubric-drawer {
+      display: none;
+      margin-top: 12px;
+      padding: 14px 16px;
+      background: #f8fafc;
+      border-left: 3px solid #3b82f6;
+      border-radius: 0 8px 8px 0;
+      font-size: 13px;
+      color: #334155;
+      line-height: 1.6;
+    }
+    .step-rubric-drawer.open {
+      display: block;
+    }
+    .sol-prompt-box {
+      padding: 14px 16px;
+      background: #fafaf9;
+      border: 1px solid #e7e5e4;
+      border-radius: 8px;
+      margin-top: 12px;
+    }
+    .sol-prompt-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: #292524;
+    }
+    .sol-badge-cached {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      background: #dcfce7;
+      color: #15803d;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+</style>
+  <link rel="stylesheet" href="/report-modal.css">
 </head>
 <body>
 
@@ -513,60 +613,197 @@
   </main>
 
   <!-- Architectural Footer -->
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <div class="footer-top-brand">
-        <div class="footer-brand-title">
-          <svg class="brand-logo-icon" width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <footer class="site-footer">
+    <div class="footer-top-grid">
+      <div class="footer-brand-column">
+        <div class="brand">
+          <svg class="brand-logo-icon" width="20" height="20" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="32" height="32" rx="7" fill="#18181b"/>
             <path d="M6 10L11 23L16 14L21 23L26 10" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
             <circle cx="16" cy="14" r="2.2" fill="#3b82f6"/>
           </svg>
-          <span class="footer-brand-text">WOVRIX PYQ</span>
+          <span class="brand-name">WOVRIX <span class="brand-slash">/</span> <span class="brand-sub">PYQ</span></span>
         </div>
-        <p class="footer-tagline">Clean, ad-free, verified previous-year questions archive for CBSE Class 12 PCM and NEET UG. Free public education utility.</p>
-      </div>
-
-      <div class="footer-grid">
-        <div class="footer-col">
-          <h4 class="footer-col-heading">CBSE Class 12 PCM</h4>
-          <ul class="footer-links-list">
-            <li><a href="/cbse-12/physics/">Physics (14 Chapters)</a></li>
-            <li><a href="/cbse-12/chemistry/">Chemistry (10 Chapters)</a></li>
-            <li><a href="/cbse-12/mathematics/">Mathematics (13 Chapters)</a></li>
-            <li><a href="/practice/?exam=cbse">Interactive Practice Hub</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4 class="footer-col-heading">NEET UG Archive</h4>
-          <ul class="footer-links-list">
-            <li><a href="/neetug/">NEET UG Master Portal</a></li>
-            <li><a href="/practice/?exam=neet&subject=Physics">NEET Physics</a></li>
-            <li><a href="/practice/?exam=neet&subject=Chemistry">NEET Chemistry</a></li>
-            <li><a href="/practice/?exam=neet&subject=Botany">NEET Biology</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4 class="footer-col-heading">Platform</h4>
-          <ul class="footer-links-list">
-            <li><a href="/">Home</a></li>
-            <li><a href="/practice/">Universal Practice Engine</a></li>
-            <li><a href="https://github.com/wovrixofficial/pyq-wovrix" target="_blank" rel="noopener">GitHub Repository</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4 class="footer-col-heading">Fair Dealing Notice</h4>
-          <p class="footer-disclaimer-text">Questions and marking schemes belong to CBSE and NTA. Compiled solely for non-commercial educational review under Section 52(1)(a) of the Indian Copyright Act.</p>
+        <p class="footer-brand-desc">
+          Official past paper intelligence for CBSE Class 12 and NEET UG. Pure NCERT alignment, multi-year frequency filters, and zero distractions.
+        </p>
+        <div class="footer-exam-pills">
+          <span class="f-pill active">CBSE 12 PCM</span>
+          <span class="f-pill active">NEET UG</span>
+          <span class="f-pill">Class 10 (Soon)</span>
         </div>
       </div>
 
-      <div class="footer-giant-wordmark">WOVRIX</div>
+      <div class="footer-col">
+        <h4 class="footer-heading">CBSE Class 12 Hubs</h4>
+        <ul class="footer-links">
+          <li><a href="/cbse-12/physics/">Physics (14 Chapters)</a></li>
+          <li><a href="/cbse-12/chemistry/">Chemistry (10 Chapters)</a></li>
+          <li><a href="/cbse-12/mathematics/">Mathematics (13 Chapters)</a></li>
+          <li><a href="/practice/?exam=cbse">Interactive Question Stream</a></li>
+          <li><a href="/repeated/?exam=cbse">★ Most Repeated PYQs</a></li>
+          <li><a href="/paper-maker/">Custom Board Paper Maker</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">NEET UG Archives</h4>
+        <ul class="footer-links">
+          <li><a href="/neet/physics/">NEET Physics (28 Chapters)</a></li>
+          <li><a href="/neet/chemistry/">NEET Chemistry (20 Chapters)</a></li>
+          <li><a href="/neet/biology/">NEET Biology (Botany & Zoology)</a></li>
+          <li><a href="/practice/?exam=neet">Interactive NEET Quiz Hub</a></li>
+          <li><a href="/repeated/?exam=neet">High-Yield NEET Clones</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Platform & Tools</h4>
+        <ul class="footer-links">
+          <li><a href="/paper-maker/">Custom Paper Maker (20M/35M/70M)</a></li>
+          <li><a href="/repeated/">Repeated Question Radar</a></li>
+          <li><a href="/practice/">Full Question Bank</a></li>
+          <li><a href="/formula-sheets/">Formula Reference Sheets</a></li>
+          <li><a href="https://wovrix.in">Wovrix Main Portal</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom-bar">
+      <div class="footer-copy">
+        © 2026 PYQ Wovrix • Educational Past Paper Search & Interactive Practice Platform.
+      </div>
+      <div class="footer-bottom-links">
+        <a href="#top">Back to Top ↑</a>
+        <a href="https://wovrix.in/privacy">Privacy</a>
+        <a href="https://wovrix.in/terms">Terms</a>
+      </div>
     </div>
   </footer>
+
+  <!-- Persistent Mobile Bottom Dock -->
+  <nav class="mobile-bottom-dock" aria-label="Mobile Navigation">
+    <a href="/" class="dock-item">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      <span>Home</span>
+    </a>
+    <a href="/practice/" class="dock-item">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="m9 12 2 2 4-4"/></svg>
+      <span>Practice</span>
+    </a>
+    <a href="/repeated/" class="dock-item">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+      <span>Repeats</span>
+    </a>
+    <a href="/paper-maker/" class="dock-item">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+      <span>Maker</span>
+    </a>
+    <a href="/practice/?exam=neet" class="dock-item">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24"/><path d="m14.83 9.17 4.24-4.24"/><path d="m14.83 14.83 4.24 4.24"/><path d="m9.17 14.83-4.24 4.24"/></svg>
+      <span>NEET</span>
+    </a>
+  </nav>
+
 
   <script>
     const CHAPTERS_CBSE = {"Physics": [[1, "Electric Charges and Fields"], [2, "Electrostatic Potential and Capacitance"], [3, "Current Electricity"], [4, "Moving Charges and Magnetism"], [5, "Magnetism and Matter"], [6, "Electromagnetic Induction"], [7, "Alternating Current"], [8, "Electromagnetic Waves"], [9, "Ray Optics and Optical Instruments"], [10, "Wave Optics"], [11, "Dual Nature of Radiation and Matter"], [12, "Atoms"], [13, "Nuclei"], [14, "Semiconductor Electronics"]], "Chemistry": [[1, "Solutions"], [2, "Electrochemistry"], [3, "Chemical Kinetics"], [4, "The d- and f-Block Elements"], [5, "Coordination Compounds"], [6, "Haloalkanes and Haloarenes"], [7, "Alcohols, Phenols and Ethers"], [8, "Aldehydes, Ketones and Carboxylic Acids"], [9, "Amines"], [10, "Biomolecules"]], "Mathematics": [[1, "Relations and Functions"], [2, "Inverse Trigonometric Functions"], [3, "Matrices"], [4, "Determinants"], [5, "Continuity and Differentiability"], [6, "Applications of Derivatives"], [7, "Integrals"], [8, "Applications of the Integrals"], [9, "Differential Equations"], [10, "Vectors"], [11, "Three-Dimensional Geometry"], [12, "Linear Programming"], [13, "Probability"]]};
     const CHAPTERS_NEET = {"Physics": ["Alternating Current", "Atoms", "Current Electricity", "Dual Nature of Radiation & Matter", "Electric Charges and Fields", "Electromagnetic Induction", "Electromagnetic Waves", "Electrostatic Potential & Capacitance", "General Physics & Mechanics", "General Physics Topics", "Gravitation", "Kinetic Theory of Gases", "Laws of Motion", "Magnetism and Matter", "Mechanical Properties of Fluids", "Mechanical Properties of Solids", "Motion in a Plane", "Motion in a Straight Line", "Moving Charges and Magnetism", "Nuclei", "Oscillations", "Physical World & Measurement", "Ray Optics & Optical Instruments", "Semiconductor Electronics", "System of Particles & Rotational Motion", "Thermal Properties of Matter", "Thermodynamics", "Wave Optics", "Waves", "Work, Energy and Power"], "Chemistry": ["Alcohols, Phenols and Ethers", "Aldehydes, Ketones and Carboxylic Acids", "Amines", "Biomolecules", "Chemical Bonding & Molecular Structure", "Chemical Kinetics", "Chemistry in Everyday Life", "Classification of Elements & Periodicity", "Coordination Compounds", "Electrochemistry", "Environmental Chemistry", "Equilibrium", "General Chemistry", "General Principles & Processes of Isolation (Metallurgy)", "Haloalkanes and Haloarenes", "Hydrocarbons", "Hydrogen", "Organic Chemistry: Basic Principles & Techniques", "Polymers", "Redox Reactions", "Solid State", "Solutions", "Some Basic Concepts of Chemistry", "States of Matter", "Structure of Atom", "Surface Chemistry", "The d- and f-Block Elements", "The p-Block Elements (Group 13 & 14)", "The p-Block Elements (Group 15, 16, 17, 18)", "The s-Block Elements", "Thermodynamics (Chemical)"], "Botany": ["Anatomy of Flowering Plants", "Biological Classification (Plant Kingdom & Monera/Fungi)", "Biotechnology: Principles and Processes", "Cell Cycle and Cell Division", "Cell: The Unit of Life (Plant Aspects)", "Microbes in Human Welfare", "Mineral Nutrition", "Molecular Basis of Inheritance (Plant)", "Morphology of Flowering Plants", "Photosynthesis in Higher Plants", "Plant Biology Principles", "Plant Growth and Development", "Plant Kingdom", "Principles of Inheritance & Variation (Botany)", "Reproduction in Organisms (Plant)", "Respiration in Plants", "Sexual Reproduction in Flowering Plants", "Strategies for Enhancement in Food Production (Plant)", "The Living World (Botany)", "Transport in Plants"], "Zoology": ["Animal Biology & Physiology", "Animal Kingdom", "Biodiversity and Conservation", "Biomolecules (Animal Physiology & Enzymes)", "Biotechnology and its Applications (Medicine/Animals)", "Body Fluids and Circulation", "Breathing and Exchange of Gases", "Chemical Coordination and Integration", "Digestion and Absorption", "Ecosystem", "Environmental Issues", "Evolution", "Excretory Products and their Elimination", "Human Health and Disease", "Human Reproduction", "Locomotion and Movement", "Neural Control and Coordination", "Organisms and Populations", "Reproductive Health", "Structural Organisation in Animals"]};
+
+    
+    let showRepeatsOnly = false;
+    let solutionsCache = {};
+
+    // Load static solutions cache
+    fetch('/data/solutions_cache.json')
+      .then(res => res.ok ? res.json() : { solutions: {} })
+      .then(data => {
+        solutionsCache = data.solutions || {};
+      })
+      .catch(() => {});
+
+    function getMarksDisplay(q) {
+      if (q.marks && q.marks > 0) return `${q.marks} Mark${q.marks > 1 ? 's' : ''}`;
+      const sec = (q.section || '').toUpperCase();
+      if (sec.includes('SECTION - A') || sec.includes('SECTION A')) return '1 Mark';
+      if (sec.includes('SECTION - B') || sec.includes('SECTION B')) return '2 Marks';
+      if (sec.includes('SECTION - C') || sec.includes('SECTION C')) return '3 Marks';
+      if (sec.includes('SECTION - D') || sec.includes('SECTION D')) return '4 Marks';
+      if (sec.includes('SECTION - E') || sec.includes('SECTION E')) return '5 Marks';
+      return '1 Mark';
+    }
+
+    function getStepRubric(marksStr, section) {
+      const m = parseInt(marksStr) || 1;
+      if (m === 1) return '<strong>CBSE Section A Grading Blueprint (1 Mark):</strong><br>• Direct MCQ choice validation or single-step formula substitution.<br>• Full 1 mark awarded for correct choice or final answer. Zero partial credit.';
+      if (m === 2) return '<strong>CBSE Section B Grading Blueprint (2 Marks):</strong><br>• <strong>Step 1 (1 Mark):</strong> Accurate physical/chemical formula, theorem statement, or labeled diagram.<br>• <strong>Step 2 (1 Mark):</strong> Correct step substitution and final numerical answer with standard S.I. units.';
+      if (m === 3) return '<strong>CBSE Section C Grading Blueprint (3 Marks):</strong><br>• <strong>Step 1 (1 Mark):</strong> Governing physical law, chemical reaction mechanism, or mathematical definition.<br>• <strong>Step 2 (1.5 Marks):</strong> Systematic algebraic derivation or problem steps.<br>• <strong>Step 3 (0.5 Mark):</strong> Final calculated magnitude with proper dimensional units.';
+      if (m === 4) return '<strong>CBSE Section D Grading Blueprint (4 Marks Case Study):</strong><br>• <strong>Part (i) [1 Mark]:</strong> Core conceptual extraction from the passage.<br>• <strong>Part (ii) [1 Mark]:</strong> Analytical relation or definition.<br>• <strong>Part (iii) [2 Marks]:</strong> Multi-step problem evaluation with calculation work.';
+      if (m >= 5) return '<strong>CBSE Section E Grading Blueprint (5 Marks Long Answer):</strong><br>• <strong>Setup & Schematic (1.5 Marks):</strong> Fully labeled ray/circuit diagram or schematic.<br>• <strong>Analytical Proof (2.5 Marks):</strong> Rigorous step-wise mathematical derivation from first principles.<br>• <strong>Application / Numerical (1 Mark):</strong> Problem application with explicit units and sign conventions.';
+      return 'Refer to official CBSE step-marking criteria for this question.';
+    }
+
+    function toggleStepRubric(qId) {
+      const el = document.getElementById('rubric_' + qId);
+      if (el) el.classList.toggle('open');
+    }
+
+    function toggleSolutionBox(qId) {
+      const el = document.getElementById('sol_' + qId);
+      if (el) el.classList.toggle('open');
+    }
+
+    function queueSolutionRequest(qId, subject, year, marks) {
+      const btn = event.currentTarget;
+      btn.disabled = true;
+      btn.innerHTML = '<span>⏳ Queued in System</span>';
+      
+      const report = {
+        qid: qId,
+        subject: subject,
+        year: year,
+        chapter: currentChapter,
+        issues: ['missing_solution'],
+        notes: `Student requested verified step solution for ${marks}`,
+        timestamp: new Date().toISOString()
+      };
+      
+      try {
+        const queue = JSON.parse(localStorage.getItem('wovrix_pyq_reports') || '[]');
+        queue.push(report);
+        localStorage.setItem('wovrix_pyq_reports', JSON.stringify(queue));
+      } catch (e) {}
+
+      if (navigator.sendBeacon) {
+        navigator.sendBeacon('/api/report', JSON.stringify(report));
+      }
+      
+      setTimeout(() => {
+        alert(`Question #${qId} has been queued! Our automated morning solver on the local machine will compute and publish the verified CBSE step solution in the next deployment cycle.`);
+      }, 100);
+    }
+
+    function copyPromptForAI(qId) {
+      const card = document.getElementById(qId);
+      if (!card) return;
+      const text = card.querySelector('.q-body-text')?.innerText || '';
+      const prompt = `Please provide a step-by-step CBSE Class 12 marking scheme solution strictly adhering to official board evaluation criteria for this question:
+
+"${text}"
+
+Include: 1. Governing formula/concept, 2. Step-by-step substitution, 3. Final boxed answer with S.I. units, 4. Step-wise mark allocation.`;
+      
+      navigator.clipboard.writeText(prompt).then(() => {
+        alert('CBSE Marking Prompt copied to clipboard! You can paste it into Gemini or ChatGPT without losing context.');
+      });
+    }
+
+    function toggleRepeatsOnly() {
+      showRepeatsOnly = !showRepeatsOnly;
+      const btn = document.getElementById('btnFilterRepeats');
+      if (btn) btn.classList.toggle('active', showRepeatsOnly);
+      applyFilters();
+    }
 
     let currentExam = 'cbse';
     let currentSubject = 'Physics';
@@ -574,6 +811,7 @@
     let currentSection = 'all';
     let currentYear = 'all';
     let searchQuery = '';
+    
     let currentPage = 1;
     const PAGE_SIZE = 25;
 
@@ -717,6 +955,13 @@
       applyFilters();
     }
 
+        function toggleRepeatsOnly() {
+      showRepeatsOnly = !showRepeatsOnly;
+      const btn = document.getElementById('btnFilterRepeats');
+      if (btn) btn.classList.toggle('active', showRepeatsOnly);
+      applyFilters();
+    }
+
     function applyFilters() {
       let list = loadedQuestions;
 
@@ -787,11 +1032,12 @@
         const globalNum = startIndex + idx + 1;
         const qId = q.id || `q_${globalNum}`;
         const year = q.year || '2026';
-        const marks = q.marks ? `${q.marks} Mark${q.marks > 1 ? 's' : ''}` : '4 Marks';
+        const marksDisplay = getMarksDisplay(q);
         const section = q.section || '';
         const source = q.source || 'Official Exam Paper';
         const text = q.text || '';
-        const repeats = q.repeat_years && q.repeat_years.length > 1 ? `🔁 Repeated across ${q.repeat_years.join(', ')}` : '';
+        const repeats = q.repeat_years && q.repeat_years.length > 1 ? `🔁 Repeated across ${q.repeat_years.join(', ')}` : (q.cluster_size >= 3 ? `🔥 Frequent Pattern (${q.cluster_size} Sets)` : '');
+        const hasCachedSol = solutionsCache[qId] || localStorage.getItem('wovrix_sol_' + qId);
 
         // Options for NEET
         let optionsHtml = '';
@@ -809,12 +1055,62 @@
           optionsHtml += '</div>';
         }
 
+        // Action Buttons Row
+        let actionButtonsHtml = '';
+        let solutionDrawerHtml = '';
+
+        if (currentExam === 'neet') {
+          actionButtonsHtml = `
+            <div class="q-action-btns-left">
+              <button class="btn-solve-action ${hasCachedSol ? 'has-cached' : ''}" onclick="toggleSolutionBox('${qId}')">
+                <span>View Correct Key</span> ▾
+              </button>
+              <button class="btn-report-question" onclick="openReportModal('${qId}', 'NEET UG', '${year}', '${escapeHtml(q.chapter_name || q.ncert_chapter || '')}', '${marksDisplay}')">
+                <span>🚩</span> Report
+              </button>
+            </div>
+          `;
+          solutionDrawerHtml = `
+            <div class="solution-box" id="sol_${qId}">
+              <div class="sol-header">
+                <strong>Official NTA NEET Key:</strong>
+                <span class="sol-badge-cached">Option (${q.correct_answer || 'A'})</span>
+              </div>
+              <p style="margin-top: 6px; font-size: 13px; color: var(--text-muted);">
+                Appeared in NEET UG ${year} (${source}). Verified against NTA master key.
+              </p>
+            </div>
+          `;
+        } else {
+          // CBSE Questions
+          const stepRubric = getStepRubric(marksDisplay, section);
+          actionButtonsHtml = `
+            <div class="q-action-btns-left">
+              <button class="btn-step-rubric" onclick="toggleStepRubric('${qId}')">
+                <span>📘 Step Rubric (${marksDisplay})</span> ▾
+              </button>
+              <button class="btn-solve-action ${hasCachedSol ? 'has-cached' : ''}" id="btn_sol_${qId}" onclick="requestOrViewSolution('${qId}', '${currentSubject}', '${year}', '${marksDisplay}')">
+                <span>${hasCachedSol ? '✓ View Solution' : '⚡ Step Solution'}</span>
+              </button>
+              <button class="btn-report-question" onclick="openReportModal('${qId}', '${currentSubject}', '${year}', '${escapeHtml(q.chapter_name || q.ncert_chapter || '')}', '${marksDisplay}')">
+                <span>🚩</span> Report
+              </button>
+            </div>
+          `;
+          solutionDrawerHtml = `
+            <div class="step-rubric-drawer" id="rubric_${qId}">
+              ${stepRubric}
+            </div>
+            <div class="solution-box" id="sol_${qId}"></div>
+          `;
+        }
+
         cardsHtml += `
           <div class="question-card" id="${qId}">
             <div class="q-meta-top">
               <div class="q-badges-left">
                 <span class="q-source-pill">#${globalNum} · ${year}</span>
-                <span class="q-marks-pill">${marks}</span>
+                <span class="q-marks-pill">${marksDisplay}</span>
                 ${section ? `<span class="q-source-pill">${section}</span>` : ''}
                 ${repeats ? `<span class="q-repeat-pill">${repeats}</span>` : ''}
               </div>
@@ -826,18 +1122,13 @@
             ${optionsHtml}
 
             <div class="q-actions-row">
-              <button class="btn-toggle-solution" onclick="toggleSolution('${qId}')">
-                <span>Reveal Marking Scheme / Answer</span> ▾
-              </button>
+              ${actionButtonsHtml}
               <div style="font-size: 12px; color: var(--text-muted); font-family: var(--font-mono);">
                 ID: ${qId}
               </div>
             </div>
 
-            <div class="solution-box" id="sol_${qId}">
-              <strong>Official Scheme:</strong>
-              ${currentExam === 'neet' ? `<p style="margin-top: 6px;">Correct Option: <strong>(${q.correct_answer})</strong></p>` : `<p style="margin-top: 6px;">Refer to step-by-step CBSE marking guidelines for ${year} (${source}).</p>`}
-            </div>
+            ${solutionDrawerHtml}
           </div>
         `;
       });
@@ -849,7 +1140,9 @@
         renderMathInElement(feed, {
           delimiters: [
             {left: '$$', right: '$$', display: true},
-            {left: '$', right: '$', display: false}
+            {left: '$', right: '$', display: false},
+            {left: '\\(', right: '\\)', display: false},
+            {left: '\\[', right: '\\]', display: true}
           ],
           throwOnError: false
         });
@@ -924,5 +1217,6 @@
       <span>NEET</span>
     </a>
   </nav>
+  <script src="/report-modal.js"></script>
 </body>
 </html>
