@@ -1204,3 +1204,119 @@ a {
     page-break-inside: avoid;
   }
 }
+
+/* Dark Mode Tokens & Overrides */
+[data-theme="dark"] {
+  --bg: #090d16;
+  --surface: #111827;
+  --surface-alt: #1f2937;
+  --border: #374151;
+  --border-light: #1f2937;
+  --text: #f9fafb;
+  --text-muted: #9ca3af;
+  --text-accent: #60a5fa;
+  --shadow-subtle: 0 1px 3px rgba(0, 0, 0, 0.4);
+  --shadow-card: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+  --shadow-elevated: 0 12px 24px -4px rgba(0, 0, 0, 0.6);
+}
+
+[data-theme="dark"] .site-header {
+  background: rgba(17, 24, 39, 0.85);
+}
+
+[data-theme="dark"] .mobile-bottom-dock {
+  background: rgba(17, 24, 39, 0.95);
+  border-top-color: #374151;
+}
+
+[data-theme="dark"] .brand-logo-icon rect {
+  fill: #3b82f6;
+}
+
+[data-theme="dark"] .question-card {
+  background: #111827;
+  border-color: #1f2937;
+}
+
+[data-theme="dark"] .hub-control-panel {
+  background: #111827;
+  border-color: #1f2937;
+}
+
+[data-theme="dark"] .q-source-pill {
+  background: #1f2937;
+  color: #9ca3af;
+}
+
+[data-theme="dark"] .report-modal-card {
+  background: #111827;
+  border-color: #374151;
+  color: #f9fafb;
+}
+
+[data-theme="dark"] .report-modal-title {
+  color: #f9fafb;
+}
+
+[data-theme="dark"] .report-issue-label {
+  background: #1f2937;
+  border-color: #374151;
+  color: #e5e7eb;
+}
+
+[data-theme="dark"] .report-notes-textarea {
+  background: #090d16;
+  border-color: #374151;
+  color: #f9fafb;
+}
+
+/* Theme Switcher Button */
+.btn-theme-toggle {
+  background: transparent;
+  border: 1px solid var(--border);
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text);
+  transition: all 0.15s ease;
+}
+.btn-theme-toggle:hover {
+  background: var(--surface-alt);
+  border-color: var(--accent);
+}
+
+/* Bookmark Action Button */
+.btn-bookmark-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.btn-bookmark-action:hover {
+  background: #fef3c7;
+  border-color: #fde68a;
+  color: #b45309;
+}
+.btn-bookmark-action.bookmarked {
+  background: #fef3c7;
+  border-color: #fde68a;
+  color: #b45309;
+}
+
+/* Mark as Done State */
+.question-card.is-done {
+  opacity: 0.6;
+  border-left: 4px solid #10b981;
+}

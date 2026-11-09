@@ -520,12 +520,16 @@
       </a>
             <nav class="nav-links">
         <a href="/#cbse-section" class="nav-link">CBSE 12 PCM</a>
-        <a href="/neetug/" class="nav-link">NEET UG Archive</a>
+        <a href="/practice/?exam=neet" class="nav-link">NEET UG Archive</a>
         <a href="/repeated/" class="nav-link">★ Repeated Qs</a>
         <a href="/practice/" class="nav-link active">Practice Hub</a>
         <a href="/paper-maker/" class="nav-link">Paper Maker</a>
-        <a href="/neetug/" class="nav-cta-pill">Launch NEET Portal ➔</a>
-      </nav>
+        <a href="/practice/?exam=neet" class="nav-cta-pill">Launch NEET Portal ➔</a>
+          <button id="themeToggleBtn" class="btn-theme-toggle" onclick="toggleTheme()" aria-label="Toggle Dark Mode" title="Toggle Dark/Light Mode">
+      <span class="theme-icon-light">☀️</span>
+      <span class="theme-icon-dark">🌙</span>
+    </button>
+  </nav>
     </div>
   </header>
 
@@ -712,6 +716,25 @@
 
     
     let showRepeatsOnly = false;
+
+    let showBookmarksOnly = false;
+
+    function toggleBookmarksOnly() {
+      showBookmarksOnly = !showBookmarksOnly;
+      const btn = document.getElementById('btnFilterBookmarks');
+      if (btn) {
+        btn.classList.toggle('active', showBookmarksOnly);
+        btn.style.background = showBookmarksOnly ? '#fef3c7' : '#fffdf5';
+      }
+      applyFilters();
+    }
+
+    function updateBookmarksCountUI() {
+      const bms = typeof getBookmarks === 'function' ? getBookmarks() : [];
+      const badge = document.getElementById('bookmarksCountBadge');
+      if (badge) badge.innerText = `(${bms.length})`;
+    }
+
     let solutionsCache = {};
 
     // Load static solutions cache
@@ -1113,6 +1136,11 @@ Include: 1. Governing formula/concept, 2. Step-by-step substitution, 3. Final bo
       }
 
             // Filter by repeats
+      if (showBookmarksOnly) {
+        const bms = typeof getBookmarks === 'function' ? getBookmarks().map(b => String(b.id)) : [];
+        list = list.filter(q => bms.includes(String(q.id)));
+      }
+
       if (showRepeatsOnly) {
         list = list.filter(q => (q.multi_year_count && q.multi_year_count > 1) || (q.repeat_years && q.repeat_years.length > 1) || (q.cluster_size && q.cluster_size >= 3));
       }
@@ -1186,6 +1214,12 @@ Include: 1. Governing formula/concept, 2. Step-by-step substitution, 3. Final bo
               <button class="btn-solve-action ${hasCachedSol ? 'has-cached' : ''}" onclick="toggleSolutionBox('${qId}')">
                 <span>View Correct Key</span> ▾
               </button>
+              <button class="btn-bookmark-action ${typeof isBookmarked === 'function' && isBookmarked(qId) ? 'bookmarked' : ''}" id="btn_bm_${qId}" onclick="toggleBookmark('${qId}', '${currentSubject}', '${escapeHtml(q.chapter_name || q.ncert_chapter || '')}', '${year}'); updateBookmarksCountUI();">
+                <span>${typeof isBookmarked === 'function' && isBookmarked(qId) ? '★' : '☆'}</span> Bookmark
+              </button>
+              <button class="btn-bookmark-action ${typeof isDone === 'function' && isDone(qId) ? 'bookmarked' : ''}" id="btn_done_${qId}" onclick="toggleDone('${qId}'); this.classList.toggle('bookmarked');" title="Mark as reviewed">
+                <span>✓</span> Done
+              </button>
               <button class="btn-report-question" onclick="openReportModal('${qId}', 'NEET UG', '${year}', '${escapeHtml(q.chapter_name || q.ncert_chapter || '')}', '${marksDisplay}')">
                 <span>🚩</span> Report
               </button>
@@ -1212,6 +1246,12 @@ Include: 1. Governing formula/concept, 2. Step-by-step substitution, 3. Final bo
               </button>
               <button class="btn-solve-action ${hasCachedSol ? 'has-cached' : ''}" id="btn_sol_${qId}" onclick="requestOrViewSolution('${qId}', '${currentSubject}', '${year}', '${marksDisplay}')">
                 <span>${hasCachedSol ? '✓ View Solution' : '⚡ Step Solution'}</span>
+              </button>
+              <button class="btn-bookmark-action ${typeof isBookmarked === 'function' && isBookmarked(qId) ? 'bookmarked' : ''}" id="btn_bm_${qId}" onclick="toggleBookmark('${qId}', '${currentSubject}', '${escapeHtml(q.chapter_name || q.ncert_chapter || '')}', '${year}'); updateBookmarksCountUI();">
+                <span>${typeof isBookmarked === 'function' && isBookmarked(qId) ? '★' : '☆'}</span> Bookmark
+              </button>
+              <button class="btn-bookmark-action ${typeof isDone === 'function' && isDone(qId) ? 'bookmarked' : ''}" id="btn_done_${qId}" onclick="toggleDone('${qId}'); this.classList.toggle('bookmarked');" title="Mark as reviewed">
+                <span>✓</span> Done
               </button>
               <button class="btn-report-question" onclick="openReportModal('${qId}', '${currentSubject}', '${year}', '${escapeHtml(q.chapter_name || q.ncert_chapter || '')}', '${marksDisplay}')">
                 <span>🚩</span> Report
@@ -1333,11 +1373,12 @@ Include: 1. Governing formula/concept, 2. Step-by-step substitution, 3. Final bo
       <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
       <span>Maker</span>
     </a>
-    <a href="/neetug/" class="mobile-dock-item">
+    <a href="/practice/?exam=neet" class="mobile-dock-item">
       <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 8v8"></path><path d="M8 12h8"></path></svg>
       <span>NEET</span>
     </a>
   </nav>
   <script src="/report-modal.js"></script>
+  <script src="/js/study_storage.js"></script>
 </body>
 </html>

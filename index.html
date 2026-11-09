@@ -28,8 +28,12 @@
         <a href="/repeated/" class="nav-link">★ Repeated Qs</a>
         <a href="/practice/" class="nav-link">Practice Hub</a>
         <a href="/paper-maker/" class="nav-link">Paper Maker</a>
-        <a href="/neetug/" class="nav-cta-pill">Launch NEET Portal ➔</a>
-      </nav>
+        <a href="/practice/?exam=neet" class="nav-cta-pill">Launch NEET Portal ➔</a>
+          <button id="themeToggleBtn" class="btn-theme-toggle" onclick="toggleTheme()" aria-label="Toggle Dark Mode" title="Toggle Dark/Light Mode">
+      <span class="theme-icon-light">☀️</span>
+      <span class="theme-icon-dark">🌙</span>
+    </button>
+  </nav>
     </div>
   </header>
 
@@ -51,12 +55,12 @@
         </h1>
 
         <p class="hero-editorial-lead">
-          <strong>7,769 distinct CBSE board questions</strong> and <strong>2,060 verified NEET UG problems</strong> across 10 years. Filtered for multi-year repetition, authentic marking schemes, and zero distractions.
+          <strong>8,089 official CBSE board questions</strong> (deduplicated into <strong>7,769 canonical PYQs</strong>) and <strong>2,060 verified NEET UG problems</strong> across 11 years (2016–2026). Pure NCERT alignment, multi-year frequency filters, and zero distractions.
         </p>
 
         <div class="hero-cta-group">
           <a href="/practice/" class="btn-dark-pill">Launch CBSE Practice Hub ➔</a>
-          <a href="/neetug/" class="btn-outline-pill">Launch NEET UG Archive ➔</a>
+          <a href="/practice/?exam=neet" class="btn-outline-pill">Launch NEET UG Archive ➔</a>
           <a href="#browse-section" class="btn-ghost-link">Browse Syllabi ↓</a>
         </div>
       </div>
@@ -68,7 +72,7 @@
         <div class="status-cell">
           <span class="status-dot"></span>
           <span class="status-title">CBSE 12 PCM</span>
-          <span class="status-value">2026–2022 Papers</span>
+          <span class="status-value">2016–2026 (11 Years)</span>
         </div>
         <div class="status-cell">
           <span class="status-title">CBSE DISTINCT</span>
@@ -83,13 +87,72 @@
           <span class="status-value">37 Full Syllabi</span>
         </div>
         <div class="status-cell">
-          <span class="status-title">NEET UG 10-YEAR</span>
+          <span class="status-title">NEET UG 11-YEAR</span>
           <span class="status-value">2,060 Qs (135 Diagrams)</span>
         </div>
       </div>
     </div>
 
     <!-- Unified Multi-Exam Directory Section -->
+    
+    <!-- Repeat Analytics & Frequency Radar Section -->
+    <section class="repeat-radar-section" style="max-width: 1200px; margin: 40px auto; padding: 0 20px;">
+      <div class="section-header-row" style="margin-bottom: 24px; display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 12px;">
+        <div>
+          <span class="hub-badge" style="background: #fef3c7; color: #b45309; border: 1px solid #fde68a;">★ PROPRIETARY REPEAT RADAR</span>
+          <h2 style="font-size: 26px; font-weight: 800; margin: 8px 0 4px 0;">Board Exam Repetition Intelligence</h2>
+          <p style="color: var(--text-muted); font-size: 14px; margin: 0;">
+            19 multi-year repeat clusters and 1,690 parallel set clones identified across 11 years of CBSE Class 12 papers.
+          </p>
+        </div>
+        <a href="/repeated/" class="btn-dark-pill" style="font-size: 13px; padding: 8px 16px;">Explore All 169 Repeated PYQs &rarr;</a>
+      </div>
+
+      <div class="radar-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 18px; margin-bottom: 30px;">
+        <!-- Card 1: Sample Multi-Year Repeat -->
+        <div class="question-card" style="margin-bottom: 0; border: 1px solid #fde68a; background: #fffdf5;">
+          <div class="q-meta-top">
+            <span class="q-repeat-pill" style="background: #f59e0b; color: #ffffff;">★ Appeared 5 Times</span>
+            <span class="q-source-pill">CBSE Physics • 3 Marks</span>
+          </div>
+          <div class="q-body-text" style="font-size: 14px; font-weight: 600; margin: 12px 0;">
+            "State Kirchhoff's rules. Explain how a Wheatstone bridge principle is derived from these rules and calculate condition for balance."
+          </div>
+          <div style="font-size: 12px; color: #92400e; background: #fef3c7; padding: 6px 10px; border-radius: 6px; font-family: var(--font-mono);">
+            Repeated in: 2018, 2020, 2022, 2024, 2026 Sets
+          </div>
+        </div>
+
+        <!-- Card 2: Chemistry Multi-Year Repeat -->
+        <div class="question-card" style="margin-bottom: 0; border: 1px solid #fed7aa; background: #fffaf5;">
+          <div class="q-meta-top">
+            <span class="q-repeat-pill" style="background: #ea580c; color: #ffffff;">★ Appeared 4 Times</span>
+            <span class="q-source-pill">CBSE Chemistry • 2 Marks</span>
+          </div>
+          <div class="q-body-text" style="font-size: 14px; font-weight: 600; margin: 12px 0;">
+            "Write the IUPAC name of the complex [Co(NH₃)₅(CO₃)]Cl and state whether it exhibits linkage or coordination isomerism."
+          </div>
+          <div style="font-size: 12px; color: #9a3412; background: #ffedd5; padding: 6px 10px; border-radius: 6px; font-family: var(--font-mono);">
+            Repeated in: 2019, 2021, 2023, 2025 Sets
+          </div>
+        </div>
+
+        <!-- Card 3: Mathematics Multi-Year Repeat -->
+        <div class="question-card" style="margin-bottom: 0; border: 1px solid #bbf7d0; background: #f6fef9;">
+          <div class="q-meta-top">
+            <span class="q-repeat-pill" style="background: #16a34a; color: #ffffff;">★ Appeared 4 Times</span>
+            <span class="q-source-pill">CBSE Mathematics • 5 Marks</span>
+          </div>
+          <div class="q-body-text" style="font-size: 14px; font-weight: 600; margin: 12px 0;">
+            "Find the shortest distance between the lines $\vec{r} = \vec{a}_1 + \lambda\vec{b}_1$ and $\vec{r} = \vec{a}_2 + \mu\vec{b}_2$."
+          </div>
+          <div style="font-size: 12px; color: #166534; background: #dcfce7; padding: 6px 10px; border-radius: 6px; font-family: var(--font-mono);">
+            Repeated in: 2017, 2020, 2023, 2026 Sets
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="browse-section" class="unified-directory-section">
       <div class="section-lead-header">
         <span class="section-tag">UNIFIED CURRICULUM DIRECTORY</span>
@@ -443,49 +506,49 @@
         <div class="neet-subject-card">
           <div class="neet-card-header">
             <h3>Physics</h3>
-            <span class="neet-count-badge">520 Questions</span>
+            <span class="neet-count-badge">515 Questions</span>
           </div>
-          <p class="neet-meta">2016–2026 Official Papers • 45 Questions / Paper</p>
+          <p class="neet-meta">2016–2026 Official Papers • 45–50 Questions / Paper</p>
           <div class="neet-topics-preview">
             <span class="topic-label">Key Syllabi:</span> Mechanics, Electrodynamics, Modern Physics, Optics, Thermodynamics
           </div>
-          <a href="/neetug/•subject=Physics" class="neet-action-link">Open Physics Archive ➔</a>
+          <a href="/practice/?exam=neet&subject=Physics" class="neet-action-link">Open Physics Archive ➔</a>
         </div>
         
         <div class="neet-subject-card">
           <div class="neet-card-header">
             <h3>Chemistry</h3>
-            <span class="neet-count-badge">520 Questions</span>
+            <span class="neet-count-badge">515 Questions</span>
           </div>
           <p class="neet-meta">Physical, Inorganic, & Organic • High-Yield Mechanisms</p>
           <div class="neet-topics-preview">
             <span class="topic-label">Key Syllabi:</span> Equilibrium, Coordination Compounds, Reaction Kinetics, Carbonyls
           </div>
-          <a href="/neetug/•subject=Chemistry" class="neet-action-link">Open Chemistry Archive ➔</a>
+          <a href="/practice/?exam=neet&subject=Chemistry" class="neet-action-link">Open Chemistry Archive ➔</a>
         </div>
         
         <div class="neet-subject-card">
           <div class="neet-card-header">
             <h3>Botany</h3>
-            <span class="neet-count-badge">520 Questions</span>
+            <span class="neet-count-badge">515 Questions</span>
           </div>
           <p class="neet-meta">Plant Anatomy, Photosynthesis, Genetics & Biotech</p>
           <div class="neet-topics-preview">
             <span class="topic-label">Key Syllabi:</span> Plant Physiology, Molecular Basis of Inheritance, Ecology
           </div>
-          <a href="/neetug/•subject=Botany" class="neet-action-link">Open Botany Archive ➔</a>
+          <a href="/practice/?exam=neet&subject=Botany" class="neet-action-link">Open Botany Archive ➔</a>
         </div>
         
         <div class="neet-subject-card">
           <div class="neet-card-header">
             <h3>Zoology</h3>
-            <span class="neet-count-badge">520 Questions</span>
+            <span class="neet-count-badge">515 Questions</span>
           </div>
           <p class="neet-meta">Human Physiology, Animal Kingdom, Reproduction & Evolution</p>
           <div class="neet-topics-preview">
             <span class="topic-label">Key Syllabi:</span> Endocrine System, Neural Control, Immunology, Biomolecules
           </div>
-          <a href="/neetug/•subject=Zoology" class="neet-action-link">Open Zoology Archive ➔</a>
+          <a href="/practice/?exam=neet&subject=Zoology" class="neet-action-link">Open Zoology Archive ➔</a>
         </div>
         
         </div>
@@ -523,17 +586,17 @@
       <div class="footer-col">
         <span class="footer-col-heading">Medical Entrance</span>
         <ul class="footer-links-list">
-          <li><a href="/neetug/">NEET UG 10-Year Archive</a></li>
-          <li><a href="/neetug/">Physics (2016–2026)</a></li>
-          <li><a href="/neetug/">Chemistry (2016–2026)</a></li>
-          <li><a href="/neetug/">Biology (Botany & Zoology)</a></li>
+          <li><a href="/practice/?exam=neet">NEET UG 10-Year Archive</a></li>
+          <li><a href="/practice/?exam=neet">Physics (2016–2026)</a></li>
+          <li><a href="/practice/?exam=neet">Chemistry (2016–2026)</a></li>
+          <li><a href="/practice/?exam=neet">Biology (Botany & Zoology)</a></li>
         </ul>
       </div>
 
       <div class="footer-col">
         <span class="footer-col-heading">Study Tools</span>
         <ul class="footer-links-list">
-          <li><a href="/practice/">Custom Mock Paper Generator</a></li>
+          <li><a href="/paper-maker/">Custom Board Paper Maker</a></li>
           <li><a href="/practice/">Parallel Set Comparison</a></li>
           <li><a href="mailto:contact@wovrix.in">Report Question Correction</a></li>
         </ul>
@@ -724,10 +787,11 @@
       <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
       <span>Maker</span>
     </a>
-    <a href="/neetug/" class="mobile-dock-item">
+    <a href="/practice/?exam=neet" class="mobile-dock-item">
       <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 8v8"></path><path d="M8 12h8"></path></svg>
       <span>NEET</span>
     </a>
   </nav>
+  <script src="/js/study_storage.js"></script>
 </body>
 </html>

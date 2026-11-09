@@ -341,15 +341,16 @@
     "id": 54,
     "has_figure_reference": false,
     "signature": "thelengthofperpendiculardrawnfrompoint257online\\racx1\\racy0\\racz0isa2b5c\\sqrt74d\\sqrt78",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 11,
+    "chapter_name": "Three-Dimensional Geometry",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2026"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Three-Dimensional Geometry"
   },
   {
     "q_num": 17,
@@ -473,15 +474,16 @@
     "id": 60,
     "has_figure_reference": false,
     "signature": "aroomfreshnerbottleintheshapeofaninvertedconespraystheperfumeatregularintervalssuchthatvolumeoftheperfumeinthebottledecr",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 6,
+    "chapter_name": "Applications of Derivatives",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2026"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Applications of Derivatives"
   },
   {
     "q_num": 23,
@@ -495,15 +497,16 @@
     "id": 61,
     "has_figure_reference": false,
     "signature": "findthevectorofmagnitude14inthedirectionof\\overrightarrow\\textqpwhere\\textpand\\textqarethepoints132and108respectively",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 10,
+    "chapter_name": "Vectors",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2026"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Vectors"
   },
   {
     "q_num": 24,
@@ -737,15 +740,16 @@
     "id": 72,
     "has_figure_reference": false,
     "signature": "if\\beginbmatrix31\\sin3x\\\\74\\cos2x\\\\1172\\endbmatrixisasingularmatrixthenfindallvaluesofxwherex\\in\\left0\\rac\\pi2\\right",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 1.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2026"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": "34",
@@ -759,15 +763,16 @@
     "id": 73,
     "has_figure_reference": false,
     "signature": "ifx\\costy\\cosmtprovethat1x2\\rac\\mathrmd2y\\mathrmdx2x\\rac\\mathrmdy\\mathrmdxm2y0",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 5,
+    "chapter_name": "Continuity and Differentiability",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2026"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Continuity and Differentiability"
   },
   {
     "q_num": "35",
@@ -803,15 +808,16 @@
     "id": 75,
     "has_figure_reference": false,
     "signature": "anonlinedeliverycompanyinacityhas5000subscribersandcollectsannualsubscriptionfeesof300persubscriberforunlimitedfreedeliv",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 6,
+    "chapter_name": "Applications of Derivatives",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2026"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 2
+    "cluster_size": 2,
+    "ncert_chapter": "Applications of Derivatives"
   },
   {
     "q_num": "36",
@@ -825,15 +831,16 @@
     "id": 76,
     "has_figure_reference": false,
     "signature": "basedonthegiveninformationanswerthefollowingquestionsihowmanysubscriberswilldiscontinueafteranincreaseofxinannualfeeiiif",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 6,
+    "chapter_name": "Applications of Derivatives",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2026"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Applications of Derivatives"
   },
   {
     "q_num": "37",
@@ -869,15 +876,16 @@
     "id": 78,
     "has_figure_reference": false,
     "signature": "roundaboutsareoftenmadeonbusyroadstoeasethetrafficandavoidredlightsonesuchroundaboutismadesuchthatequationrepresentingit",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 8,
+    "chapter_name": "Applications of the Integrals",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2026"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 2
+    "cluster_size": 2,
+    "ncert_chapter": "Applications of the Integrals"
   },
   {
     "q_num": 1,
@@ -1067,15 +1075,16 @@
     "id": 162,
     "has_figure_reference": false,
     "signature": "thelengthofperpendiculardrawnfromthepoint123online\\fracx0\\fracy1\\fracz0isa2b6c\\sqrt10d\\sqrt14",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 11,
+    "chapter_name": "Three-Dimensional Geometry",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2026"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Three-Dimensional Geometry"
   },
   {
     "q_num": 10,
@@ -1573,15 +1582,16 @@
     "id": 185,
     "has_figure_reference": false,
     "signature": "ifx3\\sint\\sin3ty3\\cost\\cos3tfind\\frac\\mathrmdy\\mathrmdxandprovethat\\frac\\mathrmd2y\\mathrmdx2\\frac\\operatornamecosec32t\\c",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 5,
+    "chapter_name": "Continuity and Differentiability",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2026"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Continuity and Differentiability"
   },
   {
     "q_num": 33,
@@ -1595,15 +1605,16 @@
     "id": 186,
     "has_figure_reference": false,
     "signature": "provethatthelinethroughpoints\\mathrma011and\\mathrmb451intersectsthelinethroughpoints\\mathrmc394and\\mathrmd444hencewritet",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 11,
+    "chapter_name": "Three-Dimensional Geometry",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2026"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Three-Dimensional Geometry"
   },
   {
     "q_num": 34,
@@ -1639,15 +1650,16 @@
     "id": 188,
     "has_figure_reference": false,
     "signature": "ifa\\beginbmatrix021\\\\212\\\\110\\endbmatrixfinda1anduseittosolvethefollowingsystemofequations2yz72xyz8x2y10orbif\\beginbmatr",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 1.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2026"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": "36",
@@ -1727,15 +1739,16 @@
     "id": 192,
     "has_figure_reference": false,
     "signature": "roundaboutsareoftenmadeonbusyroadstoeasethetrafficandavoidredlightsonesuchroundaboutismadesuchthatequationrepresentingit",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 8,
+    "chapter_name": "Applications of the Integrals",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2026"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 2
+    "cluster_size": 2,
+    "ncert_chapter": "Applications of the Integrals"
   },
   {
     "q_num": 38,
@@ -1749,15 +1762,16 @@
     "id": 193,
     "has_figure_reference": false,
     "signature": "anonlinedeliverycompanyinacityhas5000subscribersandcollectsannualsubscriptionfeesof300persubscriberforunlimitedfreedeliv",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 6,
+    "chapter_name": "Applications of Derivatives",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2026"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 2
+    "cluster_size": 2,
+    "ncert_chapter": "Applications of Derivatives"
   },
   {
     "q_num": 1,
@@ -1793,15 +1807,16 @@
     "id": 270,
     "has_figure_reference": false,
     "signature": "thelengthofperpendiculardrawnfromthepoint3\\4\\2onthelineracx0racy0racz1isa2b9c5d\\sqrt29",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 11,
+    "chapter_name": "Three-Dimensional Geometry",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2026"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Three-Dimensional Geometry"
   },
   {
     "q_num": "3",
@@ -2277,15 +2292,16 @@
     "id": 292,
     "has_figure_reference": false,
     "signature": "usingvectorsfindtheareaof\\delta\\textabcwithvertices\\texta123\\textb214and\\textc451",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 10,
+    "chapter_name": "Vectors",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2026"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Vectors"
   },
   {
     "q_num": 25,
@@ -2453,15 +2469,16 @@
     "id": 300,
     "has_figure_reference": false,
     "signature": "showthatlineabpassingthroughpoints\\texta041\\textb231andthelinecdpassingthroughpoints\\textc450\\textd262areparallelalsofin",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 11,
+    "chapter_name": "Three-Dimensional Geometry",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2026"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Three-Dimensional Geometry"
   },
   {
     "q_num": "33",
@@ -2519,15 +2536,16 @@
     "id": 303,
     "has_figure_reference": false,
     "signature": "if\\beginvmatrix31\\sin3x\\\\74\\cos2x\\\\1172\\endvmatrixisasingularmatrixthenfindallvaluesofxwherex\\in\\left0\\frac\\pi2\\right",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 1.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2026"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": "35",
@@ -2563,15 +2581,16 @@
     "id": 305,
     "has_figure_reference": false,
     "signature": "roundaboutsareoftenmadeonbusyroadstoeasethetrafficandavoidredlights\\n\\nonesuchroundaboutismadesuchthatequationrepresenti",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 8,
+    "chapter_name": "Applications of the Integrals",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2026"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Applications of the Integrals"
   },
   {
     "q_num": "36",
@@ -2585,15 +2604,16 @@
     "id": 306,
     "has_figure_reference": false,
     "signature": "busingintegrationfindtheareaofregioncoveredbycircularpond",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 8,
+    "chapter_name": "Applications of the Integrals",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2026"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Applications of the Integrals"
   },
   {
     "q_num": "37",
@@ -2607,15 +2627,16 @@
     "id": 307,
     "has_figure_reference": false,
     "signature": "anonlinedeliverycompanyinacityhas5000subscribersandcollectsannualsubscriptionfeesof\\300persubscriberforunlimitedfreedeli",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 6,
+    "chapter_name": "Applications of Derivatives",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2026"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Applications of Derivatives"
   },
   {
     "q_num": "37",
@@ -3091,15 +3112,16 @@
     "id": 402,
     "has_figure_reference": false,
     "signature": "fortwoeventsaandbsuchthatpa\\neq0andpb\\neq1paba1pabb1pabc\\frac1pa\\capbpbd\\frac1pa\\cupbpb",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 13,
+    "chapter_name": "Probability",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2026"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 2
+    "cluster_size": 2,
+    "ncert_chapter": "Probability"
   },
   {
     "q_num": 19,
@@ -3575,15 +3597,16 @@
     "id": 424,
     "has_figure_reference": false,
     "signature": "afindtheareaoftheregionenclosedwithintheellipticalgroundexcludingthetrackusingintegration",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 8,
+    "chapter_name": "Applications of the Integrals",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2026"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Applications of the Integrals"
   },
   {
     "q_num": "37",
@@ -3927,15 +3950,16 @@
     "id": 517,
     "has_figure_reference": false,
     "signature": "fortwoeventsaandbsuchthatpa\\neq0andpb\\neq1paba1pabb1pabc\\frac1pa\\capbpbd\\frac1pa\\cupbpb",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 13,
+    "chapter_name": "Probability",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2026"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 2
+    "cluster_size": 2,
+    "ncert_chapter": "Probability"
   },
   {
     "q_num": 12,
@@ -4191,15 +4215,16 @@
     "id": 529,
     "has_figure_reference": false,
     "signature": "findthecoordinatesoffootofperpendiculardrawnfrom000toline\\fracx1\\fracy11\\fracz32",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 11,
+    "chapter_name": "Three-Dimensional Geometry",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2026"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Three-Dimensional Geometry"
   },
   {
     "q_num": 24,
@@ -4675,15 +4700,16 @@
     "id": 625,
     "has_figure_reference": false,
     "signature": "fortwoeventsaandbsuchthat\\textpa\\neq0and\\textpb\\neq1\\textpaba1\\textpabb1\\textpabc\\frac1\\textpa\\cap\\textb\\textpbd\\frac1\\t",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 13,
+    "chapter_name": "Probability",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2026"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Probability"
   },
   {
     "q_num": 5,
@@ -5555,15 +5581,16 @@
     "id": 1282,
     "has_figure_reference": false,
     "signature": "theintervalinwhichyx3\\cdote3xisanincreasingfunctionisa12b\\infty2c1\\inftyd01",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 6,
+    "chapter_name": "Applications of Derivatives",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2026"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Applications of Derivatives"
   },
   {
     "q_num": 6,
@@ -5907,15 +5934,16 @@
     "id": 1298,
     "has_figure_reference": false,
     "signature": "aforthematrixa\\beginbmatrix31\\\\21\\endbmatrixfindthenumbersaandbsothata2aabioorbfindtheequationoflinejoiningthepoints11an",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 1.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2026"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": 22,
@@ -7184,15 +7212,16 @@
     "id": 1356,
     "has_figure_reference": false,
     "signature": "atotalof60vouchersweregivenonthedaythenumberof1000vouchersaddedto3timesthenumberof500vouchersgives100expressthegiveninfo",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 1.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2026"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 2
+    "cluster_size": 2,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": 35,
@@ -7382,15 +7411,16 @@
     "id": 1365,
     "has_figure_reference": true,
     "signature": "thereisatriangularparkinthesocietytheparkisdividedintotwosectionsasshowninthefigure\\nbasedontheaboveinformationanswerthe",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 8,
+    "chapter_name": "Applications of the Integrals",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2026"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Applications of the Integrals"
   },
   {
     "q_num": 38,
@@ -7404,15 +7434,16 @@
     "id": 1366,
     "has_figure_reference": false,
     "signature": "intheregionextoacchildrenareallowedtoplaygameslikecricketfootballwhileintheregionextaobactivitieswhichinvolverunningaren",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 8,
+    "chapter_name": "Applications of the Integrals",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2026"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Applications of the Integrals"
   },
   {
     "q_num": 1,
@@ -8218,15 +8249,16 @@
     "id": 1403,
     "has_figure_reference": false,
     "signature": "ontheinaugurationdayofanewshowroomaluckydrawwasorganizedandsomevouchersof1000and500weregiventotheluckydrawwinnersatotalo",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 1.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2026"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": 33,
@@ -8460,15 +8492,16 @@
     "id": 1414,
     "has_figure_reference": false,
     "signature": "usingintegrationfindtheareaofregionoacwhereplayingcricketandfootballispermitted",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 8,
+    "chapter_name": "Applications of the Integrals",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2026"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Applications of the Integrals"
   },
   {
     "q_num": "37(iii)(b)",
@@ -8482,15 +8515,16 @@
     "id": 1415,
     "has_figure_reference": false,
     "signature": "usingintegrationfindtheareaofregionaob",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 8,
+    "chapter_name": "Applications of the Integrals",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2026"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 2
+    "cluster_size": 2,
+    "ncert_chapter": "Applications of the Integrals"
   },
   {
     "q_num": "38(i)",
@@ -8570,15 +8604,16 @@
     "id": 1419,
     "has_figure_reference": true,
     "signature": "twoverticallightpolesofheight22\\textmand16\\textmstandontheoppositesidesofa20\\textmwideroadasshownbelowinthefiguretwoladd",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 8,
+    "chapter_name": "Applications of the Integrals",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2026"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 2
+    "cluster_size": 2,
+    "ncert_chapter": "Applications of the Integrals"
   },
   {
     "q_num": "37",
@@ -9560,15 +9595,16 @@
     "id": 1464,
     "has_figure_reference": false,
     "signature": "atotalof60vouchersweregivenonthedaythenumberof1000vouchersaddedto3timesthenumberof500vouchersgives100expressthegiveninfo",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 0.66,
     "multi_year_count": 1,
     "repeat_years": [
       "2026"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 2
+    "cluster_size": 2,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": "35",
@@ -9648,15 +9684,16 @@
     "id": 1468,
     "has_figure_reference": false,
     "signature": "usingintegrationfindtheareaofregionoacinwhichchildrenareallowedtoplaycricketfootball",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 8,
+    "chapter_name": "Applications of the Integrals",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2026"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Applications of the Integrals"
   },
   {
     "q_num": "36 (iii) (b)",
@@ -9670,15 +9707,16 @@
     "id": 1469,
     "has_figure_reference": false,
     "signature": "usingintegrationfindtheareaofregionaob",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 8,
+    "chapter_name": "Applications of the Integrals",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2026"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 2
+    "cluster_size": 2,
+    "ncert_chapter": "Applications of the Integrals"
   },
   {
     "q_num": 37,
@@ -10440,15 +10478,16 @@
     "id": 1504,
     "has_figure_reference": false,
     "signature": "usingintegrationfindtheareaoftheregionenclosedbythecurveyx6thexaxisandbetweenx4andx8",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 8,
+    "chapter_name": "Applications of the Integrals",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2026"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Applications of the Integrals"
   },
   {
     "q_num": "34(a)",
@@ -12574,15 +12613,16 @@
     "id": 1601,
     "has_figure_reference": false,
     "signature": "findthelengthoftheperpendiculardrawnfromthepointp123totheline\\fracx63\\fracy72\\fracz72alsofindtheequationoftheperpendicul",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 11,
+    "chapter_name": "Three-Dimensional Geometry",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2026"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Three-Dimensional Geometry"
   },
   {
     "q_num": "36",
@@ -13476,15 +13516,16 @@
     "id": 1642,
     "has_figure_reference": false,
     "signature": "amangoestobuyfruitsfromthemarkettheshopkeeperinformshimthat4apples3orangesand2bananascost602apples4orangesand6bananascos",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 0.66,
     "multi_year_count": 1,
     "repeat_years": [
       "2026"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": "33",
@@ -13520,15 +13561,16 @@
     "id": 1644,
     "has_figure_reference": false,
     "signature": "sketchthecurve\\xy100x225y22500\\andfindtheareaoftheregionenclosedbyitusingintegration",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 8,
+    "chapter_name": "Applications of the Integrals",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2026"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Applications of the Integrals"
   },
   {
     "q_num": "35",
@@ -13784,15 +13826,16 @@
     "id": 1656,
     "has_figure_reference": false,
     "signature": "ifthecompanywantstomaximizethevolumeofeachtumblerthenestablisharelationbetweenitsheightandtheradiusofthebase",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 12,
+    "chapter_name": "Linear Programming",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2026"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 2
+    "cluster_size": 2,
+    "ncert_chapter": "Linear Programming"
   },
   {
     "q_num": 1,
@@ -14532,15 +14575,16 @@
     "id": 1690,
     "has_figure_reference": false,
     "signature": "findcostperkgofeachfertilizerabandcthatthefarmerneedstobuysuchthat1kgeachoffertilizeraandcaddedto2kgofbcostshim400alsoco",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 0.66,
     "multi_year_count": 1,
     "repeat_years": [
       "2026"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": "33",
@@ -14554,15 +14598,16 @@
     "id": 1691,
     "has_figure_reference": false,
     "signature": "findthefootoftheperpendicularfromthepoint023ontheline\\fracx35\\frac1y2\\frac3z129andhencefindthelengthoftheperpendicular",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 11,
+    "chapter_name": "Three-Dimensional Geometry",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2026"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Three-Dimensional Geometry"
   },
   {
     "q_num": "33",
@@ -14598,15 +14643,16 @@
     "id": 1693,
     "has_figure_reference": false,
     "signature": "sketchthecurvedescribedby\\xy9x216y2144\\andfindtheareaoftheregionenclosedbyitusingintegration",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 8,
+    "chapter_name": "Applications of the Integrals",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2026"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Applications of the Integrals"
   },
   {
     "q_num": "35",
@@ -14730,15 +14776,16 @@
     "id": 1699,
     "has_figure_reference": false,
     "signature": "acompanyproducescylindricaltumblersopenfromthetopsincetheywantuniformityintheproducttheyfixthesurfaceareaofthetumblerspr",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 12,
+    "chapter_name": "Linear Programming",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2026"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 2
+    "cluster_size": 2,
+    "ncert_chapter": "Linear Programming"
   },
   {
     "q_num": 38,
@@ -15458,15 +15505,16 @@
     "id": 1732,
     "has_figure_reference": false,
     "signature": "threestudentsabandcgotoabookstoretobuyartbooksstorybooksandpuzzlesolvingbooksabuysoneofeachtypeofbookforatotalof21bbuys4",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 0.66,
     "multi_year_count": 1,
     "repeat_years": [
       "2026"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": "33",
@@ -15502,15 +15550,16 @@
     "id": 1734,
     "has_figure_reference": false,
     "signature": "sketchthegraphdefinedby\\left\\xy\\fracx225\\fracy2251\\right\\findtheareaoftheregionofminorsegmentcutoffbythelinex\\frac52usin",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 8,
+    "chapter_name": "Applications of the Integrals",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2026"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Applications of the Integrals"
   },
   {
     "q_num": "35",
@@ -15568,15 +15617,16 @@
     "id": 1737,
     "has_figure_reference": false,
     "signature": "ifthecompanywantstomaximizethevolumeofeachtumblerthenestablisharelationbetweenitsheightandtheradiusofthebase",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 12,
+    "chapter_name": "Linear Programming",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2026"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 2
+    "cluster_size": 2,
+    "ncert_chapter": "Linear Programming"
   },
   {
     "q_num": "37",
@@ -16096,15 +16146,16 @@
     "id": 2393,
     "has_figure_reference": false,
     "signature": "formatricesa\\beginbmatrix23\\\\14\\endbmatrixandb\\beginbmatrix12\\\\13\\endbmatrixverifythat\\textab1\\textb1\\texta1orbusingthem",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 1.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2026"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": 28,
@@ -16206,15 +16257,16 @@
     "id": 2398,
     "has_figure_reference": false,
     "signature": "findtheadjointofthematrixagivenby\\na\\beginbmatrix145\\\\326\\\\010\\endbmatrixandverifythat\\na\\textadjaai\\textadjaa\\nor",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 1.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2026"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": 32,
@@ -17460,15 +17512,16 @@
     "id": 2455,
     "has_figure_reference": false,
     "signature": "ifaandbaresquarematricesoforder3suchthata4andb7then2abisa112b56c28d224",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 0.66,
     "multi_year_count": 1,
     "repeat_years": [
       "2026"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 3
+    "cluster_size": 3,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": 9,
@@ -17658,15 +17711,16 @@
     "id": 2464,
     "has_figure_reference": false,
     "signature": "iftwoeventsaandbareindependentthenwhichofthefollowingstatementsis\\textbfnotcorrecta\\baraandbareindependentbbeingindepend",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 13,
+    "chapter_name": "Probability",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2026"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Probability"
   },
   {
     "q_num": "18",
@@ -17945,15 +17999,16 @@
     "id": 2477,
     "has_figure_reference": false,
     "signature": "expressthematrixa\\beginbmatrix24\\\\56\\endbmatrixasthesumofasymmetricmatrixandaskewsymmetricmatrixorbtwolinesarerepresente",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 1.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2026"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 3
+    "cluster_size": 3,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": "31",
@@ -18099,15 +18154,16 @@
     "id": 2484,
     "has_figure_reference": false,
     "signature": "afindthefootoftheperpendiculardrawnfrom241tothepathrepresentedbystudenta",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 11,
+    "chapter_name": "Three-Dimensional Geometry",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2026"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Three-Dimensional Geometry"
   },
   {
     "q_num": "36",
@@ -18451,15 +18507,16 @@
     "id": 2500,
     "has_figure_reference": false,
     "signature": "ifaandbaresquarematricesoforder3suchthata4andb7then2abisa112b56c28d224",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 0.66,
     "multi_year_count": 1,
     "repeat_years": [
       "2026"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 3
+    "cluster_size": 3,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": 11,
@@ -18583,15 +18640,16 @@
     "id": 2506,
     "has_figure_reference": false,
     "signature": "iftwoeventsaandbareindependentthenwhichofthefollowingstatementsis\\textitnotcorrecta\\overlineaandbareindependentbbeingind",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 13,
+    "chapter_name": "Probability",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2026"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Probability"
   },
   {
     "q_num": 17,
@@ -18803,15 +18861,16 @@
     "id": 2516,
     "has_figure_reference": false,
     "signature": "expressthematrixa\\beginbmatrix24\\\\56\\endbmatrixasthesumofasymmetricmatrixandaskewsymmetricmatrixorbtwolinesarerepresente",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 1.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2026"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 3
+    "cluster_size": 3,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": 27,
@@ -19265,15 +19324,16 @@
     "id": 2537,
     "has_figure_reference": false,
     "signature": "ifaandbaresquarematricesoforder3suchthata4andb7then2abisa112b56c28d224",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 0.66,
     "multi_year_count": 1,
     "repeat_years": [
       "2026"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 3
+    "cluster_size": 3,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": 10,
@@ -19463,15 +19523,16 @@
     "id": 2546,
     "has_figure_reference": false,
     "signature": "ifpa0\\cdot3pb0\\cdot7andpba0\\cdot5thenpa\\cupbisa0\\cdot35b0\\cdot85c0\\cdot5d0\\cdot21",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 13,
+    "chapter_name": "Probability",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2026"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Probability"
   },
   {
     "q_num": 19,
@@ -19750,15 +19811,16 @@
     "id": 2559,
     "has_figure_reference": false,
     "signature": "expressthematrixa\\beginbmatrix24\\\\56\\endbmatrixasthesumofasymmetricmatrixandaskewsymmetricmatrixorbtwolinesarerepresente",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 1.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2026"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 3
+    "cluster_size": 3,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": 32,
@@ -20014,15 +20076,16 @@
     "id": 2610,
     "has_figure_reference": false,
     "signature": "valueofthedeterminant\\beginvmatrix\\cos67\\circ\\sin67\\circ\\\\\\sin23\\circ\\cos23\\circ\\endvmatrixis\\na0\\nb\\frac12\\nc\\frac\\sqrt",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 0.98,
     "multi_year_count": 1,
     "repeat_years": [
       "2025"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": 7,
@@ -20476,15 +20539,16 @@
     "id": 2631,
     "has_figure_reference": false,
     "signature": "forvisuallyimpairedfindouttheareaoftheregionenclosedbythecurvey2xx3andxaxisinthefirstquadrant",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 8,
+    "chapter_name": "Applications of the Integrals",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2025"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Applications of the Integrals"
   },
   {
     "q_num": "24",
@@ -20630,15 +20694,16 @@
     "id": 2638,
     "has_figure_reference": false,
     "signature": "usingintegrationfindtheareaoftheregion\\xyx24y\\le0yx\\le0\\",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 8,
+    "chapter_name": "Applications of the Integrals",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2025"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Applications of the Integrals"
   },
   {
     "q_num": "28A",
@@ -20674,15 +20739,16 @@
     "id": 2640,
     "has_figure_reference": false,
     "signature": "usingintegrationfindtheareaenclosedwithinthecurve25x216y2400",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 8,
+    "chapter_name": "Applications of the Integrals",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2025"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Applications of the Integrals"
   },
   {
     "q_num": "29A",
@@ -21070,15 +21136,16 @@
     "id": 4049,
     "has_figure_reference": false,
     "signature": "thesystemoflinearequations2xky73x2y7willbeconsistentifak\\frac43bk\\neq\\frac43ck\\neq\\frac34dk\\frac34",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2025"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": 7,
@@ -21158,15 +21225,16 @@
     "id": 4053,
     "has_figure_reference": false,
     "signature": "therelationbetweenmarginalcostmcandaveragecostacofproducingxunitsofaproductisa\\frac\\textd\\textdx\\textacx\\textmc\\textacb\\",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 6,
+    "chapter_name": "Applications of Derivatives",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2025"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Applications of Derivatives"
   },
   {
     "q_num": 11,
@@ -22105,15 +22173,16 @@
     "id": 4096,
     "has_figure_reference": false,
     "signature": "ifaandbaresquarematricesbothoforder3suchthata3andb2then2abisequaltoa48b48c24d12",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 0.66,
     "multi_year_count": 1,
     "repeat_years": [
       "2025"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": 4,
@@ -22369,15 +22438,16 @@
     "id": 4108,
     "has_figure_reference": false,
     "signature": "assertionaifaisaskewsymmetricmatrixoforder3thena0reasonrifaisasquarematrixoforder3thenaa",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 1.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2025"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": "20",
@@ -22677,15 +22747,16 @@
     "id": 4122,
     "has_figure_reference": false,
     "signature": "usingvectorsfindtheareaoftriangleabcwithverticesa433b556andc476",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 10,
+    "chapter_name": "Vectors",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2025"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Vectors"
   },
   {
     "q_num": "30",
@@ -22963,15 +23034,16 @@
     "id": 4135,
     "has_figure_reference": false,
     "signature": "thevalueofthedeterminant\\beginvmatrix\\cos75\\circ\\sin75\\circ\\\\\\sin15\\circ\\cos15\\circ\\endvmatrixisa1bzeroc\\frac12d\\frac\\sq",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 0.98,
     "multi_year_count": 1,
     "repeat_years": [
       "2025"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 2
+    "cluster_size": 2,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": 4,
@@ -23007,15 +23079,16 @@
     "id": 4137,
     "has_figure_reference": false,
     "signature": "thecofactoroftheelementa32inthedeterminant\\delta\\beginvmatrix123\\\\231\\\\312\\endvmatrixisa\\pm5b5c5d0",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 0.98,
     "multi_year_count": 1,
     "repeat_years": [
       "2025"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": 6,
@@ -23645,15 +23718,16 @@
     "id": 4166,
     "has_figure_reference": false,
     "signature": "usingintegrationfindtheareaoftheregion\\left\\xy0\\ley\\lex2\\0\\ley\\lex\\0\\lex\\le3\\right\\",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 8,
+    "chapter_name": "Applications of the Integrals",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2025"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Applications of the Integrals"
   },
   {
     "q_num": 35,
@@ -23843,15 +23917,16 @@
     "id": 4175,
     "has_figure_reference": false,
     "signature": "thevalueofthedeterminant\\beginvmatrix\\cos75\\circ\\sin75\\circ\\\\\\sin15\\circ\\cos15\\circ\\endvmatrixisa1bzeroc\\frac12d\\frac\\sq",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 0.98,
     "multi_year_count": 1,
     "repeat_years": [
       "2025"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 2
+    "cluster_size": 2,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": 6,
@@ -24503,15 +24578,16 @@
     "id": 4205,
     "has_figure_reference": false,
     "signature": "usingintegrationfindtheareaoftheregion\\xy0\\ley\\lex2\\0\\ley\\lex\\0\\lex\\le3\\",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 8,
+    "chapter_name": "Applications of the Integrals",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2025"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 2
+    "cluster_size": 2,
+    "ncert_chapter": "Applications of the Integrals"
   },
   {
     "q_num": 36,
@@ -24657,15 +24733,16 @@
     "id": 4212,
     "has_figure_reference": false,
     "signature": "ifa\\beginbmatrix12\\\\42\\endbmatrixand3akathenthevalueofkisa3b9c6d27",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 0.98,
     "multi_year_count": 1,
     "repeat_years": [
       "2025"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": 5,
@@ -25361,15 +25438,16 @@
     "id": 4244,
     "has_figure_reference": false,
     "signature": "usingintegrationfindtheareaoftheregion\\xy0\\ley\\lex2\\0\\ley\\lex\\0\\lex\\le3\\",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 8,
+    "chapter_name": "Applications of the Integrals",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2025"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 2
+    "cluster_size": 2,
+    "ncert_chapter": "Applications of the Integrals"
   },
   {
     "q_num": "36",
@@ -25515,15 +25593,16 @@
     "id": 4251,
     "has_figure_reference": false,
     "signature": "letfxbeacontinuousfunctiononabanddifferentiableonabthenthisfunctionfxisstrictlyincreasinginabifafx0\\forall\\textx\\inabbfx",
-    "chapter_number": 5,
-    "chapter_name": "Continuity and Differentiability",
+    "chapter_number": 6,
+    "chapter_name": "Applications of Derivatives",
     "confidence": 0.82,
     "multi_year_count": 1,
     "repeat_years": [
       "2024"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Applications of Derivatives"
   },
   {
     "q_num": 5,
@@ -25669,15 +25748,16 @@
     "id": 4258,
     "has_figure_reference": false,
     "signature": "ifpa\\midbpa\\midbthenwhichofthefollowingstatementsistrueapapabpa2\\pbcpa\\capb\\frac12\\pbdpa\\capb2\\pb",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 13,
+    "chapter_name": "Probability",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2024"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 2
+    "cluster_size": 2,
+    "ncert_chapter": "Probability"
   },
   {
     "q_num": 12,
@@ -25889,15 +25969,16 @@
     "id": 4268,
     "has_figure_reference": false,
     "signature": "usingintegrationfindtheareaoftheellipse\\fracx216\\fracy241includedbetweenthelinesx2andx2",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 8,
+    "chapter_name": "Applications of the Integrals",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2024"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Applications of the Integrals"
   },
   {
     "q_num": 35,
@@ -25999,15 +26080,16 @@
     "id": 4273,
     "has_figure_reference": false,
     "signature": "assertionaformatrixa\\beginbmatrix1\\cos\\theta1\\\\\\cos\\theta1\\cos\\theta\\\\1\\cos\\theta1\\endbmatrixwhere\\theta\\in02\\pia\\in24re",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 1.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2024"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 2
+    "cluster_size": 2,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": 20,
@@ -26637,15 +26719,16 @@
     "id": 4326,
     "has_figure_reference": false,
     "signature": "ifaandbareinvertiblematricesthenwhichofthefollowingisnotcorrectaab1b1a1bab1b1a1c\\textadjaaa1da1a1",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 0.66,
     "multi_year_count": 1,
     "repeat_years": [
       "2025"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 2
+    "cluster_size": 2,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": 16,
@@ -27275,15 +27358,16 @@
     "id": 4395,
     "has_figure_reference": false,
     "signature": "ifaandbareinvertiblematricesthenwhichofthefollowingisnotcorrectaab1b1a1bab1b1a1c\\textadjaaa1da1a1",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 0.66,
     "multi_year_count": 1,
     "repeat_years": [
       "2025"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 2
+    "cluster_size": 2,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": 17,
@@ -27605,15 +27689,16 @@
     "id": 4410,
     "has_figure_reference": false,
     "signature": "sketchthegraphofyx3andfindtheareaoftheregionenclosedbythecurvexaxisbetweenx6andx0usingintegration",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 8,
+    "chapter_name": "Applications of the Integrals",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2025"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Applications of the Integrals"
   },
   {
     "q_num": "32",
@@ -27671,15 +27756,16 @@
     "id": 4413,
     "has_figure_reference": false,
     "signature": "aschoolwantstoallocatestudentsintothreeclubssportsmusicanddramaunderfollowingconditionsthenumberofstudentsinsportsclubsh",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 0.66,
     "multi_year_count": 1,
     "repeat_years": [
       "2025"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 2
+    "cluster_size": 2,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": 35,
@@ -28485,15 +28571,16 @@
     "id": 4489,
     "has_figure_reference": false,
     "signature": "sketchthegraphofy\\midx3\\midandfindtheareaoftheregionenclosedbythecurvexaxisbetweenx6andx0usingintegration",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 8,
+    "chapter_name": "Applications of the Integrals",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2025"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Applications of the Integrals"
   },
   {
     "q_num": "30",
@@ -28551,15 +28638,16 @@
     "id": 4492,
     "has_figure_reference": false,
     "signature": "aschoolwantstoallocatestudentsintothreeclubssportsmusicanddramaunderfollowingconditionsthenumberofstudentsinsportsclubsh",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 0.66,
     "multi_year_count": 1,
     "repeat_years": [
       "2025"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 2
+    "cluster_size": 2,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": 33,
@@ -29497,15 +29585,16 @@
     "id": 4576,
     "has_figure_reference": false,
     "signature": "givena\\beginbmatrix444\\\\713\\\\531\\endbmatrixandb\\beginbmatrix111\\\\122\\\\213\\endbmatrixfindabhencesolvethesystemoflinearequ",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 1.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2025"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 2
+    "cluster_size": 2,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": "36",
@@ -30267,15 +30356,16 @@
     "id": 4651,
     "has_figure_reference": false,
     "signature": "givena\\beginbmatrix444\\\\713\\\\531\\endbmatrixandb\\beginbmatrix111\\\\122\\\\213\\endbmatrixfindabhencesolvethesystemoflinearequ",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 1.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2025"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 2
+    "cluster_size": 2,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": 35,
@@ -30883,15 +30973,16 @@
     "id": 4760,
     "has_figure_reference": false,
     "signature": "usingvectorsfindthevalueofksuchthatthepointsk112022and242arecollinear",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 10,
+    "chapter_name": "Vectors",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2025"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Vectors"
   },
   {
     "q_num": "25",
@@ -31565,15 +31656,16 @@
     "id": 4791,
     "has_figure_reference": false,
     "signature": "theareaoftheregionenclosedbythecurvey\\sqrtxandthelinesx0andx4andxaxisisa\\frac169squnitsb\\frac329squnitsc\\frac163squnitsd",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 8,
+    "chapter_name": "Applications of the Integrals",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2025"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 3
+    "cluster_size": 3,
+    "ncert_chapter": "Applications of the Integrals"
   },
   {
     "q_num": 18,
@@ -32402,15 +32494,16 @@
     "id": 4829,
     "has_figure_reference": false,
     "signature": "theareaoftheregionenclosedbythecurvey\\sqrtxandthelinesx0andx4andxaxisisa\\frac169squnitsb\\frac329squnitsc\\frac163squnitsd",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 8,
+    "chapter_name": "Applications of the Integrals",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2025"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 3
+    "cluster_size": 3,
+    "ncert_chapter": "Applications of the Integrals"
   },
   {
     "q_num": "16",
@@ -32534,15 +32627,16 @@
     "id": 4835,
     "has_figure_reference": false,
     "signature": "usingmatricesanddeterminantsfindthevaluesofkforwhichthepairofequations5xky27x5y3hasauniquesolution",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 0.66,
     "multi_year_count": 1,
     "repeat_years": [
       "2025"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": 22,
@@ -33062,15 +33156,16 @@
     "id": 4859,
     "has_figure_reference": false,
     "signature": "thecoordinatesofthefootoftheperpendiculardrawnfromthepointa235ontheyaxisisa005b030c205d200",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 11,
+    "chapter_name": "Three-Dimensional Geometry",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2025"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Three-Dimensional Geometry"
   },
   {
     "q_num": "7",
@@ -33172,15 +33267,16 @@
     "id": 4864,
     "has_figure_reference": false,
     "signature": "theareaoftheregionenclosedbythecurvey\\sqrtxandthelinesx0andx4andxaxisisa\\frac169squnitsb\\frac329squnitsc\\frac163squnitsd",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 8,
+    "chapter_name": "Applications of the Integrals",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2025"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 3
+    "cluster_size": 3,
+    "ncert_chapter": "Applications of the Integrals"
   },
   {
     "q_num": 12,
@@ -33986,15 +34082,16 @@
     "id": 4901,
     "has_figure_reference": false,
     "signature": "ifpa\\cupb09andpa\\capb04thenp\\barap\\barbisa03b1c13d07",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 13,
+    "chapter_name": "Probability",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2025"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 2
+    "cluster_size": 2,
+    "ncert_chapter": "Probability"
   },
   {
     "q_num": "3",
@@ -34074,15 +34171,16 @@
     "id": 4905,
     "has_figure_reference": false,
     "signature": "ifaaijisa3\\times3diagonalmatrixsuchthata111a225anda332thenaisa0b10c10d1",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 0.82,
     "multi_year_count": 1,
     "repeat_years": [
       "2025"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 2
+    "cluster_size": 2,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": "7",
@@ -34118,15 +34216,16 @@
     "id": 4907,
     "has_figure_reference": false,
     "signature": "if\\beginbmatrix4xx1\\\\23\\endbmatrixisasingularmatrixthenthevalueofxisa0b1c2d4",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 1.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2025"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": 9,
@@ -34228,15 +34327,16 @@
     "id": 4912,
     "has_figure_reference": false,
     "signature": "theareaoftheregionenclosedbetweenthecurveyxxxaxisx2andx2isa\\frac83b\\frac163c0d8",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 8,
+    "chapter_name": "Applications of the Integrals",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2025"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 3
+    "cluster_size": 3,
+    "ncert_chapter": "Applications of the Integrals"
   },
   {
     "q_num": 14,
@@ -34669,15 +34769,16 @@
     "id": 4932,
     "has_figure_reference": false,
     "signature": "afurnitureworkshopproducesthreetypesoffurniturechairstablesandbedseachdayonaparticulardaythetotalnumberoffurniturepieces",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 0.66,
     "multi_year_count": 1,
     "repeat_years": [
       "2025"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": "34(a)",
@@ -34735,15 +34836,16 @@
     "id": 4935,
     "has_figure_reference": false,
     "signature": "findthefootoftheperpendiculardrawnfromthepoint114ontheline\\fracx25\\fracy12\\fracz43",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 11,
+    "chapter_name": "Three-Dimensional Geometry",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2025"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 2
+    "cluster_size": 2,
+    "ncert_chapter": "Three-Dimensional Geometry"
   },
   {
     "q_num": "35(b)",
@@ -34955,15 +35057,16 @@
     "id": 4945,
     "has_figure_reference": false,
     "signature": "ifaaijisa3\\times3diagonalmatrixsuchthata111a225anda332thenaisa0b10c10d1",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 0.82,
     "multi_year_count": 1,
     "repeat_years": [
       "2025"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 2
+    "cluster_size": 2,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": "5",
@@ -35021,15 +35124,16 @@
     "id": 4948,
     "has_figure_reference": false,
     "signature": "ifpa\\cupb09andpa\\capb04thenp\\barap\\barbisa03b1c13d07",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 13,
+    "chapter_name": "Probability",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2025"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 2
+    "cluster_size": 2,
+    "ncert_chapter": "Probability"
   },
   {
     "q_num": "8",
@@ -35043,15 +35147,16 @@
     "id": 4949,
     "has_figure_reference": false,
     "signature": "ifamatrixaisbothsymmetricandskewsymmetricthenaisaadiagonalmatrixbzeromatrixcnonsingularmatrixdscalarmatrix",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 1.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2025"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": "9",
@@ -35087,15 +35192,16 @@
     "id": 4951,
     "has_figure_reference": false,
     "signature": "theareaoftheregionenclosedbetweenthecurveyxxxaxisx2andx2isa\\frac83b\\frac163c0d8",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 8,
+    "chapter_name": "Applications of the Integrals",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2025"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 3
+    "cluster_size": 3,
+    "ncert_chapter": "Applications of the Integrals"
   },
   {
     "q_num": 11,
@@ -35593,15 +35699,16 @@
     "id": 4974,
     "has_figure_reference": false,
     "signature": "anamountof10000isputintothreeinvestmentsattherateof1012and15perannumthecombinedannualincomeofallthreeinvestmentsis1310ho",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 0.66,
     "multi_year_count": 1,
     "repeat_years": [
       "2025"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": 34,
@@ -35615,15 +35722,16 @@
     "id": 4975,
     "has_figure_reference": false,
     "signature": "findthefootoftheperpendiculardrawnfromthepoint114ontheline\\fracx25\\fracy12\\fracz43orbfindthepointontheline\\fracx13\\fracy",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 11,
+    "chapter_name": "Three-Dimensional Geometry",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2025"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Three-Dimensional Geometry"
   },
   {
     "q_num": 35,
@@ -36033,15 +36141,16 @@
     "id": 4994,
     "has_figure_reference": false,
     "signature": "theareaoftheregionenclosedbetweenthecurveyxxxaxisx2andx2isa\\frac83b\\frac163c0d8",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 8,
+    "chapter_name": "Applications of the Integrals",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2025"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 3
+    "cluster_size": 3,
+    "ncert_chapter": "Applications of the Integrals"
   },
   {
     "q_num": "10",
@@ -36540,15 +36649,16 @@
     "id": 5017,
     "has_figure_reference": false,
     "signature": "inaroughsketchmarktheregionboundedbyy1x1x2x2andy0usingintegrationfindtheareaofthemarkedregion",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 8,
+    "chapter_name": "Applications of the Integrals",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2025"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Applications of the Integrals"
   },
   {
     "q_num": "33",
@@ -36562,15 +36672,16 @@
     "id": 5018,
     "has_figure_reference": false,
     "signature": "threestudentsrunonaracingtracksuchthattheirspeedsaddupto6\\textkmhhoweverdoublethespeedofthethirdrunneraddedtothespeedoft",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 0.66,
     "multi_year_count": 1,
     "repeat_years": [
       "2025"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": "34 (a)",
@@ -36628,15 +36739,16 @@
     "id": 5021,
     "has_figure_reference": false,
     "signature": "findthefootoftheperpendiculardrawnfromthepoint114ontheline\\fracx25\\fracy12\\fracz43",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 11,
+    "chapter_name": "Three-Dimensional Geometry",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2025"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 2
+    "cluster_size": 2,
+    "ncert_chapter": "Three-Dimensional Geometry"
   },
   {
     "q_num": "35 (b)",
@@ -37662,15 +37774,16 @@
     "id": 5068,
     "has_figure_reference": false,
     "signature": "threestudentsneharaniandsamgotoamarkettopurchasestationeryitemsnehabuys4pens3notepadsand2erasersandpays60ranibuys2pens4n",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 0.98,
     "multi_year_count": 1,
     "repeat_years": [
       "2025"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 2
+    "cluster_size": 2,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": 37,
@@ -37772,15 +37885,16 @@
     "id": 5073,
     "has_figure_reference": false,
     "signature": "ashopsellingelectronicitemssellssmartphonesofonlythreereputedcompaniesabandcbecausechancesoftheirmanufacturingadefective",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 13,
+    "chapter_name": "Probability",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2025"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Probability"
   },
   {
     "q_num": "38(i)",
@@ -38542,15 +38656,16 @@
     "id": 5108,
     "has_figure_reference": false,
     "signature": "useintegrationtofindtheareaoftheregionenclosedbycurveyx2andthestraightlinesx3x2andy0sketcharoughfiguretoillustratethebou",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 8,
+    "chapter_name": "Applications of the Integrals",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2025"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Applications of the Integrals"
   },
   {
     "q_num": 34,
@@ -38586,15 +38701,16 @@
     "id": 5110,
     "has_figure_reference": false,
     "signature": "findthefootoftheperpendiculardrawnfrompoint215totheline\\fracx1110\\fracy24\\fracz811alsofindthelengthoftheperpendicular",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 11,
+    "chapter_name": "Three-Dimensional Geometry",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2025"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Three-Dimensional Geometry"
   },
   {
     "q_num": 36,
@@ -38630,15 +38746,16 @@
     "id": 5112,
     "has_figure_reference": false,
     "signature": "threestudentsneharaniandsamgotoamarkettopurchasestationeryitemsnehabuys4pens3notepadsand2erasersandpays\\text60ranibuys2p",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 0.98,
     "multi_year_count": 1,
     "repeat_years": [
       "2025"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": "38",
@@ -39379,15 +39496,16 @@
     "id": 5146,
     "has_figure_reference": false,
     "signature": "usingintegrationfindtheareaoftheellipse\\fracx2a2\\fracy2b21boundedbetweenthelinesx\\fraca2tox\\fraca2",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 8,
+    "chapter_name": "Applications of the Integrals",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2025"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Applications of the Integrals"
   },
   {
     "q_num": "34",
@@ -39489,15 +39607,16 @@
     "id": 5151,
     "has_figure_reference": false,
     "signature": "threestudentsneharaniandsamgotoamarkettopurchasestationeryitemsnehabuys4pens3notepadsand2erasersandpays60ranibuys2pens4n",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 0.98,
     "multi_year_count": 1,
     "repeat_years": [
       "2025"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 2
+    "cluster_size": 2,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": "1",
@@ -39599,15 +39718,16 @@
     "id": 5156,
     "has_figure_reference": false,
     "signature": "ifaandbaretwosquarematriceseachoforder3witha3andb5then2abis",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 0.66,
     "multi_year_count": 1,
     "repeat_years": [
       "2025"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": 6,
@@ -39621,15 +39741,16 @@
     "id": 5157,
     "has_figure_reference": false,
     "signature": "letabeasquarematrixoforder3ifa5then\\textadjais",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 0.66,
     "multi_year_count": 1,
     "repeat_years": [
       "2025"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": 7,
@@ -40084,15 +40205,16 @@
     "id": 5178,
     "has_figure_reference": false,
     "signature": "let2x5y10and3x2y70representtheequationsoftwolinesonwhichtheantsaremovingonthegroundusingmatrixmethodfindapointcommontoth",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 0.82,
     "multi_year_count": 1,
     "repeat_years": [
       "2025"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 2
+    "cluster_size": 2,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": "28",
@@ -40216,15 +40338,16 @@
     "id": 5184,
     "has_figure_reference": false,
     "signature": "awomandiscoveredascratchalongastraightlineonacirculartabletopofradius8\\textcmshedividedthetabletopinto4equalquadrantsand",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 8,
+    "chapter_name": "Applications of the Integrals",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2025"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 3
+    "cluster_size": 3,
+    "ncert_chapter": "Applications of the Integrals"
   },
   {
     "q_num": "34",
@@ -40260,15 +40383,16 @@
     "id": 5186,
     "has_figure_reference": false,
     "signature": "findthepointqontheline\\frac2x46\\fracy12\\frac2z64atadistanceof3\\sqrt2fromthepointp123orbfindtheimageofthepoint152inthelin",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 11,
+    "chapter_name": "Three-Dimensional Geometry",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2025"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Three-Dimensional Geometry"
   },
   {
     "q_num": "36",
@@ -40414,15 +40538,16 @@
     "id": 5193,
     "has_figure_reference": false,
     "signature": "ifaandbaretwosquarematriceseachoforder3witha3andb5then2abisa30b120c15d225",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 0.66,
     "multi_year_count": 1,
     "repeat_years": [
       "2025"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 2
+    "cluster_size": 2,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": 5,
@@ -40899,15 +41024,16 @@
     "id": 5215,
     "has_figure_reference": false,
     "signature": "alet2x5y10and3x2y70representtheequationsoftwolinesonwhichtheantsaremovingonthegroundusingmatrixmethodfindapointcommontot",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 0.82,
     "multi_year_count": 1,
     "repeat_years": [
       "2025"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": 27,
@@ -41075,15 +41201,16 @@
     "id": 5223,
     "has_figure_reference": false,
     "signature": "findtheimageofthepoint152intheline\\frac2x42\\fracy2\\frac2z3findthelengthofthelinesegmentjoiningthepointsgivenpointandthei",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 11,
+    "chapter_name": "Three-Dimensional Geometry",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2025"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 2
+    "cluster_size": 2,
+    "ncert_chapter": "Three-Dimensional Geometry"
   },
   {
     "q_num": "34",
@@ -41119,15 +41246,16 @@
     "id": 5225,
     "has_figure_reference": false,
     "signature": "awomandiscoveredascratchalongastraightlineonacirculartabletopofradius8\\textcmshedividedthetabletopinto4equalquadrantsand",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 8,
+    "chapter_name": "Applications of the Integrals",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2025"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 3
+    "cluster_size": 3,
+    "ncert_chapter": "Applications of the Integrals"
   },
   {
     "q_num": "36",
@@ -41295,15 +41423,16 @@
     "id": 5233,
     "has_figure_reference": false,
     "signature": "letabeasquarematrixoforder3ifa5then\\textadjaisa5b125c25d5",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 0.66,
     "multi_year_count": 1,
     "repeat_years": [
       "2025"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": "3",
@@ -41317,15 +41446,16 @@
     "id": 5234,
     "has_figure_reference": false,
     "signature": "ifaandbaretwosquarematriceseachoforder3witha3andb5then2abisa30b120c15d225",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 0.66,
     "multi_year_count": 1,
     "repeat_years": [
       "2025"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 2
+    "cluster_size": 2,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": "4",
@@ -41934,15 +42064,16 @@
     "id": 5262,
     "has_figure_reference": false,
     "signature": "let2x5y10and3x2y70representtheequationsoftwolinesonwhichtheantsaremovingonthegroundusingmatrixmethodfindapointcommontoth",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 0.66,
     "multi_year_count": 1,
     "repeat_years": [
       "2025"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 2
+    "cluster_size": 2,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": "31",
@@ -41956,15 +42087,16 @@
     "id": 5263,
     "has_figure_reference": false,
     "signature": "ashopkeepersells50chemistry60physicsand35mathsbooksondayiandsells40chemistry45physicsand50mathsbooksondayiiifthesellingp",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 0.66,
     "multi_year_count": 1,
     "repeat_years": [
       "2025"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": "32",
@@ -42044,15 +42176,16 @@
     "id": 5267,
     "has_figure_reference": false,
     "signature": "findtheimageofthepoint152intheline\\frac2x42\\fracy2\\frac2z3findthelengthofthelinesegmentjoiningthepointsgivenpointandthei",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 11,
+    "chapter_name": "Three-Dimensional Geometry",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2025"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 2
+    "cluster_size": 2,
+    "ncert_chapter": "Three-Dimensional Geometry"
   },
   {
     "q_num": 34,
@@ -42088,15 +42221,16 @@
     "id": 5269,
     "has_figure_reference": false,
     "signature": "awomandiscoveredascratchalongastraightlineonacirculartabletopofradius8\\textcmshedividedthetabletopinto4equalquadrantsand",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 8,
+    "chapter_name": "Applications of the Integrals",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2025"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 3
+    "cluster_size": 3,
+    "ncert_chapter": "Applications of the Integrals"
   },
   {
     "q_num": 36,
@@ -42484,15 +42618,16 @@
     "id": 5425,
     "has_figure_reference": false,
     "signature": "letfxbeacontinuousfunctiononabanddifferentiableonabthenthisfunctionfxisstrictlyincreasinginabifafx0\\forallx\\inabbfx0\\for",
-    "chapter_number": 5,
-    "chapter_name": "Continuity and Differentiability",
+    "chapter_number": 6,
+    "chapter_name": "Applications of Derivatives",
     "confidence": 0.82,
     "multi_year_count": 1,
     "repeat_years": [
       "2024"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Applications of Derivatives"
   },
   {
     "q_num": 11,
@@ -42638,15 +42773,16 @@
     "id": 5432,
     "has_figure_reference": false,
     "signature": "ifpa\\midbpa\\midbthenwhichofthefollowingstatementsistrueapapabpa2\\pbcpa\\capb\\frac12\\pbdpa\\capb2\\pb",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 13,
+    "chapter_name": "Probability",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2024"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 2
+    "cluster_size": 2,
+    "ncert_chapter": "Probability"
   },
   {
     "q_num": 18,
@@ -42682,15 +42818,16 @@
     "id": 5434,
     "has_figure_reference": false,
     "signature": "assertionaformatrixa\\beginbmatrix1\\cos\\theta1\\\\\\cos\\theta1\\cos\\theta\\\\1\\cos\\theta1\\endbmatrixwhere\\theta\\in02\\pia\\in24re",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 1.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2024"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 2
+    "cluster_size": 2,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": "20",
@@ -42902,15 +43039,16 @@
     "id": 5444,
     "has_figure_reference": false,
     "signature": "if\\sqrt1x2\\sqrt1y2axyprovethat\\frac\\mathrmdy\\mathrmdx\\sqrt\\frac1y21x2orbify\\tanxxthenfind\\frac\\mathrmdy\\mathrmdx",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 5,
+    "chapter_name": "Continuity and Differentiability",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2024"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Continuity and Differentiability"
   },
   {
     "q_num": 30,
@@ -43034,15 +43172,16 @@
     "id": 5450,
     "has_figure_reference": false,
     "signature": "usingintegrationfindtheareaoftheellipse\\frac\\textx216\\frac\\texty241includedbetweenthelinesx2andx2",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 8,
+    "chapter_name": "Applications of the Integrals",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2024"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Applications of the Integrals"
   },
   {
     "q_num": "36 (i)",
@@ -43276,15 +43415,16 @@
     "id": 5461,
     "has_figure_reference": false,
     "signature": "foranytwoeventsaandbifp\\overlinea\\frac12p\\overlineb\\frac23andpa\\capb\\frac14thenp\\overlinea\\overlinebequalsa\\frac38b\\frac",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 13,
+    "chapter_name": "Probability",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2024"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Probability"
   },
   {
     "q_num": 9,
@@ -43628,15 +43768,16 @@
     "id": 5477,
     "has_figure_reference": false,
     "signature": "thecostinrupeesofproducingxitemsinfactoryeachdayisgivenbycx000013x30002x25x2200findthemarginalcostwhen150itemsareproduce",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 6,
+    "chapter_name": "Applications of Derivatives",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2024"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Applications of Derivatives"
   },
   {
     "q_num": 23,
@@ -43980,15 +44121,16 @@
     "id": 5493,
     "has_figure_reference": false,
     "signature": "theequationofthepathtraversedbytheballheadedbythefootballerisyax2bxcwhere0\\leqx\\leq14andabc\\inranda\\neq0withrespecttoaxy",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 0.66,
     "multi_year_count": 1,
     "repeat_years": [
       "2024"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": "34(a)",
@@ -44068,15 +44210,16 @@
     "id": 5497,
     "has_figure_reference": false,
     "signature": "findtheimageofthepoint121withrespecttotheline\\fracx31\\fracy12\\fracz13alsofindtheequationofthelinejoiningthegivenpointand",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 11,
+    "chapter_name": "Three-Dimensional Geometry",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2024"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Three-Dimensional Geometry"
   },
   {
     "q_num": 36,
@@ -44508,15 +44651,16 @@
     "id": 5608,
     "has_figure_reference": false,
     "signature": "thecoordinatesofthefootoftheperpendiculardrawnfromthepoint012onthexaxisaregivenbya100b200c\\sqrt500d000",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 11,
+    "chapter_name": "Three-Dimensional Geometry",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2024"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 3
+    "cluster_size": 3,
+    "ncert_chapter": "Three-Dimensional Geometry"
   },
   {
     "q_num": 10,
@@ -45278,15 +45422,16 @@
     "id": 5643,
     "has_figure_reference": false,
     "signature": "iftheobjectiveistominimizecostz16x20yfindthevaluesofxandyatwhichcostisminimumalsofindminimumcostassumingthatminimumcosti",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 12,
+    "chapter_name": "Linear Programming",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2024"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 2
+    "cluster_size": 2,
+    "ncert_chapter": "Linear Programming"
   },
   {
     "q_num": 1,
@@ -45344,15 +45489,16 @@
     "id": 5690,
     "has_figure_reference": false,
     "signature": "thecoordinatesofthefootoftheperpendiculardrawnfromthepoint012onthexaxisaregivenbya100b200c\\sqrt500d000",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 11,
+    "chapter_name": "Three-Dimensional Geometry",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2024"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 3
+    "cluster_size": 3,
+    "ncert_chapter": "Three-Dimensional Geometry"
   },
   {
     "q_num": 4,
@@ -46268,15 +46414,16 @@
     "id": 5732,
     "has_figure_reference": false,
     "signature": "afindpa",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 13,
+    "chapter_name": "Probability",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2024"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 2
+    "cluster_size": 2,
+    "ncert_chapter": "Probability"
   },
   {
     "q_num": "37",
@@ -46422,15 +46569,16 @@
     "id": 5739,
     "has_figure_reference": false,
     "signature": "iftheobjectiveistominimizecostz16x20yfindthevaluesofxandyatwhichcostisminimumalsofindminimumcostassumingthatminimumcosti",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 12,
+    "chapter_name": "Linear Programming",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2024"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 2
+    "cluster_size": 2,
+    "ncert_chapter": "Linear Programming"
   },
   {
     "q_num": 1,
@@ -46752,15 +46900,16 @@
     "id": 5794,
     "has_figure_reference": false,
     "signature": "thecoordinatesofthefootoftheperpendiculardrawnfromthepoint012onthexaxisaregivenbya100b200c\\sqrt500d000",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 11,
+    "chapter_name": "Three-Dimensional Geometry",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2024"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 3
+    "cluster_size": 3,
+    "ncert_chapter": "Three-Dimensional Geometry"
   },
   {
     "q_num": "16",
@@ -47258,15 +47407,16 @@
     "id": 5817,
     "has_figure_reference": false,
     "signature": "afindpa",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 13,
+    "chapter_name": "Probability",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2024"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 2
+    "cluster_size": 2,
+    "ncert_chapter": "Probability"
   },
   {
     "q_num": "36",
@@ -48116,15 +48266,16 @@
     "id": 6229,
     "has_figure_reference": false,
     "signature": "usingmatricessolvethefollowingsystemoflinearequations3x4y2z8\\\\2y3z3\\\\x2y6z2",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 0.66,
     "multi_year_count": 1,
     "repeat_years": [
       "2024"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": "34",
@@ -48182,15 +48333,16 @@
     "id": 6232,
     "has_figure_reference": false,
     "signature": "findthelengthandthecoordinatesofthefootoftheperpendiculardrawnfromthepointp593totheline\\fracx12\\fracy23\\fracz34alsofindt",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 11,
+    "chapter_name": "Three-Dimensional Geometry",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2024"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Three-Dimensional Geometry"
   },
   {
     "q_num": "36",
@@ -49128,15 +49280,16 @@
     "id": 6275,
     "has_figure_reference": false,
     "signature": "usingintegrationfindtheareaoftheregionenclosedbetweenthecirclex2y216andthelinesx2andx2",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 8,
+    "chapter_name": "Applications of the Integrals",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2024"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Applications of the Integrals"
   },
   {
     "q_num": 35,
@@ -49150,15 +49303,16 @@
     "id": 6276,
     "has_figure_reference": false,
     "signature": "findtheequationofthelinepassingthroughthepointofintersectionofthelines\\fracx1\\fracy12\\fracz23and\\fracx10\\fracy3\\fracz72a",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 11,
+    "chapter_name": "Three-Dimensional Geometry",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2024"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 3
+    "cluster_size": 3,
+    "ncert_chapter": "Three-Dimensional Geometry"
   },
   {
     "q_num": 36,
@@ -50008,15 +50162,16 @@
     "id": 6315,
     "has_figure_reference": false,
     "signature": "findtheequationofthelinepassingthroughthepointofintersectionofthelines\\fracx1\\fracy12\\fracz23and\\fracx10\\fracy3\\fracz72a",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 11,
+    "chapter_name": "Three-Dimensional Geometry",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2024"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 3
+    "cluster_size": 3,
+    "ncert_chapter": "Three-Dimensional Geometry"
   },
   {
     "q_num": "35",
@@ -50976,15 +51131,16 @@
     "id": 6359,
     "has_figure_reference": false,
     "signature": "findtheequationofthelinepassingthroughthepointofintersectionofthelines\\fracx1\\fracy12\\fracz23and\\fracx10\\fracy3\\fracz72a",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 11,
+    "chapter_name": "Three-Dimensional Geometry",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2024"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 3
+    "cluster_size": 3,
+    "ncert_chapter": "Three-Dimensional Geometry"
   },
   {
     "q_num": 33,
@@ -51042,15 +51198,16 @@
     "id": 6362,
     "has_figure_reference": false,
     "signature": "usingintegrationfindtheareaoftheregionenclosedbetweenthecurvey\\sqrt4x2andthelinesx1x1andthexaxis",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 8,
+    "chapter_name": "Applications of the Integrals",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2024"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Applications of the Integrals"
   },
   {
     "q_num": 36,
@@ -54430,15 +54587,16 @@
     "id": 6516,
     "has_figure_reference": false,
     "signature": "ifaandbareeventssuchthatpabpba\\neq0thenaa\\subsetbbuta\\neqbbabca\\capb\\phidpapb",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 13,
+    "chapter_name": "Probability",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2024"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 5
+    "cluster_size": 5,
+    "ncert_chapter": "Probability"
   },
   {
     "q_num": "19",
@@ -54584,15 +54742,16 @@
     "id": 6523,
     "has_figure_reference": false,
     "signature": "findthevectorequationofthelinepassingthroughthepoint235andmakingequalangleswiththecoordinateaxes",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 11,
+    "chapter_name": "Three-Dimensional Geometry",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2024"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 6
+    "cluster_size": 6,
+    "ncert_chapter": "Three-Dimensional Geometry"
   },
   {
     "q_num": "26",
@@ -54760,15 +54919,16 @@
     "id": 6531,
     "has_figure_reference": false,
     "signature": "findtheproductofthematrices\\beginbmatrix123\\\\232\\\\334\\endbmatrix\\beginbmatrix61713\\\\1458\\\\1591\\endbmatrixandhencesolveth",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 1.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2024"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 3
+    "cluster_size": 3,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": "33",
@@ -54804,15 +54964,16 @@
     "id": 6533,
     "has_figure_reference": false,
     "signature": "findthecoordinatesofthefootoftheperpendiculardrawnfromthepoint238totheline\\frac4x2\\fracy6\\frac1z3alsofindtheperpendicula",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 11,
+    "chapter_name": "Three-Dimensional Geometry",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2024"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 3
+    "cluster_size": 3,
+    "ncert_chapter": "Three-Dimensional Geometry"
   },
   {
     "q_num": "34",
@@ -55310,15 +55471,16 @@
     "id": 6556,
     "has_figure_reference": false,
     "signature": "ifaandbareeventssuchthatpabpba\\neq0thenaa\\subsetbbuta\\neqbbabca\\capb\\phidpapb",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 13,
+    "chapter_name": "Probability",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2024"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 5
+    "cluster_size": 5,
+    "ncert_chapter": "Probability"
   },
   {
     "q_num": "19",
@@ -55464,15 +55626,16 @@
     "id": 6563,
     "has_figure_reference": false,
     "signature": "findthevectorequationofthelinepassingthroughthepoint235andmakingequalangleswiththecoordinateaxes",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 11,
+    "chapter_name": "Three-Dimensional Geometry",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2024"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 6
+    "cluster_size": 6,
+    "ncert_chapter": "Three-Dimensional Geometry"
   },
   {
     "q_num": "26",
@@ -55640,15 +55803,16 @@
     "id": 6571,
     "has_figure_reference": false,
     "signature": "findtheproductofthematrices\\beginbmatrix123\\\\232\\\\334\\endbmatrix\\beginbmatrix61713\\\\1458\\\\1591\\endbmatrixandhencesolveth",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 1.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2024"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 3
+    "cluster_size": 3,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": "33",
@@ -55684,15 +55848,16 @@
     "id": 6573,
     "has_figure_reference": false,
     "signature": "findthecoordinatesofthefootoftheperpendiculardrawnfromthepoint238totheline\\frac4x2\\fracy6\\frac1z3alsofindtheperpendicula",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 11,
+    "chapter_name": "Three-Dimensional Geometry",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2024"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 3
+    "cluster_size": 3,
+    "ncert_chapter": "Three-Dimensional Geometry"
   },
   {
     "q_num": "34",
@@ -55860,15 +56025,16 @@
     "id": 6581,
     "has_figure_reference": false,
     "signature": "ifaisasquarematrixoforder2anda2thenvalueof5aisa50b10c10d50",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 0.66,
     "multi_year_count": 1,
     "repeat_years": [
       "2024"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 2
+    "cluster_size": 2,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": 3,
@@ -56344,15 +56510,16 @@
     "id": 6603,
     "has_figure_reference": false,
     "signature": "findthevectorequationofthelinepassingthroughthepoint235andmakingequalangleswiththecoordinateaxes",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 11,
+    "chapter_name": "Three-Dimensional Geometry",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2024"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 6
+    "cluster_size": 6,
+    "ncert_chapter": "Three-Dimensional Geometry"
   },
   {
     "q_num": 25,
@@ -56542,15 +56709,16 @@
     "id": 6612,
     "has_figure_reference": false,
     "signature": "ifa\\beginbmatrix123\\\\203\\\\120\\endbmatrixthenfinda1andhencesolvethefollowingsystemofequationsx2y3z12x3z2x2y3orbfindthepro",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 1.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2024"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": "34",
@@ -56718,15 +56886,16 @@
     "id": 6620,
     "has_figure_reference": false,
     "signature": "ifaisasquarematrixoforder2anda2thenvalueof5aisa50b10c10d50",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 0.66,
     "multi_year_count": 1,
     "repeat_years": [
       "2024"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 2
+    "cluster_size": 2,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": 3,
@@ -57048,15 +57217,16 @@
     "id": 6635,
     "has_figure_reference": false,
     "signature": "ifaandbareeventssuchthatpabpba\\neq0thenaa\\subsetbbuta\\neqbbabca\\capb\\phidpapb",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 13,
+    "chapter_name": "Probability",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2024"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 5
+    "cluster_size": 5,
+    "ncert_chapter": "Probability"
   },
   {
     "q_num": 18,
@@ -57202,15 +57372,16 @@
     "id": 6642,
     "has_figure_reference": false,
     "signature": "findthevectorequationofthelinepassingthroughthepoint235andmakingequalangleswiththecoordinateaxes",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 11,
+    "chapter_name": "Three-Dimensional Geometry",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2024"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 6
+    "cluster_size": 6,
+    "ncert_chapter": "Three-Dimensional Geometry"
   },
   {
     "q_num": 25,
@@ -57444,15 +57615,16 @@
     "id": 6653,
     "has_figure_reference": false,
     "signature": "findthecoordinatesofthefootoftheperpendiculardrawnfromthepoint238totheline\\frac4x2\\fracy6\\frac1z3alsofindtheperpendicula",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 11,
+    "chapter_name": "Three-Dimensional Geometry",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2024"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 3
+    "cluster_size": 3,
+    "ncert_chapter": "Three-Dimensional Geometry"
   },
   {
     "q_num": "32",
@@ -57510,15 +57682,16 @@
     "id": 6656,
     "has_figure_reference": false,
     "signature": "orbfindtheproductofthematrices\\beginbmatrix123\\\\232\\\\334\\endbmatrix\\beginbmatrix61713\\\\1458\\\\1591\\endbmatrixandhencesolv",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 1.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2024"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": "34",
@@ -57818,15 +57991,16 @@
     "id": 6670,
     "has_figure_reference": false,
     "signature": "ifaandbareeventssuchthatpabpba\\neq0thenaa\\subsetbbuta\\neqbbabca\\capb\\phidpapb",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 13,
+    "chapter_name": "Probability",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2024"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 5
+    "cluster_size": 5,
+    "ncert_chapter": "Probability"
   },
   {
     "q_num": 9,
@@ -58170,15 +58344,16 @@
     "id": 6686,
     "has_figure_reference": false,
     "signature": "findthevectorequationofthelinepassingthroughthepoint235andmakingequalangleswiththecoordinateaxes",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 11,
+    "chapter_name": "Three-Dimensional Geometry",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2024"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 6
+    "cluster_size": 6,
+    "ncert_chapter": "Three-Dimensional Geometry"
   },
   {
     "q_num": 25,
@@ -58412,15 +58587,16 @@
     "id": 6697,
     "has_figure_reference": false,
     "signature": "findtheproductofthematrices\\beginbmatrix123\\\\232\\\\334\\endbmatrix\\beginbmatrix61713\\\\1458\\\\1591\\endbmatrixandhencesolveth",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 1.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2024"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 3
+    "cluster_size": 3,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": "35",
@@ -58676,15 +58852,16 @@
     "id": 6709,
     "has_figure_reference": false,
     "signature": "ifaandbareeventssuchthatpabpba\\neq0thenaa\\subsetbbuta\\neqbbabca\\capb\\phidpapb",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 13,
+    "chapter_name": "Probability",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2024"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 5
+    "cluster_size": 5,
+    "ncert_chapter": "Probability"
   },
   {
     "q_num": 9,
@@ -59050,15 +59227,16 @@
     "id": 6726,
     "has_figure_reference": false,
     "signature": "findthevectorequationofthelinepassingthroughthepoint235andmakingequalangleswiththecoordinateaxes",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 11,
+    "chapter_name": "Three-Dimensional Geometry",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2024"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 6
+    "cluster_size": 6,
+    "ncert_chapter": "Three-Dimensional Geometry"
   },
   {
     "q_num": "25 (a)",
@@ -59446,15 +59624,16 @@
     "id": 6744,
     "has_figure_reference": false,
     "signature": "anarchitectisdevelopingaplotoflandforacommercialcomplexwhenaskedaboutthedimensionsoftheplothesaidthatifthelengthisdecrea",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 0.66,
     "multi_year_count": 1,
     "repeat_years": [
       "2024"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 3
+    "cluster_size": 3,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": "1",
@@ -59910,15 +60089,16 @@
     "id": 7386,
     "has_figure_reference": false,
     "signature": "assertionaminorofelementa13inthematrix\\beginbmatrix026\\\\121\\\\213\\endbmatrixis\\beginvmatrix12\\\\21\\endvmatrixreasonrminoro",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 1.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2024"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": "21",
@@ -60174,15 +60354,16 @@
     "id": 7398,
     "has_figure_reference": false,
     "signature": "adieticianhastodevelopaspecialdietusingtwofoodspandqeachpacketcontaining30goffoodpcontains12unitsofcalcium4unitsofiron6u",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 12,
+    "chapter_name": "Linear Programming",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2024"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Linear Programming"
   },
   {
     "q_num": "33",
@@ -60306,15 +60487,16 @@
     "id": 7404,
     "has_figure_reference": false,
     "signature": "rohiniwantstogivearectangularplotoflandforaschoolinhervillagewhenshewasaskedtomentionthedimensionsoftheplotshetoldthatif",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 0.66,
     "multi_year_count": 1,
     "repeat_years": [
       "2024"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": 37,
@@ -60372,15 +60554,16 @@
     "id": 7407,
     "has_figure_reference": false,
     "signature": "ausingfirstderivativetestfindthelength2xandbreadth2yofthesoccerfieldintermsofaandbthatmaximizethearea",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 12,
+    "chapter_name": "Linear Programming",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2024"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Linear Programming"
   },
   {
     "q_num": "37",
@@ -60394,15 +60577,16 @@
     "id": 7408,
     "has_figure_reference": false,
     "signature": "busingsecondderivativetestfindthelength2xandbreadth2yofthesoccerfieldintermsofaandbthatmaximizethearea",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 12,
+    "chapter_name": "Linear Programming",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2024"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Linear Programming"
   },
   {
     "q_num": "38",
@@ -60790,15 +60974,16 @@
     "id": 7426,
     "has_figure_reference": false,
     "signature": "theareainsqunitsoftheregionboundedbythecurveyxxaxisx0andx2is",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 8,
+    "chapter_name": "Applications of the Integrals",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2024"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Applications of the Integrals"
   },
   {
     "q_num": 14,
@@ -60944,15 +61129,16 @@
     "id": 7433,
     "has_figure_reference": false,
     "signature": "assertionaifrandsaretwoeventssuchthatprs1andps0thens\\subsetrreasonriftwoeventsaandbaresuchthatpa\\capbpbthena\\subsetb",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 13,
+    "chapter_name": "Probability",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2024"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 2
+    "cluster_size": 2,
+    "ncert_chapter": "Probability"
   },
   {
     "q_num": 21,
@@ -61384,15 +61570,16 @@
     "id": 7453,
     "has_figure_reference": false,
     "signature": "anarchitectisdevelopingaplotoflandforacommercialcomplexwhenaskedaboutthedimensionsoftheplothesaidthatifthelengthisdecrea",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 0.66,
     "multi_year_count": 1,
     "repeat_years": [
       "2024"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 3
+    "cluster_size": 3,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": 1,
@@ -61494,15 +61681,16 @@
     "id": 7458,
     "has_figure_reference": false,
     "signature": "theareainsqunitsoftheregionboundedbythecurveyxxaxisx0andx2isa\\frac32b\\frac12\\log2c2d4",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 8,
+    "chapter_name": "Applications of the Integrals",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2024"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Applications of the Integrals"
   },
   {
     "q_num": "6",
@@ -61824,15 +62012,16 @@
     "id": 7473,
     "has_figure_reference": false,
     "signature": "assertionaifrandsaretwoeventssuchthatprs1andps0thens\\subsetrreasonriftwoeventsaandbaresuchthatpa\\capbpbthena\\subsetb",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 13,
+    "chapter_name": "Probability",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2024"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 2
+    "cluster_size": 2,
+    "ncert_chapter": "Probability"
   },
   {
     "q_num": 21,
@@ -61934,15 +62123,16 @@
     "id": 7478,
     "has_figure_reference": false,
     "signature": "findthecartesianequationofthelinepassingthroughtheoriginperpendiculartoyaxisandmakingequalacuteangleswithxandzaxes",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 11,
+    "chapter_name": "Three-Dimensional Geometry",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2024"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Three-Dimensional Geometry"
   },
   {
     "q_num": "26",
@@ -62242,15 +62432,16 @@
     "id": 7492,
     "has_figure_reference": false,
     "signature": "anarchitectisdevelopingaplotoflandforacommercialcomplexwhenaskedaboutthedimensionsoftheplothesaidthatifthelengthisdecrea",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 0.66,
     "multi_year_count": 1,
     "repeat_years": [
       "2024"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 3
+    "cluster_size": 3,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": 37,
@@ -62330,15 +62521,16 @@
     "id": 7539,
     "has_figure_reference": false,
     "signature": "ifa2whereaisa2\\times2matrixthen4a1equalsa4b2c8d\\frac132",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 0.66,
     "multi_year_count": 1,
     "repeat_years": [
       "2023"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": "3",
@@ -62352,15 +62544,16 @@
     "id": 7540,
     "has_figure_reference": false,
     "signature": "letabea3\\times3matrixsuchthat\\textadja64thenaisequaltoa8onlyb8onlyc64d8or8",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 0.66,
     "multi_year_count": 1,
     "repeat_years": [
       "2023"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 2
+    "cluster_size": 2,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": 4,
@@ -62550,15 +62743,16 @@
     "id": 7549,
     "has_figure_reference": false,
     "signature": "ifp\\left\\fracab\\right0\\cdot3pa0\\cdot4andpb0\\cdot8thenp\\left\\fracba\\rightisequalto",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 13,
+    "chapter_name": "Probability",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2023"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Probability"
   },
   {
     "q_num": 13,
@@ -62726,15 +62920,16 @@
     "id": 7557,
     "has_figure_reference": false,
     "signature": "assertionaequationofalinepassingthroughthepoints123and313is\\fracx32\\fracy13\\fracz30reasonrequationofalinepassingthroughp",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 11,
+    "chapter_name": "Three-Dimensional Geometry",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2023"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 3
+    "cluster_size": 3,
+    "ncert_chapter": "Three-Dimensional Geometry"
   },
   {
     "q_num": "21",
@@ -63056,15 +63251,16 @@
     "id": 7572,
     "has_figure_reference": false,
     "signature": "ifa\\beginbmatrix122\\\\130\\\\021\\endbmatrixandb1\\beginbmatrix311\\\\1565\\\\522\\endbmatrixfindab1orbsolvethefollowingsystemofeq",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 1.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2023"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": 34,
@@ -63540,15 +63736,16 @@
     "id": 7634,
     "has_figure_reference": false,
     "signature": "ifp\\left\\fracab\\right0\\cdot3pa0\\cdot4andpb0\\cdot8thenp\\left\\fracba\\rightisequaltoa0\\cdot6b0\\cdot3c0\\cdot06d0\\cdot4",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 13,
+    "chapter_name": "Probability",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2023"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Probability"
   },
   {
     "q_num": 9,
@@ -63716,15 +63913,16 @@
     "id": 7642,
     "has_figure_reference": false,
     "signature": "if\\left\\fraca12\\right\\frac1kawhereaisa3\\times3matrixthenthevalueofkisa\\frac18b8c2d\\frac12",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 0.66,
     "multi_year_count": 1,
     "repeat_years": [
       "2023"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": "17",
@@ -63782,15 +63980,16 @@
     "id": 7645,
     "has_figure_reference": false,
     "signature": "assertionaequationofalinepassingthroughthepoints123and313is\\fracx32\\fracy13\\fracz30reasonrequationofalinepassingthroughp",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 11,
+    "chapter_name": "Three-Dimensional Geometry",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2023"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 3
+    "cluster_size": 3,
+    "ncert_chapter": "Three-Dimensional Geometry"
   },
   {
     "q_num": "20",
@@ -64222,15 +64421,16 @@
     "id": 7665,
     "has_figure_reference": false,
     "signature": "findtheareaoftheregion\\xyx2y2\\leq1\\leqxy\\usingintegration",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 8,
+    "chapter_name": "Applications of the Integrals",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2023"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Applications of the Integrals"
   },
   {
     "q_num": 34,
@@ -64288,15 +64488,16 @@
     "id": 7668,
     "has_figure_reference": false,
     "signature": "orbsolvethefollowingsystemofequationsbymatrixmethodx2y3z62xyz23x2y2z3",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 0.66,
     "multi_year_count": 1,
     "repeat_years": [
       "2023"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 2
+    "cluster_size": 2,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": "36",
@@ -64684,15 +64885,16 @@
     "id": 7758,
     "has_figure_reference": false,
     "signature": "if\\beginbmatrixx2\\\\3x1\\endbmatrixisasingularmatrixthentheproductofallpossiblevaluesofxisa6b6c0d7",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 1.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2023"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": 12,
@@ -64706,15 +64908,16 @@
     "id": 7759,
     "has_figure_reference": false,
     "signature": "letabea3\\times3matrixsuchthat\\textadja64thenaisequaltoa8onlyb8onlyc64d8or8",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 0.66,
     "multi_year_count": 1,
     "repeat_years": [
       "2023"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 2
+    "cluster_size": 2,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": 13,
@@ -64882,15 +65085,16 @@
     "id": 7767,
     "has_figure_reference": false,
     "signature": "assertionaequationofalinepassingthroughthepoints123and313is\\fracx32\\fracy13\\fracz30reasonrequationofalinepassingthroughp",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 11,
+    "chapter_name": "Three-Dimensional Geometry",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2023"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 3
+    "cluster_size": 3,
+    "ncert_chapter": "Three-Dimensional Geometry"
   },
   {
     "q_num": 21,
@@ -65234,15 +65438,16 @@
     "id": 7783,
     "has_figure_reference": false,
     "signature": "orbsolvethefollowingsystemofequationsbymatrixmethodx2y3z62xyz23x2y2z3",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 0.66,
     "multi_year_count": 1,
     "repeat_years": [
       "2023"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 2
+    "cluster_size": 2,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": "33",
@@ -65608,15 +65813,16 @@
     "id": 7800,
     "has_figure_reference": false,
     "signature": "thevalueofaifa\\beginbmatrix02x1\\sqrtx\\\\12x02\\sqrtx\\\\\\sqrtx2\\sqrtx0\\endbmatrixwherex\\in\\mathbbrisa2x12b0c2x13d2x12",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 0.98,
     "multi_year_count": 1,
     "repeat_years": [
       "2023"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": 11,
@@ -65674,15 +65880,16 @@
     "id": 7803,
     "has_figure_reference": false,
     "signature": "giventhataisasquarematrixoforder3anda2thenadj2aisequaltoa26b4c28d28",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 0.66,
     "multi_year_count": 1,
     "repeat_years": [
       "2023"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": 14,
@@ -66092,15 +66299,16 @@
     "id": 7822,
     "has_figure_reference": false,
     "signature": "makearoughsketchoftheregion\\xy0\\leqy\\leqx210\\leqy\\leqx10\\leqx\\leq2\\andfindtheareaoftheregionusingthemethodofintegration",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 8,
+    "chapter_name": "Applications of the Integrals",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2023"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Applications of the Integrals"
   },
   {
     "q_num": "33",
@@ -66136,15 +66344,16 @@
     "id": 7824,
     "has_figure_reference": false,
     "signature": "usingthematrixmethodsolvethefollowingsystemoflinearequations",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 0.66,
     "multi_year_count": 1,
     "repeat_years": [
       "2023"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": "OR",
@@ -66334,15 +66543,16 @@
     "id": 7875,
     "has_figure_reference": false,
     "signature": "if\\beginbmatrix121\\\\231\\\\3a1\\endbmatrixisnonsingularmatrixanda\\inathenthesetaisa\\mathbbrb\\0\\c\\4\\d\\mathbbr\\4\\",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 1.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2023"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 3
+    "cluster_size": 3,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": "4",
@@ -66356,15 +66566,16 @@
     "id": 7876,
     "has_figure_reference": false,
     "signature": "ifakawhereaisasquarematrixoforder2thensumofallpossiblevaluesofkisa1b1c2d0",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 0.66,
     "multi_year_count": 1,
     "repeat_years": [
       "2023"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 3
+    "cluster_size": 3,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": "5",
@@ -67104,15 +67315,16 @@
     "id": 7910,
     "has_figure_reference": false,
     "signature": "alinelpassesthroughpoint132andisperpendiculartoboththelines\\fracx1\\fracy2\\fracz3and\\fracx23\\fracy12\\fracz15findthevector",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 11,
+    "chapter_name": "Three-Dimensional Geometry",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2023"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 2
+    "cluster_size": 2,
+    "ncert_chapter": "Three-Dimensional Geometry"
   },
   {
     "q_num": "34",
@@ -67126,15 +67338,16 @@
     "id": 7911,
     "has_figure_reference": false,
     "signature": "usingintegrationfindtheareaofregionboundedbyliney\\sqrt3xthecurvey\\sqrt4x2andyaxisinfirstquadrant",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 8,
+    "chapter_name": "Applications of the Integrals",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2023"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Applications of the Integrals"
   },
   {
     "q_num": "35",
@@ -67280,15 +67493,16 @@
     "id": 7918,
     "has_figure_reference": false,
     "signature": "theuseofelectricvehicleswillcurbairpollutioninthelongruntheuseofelectricvehiclesisincreasingeveryyearandestimatedelectri",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 6,
+    "chapter_name": "Applications of Derivatives",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2023"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 2
+    "cluster_size": 2,
+    "ncert_chapter": "Applications of Derivatives"
   },
   {
     "q_num": "1",
@@ -67456,15 +67670,16 @@
     "id": 7965,
     "has_figure_reference": false,
     "signature": "ifaandbaretwoeventssuchthatpab2\\timespbaandpapb\\frac23thenpbisequaltoa\\frac29b\\frac79c\\frac49d\\frac59",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 13,
+    "chapter_name": "Probability",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2023"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Probability"
   },
   {
     "q_num": 9,
@@ -67654,15 +67869,16 @@
     "id": 7974,
     "has_figure_reference": false,
     "signature": "if\\beginbmatrix121\\\\231\\\\3a1\\endbmatrixisnonsingularmatrixanda\\inathenthesetaisa\\mathbbrb\\0\\c\\4\\d\\mathbbr\\4\\",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 1.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2023"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 3
+    "cluster_size": 3,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": 18,
@@ -67676,15 +67892,16 @@
     "id": 7975,
     "has_figure_reference": false,
     "signature": "ifakawhereaisasquarematrixoforder2thensumofallpossiblevaluesofkisa1b1c2d0",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 0.66,
     "multi_year_count": 1,
     "repeat_years": [
       "2023"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 3
+    "cluster_size": 3,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": 19,
@@ -68116,15 +68333,16 @@
     "id": 7995,
     "has_figure_reference": false,
     "signature": "alinelpassesthroughpoint132andisperpendiculartoboththelines\\fracx1\\fracy2\\fracz3and\\fracx23\\fracy12\\fracz15findthevector",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 11,
+    "chapter_name": "Three-Dimensional Geometry",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2023"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 2
+    "cluster_size": 2,
+    "ncert_chapter": "Three-Dimensional Geometry"
   },
   {
     "q_num": "33",
@@ -68138,15 +68356,16 @@
     "id": 7996,
     "has_figure_reference": false,
     "signature": "usingintegrationfindtheareaoftrianglewhoseverticesare1105and32",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 8,
+    "chapter_name": "Applications of the Integrals",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2023"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Applications of the Integrals"
   },
   {
     "q_num": "34",
@@ -68556,15 +68775,16 @@
     "id": 8047,
     "has_figure_reference": false,
     "signature": "oralinelpassesthroughpoint132andisperpendiculartoboththelines\\fracx1\\fracy2\\fracz3and\\fracx23\\fracy12\\fracz15findthevect",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 11,
+    "chapter_name": "Three-Dimensional Geometry",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2023"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Three-Dimensional Geometry"
   },
   {
     "q_num": 35,
@@ -68578,15 +68798,16 @@
     "id": 8048,
     "has_figure_reference": false,
     "signature": "findtheareaofthesmallerregionboundedbythecurves\\fracx225\\fracy2161and\\fracx5\\fracy41usingintegration",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 8,
+    "chapter_name": "Applications of the Integrals",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2023"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Applications of the Integrals"
   },
   {
     "q_num": "36",
@@ -68644,15 +68865,16 @@
     "id": 8051,
     "has_figure_reference": false,
     "signature": "theuseofelectricvehicleswillcurbairpollutioninthelongruntheuseofelectricvehiclesisincreasingeveryyearandestimatedelectri",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 6,
+    "chapter_name": "Applications of Derivatives",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2023"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 2
+    "cluster_size": 2,
+    "ncert_chapter": "Applications of Derivatives"
   },
   {
     "q_num": "1",
@@ -68710,15 +68932,16 @@
     "id": 8054,
     "has_figure_reference": false,
     "signature": "iffortwoeventsaandbpab\\frac15andpa\\frac35thenp\\left\\fracba\\rightisequaltoa\\frac12b\\frac35c\\frac25d\\frac23",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 13,
+    "chapter_name": "Probability",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2023"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Probability"
   },
   {
     "q_num": 4,
@@ -68908,15 +69131,16 @@
     "id": 8063,
     "has_figure_reference": false,
     "signature": "if\\beginbmatrix121\\\\231\\\\3a1\\endbmatrixisnonsingularmatrixanda\\inathenthesetaisa\\mathbbrb\\0\\c\\4\\d\\mathbbr\\4\\",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 1.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2023"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 3
+    "cluster_size": 3,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": "13",
@@ -68930,15 +69154,16 @@
     "id": 8064,
     "has_figure_reference": false,
     "signature": "ifakawhereaisasquarematrixoforder2thensumofallpossiblevaluesofkisa1b1c2d0",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 0.66,
     "multi_year_count": 1,
     "repeat_years": [
       "2023"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 3
+    "cluster_size": 3,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": "14",
@@ -69370,15 +69595,16 @@
     "id": 8642,
     "has_figure_reference": false,
     "signature": "inthedeterminant\\beginvmatrix235\\\\604\\\\157\\endvmatrixm23iswheremijdenotestheminorofelementaija7b13c13d7",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 0.98,
     "multi_year_count": 1,
     "repeat_years": [
       "2023"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": "6",
@@ -69546,15 +69772,16 @@
     "id": 8650,
     "has_figure_reference": false,
     "signature": "twoeventsaandbwillbeindependentifaaandbaremutuallyexclusivebpapbcpab1pa1pbdpapb1",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 13,
+    "chapter_name": "Probability",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2023"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Probability"
   },
   {
     "q_num": "36 (i)",
@@ -70207,15 +70434,16 @@
     "id": 8680,
     "has_figure_reference": false,
     "signature": "usingmatricessolvethefollowingsystemoflinearequationsxy2z73x4y5z52xy3z12",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 0.66,
     "multi_year_count": 1,
     "repeat_years": [
       "2023"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": "34",
@@ -70317,15 +70545,16 @@
     "id": 8685,
     "has_figure_reference": false,
     "signature": "ifpa\\capb\\frac18andp\\overlinea\\frac34thenp\\left\\fracba\\rightisequaltoa\\frac12b\\frac13c\\frac16d\\frac23",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 13,
+    "chapter_name": "Probability",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2023"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Probability"
   },
   {
     "q_num": 15,
@@ -70625,15 +70854,16 @@
     "id": 8699,
     "has_figure_reference": false,
     "signature": "findtheequationsofallthesidesoftheparallelogramabcdwhoseverticesarea478b234c121andd125alsofindthecoordinatesofthefootoft",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 11,
+    "chapter_name": "Three-Dimensional Geometry",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2023"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Three-Dimensional Geometry"
   },
   {
     "q_num": "36",
@@ -70823,15 +71053,16 @@
     "id": 8708,
     "has_figure_reference": false,
     "signature": "oriiibcheckwhetherthecostfunctioncxexpressedintermsofxisincreasingornotwherex0",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 6,
+    "chapter_name": "Applications of Derivatives",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2023"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Applications of Derivatives"
   },
   {
     "q_num": "38",
@@ -70889,15 +71120,16 @@
     "id": 8711,
     "has_figure_reference": false,
     "signature": "ifaadja\\beginbmatrix300\\\\030\\\\003\\endbmatrixthenthevalueofaadjaisequaltoa12b9c3d27",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 0.98,
     "multi_year_count": 1,
     "repeat_years": [
       "2023"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": 3,
@@ -71307,15 +71539,16 @@
     "id": 8730,
     "has_figure_reference": false,
     "signature": "letabeaskewsymmetricmatrixoforder3ifaxthen2023xisequaltoa2023b\\frac12023c20232d1",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 0.98,
     "multi_year_count": 1,
     "repeat_years": [
       "2023"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": 3,
@@ -71483,15 +71716,16 @@
     "id": 8738,
     "has_figure_reference": false,
     "signature": "foranytwoeventsaandbifp\\bara\\frac12p\\barb\\frac23andpa\\capb\\frac14thenp\\left\\frac\\bara\\barb\\rightequalsa\\frac38b\\frac89c\\",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 13,
+    "chapter_name": "Probability",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2023"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Probability"
   },
   {
     "q_num": 11,
@@ -71615,15 +71849,16 @@
     "id": 8744,
     "has_figure_reference": false,
     "signature": "ifa\\cdot\\textadja\\beginbmatrix300\\\\030\\\\003\\endbmatrixthenthevalueofa\\textadjaisequaltoa12b9c3d27",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 0.98,
     "multi_year_count": 1,
     "repeat_years": [
       "2023"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": "17",
@@ -72121,15 +72356,16 @@
     "id": 8767,
     "has_figure_reference": false,
     "signature": "findthevalueofbsothatthelines\\fracx12\\fracyb3\\fracz34and\\fracx45\\fracy12zareintersectinglinesalsofindthepointofintersect",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 11,
+    "chapter_name": "Three-Dimensional Geometry",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2023"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 2
+    "cluster_size": 2,
+    "ncert_chapter": "Three-Dimensional Geometry"
   },
   {
     "q_num": "34",
@@ -72187,15 +72423,16 @@
     "id": 8770,
     "has_figure_reference": false,
     "signature": "inordertosetuparainwaterharvestingsystematanktocollectrainwateristobedugthetankshouldhaveasquarebaseandacapacityof250\\te",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 6,
+    "chapter_name": "Applications of Derivatives",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2023"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Applications of Derivatives"
   },
   {
     "q_num": 3,
@@ -73309,15 +73546,16 @@
     "id": 8821,
     "has_figure_reference": false,
     "signature": "findtheinverseofthematrixa\\beginbmatrix112\\\\023\\\\324\\endbmatrixusingtheinversea1solvethesystemoflinearequationsxy2z12y3z",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 1.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2023"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 2
+    "cluster_size": 2,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": 33,
@@ -73573,15 +73811,16 @@
     "id": 8833,
     "has_figure_reference": false,
     "signature": "thevalueofthedeterminant\\beginvmatrix271\\\\111\\\\1081\\endvmatrixisa47b79c49d51",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 0.98,
     "multi_year_count": 1,
     "repeat_years": [
       "2023"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": "6",
@@ -73815,15 +74054,16 @@
     "id": 8844,
     "has_figure_reference": false,
     "signature": "fortwoeventsaandbifpa0\\cdot4pb0\\cdot8andpba0\\cdot6thenpa\\cupbisa0\\cdot24b0\\cdot3c0\\cdot48d0\\cdot96",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 13,
+    "chapter_name": "Probability",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2023"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Probability"
   },
   {
     "q_num": 17,
@@ -74057,15 +74297,16 @@
     "id": 8855,
     "has_figure_reference": false,
     "signature": "twofairdicearethrownsimultaneouslyifxdenotesthenumberofsixesfindthemeanofx",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 13,
+    "chapter_name": "Probability",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2023"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Probability"
   },
   {
     "q_num": "28",
@@ -74167,15 +74408,16 @@
     "id": 8860,
     "has_figure_reference": false,
     "signature": "findtheinverseofthematrixa\\beginbmatrix112\\\\023\\\\324\\endbmatrixusingtheinversea1solvethesystemoflinearequationsxy2z12y3z",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 1.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2023"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 2
+    "cluster_size": 2,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": 36,
@@ -74937,15 +75179,16 @@
     "id": 8895,
     "has_figure_reference": false,
     "signature": "findtheimageofthepoint215intheline\\fracx1110\\fracy24\\fracz811orbverticesbandcof\\deltaabclieontheline\\fracx22\\fracy11\\fra",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 11,
+    "chapter_name": "Three-Dimensional Geometry",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2023"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Three-Dimensional Geometry"
   },
   {
     "q_num": "33",
@@ -74959,15 +75202,16 @@
     "id": 8896,
     "has_figure_reference": false,
     "signature": "findtheinverseofthematrixa\\beginbmatrix112\\\\023\\\\324\\endbmatrixusingtheinversea1solvethesystemoflinearequationsxy2z1\\qua",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 1.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2023"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": 34,
@@ -75487,15 +75731,16 @@
     "id": 8920,
     "has_figure_reference": false,
     "signature": "ifforanytwoeventsaandbpa\\frac45andpa\\capb\\frac710thenpbaisequaltoa\\frac110b\\frac18c\\frac78d\\frac1720",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 13,
+    "chapter_name": "Probability",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2023"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 2
+    "cluster_size": 2,
+    "ncert_chapter": "Probability"
   },
   {
     "q_num": "18",
@@ -75927,15 +76172,16 @@
     "id": 8940,
     "has_figure_reference": false,
     "signature": "casestudyiigautambuys5pens3bagsand1instrumentboxandpaysasumof160fromthesameshopvikrambuys2pens1bagand3instrumentboxesand",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 0.66,
     "multi_year_count": 1,
     "repeat_years": [
       "2023"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": 38,
@@ -76059,15 +76305,16 @@
     "id": 8946,
     "has_figure_reference": false,
     "signature": "thevalueofthedeterminant\\beginvmatrix601\\\\214\\\\113\\endvmatrixisa10b8c7d7",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 0.98,
     "multi_year_count": 1,
     "repeat_years": [
       "2023"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": 6,
@@ -76323,15 +76570,16 @@
     "id": 8958,
     "has_figure_reference": false,
     "signature": "ifforanytwoeventsaandbpa\\frac45andpa\\capb\\frac710thenpbaisequaltoa\\frac110b\\frac18c\\frac78d\\frac1720",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 13,
+    "chapter_name": "Probability",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2023"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 2
+    "cluster_size": 2,
+    "ncert_chapter": "Probability"
   },
   {
     "q_num": 18,
@@ -76742,15 +76990,16 @@
     "id": 8977,
     "has_figure_reference": false,
     "signature": "casestudyigautambuys5pens3bagsand1instrumentboxandpaysasumof160fromthesameshopvikrambuys2pens1bagand3instrumentboxesandp",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 0.66,
     "multi_year_count": 1,
     "repeat_years": [
       "2023"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": "37",
@@ -77205,15 +77454,16 @@
     "id": 9195,
     "has_figure_reference": false,
     "signature": "assertionatheslopeofthenormaltothecurvey2x25xatx1is1reasonrtheslopeofthenormaltothecurveyfxatpoint\\alpha\\betaisgivenbyx\\",
-    "chapter_number": 5,
-    "chapter_name": "Continuity and Differentiability",
+    "chapter_number": 6,
+    "chapter_name": "Applications of Derivatives",
     "confidence": 0.66,
     "multi_year_count": 1,
     "repeat_years": [
       "2023"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Applications of Derivatives"
   },
   {
     "q_num": 20,
@@ -77667,15 +77917,16 @@
     "id": 9216,
     "has_figure_reference": false,
     "signature": "10studentswereselectedfromaschoolonthebasisofvaluesforgivingawardsandweredividedintothreegroupsthefirstgroupcompriseshar",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 0.98,
     "multi_year_count": 1,
     "repeat_years": [
       "2023"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": "37",
@@ -77689,15 +77940,16 @@
     "id": 9217,
     "has_figure_reference": false,
     "signature": "acompanynotesthathighersalesofaparticularitemwhichitproducedisachievedbyloweringthepricechargedasaresultthetotalrevenuef",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 12,
+    "chapter_name": "Linear Programming",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2023"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Linear Programming"
   },
   {
     "q_num": 38,
@@ -77865,15 +78117,16 @@
     "id": 9225,
     "has_figure_reference": false,
     "signature": "forwhichvalueofxarethedeterminants\\beginvmatrix2x3\\\\5x\\endvmatrixand\\beginvmatrix101\\\\32\\endvmatrixequala\\pm3b3c\\pm2d2",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 1.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2023"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 2
+    "cluster_size": 2,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": 8,
@@ -78415,15 +78668,16 @@
     "id": 9250,
     "has_figure_reference": false,
     "signature": "ifmatrixa\\beginbmatrix321\\\\413\\\\111\\endbmatrixfinda1andhencesolvethefollowingsystemoflinearequations3x2yz20004xy3z2500xy",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 1.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2023"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": "33",
@@ -79361,15 +79615,16 @@
     "id": 9293,
     "has_figure_reference": false,
     "signature": "leta\\beginbmatrix111\\\\678\\\\678\\endbmatrixfinda1andhencesolvethefollowingsystemoflinearequations\\beginalignxyz5000\\\\6x7y8",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 0.98,
     "multi_year_count": 1,
     "repeat_years": [
       "2023"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": "35",
@@ -79559,15 +79814,16 @@
     "id": 9302,
     "has_figure_reference": false,
     "signature": "forwhichvalueofxarethedeterminants\\beginvmatrix2x3\\\\5x\\endvmatrixand\\beginvmatrix101\\\\32\\endvmatrixequala\\pm3b3c\\pm2d2",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 1.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2023"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 2
+    "cluster_size": 2,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": 4,
@@ -80263,15 +80519,16 @@
     "id": 9334,
     "has_figure_reference": false,
     "signature": "ifa\\beginbmatrix111\\\\102\\\\311\\endbmatrixfinda1andhencesolvethefollowingsystemoflinearequationsxyz6x2z73xyz12",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 0.98,
     "multi_year_count": 1,
     "repeat_years": [
       "2023"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": "34(a)",
@@ -80571,15 +80828,16 @@
     "id": 9348,
     "has_figure_reference": false,
     "signature": "ifa\\beginbmatrix43\\\\93\\endbmatrixthenaisequaltoa15b42c0d25",
-    "chapter_number": 3,
-    "chapter_name": "Matrices",
+    "chapter_number": 4,
+    "chapter_name": "Determinants",
     "confidence": 0.98,
     "multi_year_count": 1,
     "repeat_years": [
       "2023"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Determinants"
   },
   {
     "q_num": 4,
@@ -81187,15 +81445,16 @@
     "id": 9376,
     "has_figure_reference": false,
     "signature": "letaandbbetheeventssuchthatpa\\frac12pb\\frac712andp\\textnotaornotb\\frac14findwhetheraandbareimutuallyexclusiveiiindepende",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 13,
+    "chapter_name": "Probability",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2023"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Probability"
   },
   {
     "q_num": "32",
@@ -81319,15 +81578,16 @@
     "id": 9382,
     "has_figure_reference": false,
     "signature": "ravindrastartedtorunasmallfactoryofmanufacturingledbulbshecansellxbulbsatapriceof300xeachthecostpriceofxbulbsis2x260x18b",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 6,
+    "chapter_name": "Applications of Derivatives",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2023"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Applications of Derivatives"
   },
   {
     "q_num": "38",
@@ -81451,15 +81711,16 @@
     "id": 9405,
     "has_figure_reference": false,
     "signature": "letaandbbetwoeventssuchthatpa\\frac58pb\\frac12andpab\\frac34findthevalueofpba",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 13,
+    "chapter_name": "Probability",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2022"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 3
+    "cluster_size": 3,
+    "ncert_chapter": "Probability"
   },
   {
     "q_num": "5",
@@ -81737,15 +81998,16 @@
     "id": 9456,
     "has_figure_reference": false,
     "signature": "letaandbbetwoeventssuchthatpa\\frac58pb\\frac12andpab\\frac34findthevalueofpba",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 13,
+    "chapter_name": "Probability",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2022"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 3
+    "cluster_size": 3,
+    "ncert_chapter": "Probability"
   },
   {
     "q_num": 3,
@@ -82024,15 +82286,16 @@
     "id": 9507,
     "has_figure_reference": false,
     "signature": "letaandbbetwoeventssuchthatpa\\frac58pb\\frac12andpab\\frac34findthevalueofpba",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 13,
+    "chapter_name": "Probability",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2022"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 3
+    "cluster_size": 3,
+    "ncert_chapter": "Probability"
   },
   {
     "q_num": 2,
@@ -82289,15 +82552,16 @@
     "id": 9519,
     "has_figure_reference": false,
     "signature": "usingintegrationfindtheareaoftheregionenclosedbythecurveyx2thexaxisandtheordinatesx2andx1orusingintegrationfindtheareaof",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 8,
+    "chapter_name": "Applications of the Integrals",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2022"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Applications of the Integrals"
   },
   {
     "q_num": "14",
@@ -82465,15 +82729,16 @@
     "id": 9556,
     "has_figure_reference": false,
     "signature": "writethecartesianequationofthelinepqpassingthroughpointsp221andq512hencefindtheycoordinateofthepointonthelinepqwhosezcoo",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 11,
+    "chapter_name": "Three-Dimensional Geometry",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2022"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 3
+    "cluster_size": 3,
+    "ncert_chapter": "Three-Dimensional Geometry"
   },
   {
     "q_num": "7",
@@ -82663,15 +82928,16 @@
     "id": 9565,
     "has_figure_reference": false,
     "signature": "usingintegrationfindtheareaofthesmallerregionenclosedbythecurve4x24y29andtheline2x2y3",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 8,
+    "chapter_name": "Applications of the Integrals",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2022"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 2
+    "cluster_size": 2,
+    "ncert_chapter": "Applications of the Integrals"
   },
   {
     "q_num": "13",
@@ -82817,15 +83083,16 @@
     "id": 9638,
     "has_figure_reference": false,
     "signature": "writethecartesianequationofthelinepqpassingthroughpointsp221andq512hencefindtheycoordinateofthepointonthelinepqwhosezcoo",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 11,
+    "chapter_name": "Three-Dimensional Geometry",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2022"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 3
+    "cluster_size": 3,
+    "ncert_chapter": "Three-Dimensional Geometry"
   },
   {
     "q_num": "6",
@@ -82971,15 +83238,16 @@
     "id": 9645,
     "has_figure_reference": false,
     "signature": "usingvectorsfindthevalueofbifthepointsa112b2b5andc3116arecollinearalsodeterminetheratioinwhichthepointbdividesthelineseg",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 10,
+    "chapter_name": "Vectors",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2022"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Vectors"
   },
   {
     "q_num": "11(a)",
@@ -82993,15 +83261,16 @@
     "id": 9646,
     "has_figure_reference": false,
     "signature": "usingintegrationfindtheareaofthesmallerregionenclosedbythecurve4x24y29andtheline2x2y3",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 8,
+    "chapter_name": "Applications of the Integrals",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2022"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 2
+    "cluster_size": 2,
+    "ncert_chapter": "Applications of the Integrals"
   },
   {
     "q_num": "11(b)",
@@ -83675,15 +83944,16 @@
     "id": 9677,
     "has_figure_reference": false,
     "signature": "makearoughsketchoftheregion\\xy0\\ley\\lex20\\ley\\lex0\\lex\\le2\\andfindtheareaoftheregionusingintegration",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 8,
+    "chapter_name": "Applications of the Integrals",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2022"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Applications of the Integrals"
   },
   {
     "q_num": 33,
@@ -83873,15 +84143,16 @@
     "id": 9749,
     "has_figure_reference": false,
     "signature": "writethecartesianequationofthelinepqpassingthroughpointsp221andq512hencefindtheycoordinateofthepointonthelinepqwhosezcoo",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 11,
+    "chapter_name": "Three-Dimensional Geometry",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2022"
     ],
     "is_parallel_clone": true,
-    "cluster_size": 3
+    "cluster_size": 3,
+    "ncert_chapter": "Three-Dimensional Geometry"
   },
   {
     "q_num": "2",
@@ -85281,15 +85552,16 @@
     "id": 10060,
     "has_figure_reference": false,
     "signature": "findtheareaoftheregionenclosedbythecurvesy2xx\\frac14y0andx1usingintegration",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 8,
+    "chapter_name": "Applications of the Integrals",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2022"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Applications of the Integrals"
   },
   {
     "q_num": "14",
@@ -85457,15 +85729,16 @@
     "id": 10068,
     "has_figure_reference": false,
     "signature": "findtheareaoftheregion\\xyx2\\ley\\lex2\\usingintegration",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 8,
+    "chapter_name": "Applications of the Integrals",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2022"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Applications of the Integrals"
   },
   {
     "q_num": "8",
@@ -85787,15 +86060,16 @@
     "id": 10083,
     "has_figure_reference": false,
     "signature": "usingintegrationfindtheareaoftheregion\\xyy2\\leqx\\leqy\\",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 8,
+    "chapter_name": "Applications of the Integrals",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2022"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Applications of the Integrals"
   },
   {
     "q_num": "8",
@@ -86667,15 +86941,16 @@
     "id": 10220,
     "has_figure_reference": false,
     "signature": "findtheareaoftheregionxyx2y29xy3usingintegration",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 8,
+    "chapter_name": "Applications of the Integrals",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2022"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Applications of the Integrals"
   },
   {
     "q_num": "7",
@@ -87437,15 +87712,16 @@
     "id": 10255,
     "has_figure_reference": false,
     "signature": "findtheareaoftheregion\\xyx2y2\\leq9xy\\geq3\\usingintegration",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 8,
+    "chapter_name": "Applications of the Integrals",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2022"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Applications of the Integrals"
   },
   {
     "q_num": "9(b)",
@@ -87833,15 +88109,16 @@
     "id": 10273,
     "has_figure_reference": false,
     "signature": "findthevectorandthecartesianequationofthelinepassingthroughthepointsa132andb422alsofindthevalueof\\lambdaifthepointp55\\la",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 11,
+    "chapter_name": "Three-Dimensional Geometry",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2022"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Three-Dimensional Geometry"
   },
   {
     "q_num": "10(b)",
@@ -87899,15 +88176,16 @@
     "id": 10276,
     "has_figure_reference": false,
     "signature": "usingintegrationfindtheareaoftheregionoftheellipse\\fracx216\\fracy291boundedbytheordinatesx0x2",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 8,
+    "chapter_name": "Applications of the Integrals",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2022"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Applications of the Integrals"
   },
   {
     "q_num": "12(b)",
@@ -87921,15 +88199,16 @@
     "id": 10277,
     "has_figure_reference": false,
     "signature": "usingintegrationfindtheareaoftheregionofthecurvey24xboundedbytheordinatesx1x4",
-    "chapter_number": null,
-    "chapter_name": "Unclassified",
+    "chapter_number": 8,
+    "chapter_name": "Applications of the Integrals",
     "confidence": 0.0,
     "multi_year_count": 1,
     "repeat_years": [
       "2022"
     ],
     "is_parallel_clone": false,
-    "cluster_size": 1
+    "cluster_size": 1,
+    "ncert_chapter": "Applications of the Integrals"
   },
   {
     "q_num": "13",
