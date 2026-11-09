@@ -1,0 +1,3091 @@
+{
+  "summary": {
+    "total_multi_year": 19,
+    "total_high_frequency": 761,
+    "total_distinct_clusters": 7769
+  },
+  "multi_year_repeats": [
+    {
+      "id": 1719,
+      "subject": "Mathematics",
+      "chapter_number": 1,
+      "chapter_name": "Relations and Functions",
+      "marks": 1,
+      "text": "Questions number 19 and 20 are Assertion and Reason based questions. Two statements are given, one labelled Assertion (A) and the other labelled Reason (R). Select the correct answer from the codes (A), (B), (C) and (D) as given below.\n(A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of the Assertion (A).\n(B) Both Assertion (A) and Reason (R) are true, but Reason (R) is not the correct explanation of the Assertion (A).\n(C) Assertion (A) is true, but Reason (R) is false.\n(D) Assertion (A) is false, but Reason (R) is true.\n\nAssertion (A) : A relation $R$ on the set $\\{1, 2, 3\\}$ defined as $R = \\{(1, 1), (1, 2), (2, 1), (2, 2), (3, 3)\\}$ is an equivalence relation.\nReason (R) : A relation that is reflexive, symmetric and transitive is an equivalence relation.",
+      "section": "Section A",
+      "unique_years_count": 2,
+      "years": [
+        "2025",
+        "2026"
+      ],
+      "total_appearances": 6,
+      "appearance_sets": [
+        "2025",
+        "2026"
+      ],
+      "slug": "q-1719"
+    },
+    {
+      "id": 3161,
+      "subject": "Chemistry",
+      "chapter_number": 8,
+      "chapter_name": "Aldehydes, Ketones and Carboxylic Acids",
+      "marks": 5,
+      "text": "(a) (i) An organic compound (X) having molecular formula $\\text{C}_5\\text{H}_{10}\\text{O}$ can show various properties depending on its structures. Draw each of the structures if it :\n(I) shows Cannizzaro reaction.  (1)\n(II) reduces Tollens' reagent and has a chiral carbon.  (1)\n(III) gives positive iodoform test.  (1)\n(ii) Write the reaction involved in the following :  (2)\n(I) Clemmensen reduction\n(II) Etard reaction",
+      "section": "",
+      "unique_years_count": 2,
+      "years": [
+        "2023",
+        "2025"
+      ],
+      "total_appearances": 4,
+      "appearance_sets": [
+        "2023",
+        "2025"
+      ],
+      "slug": "q-3161"
+    },
+    {
+      "id": 132,
+      "subject": "Chemistry",
+      "chapter_number": null,
+      "chapter_name": "Unclassified",
+      "marks": 1,
+      "text": "For questions number 13 to 16, two statements are given — one labelled as Assertion (A) and the other labelled as Reason (R). Select the correct answer to these questions from the codes (A), (B), (C) and (D) as given below :\n(A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of the Assertion (A).\n(B) Both Assertion (A) and Reason (R) are true, but Reason (R) is not the correct explanation of the Assertion (A).\n(C) Assertion (A) is true, but Reason (R) is false.\n(D) Assertion (A) is false, but Reason (R) is true.\n\nAssertion (A) : The presence of $-\\text{OH}$ group in phenols directs the incoming group to ortho and para positions.\nReason (R) : $-\\text{OH}$ group in phenols activates the aromatic ring towards electrophilic substitution reaction.",
+      "section": "Section A",
+      "unique_years_count": 2,
+      "years": [
+        "2025",
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2025",
+        "2026"
+      ],
+      "slug": "q-132"
+    },
+    {
+      "id": 917,
+      "subject": "Chemistry",
+      "chapter_number": 5,
+      "chapter_name": "Coordination Compounds",
+      "marks": 3,
+      "text": "(a) When a coordination compound $\text{CoCl}_3 \\cdot 6\text{NH}_3$ is mixed with excess of $\text{AgNO}_3$ solution, $3$ moles of $\text{AgCl}$ are precipitated per mole of the compound. Write the structural formula of the complex, IUPAC name, its hybridisation and magnetic behaviour on the basis of valence bond theory.\n\nOR\n\n(b) (i) How many geometrical isomers are possible in each of the following complexes ?\n(I) $[\text{Cr}(\text{C}_2\text{O}_4)_3]^{3-}$\n(II) $[\text{Co}(\text{NH}_3)_3\text{Cl}_3]$\n(ii) $[\text{Co}(\text{NH}_3)_6]^{3+}$ is an inner orbital complex whereas $[\text{Ni}(\text{NH}_3)_6]^{2+}$ is an outer orbital complex. Why ?\n[Atomic number : $\text{Co} = 27, \text{Ni} = 28$]\n(iii) Write the formula of Wilkinson catalyst and its use.",
+      "section": "",
+      "unique_years_count": 2,
+      "years": [
+        "2025",
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2025",
+        "2026"
+      ],
+      "slug": "q-917"
+    },
+    {
+      "id": 1720,
+      "subject": "Mathematics",
+      "chapter_number": 12,
+      "chapter_name": "Linear Programming",
+      "marks": 1,
+      "text": "Questions number 19 and 20 are Assertion and Reason based questions. Two statements are given, one labelled Assertion (A) and the other labelled Reason (R). Select the correct answer from the codes (A), (B), (C) and (D) as given below.\n(A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of the Assertion (A).\n(B) Both Assertion (A) and Reason (R) are true, but Reason (R) is not the correct explanation of the Assertion (A).\n(C) Assertion (A) is true, but Reason (R) is false.\n(D) Assertion (A) is false, but Reason (R) is true.\n\nAssertion (A) : Consider a Linear Programming Problem with minimise $Z = x + 2y$ subject to constraints $2x + y \\ge 3$, $x + 2y \\ge 6$, $x, y \\ge 0$ which gives minimum $Z$ at infinitely many points. The corner points of feasible region are $(0, 3)$ and $(6, 0)$.\nReason (R) : If two corner points produce the same minimum value of the objective function, then every point on the line segment joining the points will give the same minimum value.",
+      "section": "Section A",
+      "unique_years_count": 2,
+      "years": [
+        "2025",
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2025",
+        "2026"
+      ],
+      "slug": "q-1720"
+    },
+    {
+      "id": 8100,
+      "subject": "Chemistry",
+      "chapter_number": 3,
+      "chapter_name": "Chemical Kinetics",
+      "marks": 2,
+      "text": "Write two differences between order of reaction and molecularity of reaction.",
+      "section": "SECTION B",
+      "unique_years_count": 2,
+      "years": [
+        "2022",
+        "2023"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2022",
+        "2023"
+      ],
+      "slug": "q-8100"
+    },
+    {
+      "id": 8973,
+      "subject": "Mathematics",
+      "chapter_number": 7,
+      "chapter_name": "Integrals",
+      "marks": 5,
+      "text": "Evaluate : $\\int_{0}^{\\pi} \\frac{x}{1 + \\sin x} dx$",
+      "section": "Section D",
+      "unique_years_count": 2,
+      "years": [
+        "2022",
+        "2023"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2022",
+        "2023"
+      ],
+      "slug": "q-8973"
+    },
+    {
+      "id": 15,
+      "subject": "Chemistry",
+      "chapter_number": 4,
+      "chapter_name": "The d- and f-Block Elements",
+      "marks": 1,
+      "text": "Assertion (A) : Actinoids show wide range of oxidation states.\nReason (R) : Actinoids are radioactive in nature.",
+      "section": "Section A",
+      "unique_years_count": 2,
+      "years": [
+        "2025",
+        "2026"
+      ],
+      "total_appearances": 2,
+      "appearance_sets": [
+        "2025",
+        "2026"
+      ],
+      "slug": "q-15"
+    },
+    {
+      "id": 727,
+      "subject": "Chemistry",
+      "chapter_number": 10,
+      "chapter_name": "Biomolecules",
+      "marks": 4,
+      "text": "Carbohydrates are broadly classified into three groups — monosaccharides, oligosaccharides and polysaccharides. Monosaccharides are held together by glycosidic linkages to form disaccharides and polysaccharides. An important monosaccharide glucose was assigned an open chain structure on the basis of its reaction with different reagents, such as $\text{HI}$, to confirm the presence of a straight chain, and $\text{H}_2\text{N}-\text{OH}$ or $\text{HCN}$ to confirm the presence of a carbonyl group.\n(a) How do you confirm the presence of straight chain and the presence of a carbonyl group in the open chain structure of glucose ?\n(b) (i) What are polysaccharides ?\nOR\n(b) (ii) How are carbohydrates used as food storage molecules in plants and animals ?\n(c) Define glycosidic linkage.",
+      "section": "",
+      "unique_years_count": 2,
+      "years": [
+        "2023",
+        "2026"
+      ],
+      "total_appearances": 2,
+      "appearance_sets": [
+        "2023",
+        "2026"
+      ],
+      "slug": "q-727"
+    },
+    {
+      "id": 836,
+      "subject": "Chemistry",
+      "chapter_number": 1,
+      "chapter_name": "Solutions",
+      "marks": 3,
+      "text": "An antifreeze solution is prepared by dissolving $31\\text{ g}$ of ethylene glycol (Molar mass = $62\\text{ g mol}^{-1}$) in $600\\text{ g}$ of water. Calculate the freezing point of the solution. ($K_f$ for water = $1\\cdot86\\text{ K kg mol}^{-1}$)",
+      "section": "",
+      "unique_years_count": 2,
+      "years": [
+        "2024",
+        "2026"
+      ],
+      "total_appearances": 2,
+      "appearance_sets": [
+        "2024",
+        "2026"
+      ],
+      "slug": "q-836"
+    },
+    {
+      "id": 1333,
+      "subject": "Mathematics",
+      "chapter_number": 10,
+      "chapter_name": "Vectors",
+      "marks": 1,
+      "text": "Questions number 19 and 20 are Assertion and Reason based questions. Two statements are given, one labelled Assertion (A) and the other labelled Reason (R). Select the correct answer from the codes (A), (B), (C) and (D) as given below.\n(A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of the Assertion (A).\n(B) Both Assertion (A) and Reason (R) are true, but Reason (R) is not the correct explanation of the Assertion (A).\n(C) Assertion (A) is true, but Reason (R) is false.\n(D) Assertion (A) is false, but Reason (R) is true.\n\nAssertion (A) : The vectors $\\vec{a}$ and $$-2\\vec{a}$$, where $\\vec{a} \\neq \\vec{0}$ are collinear vectors.\nReason (R) : $\\vec{a} \\cdot $-2\\vec{a}$ = 0$.",
+      "section": "Section A",
+      "unique_years_count": 2,
+      "years": [
+        "2025",
+        "2026"
+      ],
+      "total_appearances": 2,
+      "appearance_sets": [
+        "2025",
+        "2026"
+      ],
+      "slug": "q-1333"
+    },
+    {
+      "id": 2714,
+      "subject": "Chemistry",
+      "chapter_number": 10,
+      "chapter_name": "Biomolecules",
+      "marks": 1,
+      "text": "Assertion (A) : When glucose is added to water, an elevation in boiling point is observed.\nReason (R) : The lowering of vapour pressure causes elevation in the boiling point.",
+      "section": "Section A",
+      "unique_years_count": 2,
+      "years": [
+        "2023",
+        "2025"
+      ],
+      "total_appearances": 2,
+      "appearance_sets": [
+        "2023",
+        "2025"
+      ],
+      "slug": "q-2714"
+    },
+    {
+      "id": 4062,
+      "subject": "Mathematics",
+      "chapter_number": null,
+      "chapter_name": "Unclassified",
+      "marks": 1,
+      "text": "Questions number 19 and 20 are Assertion and Reason based questions. Two statements are given, one labelled Assertion (A) and the other labelled Reason (R). Select the correct answer from the codes (A), (B), (C) and (D) as given below.\n(A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of the Assertion (A).\n(B) Both Assertion (A) and Reason (R) are true, but Reason (R) is not the correct explanation of the Assertion (A).\n(C) Assertion (A) is true, but Reason (R) is false.\n(D) Assertion (A) is false, but Reason (R) is true.\n\nAssertion (A) : Solution set of inequality $|3x - 2| \\le \\frac{1}{2}, x \\in \\text{R}$ is $\\left[\\frac{1}{2}, \\frac{5}{6}\\right]$.\nReason (R) : $|x - a| \\le r \\iff x \\le a - r \\quad \\text{or} \\quad x \\ge a + r$.",
+      "section": "Section A",
+      "unique_years_count": 2,
+      "years": [
+        "2024",
+        "2025"
+      ],
+      "total_appearances": 2,
+      "appearance_sets": [
+        "2024",
+        "2025"
+      ],
+      "slug": "q-4062"
+    },
+    {
+      "id": 4802,
+      "subject": "Mathematics",
+      "chapter_number": 7,
+      "chapter_name": "Integrals",
+      "marks": 5,
+      "text": "Evaluate : $\\int_{\\pi/2}^{\\pi} e^x \\left$ \\frac{1-\\sin x}{1-\\cos x} \\right$ dx$",
+      "section": null,
+      "unique_years_count": 2,
+      "years": [
+        "2023",
+        "2025"
+      ],
+      "total_appearances": 2,
+      "appearance_sets": [
+        "2023",
+        "2025"
+      ],
+      "slug": "q-4802"
+    },
+    {
+      "id": 5556,
+      "subject": "Physics",
+      "chapter_number": 4,
+      "chapter_name": "Moving Charges and Magnetism",
+      "marks": 1,
+      "text": "A long straight wire of circular cross section of radius 'a' carries a steady current I. The current is uniformly distributed across its cross section. The ratio of magnitudes of the magnetic field at a point $a/2$ above the surface of wire to that of a point $a/2$ below its surface is (A) 4:1 (B) 1:1 (C) 4:3 (D) 3:4",
+      "section": "Section A",
+      "unique_years_count": 2,
+      "years": [
+        "2022",
+        "2024"
+      ],
+      "total_appearances": 2,
+      "appearance_sets": [
+        "2022",
+        "2024"
+      ],
+      "slug": "q-5556"
+    },
+    {
+      "id": 5880,
+      "subject": "Chemistry",
+      "chapter_number": 3,
+      "chapter_name": "Chemical Kinetics",
+      "marks": 1,
+      "text": "Assertion (A) : For a zero order reaction, the unit of rate constant and rate of reaction are same.\nReason (R) : Rate of reaction for zero order reaction is independent of concentration of reactant.",
+      "section": null,
+      "unique_years_count": 2,
+      "years": [
+        "2023",
+        "2024"
+      ],
+      "total_appearances": 2,
+      "appearance_sets": [
+        "2023",
+        "2024"
+      ],
+      "slug": "q-5880"
+    },
+    {
+      "id": 6172,
+      "subject": "Chemistry",
+      "chapter_number": 10,
+      "chapter_name": "Biomolecules",
+      "marks": 1,
+      "text": "Assertion (A) : Vitamin C cannot be stored in our body.\nReason (R) : Vitamin C is fat soluble and is excreted from the body in urine.",
+      "section": "Section A",
+      "unique_years_count": 2,
+      "years": [
+        "2023",
+        "2024"
+      ],
+      "total_appearances": 2,
+      "appearance_sets": [
+        "2023",
+        "2024"
+      ],
+      "slug": "q-6172"
+    },
+    {
+      "id": 6174,
+      "subject": "Chemistry",
+      "chapter_number": 1,
+      "chapter_name": "Solutions",
+      "marks": 1,
+      "text": "Assertion (A) : When NaCl is added to water, a depression in freezing point is observed. Reason (R) : The lowering of vapour pressure of a solution causes depression in the freezing point.",
+      "section": null,
+      "unique_years_count": 2,
+      "years": [
+        "2023",
+        "2024"
+      ],
+      "total_appearances": 2,
+      "appearance_sets": [
+        "2023",
+        "2024"
+      ],
+      "slug": "q-6174"
+    },
+    {
+      "id": 7371,
+      "subject": "Mathematics",
+      "chapter_number": null,
+      "chapter_name": "Unclassified",
+      "marks": 1,
+      "text": "If $x + y = 8$, then the maximum value of $(xy)$ is :\n(A) 12\n(B) 16\n(C) 20\n(D) 24",
+      "section": "Section A",
+      "unique_years_count": 2,
+      "years": [
+        "2023",
+        "2024"
+      ],
+      "total_appearances": 2,
+      "appearance_sets": [
+        "2023",
+        "2024"
+      ],
+      "slug": "q-7371"
+    }
+  ],
+  "high_frequency_clones": [
+    {
+      "id": 6502,
+      "subject": "Mathematics",
+      "chapter_number": 3,
+      "chapter_name": "Matrices",
+      "marks": 1,
+      "text": "If inverse of matrix $\\begin{bmatrix} 7 & -3 & -3 \\\\ -1 & 1 & 0 \\\\ -1 & 0 & 1 \\end{bmatrix}$ is the matrix $\\begin{bmatrix} 1 & 3 & 3 \\\\ 1 & \\lambda & 3 \\\\ 1 & 3 & 4 \\end{bmatrix}$, then value of $\\lambda$ is:\n(A) -4\n(B) 1\n(C) 3\n(D) 4",
+      "section": "Section A",
+      "unique_years_count": 1,
+      "years": [
+        "2024"
+      ],
+      "total_appearances": 6,
+      "appearance_sets": [
+        "2024"
+      ],
+      "slug": "q-6502"
+    },
+    {
+      "id": 6504,
+      "subject": "Mathematics",
+      "chapter_number": 3,
+      "chapter_name": "Matrices",
+      "marks": 1,
+      "text": "Find the matrix $A^2$, where $A = [a_{ij}]$ is a $2 \\times 2$ matrix whose elements are given by $a_{ij} = \\text{maximum} (i, j) - \\text{minimum} (i, j) :$ (A) $\\begin{bmatrix} 0 & 0 \\\\ 0 & 0 \\end{bmatrix}$ (B) $\\begin{bmatrix} 0 & 1 \\\\ 1 & 0 \\end{bmatrix}$ (C) $\\begin{bmatrix} 1 & 0 \\\\ 0 & 1 \\end{bmatrix}$ (D) $\\begin{bmatrix} 1 & 1 \\\\ 1 & 1 \\end{bmatrix}$",
+      "section": "Section A",
+      "unique_years_count": 1,
+      "years": [
+        "2024"
+      ],
+      "total_appearances": 6,
+      "appearance_sets": [
+        "2024"
+      ],
+      "slug": "q-6504"
+    },
+    {
+      "id": 6507,
+      "subject": "Mathematics",
+      "chapter_number": 1,
+      "chapter_name": "Relations and Functions",
+      "marks": 1,
+      "text": "The function $f(x) = \\frac{x}{2} + \\frac{2}{x}$ has a local minima at $x$ equal to : (A) $2$ (B) $1$ (C) $0$ (D) $-2$",
+      "section": "Section A",
+      "unique_years_count": 1,
+      "years": [
+        "2024"
+      ],
+      "total_appearances": 6,
+      "appearance_sets": [
+        "2024"
+      ],
+      "slug": "q-6507"
+    },
+    {
+      "id": 6513,
+      "subject": "Mathematics",
+      "chapter_number": 10,
+      "chapter_name": "Vectors",
+      "marks": 1,
+      "text": "The position vectors of points P and Q are $\\vec{p}$ and $\\vec{q}$ respectively. The point R divides line segment PQ in the ratio $3:1$ and S is the mid-point of line segment PR. The position vector of S is : (A) $\\frac{\\vec{p} + 3\\vec{q}}{4}$ (B) $\\frac{\\vec{p} + 3\\vec{q}}{8}$ (C) $\\frac{5\\vec{p} + 3\\vec{q}}{4}$ (D) $\\frac{5\\vec{p} + 3\\vec{q}}{8}$",
+      "section": null,
+      "unique_years_count": 1,
+      "years": [
+        "2024"
+      ],
+      "total_appearances": 6,
+      "appearance_sets": [
+        "2024"
+      ],
+      "slug": "q-6513"
+    },
+    {
+      "id": 6514,
+      "subject": "Mathematics",
+      "chapter_number": null,
+      "chapter_name": "Unclassified",
+      "marks": 1,
+      "text": "The angle which the line $\\frac{x}{1} = \\frac{y}{-1} = \\frac{z}{0}$ makes with the positive direction of Y-axis is : (A) $\\frac{5\\pi}{6}$ (B) $\\frac{3\\pi}{4}$ (C) $\\frac{5\\pi}{4}$ (D) $\\frac{7\\pi}{4}$",
+      "section": null,
+      "unique_years_count": 1,
+      "years": [
+        "2024"
+      ],
+      "total_appearances": 6,
+      "appearance_sets": [
+        "2024"
+      ],
+      "slug": "q-6514"
+    },
+    {
+      "id": 6515,
+      "subject": "Mathematics",
+      "chapter_number": 10,
+      "chapter_name": "Vectors",
+      "marks": 1,
+      "text": "The Cartesian equation of the line passing through the point $(1, -3, 2)$ and parallel to the line: $\\vec{r} = $2 + \\lambda$\\hat{i} + \\lambda\\hat{j} + $2\\lambda - 1$\\hat{k}$ is (A) $\\frac{x - 1}{2} = \\frac{y + 3}{0} = \\frac{z - 2}{-1}$ (B) $\\frac{x + 1}{1} = \\frac{y - 3}{1} = \\frac{z + 2}{2}$ (C) $\\frac{x + 1}{2} = \\frac{y - 3}{0} = \\frac{z + 2}{-1}$ (D) $\\frac{x - 1}{1} = \\frac{y + 3}{1} = \\frac{z - 2}{2}$",
+      "section": "Section A",
+      "unique_years_count": 1,
+      "years": [
+        "2024"
+      ],
+      "total_appearances": 6,
+      "appearance_sets": [
+        "2024"
+      ],
+      "slug": "q-6515"
+    },
+    {
+      "id": 6518,
+      "subject": "Mathematics",
+      "chapter_number": 10,
+      "chapter_name": "Vectors",
+      "marks": 1,
+      "text": "Assertion (A) : The vectors \n$\\vec{a} = 6\\hat{i} + 2\\hat{j} - 8\\hat{k}$\n$\\vec{b} = 10\\hat{i} - 2\\hat{j} - 6\\hat{k}$\n$\\vec{c} = 4\\hat{i} - 4\\hat{j} + 2\\hat{k}$\nrepresent the sides of a right angled triangle.\nReason (R) : Three non-zero vectors of which none of two are collinear forms a triangle if their resultant is zero vector or sum of any two vectors is equal to the third.",
+      "section": "Section A",
+      "unique_years_count": 1,
+      "years": [
+        "2024"
+      ],
+      "total_appearances": 6,
+      "appearance_sets": [
+        "2024"
+      ],
+      "slug": "q-6518"
+    },
+    {
+      "id": 6523,
+      "subject": "Mathematics",
+      "chapter_number": null,
+      "chapter_name": "Unclassified",
+      "marks": 2,
+      "text": "Find the vector equation of the line passing through the point $(2, 3, -5)$ and making equal angles with the co-ordinate axes.",
+      "section": "Section B",
+      "unique_years_count": 1,
+      "years": [
+        "2024"
+      ],
+      "total_appearances": 6,
+      "appearance_sets": [
+        "2024"
+      ],
+      "slug": "q-6523"
+    },
+    {
+      "id": 6532,
+      "subject": "Mathematics",
+      "chapter_number": 8,
+      "chapter_name": "Applications of the Integrals",
+      "marks": 5,
+      "text": "Find the area of the region bounded by the curve $4x^2 + y^2 = 36$ using integration.",
+      "section": "Section E",
+      "unique_years_count": 1,
+      "years": [
+        "2024"
+      ],
+      "total_appearances": 6,
+      "appearance_sets": [
+        "2024"
+      ],
+      "slug": "q-6532"
+    },
+    {
+      "id": 6536,
+      "subject": "Mathematics",
+      "chapter_number": 1,
+      "chapter_name": "Relations and Functions",
+      "marks": 4,
+      "text": "(a) Students of a school are taken to a railway museum to learn about railways heritage and its history. An exhibit in the museum depicted many rail lines on the track near the railway station. Let L be the set of all rail lines on the railway track and R be the relation on L defined by R = {(l_1, l_2) : l_1 is parallel to l_2}. On the basis of the above information, answer the following questions : (i) Find whether the relation R is symmetric or not. (ii) Find whether the relation R is transitive or not. (iii) If one of the rail lines on the railway track is represented by the equation y = 3x + 2, then find the set of rail lines in R related to it. OR (b) Let S be the relation defined by S = {(l_1, l_2) : l_1 is perpendicular to l_2} check whether the relation S is symmetric and transitive.",
+      "section": "Section E",
+      "unique_years_count": 1,
+      "years": [
+        "2024"
+      ],
+      "total_appearances": 6,
+      "appearance_sets": [
+        "2024"
+      ],
+      "slug": "q-6536"
+    },
+    {
+      "id": 926,
+      "subject": "Chemistry",
+      "chapter_number": 10,
+      "chapter_name": "Biomolecules",
+      "marks": 2,
+      "text": "Carbohydrates are optically active polyhydroxy aldehydes or ketones or the compounds which produce such units on hydrolysis. They have been broadly classified into three groups — monosaccharides, oligosaccharides and polysaccharides. The carbohydrates may also be classified as either reducing or non-reducing sugars. An important monosaccharide glucose is an aldohexose and is correctly named as $\text{D}(+)\text{--glucose}$. It was assigned the open structure on the basis of its reactions with $\text{HI}$, $\text{NH}_2\text{OH}$, $\text{Br}_2\text{ water}$, $(\text{CH}_3\text{CO})_2\text{O}$ and nitric acid.\nDespite having the $-\text{CHO}$ group, glucose does not give Schiff's test and hydrogen sulphite addition product with $\text{NaHSO}_3$. It was found that glucose forms a six-membered ring in which one of the $-\text{OH}$ groups add to the $-\text{CHO}$ group and form a cyclic hemiacetal structure.\nAnswer the following questions :\n(a) How do you explain the following ?\n(i) Presence of a carbonyl group in glucose\n(ii) Presence of five $-\text{OH}$ groups in glucose which are attached to different carbon atoms.",
+      "section": "",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 5,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-926"
+    },
+    {
+      "id": 6501,
+      "subject": "Mathematics",
+      "chapter_number": 3,
+      "chapter_name": "Matrices",
+      "marks": 1,
+      "text": "If $A$ is a square matrix of order 3 such that the value of $|\\text{adj } A| = 8$, then the value of $|A^T|$ is:\n(A) $\\sqrt{2}$\n(B) $-\\sqrt{2}$\n(C) 8\n(D) $2\\sqrt{2}$",
+      "section": "Section A",
+      "unique_years_count": 1,
+      "years": [
+        "2024"
+      ],
+      "total_appearances": 5,
+      "appearance_sets": [
+        "2024"
+      ],
+      "slug": "q-6501"
+    },
+    {
+      "id": 6506,
+      "subject": "Mathematics",
+      "chapter_number": null,
+      "chapter_name": "Unclassified",
+      "marks": 1,
+      "text": "Derivative of $e^{\\sin^2 x}$ with respect to $\\cos x$ is : (A) $\\sin x \\, e^{\\sin^2 x}$ (B) $\\cos x \\, e^{\\sin^2 x}$ (C) $-2 \\cos x \\, e^{\\sin^2 x}$ (D) $-2 \\sin^2 x \\cos x \\, e^{\\sin^2 x}$",
+      "section": "Section A",
+      "unique_years_count": 1,
+      "years": [
+        "2024"
+      ],
+      "total_appearances": 5,
+      "appearance_sets": [
+        "2024"
+      ],
+      "slug": "q-6506"
+    },
+    {
+      "id": 6516,
+      "subject": "Mathematics",
+      "chapter_number": null,
+      "chapter_name": "Unclassified",
+      "marks": 1,
+      "text": "If A and B are events such that $P(A/B) = P(B/A) \\neq 0$, then: (A) $A \\subset B$, but $A \\neq B$ (B) $A = B$ (C) $A \\cap B = \\phi$ (D) $P(A) = P(B)$",
+      "section": "Section A",
+      "unique_years_count": 1,
+      "years": [
+        "2024"
+      ],
+      "total_appearances": 5,
+      "appearance_sets": [
+        "2024"
+      ],
+      "slug": "q-6516"
+    },
+    {
+      "id": 6517,
+      "subject": "Mathematics",
+      "chapter_number": 2,
+      "chapter_name": "Inverse Trigonometric Functions",
+      "marks": 1,
+      "text": "Assertion (A) : Domain of $y = \\cos^{-1}(x)$ is $[-1, 1]$. Reason (R) : The range of the principal value branch of $y = \\cos^{-1}(x)$ is $[0, \\pi] - \\{\\frac{\\pi}{2}\\}$.",
+      "section": "Section A",
+      "unique_years_count": 1,
+      "years": [
+        "2024"
+      ],
+      "total_appearances": 5,
+      "appearance_sets": [
+        "2024"
+      ],
+      "slug": "q-6517"
+    },
+    {
+      "id": 6520,
+      "subject": "Mathematics",
+      "chapter_number": 1,
+      "chapter_name": "Relations and Functions",
+      "marks": 2,
+      "text": "(a) Verify whether the function f defined by\n$f(x) = \\begin{cases} x \\sin\\left$ \\frac{1}{x} \\right$, & x \\neq 0 \\\\ 0, & x = 0 \\end{cases}$\nis continuous at $x = 0$ or not.\nOR\n(b) Check for differentiability of the function f defined by $f(x) = |x - 5|$, at the point $x = 5$.",
+      "section": "Section B",
+      "unique_years_count": 1,
+      "years": [
+        "2024"
+      ],
+      "total_appearances": 5,
+      "appearance_sets": [
+        "2024"
+      ],
+      "slug": "q-6520"
+    },
+    {
+      "id": 6539,
+      "subject": "Mathematics",
+      "chapter_number": 1,
+      "chapter_name": "Relations and Functions",
+      "marks": 1,
+      "text": "A function $f: \\mathbb{R} \\to \\mathbb{R}$ defined as $f(x) = x^{2} - 4x + 5$ is : (A) injective but not surjective. (B) surjective but not injective. (C) both injective and surjective. (D) neither injective nor surjective.",
+      "section": "Section A",
+      "unique_years_count": 1,
+      "years": [
+        "2024"
+      ],
+      "total_appearances": 5,
+      "appearance_sets": [
+        "2024"
+      ],
+      "slug": "q-6539"
+    },
+    {
+      "id": 4088,
+      "subject": "Mathematics",
+      "chapter_number": null,
+      "chapter_name": "Unclassified",
+      "marks": 1,
+      "text": "A man took a home loan of $\\text{₹ } 40,00,000$ from a bank at the interest of $6\\cdot75\\%$ per annum compounded monthly which is to be amortized by equal payments at the end of each month for $10$ years.\nBased on the above information, answer the following questions :\nFind the monthly instalment.\n$\\text{[Use } (1\\cdot005625)^{-120} = 0\\cdot510120]$",
+      "section": "Case Study – 3",
+      "unique_years_count": 1,
+      "years": [
+        "2025"
+      ],
+      "total_appearances": 4,
+      "appearance_sets": [
+        "2025"
+      ],
+      "slug": "q-4088"
+    },
+    {
+      "id": 6508,
+      "subject": "Mathematics",
+      "chapter_number": null,
+      "chapter_name": "Unclassified",
+      "marks": 1,
+      "text": "Given a curve $y = 7x - x^3$ and $x$ increases at the rate of $2$ units per second. The rate at which the slope of the curve is changing, when $x = 5$ is : (A) $-60$ units/sec (B) $60$ units/sec (C) $-70$ units/sec (D) $-140$ units/sec",
+      "section": "Section A",
+      "unique_years_count": 1,
+      "years": [
+        "2024"
+      ],
+      "total_appearances": 4,
+      "appearance_sets": [
+        "2024"
+      ],
+      "slug": "q-6508"
+    },
+    {
+      "id": 6524,
+      "subject": "Mathematics",
+      "chapter_number": 5,
+      "chapter_name": "Continuity and Differentiability",
+      "marks": 3,
+      "text": "(a) Find $\\frac{dy}{dx}$, if $(\\cos x)^y = (\\cos y)^x$. OR (b) If $\\sqrt{1-x^2} + \\sqrt{1-y^2} = a(x-y)$, prove that $\\frac{dy}{dx} = \\sqrt{\\frac{1-y^2}{1-x^2}}$.",
+      "section": "Section C",
+      "unique_years_count": 1,
+      "years": [
+        "2024"
+      ],
+      "total_appearances": 4,
+      "appearance_sets": [
+        "2024"
+      ],
+      "slug": "q-6524"
+    },
+    {
+      "id": 6527,
+      "subject": "Mathematics",
+      "chapter_number": 9,
+      "chapter_name": "Differential Equations",
+      "marks": 5,
+      "text": "(a) Find the particular solution of the differential equation $\\frac{dy}{dx} - 2xy = 3x^2 e^{x^2} ; y(0) = 5$. OR (b) Solve the following differential equation : $x^2 dy + y(x + y) dx = 0$",
+      "section": null,
+      "unique_years_count": 1,
+      "years": [
+        "2024"
+      ],
+      "total_appearances": 4,
+      "appearance_sets": [
+        "2024"
+      ],
+      "slug": "q-6527"
+    },
+    {
+      "id": 9,
+      "subject": "Chemistry",
+      "chapter_number": 6,
+      "chapter_name": "Haloalkanes and Haloarenes",
+      "marks": 1,
+      "text": "Which of the following is 'not' true about enantiomers ?\n(A) They have the same chemical reactivity.\n(B) They have the same specific rotation.\n(C) They have the same melting or boiling point.\n(D) They have the same refractive index.",
+      "section": "",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-9"
+    },
+    {
+      "id": 10,
+      "subject": "Chemistry",
+      "chapter_number": 9,
+      "chapter_name": "Amines",
+      "marks": 1,
+      "text": "Aniline on direct nitration yields\n(A) $51\\%$-ortho, $47\\%$-para, $2\\%$-meta derivatives\n(B) $51\\%$-meta, $47\\%$-ortho, $2\\%$-para derivatives\n(C) $51\\%$-para, $47\\%$-meta, $2\\%$-ortho derivatives\n(D) $51\\%$-ortho, $47\\%$-meta, $2\\%$-para derivatives",
+      "section": "",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-10"
+    },
+    {
+      "id": 18,
+      "subject": "Chemistry",
+      "chapter_number": 6,
+      "chapter_name": "Haloalkanes and Haloarenes",
+      "marks": 2,
+      "text": "Why are haloarenes less reactive towards nucleophilic substitution reaction ? Give two reasons.",
+      "section": "SECTION – B",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-18"
+    },
+    {
+      "id": 19,
+      "subject": "Chemistry",
+      "chapter_number": 5,
+      "chapter_name": "Coordination Compounds",
+      "marks": 2,
+      "text": "(a) Write IUPAC names of the following coordination compounds :\n(i) $[\\text{Ag}(\\text{NH}_3)_2] [\\text{Ag}(\\text{CN})_2]$\n(ii) $\\text{K}_3[\\text{Fe}(\\text{C}_2\\text{O}_4)_3]$\nOR\n(b) (i) Give a chemical test to show that $[\\text{Co}(\\text{NH}_3)_5\\text{SO}_4]\\text{Cl}$ and $[\\text{Co}(\\text{NH}_3)_5\\text{Cl}]\\text{SO}_4$ are ionisation isomers.\n(ii) What is meant by the ‘Chelate effect’ ? Give an example.",
+      "section": "SECTION – B",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-19"
+    },
+    {
+      "id": 21,
+      "subject": "Chemistry",
+      "chapter_number": null,
+      "chapter_name": "Unclassified",
+      "marks": 2,
+      "text": "Following reaction takes place in one step :\n$2\\text{A} + \\text{B} \\longrightarrow 2\\text{C}$\nHow will the rate of above reaction change if the volume of the reaction vessel is decreased to one third of its original volume ? Will there be any change in the order of reaction with the reduced volume ?",
+      "section": "SECTION – B",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-21"
+    },
+    {
+      "id": 27,
+      "subject": "Chemistry",
+      "chapter_number": 7,
+      "chapter_name": "Alcohols, Phenols and Ethers",
+      "marks": 3,
+      "text": "Write the reaction involved in the following :\n(a) Reimer-Tiemann reaction\n(b) Kolbe's reaction\n(c) Friedal-Crafts acylation of anisole",
+      "section": null,
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-27"
+    },
+    {
+      "id": 29,
+      "subject": "Chemistry",
+      "chapter_number": 9,
+      "chapter_name": "Amines",
+      "marks": 4,
+      "text": "The reaction of amines with mineral acids to form ammonium salts shows that these are basic in nature. Aliphatic amines are stronger bases than ammonia whereas aromatic amines are weaker bases than ammonia. Aliphatic and aromatic primary and secondary amines react with acid chlorides, anhydrides and esters by nucleophilic substitution reaction. The main problem encountered during electrophilic substitution reactions of aromatic amines is that of their high reactivity. Substitution tends to occur at ortho- and para-positions. Hinsberg reagent is used for the identification and distinction between primary, secondary and tertiary amines. Aryldiazonium salts, usually obtained from arylamines, undergo replacement of the diazonium group with a variety of nucleophiles to provide advantageous methods for producing aryl halides, cyanides, phenols and arenes.\nAnswer the following questions :\n(a) (i) Why $\text{CH}_3 - \text{NH}_2$ is a stronger base than $(\text{CH}_3)_3\text{N}$ in aqueous solution ?\n(ii) Write structural formulae of the compound A and B :\n$$\text{CH}_3\text{CONH}_2 \\xrightarrow{\text{NaOBr}} \text{A} \\xrightarrow[\text{Base}]{\text{C}_6\text{H}_5\text{COCl}} \text{B}$$\n(b) A compound 'X' with molecular formula $\text{C}_3\text{H}_9\text{N}$ reacts with Hinsberg reagent to give a product insoluble in alkali. Identify 'X'.\nOR\n(b) How can you convert aniline to benzonitrile ?\n(c) Why is $-\text{NH}_2$ group of aniline acetylated before carrying out nitration ?",
+      "section": "SECTION – D",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-29"
+    },
+    {
+      "id": 30,
+      "subject": "Chemistry",
+      "chapter_number": 5,
+      "chapter_name": "Coordination Compounds",
+      "marks": 2,
+      "text": "The Valence Bond Theory (VBT) explains the formation, magnetic behaviour and geometry of coordination compounds. The Crystal Field Theory (CFT) of coordination compounds is based on the effect of different crystal fields (provided by the ligands taken as point charges), on the degeneracy of d-orbital energies of the central metal atom/ion. The splitting of the d-orbitals provides different electronic arrangements in strong and weak crystal fields.\nAnswer the following questions :\n(a) In octahedral crystal field, energies of which d-orbitals will be raised when ligands approach the central metal atom/ion ? Give reason in support of your answer.",
+      "section": null,
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-30"
+    },
+    {
+      "id": 41,
+      "subject": "Mathematics",
+      "chapter_number": 3,
+      "chapter_name": "Matrices",
+      "marks": 1,
+      "text": "Which of the following properties is/are true for two matrices of suitable orders ?\n(i) $(A + B)' = A' + B'$\n(ii) $(A - B)' = B' - A'$\n(iii) $(AB)' = A'B'$\n(iv) $(kAB)' = kB'A'$ ($k$ is a scalar)\n(A) (i) only\n(B) (i), (ii) and (iii)\n(C) (i) and (ii)\n(D) (i) and (iv)",
+      "section": "Section A",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-41"
+    },
+    {
+      "id": 42,
+      "subject": "Mathematics",
+      "chapter_number": 3,
+      "chapter_name": "Matrices",
+      "marks": 1,
+      "text": "If $\\Delta_1 = \\begin{vmatrix} 1 & 0 & 0 \\\\ 0 & 2 & 0 \\\\ 0 & 0 & 3 \\end{vmatrix}$ and $\\Delta_2 = \\begin{vmatrix} 0 & 2 & 0 \\\\ 1 & 0 & 0 \\\\ 0 & 0 & 6 \\end{vmatrix}$, then\n(A) $\\Delta_1 = 2\\Delta_2$\n(B) $\\Delta_2 = -2\\Delta_1$\n(C) $\\Delta_1 = \\Delta_2$\n(D) $\\Delta_2 = -\\Delta_1$",
+      "section": "Section A",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-42"
+    },
+    {
+      "id": 52,
+      "subject": "Mathematics",
+      "chapter_number": 10,
+      "chapter_name": "Vectors",
+      "marks": 1,
+      "text": "The value of m for which the points with position vectors $-\\hat{i} - \\hat{j} + 2\\hat{k}$, $2\\hat{i} + m\\hat{j} + 5\\hat{k}$ and $3\\hat{i} + 11\\hat{j} + 6\\hat{k}$ are collinear, is\n(A) $8$\n(B) $-8$\n(C) $2$\n(D) $\\\frac{5}{2}$",
+      "section": null,
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-52"
+    },
+    {
+      "id": 56,
+      "subject": "Mathematics",
+      "chapter_number": 12,
+      "chapter_name": "Linear Programming",
+      "marks": 1,
+      "text": "The degree of an objective function of a linear programming problem is\n(A) $0$\n(B) $1$\n(C) $2$\n(D) Any natural number",
+      "section": "Section A",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-56"
+    },
+    {
+      "id": 57,
+      "subject": "Mathematics",
+      "chapter_number": 13,
+      "chapter_name": "Probability",
+      "marks": 1,
+      "text": "Assertion (A) : In an experiment of throwing an unbiased die, the probability of getting a prime number given that number appearing on the die being odd is $\\\frac{2}{3}$.\nReason (R) : For any two events A and B, $P(A|B) = \\\frac{P(A \\cup B)}{P(B)}$",
+      "section": "Section A",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-57"
+    },
+    {
+      "id": 58,
+      "subject": "Mathematics",
+      "chapter_number": 10,
+      "chapter_name": "Vectors",
+      "marks": 1,
+      "text": "Assertion (A) : Lines given by $x = py + q$, $z = ry + s$ and $x = p'y + q'$, $z = r'y + s'$ are perpendicular to each other when $pp' + rr' = 1$.\nReason (R) : Two lines $\\vec{r} = \\vec{a}_1 + \\lambda \\vec{b}_1$ and $\\vec{r} = \\vec{a}_2 + \\mu \\vec{b}_2$ are perpendicular to each other if $\\vec{b}_1 \\cdot \\vec{b}_2 = 0$.",
+      "section": "SECTION - A",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-58"
+    },
+    {
+      "id": 62,
+      "subject": "Mathematics",
+      "chapter_number": 10,
+      "chapter_name": "Vectors",
+      "marks": 2,
+      "text": "Vectors $\\vec{a} = 3\\hat{i} - 2\\hat{j} + 2\\hat{k}$ and $\\vec{b} = \\hat{i} + 2\\hat{k}$ represent the two adjacent sides of a parallelogram. Find the vectors representing its diagonals and hence find their lengths.",
+      "section": "",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-62"
+    },
+    {
+      "id": 69,
+      "subject": "Mathematics",
+      "chapter_number": 13,
+      "chapter_name": "Probability",
+      "marks": 3,
+      "text": "(a) Out of two bags, bag I contains $3$ red and $4$ white balls and bag II contains $8$ red and $6$ white balls. A die is thrown. If it shows a number less than $3$ then a ball is drawn at random from bag I, otherwise a ball is drawn at random from bag II. Find the probability that the ball drawn from one of the bags is a red ball.\nOR\n(b) The probability of simultaneous occurrence of atleast one of the two events X and Y is a. If the probability that exactly one of the events X, Y occurs is b, prove that $\\text{P}(X') + \\text{P}(Y') = 2 - 2a + b$.",
+      "section": null,
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-69"
+    },
+    {
+      "id": 77,
+      "subject": "Mathematics",
+      "chapter_number": 13,
+      "chapter_name": "Probability",
+      "marks": 5,
+      "text": "In an online jackpot, there is one first prize of ₹ $3,00,000$, two second prizes of ₹ $2,00,000$ each and three third prizes of ₹ $50,000$ each.\n\nA total of $1,00,000$ jackpot tickets each costing ₹ $100$ were sold there by raising a fund of ₹ $1,00,00,000$.\n\nRohan bought one ticket.\n\nBased on given information, answer the following questions :\n(i) What are the possible amounts, the person can win ?\n(ii) (a) What is the probability that the person wins atleast ₹ $2,00,000$ ?\nOR\n(ii) (b) What is the probability that the person does not win any amount ?\n(iii) In another jackpot, Rohan also bought a ticket having a prize money of ₹ $5,00,000$. The chances of winning the jackpot are $1$ in $1,00,000$. Find the probability that on exactly one of tickets he wins the jackpot.",
+      "section": "Section E",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-77"
+    },
+    {
+      "id": 80,
+      "subject": "Physics",
+      "chapter_number": null,
+      "chapter_name": "Unclassified",
+      "marks": 1,
+      "text": "A conducting wire connects two charged metallic spheres A and B of radii $r_1$ and $r_2$ respectively. The distance between the spheres is very large compared to their radii. The ratio of electric fields, $(E_A/E_B)$ at the surfaces of spheres A and B will be\n\n(A) $\\frac{r_1}{r_2}$\n\n(B) $\\frac{r_2}{r_1}$\n\n(C) $\\frac{{r_1}^2}{{r_2}^2}$\n\n(D) $\\frac{{r_2}^2}{{r_1}^2}$",
+      "section": "SECTION - A",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-80"
+    },
+    {
+      "id": 83,
+      "subject": "Physics",
+      "chapter_number": 14,
+      "chapter_name": "Semiconductor Electronics: Materials, Devices and Simple Circuits",
+      "marks": 1,
+      "text": "An electromagnetic wave passes from vacuum into a dielectric medium with relative electrical permittivity $(3/2)$ and relative magnetic permeability $(8/3)$. Then, its\n(A) wavelength is doubled and frequency remains unchanged.\n(B) wavelength is doubled and frequency is halved.\n(C) wavelength is halved and frequency remains unchanged.\n(D) wavelength and frequency both will remain unchanged.",
+      "section": "Section A",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-83"
+    },
+    {
+      "id": 88,
+      "subject": "Physics",
+      "chapter_number": null,
+      "chapter_name": "Unclassified",
+      "marks": 1,
+      "text": "Four independent waves are expressed as\n\n(i) $y_1 = A_1 \\sin \\omega t$\n\n(ii) $y_2 = A_2 \\sin 2\\omega t$\n\n(iii) $y_3 = A_3 \\cos \\omega t$\n\n(iv) $y_4 = A_4 \\sin $\\omega t + \\pi/3$$\n\nThe interference between two of these waves is possible in\n\n(A) (i) and (iii) only\n\n(B) (iii) and (iv) only\n\n(C) (i), (iii) and (iv) only\n\n(D) All of them",
+      "section": "Section A",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-88"
+    },
+    {
+      "id": 90,
+      "subject": "Physics",
+      "chapter_number": 14,
+      "chapter_name": "Semiconductor Electronics: Materials, Devices and Simple Circuits",
+      "marks": 1,
+      "text": "In an unbiased p-n junction, at equilibrium, which of the following statements is true ?\n(A) Diffusion current is zero but drift current exists.\n(B) Diffusion current exists but drift current is zero.\n(C) Diffusion and drift currents are equal and opposite.\n(D) Both the diffusion and drift currents exist but are unequal.",
+      "section": "",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-90"
+    },
+    {
+      "id": 91,
+      "subject": "Physics",
+      "chapter_number": 5,
+      "chapter_name": "Magnetism and Matter",
+      "marks": 1,
+      "text": "Assertion (A) : All atoms have a net magnetic moment.\nReason (R) : A current loop does not always behave as a magnetic dipole.",
+      "section": "",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-91"
+    },
+    {
+      "id": 92,
+      "subject": "Physics",
+      "chapter_number": null,
+      "chapter_name": "Unclassified",
+      "marks": 1,
+      "text": "Assertion (A) : If accelerated electrons are passed through a narrow slit, a diffraction pattern is observed.\nReason (R) : Electrons behave as both particles and waves.",
+      "section": "",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-92"
+    },
+    {
+      "id": 93,
+      "subject": "Physics",
+      "chapter_number": null,
+      "chapter_name": "Unclassified",
+      "marks": 1,
+      "text": "Assertion (A) : The mass of a nucleus is less than the sum of the masses of the constituent nucleons.\nReason (R) : Energy is absorbed when the nucleons are bound together to form a nucleus.",
+      "section": "",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-93"
+    },
+    {
+      "id": 94,
+      "subject": "Physics",
+      "chapter_number": 12,
+      "chapter_name": "Atoms",
+      "marks": 1,
+      "text": "Assertion (A) : In Bohr model of hydrogen atom, the energy levels are discrete and quantised.\nReason (R) : In a hydrogen atom, the electrostatic force on the electron provides the necessary centripetal force to it to revolve around the nucleus.",
+      "section": "",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-94"
+    },
+    {
+      "id": 96,
+      "subject": "Physics",
+      "chapter_number": 10,
+      "chapter_name": "Wave Optics",
+      "marks": 2,
+      "text": "(a) A beam of light consisting of two wavelengths $400\\text{ nm}$ and $600\\text{ nm}$ is used to illuminate a single slit of width $1\\text{ mm}$. Find the least distance of the point from the central maximum where the dark fringes due to both wavelengths coincide on the screen placed $1.5\\text{ m}$ from the slit.\n\nOR\n\n(b) In a Young's double-slit experimental set-up with slit separation $0.6\\text{ mm}$ a beam of light consisting of two wavelengths $440\\text{ nm}$ and $660\\text{ nm}$ is used to obtain interference pattern on a screen kept $1.5\\text{ m}$ in front of the slits. Find the least distance of the point from the central maximum where the bright fringes due to both the wavelengths coincide.",
+      "section": "Section B",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-96"
+    },
+    {
+      "id": 97,
+      "subject": "Physics",
+      "chapter_number": 4,
+      "chapter_name": "Moving Charges and Magnetism",
+      "marks": 2,
+      "text": "A wire of length $L$ is bent round into (i) a square coil having $N$ turns and (ii) a circular coil having $N$ turns. The coil in both cases is free to turn about a vertical axis coinciding with the plane of the coil, in a uniform, horizontal magnetic field and carry the same currents. Find the ratio of the maximum value of the torque acting on the square coil to that on the circular coil.",
+      "section": "Section B",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-97"
+    },
+    {
+      "id": 98,
+      "subject": "Physics",
+      "chapter_number": 3,
+      "chapter_name": "Current Electricity",
+      "marks": 2,
+      "text": "What is the order of magnitude of drift velocity of electrons in a conductor? Deduce the relation between the current flowing through a conductor and drift velocity of electrons in it.",
+      "section": "Section B",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-98"
+    },
+    {
+      "id": 100,
+      "subject": "Physics",
+      "chapter_number": 1,
+      "chapter_name": "Electric Charges and Fields",
+      "marks": 3,
+      "text": "(a) Using Gauss's law, deduce an expression for electric field at a point due to a uniformly charged infinite plane thin sheet.\n(b) Two large thin plane sheets, each having surface charge density $\\sigma$, are held close and parallel to each other in air. What is the net electric field at a point (i) inside and (ii) outside, the sheets ?\nOR\n(a) Obtain the condition of balance of a Wheatstone bridge.\n(b) Find net resistance of the network of resistors connected between A and B, as shown in figure.\n[Diagram]",
+      "section": "SECTION – C",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-100"
+    },
+    {
+      "id": 106,
+      "subject": "Physics",
+      "chapter_number": 9,
+      "chapter_name": "Ray Optics and Optical Instruments",
+      "marks": 3,
+      "text": "(a) State the two conditions under which total internal reflection occurs.\n(b) A transparent container contains layers of three immiscible transparent liquids A, B and C of refractive indices $n$, $\\\frac{3}{4}n$ and $\\\frac{2}{3}n$, respectively. A laser beam is incident at the interface between A and B at an angle $\\\theta$ as shown in figure. Prove that the beam does not enter region C at all for $\\sin \\\theta \\ge \\\frac{2}{3}$.",
+      "section": "",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-106"
+    },
+    {
+      "id": 107,
+      "subject": "Physics",
+      "chapter_number": 4,
+      "chapter_name": "Moving Charges and Magnetism",
+      "marks": 4,
+      "text": "A galvanometer is used to detect or/and measure small currents in an electrical circuit. It essentially works on the fact that a current-carrying coil experiences a deflecting torque when placed in a magnetic field. This deflection in the coil can be measured and it is related to the current flowing in the coil, the number of turns in the coil, area of the coil and the magnetic field. A hair spring attached to the coil provides a counter torque and helps in measuring the deflection. A galvanometer can be converted to an ammeter or a voltmeter of desired range by using suitable resistances.",
+      "section": "SECTION - D",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-107"
+    },
+    {
+      "id": 111,
+      "subject": "Physics",
+      "chapter_number": 11,
+      "chapter_name": "Dual Nature of Radiation and Matter",
+      "marks": 4,
+      "text": "A researcher performs an experiment on photo-electric effect using two metals A and B with unknown work functions. She illuminates the surfaces of A and B with monochromatic radiation of various frequencies and records the value of corresponding stopping potentials ($V_s$). The graph shows the variation of stopping potential ($V_s$) with the frequency of incident radiation ($\\nu$) for metals A and B.",
+      "section": null,
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-111"
+    },
+    {
+      "id": 114,
+      "subject": "Physics",
+      "chapter_number": 14,
+      "chapter_name": "Semiconductor Electronics: Materials, Devices and Simple Circuits",
+      "marks": 1,
+      "text": "(III) If the intensity of the incident radiation for both metals A and B, is doubled keeping its frequency constant, then\n\n(A) the slope of the parallel lines will increase.\n(B) the slope of the parallel lines will decrease.\n(C) the threshold frequencies for both A and B will decrease.\n(D) the slope of the parallel lines will not change but more electrons will be emitted per second.",
+      "section": "",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-114"
+    },
+    {
+      "id": 117,
+      "subject": "Physics",
+      "chapter_number": 9,
+      "chapter_name": "Ray Optics and Optical Instruments",
+      "marks": 5,
+      "text": "(a) Using the relation for refraction at a curved spherical surface, derive the expression for lens maker's formula.\n(b) Three lenses $L_1$, $L_2$ and $L_3$, each of focal length $40\\text{ cm}$, are placed coaxially. The distance between $L_1$ and $L_2$ and between $L_2$ and $L_3$ are $120\\text{ cm}$ and $20\\text{ cm}$ respectively. An object is kept at a distance of $80\\text{ cm}$ to the left of lens $L_1$.\nFind the distance of the final image formed from the object.\n\nOR\n\n(a) Draw a ray diagram to show the image formation by a concave mirror when the object is kept between its focus and the centre of curvature. Using this diagram, derive the mirror formula.\n(b) A concave mirror produces a two times magnified virtual image of an object kept $10\\text{ cm}$ in front of it. Calculate the focal length of the mirror.",
+      "section": "",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-117"
+    },
+    {
+      "id": 118,
+      "subject": "Physics",
+      "chapter_number": 6,
+      "chapter_name": "Electromagnetic Induction",
+      "marks": 5,
+      "text": "(a) State Faraday's law of electromagnetic induction.\n(b) Derive an expression for the self-inductance of an air-filled long solenoid of length $l$ and cross-sectional area $A$ having $N$ turns.",
+      "section": "",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-118"
+    },
+    {
+      "id": 353,
+      "subject": "Chemistry",
+      "chapter_number": 3,
+      "chapter_name": "Chemical Kinetics",
+      "marks": 1,
+      "text": "Identify the correct statement :\n(A) Molecularity of a reaction is an experimental quantity.\n(B) For complex reactions molecularity has no meaning.\n(C) Molecularity of a reaction can be zero or even a fraction.\n(D) Molecularity more than three is very common in chemical reactions.",
+      "section": "SECTION - A",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-353"
+    },
+    {
+      "id": 364,
+      "subject": "Chemistry",
+      "chapter_number": 3,
+      "chapter_name": "Chemical Kinetics",
+      "marks": 1,
+      "text": "Assertion (A) : The molecularity of the given reaction is $2$\n$2\\text{HI} \\longrightarrow \\text{H}_2 + \\text{I}_2$\nReason (R) : Two molecules of the reactants are involved in simultaneous collision between them.",
+      "section": "",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-364"
+    },
+    {
+      "id": 365,
+      "subject": "Chemistry",
+      "chapter_number": 4,
+      "chapter_name": "The d- and f-Block Elements",
+      "marks": 1,
+      "text": "Assertion (A) : Zinc, cadmium and mercury are not considered as transition elements.\nReason (R) : These elements have completely filled orbitals in their ground state as well as in their common oxidation states.",
+      "section": "",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-365"
+    },
+    {
+      "id": 366,
+      "subject": "Chemistry",
+      "chapter_number": 6,
+      "chapter_name": "Haloalkanes and Haloarenes",
+      "marks": 1,
+      "text": "Assertion (A) : Aromatic primary amines can be prepared by Gabriel Phthalimide synthesis.\nReason (R) : Aryl halides do not undergo nucleophilic substitution with the anion formed by phthalimide.",
+      "section": null,
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-366"
+    },
+    {
+      "id": 367,
+      "subject": "Chemistry",
+      "chapter_number": 10,
+      "chapter_name": "Biomolecules",
+      "marks": 1,
+      "text": "Assertion (A) : Glucose gets oxidized to six carbon gluconic acid on reaction with bromine water.\nReason (R) : The carbonyl group is absent in the open chain structure of glucose.",
+      "section": null,
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-367"
+    },
+    {
+      "id": 368,
+      "subject": "Chemistry",
+      "chapter_number": 3,
+      "chapter_name": "Chemical Kinetics",
+      "marks": 2,
+      "text": "(A) The concentration of the reactant is reduced from $0.6 \\text{ mol L}^{-1}$ to $0.2 \\text{ mol L}^{-1}$ in $5$ minutes in a first order reaction. Calculate rate constant of the reaction. $(\\log 3 = 0.48)$\n\nOR\n\n(B) Rate constant $k$ for the first order reaction is $2.54 \\times 10^{-3} \\text{ s}^{-1}$. Calculate the time required for three-fourth of the reactant to decompose.\n$(\\log 4 = 0.60)$",
+      "section": "SECTION - B",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-368"
+    },
+    {
+      "id": 380,
+      "subject": "Chemistry",
+      "chapter_number": 1,
+      "chapter_name": "Solutions",
+      "marks": 4,
+      "text": "Osmosis is a process by which the molecules of a solvent pass from a solution of low solute concentration to a solution of high solute concentration through a semi-permeable membrane. Osmotic pressure is a colligative property. When the applied pressure on a solution exceeds its osmotic pressure, reverse osmosis occurs. When two solutions are separated by a semipermeable membrane and they have same osmotic pressure they are said to be isotonic. Of the two solutions separated by a semipermeable membrane, if one is a lower osmotic pressure, it is said to be hypotonic relative to the second solution. If it has a higher osmotic pressure, than the second solution, it is said to be hypertonic relative to the second solution. The osmotic pressure associated with the fluid inside the blood cell is equivalent to that of $0.9\\% \\text{ (mass/volume)}$ sodium chloride solution called normal saline solution and it is safe to inject intravenously. Osmotic pressure is vital in daily life and nature. It helps in explain, why IV fluids match blood's osmotic pressure, its also the principle behind food preservation using salt or sugar.\n(a) Calculate the amount of $\\text{CaCl}_2$ ($i = 2.59$) dissolved in $2.46$ litre of water such that its osmotic pressure is $0.70$ atm at $27^{\\circ}\\text{C}$.\n[Given : $\\text{R} = 0.082 \\text{ L atm K}^{-1} \\text{ mol}^{-1}$, molar mass of $\\text{CaCl}_2 = 111 \\text{ g mol}^{-1}$]\n(b) When raisins are kept in water, they get swollen. Name the phenomenon involved in this process.\nOR\n(b) Why osmotic pressure is more advantageous than other colligative properties ?\n(c) Which phenomenon is responsible for desalination of sea water ?",
+      "section": "SECTION - D",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-380"
+    },
+    {
+      "id": 383,
+      "subject": "Chemistry",
+      "chapter_number": 2,
+      "chapter_name": "Electrochemistry",
+      "marks": 5,
+      "text": "(A) (a) The conductivity of $0.1\\text{ mol L}^{-1}$ solution of $\\text{NaCl}$ is $1.06 \\times 10^{-2}\\text{ S cm}^{-1}$. Calculate its molar conductivity and degree of dissociation.\n$\\lambda^\\circ_{\\text{Na}^+} = 50.1\\text{ S cm}^2\\text{ mol}^{-1}$\n$\\lambda^\\circ_{\\text{Cl}^-} = 76.5\\text{ S cm}^2\\text{ mol}^{-1}$\n(b) (i) Following cell reaction occurs in a galvanic cell :\n$2\\text{Ag}^+_{(\\text{aq})} + \\text{Zn}_{(\\text{s})} \\longrightarrow 2\\text{Ag}_{(\\text{s})} + \\text{Zn}^{2+}_{(\\text{aq})}\\text{ E}^\\circ_{(\\text{cell})} = +1.56\\text{ V}$\nPredict the direction of flow of current.\n(ii) Differentiate between a primary battery and a secondary battery.\nOR\n(B) (a) Resistance of a conductivity cell filled with $0.1\\text{ M KCl}$ solution is $100\\text{ }\\Omega$. If the resistance of the same cell when filled with $0.01\\text{ mol L}^{-1}\\text{ KCl}$ solution is $300\\text{ }\\Omega$, calculate the conductivity and molar conductivity of $0.01\\text{ mol L}^{-1}\\text{ KCl}$ solution. The conductivity of $0.1\\text{ M KCl}$ solution is $1.29 \\times 10^{-2}\\text{ S cm}^{-1}$.\n(b) (i) Write any two advantages of $\\text{H}_2 - \\text{O}_2$ fuel cell.\n(ii) Why does the cell potential of mercury cell remain constant throughout the life ?",
+      "section": "",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-383"
+    },
+    {
+      "id": 384,
+      "subject": "Chemistry",
+      "chapter_number": 7,
+      "chapter_name": "Alcohols, Phenols and Ethers",
+      "marks": 5,
+      "text": "(A) An organic compound 'A', with molecular formula $\\text{C}_2\\text{H}_6\\text{O}$ reacts with active metals such as sodium to give compound 'B' and hydrogen gas. 'A' on treatment with iodine and sodium hydroxide gives 'C' and in presence of $\\text{H}_2\\text{SO}_4$ at $413\\text{ K}$ gives 'D' ($\\text{C}_4\\text{H}_{10}\\text{O}$). 'D' on reaction with excess of HI gives 'E'. Identify 'A', 'B', 'C', 'D' and 'E' and write all the reactions involved.\nOR\n(B) (a) Write the reagents which are used in the given conversions :\n(i) Phenol to $2, 4, 6 - \\text{tribromophenol}$\n(ii) Propene to propan-$1-\\text{ol}$\n(iii) Butan-$2-\\text{one}$ to butan-$2-\\text{ol}$\n(b) Explain the mechanism of acid catalyzed hydration of alkene to form corresponding alcohol.",
+      "section": "",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-384"
+    },
+    {
+      "id": 387,
+      "subject": "Mathematics",
+      "chapter_number": 3,
+      "chapter_name": "Matrices",
+      "marks": 1,
+      "text": "If $A = \\begin{bmatrix} 1 & a & b \\\\ -1 & 2 & c \\\\ 0 & 5 & 3 \\end{bmatrix}$ is a symmetric matrix, then the value of $3a + b + c$ is\n\n(A) $2$\n\n(B) $6$\n\n(C) $4$\n\n(D) $0$",
+      "section": "Section A",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-387"
+    },
+    {
+      "id": 389,
+      "subject": "Mathematics",
+      "chapter_number": 3,
+      "chapter_name": "Matrices",
+      "marks": 1,
+      "text": "For a square matrix $A$, $(3A)^{-1} =$\n\n(A) $3A^{-1}$\n\n(B) $9A^{-1}$\n\n(C) $\\frac{1}{3}A^{-1}$\n\n(D) $\\frac{1}{9}A^{-1}$",
+      "section": "Section A",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-389"
+    },
+    {
+      "id": 390,
+      "subject": "Mathematics",
+      "chapter_number": 3,
+      "chapter_name": "Matrices",
+      "marks": 1,
+      "text": "If $\\begin{vmatrix} -1 & -2 & 5 \\\\ -2 & a & -1 \\\\ 0 & 4 & 2a \\end{vmatrix} = -86$, then the sum of all possible values of $a$ is\n\n(A) $4$\n\n(B) $5$\n\n(C) $-4$\n\n(D) $9$",
+      "section": "Section A",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-390"
+    },
+    {
+      "id": 397,
+      "subject": "Mathematics",
+      "chapter_number": 10,
+      "chapter_name": "Vectors",
+      "marks": 1,
+      "text": "If $| \\vec{a} | = 5$ and $-2 \\le \\lambda \\le 1$, then the sum of greatest and the smallest value of $| \\lambda \\vec{a} |$ is\n\n(A) $-5$\n(B) $5$\n(C) $10$\n(D) $15$",
+      "section": "Section A",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-397"
+    },
+    {
+      "id": 400,
+      "subject": "Mathematics",
+      "chapter_number": 12,
+      "chapter_name": "Linear Programming",
+      "marks": 1,
+      "text": "In a linear programming problem, the linear function which has to be maximized or minimized is called\n\n(A) a feasible function\n(B) an objective function\n(C) an optimal function\n(D) a constraint",
+      "section": "Section A",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-400"
+    },
+    {
+      "id": 401,
+      "subject": "Mathematics",
+      "chapter_number": 12,
+      "chapter_name": "Linear Programming",
+      "marks": 1,
+      "text": "For the feasible region shown below, the non-trivial constraints of the linear programming problem are\n\n(A) $x + y \\le 5, x + 3y \\le 9$\n\n(B) $x + y \\le 5, x + 3y \\ge 9$\n\n(C) $x + y \\ge 5, x + 3y \\le 9$\n\n(D) $x + y \\ge 5, 3x + y \\le 9$",
+      "section": "Section A",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-401"
+    },
+    {
+      "id": 407,
+      "subject": "Mathematics",
+      "chapter_number": 1,
+      "chapter_name": "Relations and Functions",
+      "marks": 2,
+      "text": "(a) Find the absolute maximum value of $f(x) = \\cos x + \\sin^2 x$, $x \\in [0, \\pi]$\n\nOR\n\n(b) If the volume of a solid hemisphere increases at a uniform rate, prove that its surface area varies inversely as its radius.",
+      "section": "SECTION - B",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-407"
+    },
+    {
+      "id": 411,
+      "subject": "Mathematics",
+      "chapter_number": 7,
+      "chapter_name": "Integrals",
+      "marks": 3,
+      "text": "(a) Evaluate : $\\int_{\\frac{\\pi}{12}}^{\\frac{5\\pi}{12}} \\frac{dx}{1 + \\sqrt{\\cot x}}$\n\nOR\n\n(b) Evaluate : $\\int_{-\\frac{\\pi}{6}}^{\\frac{\\pi}{2}} (\\sin |x| + \\cos |x|)\\, dx$",
+      "section": "SECTION - C",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-411"
+    },
+    {
+      "id": 415,
+      "subject": "Mathematics",
+      "chapter_number": 13,
+      "chapter_name": "Probability",
+      "marks": 3,
+      "text": "(a) The probability of hitting the target by a trained sniper is three times the probability of not hitting the target on a stormy day due to high wind speed.\\nThe sniper fired two shots on the target on a stormy day when wind speed was very high. Find the probability that\\n(i) target is hit\\n(ii) atleast one shot misses the target.\\nOR\\n(b) Mother, Father and Son line up at random for a family picture. Let events $E$ : Son on one end and $F$ : Father in the middle. Find $\\text{P}(E/F)$.",
+      "section": "",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-415"
+    },
+    {
+      "id": 432,
+      "subject": "Physics",
+      "chapter_number": null,
+      "chapter_name": "Unclassified",
+      "marks": 1,
+      "text": "Two metal spheres of radii $r_1$ and $r_2$ ($> r_1$) having charges $q_1$ and $q_2$ respectively kept in air, are brought in contact. Which of the following statements is not correct ?\n\n(A) The total charge of the two spheres is conserved.\n\n(B) Both spheres attain the same potential.\n\n(C) The final potential of the system equals $\\frac{1}{4\\pi\\varepsilon_0} \\frac{(q_1 + q_2)}{(r_1 + r_2)}$\n\n(D) The final potential of the system equals $\\frac{1}{4\\pi\\varepsilon_0} \\frac{(q_1 + q_2) (r_1 + r_2)}{r_1\\,r_2}$",
+      "section": "SECTION - A",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-432"
+    },
+    {
+      "id": 443,
+      "subject": "Physics",
+      "chapter_number": 11,
+      "chapter_name": "Dual Nature of Radiation and Matter",
+      "marks": 1,
+      "text": "Assertion (A) : On increasing the intensity of incident light of frequency $\\nu (> \\nu_0)$ on a photosensitive surface, the photocurrent increases.\nReason (R) : The stopping potential for a photosensitive surface increases with increase of frequency $\\nu (> \\nu_0)$ of incident light.",
+      "section": "",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-443"
+    },
+    {
+      "id": 446,
+      "subject": "Physics",
+      "chapter_number": null,
+      "chapter_name": "Unclassified",
+      "marks": 1,
+      "text": "Assertion (A) : Two electric heaters of power $P_1$ and $P_2$ ($> P_1$) are joined in series across a dc source of voltage V. The power consumed by the combination will be less than that consumed by $P_1$ when connected across the same source.\\nReason (R) : The power consumed by a electric device when connected to a dc source of voltage V is proportional to its resistance.",
+      "section": "",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-446"
+    },
+    {
+      "id": 447,
+      "subject": "Physics",
+      "chapter_number": 14,
+      "chapter_name": "Semiconductor Electronics: Materials, Devices and Simple Circuits",
+      "marks": 2,
+      "text": "Write two points of difference between intrinsic and extrinsic semiconductors.",
+      "section": "SECTION - B",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-447"
+    },
+    {
+      "id": 455,
+      "subject": "Physics",
+      "chapter_number": 4,
+      "chapter_name": "Moving Charges and Magnetism",
+      "marks": 3,
+      "text": "(i) Define mutual inductance of a pair of coils. Write its SI unit.\n(ii) A long solenoid of radius $R$ and length $L$ has $n$ turns per unit length. A circular loop of radius $r (<R)$ is placed inside at the centre of the solenoid such that its axis coincides with the axis of the solenoid. Obtain the mutual inductance of the solenoid and the loop.\n\nOR\n\nTwo long straight parallel conductors A and B carrying steady currents $I_a$ and $I_b$ in the same direction are separated by a distance $d$. Deduce the expressions for the force acting on length $L$ of conductor B due to conductor A and show it in figure. Write the expression for the force acting on length $L$ of conductor A due to conductor B and show that it follows Newton's third law.",
+      "section": "",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-455"
+    },
+    {
+      "id": 459,
+      "subject": "Physics",
+      "chapter_number": 14,
+      "chapter_name": "Semiconductor Electronics: Materials, Devices and Simple Circuits",
+      "marks": 4,
+      "text": "A p-type or n-type semiconductor can be converted into a p-n junction by doping it with suitable impurity. The motion of majority charge carriers causes diffusion current across the junction while the barrier electric field causes motion of minority carriers for drift current. In case of unbiased diode, the diffusion and drift currents are equal. This equilibrium is disturbed by the biasing batteries. Diodes, therefore, allow currents in one direction. This property of diode is used in making rectifiers.\\n(i) Silicon is doped with which of the following to obtain p-type semiconductor ?\\n(A) Phosphorus\n(B) Arsenic\\n(C) Boron\n(D) Antimony\\n(ii) A semiconductor has an electron concentration of $5 \\times 10^{22} \\text{ m}^{-3}$. The concentration of holes is (given $n_i = 1.5 \\times 10^{16} \\text{ m}^{-3}$)\\n(A) $5 \\times 10^{22} \\text{ m}^{-3}$\n(B) $1.5 \\times 10^6 \\text{ m}^{-3}$\\n(C) $9 \\times 10^8 \\text{ m}^{-3}$\n(D) $4.5 \\times 10^9 \\text{ m}^{-3}$\\n(iii) During forward biasing of a p-n junction diode, the\\n(A) current is mainly due to drifting of majority carriers.\\n(B) current is mainly due to drifting of minority carriers.\\n(C) diffusion and drift currents are equal.\\n(D) current is of the order of $1 \\text{ A}$.\\n(iv) The threshold voltage for silicon diode is about\\n(A) $0.2 \\text{ V}$\n(B) $0.5 \\text{ V}$\\n(C) $0.7 \\text{ V}$\n(D) $1.5 \\text{ V}$",
+      "section": "SECTION – D",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-459"
+    },
+    {
+      "id": 461,
+      "subject": "Physics",
+      "chapter_number": 9,
+      "chapter_name": "Ray Optics and Optical Instruments",
+      "marks": 1,
+      "text": "In an experiment with convex lens of focal length $f$, the screen is fixed at a distance $D$ from the object. A student slowly moves the lens away from the object towards the screen and finds that she is able to form sharp image of the object for two positions of the lens. The distance between these two positions of the lens is $d$.",
+      "section": "",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-461"
+    },
+    {
+      "id": 463,
+      "subject": "Physics",
+      "chapter_number": null,
+      "chapter_name": "Unclassified",
+      "marks": 1,
+      "text": "(ii) Compared to the size of the object, the images formed in the two positions of the lens are respectively\n(A) reduced, enlarged\n(B) reduced, reduced\n(C) enlarged, enlarged\n(D) enlarged, reduced",
+      "section": "",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-463"
+    },
+    {
+      "id": 464,
+      "subject": "Physics",
+      "chapter_number": 9,
+      "chapter_name": "Ray Optics and Optical Instruments",
+      "marks": 1,
+      "text": "(iii) If the distance between object and screen is $80.00\\text{ cm}$ and the lens forms sharp images at two positions separated by $20.00\\text{ cm}$., the focal length of convex lens is\n(A) $15.50\\text{ cm}$\n(B) $18.75\\text{ cm}$\n(C) $20.50\\text{ cm}$\n(D) $22.75\\text{ cm}$",
+      "section": "",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-464"
+    },
+    {
+      "id": 467,
+      "subject": "Physics",
+      "chapter_number": 2,
+      "chapter_name": "Electrostatic Potential and Capacitance",
+      "marks": 5,
+      "text": "(a) Derive an expression for the capacitance of a parallel plate capacitor of plate area A and plate separation d with air present between the plates.\n(b) Two air-filled capacitors of capacitances $C_1$ and $C_2$ are connected in parallel with a dc battery. After the capacitors are fully charged, a slab of dielectric constant K is inserted between the plates of each capacitor. How will the (i) charge on each capacitor and (ii) energy stored in the capacitor affected after the slab is introduced.\n\nOR\n\n(a) An electric field $\\vec{E}$ is established across the ends of a cylindrical conductor of length L and area of cross-section A. Discuss how electrons attain an average velocity, independent of time. Hence, obtain a relation between current in the conductor and this 'average velocity' of electrons.",
+      "section": "SECTION - E",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-467"
+    },
+    {
+      "id": 469,
+      "subject": "Physics",
+      "chapter_number": 7,
+      "chapter_name": "Alternating Current",
+      "marks": 5,
+      "text": "(a) A series combination of L, C and R is connected to an a.c. source. Using a phasor diagram, derive an expression for the impedance of the circuit and phase difference between V and I.\n(b) Under what conditions the\n(i) impedance of the circuit is minimum ?\n(ii) Wattless current flows in the circuit ?\nOR\n(i) With the help of a labelled diagram, explain the principle, construction and working of an a.c. generator.\n(ii) Deduce an expression for the induced emf in the coil of the generator.\n(iii) If T is the time period of the rotation of the coil, at what values of T in a cycle, the emf generator is maximum ?",
+      "section": "",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-469"
+    },
+    {
+      "id": 778,
+      "subject": "Chemistry",
+      "chapter_number": 5,
+      "chapter_name": "Coordination Compounds",
+      "marks": 1,
+      "text": "According to Werner's theory, the primary valencies of the central metal atom :\n(A) are satisfied by neutral molecules or negative ions.\n(B) are equal to its coordination number.\n(C) are satisfied by negative ions.\n(D) are non-ionisable.",
+      "section": "Section A",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-778"
+    },
+    {
+      "id": 783,
+      "subject": "Chemistry",
+      "chapter_number": 1,
+      "chapter_name": "Solutions",
+      "marks": 1,
+      "text": "The mole fraction of a solute in $2\\cdot 0$ molal aqueous solution is :\n(A) $1\\cdot 87$\n(B) $0\\cdot 347$\n(C) $0\\cdot 0347$\n(D) $0\\cdot 00347$",
+      "section": "Section A",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-783"
+    },
+    {
+      "id": 805,
+      "subject": "Chemistry",
+      "chapter_number": 7,
+      "chapter_name": "Alcohols, Phenols and Ethers",
+      "marks": 1,
+      "text": "(b) Write the reaction involved in Kolbe's reaction.",
+      "section": "",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-805"
+    },
+    {
+      "id": 842,
+      "subject": "Chemistry",
+      "chapter_number": null,
+      "chapter_name": "Unclassified",
+      "marks": 1,
+      "text": "(c) (i) Why are tertiary alcohols resistant to oxidation ?",
+      "section": "SECTION D",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-842"
+    },
+    {
+      "id": 900,
+      "subject": "Chemistry",
+      "chapter_number": 1,
+      "chapter_name": "Solutions",
+      "marks": 1,
+      "text": "When a liquid and its vapour are at equilibrium and the pressure is suddenly decreased :\n(A) vapour pressure of the solution increases\n(B) heating occurs\n(C) cooling occurs\n(D) equilibrium remains unaffected",
+      "section": "Section A",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-900"
+    },
+    {
+      "id": 909,
+      "subject": "Chemistry",
+      "chapter_number": 3,
+      "chapter_name": "Chemical Kinetics",
+      "marks": 2,
+      "text": "(a) Reactions of which order will show the rate to be independent of the concentration of the reactant ? Give one example of this order.\n(b) State the condition under which a bimolecular reaction may be kinetically a first order reaction.",
+      "section": "SECTION B",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-909"
+    },
+    {
+      "id": 916,
+      "subject": "Chemistry",
+      "chapter_number": 1,
+      "chapter_name": "Solutions",
+      "marks": 3,
+      "text": "Answer the following questions :\n(a) Why is direct current (DC) not used to measure the resistance of an ionic solution ?\n(b) Why are the products of electrolysis different for the electrolysis of aqueous solution of $\text{AgNO}_3$ with silver electrodes and electrolysis of aqueous solution of $\text{AgNO}_3$ with platinum electrodes ?\n(c) Why are magnesium blocks fixed to the iron pipelines carrying water ?",
+      "section": "",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-916"
+    },
+    {
+      "id": 931,
+      "subject": "Chemistry",
+      "chapter_number": 8,
+      "chapter_name": "Aldehydes, Ketones and Carboxylic Acids",
+      "marks": 5,
+      "text": "(a) (i) How will you bring about the following conversions :\n(I) Bromobenzene to 1-phenylethanol\n(II) Benzene to m-nitroacetophenone\n(ii) An organic compound with the molecular formula $\\text{C}_8\\text{H}_8\\text{O}$ forms 2,4-DNP derivative, reduces Tollens' reagent and undergoes Cannizzaro reaction. On vigorous oxidation with acidic or alkaline $\\text{KMnO}_4$ it gives Benzene-1,2-dicarboxylic acid. Identify the compound and write the products when it undergoes Cannizzaro reaction.\n(iii) Arrange the following compounds in increasing order of their acid strength :\n$\\text{C}_6\\text{H}_5\\text{COOH}, \\text{O}_2\\text{N} - \\text{CH}_2 - \\text{COOH}, \\text{CF}_3 - \\text{COOH}, \\text{HCOOH}\nOR\n(b) (i) Write the products formed when benzaldehyde reacts with the following reagents :\n(I) 2,4-Dinitrophenylhydrazine\n(II) Acetophenone in the presence of dilute $\\text{NaOH}$ followed by heating\n(ii) Give reasons for the following :\n(I) Benzoic acid does not undergo Friedel-Crafts reaction.\n(II) Carboxylic acids have higher boiling point than alcohols of comparable molecular mass.\n(iii) Write simple chemical test to distinguish between propanal and propanone.",
+      "section": "",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-931"
+    },
+    {
+      "id": 1004,
+      "subject": "Chemistry",
+      "chapter_number": 8,
+      "chapter_name": "Aldehydes, Ketones and Carboxylic Acids",
+      "marks": 1,
+      "text": "Which of the reactions is used in the conversion of a ketone into hydrocarbon ?\n(A) Reimer-Tiemann reaction\n(B) Wolff-Kishner reduction\n(C) Aldol condensation\n(D) Stephen reaction",
+      "section": "Section A",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-1004"
+    },
+    {
+      "id": 1006,
+      "subject": "Chemistry",
+      "chapter_number": 8,
+      "chapter_name": "Aldehydes, Ketones and Carboxylic Acids",
+      "marks": 1,
+      "text": "The major product of carbylamine reaction is :\n(A) Carboxylic acid\n(B) Aldehyde\n(C) Cyanide\n(D) Isocyanide",
+      "section": "Section A",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-1006"
+    },
+    {
+      "id": 1007,
+      "subject": "Chemistry",
+      "chapter_number": 4,
+      "chapter_name": "The d- and f-Block Elements",
+      "marks": 1,
+      "text": "Actinoids show larger number of oxidation states :\n(A) because they are radioactive in nature\n(B) because they have large atomic numbers\n(C) because they have large atomic masses\n(D) due to comparable energies of $5\\text{f}$, $6\\text{d}$ and $7\\text{s}$ orbitals",
+      "section": "Section A",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-1007"
+    },
+    {
+      "id": 1009,
+      "subject": "Chemistry",
+      "chapter_number": 9,
+      "chapter_name": "Amines",
+      "marks": 1,
+      "text": "The correct formula of Hinsberg's reagent is :\n(A) $\\text{C}_6\\text{H}_5\\text{COCl}$\n(B) $\\text{C}_6\\text{H}_5\\text{SO}_2\\text{Cl}$\n(C) $\\text{C}_6\\text{H}_5\\text{CONHCH}_3$\n(D) $\\text{C}_6\\text{H}_5\\text{CH}_2\\text{NH}_2$",
+      "section": "Section A",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-1009"
+    },
+    {
+      "id": 1010,
+      "subject": "Chemistry",
+      "chapter_number": 3,
+      "chapter_name": "Chemical Kinetics",
+      "marks": 1,
+      "text": "Half-life ($t_{1/2}$) of a first order reaction is $1386 \\text{ s}$. The value of rate constant is :\n(A) $0.5 \\times 10^4 \\text{ s}^{-1}$\n(B) $5.0 \\times 10^{-4} \\text{ s}^{-1}$\n(C) $0.5 \\times 10^{-5} \\text{ s}^{-1}$\n(D) $0.5 \\times 10^{-2} \\text{ s}^{-1}$",
+      "section": "Section A",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-1010"
+    },
+    {
+      "id": 1011,
+      "subject": "Chemistry",
+      "chapter_number": 5,
+      "chapter_name": "Coordination Compounds",
+      "marks": 1,
+      "text": "Which of the following ligands forms a chelate complex ?\n(A) Ammonia\n(B) Water\n(C) $\\text{NO}_2^-$\n(D) Oxalate ion",
+      "section": "Section A",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-1011"
+    },
+    {
+      "id": 1012,
+      "subject": "Chemistry",
+      "chapter_number": 8,
+      "chapter_name": "Aldehydes, Ketones and Carboxylic Acids",
+      "marks": 1,
+      "text": "Primary, secondary and tertiary alcohols can be distinguished by :\n(A) Lucas test\n(B) Fehling's test\n(C) Tollens' test\n(D) Hinsberg's test",
+      "section": "Section A",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-1012"
+    },
+    {
+      "id": 1013,
+      "subject": "Chemistry",
+      "chapter_number": null,
+      "chapter_name": "Unclassified",
+      "marks": 1,
+      "text": "Consider the following compounds :\n$\\text{C}_2\\text{H}_5\\text{NH}_2, (\\text{C}_2\\text{H}_5)_2\\text{NH}, \\text{C}_6\\text{H}_5\\text{CH}_2\\text{NH}_2, \\text{NH}_3, \\text{C}_6\\text{H}_5\\text{NH}_2$\nThe correct increasing order of the above compounds on the basis of their basic strength is :\n(A) $\\text{C}_6\\text{H}_5\\text{NH}_2 < \\text{NH}_3 < \\text{C}_6\\text{H}_5\\text{CH}_2\\text{NH}_2 < \\text{C}_2\\text{H}_5\\text{NH}_2 < (\\text{C}_2\\text{H}_5)_2\\text{NH}$\n(B) $\\text{NH}_3 < \\text{C}_6\\text{H}_5\\text{NH}_2 < \\text{C}_6\\text{H}_5\\text{CH}_2\\text{NH}_2 < \\text{C}_2\\text{H}_5\\text{NH}_2 < (\\text{C}_2\\text{H}_5)_2\\text{NH}$\n(C) $\\text{C}_6\\text{H}_5\\text{CH}_2\\text{NH}_2 < (\\text{C}_2\\text{H}_5)_2\\text{NH} < \\text{NH}_3 < \\text{C}_6\\text{H}_5\\text{NH}_2 < \\text{C}_2\\text{H}_5\\text{NH}_2$\n(D) $\\text{C}_2\\text{H}_5\\text{NH}_2 < \\text{C}_6\\text{H}_5\\text{NH}_2 < \\text{NH}_3 < \\text{C}_6\\text{H}_5\\text{CH}_2\\text{NH}_2 < (\\text{C}_2\\text{H}_5)_2\\text{NH}$",
+      "section": "Section A",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-1013"
+    },
+    {
+      "id": 1014,
+      "subject": "Chemistry",
+      "chapter_number": 10,
+      "chapter_name": "Biomolecules",
+      "marks": 1,
+      "text": "Identify the polysaccharide among the following :\n(A) Fructose\t\t\t\t(B) Maltose\n(C) Glucose\t\t\t\t(D) Cellulose",
+      "section": "Section A",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-1014"
+    },
+    {
+      "id": 1015,
+      "subject": "Chemistry",
+      "chapter_number": 10,
+      "chapter_name": "Biomolecules",
+      "marks": 1,
+      "text": "The polypeptide chain in a protein has amino acids linked with each other in a specific sequence. This specific sequence of amino acids is called :\n(A) Primary structure of protein\n(B) Secondary structure of protein\n(C) Tertiary structure of protein\n(D) Quaternary structure of protein",
+      "section": "Section A",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-1015"
+    },
+    {
+      "id": 1020,
+      "subject": "Chemistry",
+      "chapter_number": 1,
+      "chapter_name": "Solutions",
+      "marks": 2,
+      "text": "(a) $1\\cdot00$ molal aqueous solution of trichloroacetic acid is heated to its boiling point. Boiling point of this solution was found to be $100\\cdot18^{\\circ}\\text{C}$. Calculate the van't Hoff factor for trichloroacetic acid. (Given : $\text{K}_\\text{b}$ for water $= 0\\cdot512 \\text{ K kg mol}^{-1}$)\nOR",
+      "section": "SECTION B",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-1020"
+    },
+    {
+      "id": 1034,
+      "subject": "Chemistry",
+      "chapter_number": 6,
+      "chapter_name": "Haloalkanes and Haloarenes",
+      "marks": 4,
+      "text": "Ethers are prepared by the dehydration of alcohols in presence of protic acids at $413\\text{ K}$. Symmetrical and unsymmetrical ethers can also be prepared by Williamson synthesis. This reaction involves $\\text{S}_\\text{N}2$ attack of an alkoxide ion on primary alkyl halide. If a tertiary alkyl halide is used, elimination reaction occurs and an alkene is formed, no ether is formed. $\\text{C} - \\text{O}$ bond in ethers are cleaved under drastic conditions with excess of $\\text{HI}$. When unsymmetrical ethers react with $\\text{HI}$, the alkyl halide is formed from smaller alkyl group. If one of the alkyl group is tertiary, the alkyl halide is formed from the tertiary alkyl group because tertiary alkyl carbocation is more stable than the primary carbocation. Cleavage of alkyl aryl ethers takes place at the alkyl-oxygen bond due to more stable aryl-oxygen bond. The order of reactivity of hydrogen halides is $\\text{HI} > \\text{HBr} > \\text{HCl}$. Aromatic ethers undergo electrophilic substitution reactions. The alkoxy group attached to the aromatic ring activates the ring towards electrophilic substitution and directs the incoming group to ortho- and para-positions.",
+      "section": "SECTION D",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-1034"
+    },
+    {
+      "id": 1036,
+      "subject": "Chemistry",
+      "chapter_number": 6,
+      "chapter_name": "Haloalkanes and Haloarenes",
+      "marks": 1,
+      "text": "(b) (i) Write the names of alkyl halide and sodium alkoxide used to prepare tert-butyl ethyl ether.",
+      "section": "",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-1036"
+    },
+    {
+      "id": 1039,
+      "subject": "Chemistry",
+      "chapter_number": 2,
+      "chapter_name": "Electrochemistry",
+      "marks": 4,
+      "text": "Electrochemistry is the study of the relationship between chemical energy and electrical energy. Many spontaneously occurring chemical reactions liberate electrical energy. In electrolysis, electrical energy is converted directly into chemical energy. The product of an electrolytic reaction depends on the nature of the material being electrolysed and the type of electrode used. Oxidising and reducing species present in the electrolytic cell and their standard electrode potential too, affect the products of electrolysis. Electrolysis plays an important role in most people's daily lives, whether it is for the manufacturing of aluminium, electroplating of metals, or the synthesis of chemical compounds.\n\nMichael Faraday was the first scientist who proposed two laws to explain the quantitative aspects of electrolysis, popularly known as Faraday's laws of electrolysis. Faraday's laws of electrolysis provide a basis for mathematical analysis of the mass deposited at electrodes and the amount of charge passed through them.\n\nFaraday's laws are fundamental in various applications, including electroplating, metal extraction, battery technology and chemical synthesis. These laws also help in environmental monitoring and in various chemistry experiments.",
+      "section": "",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-1039"
+    },
+    {
+      "id": 1043,
+      "subject": "Chemistry",
+      "chapter_number": 1,
+      "chapter_name": "Solutions",
+      "marks": 1,
+      "text": "(c) The following reactions occur at the anode during the electrolysis of aqueous sodium chloride solution :\n$\\text{Cl}^- (\\text{aq}) \\longrightarrow \\frac{1}{2} \\text{Cl}_2 \\, (g) + \\text{e}^- \\quad E^\\circ_{(\\text{cell})} = 1\\cdot36 \\text{ V} \\quad (\\text{I})$\n$2\\text{H}_2\\text{O} \\, (l) \\longrightarrow \\text{O}_2 \\, (g) + 4\\text{H}^+ (\\text{aq}) + 4\\text{e}^- \\quad E^\\circ_{(\\text{cell})} = 1\\cdot23 \\text{ V} \\quad (\\text{II})$\nWhich reaction is feasible at the anode and why ?",
+      "section": "SECTION D",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-1043"
+    },
+    {
+      "id": 1044,
+      "subject": "Chemistry",
+      "chapter_number": 1,
+      "chapter_name": "Solutions",
+      "marks": 3,
+      "text": "(a) (i) Calculate the freezing point of a solution when $10\\cdot5 \\text{ g}$ of $\\text{MgBr}_2$ was dissolved in $250 \\text{ g}$ of water, assuming $\\text{MgBr}_2$ undergoes complete dissociation.\n(Given : Molar mass of $\\text{MgBr}_2 = 184 \\text{ g mol}^{-1}$,\n$\\text{K}_\\text{f} \\text{ for water} = 1\\cdot86 \\text{ K kg mol}^{-1}$)",
+      "section": "SECTION E",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-1044"
+    },
+    {
+      "id": 1154,
+      "subject": "Chemistry",
+      "chapter_number": 9,
+      "chapter_name": "Amines",
+      "marks": 1,
+      "text": "Which of the following reactions is used for the preparation of Aniline ?\n(A) Reaction of ethanolic $\\text{NH}_3$ with $\\text{C}_6\\text{H}_5\\text{Cl}$\n(B) Reaction of Nitrobenzene with Hydrogen gas in presence of finely divided Nickel\n(C) Reaction of Benzamide with $\\text{LiAlH}_4$\n(D) Reaction of Benzonitrile with $\\text{LiAlH}_4$",
+      "section": "Section A",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-1154"
+    },
+    {
+      "id": 1155,
+      "subject": "Chemistry",
+      "chapter_number": null,
+      "chapter_name": "Unclassified",
+      "marks": 1,
+      "text": "Which of the following elements exhibits maximum number of oxidation states ?\n(A) Scandium\n(B) Zinc\n(C) Manganese\n(D) Cobalt",
+      "section": "Section A",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-1155"
+    },
+    {
+      "id": 1156,
+      "subject": "Chemistry",
+      "chapter_number": 5,
+      "chapter_name": "Coordination Compounds",
+      "marks": 1,
+      "text": "According to Alfred Werner, the secondary valence(s) of the central metal atom/ion in a complex :\n(A) are non-ionisable\n(B) are ionisable\n(C) are satisfied by neutral molecules or negative ions\n(D) is equal to the coordination number and is normally fixed for a metal\nIdentify the incorrect statement from the above given statements.",
+      "section": "Section A",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-1156"
+    },
+    {
+      "id": 1157,
+      "subject": "Chemistry",
+      "chapter_number": 2,
+      "chapter_name": "Electrochemistry",
+      "marks": 1,
+      "text": "A galvanic cell functions like an electrolytic cell when :\n(A) $E_{\\text{cell}} = E_{\\text{ext}}$\n(B) $E_{\\text{cell}} > E_{\\text{ext}}$\n(C) $E_{\\text{ext}} > E_{\\text{cell}}$\n(D) $E_{\\text{cell}} = 0$",
+      "section": "Section A",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-1157"
+    },
+    {
+      "id": 1158,
+      "subject": "Chemistry",
+      "chapter_number": 7,
+      "chapter_name": "Alcohols, Phenols and Ethers",
+      "marks": 1,
+      "text": "Phenol, on heating with conc. $\\text{HNO}_3$, gives :\n(A) o-Nitrophenol\n(B) p-Nitrophenol\n(C) Picric acid\n(D) Sodium phenoxide",
+      "section": "Section A",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-1158"
+    },
+    {
+      "id": 1161,
+      "subject": "Chemistry",
+      "chapter_number": 7,
+      "chapter_name": "Alcohols, Phenols and Ethers",
+      "marks": 1,
+      "text": "The correct order of reactivity of alcohols with Lucas reagent is :\n(A) $3^\\circ > 1^\\circ > 2^\\circ$\n(B) $2^\\circ > 1^\\circ > 3^\\circ$\n(C) $1^\\circ > 2^\\circ > 3^\\circ$\n(D) $3^\\circ > 2^\\circ > 1^\\circ$",
+      "section": "",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-1161"
+    },
+    {
+      "id": 1168,
+      "subject": "Chemistry",
+      "chapter_number": 6,
+      "chapter_name": "Haloalkanes and Haloarenes",
+      "marks": 1,
+      "text": "Assertion (A) : Phosphorus halides are preferred over thionyl chloride for the preparation of alkyl halides from alcohols.\nReason (R) : Reaction of alcohols with thionyl chloride forms pure alkyl halides.",
+      "section": "Section A",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-1168"
+    },
+    {
+      "id": 1169,
+      "subject": "Chemistry",
+      "chapter_number": 8,
+      "chapter_name": "Aldehydes, Ketones and Carboxylic Acids",
+      "marks": 1,
+      "text": "Assertion (A) : Aromatic carboxylic acids do not undergo Friedel-Crafts reaction.\nReason (R) : Carboxyl group is deactivating and the catalyst aluminium chloride gets bonded to carboxyl group.",
+      "section": "Section A",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-1169"
+    },
+    {
+      "id": 1177,
+      "subject": "Chemistry",
+      "chapter_number": 7,
+      "chapter_name": "Alcohols, Phenols and Ethers",
+      "marks": 3,
+      "text": "(a) Arrange the following compounds in the decreasing order of their acidic strength :\nPhenol, 4-Nitrophenol, 2,4,6-Trinitrophenol\n(b) Why are alcohols more soluble in water than hydrocarbons of comparable molecular masses ?\n(c) Name the reagent used in the oxidation of a primary unsaturated alcohol to an aldehyde.",
+      "section": "",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-1177"
+    },
+    {
+      "id": 1183,
+      "subject": "Chemistry",
+      "chapter_number": 4,
+      "chapter_name": "The d- and f-Block Elements",
+      "marks": 2,
+      "text": "Atomic radii is a useful property for determining many aspects of chemistry of elements such as physical and chemical properties. The periodic table greatly assists in finding a number of trends. The transition metals belong to group $3 - 12$ and are generally characterised by partially filled d-orbitals in the free elements or their cations. The atomic radii of transition metals show a small decrease from left to right across a period, then remain nearly constant, and finally, slight increase towards the end of the series. The trend is a result of interplay between the increasing nuclear charge and the increasing shielding effect from the filling of d-orbitals. Initially the nuclear charge dominates, leading to decrease in size, but as more d-electrons are added, their shielding becomes more effective, balancing the increased nuclear charge and causing the radii to become constant.\nThe increase in size between $3\\text{d}$ and $4\\text{d}$ metals is much greater than between the $4\\text{d}$ and $5\\text{d}$ metals. The atomic radii of $2^{\\text{nd}}$ and $3^{\\text{rd}}$ series are almost the same due to lanthanoid contraction. Increase in density is also observed on moving from left to right in a period.\n(a) Give reasons for the following :\n(i) The second and third series of transition metals resemble each other much more than they resemble the first series ($3\\text{d}$).\n(ii) Transition metals show variable oxidation states.",
+      "section": "SECTION D",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-1183"
+    },
+    {
+      "id": 1186,
+      "subject": "Chemistry",
+      "chapter_number": 4,
+      "chapter_name": "The d- and f-Block Elements",
+      "marks": 1,
+      "text": "(c) Why is there not much change in the atomic radius of the transition metals with the increase in atomic number ?",
+      "section": "Section C",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-1186"
+    },
+    {
+      "id": 1188,
+      "subject": "Chemistry",
+      "chapter_number": 8,
+      "chapter_name": "Aldehydes, Ketones and Carboxylic Acids",
+      "marks": 1,
+      "text": "(b) (i) Arrange the following compounds in increasing order of reactivity towards nucleophilic addition reactions : Butanone, Propanone, Propanal, Ethanal",
+      "section": "Section C",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-1188"
+    },
+    {
+      "id": 1190,
+      "subject": "Chemistry",
+      "chapter_number": null,
+      "chapter_name": "Unclassified",
+      "marks": 1,
+      "text": "(c) Why is $\\alpha$-hydrogen of carbonyl group acidic in nature ?",
+      "section": "Section C",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-1190"
+    },
+    {
+      "id": 1191,
+      "subject": "Chemistry",
+      "chapter_number": 3,
+      "chapter_name": "Chemical Kinetics",
+      "marks": 5,
+      "text": "(a) (i) A first order reaction is $20\\%$ complete in $10$ minutes. Calculate the time taken when $80\\%$ of the reaction will be completed.\n[Given : $\\log 5 = 0\\cdot7$, $\\log 4 = 0\\cdot6$]\n(ii) For a chemical reaction $\\text{R} \\rightarrow \\text{P}$, variation in $\\ln[\\text{R}]$ vs. time (t) graph is given below :\n(I) Predict the order of the reaction.\n(II) Write the slope of the curve.\nOR\n(b) (i) For first order reaction, calculate the ratio between the time taken to complete $\\frac{3}{4}^{\\text{th}}$ of the reaction and the time taken to complete half of the reaction.\n(ii) (I) What is meant by a complex reaction ?\n(II) Give an example of a pseudo first order reaction.",
+      "section": "SECTION E",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-1191"
+    },
+    {
+      "id": 1323,
+      "subject": "Mathematics",
+      "chapter_number": 1,
+      "chapter_name": "Relations and Functions",
+      "marks": 1,
+      "text": "The value of k for which the function $f(x) = \\begin{cases} x^2 \\sin \\frac{1}{x}, & x \\neq 0 \\\\ k(x + 1), & x = 0 \\end{cases}$ is a continuous function, is :\n(A) $\\frac{1}{4}$\n(B) $2$\n(C) $\\frac{1}{2}$\n(D) $0$",
+      "section": "Section A",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-1323"
+    },
+    {
+      "id": 1329,
+      "subject": "Mathematics",
+      "chapter_number": 11,
+      "chapter_name": "Three-Dimensional Geometry",
+      "marks": 1,
+      "text": "If $l_1, m_1, n_1$ and $l_2, m_2, n_2$ are direction cosines of lines $L_1$ and $L_2$ respectively and $\\theta$ is the acute angle between them, then :\n(A) $\\cos \\theta = l_1 l_2 + m_1 m_2 + n_1 n_2$\n(B) $\\sin \\theta = l_1 l_2 + m_1 m_2 + n_1 n_2$\n(C) $\\tan \\theta = \\frac{l_1}{l_2} + \\frac{m_1}{m_2} + \\frac{n_1}{n_2}$\n(D) $\\cos \\theta = | l_1 l_2 + m_1 m_2 + n_1 n_2 |$",
+      "section": "Section A",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-1329"
+    },
+    {
+      "id": 1343,
+      "subject": "Mathematics",
+      "chapter_number": 10,
+      "chapter_name": "Vectors",
+      "marks": 2,
+      "text": "If for two unit vectors $\\vec{a}$ and $\\vec{b}$, $|\\vec{a} + 2\\vec{b}| = |2\\vec{a} - \\vec{b}|$, then find the angle between $\\vec{a}$ and $\\vec{b}$.",
+      "section": null,
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-1343"
+    },
+    {
+      "id": 1348,
+      "subject": "Mathematics",
+      "chapter_number": 5,
+      "chapter_name": "Continuity and Differentiability",
+      "marks": 2,
+      "text": "If $(\\sin x)^y = y^{\\cos x}$, then find $\\frac{dy}{dx}$.",
+      "section": "",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-1348"
+    },
+    {
+      "id": 1475,
+      "subject": "Mathematics",
+      "chapter_number": null,
+      "chapter_name": "Unclassified",
+      "marks": 1,
+      "text": "If points $(2, 3)$, $(0, 4)$ and $(p, 2)$ are collinear, then the value of $p$ is :\n(A) $\\frac{4}{7}$\n(B) $-\\frac{3}{7}$\n(C) $4$\n(D) $-4$",
+      "section": null,
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-1475"
+    },
+    {
+      "id": 1476,
+      "subject": "Mathematics",
+      "chapter_number": null,
+      "chapter_name": "Unclassified",
+      "marks": 1,
+      "text": "Differential of $e^{e^x}$ with respect to $x$ is :\n(A) $\\log x$\n(B) $e^{e^x}$\n(C) $e^x e^{e^x}$\n(D) $(e^x)^2$",
+      "section": null,
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-1476"
+    },
+    {
+      "id": 1478,
+      "subject": "Mathematics",
+      "chapter_number": 1,
+      "chapter_name": "Relations and Functions",
+      "marks": 1,
+      "text": "If f(x) = $\\begin{cases} \\frac{\\sin x}{x} + \\cos x, & x \\neq 0 \\\\ k, & x = 0 \\end{cases}$ is continuous at x = 0, then the value of k is : (A) 0 (B) - 2 (C) -1 (D) 2",
+      "section": null,
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-1478"
+    },
+    {
+      "id": 1479,
+      "subject": "Mathematics",
+      "chapter_number": 1,
+      "chapter_name": "Relations and Functions",
+      "marks": 1,
+      "text": "The greatest integer function, f(x) = [x], 0 < x < 3 is not differentiable at how many points ? (A) At only one point (B) At only two points (C) At no point (D) At three points",
+      "section": null,
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-1479"
+    },
+    {
+      "id": 1482,
+      "subject": "Mathematics",
+      "chapter_number": 8,
+      "chapter_name": "Applications of the Integrals",
+      "marks": 1,
+      "text": "The area of the region bounded by the curve y = x and x-axis, between x = 0 and x = 2 is : (A) 2 sq. units (B) $\\frac{1}{2}$ sq. unit (C) 1 sq. unit (D) 4 sq. units",
+      "section": null,
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-1482"
+    },
+    {
+      "id": 1485,
+      "subject": "Mathematics",
+      "chapter_number": null,
+      "chapter_name": "Unclassified",
+      "marks": 1,
+      "text": "The region represented by the system of inequations $3x + y \\geq 3$, $2x - y \\geq -5$, $x, y \\geq 0$ is :\n(A) unbounded in $1^{st}$ quadrant\n(B) bounded in $1^{st}$ quadrant\n(C) unbounded in $2^{nd}$ quadrant\n(D) bounded in $2^{nd}$ quadrant",
+      "section": "Section A",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-1485"
+    },
+    {
+      "id": 1486,
+      "subject": "Mathematics",
+      "chapter_number": 12,
+      "chapter_name": "Linear Programming",
+      "marks": 1,
+      "text": "In the graph, the feasible region representing the Linear Programming Problem for maximising objective function $Z = px + qy$, $p, q > 0$ is shaded. If all points on segment AB give max (Z), then which of the following is true ?\n(A) $p = 2q$\n(B) $p = 3q$\n(C) $q = 3p$\n(D) $q = 2p$",
+      "section": "Section A",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-1486"
+    },
+    {
+      "id": 1487,
+      "subject": "Mathematics",
+      "chapter_number": 10,
+      "chapter_name": "Vectors",
+      "marks": 1,
+      "text": "If $$3\\hat{i} - 2\\hat{j} + 5\\hat{k}$ \\times $4\\hat{i} + p\\hat{j} + q\\hat{k}$ = \\vec{0}$, then the values of $p$ and $q$ are :\n(A) $p = -\\frac{2}{3}, q = \\frac{5}{3}$\n(B) $p = -\\frac{8}{3}, q = \\frac{20}{3}$\n(C) $p = \\frac{20}{3}, q = -\\frac{8}{3}$\n(D) $p = 0, q = 0$",
+      "section": "Section A",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-1487"
+    },
+    {
+      "id": 1490,
+      "subject": "Mathematics",
+      "chapter_number": 3,
+      "chapter_name": "Matrices",
+      "marks": 1,
+      "text": "Assertion (A) : If A and B are two square matrices such that AB and BA are defined, then it is not necessary that AB = BA.\nReason (R) : Product of two diagonal matrices of same order is commutative.",
+      "section": null,
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-1490"
+    },
+    {
+      "id": 1491,
+      "subject": "Mathematics",
+      "chapter_number": 1,
+      "chapter_name": "Relations and Functions",
+      "marks": 1,
+      "text": "Assertion (A) : A function f : N $\\rightarrow$ N given by f(x) = $x^3$ + 2, $\\forall$ x $\\in$ N is one-one but not onto.\nReason (R) : Since $\\forall$ y $\\in$ N (Codomain), there does not exist x = (y - 2)$^{1/3}$ in N (Domain) such that f(x) = $x^3$ + 2 = y.",
+      "section": null,
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-1491"
+    },
+    {
+      "id": 1492,
+      "subject": "Mathematics",
+      "chapter_number": 2,
+      "chapter_name": "Inverse Trigonometric Functions",
+      "marks": 2,
+      "text": "Evaluate : $\\tan^{-1}\\left$ -\\frac{1}{\\sqrt{3}} \\right$ + \\cot^{-1}\\left$ \\frac{1}{\\sqrt{3}} \\right$ + \\tan^{-1}\\left( \\sin\\left$ -\\frac{\\pi}{2} \\right$ \\right) + \\tan^{-1}\\left$ \\tan \\frac{2\\pi}{3} \\right$$",
+      "section": "Section B",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-1492"
+    },
+    {
+      "id": 1496,
+      "subject": "Mathematics",
+      "chapter_number": 10,
+      "chapter_name": "Vectors",
+      "marks": 2,
+      "text": "(a) Let two rods placed on the ground be represented by vectors $4\\hat{i} - \\hat{j} + 3\\hat{k}$ and $-2\\hat{i} + \\hat{j} - 2\\hat{k}$. Find a vector representing a flag-post of height 5 m that has to be erected perpendicular to both the rods. OR (b) A unit vector $\\vec{a}$ is such that it makes an angle $\\frac{\\pi}{4}$ with x-axis, $\\frac{\\pi}{3}$ with y-axis and an acute angle $\\theta$ with z-axis. Find $\\theta$ and the components of $\\vec{a}$.",
+      "section": "Section B",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-1496"
+    },
+    {
+      "id": 1499,
+      "subject": "Mathematics",
+      "chapter_number": 2,
+      "chapter_name": "Inverse Trigonometric Functions",
+      "marks": 3,
+      "text": "(a) If $xy = e^{x - y}$, then find $\\frac{dy}{dx}$.\n\nOR\n\n(b) Differentiate $\\tan^{-1} \\left$ \\frac{\\sqrt{1 + x^2} - \\sqrt{1 - x^2}}{\\sqrt{1 + x^2} + \\sqrt{1 - x^2}} \\right$$ with respect to $\\cos^{-1} x^2$.",
+      "section": "Section C",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-1499"
+    },
+    {
+      "id": 1501,
+      "subject": "Mathematics",
+      "chapter_number": 10,
+      "chapter_name": "Vectors",
+      "marks": 5,
+      "text": "(a) Find a point on the line $\\frac{x - 2}{3} = \\frac{1 - y}{2} = \\frac{z - 3}{2}$ at a distance of $\\sqrt{2}$ units from the point (1, 2, 3).\nOR\n(b) Find the shortest distance between the lines\n$\\vec{r} = $4 + \\lambda$\\hat{i} + $2\\lambda - 1$\\hat{j} - 3\\lambda\\hat{k}$\n$\\vec{r} = $1 + 2\\mu$\\hat{i} + $2 - 5\\mu$\\hat{k} + $4\\mu - 1$\\hat{j}$.",
+      "section": null,
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-1501"
+    },
+    {
+      "id": 1502,
+      "subject": "Mathematics",
+      "chapter_number": 13,
+      "chapter_name": "Probability",
+      "marks": 5,
+      "text": "In a school, the probability of holding a debate competition is $\\frac{1}{3}$ and that of a quiz competition is $\\frac{2}{3}$. In the two participating teams, A has 4 girls and 6 boys and B has 7 girls and 3 boys. If a debate competition is held, the students are selected from team A and for the quiz competition they are selected from team B. If only two students are to be chosen from the teams, then find the probability that one will be a girl and the other a boy.",
+      "section": null,
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-1502"
+    },
+    {
+      "id": 1509,
+      "subject": "Mathematics",
+      "chapter_number": null,
+      "chapter_name": "Unclassified",
+      "marks": 1,
+      "text": "Establish a relation between the height $h$ of the juice in the cup and radius $r$ of the surface of the juice in the cup, if the semi-vertical angle of the cone is $\\alpha$.",
+      "section": "Case Study - 1",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-1509"
+    },
+    {
+      "id": 1518,
+      "subject": "Mathematics",
+      "chapter_number": 13,
+      "chapter_name": "Probability",
+      "marks": 4,
+      "text": "An NGO organises a charity event in which they decide to distribute woollen caps to protect children from winter. The caps to be distributed are in three separate boxes, Box I has 30 red caps, Box II has 20 red and 10 green caps, and Box III has 30 green caps. The probability that a Box i is selected and a cap picked out is $\\frac{i}{6}$, where $i = 1, 2, 3$. Based on the above information, answer the following questions : A person selects a cap. (i) What is the probability that he selects a red cap ? (ii) If he selects a green cap, what is the probability that the cap has come from Box II ?",
+      "section": "Section E",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-1518"
+    },
+    {
+      "id": 1612,
+      "subject": "Mathematics",
+      "chapter_number": 3,
+      "chapter_name": "Matrices",
+      "marks": 1,
+      "text": "Let $A = \\begin{bmatrix} 0 & -3 & 4 \\\\ 1 & 0 & 2 \\end{bmatrix}$ and $B = \\begin{bmatrix} -3 & 0 & 1 \\\\ 2 & 4 & 0 \\end{bmatrix}$. If $A + B + C = O$, then matrix $C$ is :\n(A) $\\begin{bmatrix} -3 & -3 & 5 \\\\ 3 & 4 & 2 \\end{bmatrix}$\n(B) $\\begin{bmatrix} 3 & 3 & 5 \\\\ -3 & -4 & -2 \\end{bmatrix}$\n(C) $\\begin{bmatrix} 3 & 3 & -5 \\\\ -3 & -4 & -2 \\end{bmatrix}$\n(D) $\\begin{bmatrix} -3 & -3 & -5 \\\\ 3 & 4 & 2 \\end{bmatrix}$",
+      "section": "Section A",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-1612"
+    },
+    {
+      "id": 1614,
+      "subject": "Mathematics",
+      "chapter_number": 1,
+      "chapter_name": "Relations and Functions",
+      "marks": 1,
+      "text": "If $f(x) = \\begin{cases} \\frac{x^{2} - 4x - 5}{x + 1}, & x \\neq -1 \\\\ k, & x = -1 \\end{cases}$ is continuous at $x = -1$, then the value of $k$ is :\n(A) Any real value\n(B) $6$\n(C) $-1$\n(D) $-6$",
+      "section": "Section A",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-1614"
+    },
+    {
+      "id": 1616,
+      "subject": "Mathematics",
+      "chapter_number": 2,
+      "chapter_name": "Inverse Trigonometric Functions",
+      "marks": 1,
+      "text": "Derivative of $\\cos^{-1} \\left$ \\frac{\\sin x + \\cos x}{\\sqrt{2}} \\right$$, $-\\frac{\\pi}{4} < x < \\frac{\\pi}{4}$ with respect to x is : (A) $-1$ (B) 1 (C) $\\frac{\\pi}{4}$ (D) $-\\frac{\\pi}{4}$",
+      "section": null,
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-1616"
+    },
+    {
+      "id": 1617,
+      "subject": "Mathematics",
+      "chapter_number": 1,
+      "chapter_name": "Relations and Functions",
+      "marks": 1,
+      "text": "Absolute minimum value of f(x) = $(x - 2)^2 + 5$ in the interval $[-3, 2]$ is : (A) $-3$ (B) 2 (C) 5 (D) 30",
+      "section": null,
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-1617"
+    },
+    {
+      "id": 1620,
+      "subject": "Mathematics",
+      "chapter_number": null,
+      "chapter_name": "Unclassified",
+      "marks": 1,
+      "text": "An ant is observed crawling on a sheet of paper along a straight line given by equation y = $2x - 4$. Area of the surface covered by the ant bounded by y-axis, x-axis and x = 1 is : (A) 1 sq. unit (B) 3 sq. units (C) 2 sq. units (D) 4 sq. units",
+      "section": null,
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-1620"
+    },
+    {
+      "id": 1622,
+      "subject": "Mathematics",
+      "chapter_number": 5,
+      "chapter_name": "Continuity and Differentiability",
+      "marks": 1,
+      "text": "The general solution for the differential equation $\\frac{dy}{dx} = e^{3x-y}$ is : (A) $3e^y = e^{3x} + C$ (B) $\\log (3x-y) = C$ (C) $e^{3x-y} = C$ (D) $-e^y + 3e^{3x} = C$",
+      "section": "Section A",
+      "unique_years_count": 1,
+      "years": [
+        "2026"
+      ],
+      "total_appearances": 3,
+      "appearance_sets": [
+        "2026"
+      ],
+      "slug": "q-1622"
+    }
+  ]
+}

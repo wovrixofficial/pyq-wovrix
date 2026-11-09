@@ -6,6 +6,8 @@
   <title>PYQ Wovrix | CBSE Class 12 PCM & NEET UG 10-Year Master Archive</title>
   <meta name="description" content="Previous-year questions archive for CBSE Class 12 PCM (2022–2026) and NEET UG (2016–2026). Free, no login, chapterwise revision with repeat analytics.">
   <link rel="canonical" href="https://pyq.wovrix.in/">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="stylesheet" href="/style.css">
 </head>
 <body>
@@ -20,10 +22,12 @@
 </svg>
         <span class="brand-name">WOVRIX <span class="brand-slash">/</span> <span class="brand-sub">PYQ</span></span>
       </a>
-      <nav class="nav-links">
-        <a href="/#cbse-section" class="nav-link">CBSE 12 PCM</a>
-        <a href="/#neet-section" class="nav-link">NEET UG Archive</a>
+            <nav class="nav-links">
+        <a href="#cbse-section" class="nav-link" onclick="switchExamTab('cbse')">CBSE 12 PCM</a>
+        <a href="#neet-section" class="nav-link" onclick="switchExamTab('neet')">NEET UG Archive</a>
+        <a href="/repeated/" class="nav-link">★ Repeated Qs</a>
         <a href="/practice/" class="nav-link">Practice Hub</a>
+        <a href="/paper-maker/" class="nav-link">Paper Maker</a>
         <a href="/neetug/" class="nav-cta-pill">Launch NEET Portal ➔</a>
       </nav>
     </div>
@@ -445,7 +449,7 @@
           <div class="neet-topics-preview">
             <span class="topic-label">Key Syllabi:</span> Mechanics, Electrodynamics, Modern Physics, Optics, Thermodynamics
           </div>
-          <a href="/neetug/?subject=Physics" class="neet-action-link">Open Physics Archive ➔</a>
+          <a href="/neetug/•subject=Physics" class="neet-action-link">Open Physics Archive ➔</a>
         </div>
         
         <div class="neet-subject-card">
@@ -457,31 +461,31 @@
           <div class="neet-topics-preview">
             <span class="topic-label">Key Syllabi:</span> Equilibrium, Coordination Compounds, Reaction Kinetics, Carbonyls
           </div>
-          <a href="/neetug/?subject=Chemistry" class="neet-action-link">Open Chemistry Archive ➔</a>
+          <a href="/neetug/•subject=Chemistry" class="neet-action-link">Open Chemistry Archive ➔</a>
         </div>
         
         <div class="neet-subject-card">
           <div class="neet-card-header">
             <h3>Botany</h3>
-            <span class="neet-count-badge">510 Questions</span>
+            <span class="neet-count-badge">520 Questions</span>
           </div>
           <p class="neet-meta">Plant Anatomy, Photosynthesis, Genetics & Biotech</p>
           <div class="neet-topics-preview">
             <span class="topic-label">Key Syllabi:</span> Plant Physiology, Molecular Basis of Inheritance, Ecology
           </div>
-          <a href="/neetug/?subject=Botany" class="neet-action-link">Open Botany Archive ➔</a>
+          <a href="/neetug/•subject=Botany" class="neet-action-link">Open Botany Archive ➔</a>
         </div>
         
         <div class="neet-subject-card">
           <div class="neet-card-header">
             <h3>Zoology</h3>
-            <span class="neet-count-badge">510 Questions</span>
+            <span class="neet-count-badge">520 Questions</span>
           </div>
           <p class="neet-meta">Human Physiology, Animal Kingdom, Reproduction & Evolution</p>
           <div class="neet-topics-preview">
             <span class="topic-label">Key Syllabi:</span> Endocrine System, Neural Control, Immunology, Biomolecules
           </div>
-          <a href="/neetug/?subject=Zoology" class="neet-action-link">Open Zoology Archive ➔</a>
+          <a href="/neetug/•subject=Zoology" class="neet-action-link">Open Zoology Archive ➔</a>
         </div>
         
         </div>
@@ -575,7 +579,6 @@
   const icoGeo = new THREE.IcosahedronGeometry(5.2, 1);
   const icoMat = new THREE.MeshBasicMaterial({ color: 0x18181b, wireframe: true, transparent: true, opacity: 0.22 });
   const icoMesh = new THREE.Mesh(icoGeo, icoMat);
-  icoMesh.position.set(7, 0.5, 0);
   sceneGroup.add(icoMesh);
 
   // Inner solid core
@@ -605,6 +608,24 @@
   const boxMesh = new THREE.Mesh(boxGeo, boxMat);
   boxMesh.position.set(1.5, 5.5, -6);
   sceneGroup.add(boxMesh);
+
+  function updatePositions() {
+    const isMobile = window.innerWidth < 768;
+    if (isMobile) {
+      icoMesh.position.set(0, 0, 0);
+      octMesh.position.set(3, 4, -4);
+      torusMesh.position.set(0, -4, -2);
+      boxMesh.position.set(-3, 3, -6);
+      camera.position.z = 28;
+    } else {
+      icoMesh.position.set(7, 0.5, 0);
+      octMesh.position.set(13.5, 4.2, -4);
+      torusMesh.position.set(6.5, -4.5, -2);
+      boxMesh.position.set(1.5, 5.5, -6);
+      camera.position.z = 24;
+    }
+  }
+  updatePositions();
 
   // 5. Floating Coordinate Particle Field
   const particleCount = 70;
@@ -636,6 +657,7 @@
     if (!container) return;
     camera.aspect = container.clientWidth / container.clientHeight;
     camera.updateProjectionMatrix();
+    updatePositions();
     renderer.setSize(container.clientWidth, container.clientHeight);
   });
 
@@ -685,5 +707,27 @@
     }
   }
   </script>
+  <nav class="mobile-bottom-dock">
+    <a href="/" class="mobile-dock-item active">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+      <span>Home</span>
+    </a>
+    <a href="/practice/" class="mobile-dock-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+      <span>Practice</span>
+    </a>
+    <a href="/repeated/" class="mobile-dock-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+      <span>Repeats</span>
+    </a>
+    <a href="/paper-maker/" class="mobile-dock-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+      <span>Maker</span>
+    </a>
+    <a href="/neetug/" class="mobile-dock-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 8v8"></path><path d="M8 12h8"></path></svg>
+      <span>NEET</span>
+    </a>
+  </nav>
 </body>
 </html>
