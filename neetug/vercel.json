@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "name": "neet-ug-master-archive",
+  "cleanUrls": true,
+  "routes": [
+    { "src": "/(.*)", "dest": "/index.html" }
+  ]
+}

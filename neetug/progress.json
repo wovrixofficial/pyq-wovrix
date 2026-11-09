@@ -1,0 +1,106 @@
+{
+  "timestamp": "2026-11-08T20:30:46+05:30",
+  "status": "MASTER_ARCHIVE_100_PERCENT_COMPLETE",
+  "total_target_questions": 2060,
+  "total_extracted_questions": 2060,
+  "progress_percentage": 100.0,
+  "total_diagrams_extracted": 135,
+  "continuity_oracle": {
+    "status": "ALL_11_PAPERS_100_PERCENT_VERIFIED",
+    "last_check": "2026-11-08 20:30:46",
+    "coverage": "2016-2026 (11 Full Years)",
+    "zero_missing_guarantee": true,
+    "healing_actions_performed": 183
+  },
+  "api_pool": {
+    "total_keys": 5,
+    "healthy_keys": 5,
+    "active_models": [
+      "gemini-flash-lite-latest",
+      "gemini-3.5-flash"
+    ],
+    "rate_limit_mode": "Zero-429 Adaptive Pacing"
+  },
+  "subjects": {
+    "Physics": 520,
+    "Chemistry": 520,
+    "Botany": 520,
+    "Zoology": 500
+  },
+  "archetypes": {
+    "Numerical / Formula Calculation": 296,
+    "Diagram / Graph Identification": 140,
+    "Direct NCERT Fact / Definition": 1338,
+    "Match the Following": 163,
+    "Statement I & Statement II": 89,
+    "Assertion & Reason": 34
+  },
+  "years": {
+    "2026": {
+      "status": "VERIFIED",
+      "questions": 180,
+      "target": 180,
+      "oracle": "180/180 zero missing"
+    },
+    "2025": {
+      "status": "VERIFIED",
+      "questions": 180,
+      "target": 180,
+      "oracle": "180/180 zero missing"
+    },
+    "2024": {
+      "status": "VERIFIED",
+      "questions": 200,
+      "target": 200,
+      "oracle": "200/200 zero missing"
+    },
+    "2023": {
+      "status": "VERIFIED",
+      "questions": 200,
+      "target": 200,
+      "oracle": "200/200 zero missing"
+    },
+    "2022": {
+      "status": "VERIFIED",
+      "questions": 200,
+      "target": 200,
+      "oracle": "200/200 zero missing"
+    },
+    "2021": {
+      "status": "VERIFIED",
+      "questions": 200,
+      "target": 200,
+      "oracle": "200/200 zero missing"
+    },
+    "2020": {
+      "status": "VERIFIED",
+      "questions": 180,
+      "target": 180,
+      "oracle": "180/180 zero missing"
+    },
+    "2019": {
+      "status": "VERIFIED",
+      "questions": 180,
+      "target": 180,
+      "oracle": "180/180 zero missing"
+    },
+    "2018": {
+      "status": "VERIFIED",
+      "questions": 180,
+      "target": 180,
+      "oracle": "180/180 zero missing"
+    },
+    "2017": {
+      "status": "VERIFIED",
+      "questions": 180,
+      "target": 180,
+      "oracle": "180/180 zero missing"
+    },
+    "2016": {
+      "status": "VERIFIED",
+      "questions": 180,
+      "target": 180,
+      "oracle": "180/180 zero missing"
+    }
+  }
+}

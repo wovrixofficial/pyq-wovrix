@@ -1,0 +1,8 @@
+{
+  "name": "neet-ug-10year-master-archive",
+  "version": "1.0.0",
+  "description": "NEET UG 10-Year Master Archive & Analytics Portal (2016-2025)",
+  "scripts": {
+    "start": "npx serve ."
+  }
+}
