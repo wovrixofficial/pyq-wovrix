@@ -1,893 +1,928 @@
-•<•!•D•O•C•T•Y•P•E• •h•t•m•l•>•
-•<•h•t•m•l• •l•a•n•g•=•"•e•n•"•>•
-•<•h•e•a•d•>•
-• • •<•m•e•t•a• •c•h•a•r•s•e•t•=•"•U•T•F•-•8•"•>•
-• • •<•m•e•t•a• •n•a•m•e•=•"•v•i•e•w•p•o•r•t•"• •c•o•n•t•e•n•t•=•"•w•i•d•t•h•=•d•e•v•i•c•e•-•w•i•d•t•h•,• •i•n•i•t•i•a•l•-•s•c•a•l•e•=•1•.•0•"•>•
-• • •<•t•i•t•l•e•>•P•Y•Q• •W•o•v•r•i•x• •|• •I•n•t•e•r•a•c•t•i•v•e• •P•r•a•c•t•i•c•e• •H•u•b• •(•C•B•S•E• •1•2• •P•C•M• •&• •N•E•E•T• •U•G•)•<•/•t•i•t•l•e•>•
-• • •<•m•e•t•a• •n•a•m•e•=•"•d•e•s•c•r•i•p•t•i•o•n•"• •c•o•n•t•e•n•t•=•"•C•l•e•a•n• •c•h•a•p•t•e•r•w•i•s•e• •p•r•a•c•t•i•c•e• •e•n•g•i•n•e• •f•o•r• •7•,•7•6•9• •C•B•S•E• •C•l•a•s•s• •1•2• •P•C•M• •a•n•d• •2•,•0•6•0• •N•E•E•T• •U•G• •b•o•a•r•d• •q•u•e•s•t•i•o•n•s• •w•i•t•h• •s•t•e•p• •m•a•r•k•i•n•g• •s•c•h•e•m•e•s• •a•n•d• •r•e•p•e•a•t• •f•r•e•q•u•e•n•c•y• •a•n•a•l•y•s•i•s•.•"•>•
-• • •<•l•i•n•k• •r•e•l•=•"•c•a•n•o•n•i•c•a•l•"• •h•r•e•f•=•"•h•t•t•p•s•:•/•/•p•y•q•.•w•o•v•r•i•x•.•i•n•/•p•r•a•c•t•i•c•e•/•"•>•
-• • •<•l•i•n•k• •r•e•l•=•"•s•t•y•l•e•s•h•e•e•t•"• •h•r•e•f•=•"•/•s•t•y•l•e•.•c•s•s•"•>•
-•
-• • •<•!•-•-• •K•a•T•e•X• •-•-•>•
-• • •<•l•i•n•k• •r•e•l•=•"•s•t•y•l•e•s•h•e•e•t•"• •h•r•e•f•=•"•h•t•t•p•s•:•/•/•c•d•n•.•j•s•d•e•l•i•v•r•.•n•e•t•/•n•p•m•/•k•a•t•e•x•@•0•.•1•6•.•8•/•d•i•s•t•/•k•a•t•e•x•.•m•i•n•.•c•s•s•"•>•
-• • •<•s•c•r•i•p•t• •d•e•f•e•r• •s•r•c•=•"•h•t•t•p•s•:•/•/•c•d•n•.•j•s•d•e•l•i•v•r•.•n•e•t•/•n•p•m•/•k•a•t•e•x•@•0•.•1•6•.•8•/•d•i•s•t•/•k•a•t•e•x•.•m•i•n•.•j•s•"•>•<•/•s•c•r•i•p•t•>•
-• • •<•s•c•r•i•p•t• •d•e•f•e•r• •s•r•c•=•"•h•t•t•p•s•:•/•/•c•d•n•.•j•s•d•e•l•i•v•r•.•n•e•t•/•n•p•m•/•k•a•t•e•x•@•0•.•1•6•.•8•/•d•i•s•t•/•c•o•n•t•r•i•b•/•a•u•t•o•-•r•e•n•d•e•r•.•m•i•n•.•j•s•"•>•<•/•s•c•r•i•p•t•>•
-•
-• • •<•s•t•y•l•e•>•
-• • • • •/•*• •P•r•a•c•t•i•c•e• •H•u•b• •S•p•e•c•i•f•i•c• •E•r•g•o•n•o•m•i•c•s• •*•/•
-• • • • •.•p•r•a•c•t•i•c•e•-•c•o•n•t•a•i•n•e•r• •{•
-• • • • • • •m•a•x•-•w•i•d•t•h•:• •1•2•0•0•p•x•;•
-• • • • • • •m•a•r•g•i•n•:• •0• •a•u•t•o•;•
-• • • • • • •p•a•d•d•i•n•g•:• •2•4•p•x• •2•0•p•x• •8•0•p•x• •2•0•p•x•;•
-• • • • •}•
-•
-• • • • •.•h•u•b•-•c•o•n•t•r•o•l•-•p•a•n•e•l• •{•
-• • • • • • •b•a•c•k•g•r•o•u•n•d•:• •v•a•r•(•-•-•s•u•r•f•a•c•e•)•;•
-• • • • • • •b•o•r•d•e•r•:• •1•p•x• •s•o•l•i•d• •v•a•r•(•-•-•b•o•r•d•e•r•)•;•
-• • • • • • •b•o•r•d•e•r•-•r•a•d•i•u•s•:• •v•a•r•(•-•-•r•a•d•i•u•s•-•l•g•)•;•
-• • • • • • •p•a•d•d•i•n•g•:• •2•0•p•x• •2•4•p•x•;•
-• • • • • • •m•a•r•g•i•n•-•b•o•t•t•o•m•:• •2•8•p•x•;•
-• • • • • • •b•o•x•-•s•h•a•d•o•w•:• •v•a•r•(•-•-•s•h•a•d•o•w•-•c•a•r•d•)•;•
-• • • • •}•
-•
-• • • • •.•h•u•b•-•e•x•a•m•-•t•o•g•g•l•e•-•b•a•r• •{•
-• • • • • • •d•i•s•p•l•a•y•:• •f•l•e•x•;•
-• • • • • • •g•a•p•:• •1•2•p•x•;•
-• • • • • • •m•a•r•g•i•n•-•b•o•t•t•o•m•:• •1•8•p•x•;•
-• • • • • • •b•o•r•d•e•r•-•b•o•t•t•o•m•:• •1•p•x• •s•o•l•i•d• •v•a•r•(•-•-•b•o•r•d•e•r•-•l•i•g•h•t•)•;•
-• • • • • • •p•a•d•d•i•n•g•-•b•o•t•t•o•m•:• •1•6•p•x•;•
-• • • • •}•
-•
-• • • • •.•h•u•b•-•e•x•a•m•-•b•t•n• •{•
-• • • • • • •p•a•d•d•i•n•g•:• •1•0•p•x• •2•0•p•x•;•
-• • • • • • •b•o•r•d•e•r•-•r•a•d•i•u•s•:• •v•a•r•(•-•-•r•a•d•i•u•s•-•s•m•)•;•
-• • • • • • •b•o•r•d•e•r•:• •1•p•x• •s•o•l•i•d• •v•a•r•(•-•-•b•o•r•d•e•r•)•;•
-• • • • • • •b•a•c•k•g•r•o•u•n•d•:• •v•a•r•(•-•-•b•g•)•;•
-• • • • • • •c•o•l•o•r•:• •v•a•r•(•-•-•t•e•x•t•-•m•u•t•e•d•)•;•
-• • • • • • •f•o•n•t•-•w•e•i•g•h•t•:• •7•0•0•;•
-• • • • • • •f•o•n•t•-•s•i•z•e•:• •1•4•p•x•;•
-• • • • • • •c•u•r•s•o•r•:• •p•o•i•n•t•e•r•;•
-• • • • • • •t•r•a•n•s•i•t•i•o•n•:• •a•l•l• •0•.•1•5•s• •e•a•s•e•;•
-• • • • • • •d•i•s•p•l•a•y•:• •i•n•l•i•n•e•-•f•l•e•x•;•
-• • • • • • •a•l•i•g•n•-•i•t•e•m•s•:• •c•e•n•t•e•r•;•
-• • • • • • •g•a•p•:• •8•p•x•;•
-• • • • •}•
-•
-• • • • •.•h•u•b•-•e•x•a•m•-•b•t•n•.•a•c•t•i•v•e• •{•
-• • • • • • •b•a•c•k•g•r•o•u•n•d•:• •v•a•r•(•-•-•t•e•x•t•)•;•
-• • • • • • •c•o•l•o•r•:• •#•f•f•f•f•f•f•;•
-• • • • • • •b•o•r•d•e•r•-•c•o•l•o•r•:• •v•a•r•(•-•-•t•e•x•t•)•;•
-• • • • •}•
-•
-• • • • •.•h•u•b•-•f•i•l•t•e•r•-•r•o•w• •{•
-• • • • • • •d•i•s•p•l•a•y•:• •f•l•e•x•;•
-• • • • • • •f•l•e•x•-•w•r•a•p•:• •w•r•a•p•;•
-• • • • • • •g•a•p•:• •1•6•p•x•;•
-• • • • • • •a•l•i•g•n•-•i•t•e•m•s•:• •c•e•n•t•e•r•;•
-• • • • •}•
-•
-• • • • •.•f•i•l•t•e•r•-•g•r•o•u•p• •{•
-• • • • • • •d•i•s•p•l•a•y•:• •f•l•e•x•;•
-• • • • • • •f•l•e•x•-•d•i•r•e•c•t•i•o•n•:• •c•o•l•u•m•n•;•
-• • • • • • •g•a•p•:• •6•p•x•;•
-• • • • •}•
-•
-• • • • •.•f•i•l•t•e•r•-•l•a•b•e•l• •{•
-• • • • • • •f•o•n•t•-•s•i•z•e•:• •1•1•p•x•;•
-• • • • • • •f•o•n•t•-•w•e•i•g•h•t•:• •7•0•0•;•
-• • • • • • •t•e•x•t•-•t•r•a•n•s•f•o•r•m•:• •u•p•p•e•r•c•a•s•e•;•
-• • • • • • •l•e•t•t•e•r•-•s•p•a•c•i•n•g•:• •0•.•0•5•e•m•;•
-• • • • • • •c•o•l•o•r•:• •v•a•r•(•-•-•t•e•x•t•-•m•u•t•e•d•)•;•
-• • • • •}•
-•
-• • • • •.•f•i•l•t•e•r•-•s•e•l•e•c•t• •{•
-• • • • • • •p•a•d•d•i•n•g•:• •8•p•x• •1•4•p•x•;•
-• • • • • • •b•o•r•d•e•r•-•r•a•d•i•u•s•:• •v•a•r•(•-•-•r•a•d•i•u•s•-•s•m•)•;•
-• • • • • • •b•o•r•d•e•r•:• •1•p•x• •s•o•l•i•d• •v•a•r•(•-•-•b•o•r•d•e•r•)•;•
-• • • • • • •b•a•c•k•g•r•o•u•n•d•:• •v•a•r•(•-•-•s•u•r•f•a•c•e•)•;•
-• • • • • • •c•o•l•o•r•:• •v•a•r•(•-•-•t•e•x•t•)•;•
-• • • • • • •f•o•n•t•-•f•a•m•i•l•y•:• •v•a•r•(•-•-•f•o•n•t•-•s•a•n•s•)•;•
-• • • • • • •f•o•n•t•-•s•i•z•e•:• •1•3•.•5•p•x•;•
-• • • • • • •f•o•n•t•-•w•e•i•g•h•t•:• •6•0•0•;•
-• • • • • • •o•u•t•l•i•n•e•:• •n•o•n•e•;•
-• • • • • • •m•i•n•-•w•i•d•t•h•:• •1•7•0•p•x•;•
-• • • • • • •c•u•r•s•o•r•:• •p•o•i•n•t•e•r•;•
-• • • • •}•
-•
-• • • • •.•f•i•l•t•e•r•-•s•e•l•e•c•t•:•f•o•c•u•s• •{•
-• • • • • • •b•o•r•d•e•r•-•c•o•l•o•r•:• •v•a•r•(•-•-•a•c•c•e•n•t•)•;•
-• • • • •}•
-•
-• • • • •.•h•u•b•-•s•e•a•r•c•h•-•b•o•x• •{•
-• • • • • • •f•l•e•x•:• •1•;•
-• • • • • • •m•i•n•-•w•i•d•t•h•:• •2•4•0•p•x•;•
-• • • • •}•
-•
-• • • • •.•h•u•b•-•s•e•a•r•c•h•-•b•o•x• •i•n•p•u•t• •{•
-• • • • • • •w•i•d•t•h•:• •1•0•0•%•;•
-• • • • • • •p•a•d•d•i•n•g•:• •8•p•x• •1•4•p•x•;•
-• • • • • • •b•o•r•d•e•r•-•r•a•d•i•u•s•:• •v•a•r•(•-•-•r•a•d•i•u•s•-•s•m•)•;•
-• • • • • • •b•o•r•d•e•r•:• •1•p•x• •s•o•l•i•d• •v•a•r•(•-•-•b•o•r•d•e•r•)•;•
-• • • • • • •b•a•c•k•g•r•o•u•n•d•:• •v•a•r•(•-•-•s•u•r•f•a•c•e•)•;•
-• • • • • • •c•o•l•o•r•:• •v•a•r•(•-•-•t•e•x•t•)•;•
-• • • • • • •f•o•n•t•-•s•i•z•e•:• •1•3•.•5•p•x•;•
-• • • • • • •f•o•n•t•-•f•a•m•i•l•y•:• •v•a•r•(•-•-•f•o•n•t•-•s•a•n•s•)•;•
-• • • • • • •o•u•t•l•i•n•e•:• •n•o•n•e•;•
-• • • • •}•
-•
-• • • • •.•h•u•b•-•s•e•a•r•c•h•-•b•o•x• •i•n•p•u•t•:•f•o•c•u•s• •{•
-• • • • • • •b•o•r•d•e•r•-•c•o•l•o•r•:• •v•a•r•(•-•-•a•c•c•e•n•t•)•;•
-• • • • •}•
-•
-• • • • •/•*• •S•e•c•t•i•o•n• •T•a•b•s• •*•/•
-• • • • •.•s•e•c•t•i•o•n•-•p•i•l•l•-•b•a•r• •{•
-• • • • • • •d•i•s•p•l•a•y•:• •f•l•e•x•;•
-• • • • • • •g•a•p•:• •8•p•x•;•
-• • • • • • •f•l•e•x•-•w•r•a•p•:• •w•r•a•p•;•
-• • • • • • •m•a•r•g•i•n•-•t•o•p•:• •1•6•p•x•;•
-• • • • • • •p•a•d•d•i•n•g•-•t•o•p•:• •1•4•p•x•;•
-• • • • • • •b•o•r•d•e•r•-•t•o•p•:• •1•p•x• •s•o•l•i•d• •v•a•r•(•-•-•b•o•r•d•e•r•-•l•i•g•h•t•)•;•
-• • • • •}•
-•
-• • • • •.•s•e•c•-•p•i•l•l• •{•
-• • • • • • •p•a•d•d•i•n•g•:• •6•p•x• •1•4•p•x•;•
-• • • • • • •b•o•r•d•e•r•-•r•a•d•i•u•s•:• •2•0•p•x•;•
-• • • • • • •b•o•r•d•e•r•:• •1•p•x• •s•o•l•i•d• •v•a•r•(•-•-•b•o•r•d•e•r•)•;•
-• • • • • • •b•a•c•k•g•r•o•u•n•d•:• •v•a•r•(•-•-•b•g•)•;•
-• • • • • • •c•o•l•o•r•:• •v•a•r•(•-•-•t•e•x•t•-•m•u•t•e•d•)•;•
-• • • • • • •f•o•n•t•-•s•i•z•e•:• •1•2•.•5•p•x•;•
-• • • • • • •f•o•n•t•-•w•e•i•g•h•t•:• •6•0•0•;•
-• • • • • • •c•u•r•s•o•r•:• •p•o•i•n•t•e•r•;•
-• • • • • • •t•r•a•n•s•i•t•i•o•n•:• •a•l•l• •0•.•1•5•s• •e•a•s•e•;•
-• • • • •}•
-•
-• • • • •.•s•e•c•-•p•i•l•l•:•h•o•v•e•r• •{•
-• • • • • • •b•o•r•d•e•r•-•c•o•l•o•r•:• •v•a•r•(•-•-•a•c•c•e•n•t•)•;•
-• • • • • • •c•o•l•o•r•:• •v•a•r•(•-•-•t•e•x•t•)•;•
-• • • • •}•
-•
-• • • • •.•s•e•c•-•p•i•l•l•.•a•c•t•i•v•e• •{•
-• • • • • • •b•a•c•k•g•r•o•u•n•d•:• •v•a•r•(•-•-•a•c•c•e•n•t•-•l•i•g•h•t•)•;•
-• • • • • • •b•o•r•d•e•r•-•c•o•l•o•r•:• •v•a•r•(•-•-•a•c•c•e•n•t•)•;•
-• • • • • • •c•o•l•o•r•:• •v•a•r•(•-•-•a•c•c•e•n•t•)•;•
-• • • • • • •f•o•n•t•-•w•e•i•g•h•t•:• •7•0•0•;•
-• • • • •}•
-•
-• • • • •/•*• •Q•u•e•s•t•i•o•n• •S•t•r•e•a•m• •*•/•
-• • • • •.•s•t•r•e•a•m•-•m•e•t•a•-•h•e•a•d•e•r• •{•
-• • • • • • •d•i•s•p•l•a•y•:• •f•l•e•x•;•
-• • • • • • •j•u•s•t•i•f•y•-•c•o•n•t•e•n•t•:• •s•p•a•c•e•-•b•e•t•w•e•e•n•;•
-• • • • • • •a•l•i•g•n•-•i•t•e•m•s•:• •c•e•n•t•e•r•;•
-• • • • • • •m•a•r•g•i•n•-•b•o•t•t•o•m•:• •1•8•p•x•;•
-• • • • • • •p•a•d•d•i•n•g•:• •0• •4•p•x•;•
-• • • • •}•
-•
-• • • • •.•s•t•r•e•a•m•-•t•i•t•l•e• •{•
-• • • • • • •f•o•n•t•-•s•i•z•e•:• •1•8•p•x•;•
-• • • • • • •f•o•n•t•-•w•e•i•g•h•t•:• •8•0•0•;•
-• • • • • • •l•e•t•t•e•r•-•s•p•a•c•i•n•g•:• •-•0•.•0•1•e•m•;•
-• • • • • • •c•o•l•o•r•:• •v•a•r•(•-•-•t•e•x•t•)•;•
-• • • • •}•
-•
-• • • • •.•s•t•r•e•a•m•-•c•o•u•n•t•-•b•a•d•g•e• •{•
-• • • • • • •f•o•n•t•-•f•a•m•i•l•y•:• •v•a•r•(•-•-•f•o•n•t•-•m•o•n•o•)•;•
-• • • • • • •f•o•n•t•-•s•i•z•e•:• •1•2•p•x•;•
-• • • • • • •f•o•n•t•-•w•e•i•g•h•t•:• •6•0•0•;•
-• • • • • • •c•o•l•o•r•:• •v•a•r•(•-•-•t•e•x•t•-•m•u•t•e•d•)•;•
-• • • • • • •b•a•c•k•g•r•o•u•n•d•:• •v•a•r•(•-•-•s•u•r•f•a•c•e•)•;•
-• • • • • • •p•a•d•d•i•n•g•:• •4•p•x• •1•0•p•x•;•
-• • • • • • •b•o•r•d•e•r•-•r•a•d•i•u•s•:• •6•p•x•;•
-• • • • • • •b•o•r•d•e•r•:• •1•p•x• •s•o•l•i•d• •v•a•r•(•-•-•b•o•r•d•e•r•)•;•
-• • • • •}•
-•
-• • • • •.•q•u•e•s•t•i•o•n•-•c•a•r•d• •{•
-• • • • • • •b•a•c•k•g•r•o•u•n•d•:• •v•a•r•(•-•-•s•u•r•f•a•c•e•)•;•
-• • • • • • •b•o•r•d•e•r•:• •1•p•x• •s•o•l•i•d• •v•a•r•(•-•-•b•o•r•d•e•r•)•;•
-• • • • • • •b•o•r•d•e•r•-•r•a•d•i•u•s•:• •v•a•r•(•-•-•r•a•d•i•u•s•-•m•d•)•;•
-• • • • • • •p•a•d•d•i•n•g•:• •2•2•p•x• •2•4•p•x•;•
-• • • • • • •m•a•r•g•i•n•-•b•o•t•t•o•m•:• •2•0•p•x•;•
-• • • • • • •b•o•x•-•s•h•a•d•o•w•:• •v•a•r•(•-•-•s•h•a•d•o•w•-•s•u•b•t•l•e•)•;•
-• • • • • • •t•r•a•n•s•i•t•i•o•n•:• •b•o•r•d•e•r•-•c•o•l•o•r• •0•.•1•5•s• •e•a•s•e•;•
-• • • • •}•
-•
-• • • • •.•q•u•e•s•t•i•o•n•-•c•a•r•d•:•h•o•v•e•r• •{•
-• • • • • • •b•o•r•d•e•r•-•c•o•l•o•r•:• •#•c•b•d•5•e•1•;•
-• • • • •}•
-•
-• • • • •.•q•-•m•e•t•a•-•t•o•p• •{•
-• • • • • • •d•i•s•p•l•a•y•:• •f•l•e•x•;•
-• • • • • • •j•u•s•t•i•f•y•-•c•o•n•t•e•n•t•:• •s•p•a•c•e•-•b•e•t•w•e•e•n•;•
-• • • • • • •a•l•i•g•n•-•i•t•e•m•s•:• •c•e•n•t•e•r•;•
-• • • • • • •m•a•r•g•i•n•-•b•o•t•t•o•m•:• •1•4•p•x•;•
-• • • • • • •f•l•e•x•-•w•r•a•p•:• •w•r•a•p•;•
-• • • • • • •g•a•p•:• •8•p•x•;•
-• • • • •}•
-•
-• • • • •.•q•-•b•a•d•g•e•s•-•l•e•f•t• •{•
-• • • • • • •d•i•s•p•l•a•y•:• •f•l•e•x•;•
-• • • • • • •g•a•p•:• •8•p•x•;•
-• • • • • • •a•l•i•g•n•-•i•t•e•m•s•:• •c•e•n•t•e•r•;•
-• • • • • • •f•l•e•x•-•w•r•a•p•:• •w•r•a•p•;•
-• • • • •}•
-•
-• • • • •.•q•-•s•o•u•r•c•e•-•p•i•l•l• •{•
-• • • • • • •f•o•n•t•-•f•a•m•i•l•y•:• •v•a•r•(•-•-•f•o•n•t•-•m•o•n•o•)•;•
-• • • • • • •f•o•n•t•-•s•i•z•e•:• •1•1•.•5•p•x•;•
-• • • • • • •f•o•n•t•-•w•e•i•g•h•t•:• •7•0•0•;•
-• • • • • • •c•o•l•o•r•:• •v•a•r•(•-•-•t•e•x•t•-•m•u•t•e•d•)•;•
-• • • • • • •b•a•c•k•g•r•o•u•n•d•:• •v•a•r•(•-•-•b•g•)•;•
-• • • • • • •p•a•d•d•i•n•g•:• •3•p•x• •8•p•x•;•
-• • • • • • •b•o•r•d•e•r•-•r•a•d•i•u•s•:• •4•p•x•;•
-• • • • • • •b•o•r•d•e•r•:• •1•p•x• •s•o•l•i•d• •v•a•r•(•-•-•b•o•r•d•e•r•)•;•
-• • • • •}•
-•
-• • • • •.•q•-•m•a•r•k•s•-•p•i•l•l• •{•
-• • • • • • •f•o•n•t•-•f•a•m•i•l•y•:• •v•a•r•(•-•-•f•o•n•t•-•m•o•n•o•)•;•
-• • • • • • •f•o•n•t•-•s•i•z•e•:• •1•1•.•5•p•x•;•
-• • • • • • •f•o•n•t•-•w•e•i•g•h•t•:• •7•0•0•;•
-• • • • • • •c•o•l•o•r•:• •v•a•r•(•-•-•a•c•c•e•n•t•)•;•
-• • • • • • •b•a•c•k•g•r•o•u•n•d•:• •v•a•r•(•-•-•a•c•c•e•n•t•-•l•i•g•h•t•)•;•
-• • • • • • •p•a•d•d•i•n•g•:• •3•p•x• •8•p•x•;•
-• • • • • • •b•o•r•d•e•r•-•r•a•d•i•u•s•:• •4•p•x•;•
-• • • • •}•
-•
-• • • • •.•q•-•r•e•p•e•a•t•-•p•i•l•l• •{•
-• • • • • • •f•o•n•t•-•s•i•z•e•:• •1•1•p•x•;•
-• • • • • • •f•o•n•t•-•w•e•i•g•h•t•:• •7•0•0•;•
-• • • • • • •c•o•l•o•r•:• •#•0•4•7•8•5•7•;•
-• • • • • • •b•a•c•k•g•r•o•u•n•d•:• •#•e•c•f•d•f•5•;•
-• • • • • • •p•a•d•d•i•n•g•:• •3•p•x• •8•p•x•;•
-• • • • • • •b•o•r•d•e•r•-•r•a•d•i•u•s•:• •4•p•x•;•
-• • • • • • •b•o•r•d•e•r•:• •1•p•x• •s•o•l•i•d• •#•a•7•f•3•d•0•;•
-• • • • • • •d•i•s•p•l•a•y•:• •i•n•l•i•n•e•-•f•l•e•x•;•
-• • • • • • •a•l•i•g•n•-•i•t•e•m•s•:• •c•e•n•t•e•r•;•
-• • • • • • •g•a•p•:• •4•p•x•;•
-• • • • •}•
-•
-• • • • •.•q•-•b•o•d•y•-•t•e•x•t• •{•
-• • • • • • •f•o•n•t•-•f•a•m•i•l•y•:• •v•a•r•(•-•-•f•o•n•t•-•s•e•r•i•f•)•;•
-• • • • • • •f•o•n•t•-•s•i•z•e•:• •1•8•p•x•;•
-• • • • • • •l•i•n•e•-•h•e•i•g•h•t•:• •1•.•6•5•;•
-• • • • • • •c•o•l•o•r•:• •v•a•r•(•-•-•t•e•x•t•)•;•
-• • • • • • •m•a•r•g•i•n•-•b•o•t•t•o•m•:• •1•6•p•x•;•
-• • • • • • •w•h•i•t•e•-•s•p•a•c•e•:• •p•r•e•-•w•r•a•p•;•
-• • • • •}•
-•
-• • • • •/•*• •N•E•E•T• •O•p•t•i•o•n•s• •*•/•
-• • • • •.•n•e•e•t•-•o•p•t•i•o•n•s•-•g•r•i•d• •{•
-• • • • • • •d•i•s•p•l•a•y•:• •g•r•i•d•;•
-• • • • • • •g•r•i•d•-•t•e•m•p•l•a•t•e•-•c•o•l•u•m•n•s•:• •1•f•r• •1•f•r•;•
-• • • • • • •g•a•p•:• •1•0•p•x•;•
-• • • • • • •m•a•r•g•i•n•-•b•o•t•t•o•m•:• •1•8•p•x•;•
-• • • • •}•
-•
-• • • • •@•m•e•d•i•a• •(•m•a•x•-•w•i•d•t•h•:• •6•4•0•p•x•)• •{•
-• • • • • • •.•n•e•e•t•-•o•p•t•i•o•n•s•-•g•r•i•d• •{•
-• • • • • • • • •g•r•i•d•-•t•e•m•p•l•a•t•e•-•c•o•l•u•m•n•s•:• •1•f•r•;•
-• • • • • • •}•
-• • • • •}•
-•
-• • • • •.•n•e•e•t•-•o•p•t•-•b•t•n• •{•
-• • • • • • •p•a•d•d•i•n•g•:• •1•0•p•x• •1•4•p•x•;•
-• • • • • • •b•o•r•d•e•r•:• •1•p•x• •s•o•l•i•d• •v•a•r•(•-•-•b•o•r•d•e•r•)•;•
-• • • • • • •b•o•r•d•e•r•-•r•a•d•i•u•s•:• •v•a•r•(•-•-•r•a•d•i•u•s•-•s•m•)•;•
-• • • • • • •b•a•c•k•g•r•o•u•n•d•:• •v•a•r•(•-•-•b•g•)•;•
-• • • • • • •c•o•l•o•r•:• •v•a•r•(•-•-•t•e•x•t•)•;•
-• • • • • • •f•o•n•t•-•f•a•m•i•l•y•:• •v•a•r•(•-•-•f•o•n•t•-•s•e•r•i•f•)•;•
-• • • • • • •f•o•n•t•-•s•i•z•e•:• •1•5•.•5•p•x•;•
-• • • • • • •c•u•r•s•o•r•:• •p•o•i•n•t•e•r•;•
-• • • • • • •t•e•x•t•-•a•l•i•g•n•:• •l•e•f•t•;•
-• • • • • • •d•i•s•p•l•a•y•:• •f•l•e•x•;•
-• • • • • • •a•l•i•g•n•-•i•t•e•m•s•:• •c•e•n•t•e•r•;•
-• • • • • • •g•a•p•:• •1•0•p•x•;•
-• • • • • • •t•r•a•n•s•i•t•i•o•n•:• •a•l•l• •0•.•1•5•s• •e•a•s•e•;•
-• • • • •}•
-•
-• • • • •.•n•e•e•t•-•o•p•t•-•b•t•n•:•h•o•v•e•r• •{•
-• • • • • • •b•o•r•d•e•r•-•c•o•l•o•r•:• •v•a•r•(•-•-•a•c•c•e•n•t•)•;•
-• • • • • • •b•a•c•k•g•r•o•u•n•d•:• •v•a•r•(•-•-•s•u•r•f•a•c•e•)•;•
-• • • • •}•
-•
-• • • • •.•n•e•e•t•-•o•p•t•-•b•t•n•.•c•o•r•r•e•c•t• •{•
-• • • • • • •b•a•c•k•g•r•o•u•n•d•:• •#•e•c•f•d•f•5• •!•i•m•p•o•r•t•a•n•t•;•
-• • • • • • •b•o•r•d•e•r•-•c•o•l•o•r•:• •#•0•5•9•6•6•9• •!•i•m•p•o•r•t•a•n•t•;•
-• • • • • • •c•o•l•o•r•:• •#•0•4•7•8•5•7• •!•i•m•p•o•r•t•a•n•t•;•
-• • • • • • •f•o•n•t•-•w•e•i•g•h•t•:• •7•0•0•;•
-• • • • •}•
-•
-• • • • •.•n•e•e•t•-•o•p•t•-•b•t•n•.•i•n•c•o•r•r•e•c•t• •{•
-• • • • • • •b•a•c•k•g•r•o•u•n•d•:• •#•f•e•f•2•f•2• •!•i•m•p•o•r•t•a•n•t•;•
-• • • • • • •b•o•r•d•e•r•-•c•o•l•o•r•:• •#•d•c•2•6•2•6• •!•i•m•p•o•r•t•a•n•t•;•
-• • • • • • •c•o•l•o•r•:• •#•9•9•1•b•1•b• •!•i•m•p•o•r•t•a•n•t•;•
-• • • • •}•
-•
-• • • • •.•o•p•t•-•l•a•b•e•l• •{•
-• • • • • • •f•o•n•t•-•f•a•m•i•l•y•:• •v•a•r•(•-•-•f•o•n•t•-•m•o•n•o•)•;•
-• • • • • • •f•o•n•t•-•w•e•i•g•h•t•:• •7•0•0•;•
-• • • • • • •f•o•n•t•-•s•i•z•e•:• •1•2•p•x•;•
-• • • • • • •b•a•c•k•g•r•o•u•n•d•:• •v•a•r•(•-•-•s•u•r•f•a•c•e•)•;•
-• • • • • • •p•a•d•d•i•n•g•:• •2•p•x• •6•p•x•;•
-• • • • • • •b•o•r•d•e•r•-•r•a•d•i•u•s•:• •4•p•x•;•
-• • • • • • •b•o•r•d•e•r•:• •1•p•x• •s•o•l•i•d• •v•a•r•(•-•-•b•o•r•d•e•r•)•;•
-• • • • •}•
-•
-• • • • •.•q•-•a•c•t•i•o•n•s•-•r•o•w• •{•
-• • • • • • •d•i•s•p•l•a•y•:• •f•l•e•x•;•
-• • • • • • •j•u•s•t•i•f•y•-•c•o•n•t•e•n•t•:• •s•p•a•c•e•-•b•e•t•w•e•e•n•;•
-• • • • • • •a•l•i•g•n•-•i•t•e•m•s•:• •c•e•n•t•e•r•;•
-• • • • • • •p•a•d•d•i•n•g•-•t•o•p•:• •1•4•p•x•;•
-• • • • • • •b•o•r•d•e•r•-•t•o•p•:• •1•p•x• •s•o•l•i•d• •v•a•r•(•-•-•b•o•r•d•e•r•-•l•i•g•h•t•)•;•
-• • • • • • •f•l•e•x•-•w•r•a•p•:• •w•r•a•p•;•
-• • • • • • •g•a•p•:• •1•0•p•x•;•
-• • • • •}•
-•
-• • • • •.•b•t•n•-•t•o•g•g•l•e•-•s•o•l•u•t•i•o•n• •{•
-• • • • • • •b•o•r•d•e•r•:• •1•p•x• •s•o•l•i•d• •v•a•r•(•-•-•b•o•r•d•e•r•)•;•
-• • • • • • •b•a•c•k•g•r•o•u•n•d•:• •v•a•r•(•-•-•b•g•)•;•
-• • • • • • •c•o•l•o•r•:• •v•a•r•(•-•-•t•e•x•t•)•;•
-• • • • • • •f•o•n•t•-•s•i•z•e•:• •1•2•.•5•p•x•;•
-• • • • • • •f•o•n•t•-•w•e•i•g•h•t•:• •6•0•0•;•
-• • • • • • •p•a•d•d•i•n•g•:• •6•p•x• •1•4•p•x•;•
-• • • • • • •b•o•r•d•e•r•-•r•a•d•i•u•s•:• •v•a•r•(•-•-•r•a•d•i•u•s•-•s•m•)•;•
-• • • • • • •c•u•r•s•o•r•:• •p•o•i•n•t•e•r•;•
-• • • • • • •t•r•a•n•s•i•t•i•o•n•:• •a•l•l• •0•.•1•2•s• •e•a•s•e•;•
-• • • • • • •d•i•s•p•l•a•y•:• •i•n•l•i•n•e•-•f•l•e•x•;•
-• • • • • • •a•l•i•g•n•-•i•t•e•m•s•:• •c•e•n•t•e•r•;•
-• • • • • • •g•a•p•:• •6•p•x•;•
-• • • • •}•
-•
-• • • • •.•b•t•n•-•t•o•g•g•l•e•-•s•o•l•u•t•i•o•n•:•h•o•v•e•r• •{•
-• • • • • • •b•a•c•k•g•r•o•u•n•d•:• •v•a•r•(•-•-•s•u•r•f•a•c•e•)•;•
-• • • • • • •b•o•r•d•e•r•-•c•o•l•o•r•:• •v•a•r•(•-•-•a•c•c•e•n•t•)•;•
-• • • • •}•
-•
-• • • • •.•s•o•l•u•t•i•o•n•-•b•o•x• •{•
-• • • • • • •m•a•r•g•i•n•-•t•o•p•:• •1•4•p•x•;•
-• • • • • • •p•a•d•d•i•n•g•:• •1•4•p•x• •1•8•p•x•;•
-• • • • • • •b•a•c•k•g•r•o•u•n•d•:• •#•f•8•f•a•f•c•;•
-• • • • • • •b•o•r•d•e•r•-•l•e•f•t•:• •3•p•x• •s•o•l•i•d• •v•a•r•(•-•-•a•c•c•e•n•t•)•;•
-• • • • • • •b•o•r•d•e•r•-•r•a•d•i•u•s•:• •0• •v•a•r•(•-•-•r•a•d•i•u•s•-•s•m•)• •v•a•r•(•-•-•r•a•d•i•u•s•-•s•m•)• •0•;•
-• • • • • • •f•o•n•t•-•f•a•m•i•l•y•:• •v•a•r•(•-•-•f•o•n•t•-•s•e•r•i•f•)•;•
-• • • • • • •f•o•n•t•-•s•i•z•e•:• •1•6•p•x•;•
-• • • • • • •l•i•n•e•-•h•e•i•g•h•t•:• •1•.•6•;•
-• • • • • • •d•i•s•p•l•a•y•:• •n•o•n•e•;•
-• • • • •}•
-•
-• • • • •.•s•o•l•u•t•i•o•n•-•b•o•x•.•o•p•e•n• •{•
-• • • • • • •d•i•s•p•l•a•y•:• •b•l•o•c•k•;•
-• • • • •}•
-•
-• • • • •/•*• •P•a•g•i•n•a•t•i•o•n• •c•o•n•t•r•o•l•s• •*•/•
-• • • • •.•p•a•g•i•n•a•t•i•o•n•-•b•a•r• •{•
-• • • • • • •d•i•s•p•l•a•y•:• •f•l•e•x•;•
-• • • • • • •j•u•s•t•i•f•y•-•c•o•n•t•e•n•t•:• •c•e•n•t•e•r•;•
-• • • • • • •a•l•i•g•n•-•i•t•e•m•s•:• •c•e•n•t•e•r•;•
-• • • • • • •g•a•p•:• •1•4•p•x•;•
-• • • • • • •m•a•r•g•i•n•-•t•o•p•:• •3•2•p•x•;•
-• • • • •}•
-•
-• • • • •.•p•a•g•e•-•b•t•n• •{•
-• • • • • • •p•a•d•d•i•n•g•:• •8•p•x• •1•8•p•x•;•
-• • • • • • •b•o•r•d•e•r•:• •1•p•x• •s•o•l•i•d• •v•a•r•(•-•-•b•o•r•d•e•r•)•;•
-• • • • • • •b•a•c•k•g•r•o•u•n•d•:• •v•a•r•(•-•-•s•u•r•f•a•c•e•)•;•
-• • • • • • •c•o•l•o•r•:• •v•a•r•(•-•-•t•e•x•t•)•;•
-• • • • • • •f•o•n•t•-•s•i•z•e•:• •1•3•.•5•p•x•;•
-• • • • • • •f•o•n•t•-•w•e•i•g•h•t•:• •6•0•0•;•
-• • • • • • •b•o•r•d•e•r•-•r•a•d•i•u•s•:• •v•a•r•(•-•-•r•a•d•i•u•s•-•s•m•)•;•
-• • • • • • •c•u•r•s•o•r•:• •p•o•i•n•t•e•r•;•
-• • • • • • •t•r•a•n•s•i•t•i•o•n•:• •a•l•l• •0•.•1•2•s• •e•a•s•e•;•
-• • • • •}•
-•
-• • • • •.•p•a•g•e•-•b•t•n•:•h•o•v•e•r•:•n•o•t•(•:•d•i•s•a•b•l•e•d•)• •{•
-• • • • • • •b•o•r•d•e•r•-•c•o•l•o•r•:• •v•a•r•(•-•-•a•c•c•e•n•t•)•;•
-• • • • • • •b•a•c•k•g•r•o•u•n•d•:• •v•a•r•(•-•-•a•c•c•e•n•t•-•l•i•g•h•t•)•;•
-• • • • • • •c•o•l•o•r•:• •v•a•r•(•-•-•a•c•c•e•n•t•)•;•
-• • • • •}•
-•
-• • • • •.•p•a•g•e•-•b•t•n•:•d•i•s•a•b•l•e•d• •{•
-• • • • • • •o•p•a•c•i•t•y•:• •0•.•4•;•
-• • • • • • •c•u•r•s•o•r•:• •n•o•t•-•a•l•l•o•w•e•d•;•
-• • • • •}•
-•
-• • • • •.•p•a•g•e•-•s•t•a•t•u•s• •{•
-• • • • • • •f•o•n•t•-•f•a•m•i•l•y•:• •v•a•r•(•-•-•f•o•n•t•-•m•o•n•o•)•;•
-• • • • • • •f•o•n•t•-•s•i•z•e•:• •1•3•p•x•;•
-• • • • • • •c•o•l•o•r•:• •v•a•r•(•-•-•t•e•x•t•-•m•u•t•e•d•)•;•
-• • • • •}•
-•
-• • • • •.•l•o•a•d•i•n•g•-•s•t•a•t•e• •{•
-• • • • • • •t•e•x•t•-•a•l•i•g•n•:• •c•e•n•t•e•r•;•
-• • • • • • •p•a•d•d•i•n•g•:• •6•0•p•x• •2•0•p•x•;•
-• • • • • • •c•o•l•o•r•:• •v•a•r•(•-•-•t•e•x•t•-•m•u•t•e•d•)•;•
-• • • • • • •f•o•n•t•-•s•i•z•e•:• •1•5•p•x•;•
-• • • • •}•
-• • •<•/•s•t•y•l•e•>•
-•<•/•h•e•a•d•>•
-•<•b•o•d•y•>•
-•
-• • •<•!•-•-• •U•n•i•v•e•r•s•a•l• •S•i•t•e• •H•e•a•d•e•r• •-•-•>•
-• • •<•h•e•a•d•e•r• •c•l•a•s•s•=•"•s•i•t•e•-•h•e•a•d•e•r•"•>•
-• • • • •<•d•i•v• •c•l•a•s•s•=•"•h•e•a•d•e•r•-•i•n•n•e•r•"•>•
-• • • • • • •<•a• •h•r•e•f•=•"•/•"• •c•l•a•s•s•=•"•b•r•a•n•d•"•>•
-• • • • • • • • •<•s•v•g• •c•l•a•s•s•=•"•b•r•a•n•d•-•l•o•g•o•-•i•c•o•n•"• •w•i•d•t•h•=•"•2•2•"• •h•e•i•g•h•t•=•"•2•2•"• •v•i•e•w•B•o•x•=•"•0• •0• •3•2• •3•2•"• •f•i•l•l•=•"•n•o•n•e•"• •x•m•l•n•s•=•"•h•t•t•p•:•/•/•w•w•w•.•w•3•.•o•r•g•/•2•0•0•0•/•s•v•g•"•>•
-• • • • • • • • • • •<•r•e•c•t• •w•i•d•t•h•=•"•3•2•"• •h•e•i•g•h•t•=•"•3•2•"• •r•x•=•"•7•"• •f•i•l•l•=•"•#•1•8•1•8•1•b•"•/•>•
-• • • • • • • • • • •<•p•a•t•h• •d•=•"•M•6• •1•0•L•1•1• •2•3•L•1•6• •1•4•L•2•1• •2•3•L•2•6• •1•0•"• •s•t•r•o•k•e•=•"•#•f•f•f•f•f•f•"• •s•t•r•o•k•e•-•w•i•d•t•h•=•"•2•.•6•"• •s•t•r•o•k•e•-•l•i•n•e•c•a•p•=•"•r•o•u•n•d•"• •s•t•r•o•k•e•-•l•i•n•e•j•o•i•n•=•"•r•o•u•n•d•"•/•>•
-• • • • • • • • • • •<•c•i•r•c•l•e• •c•x•=•"•1•6•"• •c•y•=•"•1•4•"• •r•=•"•2•.•2•"• •f•i•l•l•=•"•#•3•b•8•2•f•6•"•/•>•
-• • • • • • • • •<•/•s•v•g•>•
-• • • • • • • • •<•s•p•a•n• •c•l•a•s•s•=•"•b•r•a•n•d•-•n•a•m•e•"•>•W•O•V•R•I•X• •<•s•p•a•n• •c•l•a•s•s•=•"•b•r•a•n•d•-•s•l•a•s•h•"•>•/•<•/•s•p•a•n•>• •<•s•p•a•n• •c•l•a•s•s•=•"•b•r•a•n•d•-•s•u•b•"•>•P•Y•Q•<•/•s•p•a•n•>•<•/•s•p•a•n•>•
-• • • • • • •<•/•a•>•
-• • • • • • •<•n•a•v• •c•l•a•s•s•=•"•n•a•v•-•l•i•n•k•s•"•>•
-• • • • • • • • •<•a• •h•r•e•f•=•"•/•#•c•b•s•e•-•s•e•c•t•i•o•n•"• •c•l•a•s•s•=•"•n•a•v•-•l•i•n•k•"•>•C•B•S•E• •1•2• •P•C•M•<•/•a•>•
-• • • • • • • • •<•a• •h•r•e•f•=•"•/•n•e•e•t•u•g•/•"• •c•l•a•s•s•=•"•n•a•v•-•l•i•n•k•"•>•N•E•E•T• •U•G• •A•r•c•h•i•v•e•<•/•a•>•
-• • • • • • • • •<•a• •h•r•e•f•=•"•/•p•r•a•c•t•i•c•e•/•"• •c•l•a•s•s•=•"•n•a•v•-•l•i•n•k• •a•c•t•i•v•e•"•>•P•r•a•c•t•i•c•e• •H•u•b•<•/•a•>•
-• • • • • • •<•/•n•a•v•>•
-• • • • •<•/•d•i•v•>•
-• • •<•/•h•e•a•d•e•r•>•
-•
-• • •<•m•a•i•n• •c•l•a•s•s•=•"•p•r•a•c•t•i•c•e•-•c•o•n•t•a•i•n•e•r•"•>•
-• • • • •<•!•-•-• •T•o•p• •C•o•n•t•r•o•l• •B•a•r• •-•-•>•
-• • • • •<•s•e•c•t•i•o•n• •c•l•a•s•s•=•"•h•u•b•-•c•o•n•t•r•o•l•-•p•a•n•e•l•"•>•
-• • • • • • •<•!•-•-• •E•x•a•m• •S•e•l•e•c•t•o•r• •-•-•>•
-• • • • • • •<•d•i•v• •c•l•a•s•s•=•"•h•u•b•-•e•x•a•m•-•t•o•g•g•l•e•-•b•a•r•"•>•
-• • • • • • • • •<•b•u•t•t•o•n• •c•l•a•s•s•=•"•h•u•b•-•e•x•a•m•-•b•t•n• •a•c•t•i•v•e•"• •i•d•=•"•b•t•n•E•x•a•m•C•b•s•e•"• •o•n•c•l•i•c•k•=•"•s•e•t•E•x•a•m•(•'•c•b•s•e•'•)•"•>•
-• • • • • • • • • • •<•s•p•a•n•>•C•B•S•E• •C•l•a•s•s• •1•2• •P•C•M•<•/•s•p•a•n•>•
-• • • • • • • • • • •<•s•p•a•n• •s•t•y•l•e•=•"•f•o•n•t•-•s•i•z•e•:• •1•1•p•x•;• •f•o•n•t•-•w•e•i•g•h•t•:• •n•o•r•m•a•l•;• •o•p•a•c•i•t•y•:• •0•.•8•;•"•>•(•7•,•7•6•9• •Q•s•)•<•/•s•p•a•n•>•
-• • • • • • • • •<•/•b•u•t•t•o•n•>•
-• • • • • • • • •<•b•u•t•t•o•n• •c•l•a•s•s•=•"•h•u•b•-•e•x•a•m•-•b•t•n•"• •i•d•=•"•b•t•n•E•x•a•m•N•e•e•t•"• •o•n•c•l•i•c•k•=•"•s•e•t•E•x•a•m•(•'•n•e•e•t•'•)•"•>•
-• • • • • • • • • • •<•s•p•a•n•>•N•E•E•T• •U•G• •M•a•s•t•e•r• •A•r•c•h•i•v•e•<•/•s•p•a•n•>•
-• • • • • • • • • • •<•s•p•a•n• •s•t•y•l•e•=•"•f•o•n•t•-•s•i•z•e•:• •1•1•p•x•;• •f•o•n•t•-•w•e•i•g•h•t•:• •n•o•r•m•a•l•;• •o•p•a•c•i•t•y•:• •0•.•8•;•"•>•(•2•0•1•6•–•2•0•2•6• •·• •2•,•0•6•0• •Q•s•)•<•/•s•p•a•n•>•
-• • • • • • • • •<•/•b•u•t•t•o•n•>•
-• • • • • • •<•/•d•i•v•>•
-•
-• • • • • • •<•!•-•-• •F•i•l•t•e•r•s• •R•o•w• •-•-•>•
-• • • • • • •<•d•i•v• •c•l•a•s•s•=•"•h•u•b•-•f•i•l•t•e•r•-•r•o•w•"•>•
-• • • • • • • • •<•!•-•-• •S•u•b•j•e•c•t• •-•-•>•
-• • • • • • • • •<•d•i•v• •c•l•a•s•s•=•"•f•i•l•t•e•r•-•g•r•o•u•p•"•>•
-• • • • • • • • • • •<•l•a•b•e•l• •c•l•a•s•s•=•"•f•i•l•t•e•r•-•l•a•b•e•l•"•>•S•u•b•j•e•c•t•<•/•l•a•b•e•l•>•
-• • • • • • • • • • •<•s•e•l•e•c•t• •c•l•a•s•s•=•"•f•i•l•t•e•r•-•s•e•l•e•c•t•"• •i•d•=•"•s•e•l•e•c•t•S•u•b•j•e•c•t•"• •o•n•c•h•a•n•g•e•=•"•o•n•S•u•b•j•e•c•t•C•h•a•n•g•e•(•)•"•>•
-• • • • • • • • • • • • •<•!•-•-• •P•o•p•u•l•a•t•e•d• •v•i•a• •J•S• •-•-•>•
-• • • • • • • • • • •<•/•s•e•l•e•c•t•>•
-• • • • • • • • •<•/•d•i•v•>•
-•
-• • • • • • • • •<•!•-•-• •C•h•a•p•t•e•r• •-•-•>•
-• • • • • • • • •<•d•i•v• •c•l•a•s•s•=•"•f•i•l•t•e•r•-•g•r•o•u•p•"• •s•t•y•l•e•=•"•f•l•e•x•:• •2•;• •m•i•n•-•w•i•d•t•h•:• •2•2•0•p•x•;•"•>•
-• • • • • • • • • • •<•l•a•b•e•l• •c•l•a•s•s•=•"•f•i•l•t•e•r•-•l•a•b•e•l•"•>•C•h•a•p•t•e•r•<•/•l•a•b•e•l•>•
-• • • • • • • • • • •<•s•e•l•e•c•t• •c•l•a•s•s•=•"•f•i•l•t•e•r•-•s•e•l•e•c•t•"• •i•d•=•"•s•e•l•e•c•t•C•h•a•p•t•e•r•"• •o•n•c•h•a•n•g•e•=•"•o•n•C•h•a•p•t•e•r•C•h•a•n•g•e•(•)•"• •s•t•y•l•e•=•"•w•i•d•t•h•:• •1•0•0•%•;•"•>•
-• • • • • • • • • • • • •<•!•-•-• •P•o•p•u•l•a•t•e•d• •v•i•a• •J•S• •-•-•>•
-• • • • • • • • • • •<•/•s•e•l•e•c•t•>•
-• • • • • • • • •<•/•d•i•v•>•
-•
-• • • • • • • • •<•!•-•-• •Y•e•a•r• •-•-•>•
-• • • • • • • • •<•d•i•v• •c•l•a•s•s•=•"•f•i•l•t•e•r•-•g•r•o•u•p•"•>•
-• • • • • • • • • • •<•l•a•b•e•l• •c•l•a•s•s•=•"•f•i•l•t•e•r•-•l•a•b•e•l•"•>•Y•e•a•r•<•/•l•a•b•e•l•>•
-• • • • • • • • • • •<•s•e•l•e•c•t• •c•l•a•s•s•=•"•f•i•l•t•e•r•-•s•e•l•e•c•t•"• •i•d•=•"•s•e•l•e•c•t•Y•e•a•r•"• •o•n•c•h•a•n•g•e•=•"•o•n•F•i•l•t•e•r•C•h•a•n•g•e•(•)•"• •s•t•y•l•e•=•"•m•i•n•-•w•i•d•t•h•:• •1•3•0•p•x•;•"•>•
-• • • • • • • • • • • • •<•o•p•t•i•o•n• •v•a•l•u•e•=•"•a•l•l•"•>•A•l•l• •Y•e•a•r•s•<•/•o•p•t•i•o•n•>•
-• • • • • • • • • • • • •<•o•p•t•i•o•n• •v•a•l•u•e•=•"•2•0•2•6•"•>•2•0•2•6•<•/•o•p•t•i•o•n•>•
-• • • • • • • • • • • • •<•o•p•t•i•o•n• •v•a•l•u•e•=•"•2•0•2•5•"•>•2•0•2•5•<•/•o•p•t•i•o•n•>•
-• • • • • • • • • • • • •<•o•p•t•i•o•n• •v•a•l•u•e•=•"•2•0•2•4•"•>•2•0•2•4•<•/•o•p•t•i•o•n•>•
-• • • • • • • • • • • • •<•o•p•t•i•o•n• •v•a•l•u•e•=•"•2•0•2•3•"•>•2•0•2•3•<•/•o•p•t•i•o•n•>•
-• • • • • • • • • • • • •<•o•p•t•i•o•n• •v•a•l•u•e•=•"•2•0•2•2•"•>•2•0•2•2•<•/•o•p•t•i•o•n•>•
-• • • • • • • • • • •<•/•s•e•l•e•c•t•>•
-• • • • • • • • •<•/•d•i•v•>•
-•
-• • • • • • • • •<•!•-•-• •S•e•a•r•c•h• •-•-•>•
-• • • • • • • • •<•d•i•v• •c•l•a•s•s•=•"•f•i•l•t•e•r•-•g•r•o•u•p• •h•u•b•-•s•e•a•r•c•h•-•b•o•x•"•>•
-• • • • • • • • • • •<•l•a•b•e•l• •c•l•a•s•s•=•"•f•i•l•t•e•r•-•l•a•b•e•l•"•>•S•e•a•r•c•h• •K•e•y•w•o•r•d•s•<•/•l•a•b•e•l•>•
-• • • • • • • • • • •<•i•n•p•u•t• •t•y•p•e•=•"•t•e•x•t•"• •i•d•=•"•i•n•p•u•t•S•e•a•r•c•h•"• •p•l•a•c•e•h•o•l•d•e•r•=•"•T•y•p•e• •f•o•r•m•u•l•a• •o•r• •t•o•p•i•c•.•.•.•"• •o•n•i•n•p•u•t•=•"•o•n•S•e•a•r•c•h•I•n•p•u•t•(•)•"•>•
-• • • • • • • • •<•/•d•i•v•>•
-• • • • • • •<•/•d•i•v•>•
-•
-• • • • • • •<•!•-•-• •S•e•c•t•i•o•n• •T•a•b•s• •-•-•>•
-• • • • • • •<•d•i•v• •c•l•a•s•s•=•"•s•e•c•t•i•o•n•-•p•i•l•l•-•b•a•r•"• •i•d•=•"•s•e•c•t•i•o•n•P•i•l•l•C•o•n•t•a•i•n•e•r•"•>•
-• • • • • • • • •<•!•-•-• •P•o•p•u•l•a•t•e•d• •v•i•a• •J•S• •-•-•>•
-• • • • • • •<•/•d•i•v•>•
-• • • • •<•/•s•e•c•t•i•o•n•>•
-•
-• • • • •<•!•-•-• •S•t•r•e•a•m• •M•e•t•a• •-•-•>•
-• • • • •<•d•i•v• •c•l•a•s•s•=•"•s•t•r•e•a•m•-•m•e•t•a•-•h•e•a•d•e•r•"•>•
-• • • • • • •<•d•i•v• •c•l•a•s•s•=•"•s•t•r•e•a•m•-•t•i•t•l•e•"• •i•d•=•"•s•t•r•e•a•m•T•i•t•l•e•H•e•a•d•i•n•g•"•>•L•o•a•d•i•n•g• •q•u•e•s•t•i•o•n•s•.•.•.•<•/•d•i•v•>•
-• • • • • • •<•d•i•v• •c•l•a•s•s•=•"•s•t•r•e•a•m•-•c•o•u•n•t•-•b•a•d•g•e•"• •i•d•=•"•s•t•r•e•a•m•C•o•u•n•t•D•i•s•p•l•a•y•"•>•0• •Q•u•e•s•t•i•o•n•s•<•/•d•i•v•>•
-• • • • •<•/•d•i•v•>•
-•
-• • • • •<•!•-•-• •Q•u•e•s•t•i•o•n•s• •F•e•e•d• •C•o•n•t•a•i•n•e•r• •-•-•>•
-• • • • •<•d•i•v• •i•d•=•"•q•u•e•s•t•i•o•n•s•F•e•e•d•C•o•n•t•a•i•n•e•r•"•>•
-• • • • • • •<•d•i•v• •c•l•a•s•s•=•"•l•o•a•d•i•n•g•-•s•t•a•t•e•"•>•L•o•a•d•i•n•g• •q•u•e•s•t•i•o•n•s• •d•a•t•a•.•.•.•<•/•d•i•v•>•
-• • • • •<•/•d•i•v•>•
-•
-• • • • •<•!•-•-• •P•a•g•i•n•a•t•i•o•n• •C•o•n•t•r•o•l•s• •-•-•>•
-• • • • •<•d•i•v• •c•l•a•s•s•=•"•p•a•g•i•n•a•t•i•o•n•-•b•a•r•"• •i•d•=•"•p•a•g•i•n•a•t•i•o•n•B•a•r•"• •s•t•y•l•e•=•"•d•i•s•p•l•a•y•:• •n•o•n•e•;•"•>•
-• • • • • • •<•b•u•t•t•o•n• •c•l•a•s•s•=•"•p•a•g•e•-•b•t•n•"• •i•d•=•"•b•t•n•P•r•e•v•P•a•g•e•"• •o•n•c•l•i•c•k•=•"•p•r•e•v•P•a•g•e•(•)•"•>•←• •P•r•e•v•i•o•u•s•<•/•b•u•t•t•o•n•>•
-• • • • • • •<•s•p•a•n• •c•l•a•s•s•=•"•p•a•g•e•-•s•t•a•t•u•s•"• •i•d•=•"•p•a•g•e•S•t•a•t•u•s•T•e•x•t•"•>•P•a•g•e• •1• •o•f• •1•<•/•s•p•a•n•>•
-• • • • • • •<•b•u•t•t•o•n• •c•l•a•s•s•=•"•p•a•g•e•-•b•t•n•"• •i•d•=•"•b•t•n•N•e•x•t•P•a•g•e•"• •o•n•c•l•i•c•k•=•"•n•e•x•t•P•a•g•e•(•)•"•>•N•e•x•t• •→•<•/•b•u•t•t•o•n•>•
-• • • • •<•/•d•i•v•>•
-• • •<•/•m•a•i•n•>•
-•
-• • •<•!•-•-• •A•r•c•h•i•t•e•c•t•u•r•a•l• •F•o•o•t•e•r• •-•-•>•
-• • •<•f•o•o•t•e•r• •c•l•a•s•s•=•"•s•i•t•e•-•f•o•o•t•e•r•"•>•
-• • • • •<•d•i•v• •c•l•a•s•s•=•"•f•o•o•t•e•r•-•i•n•n•e•r•"•>•
-• • • • • • •<•d•i•v• •c•l•a•s•s•=•"•f•o•o•t•e•r•-•t•o•p•-•b•r•a•n•d•"•>•
-• • • • • • • • •<•d•i•v• •c•l•a•s•s•=•"•f•o•o•t•e•r•-•b•r•a•n•d•-•t•i•t•l•e•"•>•
-• • • • • • • • • • •<•s•v•g• •c•l•a•s•s•=•"•b•r•a•n•d•-•l•o•g•o•-•i•c•o•n•"• •w•i•d•t•h•=•"•2•8•"• •h•e•i•g•h•t•=•"•2•8•"• •v•i•e•w•B•o•x•=•"•0• •0• •3•2• •3•2•"• •f•i•l•l•=•"•n•o•n•e•"• •x•m•l•n•s•=•"•h•t•t•p•:•/•/•w•w•w•.•w•3•.•o•r•g•/•2•0•0•0•/•s•v•g•"•>•
-• • • • • • • • • • • • •<•r•e•c•t• •w•i•d•t•h•=•"•3•2•"• •h•e•i•g•h•t•=•"•3•2•"• •r•x•=•"•7•"• •f•i•l•l•=•"•#•1•8•1•8•1•b•"•/•>•
-• • • • • • • • • • • • •<•p•a•t•h• •d•=•"•M•6• •1•0•L•1•1• •2•3•L•1•6• •1•4•L•2•1• •2•3•L•2•6• •1•0•"• •s•t•r•o•k•e•=•"•#•f•f•f•f•f•f•"• •s•t•r•o•k•e•-•w•i•d•t•h•=•"•2•.•6•"• •s•t•r•o•k•e•-•l•i•n•e•c•a•p•=•"•r•o•u•n•d•"• •s•t•r•o•k•e•-•l•i•n•e•j•o•i•n•=•"•r•o•u•n•d•"•/•>•
-• • • • • • • • • • • • •<•c•i•r•c•l•e• •c•x•=•"•1•6•"• •c•y•=•"•1•4•"• •r•=•"•2•.•2•"• •f•i•l•l•=•"•#•3•b•8•2•f•6•"•/•>•
-• • • • • • • • • • •<•/•s•v•g•>•
-• • • • • • • • • • •<•s•p•a•n• •c•l•a•s•s•=•"•f•o•o•t•e•r•-•b•r•a•n•d•-•t•e•x•t•"•>•W•O•V•R•I•X• •P•Y•Q•<•/•s•p•a•n•>•
-• • • • • • • • •<•/•d•i•v•>•
-• • • • • • • • •<•p• •c•l•a•s•s•=•"•f•o•o•t•e•r•-•t•a•g•l•i•n•e•"•>•C•l•e•a•n•,• •a•d•-•f•r•e•e•,• •v•e•r•i•f•i•e•d• •p•r•e•v•i•o•u•s•-•y•e•a•r• •q•u•e•s•t•i•o•n•s• •a•r•c•h•i•v•e• •f•o•r• •C•B•S•E• •C•l•a•s•s• •1•2• •P•C•M• •a•n•d• •N•E•E•T• •U•G•.• •F•r•e•e• •p•u•b•l•i•c• •e•d•u•c•a•t•i•o•n• •u•t•i•l•i•t•y•.•<•/•p•>•
-• • • • • • •<•/•d•i•v•>•
-•
-• • • • • • •<•d•i•v• •c•l•a•s•s•=•"•f•o•o•t•e•r•-•g•r•i•d•"•>•
-• • • • • • • • •<•d•i•v• •c•l•a•s•s•=•"•f•o•o•t•e•r•-•c•o•l•"•>•
-• • • • • • • • • • •<•h•4• •c•l•a•s•s•=•"•f•o•o•t•e•r•-•c•o•l•-•h•e•a•d•i•n•g•"•>•C•B•S•E• •C•l•a•s•s• •1•2• •P•C•M•<•/•h•4•>•
-• • • • • • • • • • •<•u•l• •c•l•a•s•s•=•"•f•o•o•t•e•r•-•l•i•n•k•s•-•l•i•s•t•"•>•
-• • • • • • • • • • • • •<•l•i•>•<•a• •h•r•e•f•=•"•/•c•b•s•e•-•1•2•/•p•h•y•s•i•c•s•/•"•>•P•h•y•s•i•c•s• •(•1•4• •C•h•a•p•t•e•r•s•)•<•/•a•>•<•/•l•i•>•
-• • • • • • • • • • • • •<•l•i•>•<•a• •h•r•e•f•=•"•/•c•b•s•e•-•1•2•/•c•h•e•m•i•s•t•r•y•/•"•>•C•h•e•m•i•s•t•r•y• •(•1•0• •C•h•a•p•t•e•r•s•)•<•/•a•>•<•/•l•i•>•
-• • • • • • • • • • • • •<•l•i•>•<•a• •h•r•e•f•=•"•/•c•b•s•e•-•1•2•/•m•a•t•h•e•m•a•t•i•c•s•/•"•>•M•a•t•h•e•m•a•t•i•c•s• •(•1•3• •C•h•a•p•t•e•r•s•)•<•/•a•>•<•/•l•i•>•
-• • • • • • • • • • • • •<•l•i•>•<•a• •h•r•e•f•=•"•/•p•r•a•c•t•i•c•e•/•?•e•x•a•m•=•c•b•s•e•"•>•I•n•t•e•r•a•c•t•i•v•e• •P•r•a•c•t•i•c•e• •H•u•b•<•/•a•>•<•/•l•i•>•
-• • • • • • • • • • •<•/•u•l•>•
-• • • • • • • • •<•/•d•i•v•>•
-• • • • • • • • •<•d•i•v• •c•l•a•s•s•=•"•f•o•o•t•e•r•-•c•o•l•"•>•
-• • • • • • • • • • •<•h•4• •c•l•a•s•s•=•"•f•o•o•t•e•r•-•c•o•l•-•h•e•a•d•i•n•g•"•>•N•E•E•T• •U•G• •A•r•c•h•i•v•e•<•/•h•4•>•
-• • • • • • • • • • •<•u•l• •c•l•a•s•s•=•"•f•o•o•t•e•r•-•l•i•n•k•s•-•l•i•s•t•"•>•
-• • • • • • • • • • • • •<•l•i•>•<•a• •h•r•e•f•=•"•/•n•e•e•t•u•g•/•"•>•N•E•E•T• •U•G• •M•a•s•t•e•r• •P•o•r•t•a•l•<•/•a•>•<•/•l•i•>•
-• • • • • • • • • • • • •<•l•i•>•<•a• •h•r•e•f•=•"•/•p•r•a•c•t•i•c•e•/•?•e•x•a•m•=•n•e•e•t•&•s•u•b•j•e•c•t•=•P•h•y•s•i•c•s•"•>•N•E•E•T• •P•h•y•s•i•c•s•<•/•a•>•<•/•l•i•>•
-• • • • • • • • • • • • •<•l•i•>•<•a• •h•r•e•f•=•"•/•p•r•a•c•t•i•c•e•/•?•e•x•a•m•=•n•e•e•t•&•s•u•b•j•e•c•t•=•C•h•e•m•i•s•t•r•y•"•>•N•E•E•T• •C•h•e•m•i•s•t•r•y•<•/•a•>•<•/•l•i•>•
-• • • • • • • • • • • • •<•l•i•>•<•a• •h•r•e•f•=•"•/•p•r•a•c•t•i•c•e•/•?•e•x•a•m•=•n•e•e•t•&•s•u•b•j•e•c•t•=•B•o•t•a•n•y•"•>•N•E•E•T• •B•i•o•l•o•g•y•<•/•a•>•<•/•l•i•>•
-• • • • • • • • • • •<•/•u•l•>•
-• • • • • • • • •<•/•d•i•v•>•
-• • • • • • • • •<•d•i•v• •c•l•a•s•s•=•"•f•o•o•t•e•r•-•c•o•l•"•>•
-• • • • • • • • • • •<•h•4• •c•l•a•s•s•=•"•f•o•o•t•e•r•-•c•o•l•-•h•e•a•d•i•n•g•"•>•P•l•a•t•f•o•r•m•<•/•h•4•>•
-• • • • • • • • • • •<•u•l• •c•l•a•s•s•=•"•f•o•o•t•e•r•-•l•i•n•k•s•-•l•i•s•t•"•>•
-• • • • • • • • • • • • •<•l•i•>•<•a• •h•r•e•f•=•"•/•"•>•H•o•m•e•<•/•a•>•<•/•l•i•>•
-• • • • • • • • • • • • •<•l•i•>•<•a• •h•r•e•f•=•"•/•p•r•a•c•t•i•c•e•/•"•>•U•n•i•v•e•r•s•a•l• •P•r•a•c•t•i•c•e• •E•n•g•i•n•e•<•/•a•>•<•/•l•i•>•
-• • • • • • • • • • • • •<•l•i•>•<•a• •h•r•e•f•=•"•h•t•t•p•s•:•/•/•g•i•t•h•u•b•.•c•o•m•/•w•o•v•r•i•x•o•f•f•i•c•i•a•l•/•p•y•q•-•w•o•v•r•i•x•"• •t•a•r•g•e•t•=•"•_•b•l•a•n•k•"• •r•e•l•=•"•n•o•o•p•e•n•e•r•"•>•G•i•t•H•u•b• •R•e•p•o•s•i•t•o•r•y•<•/•a•>•<•/•l•i•>•
-• • • • • • • • • • •<•/•u•l•>•
-• • • • • • • • •<•/•d•i•v•>•
-• • • • • • • • •<•d•i•v• •c•l•a•s•s•=•"•f•o•o•t•e•r•-•c•o•l•"•>•
-• • • • • • • • • • •<•h•4• •c•l•a•s•s•=•"•f•o•o•t•e•r•-•c•o•l•-•h•e•a•d•i•n•g•"•>•F•a•i•r• •D•e•a•l•i•n•g• •N•o•t•i•c•e•<•/•h•4•>•
-• • • • • • • • • • •<•p• •c•l•a•s•s•=•"•f•o•o•t•e•r•-•d•i•s•c•l•a•i•m•e•r•-•t•e•x•t•"•>•Q•u•e•s•t•i•o•n•s• •a•n•d• •m•a•r•k•i•n•g• •s•c•h•e•m•e•s• •b•e•l•o•n•g• •t•o• •C•B•S•E• •a•n•d• •N•T•A•.• •C•o•m•p•i•l•e•d• •s•o•l•e•l•y• •f•o•r• •n•o•n•-•c•o•m•m•e•r•c•i•a•l• •e•d•u•c•a•t•i•o•n•a•l• •r•e•v•i•e•w• •u•n•d•e•r• •S•e•c•t•i•o•n• •5•2•(•1•)•(•a•)• •o•f• •t•h•e• •I•n•d•i•a•n• •C•o•p•y•r•i•g•h•t• •A•c•t•.•<•/•p•>•
-• • • • • • • • •<•/•d•i•v•>•
-• • • • • • •<•/•d•i•v•>•
-•
-• • • • • • •<•d•i•v• •c•l•a•s•s•=•"•f•o•o•t•e•r•-•g•i•a•n•t•-•w•o•r•d•m•a•r•k•"•>•W•O•V•R•I•X•<•/•d•i•v•>•
-• • • • •<•/•d•i•v•>•
-• • •<•/•f•o•o•t•e•r•>•
-•
-• • •<•s•c•r•i•p•t•>•
-• • • • •c•o•n•s•t• •C•H•A•P•T•E•R•S•_•C•B•S•E• •=• •{•"•P•h•y•s•i•c•s•"•:• •[•[•1•,• •"•E•l•e•c•t•r•i•c• •C•h•a•r•g•e•s• •a•n•d• •F•i•e•l•d•s•"•]•,• •[•2•,• •"•E•l•e•c•t•r•o•s•t•a•t•i•c• •P•o•t•e•n•t•i•a•l• •a•n•d• •C•a•p•a•c•i•t•a•n•c•e•"•]•,• •[•3•,• •"•C•u•r•r•e•n•t• •E•l•e•c•t•r•i•c•i•t•y•"•]•,• •[•4•,• •"•M•o•v•i•n•g• •C•h•a•r•g•e•s• •a•n•d• •M•a•g•n•e•t•i•s•m•"•]•,• •[•5•,• •"•M•a•g•n•e•t•i•s•m• •a•n•d• •M•a•t•t•e•r•"•]•,• •[•6•,• •"•E•l•e•c•t•r•o•m•a•g•n•e•t•i•c• •I•n•d•u•c•t•i•o•n•"•]•,• •[•7•,• •"•A•l•t•e•r•n•a•t•i•n•g• •C•u•r•r•e•n•t•"•]•,• •[•8•,• •"•E•l•e•c•t•r•o•m•a•g•n•e•t•i•c• •W•a•v•e•s•"•]•,• •[•9•,• •"•R•a•y• •O•p•t•i•c•s• •a•n•d• •O•p•t•i•c•a•l• •I•n•s•t•r•u•m•e•n•t•s•"•]•,• •[•1•0•,• •"•W•a•v•e• •O•p•t•i•c•s•"•]•,• •[•1•1•,• •"•D•u•a•l• •N•a•t•u•r•e• •o•f• •R•a•d•i•a•t•i•o•n• •a•n•d• •M•a•t•t•e•r•"•]•,• •[•1•2•,• •"•A•t•o•m•s•"•]•,• •[•1•3•,• •"•N•u•c•l•e•i•"•]•,• •[•1•4•,• •"•S•e•m•i•c•o•n•d•u•c•t•o•r• •E•l•e•c•t•r•o•n•i•c•s•"•]•]•,• •"•C•h•e•m•i•s•t•r•y•"•:• •[•[•1•,• •"•S•o•l•u•t•i•o•n•s•"•]•,• •[•2•,• •"•E•l•e•c•t•r•o•c•h•e•m•i•s•t•r•y•"•]•,• •[•3•,• •"•C•h•e•m•i•c•a•l• •K•i•n•e•t•i•c•s•"•]•,• •[•4•,• •"•T•h•e• •d•-• •a•n•d• •f•-•B•l•o•c•k• •E•l•e•m•e•n•t•s•"•]•,• •[•5•,• •"•C•o•o•r•d•i•n•a•t•i•o•n• •C•o•m•p•o•u•n•d•s•"•]•,• •[•6•,• •"•H•a•l•o•a•l•k•a•n•e•s• •a•n•d• •H•a•l•o•a•r•e•n•e•s•"•]•,• •[•7•,• •"•A•l•c•o•h•o•l•s•,• •P•h•e•n•o•l•s• •a•n•d• •E•t•h•e•r•s•"•]•,• •[•8•,• •"•A•l•d•e•h•y•d•e•s•,• •K•e•t•o•n•e•s• •a•n•d• •C•a•r•b•o•x•y•l•i•c• •A•c•i•d•s•"•]•,• •[•9•,• •"•A•m•i•n•e•s•"•]•,• •[•1•0•,• •"•B•i•o•m•o•l•e•c•u•l•e•s•"•]•]•,• •"•M•a•t•h•e•m•a•t•i•c•s•"•:• •[•[•1•,• •"•R•e•l•a•t•i•o•n•s• •a•n•d• •F•u•n•c•t•i•o•n•s•"•]•,• •[•2•,• •"•I•n•v•e•r•s•e• •T•r•i•g•o•n•o•m•e•t•r•i•c• •F•u•n•c•t•i•o•n•s•"•]•,• •[•3•,• •"•M•a•t•r•i•c•e•s•"•]•,• •[•4•,• •"•D•e•t•e•r•m•i•n•a•n•t•s•"•]•,• •[•5•,• •"•C•o•n•t•i•n•u•i•t•y• •a•n•d• •D•i•f•f•e•r•e•n•t•i•a•b•i•l•i•t•y•"•]•,• •[•6•,• •"•A•p•p•l•i•c•a•t•i•o•n•s• •o•f• •D•e•r•i•v•a•t•i•v•e•s•"•]•,• •[•7•,• •"•I•n•t•e•g•r•a•l•s•"•]•,• •[•8•,• •"•A•p•p•l•i•c•a•t•i•o•n•s• •o•f• •t•h•e• •I•n•t•e•g•r•a•l•s•"•]•,• •[•9•,• •"•D•i•f•f•e•r•e•n•t•i•a•l• •E•q•u•a•t•i•o•n•s•"•]•,• •[•1•0•,• •"•V•e•c•t•o•r•s•"•]•,• •[•1•1•,• •"•T•h•r•e•e•-•D•i•m•e•n•s•i•o•n•a•l• •G•e•o•m•e•t•r•y•"•]•,• •[•1•2•,• •"•L•i•n•e•a•r• •P•r•o•g•r•a•m•m•i•n•g•"•]•,• •[•1•3•,• •"•P•r•o•b•a•b•i•l•i•t•y•"•]•]•}•;•
-• • • • •c•o•n•s•t• •C•H•A•P•T•E•R•S•_•N•E•E•T• •=• •{•"•P•h•y•s•i•c•s•"•:• •[•"•A•l•t•e•r•n•a•t•i•n•g• •C•u•r•r•e•n•t•"•,• •"•A•t•o•m•s•"•,• •"•C•u•r•r•e•n•t• •E•l•e•c•t•r•i•c•i•t•y•"•,• •"•D•u•a•l• •N•a•t•u•r•e• •o•f• •R•a•d•i•a•t•i•o•n• •&• •M•a•t•t•e•r•"•,• •"•E•l•e•c•t•r•i•c• •C•h•a•r•g•e•s• •a•n•d• •F•i•e•l•d•s•"•,• •"•E•l•e•c•t•r•o•m•a•g•n•e•t•i•c• •I•n•d•u•c•t•i•o•n•"•,• •"•E•l•e•c•t•r•o•m•a•g•n•e•t•i•c• •W•a•v•e•s•"•,• •"•E•l•e•c•t•r•o•s•t•a•t•i•c• •P•o•t•e•n•t•i•a•l• •&• •C•a•p•a•c•i•t•a•n•c•e•"•,• •"•G•e•n•e•r•a•l• •P•h•y•s•i•c•s• •&• •M•e•c•h•a•n•i•c•s•"•,• •"•G•e•n•e•r•a•l• •P•h•y•s•i•c•s• •T•o•p•i•c•s•"•,• •"•G•r•a•v•i•t•a•t•i•o•n•"•,• •"•K•i•n•e•t•i•c• •T•h•e•o•r•y• •o•f• •G•a•s•e•s•"•,• •"•L•a•w•s• •o•f• •M•o•t•i•o•n•"•,• •"•M•a•g•n•e•t•i•s•m• •a•n•d• •M•a•t•t•e•r•"•,• •"•M•e•c•h•a•n•i•c•a•l• •P•r•o•p•e•r•t•i•e•s• •o•f• •F•l•u•i•d•s•"•,• •"•M•e•c•h•a•n•i•c•a•l• •P•r•o•p•e•r•t•i•e•s• •o•f• •S•o•l•i•d•s•"•,• •"•M•o•t•i•o•n• •i•n• •a• •P•l•a•n•e•"•,• •"•M•o•t•i•o•n• •i•n• •a• •S•t•r•a•i•g•h•t• •L•i•n•e•"•,• •"•M•o•v•i•n•g• •C•h•a•r•g•e•s• •a•n•d• •M•a•g•n•e•t•i•s•m•"•,• •"•N•u•c•l•e•i•"•,• •"•O•s•c•i•l•l•a•t•i•o•n•s•"•,• •"•P•h•y•s•i•c•a•l• •W•o•r•l•d• •&• •M•e•a•s•u•r•e•m•e•n•t•"•,• •"•R•a•y• •O•p•t•i•c•s• •&• •O•p•t•i•c•a•l• •I•n•s•t•r•u•m•e•n•t•s•"•,• •"•S•e•m•i•c•o•n•d•u•c•t•o•r• •E•l•e•c•t•r•o•n•i•c•s•"•,• •"•S•y•s•t•e•m• •o•f• •P•a•r•t•i•c•l•e•s• •&• •R•o•t•a•t•i•o•n•a•l• •M•o•t•i•o•n•"•,• •"•T•h•e•r•m•a•l• •P•r•o•p•e•r•t•i•e•s• •o•f• •M•a•t•t•e•r•"•,• •"•T•h•e•r•m•o•d•y•n•a•m•i•c•s•"•,• •"•W•a•v•e• •O•p•t•i•c•s•"•,• •"•W•a•v•e•s•"•,• •"•W•o•r•k•,• •E•n•e•r•g•y• •a•n•d• •P•o•w•e•r•"•]•,• •"•C•h•e•m•i•s•t•r•y•"•:• •[•"•A•l•c•o•h•o•l•s•,• •P•h•e•n•o•l•s• •a•n•d• •E•t•h•e•r•s•"•,• •"•A•l•d•e•h•y•d•e•s•,• •K•e•t•o•n•e•s• •a•n•d• •C•a•r•b•o•x•y•l•i•c• •A•c•i•d•s•"•,• •"•A•m•i•n•e•s•"•,• •"•B•i•o•m•o•l•e•c•u•l•e•s•"•,• •"•C•h•e•m•i•c•a•l• •B•o•n•d•i•n•g• •&• •M•o•l•e•c•u•l•a•r• •S•t•r•u•c•t•u•r•e•"•,• •"•C•h•e•m•i•c•a•l• •K•i•n•e•t•i•c•s•"•,• •"•C•h•e•m•i•s•t•r•y• •i•n• •E•v•e•r•y•d•a•y• •L•i•f•e•"•,• •"•C•l•a•s•s•i•f•i•c•a•t•i•o•n• •o•f• •E•l•e•m•e•n•t•s• •&• •P•e•r•i•o•d•i•c•i•t•y•"•,• •"•C•o•o•r•d•i•n•a•t•i•o•n• •C•o•m•p•o•u•n•d•s•"•,• •"•E•l•e•c•t•r•o•c•h•e•m•i•s•t•r•y•"•,• •"•E•n•v•i•r•o•n•m•e•n•t•a•l• •C•h•e•m•i•s•t•r•y•"•,• •"•E•q•u•i•l•i•b•r•i•u•m•"•,• •"•G•e•n•e•r•a•l• •C•h•e•m•i•s•t•r•y•"•,• •"•G•e•n•e•r•a•l• •P•r•i•n•c•i•p•l•e•s• •&• •P•r•o•c•e•s•s•e•s• •o•f• •I•s•o•l•a•t•i•o•n• •(•M•e•t•a•l•l•u•r•g•y•)•"•,• •"•H•a•l•o•a•l•k•a•n•e•s• •a•n•d• •H•a•l•o•a•r•e•n•e•s•"•,• •"•H•y•d•r•o•c•a•r•b•o•n•s•"•,• •"•H•y•d•r•o•g•e•n•"•,• •"•O•r•g•a•n•i•c• •C•h•e•m•i•s•t•r•y•:• •B•a•s•i•c• •P•r•i•n•c•i•p•l•e•s• •&• •T•e•c•h•n•i•q•u•e•s•"•,• •"•P•o•l•y•m•e•r•s•"•,• •"•R•e•d•o•x• •R•e•a•c•t•i•o•n•s•"•,• •"•S•o•l•i•d• •S•t•a•t•e•"•,• •"•S•o•l•u•t•i•o•n•s•"•,• •"•S•o•m•e• •B•a•s•i•c• •C•o•n•c•e•p•t•s• •o•f• •C•h•e•m•i•s•t•r•y•"•,• •"•S•t•a•t•e•s• •o•f• •M•a•t•t•e•r•"•,• •"•S•t•r•u•c•t•u•r•e• •o•f• •A•t•o•m•"•,• •"•S•u•r•f•a•c•e• •C•h•e•m•i•s•t•r•y•"•,• •"•T•h•e• •d•-• •a•n•d• •f•-•B•l•o•c•k• •E•l•e•m•e•n•t•s•"•,• •"•T•h•e• •p•-•B•l•o•c•k• •E•l•e•m•e•n•t•s• •(•G•r•o•u•p• •1•3• •&• •1•4•)•"•,• •"•T•h•e• •p•-•B•l•o•c•k• •E•l•e•m•e•n•t•s• •(•G•r•o•u•p• •1•5•,• •1•6•,• •1•7•,• •1•8•)•"•,• •"•T•h•e• •s•-•B•l•o•c•k• •E•l•e•m•e•n•t•s•"•,• •"•T•h•e•r•m•o•d•y•n•a•m•i•c•s• •(•C•h•e•m•i•c•a•l•)•"•]•,• •"•B•o•t•a•n•y•"•:• •[•"•A•n•a•t•o•m•y• •o•f• •F•l•o•w•e•r•i•n•g• •P•l•a•n•t•s•"•,• •"•B•i•o•l•o•g•i•c•a•l• •C•l•a•s•s•i•f•i•c•a•t•i•o•n• •(•P•l•a•n•t• •K•i•n•g•d•o•m• •&• •M•o•n•e•r•a•/•F•u•n•g•i•)•"•,• •"•B•i•o•t•e•c•h•n•o•l•o•g•y•:• •P•r•i•n•c•i•p•l•e•s• •a•n•d• •P•r•o•c•e•s•s•e•s•"•,• •"•C•e•l•l• •C•y•c•l•e• •a•n•d• •C•e•l•l• •D•i•v•i•s•i•o•n•"•,• •"•C•e•l•l•:• •T•h•e• •U•n•i•t• •o•f• •L•i•f•e• •(•P•l•a•n•t• •A•s•p•e•c•t•s•)•"•,• •"•M•i•c•r•o•b•e•s• •i•n• •H•u•m•a•n• •W•e•l•f•a•r•e•"•,• •"•M•i•n•e•r•a•l• •N•u•t•r•i•t•i•o•n•"•,• •"•M•o•l•e•c•u•l•a•r• •B•a•s•i•s• •o•f• •I•n•h•e•r•i•t•a•n•c•e• •(•P•l•a•n•t•)•"•,• •"•M•o•r•p•h•o•l•o•g•y• •o•f• •F•l•o•w•e•r•i•n•g• •P•l•a•n•t•s•"•,• •"•P•h•o•t•o•s•y•n•t•h•e•s•i•s• •i•n• •H•i•g•h•e•r• •P•l•a•n•t•s•"•,• •"•P•l•a•n•t• •B•i•o•l•o•g•y• •P•r•i•n•c•i•p•l•e•s•"•,• •"•P•l•a•n•t• •G•r•o•w•t•h• •a•n•d• •D•e•v•e•l•o•p•m•e•n•t•"•,• •"•P•l•a•n•t• •K•i•n•g•d•o•m•"•,• •"•P•r•i•n•c•i•p•l•e•s• •o•f• •I•n•h•e•r•i•t•a•n•c•e• •&• •V•a•r•i•a•t•i•o•n• •(•B•o•t•a•n•y•)•"•,• •"•R•e•p•r•o•d•u•c•t•i•o•n• •i•n• •O•r•g•a•n•i•s•m•s• •(•P•l•a•n•t•)•"•,• •"•R•e•s•p•i•r•a•t•i•o•n• •i•n• •P•l•a•n•t•s•"•,• •"•S•e•x•u•a•l• •R•e•p•r•o•d•u•c•t•i•o•n• •i•n• •F•l•o•w•e•r•i•n•g• •P•l•a•n•t•s•"•,• •"•S•t•r•a•t•e•g•i•e•s• •f•o•r• •E•n•h•a•n•c•e•m•e•n•t• •i•n• •F•o•o•d• •P•r•o•d•u•c•t•i•o•n• •(•P•l•a•n•t•)•"•,• •"•T•h•e• •L•i•v•i•n•g• •W•o•r•l•d• •(•B•o•t•a•n•y•)•"•,• •"•T•r•a•n•s•p•o•r•t• •i•n• •P•l•a•n•t•s•"•]•,• •"•Z•o•o•l•o•g•y•"•:• •[•"•A•n•i•m•a•l• •B•i•o•l•o•g•y• •&• •P•h•y•s•i•o•l•o•g•y•"•,• •"•A•n•i•m•a•l• •K•i•n•g•d•o•m•"•,• •"•B•i•o•d•i•v•e•r•s•i•t•y• •a•n•d• •C•o•n•s•e•r•v•a•t•i•o•n•"•,• •"•B•i•o•m•o•l•e•c•u•l•e•s• •(•A•n•i•m•a•l• •P•h•y•s•i•o•l•o•g•y• •&• •E•n•z•y•m•e•s•)•"•,• •"•B•i•o•t•e•c•h•n•o•l•o•g•y• •a•n•d• •i•t•s• •A•p•p•l•i•c•a•t•i•o•n•s• •(•M•e•d•i•c•i•n•e•/•A•n•i•m•a•l•s•)•"•,• •"•B•o•d•y• •F•l•u•i•d•s• •a•n•d• •C•i•r•c•u•l•a•t•i•o•n•"•,• •"•B•r•e•a•t•h•i•n•g• •a•n•d• •E•x•c•h•a•n•g•e• •o•f• •G•a•s•e•s•"•,• •"•C•h•e•m•i•c•a•l• •C•o•o•r•d•i•n•a•t•i•o•n• •a•n•d• •I•n•t•e•g•r•a•t•i•o•n•"•,• •"•D•i•g•e•s•t•i•o•n• •a•n•d• •A•b•s•o•r•p•t•i•o•n•"•,• •"•E•c•o•s•y•s•t•e•m•"•,• •"•E•n•v•i•r•o•n•m•e•n•t•a•l• •I•s•s•u•e•s•"•,• •"•E•v•o•l•u•t•i•o•n•"•,• •"•E•x•c•r•e•t•o•r•y• •P•r•o•d•u•c•t•s• •a•n•d• •t•h•e•i•r• •E•l•i•m•i•n•a•t•i•o•n•"•,• •"•H•u•m•a•n• •H•e•a•l•t•h• •a•n•d• •D•i•s•e•a•s•e•"•,• •"•H•u•m•a•n• •R•e•p•r•o•d•u•c•t•i•o•n•"•,• •"•L•o•c•o•m•o•t•i•o•n• •a•n•d• •M•o•v•e•m•e•n•t•"•,• •"•N•e•u•r•a•l• •C•o•n•t•r•o•l• •a•n•d• •C•o•o•r•d•i•n•a•t•i•o•n•"•,• •"•O•r•g•a•n•i•s•m•s• •a•n•d• •P•o•p•u•l•a•t•i•o•n•s•"•,• •"•R•e•p•r•o•d•u•c•t•i•v•e• •H•e•a•l•t•h•"•,• •"•S•t•r•u•c•t•u•r•a•l• •O•r•g•a•n•i•s•a•t•i•o•n• •i•n• •A•n•i•m•a•l•s•"•]•}•;•
-•
-• • • • •l•e•t• •c•u•r•r•e•n•t•E•x•a•m• •=• •'•c•b•s•e•'•;•
-• • • • •l•e•t• •c•u•r•r•e•n•t•S•u•b•j•e•c•t• •=• •'•P•h•y•s•i•c•s•'•;•
-• • • • •l•e•t• •c•u•r•r•e•n•t•C•h•a•p•t•e•r• •=• •'•a•l•l•'•;•
-• • • • •l•e•t• •c•u•r•r•e•n•t•S•e•c•t•i•o•n• •=• •'•a•l•l•'•;•
-• • • • •l•e•t• •c•u•r•r•e•n•t•Y•e•a•r• •=• •'•a•l•l•'•;•
-• • • • •l•e•t• •s•e•a•r•c•h•Q•u•e•r•y• •=• •'•'•;•
-• • • • •l•e•t• •c•u•r•r•e•n•t•P•a•g•e• •=• •1•;•
-• • • • •c•o•n•s•t• •P•A•G•E•_•S•I•Z•E• •=• •2•5•;•
-•
-• • • • •l•e•t• •l•o•a•d•e•d•Q•u•e•s•t•i•o•n•s• •=• •[•]•;•
-• • • • •l•e•t• •f•i•l•t•e•r•e•d•Q•u•e•s•t•i•o•n•s• •=• •[•]•;•
-• • • • •c•o•n•s•t• •c•a•c•h•e• •=• •{•}•;•
-•
-• • • • •/•/• •P•a•r•s•e• •U•R•L• •p•a•r•a•m•s•
-• • • • •c•o•n•s•t• •u•r•l•P•a•r•a•m•s• •=• •n•e•w• •U•R•L•S•e•a•r•c•h•P•a•r•a•m•s•(•w•i•n•d•o•w•.•l•o•c•a•t•i•o•n•.•s•e•a•r•c•h•)•;•
-• • • • •i•f• •(•u•r•l•P•a•r•a•m•s•.•g•e•t•(•'•e•x•a•m•'•)• •=•=•=• •'•n•e•e•t•'•)• •c•u•r•r•e•n•t•E•x•a•m• •=• •'•n•e•e•t•'•;•
-• • • • •i•f• •(•u•r•l•P•a•r•a•m•s•.•g•e•t•(•'•s•u•b•j•e•c•t•'•)•)• •c•u•r•r•e•n•t•S•u•b•j•e•c•t• •=• •u•r•l•P•a•r•a•m•s•.•g•e•t•(•'•s•u•b•j•e•c•t•'•)•;•
-•
-• • • • •f•u•n•c•t•i•o•n• •s•e•t•E•x•a•m•(•e•x•a•m•)• •{•
-• • • • • • •c•u•r•r•e•n•t•E•x•a•m• •=• •e•x•a•m•;•
-• • • • • • •d•o•c•u•m•e•n•t•.•g•e•t•E•l•e•m•e•n•t•B•y•I•d•(•'•b•t•n•E•x•a•m•C•b•s•e•'•)•.•c•l•a•s•s•L•i•s•t•.•t•o•g•g•l•e•(•'•a•c•t•i•v•e•'•,• •e•x•a•m• •=•=•=• •'•c•b•s•e•'•)•;•
-• • • • • • •d•o•c•u•m•e•n•t•.•g•e•t•E•l•e•m•e•n•t•B•y•I•d•(•'•b•t•n•E•x•a•m•N•e•e•t•'•)•.•c•l•a•s•s•L•i•s•t•.•t•o•g•g•l•e•(•'•a•c•t•i•v•e•'•,• •e•x•a•m• •=•=•=• •'•n•e•e•t•'•)•;•
-• • • • • • •
-• • • • • • •/•/• •U•p•d•a•t•e• •y•e•a•r• •d•r•o•p•d•o•w•n•
-• • • • • • •c•o•n•s•t• •s•e•l•Y•e•a•r• •=• •d•o•c•u•m•e•n•t•.•g•e•t•E•l•e•m•e•n•t•B•y•I•d•(•'•s•e•l•e•c•t•Y•e•a•r•'•)•;•
-• • • • • • •i•f• •(•e•x•a•m• •=•=•=• •'•n•e•e•t•'•)• •{•
-• • • • • • • • •s•e•l•Y•e•a•r•.•i•n•n•e•r•H•T•M•L• •=• •'•<•o•p•t•i•o•n• •v•a•l•u•e•=•"•a•l•l•"•>•A•l•l• •Y•e•a•r•s• •(•2•0•1•6•–•2•0•2•6•)•<•/•o•p•t•i•o•n•>•'• •+•
-• • • • • • • • • • •[•2•0•2•6•,•2•0•2•5•,•2•0•2•4•,•2•0•2•3•,•2•0•2•2•,•2•0•2•1•,•2•0•2•0•,•2•0•1•9•,•2•0•1•8•,•2•0•1•7•,•2•0•1•6•]•.•m•a•p•(•y• •=•>• •`•<•o•p•t•i•o•n• •v•a•l•u•e•=•"•$•{•y•}•"•>•$•{•y•}•<•/•o•p•t•i•o•n•>•`•)•.•j•o•i•n•(•'•'•)•;•
-• • • • • • •}• •e•l•s•e• •{•
-• • • • • • • • •s•e•l•Y•e•a•r•.•i•n•n•e•r•H•T•M•L• •=• •'•<•o•p•t•i•o•n• •v•a•l•u•e•=•"•a•l•l•"•>•A•l•l• •Y•e•a•r•s• •(•2•0•2•2•–•2•0•2•6•)•<•/•o•p•t•i•o•n•>•'• •+•
-• • • • • • • • • • •[•2•0•2•6•,•2•0•2•5•,•2•0•2•4•,•2•0•2•3•,•2•0•2•2•]•.•m•a•p•(•y• •=•>• •`•<•o•p•t•i•o•n• •v•a•l•u•e•=•"•$•{•y•}•"•>•$•{•y•}•<•/•o•p•t•i•o•n•>•`•)•.•j•o•i•n•(•'•'•)•;•
-• • • • • • •}•
-•
-• • • • • • •/•/• •D•e•f•a•u•l•t• •s•u•b•j•e•c•t•
-• • • • • • •i•f• •(•e•x•a•m• •=•=•=• •'•c•b•s•e•'•)• •{•
-• • • • • • • • •c•u•r•r•e•n•t•S•u•b•j•e•c•t• •=• •'•P•h•y•s•i•c•s•'•;•
-• • • • • • •}• •e•l•s•e• •{•
-• • • • • • • • •c•u•r•r•e•n•t•S•u•b•j•e•c•t• •=• •'•P•h•y•s•i•c•s•'•;•
-• • • • • • •}•
-•
-• • • • • • •p•o•p•u•l•a•t•e•S•u•b•j•e•c•t•s•(•)•;•
-• • • • • • •p•o•p•u•l•a•t•e•S•e•c•t•i•o•n•s•(•)•;•
-• • • • • • •l•o•a•d•C•u•r•r•e•n•t•D•a•t•a•s•e•t•(•)•;•
-• • • • •}•
-•
-• • • • •f•u•n•c•t•i•o•n• •p•o•p•u•l•a•t•e•S•u•b•j•e•c•t•s•(•)• •{•
-• • • • • • •c•o•n•s•t• •s•e•l• •=• •d•o•c•u•m•e•n•t•.•g•e•t•E•l•e•m•e•n•t•B•y•I•d•(•'•s•e•l•e•c•t•S•u•b•j•e•c•t•'•)•;•
-• • • • • • •c•o•n•s•t• •s•u•b•j•e•c•t•s• •=• •c•u•r•r•e•n•t•E•x•a•m• •=•=•=• •'•c•b•s•e•'• •?• •[•'•P•h•y•s•i•c•s•'•,• •'•C•h•e•m•i•s•t•r•y•'•,• •'•M•a•t•h•e•m•a•t•i•c•s•'•]• •:• •[•'•P•h•y•s•i•c•s•'•,• •'•C•h•e•m•i•s•t•r•y•'•,• •'•B•o•t•a•n•y•'•,• •'•Z•o•o•l•o•g•y•'•]•;•
-• • • • • • •s•e•l•.•i•n•n•e•r•H•T•M•L• •=• •s•u•b•j•e•c•t•s•.•m•a•p•(•s• •=•>• •`•<•o•p•t•i•o•n• •v•a•l•u•e•=•"•$•{•s•}•"• •$•{•s• •=•=•=• •c•u•r•r•e•n•t•S•u•b•j•e•c•t• •?• •'•s•e•l•e•c•t•e•d•'• •:• •'•'•}•>•$•{•s•}•<•/•o•p•t•i•o•n•>•`•)•.•j•o•i•n•(•'•'•)•;•
-• • • • • • •p•o•p•u•l•a•t•e•C•h•a•p•t•e•r•s•(•)•;•
-• • • • •}•
-•
-• • • • •f•u•n•c•t•i•o•n• •p•o•p•u•l•a•t•e•C•h•a•p•t•e•r•s•(•)• •{•
-• • • • • • •c•o•n•s•t• •s•e•l• •=• •d•o•c•u•m•e•n•t•.•g•e•t•E•l•e•m•e•n•t•B•y•I•d•(•'•s•e•l•e•c•t•C•h•a•p•t•e•r•'•)•;•
-• • • • • • •s•e•l•.•i•n•n•e•r•H•T•M•L• •=• •'•<•o•p•t•i•o•n• •v•a•l•u•e•=•"•a•l•l•"•>•A•l•l• •C•h•a•p•t•e•r•s• •i•n• •'• •+• •c•u•r•r•e•n•t•S•u•b•j•e•c•t• •+• •'•<•/•o•p•t•i•o•n•>•'•;•
-• • • • • • •
-• • • • • • •i•f• •(•c•u•r•r•e•n•t•E•x•a•m• •=•=•=• •'•c•b•s•e•'•)• •{•
-• • • • • • • • •c•o•n•s•t• •c•h•s• •=• •C•H•A•P•T•E•R•S•_•C•B•S•E•[•c•u•r•r•e•n•t•S•u•b•j•e•c•t•]• •|•|• •[•]•;•
-• • • • • • • • •c•h•s•.•f•o•r•E•a•c•h•(•(•[•n•u•m•,• •n•a•m•e•]•)• •=•>• •{•
-• • • • • • • • • • •s•e•l•.•i•n•n•e•r•H•T•M•L• •+•=• •`•<•o•p•t•i•o•n• •v•a•l•u•e•=•"•$•{•n•u•m•}•"•>•C•h• •$•{•n•u•m•}•:• •$•{•n•a•m•e•}•<•/•o•p•t•i•o•n•>•`•;•
-• • • • • • • • •}•)•;•
-• • • • • • •}• •e•l•s•e• •{•
-• • • • • • • • •c•o•n•s•t• •c•h•s• •=• •C•H•A•P•T•E•R•S•_•N•E•E•T•[•c•u•r•r•e•n•t•S•u•b•j•e•c•t•]• •|•|• •[•]•;•
-• • • • • • • • •c•h•s•.•f•o•r•E•a•c•h•(•n•a•m•e• •=•>• •{•
-• • • • • • • • • • •s•e•l•.•i•n•n•e•r•H•T•M•L• •+•=• •`•<•o•p•t•i•o•n• •v•a•l•u•e•=•"•$•{•n•a•m•e•}•"•>•$•{•n•a•m•e•}•<•/•o•p•t•i•o•n•>•`•;•
-• • • • • • • • •}•)•;•
-• • • • • • •}•
-• • • • • • •c•u•r•r•e•n•t•C•h•a•p•t•e•r• •=• •'•a•l•l•'•;•
-• • • • •}•
-•
-• • • • •f•u•n•c•t•i•o•n• •p•o•p•u•l•a•t•e•S•e•c•t•i•o•n•s•(•)• •{•
-• • • • • • •c•o•n•s•t• •c•o•n•t• •=• •d•o•c•u•m•e•n•t•.•g•e•t•E•l•e•m•e•n•t•B•y•I•d•(•'•s•e•c•t•i•o•n•P•i•l•l•C•o•n•t•a•i•n•e•r•'•)•;•
-• • • • • • •i•f• •(•c•u•r•r•e•n•t•E•x•a•m• •=•=•=• •'•c•b•s•e•'•)• •{•
-• • • • • • • • •c•o•n•t•.•i•n•n•e•r•H•T•M•L• •=• •`•
-• • • • • • • • • • •<•b•u•t•t•o•n• •c•l•a•s•s•=•"•s•e•c•-•p•i•l•l• •a•c•t•i•v•e•"• •o•n•c•l•i•c•k•=•"•s•e•t•S•e•c•t•i•o•n•(•'•a•l•l•'•)•"•>•A•l•l• •S•e•c•t•i•o•n•s•<•/•b•u•t•t•o•n•>•
-• • • • • • • • • • •<•b•u•t•t•o•n• •c•l•a•s•s•=•"•s•e•c•-•p•i•l•l•"• •o•n•c•l•i•c•k•=•"•s•e•t•S•e•c•t•i•o•n•(•'•S•E•C•T•I•O•N• •-• •A•'•)•"•>•S•e•c•t•i•o•n• •A• •(•1•M• •M•C•Q•s•)•<•/•b•u•t•t•o•n•>•
-• • • • • • • • • • •<•b•u•t•t•o•n• •c•l•a•s•s•=•"•s•e•c•-•p•i•l•l•"• •o•n•c•l•i•c•k•=•"•s•e•t•S•e•c•t•i•o•n•(•'•S•E•C•T•I•O•N• •-• •B•'•)•"•>•S•e•c•t•i•o•n• •B• •(•2•M•)•<•/•b•u•t•t•o•n•>•
-• • • • • • • • • • •<•b•u•t•t•o•n• •c•l•a•s•s•=•"•s•e•c•-•p•i•l•l•"• •o•n•c•l•i•c•k•=•"•s•e•t•S•e•c•t•i•o•n•(•'•S•E•C•T•I•O•N• •-• •C•'•)•"•>•S•e•c•t•i•o•n• •C• •(•3•M•)•<•/•b•u•t•t•o•n•>•
-• • • • • • • • • • •<•b•u•t•t•o•n• •c•l•a•s•s•=•"•s•e•c•-•p•i•l•l•"• •o•n•c•l•i•c•k•=•"•s•e•t•S•e•c•t•i•o•n•(•'•S•E•C•T•I•O•N• •-• •D•'•)•"•>•S•e•c•t•i•o•n• •D• •(•C•a•s•e• •S•t•u•d•y• •/• •4•M•)•<•/•b•u•t•t•o•n•>•
-• • • • • • • • • • •<•b•u•t•t•o•n• •c•l•a•s•s•=•"•s•e•c•-•p•i•l•l•"• •o•n•c•l•i•c•k•=•"•s•e•t•S•e•c•t•i•o•n•(•'•S•E•C•T•I•O•N• •-• •E•'•)•"•>•S•e•c•t•i•o•n• •E• •(•5•M•)•<•/•b•u•t•t•o•n•>•
-• • • • • • • • •`•;•
-• • • • • • •}• •e•l•s•e• •{•
-• • • • • • • • •c•o•n•t•.•i•n•n•e•r•H•T•M•L• •=• •`•
-• • • • • • • • • • •<•b•u•t•t•o•n• •c•l•a•s•s•=•"•s•e•c•-•p•i•l•l• •a•c•t•i•v•e•"• •o•n•c•l•i•c•k•=•"•s•e•t•S•e•c•t•i•o•n•(•'•a•l•l•'•)•"•>•A•l•l• •S•e•c•t•i•o•n•s•<•/•b•u•t•t•o•n•>•
-• • • • • • • • • • •<•b•u•t•t•o•n• •c•l•a•s•s•=•"•s•e•c•-•p•i•l•l•"• •o•n•c•l•i•c•k•=•"•s•e•t•S•e•c•t•i•o•n•(•'•S•e•c•t•i•o•n• •A•'•)•"•>•S•e•c•t•i•o•n• •A• •(•C•o•r•e• •3•5•)•<•/•b•u•t•t•o•n•>•
-• • • • • • • • • • •<•b•u•t•t•o•n• •c•l•a•s•s•=•"•s•e•c•-•p•i•l•l•"• •o•n•c•l•i•c•k•=•"•s•e•t•S•e•c•t•i•o•n•(•'•S•e•c•t•i•o•n• •B•'•)•"•>•S•e•c•t•i•o•n• •B• •(•O•p•t•i•o•n•a•l• •1•5•)•<•/•b•u•t•t•o•n•>•
-• • • • • • • • •`•;•
-• • • • • • •}•
-• • • • • • •c•u•r•r•e•n•t•S•e•c•t•i•o•n• •=• •'•a•l•l•'•;•
-• • • • •}•
-•
-• • • • •f•u•n•c•t•i•o•n• •s•e•t•S•e•c•t•i•o•n•(•s•e•c•)• •{•
-• • • • • • •c•u•r•r•e•n•t•S•e•c•t•i•o•n• •=• •s•e•c•;•
-• • • • • • •d•o•c•u•m•e•n•t•.•q•u•e•r•y•S•e•l•e•c•t•o•r•A•l•l•(•'•.•s•e•c•-•p•i•l•l•'•)•.•f•o•r•E•a•c•h•(•b•t•n• •=•>• •{•
-• • • • • • • • •b•t•n•.•c•l•a•s•s•L•i•s•t•.•t•o•g•g•l•e•(•'•a•c•t•i•v•e•'•,• •b•t•n•.•i•n•n•e•r•T•e•x•t•.•i•n•c•l•u•d•e•s•(•s•e•c•)• •|•|• •(•s•e•c• •=•=•=• •'•a•l•l•'• •&•&• •b•t•n•.•i•n•n•e•r•T•e•x•t•.•i•n•c•l•u•d•e•s•(•'•A•l•l•'•)•)•)•;•
-• • • • • • •}•)•;•
-• • • • • • •a•p•p•l•y•F•i•l•t•e•r•s•(•)•;•
-• • • • •}•
-•
-• • • • •a•s•y•n•c• •f•u•n•c•t•i•o•n• •l•o•a•d•C•u•r•r•e•n•t•D•a•t•a•s•e•t•(•)• •{•
-• • • • • • •c•o•n•s•t• •f•e•e•d• •=• •d•o•c•u•m•e•n•t•.•g•e•t•E•l•e•m•e•n•t•B•y•I•d•(•'•q•u•e•s•t•i•o•n•s•F•e•e•d•C•o•n•t•a•i•n•e•r•'•)•;•
-• • • • • • •f•e•e•d•.•i•n•n•e•r•H•T•M•L• •=• •'•<•d•i•v• •c•l•a•s•s•=•"•l•o•a•d•i•n•g•-•s•t•a•t•e•"•>•L•o•a•d•i•n•g• •'• •+• •c•u•r•r•e•n•t•E•x•a•m•.•t•o•U•p•p•e•r•C•a•s•e•(•)• •+• •'• •'• •+• •c•u•r•r•e•n•t•S•u•b•j•e•c•t• •+• •'• •d•a•t•a•s•e•t•.•.•.•<•/•d•i•v•>•'•;•
-• • • • • • •
-• • • • • • •l•e•t• •u•r•l• •=• •'•'•;•
-• • • • • • •i•f• •(•c•u•r•r•e•n•t•E•x•a•m• •=•=•=• •'•c•b•s•e•'•)• •{•
-• • • • • • • • •u•r•l• •=• •`•/•d•a•t•a•/•c•b•s•e•_•$•{•c•u•r•r•e•n•t•S•u•b•j•e•c•t•.•t•o•L•o•w•e•r•C•a•s•e•(•)•}•.•j•s•o•n•`•;•
-• • • • • • •}• •e•l•s•e• •{•
-• • • • • • • • •u•r•l• •=• •`•/•d•a•t•a•/•n•e•e•t•_•a•l•l•.•j•s•o•n•`•;•
-• • • • • • •}•
-•
-• • • • • • •t•r•y• •{•
-• • • • • • • • •i•f• •(•!•c•a•c•h•e•[•u•r•l•]•)• •{•
-• • • • • • • • • • •c•o•n•s•t• •r•e•s• •=• •a•w•a•i•t• •f•e•t•c•h•(•u•r•l•)•;•
-• • • • • • • • • • •i•f• •(•!•r•e•s•.•o•k•)• •t•h•r•o•w• •n•e•w• •E•r•r•o•r•(•'•F•a•i•l•e•d• •t•o• •l•o•a•d• •d•a•t•a•s•e•t•'•)•;•
-• • • • • • • • • • •c•a•c•h•e•[•u•r•l•]• •=• •a•w•a•i•t• •r•e•s•.•j•s•o•n•(•)•;•
-• • • • • • • • •}•
-• • • • • • • • •
-• • • • • • • • •l•e•t• •d•a•t•a• •=• •c•a•c•h•e•[•u•r•l•]•;•
-• • • • • • • • •i•f• •(•c•u•r•r•e•n•t•E•x•a•m• •=•=•=• •'•n•e•e•t•'•)• •{•
-• • • • • • • • • • •d•a•t•a• •=• •d•a•t•a•.•f•i•l•t•e•r•(•q• •=•>• •q•.•s•u•b•j•e•c•t•.•t•o•L•o•w•e•r•C•a•s•e•(•)• •=•=•=• •c•u•r•r•e•n•t•S•u•b•j•e•c•t•.•t•o•L•o•w•e•r•C•a•s•e•(•)•)•;•
-• • • • • • • • •}•
-• • • • • • • • •l•o•a•d•e•d•Q•u•e•s•t•i•o•n•s• •=• •d•a•t•a•;•
-• • • • • • • • •a•p•p•l•y•F•i•l•t•e•r•s•(•)•;•
-• • • • • • •}• •c•a•t•c•h• •(•e•r•r•)• •{•
-• • • • • • • • •f•e•e•d•.•i•n•n•e•r•H•T•M•L• •=• •'•<•d•i•v• •c•l•a•s•s•=•"•l•o•a•d•i•n•g•-•s•t•a•t•e•"• •s•t•y•l•e•=•"•c•o•l•o•r•:• •#•e•f•4•4•4•4•;•"•>•F•a•i•l•e•d• •t•o• •l•o•a•d• •q•u•e•s•t•i•o•n•s•.• •P•l•e•a•s•e• •c•h•e•c•k• •n•e•t•w•o•r•k•.•<•/•d•i•v•>•'•;•
-• • • • • • •}•
-• • • • •}•
-•
-• • • • •f•u•n•c•t•i•o•n• •o•n•S•u•b•j•e•c•t•C•h•a•n•g•e•(•)• •{•
-• • • • • • •c•u•r•r•e•n•t•S•u•b•j•e•c•t• •=• •d•o•c•u•m•e•n•t•.•g•e•t•E•l•e•m•e•n•t•B•y•I•d•(•'•s•e•l•e•c•t•S•u•b•j•e•c•t•'•)•.•v•a•l•u•e•;•
-• • • • • • •p•o•p•u•l•a•t•e•C•h•a•p•t•e•r•s•(•)•;•
-• • • • • • •l•o•a•d•C•u•r•r•e•n•t•D•a•t•a•s•e•t•(•)•;•
-• • • • •}•
-•
-• • • • •f•u•n•c•t•i•o•n• •o•n•C•h•a•p•t•e•r•C•h•a•n•g•e•(•)• •{•
-• • • • • • •c•u•r•r•e•n•t•C•h•a•p•t•e•r• •=• •d•o•c•u•m•e•n•t•.•g•e•t•E•l•e•m•e•n•t•B•y•I•d•(•'•s•e•l•e•c•t•C•h•a•p•t•e•r•'•)•.•v•a•l•u•e•;•
-• • • • • • •a•p•p•l•y•F•i•l•t•e•r•s•(•)•;•
-• • • • •}•
-•
-• • • • •f•u•n•c•t•i•o•n• •o•n•F•i•l•t•e•r•C•h•a•n•g•e•(•)• •{•
-• • • • • • •c•u•r•r•e•n•t•Y•e•a•r• •=• •d•o•c•u•m•e•n•t•.•g•e•t•E•l•e•m•e•n•t•B•y•I•d•(•'•s•e•l•e•c•t•Y•e•a•r•'•)•.•v•a•l•u•e•;•
-• • • • • • •a•p•p•l•y•F•i•l•t•e•r•s•(•)•;•
-• • • • •}•
-•
-• • • • •f•u•n•c•t•i•o•n• •o•n•S•e•a•r•c•h•I•n•p•u•t•(•)• •{•
-• • • • • • •s•e•a•r•c•h•Q•u•e•r•y• •=• •d•o•c•u•m•e•n•t•.•g•e•t•E•l•e•m•e•n•t•B•y•I•d•(•'•i•n•p•u•t•S•e•a•r•c•h•'•)•.•v•a•l•u•e•.•t•o•L•o•w•e•r•C•a•s•e•(•)•.•t•r•i•m•(•)•;•
-• • • • • • •a•p•p•l•y•F•i•l•t•e•r•s•(•)•;•
-• • • • •}•
-•
-• • • • •f•u•n•c•t•i•o•n• •a•p•p•l•y•F•i•l•t•e•r•s•(•)• •{•
-• • • • • • •l•e•t• •l•i•s•t• •=• •l•o•a•d•e•d•Q•u•e•s•t•i•o•n•s•;•
-•
-• • • • • • •/•/• •F•i•l•t•e•r• •b•y• •c•h•a•p•t•e•r•
-• • • • • • •i•f• •(•c•u•r•r•e•n•t•C•h•a•p•t•e•r• •!•=•=• •'•a•l•l•'•)• •{•
-• • • • • • • • •i•f• •(•c•u•r•r•e•n•t•E•x•a•m• •=•=•=• •'•c•b•s•e•'•)• •{•
-• • • • • • • • • • •c•o•n•s•t• •c•h•N•u•m• •=• •p•a•r•s•e•I•n•t•(•c•u•r•r•e•n•t•C•h•a•p•t•e•r•,• •1•0•)•;•
-• • • • • • • • • • •l•i•s•t• •=• •l•i•s•t•.•f•i•l•t•e•r•(•q• •=•>• •q•.•c•h•a•p•t•e•r•_•n•u•m•b•e•r• •=•=•=• •c•h•N•u•m•)•;•
-• • • • • • • • •}• •e•l•s•e• •{•
-• • • • • • • • • • •l•i•s•t• •=• •l•i•s•t•.•f•i•l•t•e•r•(•q• •=•>• •q•.•n•c•e•r•t•_•c•h•a•p•t•e•r• •=•=•=• •c•u•r•r•e•n•t•C•h•a•p•t•e•r•)•;•
-• • • • • • • • •}•
-• • • • • • •}•
-•
-• • • • • • •/•/• •F•i•l•t•e•r• •b•y• •y•e•a•r•
-• • • • • • •i•f• •(•c•u•r•r•e•n•t•Y•e•a•r• •!•=•=• •'•a•l•l•'•)• •{•
-• • • • • • • • •l•i•s•t• •=• •l•i•s•t•.•f•i•l•t•e•r•(•q• •=•>• •S•t•r•i•n•g•(•q•.•y•e•a•r•)• •=•=•=• •S•t•r•i•n•g•(•c•u•r•r•e•n•t•Y•e•a•r•)•)•;•
-• • • • • • •}•
-•
-• • • • • • •/•/• •F•i•l•t•e•r• •b•y• •s•e•c•t•i•o•n•
-• • • • • • •i•f• •(•c•u•r•r•e•n•t•S•e•c•t•i•o•n• •!•=•=• •'•a•l•l•'•)• •{•
-• • • • • • • • •l•i•s•t• •=• •l•i•s•t•.•f•i•l•t•e•r•(•q• •=•>• •q•.•s•e•c•t•i•o•n• •&•&• •q•.•s•e•c•t•i•o•n•.•t•o•L•o•w•e•r•C•a•s•e•(•)•.•i•n•c•l•u•d•e•s•(•c•u•r•r•e•n•t•S•e•c•t•i•o•n•.•t•o•L•o•w•e•r•C•a•s•e•(•)•)•)•;•
-• • • • • • •}•
-•
-• • • • • • •/•/• •F•i•l•t•e•r• •b•y• •s•e•a•r•c•h• •q•u•e•r•y•
-• • • • • • •i•f• •(•s•e•a•r•c•h•Q•u•e•r•y•)• •{•
-• • • • • • • • •l•i•s•t• •=• •l•i•s•t•.•f•i•l•t•e•r•(•q• •=•>• •(•q•.•t•e•x•t• •&•&• •q•.•t•e•x•t•.•t•o•L•o•w•e•r•C•a•s•e•(•)•.•i•n•c•l•u•d•e•s•(•s•e•a•r•c•h•Q•u•e•r•y•)•)• •|•|• •
-• • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •(•q•.•n•c•e•r•t•_•c•h•a•p•t•e•r• •&•&• •q•.•n•c•e•r•t•_•c•h•a•p•t•e•r•.•t•o•L•o•w•e•r•C•a•s•e•(•)•.•i•n•c•l•u•d•e•s•(•s•e•a•r•c•h•Q•u•e•r•y•)•)•)•;•
-• • • • • • •}•
-•
-• • • • • • •f•i•l•t•e•r•e•d•Q•u•e•s•t•i•o•n•s• •=• •l•i•s•t•;•
-• • • • • • •c•u•r•r•e•n•t•P•a•g•e• •=• •1•;•
-• • • • • • •r•e•n•d•e•r•F•e•e•d•(•)•;•
-• • • • •}•
-•
-• • • • •f•u•n•c•t•i•o•n• •r•e•n•d•e•r•F•e•e•d•(•)• •{•
-• • • • • • •c•o•n•s•t• •f•e•e•d• •=• •d•o•c•u•m•e•n•t•.•g•e•t•E•l•e•m•e•n•t•B•y•I•d•(•'•q•u•e•s•t•i•o•n•s•F•e•e•d•C•o•n•t•a•i•n•e•r•'•)•;•
-• • • • • • •c•o•n•s•t• •s•t•r•e•a•m•T•i•t•l•e• •=• •d•o•c•u•m•e•n•t•.•g•e•t•E•l•e•m•e•n•t•B•y•I•d•(•'•s•t•r•e•a•m•T•i•t•l•e•H•e•a•d•i•n•g•'•)•;•
-• • • • • • •c•o•n•s•t• •s•t•r•e•a•m•C•o•u•n•t• •=• •d•o•c•u•m•e•n•t•.•g•e•t•E•l•e•m•e•n•t•B•y•I•d•(•'•s•t•r•e•a•m•C•o•u•n•t•D•i•s•p•l•a•y•'•)•;•
-• • • • • • •c•o•n•s•t• •p•a•g•B•a•r• •=• •d•o•c•u•m•e•n•t•.•g•e•t•E•l•e•m•e•n•t•B•y•I•d•(•'•p•a•g•i•n•a•t•i•o•n•B•a•r•'•)•;•
-•
-• • • • • • •c•o•n•s•t• •t•o•t•a•l• •=• •f•i•l•t•e•r•e•d•Q•u•e•s•t•i•o•n•s•.•l•e•n•g•t•h•;•
-• • • • • • •s•t•r•e•a•m•C•o•u•n•t•.•i•n•n•e•r•T•e•x•t• •=• •`•$•{•t•o•t•a•l•.•t•o•L•o•c•a•l•e•S•t•r•i•n•g•(•)•}• •Q•u•e•s•t•i•o•n•s•`•;•
-•
-• • • • • • •l•e•t• •c•h•L•a•b•e•l• •=• •c•u•r•r•e•n•t•C•h•a•p•t•e•r• •=•=•=• •'•a•l•l•'• •?• •'•A•l•l• •C•h•a•p•t•e•r•s•'• •:• •(•c•u•r•r•e•n•t•E•x•a•m• •=•=•=• •'•c•b•s•e•'• •?• •'•C•h•a•p•t•e•r• •'• •+• •c•u•r•r•e•n•t•C•h•a•p•t•e•r• •:• •c•u•r•r•e•n•t•C•h•a•p•t•e•r•)•;•
-• • • • • • •s•t•r•e•a•m•T•i•t•l•e•.•i•n•n•e•r•T•e•x•t• •=• •`•$•{•c•u•r•r•e•n•t•E•x•a•m•.•t•o•U•p•p•e•r•C•a•s•e•(•)•}• •$•{•c•u•r•r•e•n•t•S•u•b•j•e•c•t•}• •·• •$•{•c•h•L•a•b•e•l•}•`•;•
-•
-• • • • • • •i•f• •(•t•o•t•a•l• •=•=•=• •0•)• •{•
-• • • • • • • • •f•e•e•d•.•i•n•n•e•r•H•T•M•L• •=• •'•<•d•i•v• •c•l•a•s•s•=•"•l•o•a•d•i•n•g•-•s•t•a•t•e•"•>•N•o• •q•u•e•s•t•i•o•n•s• •m•a•t•c•h•e•d• •t•h•e• •s•e•l•e•c•t•e•d• •f•i•l•t•e•r•s•.•<•/•d•i•v•>•'•;•
-• • • • • • • • •p•a•g•B•a•r•.•s•t•y•l•e•.•d•i•s•p•l•a•y• •=• •'•n•o•n•e•'•;•
-• • • • • • • • •r•e•t•u•r•n•;•
-• • • • • • •}•
-•
-• • • • • • •c•o•n•s•t• •t•o•t•a•l•P•a•g•e•s• •=• •M•a•t•h•.•c•e•i•l•(•t•o•t•a•l• •/• •P•A•G•E•_•S•I•Z•E•)•;•
-• • • • • • •p•a•g•B•a•r•.•s•t•y•l•e•.•d•i•s•p•l•a•y• •=• •t•o•t•a•l•P•a•g•e•s• •>• •1• •?• •'•f•l•e•x•'• •:• •'•n•o•n•e•'•;•
-• • • • • • •d•o•c•u•m•e•n•t•.•g•e•t•E•l•e•m•e•n•t•B•y•I•d•(•'•p•a•g•e•S•t•a•t•u•s•T•e•x•t•'•)•.•i•n•n•e•r•T•e•x•t• •=• •`•P•a•g•e• •$•{•c•u•r•r•e•n•t•P•a•g•e•}• •o•f• •$•{•t•o•t•a•l•P•a•g•e•s•}•`•;•
-• • • • • • •d•o•c•u•m•e•n•t•.•g•e•t•E•l•e•m•e•n•t•B•y•I•d•(•'•b•t•n•P•r•e•v•P•a•g•e•'•)•.•d•i•s•a•b•l•e•d• •=• •c•u•r•r•e•n•t•P•a•g•e• •<•=• •1•;•
-• • • • • • •d•o•c•u•m•e•n•t•.•g•e•t•E•l•e•m•e•n•t•B•y•I•d•(•'•b•t•n•N•e•x•t•P•a•g•e•'•)•.•d•i•s•a•b•l•e•d• •=• •c•u•r•r•e•n•t•P•a•g•e• •>•=• •t•o•t•a•l•P•a•g•e•s•;•
-•
-• • • • • • •c•o•n•s•t• •s•t•a•r•t•I•n•d•e•x• •=• •(•c•u•r•r•e•n•t•P•a•g•e• •-• •1•)• •*• •P•A•G•E•_•S•I•Z•E•;•
-• • • • • • •c•o•n•s•t• •p•a•g•e•S•l•i•c•e• •=• •f•i•l•t•e•r•e•d•Q•u•e•s•t•i•o•n•s•.•s•l•i•c•e•(•s•t•a•r•t•I•n•d•e•x•,• •s•t•a•r•t•I•n•d•e•x• •+• •P•A•G•E•_•S•I•Z•E•)•;•
-•
-• • • • • • •l•e•t• •c•a•r•d•s•H•t•m•l• •=• •'•'•;•
-• • • • • • •p•a•g•e•S•l•i•c•e•.•f•o•r•E•a•c•h•(•(•q•,• •i•d•x•)• •=•>• •{•
-• • • • • • • • •c•o•n•s•t• •g•l•o•b•a•l•N•u•m• •=• •s•t•a•r•t•I•n•d•e•x• •+• •i•d•x• •+• •1•;•
-• • • • • • • • •c•o•n•s•t• •q•I•d• •=• •q•.•i•d• •|•|• •`•q•_•$•{•g•l•o•b•a•l•N•u•m•}•`•;•
-• • • • • • • • •c•o•n•s•t• •y•e•a•r• •=• •q•.•y•e•a•r• •|•|• •'•2•0•2•6•'•;•
-• • • • • • • • •c•o•n•s•t• •m•a•r•k•s• •=• •q•.•m•a•r•k•s• •?• •`•$•{•q•.•m•a•r•k•s•}• •M•a•r•k•$•{•q•.•m•a•r•k•s• •>• •1• •?• •'•s•'• •:• •'•'•}•`• •:• •'•4• •M•a•r•k•s•'•;•
-• • • • • • • • •c•o•n•s•t• •s•e•c•t•i•o•n• •=• •q•.•s•e•c•t•i•o•n• •|•|• •'•'•;•
-• • • • • • • • •c•o•n•s•t• •s•o•u•r•c•e• •=• •q•.•s•o•u•r•c•e• •|•|• •'•O•f•f•i•c•i•a•l• •E•x•a•m• •P•a•p•e•r•'•;•
-• • • • • • • • •c•o•n•s•t• •t•e•x•t• •=• •q•.•t•e•x•t• •|•|• •'•'•;•
-• • • • • • • • •c•o•n•s•t• •r•e•p•e•a•t•s• •=• •q•.•r•e•p•e•a•t•_•y•e•a•r•s• •&•&• •q•.•r•e•p•e•a•t•_•y•e•a•r•s•.•l•e•n•g•t•h• •>• •1• •?• •`•🔁• •R•e•p•e•a•t•e•d• •a•c•r•o•s•s• •$•{•q•.•r•e•p•e•a•t•_•y•e•a•r•s•.•j•o•i•n•(•'•,• •'•)•}•`• •:• •'•'•;•
-•
-• • • • • • • • •/•/• •O•p•t•i•o•n•s• •f•o•r• •N•E•E•T•
-• • • • • • • • •l•e•t• •o•p•t•i•o•n•s•H•t•m•l• •=• •'•'•;•
-• • • • • • • • •i•f• •(•c•u•r•r•e•n•t•E•x•a•m• •=•=•=• •'•n•e•e•t•'• •&•&• •q•.•o•p•t•i•o•n•s•)• •{•
-• • • • • • • • • • •o•p•t•i•o•n•s•H•t•m•l• •=• •'•<•d•i•v• •c•l•a•s•s•=•"•n•e•e•t•-•o•p•t•i•o•n•s•-•g•r•i•d•"•>•'•;•
-• • • • • • • • • • •[•'•A•'•,• •'•B•'•,• •'•C•'•,• •'•D•'•]•.•f•o•r•E•a•c•h•(•o•p•t•K•e•y• •=•>• •{•
-• • • • • • • • • • • • •c•o•n•s•t• •o•p•t•V•a•l• •=• •q•.•o•p•t•i•o•n•s•[•o•p•t•K•e•y•]• •|•|• •'•'•;•
-• • • • • • • • • • • • •o•p•t•i•o•n•s•H•t•m•l• •+•=• •`•
-• • • • • • • • • • • • • • •<•d•i•v• •c•l•a•s•s•=•"•n•e•e•t•-•o•p•t•-•b•t•n•"• •i•d•=•"•o•p•t•_•$•{•q•I•d•}•_•$•{•o•p•t•K•e•y•}•"• •o•n•c•l•i•c•k•=•"•c•h•e•c•k•N•e•e•t•O•p•t•i•o•n•(•'•$•{•q•I•d•}•'•,• •'•$•{•o•p•t•K•e•y•}•'•,• •'•$•{•q•.•c•o•r•r•e•c•t•_•a•n•s•w•e•r•}•'•)•"•>•
-• • • • • • • • • • • • • • • • •<•s•p•a•n• •c•l•a•s•s•=•"•o•p•t•-•l•a•b•e•l•"•>•$•{•o•p•t•K•e•y•}•<•/•s•p•a•n•>•
-• • • • • • • • • • • • • • • • •<•s•p•a•n• •c•l•a•s•s•=•"•o•p•t•-•t•e•x•t•"•>•$•{•o•p•t•V•a•l•}•<•/•s•p•a•n•>•
-• • • • • • • • • • • • • • •<•/•d•i•v•>•
-• • • • • • • • • • • • •`•;•
-• • • • • • • • • • •}•)•;•
-• • • • • • • • • • •o•p•t•i•o•n•s•H•t•m•l• •+•=• •'•<•/•d•i•v•>•'•;•
-• • • • • • • • •}•
-•
-• • • • • • • • •c•a•r•d•s•H•t•m•l• •+•=• •`•
-• • • • • • • • • • •<•d•i•v• •c•l•a•s•s•=•"•q•u•e•s•t•i•o•n•-•c•a•r•d•"• •i•d•=•"•$•{•q•I•d•}•"•>•
-• • • • • • • • • • • • •<•d•i•v• •c•l•a•s•s•=•"•q•-•m•e•t•a•-•t•o•p•"•>•
-• • • • • • • • • • • • • • •<•d•i•v• •c•l•a•s•s•=•"•q•-•b•a•d•g•e•s•-•l•e•f•t•"•>•
-• • • • • • • • • • • • • • • • •<•s•p•a•n• •c•l•a•s•s•=•"•q•-•s•o•u•r•c•e•-•p•i•l•l•"•>•#•$•{•g•l•o•b•a•l•N•u•m•}• •·• •$•{•y•e•a•r•}•<•/•s•p•a•n•>•
-• • • • • • • • • • • • • • • • •<•s•p•a•n• •c•l•a•s•s•=•"•q•-•m•a•r•k•s•-•p•i•l•l•"•>•$•{•m•a•r•k•s•}•<•/•s•p•a•n•>•
-• • • • • • • • • • • • • • • • •$•{•s•e•c•t•i•o•n• •?• •`•<•s•p•a•n• •c•l•a•s•s•=•"•q•-•s•o•u•r•c•e•-•p•i•l•l•"•>•$•{•s•e•c•t•i•o•n•}•<•/•s•p•a•n•>•`• •:• •'•'•}•
-• • • • • • • • • • • • • • • • •$•{•r•e•p•e•a•t•s• •?• •`•<•s•p•a•n• •c•l•a•s•s•=•"•q•-•r•e•p•e•a•t•-•p•i•l•l•"•>•$•{•r•e•p•e•a•t•s•}•<•/•s•p•a•n•>•`• •:• •'•'•}•
-• • • • • • • • • • • • • • •<•/•d•i•v•>•
-• • • • • • • • • • • • • • •<•s•p•a•n• •c•l•a•s•s•=•"•q•-•s•o•u•r•c•e•-•p•i•l•l•"• •s•t•y•l•e•=•"•o•p•a•c•i•t•y•:• •0•.•7•;•"•>•$•{•s•o•u•r•c•e•}•<•/•s•p•a•n•>•
-• • • • • • • • • • • • •<•/•d•i•v•>•
-•
-• • • • • • • • • • • • •<•d•i•v• •c•l•a•s•s•=•"•q•-•b•o•d•y•-•t•e•x•t• •m•a•t•h•-•c•o•n•t•e•n•t•"•>•$•{•e•s•c•a•p•e•H•t•m•l•(•t•e•x•t•)•}•<•/•d•i•v•>•
-•
-• • • • • • • • • • • • •$•{•o•p•t•i•o•n•s•H•t•m•l•}•
-•
-• • • • • • • • • • • • •<•d•i•v• •c•l•a•s•s•=•"•q•-•a•c•t•i•o•n•s•-•r•o•w•"•>•
-• • • • • • • • • • • • • • •<•b•u•t•t•o•n• •c•l•a•s•s•=•"•b•t•n•-•t•o•g•g•l•e•-•s•o•l•u•t•i•o•n•"• •o•n•c•l•i•c•k•=•"•t•o•g•g•l•e•S•o•l•u•t•i•o•n•(•'•$•{•q•I•d•}•'•)•"•>•
-• • • • • • • • • • • • • • • • •<•s•p•a•n•>•R•e•v•e•a•l• •M•a•r•k•i•n•g• •S•c•h•e•m•e• •/• •A•n•s•w•e•r•<•/•s•p•a•n•>• •▾•
-• • • • • • • • • • • • • • •<•/•b•u•t•t•o•n•>•
-• • • • • • • • • • • • • • •<•d•i•v• •s•t•y•l•e•=•"•f•o•n•t•-•s•i•z•e•:• •1•2•p•x•;• •c•o•l•o•r•:• •v•a•r•(•-•-•t•e•x•t•-•m•u•t•e•d•)•;• •f•o•n•t•-•f•a•m•i•l•y•:• •v•a•r•(•-•-•f•o•n•t•-•m•o•n•o•)•;•"•>•
-• • • • • • • • • • • • • • • • •I•D•:• •$•{•q•I•d•}•
-• • • • • • • • • • • • • • •<•/•d•i•v•>•
-• • • • • • • • • • • • •<•/•d•i•v•>•
-•
-• • • • • • • • • • • • •<•d•i•v• •c•l•a•s•s•=•"•s•o•l•u•t•i•o•n•-•b•o•x•"• •i•d•=•"•s•o•l•_•$•{•q•I•d•}•"•>•
-• • • • • • • • • • • • • • •<•s•t•r•o•n•g•>•O•f•f•i•c•i•a•l• •S•c•h•e•m•e•:•<•/•s•t•r•o•n•g•>•
-• • • • • • • • • • • • • • •$•{•c•u•r•r•e•n•t•E•x•a•m• •=•=•=• •'•n•e•e•t•'• •?• •`•<•p• •s•t•y•l•e•=•"•m•a•r•g•i•n•-•t•o•p•:• •6•p•x•;•"•>•C•o•r•r•e•c•t• •O•p•t•i•o•n•:• •<•s•t•r•o•n•g•>•(•$•{•q•.•c•o•r•r•e•c•t•_•a•n•s•w•e•r•}•)•<•/•s•t•r•o•n•g•>•<•/•p•>•`• •:• •`•<•p• •s•t•y•l•e•=•"•m•a•r•g•i•n•-•t•o•p•:• •6•p•x•;•"•>•R•e•f•e•r• •t•o• •s•t•e•p•-•b•y•-•s•t•e•p• •C•B•S•E• •m•a•r•k•i•n•g• •g•u•i•d•e•l•i•n•e•s• •f•o•r• •$•{•y•e•a•r•}• •(•$•{•s•o•u•r•c•e•}•)•.•<•/•p•>•`•}•
-• • • • • • • • • • • • •<•/•d•i•v•>•
-• • • • • • • • • • •<•/•d•i•v•>•
-• • • • • • • • •`•;•
-• • • • • • •}•)•;•
-•
-• • • • • • •f•e•e•d•.•i•n•n•e•r•H•T•M•L• •=• •c•a•r•d•s•H•t•m•l•;•
-•
-• • • • • • •/•/• •R•e•n•d•e•r• •m•a•t•h• •f•o•r•m•u•l•a•s•
-• • • • • • •i•f• •(•w•i•n•d•o•w•.•r•e•n•d•e•r•M•a•t•h•I•n•E•l•e•m•e•n•t•)• •{•
-• • • • • • • • •r•e•n•d•e•r•M•a•t•h•I•n•E•l•e•m•e•n•t•(•f•e•e•d•,• •{•
-• • • • • • • • • • •d•e•l•i•m•i•t•e•r•s•:• •[•
-• • • • • • • • • • • • •{•l•e•f•t•:• •'•$•$•'•,• •r•i•g•h•t•:• •'•$•$•'•,• •d•i•s•p•l•a•y•:• •t•r•u•e•}•,•
-• • • • • • • • • • • • •{•l•e•f•t•:• •'•$•'•,• •r•i•g•h•t•:• •'•$•'•,• •d•i•s•p•l•a•y•:• •f•a•l•s•e•}•
-• • • • • • • • • • •]•,•
-• • • • • • • • • • •t•h•r•o•w•O•n•E•r•r•o•r•:• •f•a•l•s•e•
-• • • • • • • • •}•)•;•
-• • • • • • •}•
-• • • • •}•
-•
-• • • • •f•u•n•c•t•i•o•n• •t•o•g•g•l•e•S•o•l•u•t•i•o•n•(•q•I•d•)• •{•
-• • • • • • •c•o•n•s•t• •s•o•l• •=• •d•o•c•u•m•e•n•t•.•g•e•t•E•l•e•m•e•n•t•B•y•I•d•(•'•s•o•l•_•'• •+• •q•I•d•)•;•
-• • • • • • •i•f• •(•s•o•l•)• •s•o•l•.•c•l•a•s•s•L•i•s•t•.•t•o•g•g•l•e•(•'•o•p•e•n•'•)•;•
-• • • • •}•
-•
-• • • • •f•u•n•c•t•i•o•n• •c•h•e•c•k•N•e•e•t•O•p•t•i•o•n•(•q•I•d•,• •s•e•l•e•c•t•e•d•O•p•t•,• •c•o•r•r•e•c•t•O•p•t•)• •{•
-• • • • • • •[•'•A•'•,• •'•B•'•,• •'•C•'•,• •'•D•'•]•.•f•o•r•E•a•c•h•(•o•p•t• •=•>• •{•
-• • • • • • • • •c•o•n•s•t• •e•l• •=• •d•o•c•u•m•e•n•t•.•g•e•t•E•l•e•m•e•n•t•B•y•I•d•(•`•o•p•t•_•$•{•q•I•d•}•_•$•{•o•p•t•}•`•)•;•
-• • • • • • • • •i•f• •(•e•l•)• •{•
-• • • • • • • • • • •i•f• •(•o•p•t• •=•=•=• •c•o•r•r•e•c•t•O•p•t•)• •{•
-• • • • • • • • • • • • •e•l•.•c•l•a•s•s•L•i•s•t•.•a•d•d•(•'•c•o•r•r•e•c•t•'•)•;•
-• • • • • • • • • • •}• •e•l•s•e• •i•f• •(•o•p•t• •=•=•=• •s•e•l•e•c•t•e•d•O•p•t•)• •{•
-• • • • • • • • • • • • •e•l•.•c•l•a•s•s•L•i•s•t•.•a•d•d•(•'•i•n•c•o•r•r•e•c•t•'•)•;•
-• • • • • • • • • • •}•
-• • • • • • • • •}•
-• • • • • • •}•)•;•
-• • • • •}•
-•
-• • • • •f•u•n•c•t•i•o•n• •p•r•e•v•P•a•g•e•(•)• •{•
-• • • • • • •i•f• •(•c•u•r•r•e•n•t•P•a•g•e• •>• •1•)• •{•
-• • • • • • • • •c•u•r•r•e•n•t•P•a•g•e•-•-•;•
-• • • • • • • • •r•e•n•d•e•r•F•e•e•d•(•)•;•
-• • • • • • • • •w•i•n•d•o•w•.•s•c•r•o•l•l•T•o•(•{•t•o•p•:• •2•0•0•,• •b•e•h•a•v•i•o•r•:• •'•s•m•o•o•t•h•'•}•)•;•
-• • • • • • •}•
-• • • • •}•
-•
-• • • • •f•u•n•c•t•i•o•n• •n•e•x•t•P•a•g•e•(•)• •{•
-• • • • • • •c•o•n•s•t• •t•o•t•a•l•P•a•g•e•s• •=• •M•a•t•h•.•c•e•i•l•(•f•i•l•t•e•r•e•d•Q•u•e•s•t•i•o•n•s•.•l•e•n•g•t•h• •/• •P•A•G•E•_•S•I•Z•E•)•;•
-• • • • • • •i•f• •(•c•u•r•r•e•n•t•P•a•g•e• •<• •t•o•t•a•l•P•a•g•e•s•)• •{•
-• • • • • • • • •c•u•r•r•e•n•t•P•a•g•e•+•+•;•
-• • • • • • • • •r•e•n•d•e•r•F•e•e•d•(•)•;•
-• • • • • • • • •w•i•n•d•o•w•.•s•c•r•o•l•l•T•o•(•{•t•o•p•:• •2•0•0•,• •b•e•h•a•v•i•o•r•:• •'•s•m•o•o•t•h•'•}•)•;•
-• • • • • • •}•
-• • • • •}•
-•
-• • • • •f•u•n•c•t•i•o•n• •e•s•c•a•p•e•H•t•m•l•(•s•t•r•)• •{•
-• • • • • • •r•e•t•u•r•n• •s•t•r•.•r•e•p•l•a•c•e•(•/•&•/•g•,• •'•&•a•m•p•;•'•)•
-• • • • • • • • • • • • • • • • •.•r•e•p•l•a•c•e•(•/•<•/•g•,• •'•&•l•t•;•'•)•
-• • • • • • • • • • • • • • • • •.•r•e•p•l•a•c•e•(•/•>•/•g•,• •'•&•g•t•;•'•)•;•
-• • • • •}•
-•
-• • • • •/•/• •I•n•i•t•i•a•l• •b•o•o•t•
-• • • • •w•i•n•d•o•w•.•a•d•d•E•v•e•n•t•L•i•s•t•e•n•e•r•(•'•D•O•M•C•o•n•t•e•n•t•L•o•a•d•e•d•'•,• •(•)• •=•>• •{•
-• • • • • • •s•e•t•E•x•a•m•(•c•u•r•r•e•n•t•E•x•a•m•)•;•
-• • • • •}•)•;•
-• • •<•/•s•c•r•i•p•t•>•
-•<•/•b•o•d•y•>•
-•<•/•h•t•m•l•>•
-•
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PYQ Wovrix | Interactive Practice Hub (CBSE 12 PCM & NEET UG)</title>
+  <meta name="description" content="Clean chapterwise practice engine for 7,769 CBSE Class 12 PCM and 2,060 NEET UG board questions with step marking schemes and repeat frequency analysis.">
+  <link rel="canonical" href="https://pyq.wovrix.in/practice/">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="stylesheet" href="/style.css">
+
+  <!-- KaTeX -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+
+  <style>
+    /* Practice Hub Specific Ergonomics */
+    .practice-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 24px 20px 80px 20px;
+    }
+
+    .hub-control-panel {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 20px 24px;
+      margin-bottom: 28px;
+      box-shadow: var(--shadow-card);
+    }
+
+    .hub-exam-toggle-bar {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 18px;
+      border-bottom: 1px solid var(--border-light);
+      padding-bottom: 16px;
+    }
+
+    .hub-exam-btn {
+      padding: 10px 20px;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border);
+      background: var(--bg);
+      color: var(--text-muted);
+      font-weight: 700;
+      font-size: 14px;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .hub-exam-btn.active {
+      background: var(--text);
+      color: #ffffff;
+      border-color: var(--text);
+    }
+
+    .hub-filter-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      align-items: center;
+    }
+
+    .filter-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .filter-label {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+    }
+
+    .filter-select {
+      padding: 8px 14px;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text);
+      font-family: var(--font-sans);
+      font-size: 13.5px;
+      font-weight: 600;
+      outline: none;
+      min-width: 170px;
+      cursor: pointer;
+    }
+
+    .filter-select:focus {
+      border-color: var(--accent);
+    }
+
+    .hub-search-box {
+      flex: 1;
+      min-width: 240px;
+    }
+
+    .hub-search-box input {
+      width: 100%;
+      padding: 8px 14px;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text);
+      font-size: 13.5px;
+      font-family: var(--font-sans);
+      outline: none;
+    }
+
+    .hub-search-box input:focus {
+      border-color: var(--accent);
+    }
+
+    /* Section Tabs */
+    .section-pill-bar {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: 16px;
+      padding-top: 14px;
+      border-top: 1px solid var(--border-light);
+    }
+
+    .sec-pill {
+      padding: 6px 14px;
+      border-radius: 20px;
+      border: 1px solid var(--border);
+      background: var(--bg);
+      color: var(--text-muted);
+      font-size: 12.5px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .sec-pill:hover {
+      border-color: var(--accent);
+      color: var(--text);
+    }
+
+    .sec-pill.active {
+      background: var(--accent-light);
+      border-color: var(--accent);
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    /* Question Stream */
+    .stream-meta-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 18px;
+      padding: 0 4px;
+    }
+
+    .stream-title {
+      font-size: 18px;
+      font-weight: 800;
+      letter-spacing: -0.01em;
+      color: var(--text);
+    }
+
+    .stream-count-badge {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text-muted);
+      background: var(--surface);
+      padding: 4px 10px;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+    }
+
+    .question-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 22px 24px;
+      margin-bottom: 20px;
+      box-shadow: var(--shadow-subtle);
+      transition: border-color 0.15s ease;
+    }
+
+    .question-card:hover {
+      border-color: #cbd5e1;
+    }
+
+    .q-meta-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 14px;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .q-badges-left {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .q-source-pill {
+      font-family: var(--font-mono);
+      font-size: 11.5px;
+      font-weight: 700;
+      color: var(--text-muted);
+      background: var(--bg);
+      padding: 3px 8px;
+      border-radius: 4px;
+      border: 1px solid var(--border);
+    }
+
+    .q-marks-pill {
+      font-family: var(--font-mono);
+      font-size: 11.5px;
+      font-weight: 700;
+      color: var(--accent);
+      background: var(--accent-light);
+      padding: 3px 8px;
+      border-radius: 4px;
+    }
+
+    .q-repeat-pill {
+      font-size: 11px;
+      font-weight: 700;
+      color: #047857;
+      background: #ecfdf5;
+      padding: 3px 8px;
+      border-radius: 4px;
+      border: 1px solid #a7f3d0;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .q-body-text {
+      font-family: var(--font-serif);
+      font-size: 18px;
+      line-height: 1.65;
+      color: var(--text);
+      margin-bottom: 16px;
+      white-space: pre-wrap;
+    }
+
+    /* NEET Options */
+    .neet-options-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 18px;
+    }
+
+    @media (max-width: 640px) {
+      .neet-options-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .neet-opt-btn {
+      padding: 10px 14px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font-serif);
+      font-size: 15.5px;
+      cursor: pointer;
+      text-align: left;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      transition: all 0.15s ease;
+    }
+
+    .neet-opt-btn:hover {
+      border-color: var(--accent);
+      background: var(--surface);
+    }
+
+    .neet-opt-btn.correct {
+      background: #ecfdf5 !important;
+      border-color: #059669 !important;
+      color: #047857 !important;
+      font-weight: 700;
+    }
+
+    .neet-opt-btn.incorrect {
+      background: #fef2f2 !important;
+      border-color: #dc2626 !important;
+      color: #991b1b !important;
+    }
+
+    .opt-label {
+      font-family: var(--font-mono);
+      font-weight: 700;
+      font-size: 12px;
+      background: var(--surface);
+      padding: 2px 6px;
+      border-radius: 4px;
+      border: 1px solid var(--border);
+    }
+
+    .q-actions-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 14px;
+      border-top: 1px solid var(--border-light);
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .btn-toggle-solution {
+      border: 1px solid var(--border);
+      background: var(--bg);
+      color: var(--text);
+      font-size: 12.5px;
+      font-weight: 600;
+      padding: 6px 14px;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      transition: all 0.12s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .btn-toggle-solution:hover {
+      background: var(--surface);
+      border-color: var(--accent);
+    }
+
+    .solution-box {
+      margin-top: 14px;
+      padding: 14px 18px;
+      background: #f8fafc;
+      border-left: 3px solid var(--accent);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      font-family: var(--font-serif);
+      font-size: 16px;
+      line-height: 1.6;
+      display: none;
+    }
+
+    .solution-box.open {
+      display: block;
+    }
+
+    /* Pagination controls */
+    .pagination-bar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 14px;
+      margin-top: 32px;
+    }
+
+    .page-btn {
+      padding: 8px 18px;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text);
+      font-size: 13.5px;
+      font-weight: 600;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      transition: all 0.12s ease;
+    }
+
+    .page-btn:hover:not(:disabled) {
+      border-color: var(--accent);
+      background: var(--accent-light);
+      color: var(--accent);
+    }
+
+    .page-btn:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+    }
+
+    .page-status {
+      font-family: var(--font-mono);
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    .loading-state {
+      text-align: center;
+      padding: 60px 20px;
+      color: var(--text-muted);
+      font-size: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Universal Site Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="brand">
+        <svg class="brand-logo-icon" width="22" height="22" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="32" height="32" rx="7" fill="#18181b"/>
+          <path d="M6 10L11 23L16 14L21 23L26 10" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="16" cy="14" r="2.2" fill="#3b82f6"/>
+        </svg>
+        <span class="brand-name">WOVRIX <span class="brand-slash">/</span> <span class="brand-sub">PYQ</span></span>
+      </a>
+            <nav class="nav-links">
+        <a href="/#cbse-section" class="nav-link">CBSE 12 PCM</a>
+        <a href="/neetug/" class="nav-link">NEET UG Archive</a>
+        <a href="/repeated/" class="nav-link">★ Repeated Qs</a>
+        <a href="/practice/" class="nav-link active">Practice Hub</a>
+        <a href="/paper-maker/" class="nav-link">Paper Maker</a>
+        <a href="/neetug/" class="nav-cta-pill">Launch NEET Portal ➔</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="practice-container">
+    <!-- Top Control Bar -->
+    <section class="hub-control-panel">
+      <!-- Exam Selector -->
+      <div class="hub-exam-toggle-bar">
+        <button class="hub-exam-btn active" id="btnExamCbse" onclick="setExam('cbse')">
+          <span>CBSE Class 12 PCM</span>
+          <span style="font-size: 11px; font-weight: normal; opacity: 0.8;">(7,769 Qs)</span>
+        </button>
+        <button class="hub-exam-btn" id="btnExamNeet" onclick="setExam('neet')">
+          <span>NEET UG Master Archive</span>
+          <span style="font-size: 11px; font-weight: normal; opacity: 0.8;">(2016–2026 · 2,060 Qs)</span>
+        </button>
+      </div>
+
+      <!-- Filters Row -->
+      <div class="hub-filter-row">
+        <!-- Subject -->
+        <div class="filter-group">
+          <label class="filter-label">Subject</label>
+          <select class="filter-select" id="selectSubject" aria-label="Select Subject" onchange="onSubjectChange()">
+            <!-- Populated via JS -->
+          </select>
+        </div>
+
+        <!-- Chapter -->
+        <div class="filter-group" style="flex: 2; min-width: 220px;">
+          <label class="filter-label">Chapter</label>
+          <select class="filter-select" id="selectChapter" aria-label="Select Chapter" onchange="onChapterChange()" style="width: 100%;">
+            <!-- Populated via JS -->
+          </select>
+        </div>
+
+        <!-- Year -->
+        <div class="filter-group">
+          <label class="filter-label">Year</label>
+          <select class="filter-select" id="selectYear" aria-label="Select Year" onchange="onFilterChange()" style="min-width: 130px;">
+            <option value="all">All Years</option>
+            <option value="2026">2026</option>
+            <option value="2025">2025</option>
+            <option value="2024">2024</option>
+            <option value="2023">2023</option>
+            <option value="2022">2022</option>
+          </select>
+        </div>
+
+        <!-- Search -->
+        <div class="filter-group hub-search-box">
+          <label class="filter-label">Search Keywords</label>
+          <input type="text" id="inputSearch" aria-label="Search questions" placeholder="Type formula or topic..." oninput="onSearchInput()">
+        </div>
+      </div>
+
+              <!-- Repeats Quick Filter -->
+        <div class="filter-group" style="justify-content: flex-end;">
+          <label class="filter-label">High-Yield Filter</label>
+          <button type="button" id="btnRepeatToggle" class="filter-select" style="font-weight:700;cursor:pointer;background:#fafaf9;" onclick="toggleRepeatsOnly()">★ Repeats Only</button>
+        </div>
+      <!-- Section Tabs -->
+      <div class="section-pill-bar" id="sectionPillContainer">
+        <!-- Populated via JS -->
+      </div>
+    </section>
+
+    <!-- Stream Meta -->
+    <div class="stream-meta-header">
+      <div class="stream-title" id="streamTitleHeading">Loading questions...</div>
+      <div class="stream-count-badge" id="streamCountDisplay">0 Questions</div>
+    </div>
+
+    <!-- Questions Feed Container -->
+    <div id="questionsFeedContainer">
+      <div class="loading-state">Loading questions data...</div>
+    </div>
+
+    <!-- Pagination Controls -->
+    <div class="pagination-bar" id="paginationBar" style="display: none;">
+      <button class="page-btn" id="btnPrevPage" onclick="prevPage()">← Previous</button>
+      <span class="page-status" id="pageStatusText">Page 1 of 1</span>
+      <button class="page-btn" id="btnNextPage" onclick="nextPage()">Next →</button>
+    </div>
+  </main>
+
+  <!-- Architectural Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-top-brand">
+        <div class="footer-brand-title">
+          <svg class="brand-logo-icon" width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="32" height="32" rx="7" fill="#18181b"/>
+            <path d="M6 10L11 23L16 14L21 23L26 10" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="16" cy="14" r="2.2" fill="#3b82f6"/>
+          </svg>
+          <span class="footer-brand-text">WOVRIX PYQ</span>
+        </div>
+        <p class="footer-tagline">Clean, ad-free, verified previous-year questions archive for CBSE Class 12 PCM and NEET UG. Free public education utility.</p>
+      </div>
+
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4 class="footer-col-heading">CBSE Class 12 PCM</h4>
+          <ul class="footer-links-list">
+            <li><a href="/cbse-12/physics/">Physics (14 Chapters)</a></li>
+            <li><a href="/cbse-12/chemistry/">Chemistry (10 Chapters)</a></li>
+            <li><a href="/cbse-12/mathematics/">Mathematics (13 Chapters)</a></li>
+            <li><a href="/practice/?exam=cbse">Interactive Practice Hub</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-heading">NEET UG Archive</h4>
+          <ul class="footer-links-list">
+            <li><a href="/neetug/">NEET UG Master Portal</a></li>
+            <li><a href="/practice/?exam=neet&subject=Physics">NEET Physics</a></li>
+            <li><a href="/practice/?exam=neet&subject=Chemistry">NEET Chemistry</a></li>
+            <li><a href="/practice/?exam=neet&subject=Botany">NEET Biology</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-heading">Platform</h4>
+          <ul class="footer-links-list">
+            <li><a href="/">Home</a></li>
+            <li><a href="/practice/">Universal Practice Engine</a></li>
+            <li><a href="https://github.com/wovrixofficial/pyq-wovrix" target="_blank" rel="noopener">GitHub Repository</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-heading">Fair Dealing Notice</h4>
+          <p class="footer-disclaimer-text">Questions and marking schemes belong to CBSE and NTA. Compiled solely for non-commercial educational review under Section 52(1)(a) of the Indian Copyright Act.</p>
+        </div>
+      </div>
+
+      <div class="footer-giant-wordmark">WOVRIX</div>
+    </div>
+  </footer>
+
+  <script>
+    const CHAPTERS_CBSE = {"Physics": [[1, "Electric Charges and Fields"], [2, "Electrostatic Potential and Capacitance"], [3, "Current Electricity"], [4, "Moving Charges and Magnetism"], [5, "Magnetism and Matter"], [6, "Electromagnetic Induction"], [7, "Alternating Current"], [8, "Electromagnetic Waves"], [9, "Ray Optics and Optical Instruments"], [10, "Wave Optics"], [11, "Dual Nature of Radiation and Matter"], [12, "Atoms"], [13, "Nuclei"], [14, "Semiconductor Electronics"]], "Chemistry": [[1, "Solutions"], [2, "Electrochemistry"], [3, "Chemical Kinetics"], [4, "The d- and f-Block Elements"], [5, "Coordination Compounds"], [6, "Haloalkanes and Haloarenes"], [7, "Alcohols, Phenols and Ethers"], [8, "Aldehydes, Ketones and Carboxylic Acids"], [9, "Amines"], [10, "Biomolecules"]], "Mathematics": [[1, "Relations and Functions"], [2, "Inverse Trigonometric Functions"], [3, "Matrices"], [4, "Determinants"], [5, "Continuity and Differentiability"], [6, "Applications of Derivatives"], [7, "Integrals"], [8, "Applications of the Integrals"], [9, "Differential Equations"], [10, "Vectors"], [11, "Three-Dimensional Geometry"], [12, "Linear Programming"], [13, "Probability"]]};
+    const CHAPTERS_NEET = {"Physics": ["Alternating Current", "Atoms", "Current Electricity", "Dual Nature of Radiation & Matter", "Electric Charges and Fields", "Electromagnetic Induction", "Electromagnetic Waves", "Electrostatic Potential & Capacitance", "General Physics & Mechanics", "General Physics Topics", "Gravitation", "Kinetic Theory of Gases", "Laws of Motion", "Magnetism and Matter", "Mechanical Properties of Fluids", "Mechanical Properties of Solids", "Motion in a Plane", "Motion in a Straight Line", "Moving Charges and Magnetism", "Nuclei", "Oscillations", "Physical World & Measurement", "Ray Optics & Optical Instruments", "Semiconductor Electronics", "System of Particles & Rotational Motion", "Thermal Properties of Matter", "Thermodynamics", "Wave Optics", "Waves", "Work, Energy and Power"], "Chemistry": ["Alcohols, Phenols and Ethers", "Aldehydes, Ketones and Carboxylic Acids", "Amines", "Biomolecules", "Chemical Bonding & Molecular Structure", "Chemical Kinetics", "Chemistry in Everyday Life", "Classification of Elements & Periodicity", "Coordination Compounds", "Electrochemistry", "Environmental Chemistry", "Equilibrium", "General Chemistry", "General Principles & Processes of Isolation (Metallurgy)", "Haloalkanes and Haloarenes", "Hydrocarbons", "Hydrogen", "Organic Chemistry: Basic Principles & Techniques", "Polymers", "Redox Reactions", "Solid State", "Solutions", "Some Basic Concepts of Chemistry", "States of Matter", "Structure of Atom", "Surface Chemistry", "The d- and f-Block Elements", "The p-Block Elements (Group 13 & 14)", "The p-Block Elements (Group 15, 16, 17, 18)", "The s-Block Elements", "Thermodynamics (Chemical)"], "Botany": ["Anatomy of Flowering Plants", "Biological Classification (Plant Kingdom & Monera/Fungi)", "Biotechnology: Principles and Processes", "Cell Cycle and Cell Division", "Cell: The Unit of Life (Plant Aspects)", "Microbes in Human Welfare", "Mineral Nutrition", "Molecular Basis of Inheritance (Plant)", "Morphology of Flowering Plants", "Photosynthesis in Higher Plants", "Plant Biology Principles", "Plant Growth and Development", "Plant Kingdom", "Principles of Inheritance & Variation (Botany)", "Reproduction in Organisms (Plant)", "Respiration in Plants", "Sexual Reproduction in Flowering Plants", "Strategies for Enhancement in Food Production (Plant)", "The Living World (Botany)", "Transport in Plants"], "Zoology": ["Animal Biology & Physiology", "Animal Kingdom", "Biodiversity and Conservation", "Biomolecules (Animal Physiology & Enzymes)", "Biotechnology and its Applications (Medicine/Animals)", "Body Fluids and Circulation", "Breathing and Exchange of Gases", "Chemical Coordination and Integration", "Digestion and Absorption", "Ecosystem", "Environmental Issues", "Evolution", "Excretory Products and their Elimination", "Human Health and Disease", "Human Reproduction", "Locomotion and Movement", "Neural Control and Coordination", "Organisms and Populations", "Reproductive Health", "Structural Organisation in Animals"]};
+
+    let currentExam = 'cbse';
+    let currentSubject = 'Physics';
+    let currentChapter = 'all';
+    let currentSection = 'all';
+    let currentYear = 'all';
+    let searchQuery = '';
+    let currentPage = 1;
+    const PAGE_SIZE = 25;
+
+    let loadedQuestions = [];
+    let filteredQuestions = [];
+    const cache = {};
+
+    // Parse URL params
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('exam') === 'neet') currentExam = 'neet';
+    if (urlParams.get('subject')) currentSubject = urlParams.get('subject');
+
+    function setExam(exam) {
+      currentExam = exam;
+      document.getElementById('btnExamCbse').classList.toggle('active', exam === 'cbse');
+      document.getElementById('btnExamNeet').classList.toggle('active', exam === 'neet');
+      
+      // Update year dropdown
+      const selYear = document.getElementById('selectYear');
+      if (exam === 'neet') {
+        selYear.innerHTML = '<option value="all">All Years (2016–2026)</option>' +
+          [2026,2025,2024,2023,2022,2021,2020,2019,2018,2017,2016].map(y => `<option value="${y}">${y}</option>`).join('');
+      } else {
+        selYear.innerHTML = '<option value="all">All Years (2022–2026)</option>' +
+          [2026,2025,2024,2023,2022].map(y => `<option value="${y}">${y}</option>`).join('');
+      }
+
+      // Default subject
+      if (exam === 'cbse') {
+        currentSubject = 'Physics';
+      } else {
+        currentSubject = 'Physics';
+      }
+
+      populateSubjects();
+      populateSections();
+      loadCurrentDataset();
+    }
+
+    function populateSubjects() {
+      const sel = document.getElementById('selectSubject');
+      const subjects = currentExam === 'cbse' ? ['Physics', 'Chemistry', 'Mathematics'] : ['Physics', 'Chemistry', 'Botany', 'Zoology'];
+      sel.innerHTML = subjects.map(s => `<option value="${s}" ${s === currentSubject ? 'selected' : ''}>${s}</option>`).join('');
+      populateChapters();
+    }
+
+    function populateChapters() {
+      const sel = document.getElementById('selectChapter');
+      sel.innerHTML = '<option value="all">All Chapters in ' + currentSubject + '</option>';
+      
+      if (currentExam === 'cbse') {
+        const chs = CHAPTERS_CBSE[currentSubject] || [];
+        chs.forEach(([num, name]) => {
+          sel.innerHTML += `<option value="${num}">Ch ${num}: ${name}</option>`;
+        });
+      } else {
+        const chs = CHAPTERS_NEET[currentSubject] || [];
+        chs.forEach(name => {
+          sel.innerHTML += `<option value="${name}">${name}</option>`;
+        });
+      }
+      currentChapter = 'all';
+    }
+
+    function populateSections() {
+      const cont = document.getElementById('sectionPillContainer');
+      if (currentExam === 'cbse') {
+        cont.innerHTML = `
+          <button class="sec-pill active" onclick="setSection('all')">All Sections</button>
+          <button class="sec-pill" onclick="setSection('SECTION - A')">Section A (1M MCQs)</button>
+          <button class="sec-pill" onclick="setSection('SECTION - B')">Section B (2M)</button>
+          <button class="sec-pill" onclick="setSection('SECTION - C')">Section C (3M)</button>
+          <button class="sec-pill" onclick="setSection('SECTION - D')">Section D (Case Study / 4M)</button>
+          <button class="sec-pill" onclick="setSection('SECTION - E')">Section E (5M)</button>
+        `;
+      } else {
+        cont.innerHTML = `
+          <button class="sec-pill active" onclick="setSection('all')">All Sections</button>
+          <button class="sec-pill" onclick="setSection('Section A')">Section A (Core 35)</button>
+          <button class="sec-pill" onclick="setSection('Section B')">Section B (Optional 15)</button>
+        `;
+      }
+      currentSection = 'all';
+    }
+
+    function setSection(sec) {
+      currentSection = sec;
+      document.querySelectorAll('.sec-pill').forEach(btn => {
+        btn.classList.toggle('active', btn.innerText.includes(sec) || (sec === 'all' && btn.innerText.includes('All')));
+      });
+      applyFilters();
+    }
+
+    async function loadCurrentDataset() {
+      const feed = document.getElementById('questionsFeedContainer');
+      feed.innerHTML = '<div class="loading-state">Loading ' + currentExam.toUpperCase() + ' ' + currentSubject + ' dataset...</div>';
+      
+      let url = '';
+      if (currentExam === 'cbse') {
+        url = `/data/cbse_${currentSubject.toLowerCase()}.json`;
+      } else {
+        url = `/data/neet_all.json`;
+      }
+
+      try {
+        if (!cache[url]) {
+          const res = await fetch(url);
+          if (!res.ok) throw new Error('Failed to load dataset');
+          cache[url] = await res.json();
+        }
+        
+        let data = cache[url];
+        if (currentExam === 'neet') {
+          data = data.filter(q => q.subject.toLowerCase() === currentSubject.toLowerCase());
+        }
+        loadedQuestions = data;
+        applyFilters();
+      } catch (err) {
+        feed.innerHTML = '<div class="loading-state" style="color: #ef4444;">Failed to load questions. Please check network.</div>';
+      }
+    }
+
+    function onSubjectChange() {
+      currentSubject = document.getElementById('selectSubject').value;
+      populateChapters();
+      loadCurrentDataset();
+    }
+
+    function onChapterChange() {
+      currentChapter = document.getElementById('selectChapter').value;
+      applyFilters();
+    }
+
+    function onFilterChange() {
+      currentYear = document.getElementById('selectYear').value;
+      applyFilters();
+    }
+
+    function onSearchInput() {
+      searchQuery = document.getElementById('inputSearch').value.toLowerCase().trim();
+      applyFilters();
+    }
+
+    function applyFilters() {
+      let list = loadedQuestions;
+
+      // Filter by chapter
+      if (currentChapter !== 'all') {
+        if (currentExam === 'cbse') {
+          const chNum = parseInt(currentChapter, 10);
+          list = list.filter(q => q.chapter_number === chNum);
+        } else {
+          list = list.filter(q => q.ncert_chapter === currentChapter);
+        }
+      }
+
+      // Filter by year
+      if (currentYear !== 'all') {
+        list = list.filter(q => String(q.year) === String(currentYear));
+      }
+
+      // Filter by section
+      if (currentSection !== 'all') {
+        list = list.filter(q => q.section && q.section.toLowerCase().includes(currentSection.toLowerCase()));
+      }
+
+      // Filter by search query
+      if (searchQuery) {
+        list = list.filter(q => (q.text && q.text.toLowerCase().includes(searchQuery)) || 
+                                (q.ncert_chapter && q.ncert_chapter.toLowerCase().includes(searchQuery)));
+      }
+
+            // Filter by repeats
+      if (showRepeatsOnly) {
+        list = list.filter(q => (q.multi_year_count && q.multi_year_count > 1) || (q.repeat_years && q.repeat_years.length > 1) || (q.cluster_size && q.cluster_size >= 3));
+      }
+      filteredQuestions = list;
+      currentPage = 1;
+      renderFeed();
+    }
+
+    function renderFeed() {
+      const feed = document.getElementById('questionsFeedContainer');
+      const streamTitle = document.getElementById('streamTitleHeading');
+      const streamCount = document.getElementById('streamCountDisplay');
+      const pagBar = document.getElementById('paginationBar');
+
+      const total = filteredQuestions.length;
+      streamCount.innerText = `${total.toLocaleString()} Questions`;
+
+      let chLabel = currentChapter === 'all' ? 'All Chapters' : (currentExam === 'cbse' ? 'Chapter ' + currentChapter : currentChapter);
+      streamTitle.innerText = `${currentExam.toUpperCase()} ${currentSubject} · ${chLabel}`;
+
+      if (total === 0) {
+        feed.innerHTML = '<div class="loading-state">No questions matched the selected filters.</div>';
+        pagBar.style.display = 'none';
+        return;
+      }
+
+      const totalPages = Math.ceil(total / PAGE_SIZE);
+      pagBar.style.display = totalPages > 1 ? 'flex' : 'none';
+      document.getElementById('pageStatusText').innerText = `Page ${currentPage} of ${totalPages}`;
+      document.getElementById('btnPrevPage').disabled = currentPage <= 1;
+      document.getElementById('btnNextPage').disabled = currentPage >= totalPages;
+
+      const startIndex = (currentPage - 1) * PAGE_SIZE;
+      const pageSlice = filteredQuestions.slice(startIndex, startIndex + PAGE_SIZE);
+
+      let cardsHtml = '';
+      pageSlice.forEach((q, idx) => {
+        const globalNum = startIndex + idx + 1;
+        const qId = q.id || `q_${globalNum}`;
+        const year = q.year || '2026';
+        const marks = q.marks ? `${q.marks} Mark${q.marks > 1 ? 's' : ''}` : '4 Marks';
+        const section = q.section || '';
+        const source = q.source || 'Official Exam Paper';
+        const text = q.text || '';
+        const repeats = q.repeat_years && q.repeat_years.length > 1 ? `🔁 Repeated across ${q.repeat_years.join(', ')}` : '';
+
+        // Options for NEET
+        let optionsHtml = '';
+        if (currentExam === 'neet' && q.options) {
+          optionsHtml = '<div class="neet-options-grid">';
+          ['A', 'B', 'C', 'D'].forEach(optKey => {
+            const optVal = q.options[optKey] || '';
+            optionsHtml += `
+              <div class="neet-opt-btn" id="opt_${qId}_${optKey}" onclick="checkNeetOption('${qId}', '${optKey}', '${q.correct_answer}')">
+                <span class="opt-label">${optKey}</span>
+                <span class="opt-text">${optVal}</span>
+              </div>
+            `;
+          });
+          optionsHtml += '</div>';
+        }
+
+        cardsHtml += `
+          <div class="question-card" id="${qId}">
+            <div class="q-meta-top">
+              <div class="q-badges-left">
+                <span class="q-source-pill">#${globalNum} · ${year}</span>
+                <span class="q-marks-pill">${marks}</span>
+                ${section ? `<span class="q-source-pill">${section}</span>` : ''}
+                ${repeats ? `<span class="q-repeat-pill">${repeats}</span>` : ''}
+              </div>
+              <span class="q-source-pill" style="opacity: 0.7;">${source}</span>
+            </div>
+
+            <div class="q-body-text math-content">${escapeHtml(text)}</div>
+
+            ${optionsHtml}
+
+            <div class="q-actions-row">
+              <button class="btn-toggle-solution" onclick="toggleSolution('${qId}')">
+                <span>Reveal Marking Scheme / Answer</span> ▾
+              </button>
+              <div style="font-size: 12px; color: var(--text-muted); font-family: var(--font-mono);">
+                ID: ${qId}
+              </div>
+            </div>
+
+            <div class="solution-box" id="sol_${qId}">
+              <strong>Official Scheme:</strong>
+              ${currentExam === 'neet' ? `<p style="margin-top: 6px;">Correct Option: <strong>(${q.correct_answer})</strong></p>` : `<p style="margin-top: 6px;">Refer to step-by-step CBSE marking guidelines for ${year} (${source}).</p>`}
+            </div>
+          </div>
+        `;
+      });
+
+      feed.innerHTML = cardsHtml;
+
+      // Render math formulas
+      if (window.renderMathInElement) {
+        renderMathInElement(feed, {
+          delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false}
+          ],
+          throwOnError: false
+        });
+      }
+    }
+
+    function toggleSolution(qId) {
+      const sol = document.getElementById('sol_' + qId);
+      if (sol) sol.classList.toggle('open');
+    }
+
+    function checkNeetOption(qId, selectedOpt, correctOpt) {
+      ['A', 'B', 'C', 'D'].forEach(opt => {
+        const el = document.getElementById(`opt_${qId}_${opt}`);
+        if (el) {
+          if (opt === correctOpt) {
+            el.classList.add('correct');
+          } else if (opt === selectedOpt) {
+            el.classList.add('incorrect');
+          }
+        }
+      });
+    }
+
+    function prevPage() {
+      if (currentPage > 1) {
+        currentPage--;
+        renderFeed();
+        window.scrollTo({top: 200, behavior: 'smooth'});
+      }
+    }
+
+    function nextPage() {
+      const totalPages = Math.ceil(filteredQuestions.length / PAGE_SIZE);
+      if (currentPage < totalPages) {
+        currentPage++;
+        renderFeed();
+        window.scrollTo({top: 200, behavior: 'smooth'});
+      }
+    }
+
+    function escapeHtml(str) {
+      return str.replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;');
+    }
+
+    // Initial boot
+    window.addEventListener('DOMContentLoaded', () => {
+      setExam(currentExam);
+    });
+  </script>
+  <nav class="mobile-bottom-dock">
+    <a href="/" class="mobile-dock-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+      <span>Home</span>
+    </a>
+    <a href="/practice/" class="mobile-dock-item active">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+      <span>Practice</span>
+    </a>
+    <a href="/repeated/" class="mobile-dock-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+      <span>Repeats</span>
+    </a>
+    <a href="/paper-maker/" class="mobile-dock-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+      <span>Maker</span>
+    </a>
+    <a href="/neetug/" class="mobile-dock-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 8v8"></path><path d="M8 12h8"></path></svg>
+      <span>NEET</span>
+    </a>
+  </nav>
+</body>
+</html>
