@@ -22,6 +22,7 @@
   --font-mono: 'JetBrains Mono', monospace;
   --shadow-subtle: 0 1px 3px rgba(0,0,0,0.05), 0 1px 2px rgba(0,0,0,0.03);
   --shadow-card: 0 4px 12px rgba(0,0,0,0.04), 0 1px 3px rgba(0,0,0,0.02);
+  --surface-alt: #f4f4f5;
 }
 
 * {
@@ -1413,14 +1414,34 @@ a {
   border-color: #60a5fa;
 }
 [data-theme="dark"] .neet-opt-btn.correct {
-  background: #064e3b;
-  border-color: #10b981;
-  color: #ecfdf5;
+  background: rgba(16, 185, 129, 0.22) !important;
+  border-color: #10b981 !important;
+  color: #6ee7b7 !important;
+}
+[data-theme="dark"] .neet-opt-btn.correct .opt-text,
+[data-theme="dark"] .neet-opt-btn.correct .katex,
+[data-theme="dark"] .neet-opt-btn.correct span {
+  color: #a7f3d0 !important;
+}
+[data-theme="dark"] .neet-opt-btn.correct .opt-label {
+  background: #065f46 !important;
+  border-color: #10b981 !important;
+  color: #ecfdf5 !important;
 }
 [data-theme="dark"] .neet-opt-btn.incorrect {
-  background: #7f1d1d;
-  border-color: #ef4444;
-  color: #fef2f2;
+  background: rgba(239, 68, 68, 0.22) !important;
+  border-color: #ef4444 !important;
+  color: #fca5a5 !important;
+}
+[data-theme="dark"] .neet-opt-btn.incorrect .opt-text,
+[data-theme="dark"] .neet-opt-btn.incorrect .katex,
+[data-theme="dark"] .neet-opt-btn.incorrect span {
+  color: #fca5a5 !important;
+}
+[data-theme="dark"] .neet-opt-btn.incorrect .opt-label {
+  background: #991b1b !important;
+  border-color: #ef4444 !important;
+  color: #fee2e2 !important;
 }
 
 /* Solution Box & Drawers in dark mode */
@@ -1572,16 +1593,16 @@ a {
   border-color: var(--accent);
   background: var(--surface);
 }
-.neet-opt-btn.correct {
-  background: #ecfdf5 !important;
-  border-color: #10b981 !important;
-  color: #065f46 !important;
+:root:not([data-theme="dark"]) .neet-opt-btn.correct {
+  background: #ecfdf5;
+  border-color: #10b981;
+  color: #065f46;
   font-weight: 600;
 }
-.neet-opt-btn.incorrect {
-  background: #fef2f2 !important;
-  border-color: #ef4444 !important;
-  color: #991b1b !important;
+:root:not([data-theme="dark"]) .neet-opt-btn.incorrect {
+  background: #fef2f2;
+  border-color: #ef4444;
+  color: #991b1b;
 }
 .opt-label {
   font-family: var(--font-mono);
@@ -1620,7 +1641,7 @@ a {
 }
 .goal-switcher-btn:hover {
   border-color: var(--accent);
-  background: var(--surface-alt);
+  background: var(--surface-alt, #f4f4f5);
 }
 [data-theme="dark"] .goal-switcher-btn {
   background: #1f2937 !important;
