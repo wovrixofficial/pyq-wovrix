@@ -8,7 +8,7 @@
   <link rel="canonical" href="https://pyq.wovrix.in/practice/">
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/style.css?v=20261110_5">
 
   <!-- KaTeX -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
@@ -941,7 +941,7 @@
 
   <!-- Scripts -->
   <script src="/report-modal.js"></script>
-  <script src="/js/study_storage.js"></script>
+  <script src="/js/study_storage.js?v=20261110_5"></script>
   <script src="/js/analytics.js"></script>
 
   <script>
@@ -1438,7 +1438,7 @@
       const feed = document.getElementById('streamQuestionsFeed');
       feed.innerHTML = '<div class="loading-state">Loading questions dataset...</div>';
 
-      const cacheBust = '?v=20261110_2';
+      const cacheBust = '?v=20261110_5';
       const url = currentExam === 'cbse'
         ? `/data/cbse_${currentSubject.toLowerCase()}.json${cacheBust}`
         : `/data/neet_all.json${cacheBust}`;
@@ -1473,7 +1473,13 @@
             list = list.filter(q => (q.chapter_name || '').toLowerCase().includes(currentChapter.toLowerCase()));
           }
         } else {
-          list = list.filter(q => (q.ncert_chapter || '').toLowerCase().includes(currentChapter.toLowerCase()));
+          const normTarget = currentChapter.toLowerCase().replace(/\(.*?\)/g, '').replace(/&/g, 'and').replace(/[^a-z0-9]/g, ' ').replace(/\s+/g, ' ').trim();
+          list = list.filter(q => {
+            const raw = (q.ncert_chapter || '').toLowerCase();
+            if (raw.includes(currentChapter.toLowerCase())) return true;
+            const normRaw = raw.replace(/\(.*?\)/g, '').replace(/&/g, 'and').replace(/[^a-z0-9]/g, ' ').replace(/\s+/g, ' ').trim();
+            return normRaw.includes(normTarget) || normTarget.includes(normRaw);
+          });
         }
       }
 

@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;600;700&display=swap');
 
 :root {
+  --hero-bg: radial-gradient(circle at 75% 45%, #f5f5f4 0%, #fcfcfb 65%);
   --bg: #fcfcfb;
   --surface: #ffffff;
   --text: #18181b;
@@ -156,7 +157,8 @@ a {
   align-items: center;
   overflow: hidden;
   border-bottom: 1px solid var(--border);
-  background: radial-gradient(circle at 75% 45%, #f5f5f4 0%, #fcfcfb 65%);
+  background: var(--hero-bg);
+  background-color: var(--bg);
 }
 
 /* 3D Canvas Background */
@@ -1207,6 +1209,7 @@ a {
 
 /* Dark Mode Tokens & Overrides */
 [data-theme="dark"] {
+  --hero-bg: radial-gradient(circle at 75% 45%, #18181b 0%, #090d16 65%);
   --bg: #090d16;
   --surface: #111827;
   --surface-alt: #1f2937;
@@ -1255,9 +1258,13 @@ a {
 }
 
 [data-theme="dark"] .hero-editorial-lead {
-  background: rgba(17, 24, 39, 0.75);
-  border-left-color: #3b82f6;
-  color: #e2e8f0 !important;
+  background: rgba(17, 24, 39, 0.85) !important;
+  border-left-color: #3b82f6 !important;
+  color: #cbd5e1 !important;
+}
+
+[data-theme="dark"] .hero-editorial-lead strong {
+  color: #f9fafb !important;
 }
 
 [data-theme="dark"] .btn-outline-pill {

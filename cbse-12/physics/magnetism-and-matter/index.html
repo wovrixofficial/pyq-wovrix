@@ -6,31 +6,106 @@
   <title>CBSE Class 12 Physics Magnetism and Matter PYQs (2022–2026) | pyq.wovrix.in</title>
   <meta name="description" content="All CBSE Class 12 Physics previous year questions for Magnetism and Matter. 30 distinct questions across 40 board appearances. Free, no login.">
   <link rel="canonical" href="https://pyq.wovrix.in/cbse-12/physics/magnetism-and-matter/">
-  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/style.css?v=20261110_5">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body, {delimiters: [{left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}, {left: '\\(', right: '\\)', display: false}, {left: '\\[', right: '\\]', display: true}], throwOnError: false});"></script>
   <link rel="stylesheet" href="/report-modal.css">
 </head>
 <body>
-  <header class="site-header">
+    <header class="site-header">
     <div class="header-inner">
       <a href="/" class="brand">
         <svg class="brand-logo-icon" width="22" height="22" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="32" height="32" rx="7" fill="#18181b"/>
-  <path d="M6 10L11 23L16 14L21 23L26 10" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
-  <circle cx="16" cy="14" r="2.2" fill="#3b82f6"/>
-</svg>
+          <rect width="32" height="32" rx="7" fill="#18181b"/>
+          <path d="M6 10L11 23L16 14L21 23L26 10" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="16" cy="14" r="2.2" fill="#3b82f6"/>
+        </svg>
         <span class="brand-name">WOVRIX <span class="brand-slash">/</span> <span class="brand-sub">PYQ</span></span>
       </a>
+
       <nav class="nav-links">
-        <a href="/#cbse-section" class="nav-link">CBSE 12 PCM</a>
-        <a href="/#neet-section" class="nav-link">NEET UG Archive</a>
-        <a href="/practice/" class="nav-link">Practice Hub</a>
-        <a href="/practice/?exam=neet" class="nav-cta-pill">Launch NEET Portal ➔</a>
+        <button id="themeToggleBtn" class="btn-theme-toggle" onclick="toggleTheme()" aria-label="Toggle Dark Mode" title="Toggle Dark/Light Mode">
+          <span class="theme-icon-light">☀️</span>
+          <span class="theme-icon-dark">🌙</span>
+        </button>
+        <button class="btn-hamburger" onclick="toggleMobileDrawer(true)" aria-label="Open Navigation Menu">
+          ☰ Menu
+        </button>
       </nav>
     </div>
   </header>
+
+  <!-- Unified Slide-in Navigation Drawer (Both Desktop & Mobile) -->
+  <div id="drawerBackdrop" class="drawer-backdrop" onclick="toggleMobileDrawer(false)"></div>
+  <aside id="mobileNavDrawer" class="mobile-drawer" aria-label="Navigation Drawer">
+    <div class="drawer-header">
+      <a href="/" class="brand">
+        <svg class="brand-logo-icon" width="22" height="22" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="32" height="32" rx="7" fill="#18181b"/>
+          <path d="M6 10L11 23L16 14L21 23L26 10" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="16" cy="14" r="2.2" fill="#3b82f6"/>
+        </svg>
+        <span class="brand-name">WOVRIX <span class="brand-slash">/</span> <span class="brand-sub">PYQ</span></span>
+      </a>
+      <button class="drawer-close" onclick="toggleMobileDrawer(false)" aria-label="Close Navigation Menu">✕</button>
+    </div>
+
+    <div class="drawer-goal-box">
+      <div class="drawer-goal-title">Select Active Track</div>
+      <div class="drawer-goal-grid">
+        <button class="drawer-goal-btn" onclick="setActiveGoal('cbse'); window.location.href='/practice/?exam=cbse'">
+          <span class="drawer-goal-icon">🎯</span>
+          <span>CBSE 12</span>
+        </button>
+        <button class="drawer-goal-btn" onclick="setActiveGoal('neet'); window.location.href='/practice/?exam=neet'">
+          <span class="drawer-goal-icon">🩺</span>
+          <span>NEET UG</span>
+        </button>
+      </div>
+    </div>
+
+    <nav class="drawer-nav">
+      <a href="/practice/" class="drawer-nav-item" onclick="toggleMobileDrawer(false)">
+        <span class="drawer-nav-icon">🎯</span>
+        <div>
+          <div>Practice Hub</div>
+          <span class="drawer-nav-desc">Chapterwise questions & sub-topic filters</span>
+        </div>
+      </a>
+      <a href="/repeated/" class="drawer-nav-item" onclick="toggleMobileDrawer(false)">
+        <span class="drawer-nav-icon">🔥</span>
+        <div>
+          <div>Repeats Radar</div>
+          <span class="drawer-nav-desc">11-Year recurrence & twin questions</span>
+        </div>
+      </a>
+      <a href="/paper-maker/" class="drawer-nav-item" onclick="toggleMobileDrawer(false)">
+        <span class="drawer-nav-icon">📝</span>
+        <div>
+          <div>Paper Maker & Mock</div>
+          <span class="drawer-nav-desc">Timed simulator & custom printable tests</span>
+        </div>
+      </a>
+      <a href="/saved/" class="drawer-nav-item" onclick="toggleMobileDrawer(false)">
+        <span class="drawer-nav-icon">📌</span>
+        <div>
+          <div>Saved Questions & Notes</div>
+          <span class="drawer-nav-desc">Personal notebook & bookmarks</span>
+        </div>
+      </a>
+    </nav>
+
+    <div class="drawer-footer">
+      <button class="drawer-theme-toggle" onclick="toggleTheme()">
+        <span>Dark / Light Mode</span>
+        <span>☀️ / 🌙</span>
+      </button>
+      <div style="display: flex; gap: 8px; font-size: 11px; color: var(--text-muted); justify-content: center; margin-top: 10px;">
+        <a href="/about/">About</a> • <a href="/privacy/">Privacy</a> • <a href="/contact/">Contact</a> • <a href="/takedown/">Takedown</a>
+      </div>
+    </div>
+  </aside>
 
   <main class="page-container">
     <nav class="breadcrumbs">
@@ -780,7 +855,7 @@ Sate Gauss&#x27;s law of magnetism? Hence find the magnetic flux linked with the
 
     <div class="footer-bottom-bar">
       <div class="footer-copy">
-        © 2026 PYQ Wovrix • Educational Past Paper Search & Interactive Practice Platform.
+        © 2026 Wovrix (wovrix.in) • Educational Past Paper Search & Interactive Practice Platform.
       </div>
       <div class="footer-bottom-links">
         <a href="#top">Back to Top ↑</a>
@@ -815,5 +890,6 @@ Sate Gauss&#x27;s law of magnetism? Hence find the magnetic flux linked with the
   </nav>
 
   <script src="/report-modal.js"></script>
+  <script src="/js/study_storage.js?v=20261110_5"></script>
 </body>
 </html>

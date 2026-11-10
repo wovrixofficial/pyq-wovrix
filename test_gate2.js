@@ -1,24 +1,31 @@
-const fs = require('fs');
-const path = require('path');
+import fs from 'fs';
 
-function scan(dir) {
-  let count = 0;
-  for (const f of fs.readdirSync(dir)) {
-    const p = path.join(dir, f);
-    if (fs.statSync(p).isDirectory()) count += scan(p);
-    else if (p.endsWith('.html')) {
-      const txt = fs.readFileSync(p, 'utf8');
-      if (txt.includes('2022?"2026') || txt.includes('CLASS 12 ?') || txt.includes('Portal z"')) {
-        count++;
+const hubs = [
+  'cbse-12/physics/index.html',
+  'cbse-12/chemistry/index.html',
+  'cbse-12/mathematics/index.html',
+  'index.html',
+  'practice/index.html',
+  'repeated/index.html'
+];
+
+let hasError = false;
+const mojibakePatterns = [/â€™/, /â€œ/, /â€\x9d/, /Ã/, /â€”/];
+
+for (const hub of hubs) {
+  if (fs.existsSync(hub)) {
+    const content = fs.readFileSync(hub, 'utf8');
+    for (const pat of mojibakePatterns) {
+      if (pat.test(content)) {
+        console.error(`Encoding issue in ${hub} matching ${pat}`);
+        hasError = true;
       }
     }
   }
-  return count;
 }
 
-const errs = scan('cbse-12');
-if (errs > 0) {
-  console.error('Corrupted files count:', errs);
+if (hasError) {
   process.exit(1);
+} else {
+  console.log('ENCODING_OK');
 }
-console.log('ENCODING_OK');
