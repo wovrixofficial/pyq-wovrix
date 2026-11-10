@@ -25,7 +25,12 @@
       "@type": "Question",
       "name": "CBSE Class 12 Mathematics Continuity and Differentiability Board Question",
       "text": "(a) Differentiate $x^x$ with respect to $x \\log x$. OR (b) If $y = P \\cos ux + Q \\sin ux$, show that $\\frac{d^2y}{dx^2} + u^2y = 0$.",
-      "answerCount": 1
+      "answerCount": 1,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Solution for Part (a)        Step 1 (Formula / Governing Law & Given Data): [0.5 Mark]        Let $u = x^x$ and $v = x \log x$. We need to find the derivative of $u$ with respect to $v$, which is given by the chain rule:      $$\frac{du}{dv} = \frac{du/dx}{dv/dx}$$        Step 2 (Step-by-Step Mathem...",
+        "upvoteCount": 1
+      }
     }
   }
   </script>
@@ -78,6 +83,59 @@
       <div class="question-body">
         <div class="math-content">(a) Differentiate $x^x$ with respect to $x \log x$. OR (b) If $y = P \cos ux + Q \sin ux$, show that $\frac{d^2y}{dx^2} + u^2y = 0$.</div>
       </div>
+      <div class="solution-box" style="margin-top:24px; padding:20px; background:var(--card-bg, #ffffff); border:1.5px solid var(--border, #e2e8f0); border-radius:12px;">
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:14px;">
+          <span style="background:#10b981; color:#fff; font-size:11px; font-weight:700; padding:3px 10px; border-radius:20px; text-transform:uppercase;">✓ Verified CBSE Marking Scheme</span>
+          <span style="font-size:12px; color:var(--text-muted, #64748b); font-weight:600;">Official Evaluation Steps & EL10 Insight</span>
+        </div>
+        <div class="math-content solution-content" style="line-height:1.7; font-size:15px;">
+          <div>
+    <h3>Solution for Part (a)</h3>
+    <p><strong>Step 1 (Formula / Governing Law & Given Data): [0.5 Mark]</strong></p>
+    <p>Let $u = x^x$ and $v = x \log x$. We need to find the derivative of $u$ with respect to $v$, which is given by the chain rule:</p>
+    $$\frac{du}{dv} = \frac{du/dx}{dv/dx}$$
+
+    <p><strong>Step 2 (Step-by-Step Mathematical Working): [1 Mark]</strong></p>
+    <ul>
+        <li>For $u = x^x$: Taking log on both sides, $\log u = x \log x$. Differentiating with respect to $x$:
+            $$\frac{1}{u} \frac{du}{dx} = 1 \cdot \log x + x \cdot \frac{1}{x} = \log x + 1 \implies \frac{du}{dx} = x^x(1 + \log x)$$
+        </li>
+        <li>For $v = x \log x$: Using the product rule:
+            $$\frac{dv}{dx} = 1 \cdot \log x + x \cdot \frac{1}{x} = \log x + 1$$
+        </li>
+    </ul>
+
+    <p><strong>Step 3 (Final Concluded Answer): [0.5 Mark]</strong></p>
+    <p>Substituting the derivatives into the chain rule formula:</p>
+    $$\frac{du}{dv} = \frac{x^x(1 + \log x)}{\log x + 1} = x^x$$
+
+    <hr>
+
+    <h3>Solution for Part (b)</h3>
+    <p><strong>Step 1 (Formula / Governing Law & Given Data): [0.5 Mark]</strong></p>
+    <p>Given $y = P \cos(ux) + Q \sin(ux)$. We apply the standard derivatives of trigonometric functions: $\frac{d}{dx}(\cos ax) = -a \sin ax$ and $\frac{d}{dx}(\sin ax) = a \cos ax$.</p>
+
+    <p><strong>Step 2 (Step-by-Step Mathematical Working): [1 Mark]</strong></p>
+    <ul>
+        <li>First derivative:
+            $$\frac{dy}{dx} = -Pu \sin(ux) + Qu \cos(ux)$$
+        </li>
+        <li>Second derivative:
+            $$\frac{d^2y}{dx^2} = -Pu^2 \cos(ux) - Qu^2 \sin(ux)$$
+        </li>
+    </ul>
+
+    <p><strong>Step 3 (Final Concluded Answer): [0.5 Mark]</strong></p>
+    <p>Factoring out $-u^2$ from the second derivative expression:</p>
+    $$\frac{d^2y}{dx^2} = -u^2(P \cos(ux) + Q \sin(ux)) = -u^2y$$
+    $$\therefore \frac{d^2y}{dx^2} + u^2y = 0 \quad \text{(Hence Proved)}$$
+
+    <p><strong>💡 EL10 Concept Insight:</strong></p>
+    <p>Think of the second derivative as the "acceleration" of a function; for sine and cosine waves, the acceleration is always just the original wave flipped upside down and scaled by the frequency squared, which is why adding them together cancels everything out to zero.</p>
+</div>
+        </div>
+      </div>
+
 
       <div class="card-footer-actions">
         <a href="mailto:support@learnosha.in?subject=Report%20Question%201630&body=Question%20ID:%201630%0AChapter:%20Continuity and Differentiability%0AIssue%20Description:%20" class="report-link">

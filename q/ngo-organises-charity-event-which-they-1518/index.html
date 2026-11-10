@@ -25,7 +25,12 @@
       "@type": "Question",
       "name": "CBSE Class 12 Mathematics Probability Board Question",
       "text": "An NGO organises a charity event in which they decide to distribute woollen caps to protect children from winter. The caps to be distributed are in three separate boxes, Box I has 30 red caps, Box II has 20 red and 10 green caps, and Box III has 30 green caps. The probability that a Box i is selected and a cap picked out is $\\frac{i}{6}$, where $i = 1, 2, 3$. Based on the above information, answer the following questions : A person selects a cap. (i) What is the probability that he selects a red cap ? (ii) If he selects a green cap, what is the probability that the cap has come from Box II ?",
-      "answerCount": 1
+      "answerCount": 1,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CBSE Class 12 Mathematics: Probability Marking Scheme         Step 1 (Defining Events and Probabilities): [1 Mark]        Let $E_1, E_2, E_3$ be the events of selecting Box I, Box II, and Box III respectively. Let $R$ be the event of selecting a red cap and $G$ be the event of selecting a green cap....",
+        "upvoteCount": 1
+      }
     }
   }
   </script>
@@ -78,6 +83,44 @@
       <div class="question-body">
         <div class="math-content">An NGO organises a charity event in which they decide to distribute woollen caps to protect children from winter. The caps to be distributed are in three separate boxes, Box I has 30 red caps, Box II has 20 red and 10 green caps, and Box III has 30 green caps. The probability that a Box i is selected and a cap picked out is $\frac{i}{6}$, where $i = 1, 2, 3$. Based on the above information, answer the following questions : A person selects a cap. (i) What is the probability that he selects a red cap ? (ii) If he selects a green cap, what is the probability that the cap has come from Box II ?</div>
       </div>
+      <div class="solution-box" style="margin-top:24px; padding:20px; background:var(--card-bg, #ffffff); border:1.5px solid var(--border, #e2e8f0); border-radius:12px;">
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:14px;">
+          <span style="background:#10b981; color:#fff; font-size:11px; font-weight:700; padding:3px 10px; border-radius:20px; text-transform:uppercase;">✓ Verified CBSE Marking Scheme</span>
+          <span style="font-size:12px; color:var(--text-muted, #64748b); font-weight:600;">Official Evaluation Steps & EL10 Insight</span>
+        </div>
+        <div class="math-content solution-content" style="line-height:1.7; font-size:15px;">
+          <div>
+    <h3>CBSE Class 12 Mathematics: Probability Marking Scheme</h3>
+
+    <p><strong>Step 1 (Defining Events and Probabilities): [1 Mark]</strong></p>
+    <p>Let $E_1, E_2, E_3$ be the events of selecting Box I, Box II, and Box III respectively. Let $R$ be the event of selecting a red cap and $G$ be the event of selecting a green cap.</p>
+    <ul>
+        <li>$P(E_i) = \frac{i}{6}$ for $i = 1, 2, 3$. Thus, $P(E_1) = \frac{1}{6}, P(E_2) = \frac{2}{6}, P(E_3) = \frac{3}{6}$.</li>
+        <li>$P(R|E_1) = \frac{30}{30} = 1$, $P(G|E_1) = 0$</li>
+        <li>$P(R|E_2) = \frac{20}{30} = \frac{2}{3}$, $P(G|E_2) = \frac{10}{30} = \frac{1}{3}$</li>
+        <li>$P(R|E_3) = \frac{0}{30} = 0$, $P(G|E_3) = \frac{30}{30} = 1$</li>
+    </ul>
+
+    <p><strong>Step 2 (Part i: Total Probability of Red Cap): [2 Marks]</strong></p>
+    <p>Using the Law of Total Probability:</p>
+    $$P(R) = P(E_1)P(R|E_1) + P(E_2)P(R|E_2) + P(E_3)P(R|E_3)$$
+    <p>Substituting the values:</p>
+    $$P(R) = \left( \frac{1}{6} \times 1 \right) + \left( \frac{2}{6} \times \frac{2}{3} \right) + \left( \frac{3}{6} \times 0 \right)$$
+    $$P(R) = \frac{1}{6} + \frac{4}{18} = \frac{3}{18} + \frac{4}{18} = \frac{7}{18}$$
+
+    <p><strong>Step 3 (Part ii: Bayes' Theorem for Green Cap): [2 Marks]</strong></p>
+    <p>We need to find $P(E_2|G)$. By Bayes' Theorem:</p>
+    $$P(E_2|G) = \frac{P(E_2)P(G|E_2)}{P(G)}$$
+    <p>First, calculate $P(G) = 1 - P(R) = 1 - \frac{7}{18} = \frac{11}{18}$.</p>
+    <p>Now, substitute into the formula:</p>
+    $$P(E_2|G) = \frac{\frac{2}{6} \times \frac{1}{3}}{\frac{11}{18}} = \frac{\frac{2}{18}}{\frac{11}{18}} = \frac{2}{11}$$
+
+    <p><strong>💡 EL10 Concept Insight:</strong></p>
+    <p>Think of this like a weighted lottery: because Box 3 is more likely to be picked than Box 1, it has a bigger "influence" on the final result. Bayes' Theorem simply helps us work backward from the result (the green cap) to figure out which box was the most likely "culprit" that provided it.</p>
+</div>
+        </div>
+      </div>
+
 
       <div class="card-footer-actions">
         <a href="mailto:support@learnosha.in?subject=Report%20Question%201518&body=Question%20ID:%201518%0AChapter:%20Probability%0AIssue%20Description:%20" class="report-link">

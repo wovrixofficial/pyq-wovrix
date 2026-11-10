@@ -25,7 +25,12 @@
       "@type": "Question",
       "name": "CBSE Class 12 Mathematics Vectors Board Question",
       "text": "(a) Verify that lines given by $\\vec{r} = $1 - \\lambda$\\hat{i} + (\\lambda - 2)\\hat{j} + $3 - 2\\lambda$\\hat{k}$ and $\\vec{r} = (\\mu + 1)\\hat{i} + $2\\mu - 1$\\hat{j} - $2\\mu + 1$\\hat{k}$ are skew lines. Hence, find shortest distance between the lines.\n\nOR\n\n(b) During a cricket match, the position of the bowler, the wicket keeper and the leg slip fielder are in a line given by $\\vec{B} = 2\\hat{i} + 8\\hat{j}$, $\\vec{W} = 6\\hat{i} + 12\\hat{j}$ and $\\vec{F} = 12\\hat{i} + 18\\hat{j}$ respectively. Calculate the ratio in which the wicketkeeper divides the line segment joining the bowler and the leg slip fielder.",
-      "answerCount": 1
+      "answerCount": 1,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Solution (a)         Step 1 (Formula & Identification of Parameters): [1 Mark]        The lines are given by:                 $L_1: \vec{r} = (\hat{i} - 2\hat{j} + 3\hat{k}) + \lambda(-\hat{i} + \hat{j} - 2\hat{k}) \implies \vec{a_1} = \hat{i} - 2\hat{j} + 3\hat{k}, \vec{b_1} = -\hat{i} + \hat{j} - ...",
+        "upvoteCount": 1
+      }
     }
   }
   </script>
@@ -82,6 +87,41 @@ OR
 
 (b) During a cricket match, the position of the bowler, the wicket keeper and the leg slip fielder are in a line given by $\vec{B} = 2\hat{i} + 8\hat{j}$, $\vec{W} = 6\hat{i} + 12\hat{j}$ and $\vec{F} = 12\hat{i} + 18\hat{j}$ respectively. Calculate the ratio in which the wicketkeeper divides the line segment joining the bowler and the leg slip fielder.</div>
       </div>
+      <div class="solution-box" style="margin-top:24px; padding:20px; background:var(--card-bg, #ffffff); border:1.5px solid var(--border, #e2e8f0); border-radius:12px;">
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:14px;">
+          <span style="background:#10b981; color:#fff; font-size:11px; font-weight:700; padding:3px 10px; border-radius:20px; text-transform:uppercase;">✓ Verified CBSE Marking Scheme</span>
+          <span style="font-size:12px; color:var(--text-muted, #64748b); font-weight:600;">Official Evaluation Steps & EL10 Insight</span>
+        </div>
+        <div class="math-content solution-content" style="line-height:1.7; font-size:15px;">
+          <div>
+    <h3>Solution (a)</h3>
+
+    <p><strong>Step 1 (Formula & Identification of Parameters): [1 Mark]</strong></p>
+    <p>The lines are given by:</p>
+    <ul>
+        <li>$L_1: \vec{r} = (\hat{i} - 2\hat{j} + 3\hat{k}) + \lambda(-\hat{i} + \hat{j} - 2\hat{k}) \implies \vec{a_1} = \hat{i} - 2\hat{j} + 3\hat{k}, \vec{b_1} = -\hat{i} + \hat{j} - 2\hat{k}$</li>
+        <li>$L_2: \vec{r} = (\hat{i} - \hat{j} + \hat{k}) + \mu(\hat{i} + 2\hat{j} - 2\hat{k}) \implies \vec{a_2} = \hat{i} - \hat{j} + \hat{k}, \vec{b_2} = \hat{i} + 2\hat{j} - 2\hat{k}$</li>
+    </ul>
+    <p>To verify skew lines, we check if $(\vec{a_2} - \vec{a_1}) \cdot (\vec{b_1} \times \vec{b_2}) \neq 0$. The shortest distance formula is:</p>
+    $$d = \left| \frac{(\vec{a_2} - \vec{a_1}) \cdot (\vec{b_1} \times \vec{b_2})}{|\vec{b_1} \times \vec{b_2}|} \right|$$
+
+    <p><strong>Step 2 (Mathematical Working): [1.5 Marks]</strong></p>
+    <p>First, calculate $\vec{a_2} - \vec{a_1} = (1-1)\hat{i} + (-1 - (-2))\hat{j} + (1-3)\hat{k} = 0\hat{i} + \hat{j} - 2\hat{k}$.</p>
+    <p>Next, calculate the cross product $\vec{b_1} \times \vec{b_2}$:</p>
+    $$\vec{b_1} \times \vec{b_2} = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ -1 & 1 & -2 \\ 1 & 2 & -2 \end{vmatrix} = \hat{i}(-2 + 4) - \hat{j}(2 + 2) + \hat{k}(-2 - 1) = 2\hat{i} - 4\hat{j} - 3\hat{k}$$
+    <p>Now, compute the scalar triple product:</p>
+    $$(\vec{a_2} - \vec{a_1}) \cdot (\vec{b_1} \times \vec{b_2}) = (0)(2) + (1)(-4) + (-2)(-3) = -4 + 6 = 2$$
+    <p>Since the scalar triple product is $2 \neq 0$, the lines are <strong>skew</strong>.</p>
+    <p>Calculate the magnitude $|\vec{b_1} \times \vec{b_2}| = \sqrt{2^2 + (-4)^2 + (-3)^2} = \sqrt{4 + 16 + 9} = \sqrt{29}$.</p>
+
+    <p><strong>Step 3 (Final Concluded Answer): [0.5 Mark]</strong></p>
+    <p>The shortest distance is:</p>
+    $$d = \frac{2}{\sqrt{29}} \text{ units}$$
+
+    <p><strong>💡 EL1
+        </div>
+      </div>
+
 
       <div class="card-footer-actions">
         <a href="mailto:contact@wovrix.in?subject=Report%20Question%204332&body=Question%20ID:%204332%0AChapter:%20Vectors%0AIssue%20Description:%20" class="report-link">

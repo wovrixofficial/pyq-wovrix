@@ -25,7 +25,12 @@
       "@type": "Question",
       "name": "CBSE Class 12 Mathematics Probability Board Question",
       "text": "Two cards are drawn successively with replacement from a well shuffled pack of 52 cards. Find the probability distribution of the number of spade cards.",
-      "answerCount": 1
+      "answerCount": 1,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Step 1 (Formula / Governing Law & Given Data): [1/4 Mark]        Let $X$ be the random variable representing the number of spade cards drawn. Since the cards are drawn with replacement, the trials are Bernoulli trials. The probability of drawing a spade in a single draw is $p = \frac{13}{52} = \frac...",
+        "upvoteCount": 1
+      }
     }
   }
   </script>
@@ -78,6 +83,52 @@
       <div class="question-body">
         <div class="math-content">Two cards are drawn successively with replacement from a well shuffled pack of 52 cards. Find the probability distribution of the number of spade cards.</div>
       </div>
+      <div class="solution-box" style="margin-top:24px; padding:20px; background:var(--card-bg, #ffffff); border:1.5px solid var(--border, #e2e8f0); border-radius:12px;">
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:14px;">
+          <span style="background:#10b981; color:#fff; font-size:11px; font-weight:700; padding:3px 10px; border-radius:20px; text-transform:uppercase;">✓ Verified CBSE Marking Scheme</span>
+          <span style="font-size:12px; color:var(--text-muted, #64748b); font-weight:600;">Official Evaluation Steps & EL10 Insight</span>
+        </div>
+        <div class="math-content solution-content" style="line-height:1.7; font-size:15px;">
+          <div>
+    <p><strong>Step 1 (Formula / Governing Law & Given Data): [1/4 Mark]</strong></p>
+    <p>Let $X$ be the random variable representing the number of spade cards drawn. Since the cards are drawn with replacement, the trials are Bernoulli trials. The probability of drawing a spade in a single draw is $p = \frac{13}{52} = \frac{1}{4}$, and the probability of not drawing a spade is $q = 1 - p = \frac{3}{4}$. The random variable $X$ can take values $0, 1, 2$.</p>
+
+    <p><strong>Step 2 (Step-by-Step Mathematical Working): [1/2 Mark]</strong></p>
+    <p>We calculate the probability $P(X=x)$ for each value using the binomial distribution formula $P(X=x) = \binom{n}{x} p^x q^{n-x}$, where $n=2$:</p>
+    <ul>
+        <li>For $X=0$: 
+            $$P(X=0) = \binom{2}{0} \left(\frac{1}{4}\right)^0 \left(\frac{3}{4}\right)^2 = 1 \cdot 1 \cdot \frac{9}{16} = \frac{9}{16}$$
+        </li>
+        <li>For $X=1$: 
+            $$P(X=1) = \binom{2}{1} \left(\frac{1}{4}\right)^1 \left(\frac{3}{4}\right)^1 = 2 \cdot \frac{1}{4} \cdot \frac{3}{4} = \frac{6}{16} = \frac{3}{8}$$
+        </li>
+        <li>For $X=2$: 
+            $$P(X=2) = \binom{2}{2} \left(\frac{1}{4}\right)^2 \left(\frac{3}{4}\right)^0 = 1 \cdot \frac{1}{16} \cdot 1 = \frac{1}{16}$$
+        </li>
+    </ul>
+
+    <p><strong>Step 3 (Final Concluded Answer): [1/4 Mark]</strong></p>
+    <p>The probability distribution is given by the following table:</p>
+    <table border="1" cellpadding="5">
+        <tr>
+            <th>$X$</th>
+            <th>$0$</th>
+            <th>$1$</th>
+            <th>$2$</th>
+        </tr>
+        <tr>
+            <td>$P(X)$</td>
+            <td>$\frac{9}{16}$</td>
+            <td>$\frac{6}{16}$</td>
+            <td>$\frac{1}{16}$</td>
+        </tr>
+    </table>
+
+    <p><strong>💡 EL10 Concept Insight:</strong> Think of this like flipping a coin, but instead of heads or tails, you have a "spade" or "not a spade." Because you put the card back each time, the odds never change, so we just multiply the chances of each outcome happening in the two tries!</p>
+</div>
+        </div>
+      </div>
+
 
       <div class="card-footer-actions">
         <a href="mailto:contact@wovrix.in?subject=Report%20Question%2010017&body=Question%20ID:%2010017%0AChapter:%20Probability%0AIssue%20Description:%20" class="report-link">

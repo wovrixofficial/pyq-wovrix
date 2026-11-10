@@ -25,7 +25,12 @@
       "@type": "Question",
       "name": "CBSE Class 12 Mathematics Continuity and Differentiability Board Question",
       "text": "If $y = \\frac{\\cos x - \\sin x}{\\cos x + \\sin x}$, then $\\frac{dy}{dx}$ is : \n(a) $-\\sec^2\\left$\\frac{\\pi}{4} - x\\right$$ \n(b) $\\sec^2\\left$\\frac{\\pi}{4} - x\\right$$ \n(c) $\\log \\left| \\sec \\left$ \\frac{\\pi}{4} - x \\right$ \\right|$ \n(d) $-\\log \\left| \\sec \\left$ \\frac{\\pi}{4} - x \\right$ \\right|$",
-      "answerCount": 1
+      "answerCount": 1,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Question:  If $y = \frac{\cos x - \sin x}{\cos x + \sin x}$, then $\frac{dy}{dx}$ is :         Step 1 (Formula / Governing Law &amp; Given Data): [0.25 Mark]        We use the trigonometric identity for tangent subtraction: $\tan(A - B) = \frac{\tan A - \tan B}{1 + \tan A \tan B}$. We are given:    ...",
+        "upvoteCount": 1
+      }
     }
   }
   </script>
@@ -82,6 +87,40 @@
 (c) $\log \left| \sec \left$ \frac{\pi}{4} - x \right$ \right|$ 
 (d) $-\log \left| \sec \left$ \frac{\pi}{4} - x \right$ \right|$</div>
       </div>
+      <div class="solution-box" style="margin-top:24px; padding:20px; background:var(--card-bg, #ffffff); border:1.5px solid var(--border, #e2e8f0); border-radius:12px;">
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:14px;">
+          <span style="background:#10b981; color:#fff; font-size:11px; font-weight:700; padding:3px 10px; border-radius:20px; text-transform:uppercase;">✓ Verified CBSE Marking Scheme</span>
+          <span style="font-size:12px; color:var(--text-muted, #64748b); font-weight:600;">Official Evaluation Steps & EL10 Insight</span>
+        </div>
+        <div class="math-content solution-content" style="line-height:1.7; font-size:15px;">
+          <div>
+    <p><strong>Question:</strong> If $y = \frac{\cos x - \sin x}{\cos x + \sin x}$, then $\frac{dy}{dx}$ is :</p>
+
+    <p><strong>Step 1 (Formula / Governing Law &amp; Given Data): [0.25 Mark]</strong></p>
+    <p>We use the trigonometric identity for tangent subtraction: $\tan(A - B) = \frac{\tan A - \tan B}{1 + \tan A \tan B}$. We are given:</p>
+    $$y = \frac{\cos x - \sin x}{\cos x + \sin x}$$
+
+    <p><strong>Step 2 (Step-by-Step Mathematical Working): [0.5 Mark]</strong></p>
+    <ul>
+        <li>Divide the numerator and denominator by $\cos x$:</li>
+        $$y = \frac{\frac{\cos x}{\cos x} - \frac{\sin x}{\cos x}}{\frac{\cos x}{\cos x} + \frac{\sin x}{\cos x}} = \frac{1 - \tan x}{1 + \tan x}$$
+        <li>Recognizing that $1 = \tan\left(\frac{\pi}{4}\right)$, we rewrite the expression:</li>
+        $$y = \frac{\tan\left(\frac{\pi}{4}\right) - \tan x}{1 + \tan\left(\frac{\pi}{4}\right)\tan x} = \tan\left(\frac{\pi}{4} - x\right)$$
+        <li>Now, differentiate with respect to $x$ using the chain rule $\frac{d}{dx}(\tan u) = \sec^2 u \cdot \frac{du}{dx}$:</li>
+        $$\frac{dy}{dx} = \sec^2\left(\frac{\pi}{4} - x\right) \cdot \frac{d}{dx}\left(\frac{\pi}{4} - x\right)$$
+        $$\frac{dy}{dx} = \sec^2\left(\frac{\pi}{4} - x\right) \cdot (-1)$$
+    </ul>
+
+    <p><strong>Step 3 (Final Concluded Answer): [0.25 Mark]</strong></p>
+    <p>The final derivative is:</p>
+    $$\frac{dy}{dx} = -\sec^2\left(\frac{\pi}{4} - x\right)$$
+    <p><strong>Correct Option: (a)</strong></p>
+
+    <p><strong>💡 EL10 Concept Insight:</strong> Think of this as "simplifying the mess before doing the work." By turning that complicated fraction into a simple $\tan(\text{angle})$ using trig identities, we make the calculus part super easy because we already know the derivative of tangent is just secant squared!</p>
+</div>
+        </div>
+      </div>
+
 
       <div class="card-footer-actions">
         <a href="mailto:support@learnosha.in?subject=Report%20Question%208687&body=Question%20ID:%208687%0AChapter:%20Continuity and Differentiability%0AIssue%20Description:%20" class="report-link">

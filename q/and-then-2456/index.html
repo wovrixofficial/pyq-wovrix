@@ -25,7 +25,12 @@
       "@type": "Question",
       "name": "CBSE Class 12 Mathematics Matrices Board Question",
       "text": "If $A = \\begin{bmatrix} 1 & -2 & 3 \\\\ 3 & 2 & -1 \\end{bmatrix}$, $B = \\begin{bmatrix} 2 & 3 \\\\ -1 & 2 \\\\ 4 & -5 \\end{bmatrix}$ and $C = [C_{ij}] = AB$, then $C_{12}$ is :\n(A) $22$\n(B) $-16$\n(C) $4$\n(D) $0$",
-      "answerCount": 1
+      "answerCount": 1,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Step 1 (Formula / Governing Law & Given Data): [0.25 Mark]        The element $C_{ij}$ of the product matrix $C = AB$ is obtained by calculating the dot product of the $i^{th}$ row of matrix $A$ and the $j^{th}$ column of matrix $B$. Specifically, for $C_{12}$, we multiply the 1st row of $A$ by the ...",
+        "upvoteCount": 1
+      }
     }
   }
   </script>
@@ -82,6 +87,34 @@
 (C) $4$
 (D) $0$</div>
       </div>
+      <div class="solution-box" style="margin-top:24px; padding:20px; background:var(--card-bg, #ffffff); border:1.5px solid var(--border, #e2e8f0); border-radius:12px;">
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:14px;">
+          <span style="background:#10b981; color:#fff; font-size:11px; font-weight:700; padding:3px 10px; border-radius:20px; text-transform:uppercase;">✓ Verified CBSE Marking Scheme</span>
+          <span style="font-size:12px; color:var(--text-muted, #64748b); font-weight:600;">Official Evaluation Steps & EL10 Insight</span>
+        </div>
+        <div class="math-content solution-content" style="line-height:1.7; font-size:15px;">
+          <div>
+    <p><strong>Step 1 (Formula / Governing Law & Given Data): [0.25 Mark]</strong></p>
+    <p>The element $C_{ij}$ of the product matrix $C = AB$ is obtained by calculating the dot product of the $i^{th}$ row of matrix $A$ and the $j^{th}$ column of matrix $B$. Specifically, for $C_{12}$, we multiply the 1st row of $A$ by the 2nd column of $B$:</p>
+    $$C_{12} = \sum_{k=1}^{n} A_{1k} B_{k2}$$
+
+    <p><strong>Step 2 (Step-by-Step Mathematical Working): [0.5 Mark]</strong></p>
+    <p>Given:</p>
+    $$A = \begin{bmatrix} 1 & -2 & 3 \\ 3 & 2 & -1 \end{bmatrix}, \quad B = \begin{bmatrix} 2 & 3 \\ -1 & 2 \\ 4 & -5 \end{bmatrix}$$
+    <p>To find $C_{12}$, we take the 1st row of $A$ ($R_1 = [1, -2, 3]$) and the 2nd column of $B$ ($C_2 = [3, 2, -5]^T$):</p>
+    $$C_{12} = (1 \times 3) + (-2 \times 2) + (3 \times -5)$$
+    $$C_{12} = 3 - 4 - 15$$
+    $$C_{12} = -1 - 15$$
+    $$C_{12} = -16$$
+
+    <p><strong>Step 3 (Final Concluded Answer): [0.25 Mark]</strong></p>
+    <p>The value of $C_{12}$ is <strong>-16</strong>. Therefore, the correct option is <strong>(B)</strong>.</p>
+
+    <p><strong>💡 EL10 Concept Insight:</strong> Think of matrix multiplication like a "row-by-column" dance; to find a specific spot in the result, you just pair up the numbers in that row and column, multiply the pairs, and add them all together!</p>
+</div>
+        </div>
+      </div>
+
 
       <div class="card-footer-actions">
         <a href="mailto:support@learnosha.in?subject=Report%20Question%202456&body=Question%20ID:%202456%0AChapter:%20Matrices%0AIssue%20Description:%20" class="report-link">

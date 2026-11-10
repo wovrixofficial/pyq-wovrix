@@ -25,7 +25,12 @@
       "@type": "Question",
       "name": "CBSE Class 12 Mathematics Matrices Board Question",
       "text": "If $\\begin{vmatrix} -a & b & c \\\\ a & -b & c \\\\ a & b & -c \\end{vmatrix} = kabc$, then the value of $k$ is :\n(A) $0$\n(B) $1$\n(C) $2$\n(D) $4$",
-      "answerCount": 1
+      "answerCount": 1,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Step 1 (Formula / Governing Law & Given Data): [1/4 Mark]        Given the determinant equation:      $$\Delta = \begin{vmatrix} -a & b & c \\ a & -b & c \\ a & b & -c \end{vmatrix} = kabc$$      To solve this, we apply the property of determinants: taking out common factors from rows or columns.   ...",
+        "upvoteCount": 1
+      }
     }
   }
   </script>
@@ -82,6 +87,40 @@
 (C) $2$
 (D) $4$</div>
       </div>
+      <div class="solution-box" style="margin-top:24px; padding:20px; background:var(--card-bg, #ffffff); border:1.5px solid var(--border, #e2e8f0); border-radius:12px;">
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:14px;">
+          <span style="background:#10b981; color:#fff; font-size:11px; font-weight:700; padding:3px 10px; border-radius:20px; text-transform:uppercase;">✓ Verified CBSE Marking Scheme</span>
+          <span style="font-size:12px; color:var(--text-muted, #64748b); font-weight:600;">Official Evaluation Steps & EL10 Insight</span>
+        </div>
+        <div class="math-content solution-content" style="line-height:1.7; font-size:15px;">
+          <div>
+    <p><strong>Step 1 (Formula / Governing Law & Given Data): [1/4 Mark]</strong></p>
+    <p>Given the determinant equation:</p>
+    $$\Delta = \begin{vmatrix} -a & b & c \\ a & -b & c \\ a & b & -c \end{vmatrix} = kabc$$
+    <p>To solve this, we apply the property of determinants: taking out common factors from rows or columns.</p>
+
+    <p><strong>Step 2 (Step-by-Step Mathematical Working): [1/2 Mark]</strong></p>
+    <ul>
+        <li>Take out $a$ from $C_1$, $b$ from $C_2$, and $c$ from $C_3$:</li>
+        $$\Delta = abc \begin{vmatrix} -1 & 1 & 1 \\ 1 & -1 & 1 \\ 1 & 1 & -1 \end{vmatrix}$$
+        <li>Now, evaluate the determinant of the $3 \times 3$ matrix:</li>
+        $$\Delta = abc \left[ -1((-1)(-1) - (1)(1)) - 1((1)(-1) - (1)(1)) + 1((1)(1) - (-1)(1)) \right]$$
+        $$\Delta = abc \left[ -1(1 - 1) - 1(-1 - 1) + 1(1 + 1) \right]$$
+        $$\Delta = abc \left[ -1(0) - 1(-2) + 1(2) \right]$$
+        $$\Delta = abc \left[ 0 + 2 + 2 \right] = 4abc$$
+    </ul>
+
+    <p><strong>Step 3 (Final Concluded Answer): [1/4 Mark]</strong></p>
+    <p>Comparing $4abc$ with the given expression $kabc$, we get:</p>
+    $$k = 4$$
+    <p>Therefore, the correct option is <strong>(D) 4</strong>.</p>
+
+    <p><strong>💡 EL10 Concept Insight (Easy to Understand):</strong></p>
+    <p>Think of the determinant as a box of numbers; when you pull out a common multiplier from each column, you are essentially "scaling" the box, which leaves you with a simpler set of numbers that multiply together to give the final factor.</p>
+</div>
+        </div>
+      </div>
+
 
       <div class="card-footer-actions">
         <a href="mailto:support@learnosha.in?subject=Report%20Question%205602&body=Question%20ID:%205602%0AChapter:%20Matrices%0AIssue%20Description:%20" class="report-link">

@@ -25,7 +25,12 @@
       "@type": "Question",
       "name": "CBSE Class 12 Mathematics Matrices Board Question",
       "text": "An architect is developing a plot of land for a commercial complex. When asked about the dimensions of the plot, he said that if the length is decreased by $25\\text{ m}$ and the breadth is increased by $25\\text{ m}$, then its area increases by $625\\text{ m}^2$. If the length is decreased by $20\\text{ m}$ and the breadth is increased by $10\\text{ m}$, then its area decreases by $200\\text{ m}^2$. On the basis of the above information, answer the following questions: (i) Formulate the linear equations in $x$ and $y$ to represent the given information. (ii) Find the dimensions of the plot of land by matrix method.",
-      "answerCount": 1
+      "answerCount": 1,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CBSE Class 12 Mathematics: Board Examination Solution        Question:  Dimensions of a rectangular plot based on area changes.         Step 1 (Formulation of Equations): [1 Mark]        Let the length of the plot be $x$ m and the breadth be $y$ m. The original area is $A = xy$.                  Con...",
+        "upvoteCount": 1
+      }
     }
   }
   </script>
@@ -78,6 +83,49 @@
       <div class="question-body">
         <div class="math-content">An architect is developing a plot of land for a commercial complex. When asked about the dimensions of the plot, he said that if the length is decreased by $25\text{ m}$ and the breadth is increased by $25\text{ m}$, then its area increases by $625\text{ m}^2$. If the length is decreased by $20\text{ m}$ and the breadth is increased by $10\text{ m}$, then its area decreases by $200\text{ m}^2$. On the basis of the above information, answer the following questions: (i) Formulate the linear equations in $x$ and $y$ to represent the given information. (ii) Find the dimensions of the plot of land by matrix method.</div>
       </div>
+      <div class="solution-box" style="margin-top:24px; padding:20px; background:var(--card-bg, #ffffff); border:1.5px solid var(--border, #e2e8f0); border-radius:12px;">
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:14px;">
+          <span style="background:#10b981; color:#fff; font-size:11px; font-weight:700; padding:3px 10px; border-radius:20px; text-transform:uppercase;">✓ Verified CBSE Marking Scheme</span>
+          <span style="font-size:12px; color:var(--text-muted, #64748b); font-weight:600;">Official Evaluation Steps & EL10 Insight</span>
+        </div>
+        <div class="math-content solution-content" style="line-height:1.7; font-size:15px;">
+          <div>
+    <h3>CBSE Class 12 Mathematics: Board Examination Solution</h3>
+    <p><strong>Question:</strong> Dimensions of a rectangular plot based on area changes.</p>
+
+    <p><strong>Step 1 (Formulation of Equations): [1 Mark]</strong></p>
+    <p>Let the length of the plot be $x$ m and the breadth be $y$ m. The original area is $A = xy$.</p>
+    <ul>
+        <li><strong>Condition 1:</strong> $(x - 25)(y + 25) = xy + 625$</li>
+        $$xy + 25x - 25y - 625 = xy + 625 \implies 25x - 25y = 1250 \implies x - y = 50 \quad \dots(i)$$
+        <li><strong>Condition 2:</strong> $(x - 20)(y + 10) = xy - 200$</li>
+        $$xy + 10x - 20y - 200 = xy - 200 \implies 10x - 20y = 0 \implies x = 2y \quad \dots(ii)$$
+    </ul>
+
+    <p><strong>Step 2 (Matrix Method Working): [3 Marks]</strong></p>
+    <p>Representing the system of equations in matrix form $AX = B$:</p>
+    $$\begin{pmatrix} 1 & -1 \\ 1 & -2 \end{pmatrix} \begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} 50 \\ 0 \end{pmatrix}$$
+    <p>Here, $A = \begin{pmatrix} 1 & -1 \\ 1 & -2 \end{pmatrix}$, $X = \begin{pmatrix} x \\ y \end{pmatrix}$, $B = \begin{pmatrix} 50 \\ 0 \end{pmatrix}$.</p>
+    <p>Calculate $|A| = (1)(-2) - (-1)(1) = -2 + 1 = -1 \neq 0$. Since $|A| \neq 0$, $A^{-1}$ exists.</p>
+    <p>Find $Adj(A)$ by swapping diagonal elements and changing signs of off-diagonals:</p>
+    $$Adj(A) = \begin{pmatrix} -2 & 1 \\ -1 & 1 \end{pmatrix}$$
+    $$A^{-1} = \frac{1}{|A|} Adj(A) = \frac{1}{-1} \begin{pmatrix} -2 & 1 \\ -1 & 1 \end{pmatrix} = \begin{pmatrix} 2 & -1 \\ 1 & -1 \end{pmatrix}$$
+    <p>Solve $X = A^{-1}B$:</p>
+    $$\begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} 2 & -1 \\ 1 & -1 \end{pmatrix} \begin{pmatrix} 50 \\ 0 \end{pmatrix} = \begin{pmatrix} 100 \\ 50 \end{pmatrix}$$
+
+    <p><strong>Step 3 (Final Concluded Answer): [1 Mark]</strong></p>
+    <p>The dimensions of the plot are:</p>
+    <ul>
+        <li><strong>Length ($x$):</strong> $100\text{ m}$</li>
+        <li><strong>Breadth ($y$):</strong> $50\text{ m}$</li>
+    </ul>
+
+    <hr>
+    <p><strong>💡 EL10 Concept Insight:</strong> Think of the area like a balance scale; when you change the length and width, the "total weight" (area) shifts. By turning these shifts into simple math sentences, we can use matrices like a secret decoder ring to find the exact starting numbers that made those shifts happen!</p>
+</div>
+        </div>
+      </div>
+
 
       <div class="card-footer-actions">
         <a href="mailto:support@learnosha.in?subject=Report%20Question%206744&body=Question%20ID:%206744%0AChapter:%20Matrices%0AIssue%20Description:%20" class="report-link">

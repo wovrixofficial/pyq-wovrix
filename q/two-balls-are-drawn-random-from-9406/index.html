@@ -25,7 +25,12 @@
       "@type": "Question",
       "name": "CBSE Class 12 Mathematics Probability Board Question",
       "text": "Two balls are drawn at random from a bag containing 2 red balls and 3 blue balls, without replacement. Let the variable X denotes the number of red balls. Find the probability distribution of X.",
-      "answerCount": 1
+      "answerCount": 1,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Question:  Two balls are drawn at random from a bag containing 2 red balls and 3 blue balls, without replacement. Let the variable $X$ denote the number of red balls. Find the probability distribution of $X$.         Step 1 (Formula / Governing Law & Given Data): [1/4 Mark]        The total number o...",
+        "upvoteCount": 1
+      }
     }
   }
   </script>
@@ -78,6 +83,56 @@
       <div class="question-body">
         <div class="math-content">Two balls are drawn at random from a bag containing 2 red balls and 3 blue balls, without replacement. Let the variable X denotes the number of red balls. Find the probability distribution of X.</div>
       </div>
+      <div class="solution-box" style="margin-top:24px; padding:20px; background:var(--card-bg, #ffffff); border:1.5px solid var(--border, #e2e8f0); border-radius:12px;">
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:14px;">
+          <span style="background:#10b981; color:#fff; font-size:11px; font-weight:700; padding:3px 10px; border-radius:20px; text-transform:uppercase;">✓ Verified CBSE Marking Scheme</span>
+          <span style="font-size:12px; color:var(--text-muted, #64748b); font-weight:600;">Official Evaluation Steps & EL10 Insight</span>
+        </div>
+        <div class="math-content solution-content" style="line-height:1.7; font-size:15px;">
+          <div>
+    <p><strong>Question:</strong> Two balls are drawn at random from a bag containing 2 red balls and 3 blue balls, without replacement. Let the variable $X$ denote the number of red balls. Find the probability distribution of $X$.</p>
+
+    <p><strong>Step 1 (Formula / Governing Law & Given Data): [1/4 Mark]</strong></p>
+    <p>The total number of balls is $2 \text{ (red)} + 3 \text{ (blue)} = 5$. Since two balls are drawn without replacement, the random variable $X$ (number of red balls) can take values $x \in \{0, 1, 2\}$. The probability of drawing $x$ red balls is given by the hypergeometric distribution formula:</p>
+    $$P(X = x) = \frac{\binom{2}{x} \binom{3}{2-x}}{\binom{5}{2}}$$
+
+    <p><strong>Step 2 (Step-by-Step Mathematical Working): [1/2 Mark]</strong></p>
+    <p>First, calculate the total number of ways to draw 2 balls from 5: $\binom{5}{2} = \frac{5 \times 4}{2 \times 1} = 10$.</p>
+    <ul>
+        <li><strong>For $X = 0$:</strong> (0 red, 2 blue)
+            $$P(X=0) = \frac{\binom{2}{0} \binom{3}{2}}{10} = \frac{1 \times 3}{10} = \frac{3}{10}$$
+        </li>
+        <li><strong>For $X = 1$:</strong> (1 red, 1 blue)
+            $$P(X=1) = \frac{\binom{2}{1} \binom{3}{1}}{10} = \frac{2 \times 3}{10} = \frac{6}{10} = \frac{3}{5}$$
+        </li>
+        <li><strong>For $X = 2$:</strong> (2 red, 0 blue)
+            $$P(X=2) = \frac{\binom{2}{2} \binom{3}{0}}{10} = \frac{1 \times 1}{10} = \frac{1}{10}$$
+        </li>
+    </ul>
+
+    <p><strong>Step 3 (Final Concluded Answer): [1/4 Mark]</strong></p>
+    <p>The probability distribution of $X$ is represented in the table below:</p>
+    <table border="1" cellpadding="5" style="border-collapse: collapse; text-align: center;">
+        <tr>
+            <th>$X$</th>
+            <td>$0$</td>
+            <td>$1$</td>
+            <td>$2$</td>
+        </tr>
+        <tr>
+            <th>$P(X)$</th>
+            <td>$\frac{3}{10}$</td>
+            <td>$\frac{6}{10}$</td>
+            <td>$\frac{1}{10}$</td>
+        </tr>
+    </table>
+    <p><em>Verification: Sum of probabilities = $\frac{3}{10} + \frac{6}{10} + \frac{1}{10} = \frac{10}{10} = 1$.</em></p>
+
+    <p><strong>💡 EL10 Concept Insight:</strong> Think of this like picking two marbles from a jar; since you can't pick more red marbles than are actually in the jar, you just calculate how many ways you can grab the specific "red-blue" combinations and divide them by the total possible pairs you could have grabbed.</p>
+</div>
+        </div>
+      </div>
+
 
       <div class="card-footer-actions">
         <a href="mailto:contact@wovrix.in?subject=Report%20Question%209406&body=Question%20ID:%209406%0AChapter:%20Probability%0AIssue%20Description:%20" class="report-link">

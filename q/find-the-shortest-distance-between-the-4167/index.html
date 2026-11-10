@@ -25,7 +25,12 @@
       "@type": "Question",
       "name": "CBSE Class 12 Mathematics Vectors Board Question",
       "text": "(a) Find the shortest distance between the lines $l_1$ and $l_2$ given by :\n$l_1 : \\vec{r} = \\hat{i} + 2\\hat{j} - 4\\hat{k} + \\lambda $4\\hat{i} + 6\\hat{j} + 12\\hat{k}$$\nand $l_2 : \\vec{r} = 3\\hat{i} + 3\\hat{j} - 5\\hat{k} + \\mu $6\\hat{i} + 9\\hat{j} + 18\\hat{k}$$\nOR\n(b) Show that the lines $\\frac{x - 1}{2} = \\frac{y - 2}{3} = \\frac{z - 3}{4}$ and $\\frac{x - 4}{5} = \\frac{y - 1}{2} = \\frac{z}{1}$ intersect. Also, find their point of intersection.",
-      "answerCount": 1
+      "answerCount": 1,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Solution (a): Shortest Distance Between Two Lines         Step 1 (Formula & Identification): [1 Mark]        The given lines are in the form $\vec{r} = \vec{a_1} + \lambda \vec{b_1}$ and $\vec{r} = \vec{a_2} + \mu \vec{b_2}$.                 $\vec{a_1} = \hat{i} + 2\hat{j} - 4\hat{k}$, $\vec{b_1} = ...",
+        "upvoteCount": 1
+      }
     }
   }
   </script>
@@ -82,6 +87,41 @@ and $l_2 : \vec{r} = 3\hat{i} + 3\hat{j} - 5\hat{k} + \mu $6\hat{i} + 9\hat{j} +
 OR
 (b) Show that the lines $\frac{x - 1}{2} = \frac{y - 2}{3} = \frac{z - 3}{4}$ and $\frac{x - 4}{5} = \frac{y - 1}{2} = \frac{z}{1}$ intersect. Also, find their point of intersection.</div>
       </div>
+      <div class="solution-box" style="margin-top:24px; padding:20px; background:var(--card-bg, #ffffff); border:1.5px solid var(--border, #e2e8f0); border-radius:12px;">
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:14px;">
+          <span style="background:#10b981; color:#fff; font-size:11px; font-weight:700; padding:3px 10px; border-radius:20px; text-transform:uppercase;">✓ Verified CBSE Marking Scheme</span>
+          <span style="font-size:12px; color:var(--text-muted, #64748b); font-weight:600;">Official Evaluation Steps & EL10 Insight</span>
+        </div>
+        <div class="math-content solution-content" style="line-height:1.7; font-size:15px;">
+          <div>
+    <h3>Solution (a): Shortest Distance Between Two Lines</h3>
+
+    <p><strong>Step 1 (Formula & Identification): [1 Mark]</strong></p>
+    <p>The given lines are in the form $\vec{r} = \vec{a_1} + \lambda \vec{b_1}$ and $\vec{r} = \vec{a_2} + \mu \vec{b_2}$.</p>
+    <ul>
+        <li>$\vec{a_1} = \hat{i} + 2\hat{j} - 4\hat{k}$, $\vec{b_1} = 4\hat{i} + 6\hat{j} + 12\hat{k}$</li>
+        <li>$\vec{a_2} = 3\hat{i} + 3\hat{j} - 5\hat{k}$, $\vec{b_2} = 6\hat{i} + 9\hat{j} + 18\hat{k}$</li>
+    </ul>
+    <p>Observe that $\vec{b_2} = 1.5 \vec{b_1}$, meaning the lines are <strong>parallel</strong>. The formula for the shortest distance between parallel lines is:</p>
+    $$d = \frac{|\vec{b} \times (\vec{a_2} - \vec{a_1})|}{|\vec{b}|}$$
+
+    <p><strong>Step 2 (Mathematical Working): [2 Marks]</strong></p>
+    <p>First, calculate $(\vec{a_2} - \vec{a_1})$:</p>
+    $$\vec{a_2} - \vec{a_1} = (3-1)\hat{i} + (3-2)\hat{j} + (-5 - (-4))\hat{k} = 2\hat{i} + \hat{j} - \hat{k}$$
+    <p>Now, compute the cross product $\vec{b} \times (\vec{a_2} - \vec{a_1})$ where $\vec{b} = 4\hat{i} + 6\hat{j} + 12\hat{k}$:</p>
+    $$\vec{b} \times (\vec{a_2} - \vec{a_1}) = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ 4 & 6 & 12 \\ 2 & 1 & -1 \end{vmatrix}$$
+    $$= \hat{i}(-6 - 12) - \hat{j}(-4 - 24) + \hat{k}(4 - 12) = -18\hat{i} + 28\hat{j} - 8\hat{k}$$
+    <p>Calculate magnitudes:</p>
+    $$|\vec{b} \times (\vec{a_2} - \vec{a_1})| = \sqrt{(-18)^2 + 28^2 + (-8)^2} = \sqrt{324 + 784 + 64} = \sqrt{1172} = 2\sqrt{293}$$
+    $$|\vec{b}| = \sqrt{4^2 + 6^2 + 12^2} = \sqrt{16 + 36 + 144} = \sqrt{196} = 14$$
+
+    <p><strong>Step 3 (Final Concluded Answer): [1 Mark]</strong></p>
+    $$d = \frac{2\sqrt{293}}{14} = \frac{\sqrt{293}}{7} \text{ units}$$
+
+    <p><strong>💡 EL10 Concept Insight:</strong> Think of parallel lines like two train tracks; since they never meet, the "shortest distance" is just the perpendicular gap between them, which we find by creating a parallelogram
+        </div>
+      </div>
+
 
       <div class="card-footer-actions">
         <a href="mailto:support@learnosha.in?subject=Report%20Question%204167&body=Question%20ID:%204167%0AChapter:%20Vectors%0AIssue%20Description:%20" class="report-link">

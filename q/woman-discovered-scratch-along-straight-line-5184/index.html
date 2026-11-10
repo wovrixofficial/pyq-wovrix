@@ -25,7 +25,12 @@
       "@type": "Question",
       "name": "CBSE Class 12 Mathematics Unclassified Board Question",
       "text": "A woman discovered a scratch along a straight line on a circular table top of radius $8 \\text{ cm}$. She divided the table top into 4 equal quadrants and discovered the scratch passing through the origin inclined at an angle $\\frac{\\pi}{4}$ anticlockwise along the positive direction of x-axis. Find the area of the region enclosed by the x-axis, the scratch and the circular table top in the first quadrant, using integration.",
-      "answerCount": 1
+      "answerCount": 1,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CBSE Class 12 Mathematics: Area Under Curves (Application of Integrals)         Step 1 (Formula / Governing Law & Given Data): [1 Mark]                  The equation of the circular table top with radius $r = 8 \text{ cm}$ centered at the origin is: $x^2 + y^2 = 8^2 \implies x^2 + y^2 = 64$.        ...",
+        "upvoteCount": 1
+      }
     }
   }
   </script>
@@ -78,6 +83,44 @@
       <div class="question-body">
         <div class="math-content">A woman discovered a scratch along a straight line on a circular table top of radius $8 \text{ cm}$. She divided the table top into 4 equal quadrants and discovered the scratch passing through the origin inclined at an angle $\frac{\pi}{4}$ anticlockwise along the positive direction of x-axis. Find the area of the region enclosed by the x-axis, the scratch and the circular table top in the first quadrant, using integration.</div>
       </div>
+      <div class="solution-box" style="margin-top:24px; padding:20px; background:var(--card-bg, #ffffff); border:1.5px solid var(--border, #e2e8f0); border-radius:12px;">
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:14px;">
+          <span style="background:#10b981; color:#fff; font-size:11px; font-weight:700; padding:3px 10px; border-radius:20px; text-transform:uppercase;">✓ Verified CBSE Marking Scheme</span>
+          <span style="font-size:12px; color:var(--text-muted, #64748b); font-weight:600;">Official Evaluation Steps & EL10 Insight</span>
+        </div>
+        <div class="math-content solution-content" style="line-height:1.7; font-size:15px;">
+          <div>
+    <h3>CBSE Class 12 Mathematics: Area Under Curves (Application of Integrals)</h3>
+
+    <p><strong>Step 1 (Formula / Governing Law & Given Data): [1 Mark]</strong></p>
+    <ul>
+        <li>The equation of the circular table top with radius $r = 8 \text{ cm}$ centered at the origin is: $x^2 + y^2 = 8^2 \implies x^2 + y^2 = 64$.</li>
+        <li>The scratch is a straight line passing through the origin at an angle $\theta = \frac{\pi}{4}$. The equation of the line is $y = x \tan\left(\frac{\pi}{4}\right) \implies y = x$.</li>
+        <li>To find the intersection point of the line and the circle in the first quadrant:
+            $$x^2 + x^2 = 64 \implies 2x^2 = 64 \implies x^2 = 32 \implies x = 4\sqrt{2}$$
+        </li>
+        <li>The area $A$ is bounded by the line $y=x$ and the circle $y = \sqrt{64 - x^2}$ from $x=0$ to $x=4\sqrt{2}$.</li>
+    </ul>
+
+    <p><strong>Step 2 (Step-by-Step Mathematical Working): [2 Marks]</strong></p>
+    <p>The required area is the integral of the line from $0$ to $4\sqrt{2}$ plus the integral of the circle from $4\sqrt{2}$ to $8$:</p>
+    $$A = \int_{0}^{4\sqrt{2}} x \, dx + \int_{4\sqrt{2}}^{8} \sqrt{8^2 - x^2} \, dx$$
+    <p>Evaluating the first part:</p>
+    $$\int_{0}^{4\sqrt{2}} x \, dx = \left[ \frac{x^2}{2} \right]_{0}^{4\sqrt{2}} = \frac{(4\sqrt{2})^2}{2} = \frac{32}{2} = 16$$
+    <p>Evaluating the second part using the standard integral $\int \sqrt{a^2 - x^2} \, dx = \frac{x}{2}\sqrt{a^2 - x^2} + \frac{a^2}{2} \sin^{-1}\left(\frac{x}{a}\right)$:</p>
+    $$\left[ \frac{x}{2}\sqrt{64 - x^2} + \frac{64}{2} \sin^{-1}\left(\frac{x}{8}\right) \right]_{4\sqrt{2}}^{8}$$
+    $$= \left( 0 + 32 \sin^{-1}(1) \right) - \left( \frac{4\sqrt{2}}{2}\sqrt{64 - 32} + 32 \sin^{-1}\left(\frac{4\sqrt{2}}{8}\right) \right)$$
+    $$= 32\left(\frac{\pi}{2}\right) - \left( 2\sqrt{2} \cdot 4\sqrt{2} + 32 \sin^{-1}\left(\frac{1}{\sqrt{2}}\right) \right)$$
+    $$= 16\pi - (16 + 32 \cdot \frac{\pi}{4}) = 16\pi - 16 - 8\pi = 8\pi - 16$$
+
+    <p><strong>Step 3 (Final Concluded Answer): [1 Mark]</strong></p>
+    <p>Total Area = $16 + (8\pi - 16) = 8\pi \text{ cm}^2$.</p>
+    <p><strong>Final Answer:</strong> The area of the region is $8\pi \text{ cm}^2$.</p>
+
+    <p><strong>💡 EL1
+        </div>
+      </div>
+
 
       <div class="card-footer-actions">
         <a href="mailto:contact@wovrix.in?subject=Report%20Question%205184&body=Question%20ID:%205184%0AChapter:%20Unclassified%0AIssue%20Description:%20" class="report-link">

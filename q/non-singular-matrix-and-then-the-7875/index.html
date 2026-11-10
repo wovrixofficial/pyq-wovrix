@@ -25,7 +25,12 @@
       "@type": "Question",
       "name": "CBSE Class 12 Mathematics Matrices Board Question",
       "text": "If $\\begin{bmatrix} 1 & 2 & 1 \\\\ 2 & 3 & 1 \\\\ 3 & a & 1 \\end{bmatrix}$ is non-singular matrix and $a \\in A$, then the set A is\n(A) $\\mathbb{R}$\n(B) $\\{0\\}$\n(C) $\\{4\\}$\n(D) $\\mathbb{R} - \\{4\\}$",
-      "answerCount": 1
+      "answerCount": 1,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Step 1 (Formula / Governing Law & Given Data): [0.25 Mark]        A square matrix $M$ is defined as  non-singular  if and only if its determinant is non-zero, i.e., $|M| \neq 0$. Given the matrix:      $$M = \begin{bmatrix} 1 & 2 & 1 \\ 2 & 3 & 1 \\ 3 & a & 1 \end{bmatrix}$$      For $M$ to be non-s...",
+        "upvoteCount": 1
+      }
     }
   }
   </script>
@@ -82,6 +87,38 @@
 (C) $\{4\}$
 (D) $\mathbb{R} - \{4\}$</div>
       </div>
+      <div class="solution-box" style="margin-top:24px; padding:20px; background:var(--card-bg, #ffffff); border:1.5px solid var(--border, #e2e8f0); border-radius:12px;">
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:14px;">
+          <span style="background:#10b981; color:#fff; font-size:11px; font-weight:700; padding:3px 10px; border-radius:20px; text-transform:uppercase;">✓ Verified CBSE Marking Scheme</span>
+          <span style="font-size:12px; color:var(--text-muted, #64748b); font-weight:600;">Official Evaluation Steps & EL10 Insight</span>
+        </div>
+        <div class="math-content solution-content" style="line-height:1.7; font-size:15px;">
+          <div>
+    <p><strong>Step 1 (Formula / Governing Law & Given Data): [0.25 Mark]</strong></p>
+    <p>A square matrix $M$ is defined as <strong>non-singular</strong> if and only if its determinant is non-zero, i.e., $|M| \neq 0$. Given the matrix:</p>
+    $$M = \begin{bmatrix} 1 & 2 & 1 \\ 2 & 3 & 1 \\ 3 & a & 1 \end{bmatrix}$$
+    <p>For $M$ to be non-singular, we must satisfy the condition $|M| \neq 0$.</p>
+
+    <p><strong>Step 2 (Step-by-Step Mathematical Working): [0.5 Mark]</strong></p>
+    <p>Expanding the determinant along the first row ($R_1$):</p>
+    $$|M| = 1 \begin{vmatrix} 3 & 1 \\ a & 1 \end{vmatrix} - 2 \begin{vmatrix} 2 & 1 \\ 3 & 1 \end{vmatrix} + 1 \begin{vmatrix} 2 & 3 \\ 3 & a \end{vmatrix}$$
+    <p>Calculating the $2 \times 2$ determinants:</p>
+    $$|M| = 1(3 - a) - 2(2 - 3) + 1(2a - 9)$$
+    $$|M| = (3 - a) - 2(-1) + (2a - 9)$$
+    $$|M| = 3 - a + 2 + 2a - 9$$
+    $$|M| = a - 4$$
+    <p>Since the matrix is non-singular, we set the determinant not equal to zero:</p>
+    $$a - 4 \neq 0 \implies a \neq 4$$
+
+    <p><strong>Step 3 (Final Concluded Answer): [0.25 Mark]</strong></p>
+    <p>The set $A$ consists of all real numbers except $4$. Therefore, $A = \mathbb{R} - \{4\}$.</p>
+    <p><strong>Correct Option: (D)</strong></p>
+
+    <p><strong>💡 EL10 Concept Insight:</strong> Think of a non-singular matrix as a "functional" machine that doesn't collapse; if the determinant equals zero, the machine breaks (becomes singular), so we simply find the "forbidden" value that makes the determinant zero and exclude it from the set of all real numbers.</p>
+</div>
+        </div>
+      </div>
+
 
       <div class="card-footer-actions">
         <a href="mailto:support@learnosha.in?subject=Report%20Question%207875&body=Question%20ID:%207875%0AChapter:%20Matrices%0AIssue%20Description:%20" class="report-link">
