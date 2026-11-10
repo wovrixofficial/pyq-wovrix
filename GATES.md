@@ -135,10 +135,10 @@
   EXPECT: TOPIC_SELECTOR_OK
   EVIDENCE: automatic-evidence=v1; definition-sha256=be7958ec03adc4fe88f09d54246af09363ff1c0cb9b1f0d0dbb86b4b1e2733a0; exit=0; EXPECT=matched; output-sha256=7650b60c8178ea5471a2936b679b99fcd95b6e2a4c5ea04f707f6c5602383753; output-bytes=18; shell=C:\Windows\system32\cmd.exe; cwd=E:\PYQ_Wovrix_Portal\pyq-wovrix; path=63ea99d964ba/70 entries
 
-- [x] GATE-MASTER-AI-VAULT: All 4 Master AI Vault and 10-Year Dossier files exist in vault/
-  CHECK: node -e "const fs = require('fs'); const files = ['vault/NEET_UG_10_YEAR_MASTER_AI_VAULT.md', 'vault/NEET_AI_SUPER_PROMPT.md', 'vault/NEET_Most_Repeated_Questions_10_Years.md', 'vault/NEET_2027_Forecasting_and_NCERT_Trap_Analysis.md']; files.forEach(f => { if (!fs.existsSync(f) || fs.statSync(f).size < 1000) { console.error('Missing or empty vault file:', f); process.exit(1); } }); console.log('MASTER_AI_VAULT_OK');"
-  EXPECT: MASTER_AI_VAULT_OK
-  EVIDENCE: automatic-evidence=v1; definition-sha256=82a678e923698f8cff2cb90c167dd8c9332e10d74c6aeb0be608672b53a37c17; exit=0; EXPECT=matched; output-sha256=7e8bcc8cbd8cffa4a73f7ddab4b39c5db4349522461a25cbb5fefec5a3860c6b; output-bytes=19; shell=C:\Windows\system32\cmd.exe; cwd=E:\PYQ_Wovrix_Portal\pyq-wovrix; path=5a5a067f565f/70 entries
+- [x] GATE-PROPRIETARY-PROTECTION: Raw AI Vault files and download links are removed from public distribution
+  CHECK: node -e "const fs = require('fs'); if (fs.existsSync('vault')) { console.error('vault/ directory still exists'); process.exit(1); } const indexHtml = fs.readFileSync('index.html', 'utf8'); const repHtml = fs.readFileSync('repeated/index.html', 'utf8'); if (indexHtml.includes('Download AI Vault') || repHtml.includes('Download AI Vault') || indexHtml.includes('NEET_UG_10_YEAR_MASTER_AI_VAULT.md')) { console.error('Found public vault download links'); process.exit(1); } console.log('PROPRIETARY_PROTECTION_OK');"
+  EXPECT: PROPRIETARY_PROTECTION_OK
+  EVIDENCE: automatic-evidence=v1; definition-sha256=b01f55d5701e904f969f9df9f315add80ee01c26824ef058999410b7450bd558; exit=0; EXPECT=matched; output-sha256=cbddd0cd4f44780a2f561f6ca27d564e59c008468695ba71855b641927b1f7c9; output-bytes=26; shell=C:\Windows\system32\cmd.exe; cwd=E:\PYQ_Wovrix_Portal\pyq-wovrix; path=5a2da8a77554/70 entries
 
 - [x] GATE-NEET-140-CLUSTERS: Authoritative 140 concept clusters and 2000+ repeat questions synced
   CHECK: node -e "const fs = require('fs'); const rep = JSON.parse(fs.readFileSync('data/repeated_questions.json', 'utf8')); const neet = JSON.parse(fs.readFileSync('data/neet_all.json', 'utf8')); if (rep.neet_concepts.length < 140) { console.error('Expected at least 140 concept clusters, got', rep.neet_concepts.length); process.exit(1); } const repeats = neet.filter(q => q.multi_year_count > 1 || q.cluster_size >= 2); if (repeats.length < 2000) { console.error('Expected at least 2000 repeat questions, got', repeats.length); process.exit(1); } console.log('NEET_140_CLUSTERS_OK');"
@@ -149,5 +149,21 @@
   CHECK: node -e "const fs = require('fs'); const css = fs.readFileSync('style.css', 'utf8'); if (!css.includes('.nav-bookmark-pill') || !css.includes('display: none !important')) { console.error('Bookmark pill not hidden in header'); process.exit(1); } console.log('HEADER_BOOKMARK_CLEAN_OK');"
   EXPECT: HEADER_BOOKMARK_CLEAN_OK
   EVIDENCE: automatic-evidence=v1; definition-sha256=000ad87c934b56c636c70bd6777042a8d124fde14f38b8bb9690708b8085af6b; exit=0; EXPECT=matched; output-sha256=87641894133830d6a0b7c444ab349fdbd795d0b2aefa87899845f101092dd096; output-bytes=25; shell=C:\Windows\system32\cmd.exe; cwd=E:\PYQ_Wovrix_Portal\pyq-wovrix; path=5a5a067f565f/70 entries
+
+- [x] GATE-HEADER-CENTER-EMPTY: Header center is completely clean with zero goal pills across all pages
+  CHECK: node -e "const fs = require('fs'); ['index.html', 'practice/index.html', 'repeated/index.html', 'paper-maker/index.html', 'saved/index.html'].forEach(f => { const html = fs.readFileSync(f, 'utf8'); const header = html.slice(html.indexOf('<header'), html.indexOf('</header>')); if (header.includes('goal-switcher-container') || header.includes('nav-link-desktop')) { console.error('Found links or goal switcher in header:', f); process.exit(1); } }); console.log('HEADER_CENTER_EMPTY_OK');"
+  EXPECT: HEADER_CENTER_EMPTY_OK
+  EVIDENCE: automatic-evidence=v1; definition-sha256=48d7199d3f3f7d0bffe467f05bc5e5b6969d9369af8c056f6427eb6629880c05; exit=0; EXPECT=matched; output-sha256=0cd15edc5568a866e87e594bf78e7ad0eac3f92b936368a6ec13b12a645bdd10; output-bytes=23; shell=C:\Windows\system32\cmd.exe; cwd=E:\PYQ_Wovrix_Portal\pyq-wovrix; path=5a2da8a77554/70 entries
+
+- [x] GATE-KATEX-HOMEPAGE: KaTeX scripts loaded and auto-rendered on homepage cards
+  CHECK: node -e "const fs = require('fs'); const html = fs.readFileSync('index.html', 'utf8'); if (!html.includes('katex.min.js') || !html.includes('auto-render.min.js') || !html.includes('triggerKaTeXRendering')) { console.error('KaTeX missing in index.html'); process.exit(1); } console.log('KATEX_HOMEPAGE_OK');"
+  EXPECT: KATEX_HOMEPAGE_OK
+  EVIDENCE: automatic-evidence=v1; definition-sha256=e5877c63969c6d36c80091b62c99a18e4a6fb4a9803e762336cfb987fc9c9693; exit=0; EXPECT=matched; output-sha256=5364720f7e7fdf18733ee5f0f6aeaca4555bc7e38feec35194c837e54d80c66d; output-bytes=18; shell=C:\Windows\system32\cmd.exe; cwd=E:\PYQ_Wovrix_Portal\pyq-wovrix; path=5a2da8a77554/70 entries
+
+- [x] GATE-NEET-CHEM-AVAILABLE: NEET Chemistry has 520 questions and verified repeats count
+  CHECK: node -e "const fs = require('fs'); const neet = JSON.parse(fs.readFileSync('data/neet_all.json', 'utf8')); const chem = neet.filter(q => (q.subject || '').toLowerCase() === 'chemistry'); if (chem.length !== 520) { console.error('Chem count expected 520, got', chem.length); process.exit(1); } const rep = chem.filter(q => (q.multi_year_count && q.multi_year_count > 1) || (q.repeat_years && q.repeat_years.length > 1)); if (rep.length < 500) { console.error('Repeat chem count too low:', rep.length); process.exit(1); } console.log('NEET_CHEM_OK');"
+  EXPECT: NEET_CHEM_OK
+  EVIDENCE: automatic-evidence=v1; definition-sha256=4faa28f121349b5ca4edb40346dd76c684b4f66f78cf41ee6c7116a7efd2794b; exit=0; EXPECT=matched; output-sha256=8110f6a0348bf73012e8a1d72a1aed2ac5d572b98417375fa3ef1f9ece5e020a; output-bytes=13; shell=C:\Windows\system32\cmd.exe; cwd=E:\PYQ_Wovrix_Portal\pyq-wovrix; path=5a2da8a77554/70 entries
+
 
 

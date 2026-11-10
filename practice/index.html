@@ -642,27 +642,7 @@
         <span class="brand-name">WOVRIX <span class="brand-slash">/</span> <span class="brand-sub">PYQ</span></span>
       </a>
 
-      <!-- Universal Sticky Goal Switcher Dropdown -->
-      <div class="goal-switcher-container">
-        <button id="goalSwitcherBtn" class="goal-switcher-btn" onclick="toggleGoalDropdown(event)" aria-label="Switch Exam Goal">
-          <span class="active-goal-label">🎯 CBSE Class 12</span>
-          <span style="font-size: 10px; opacity: 0.7;">▾</span>
-        </button>
-        <div id="goalDropdownMenu" class="goal-dropdown-menu">
-          <button class="goal-dropdown-item" onclick="selectGoal('cbse')">🎯 CBSE Class 12 (PCM)</button>
-          <button class="goal-dropdown-item" onclick="selectGoal('neet')">🩺 NEET UG (10-Year Archive)</button>
-        </div>
-      </div>
-
       <nav class="nav-links">
-        <a href="/practice/" class="nav-link nav-link-desktop active">Practice Hub</a>
-        <a href="/repeated/" class="nav-link nav-link-desktop">Repeats Radar</a>
-        <a href="/paper-maker/" class="nav-link nav-link-desktop">Paper Maker & Mock</a>
-        <a href="/saved/" class="nav-bookmark-pill" title="Saved Questions & Notes">
-          <span>📌</span>
-          <span class="nav-link-desktop">Saved</span>
-          <span class="nav-bookmark-count">0</span>
-        </a>
         <button id="themeToggleBtn" class="btn-theme-toggle" onclick="toggleTheme()" aria-label="Toggle Dark Mode" title="Toggle Dark/Light Mode">
           <span class="theme-icon-light">☀️</span>
           <span class="theme-icon-dark">🌙</span>
@@ -951,7 +931,7 @@
 
     <div class="footer-bottom-bar">
       <div class="footer-copy">
-        © 2026 PYQ Wovrix • Free, No-Login Educational Past Paper Archive.
+        © 2026 Wovrix (wovrix.in) • Free, No-Login Educational Past Paper Archive.
       </div>
       <div class="footer-bottom-links">
         <a href="#top">Back to Top ↑</a>
@@ -1126,7 +1106,9 @@
         currentExam = getActiveGoal() || 'cbse';
       }
 
-      if (urlSubj) currentSubject = urlSubj;
+      if (urlSubj) {
+        currentSubject = urlSubj.charAt(0).toUpperCase() + urlSubj.slice(1).toLowerCase();
+      }
       if (urlCh) {
         currentChapter = urlCh;
         currentChapterName = urlCh === 'all' ? 'All Chapters' : urlCh;
@@ -1456,9 +1438,10 @@
       const feed = document.getElementById('streamQuestionsFeed');
       feed.innerHTML = '<div class="loading-state">Loading questions dataset...</div>';
 
+      const cacheBust = '?v=20261110_2';
       const url = currentExam === 'cbse'
-        ? `/data/cbse_${currentSubject.toLowerCase()}.json`
-        : `/data/neet_all.json`;
+        ? `/data/cbse_${currentSubject.toLowerCase()}.json${cacheBust}`
+        : `/data/neet_all.json${cacheBust}`;
 
       try {
         if (!datasetCache[url]) {
@@ -1467,7 +1450,8 @@
         }
         let data = datasetCache[url];
         if (currentExam === 'neet') {
-          data = data.filter(q => (q.subject || '').toLowerCase() === currentSubject.toLowerCase());
+          const targetSubj = currentSubject.trim().toLowerCase();
+          data = data.filter(q => (q.subject || '').trim().toLowerCase() === targetSubj);
         }
         loadedQuestions = data;
         applyStreamFilters();
@@ -1510,9 +1494,17 @@
         list = list.filter(q => (q.text && q.text.toLowerCase().includes(qText)));
       }
 
-      // Filter repeats
+      // Filter repeats (robust recurrence detection)
       if (showRepeatsOnly) {
-        list = list.filter(q => (q.multi_year_count && q.multi_year_count > 1) || (q.repeat_years && q.repeat_years.length > 1) || (q.cluster_size && q.cluster_size >= 3));
+        list = list.filter(q =>
+          (q.multi_year_count && q.multi_year_count > 1) ||
+          (q.repeat_years && q.repeat_years.length > 1) ||
+          (q.recurrence_years && q.recurrence_years.length > 1) ||
+          (q.cluster_size && q.cluster_size >= 2) ||
+          (q.recurrence_count_10yr && q.recurrence_count_10yr > 1) ||
+          (Array.isArray(q.historical_twins) && q.historical_twins.length > 0) ||
+          Boolean(q.is_repeated)
+        );
       }
 
       // Filter by sub-topic
