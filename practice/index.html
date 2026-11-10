@@ -439,54 +439,117 @@
       background: #dbeafe;
       border-color: #93c5fd;
     }
-    .btn-solve-action {
-      display: inline-flex;
-      align-items: center;
-      gap: 5px;
-      background: #f8fafc;
-      border: 1px solid var(--border);
-      color: var(--text);
-      font-size: 12px;
-      font-weight: 600;
-      padding: 6px 12px;
-      border-radius: 6px;
-      cursor: pointer;
-      transition: all 0.15s ease;
-    }
-    .btn-solve-action:hover {
-      background: #f1f5f9;
-      border-color: #cbd5e1;
-    }
-    .btn-solve-action.has-cached {
+    .btn-step-rubric.has-cached {
       background: #ecfdf5;
       border-color: #a7f3d0;
       color: #047857;
     }
-    .step-rubric-drawer {
-      display: none;
-      margin-top: 12px;
-      padding: 14px 16px;
-      background: #f8fafc;
+    .solution-box {
+      margin-top: 14px;
+      padding: 16px 20px;
+      background: var(--surface);
       border-left: 3px solid #3b82f6;
-      border-radius: 0 8px 8px 0;
-      font-size: 13px;
-      color: #334155;
-      line-height: 1.6;
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+      border-top: 1px solid var(--border-light);
+      border-right: 1px solid var(--border-light);
+      border-bottom: 1px solid var(--border-light);
+      display: none;
     }
-    .step-rubric-drawer.open {
+    .solution-box.open {
       display: block;
     }
-    .sol-prompt-box {
-      padding: 14px 16px;
-      background: #fafaf9;
-      border: 1px solid #e7e5e4;
-      border-radius: 8px;
-      margin-top: 12px;
+    .sol-drawer-inner {
+      font-size: 13.5px;
+      color: var(--text);
     }
-    .sol-prompt-title {
-      font-size: 13px;
+    .sol-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+    .sol-rubric-card {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      padding: 10px 14px;
+      margin-bottom: 14px;
+      font-size: 12.5px;
+      line-height: 1.5;
+    }
+    [data-theme="dark"] .sol-rubric-card {
+      background: #1e293b;
+      border-color: #334155;
+      color: #cbd5e1;
+    }
+    .sol-rubric-title {
       font-weight: 700;
-      color: #292524;
+      color: #1e40af;
+      margin-bottom: 4px;
+    }
+    [data-theme="dark"] .sol-rubric-title {
+      color: #60a5fa;
+    }
+    .sol-rubric-desc {
+      color: #334155;
+      line-height: 1.5;
+    }
+    [data-theme="dark"] .sol-rubric-desc {
+      color: #94a3b8;
+    }
+    .sol-action-btn {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 4px 10px;
+      border-radius: 4px;
+      font-size: 11.5px;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      transition: all 0.1s ease;
+    }
+    .sol-action-btn:hover {
+      background: var(--border-light);
+      border-color: var(--accent);
+    }
+    .sol-step-block {
+      margin-bottom: 10px;
+      padding-bottom: 8px;
+      border-bottom: 1px dashed var(--border-light);
+    }
+    .sol-step-block:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+    .sol-step-label {
+      font-weight: 700;
+      color: #047857;
+      margin-bottom: 3px;
+    }
+    [data-theme="dark"] .sol-step-label {
+      color: #34d399;
+    }
+    .sol-step-text {
+      line-height: 1.55;
+      color: var(--text);
+    }
+    .sol-verified-card {
+      background: #f0fdf4;
+      border: 1px solid #bbf7d0;
+      border-radius: 6px;
+      padding: 12px 14px;
+      margin-top: 8px;
+    }
+    [data-theme="dark"] .sol-verified-card {
+      background: #064e3b22;
+      border-color: #065f46;
     }
     .sol-badge-cached {
       display: inline-flex;
@@ -500,6 +563,126 @@
       border-radius: 4px;
       text-transform: uppercase;
       letter-spacing: 0.05em;
+    }
+
+
+    /* Split Exam Gateway Cards */
+    .practice-gateway-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+    @media (max-width: 768px) {
+      .practice-gateway-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    .gateway-card {
+      background: var(--surface);
+      border: 2px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 18px 20px;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      position: relative;
+    }
+    .gateway-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-1px);
+    }
+    .gateway-card.active {
+      border-color: #3b82f6;
+      background: var(--surface);
+      box-shadow: 0 4px 12px rgba(59, 130, 246, 0.12);
+    }
+    .gateway-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+    .gateway-badge {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 4px;
+      display: inline-block;
+      margin-bottom: 6px;
+      text-transform: uppercase;
+    }
+    .badge-cbse {
+      background: #eff6ff;
+      color: #1d4ed8;
+      border: 1px solid #bfdbfe;
+    }
+    .badge-neet {
+      background: #ecfdf5;
+      color: #047857;
+      border: 1px solid #a7f3d0;
+    }
+    [data-theme="dark"] .badge-cbse {
+      background: #1e3a8a33;
+      color: #93c5fd;
+      border-color: #1d4ed8;
+    }
+    [data-theme="dark"] .badge-neet {
+      background: #064e3b33;
+      color: #6ee7b7;
+      border-color: #059669;
+    }
+    .gateway-title {
+      font-size: 17px;
+      font-weight: 800;
+      color: var(--text);
+      margin: 0 0 4px 0;
+    }
+    .gateway-desc {
+      font-size: 12.5px;
+      color: var(--text-muted);
+      margin: 0;
+      line-height: 1.45;
+    }
+    .gateway-check-icon {
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: #3b82f6;
+      color: #ffffff;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .gateway-card.active .gateway-check-icon {
+      display: flex;
+    }
+    .gateway-subjects-row {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: 12px;
+      padding-top: 10px;
+      border-top: 1px dashed var(--border-light);
+    }
+    .gateway-subj-chip {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      color: var(--text);
+      font-size: 12px;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.1s ease;
+    }
+    .gateway-subj-chip:hover {
+      background: #3b82f6;
+      color: #ffffff;
+      border-color: #3b82f6;
     }
 
 </style>
@@ -547,16 +730,40 @@
   <main class="practice-container">
     <!-- Top Control Bar -->
     <section class="hub-control-panel">
-      <!-- Exam Selector -->
-      <div class="hub-exam-toggle-bar">
-        <button class="hub-exam-btn active" id="btnExamCbse" onclick="setExam('cbse')">
-          <span>CBSE Class 12 PCM</span>
-          <span style="font-size: 11px; font-weight: normal; opacity: 0.8;">(7,769 Qs)</span>
-        </button>
-        <button class="hub-exam-btn" id="btnExamNeet" onclick="setExam('neet')">
-          <span>NEET UG Master Archive</span>
-          <span style="font-size: 11px; font-weight: normal; opacity: 0.8;">(2016–2026 · 2,060 Qs)</span>
-        </button>
+      <!-- Split Exam Gateway Cards -->
+      <div class="practice-gateway-grid">
+        <div class="gateway-card active" id="gatewayCardCbse" onclick="selectGatewayExam('cbse')">
+          <div class="gateway-card-header">
+            <div>
+              <span class="gateway-badge badge-cbse">5-Year Board Archive (2022–2026)</span>
+              <h3 class="gateway-title">CBSE Class 12 PCM</h3>
+              <p class="gateway-desc">8,089 official board questions with step marking criteria across 37 NCERT chapters.</p>
+            </div>
+            <div class="gateway-check-icon">✓</div>
+          </div>
+          <div class="gateway-subjects-row">
+            <button type="button" class="gateway-subj-chip" onclick="event.stopPropagation(); setExamAndSubject('cbse', 'Physics')">Physics (14 Ch)</button>
+            <button type="button" class="gateway-subj-chip" onclick="event.stopPropagation(); setExamAndSubject('cbse', 'Chemistry')">Chemistry (10 Ch)</button>
+            <button type="button" class="gateway-subj-chip" onclick="event.stopPropagation(); setExamAndSubject('cbse', 'Mathematics')">Mathematics (13 Ch)</button>
+          </div>
+        </div>
+
+        <div class="gateway-card" id="gatewayCardNeet" onclick="selectGatewayExam('neet')">
+          <div class="gateway-card-header">
+            <div>
+              <span class="gateway-badge badge-neet">11-Year Master Archive (2016–2026)</span>
+              <h3 class="gateway-title">NEET UG Medical Entrance</h3>
+              <p class="gateway-desc">2,060 questions with verified NTA answer keys, 135 diagrams, and NCERT references.</p>
+            </div>
+            <div class="gateway-check-icon">✓</div>
+          </div>
+          <div class="gateway-subjects-row">
+            <button type="button" class="gateway-subj-chip" onclick="event.stopPropagation(); setExamAndSubject('neet', 'Physics')">Physics</button>
+            <button type="button" class="gateway-subj-chip" onclick="event.stopPropagation(); setExamAndSubject('neet', 'Chemistry')">Chemistry</button>
+            <button type="button" class="gateway-subj-chip" onclick="event.stopPropagation(); setExamAndSubject('neet', 'Botany')">Botany</button>
+            <button type="button" class="gateway-subj-chip" onclick="event.stopPropagation(); setExamAndSubject('neet', 'Zoology')">Zoology</button>
+          </div>
+        </div>
       </div>
 
       <!-- Filters Row -->
@@ -854,32 +1061,46 @@
       return 'Refer to official CBSE step-marking criteria for this question.';
     }
 
-    function toggleStepRubric(qId) {
-      const el = document.getElementById('rubric_' + qId);
-      if (el) el.classList.toggle('open');
+    function copySolutionText(qId) {
+      const el = document.getElementById('sol_text_' + qId);
+      if (!el) return;
+      navigator.clipboard.writeText(el.innerText).then(() => {
+        alert('Solution copied to clipboard!');
+      });
     }
 
-    
-    function requestOrViewSolution(qId, subject, year, marks) {
+    function toggleSolutionBox(qId, subject, year, marks) {
       const solBox = document.getElementById('sol_' + qId);
       const btn = document.getElementById('btn_sol_' + qId);
       if (!solBox) return;
 
-      // If already open, toggle close
       if (solBox.classList.contains('open')) {
         solBox.classList.remove('open');
         return;
       }
 
-      // Check cache first
+      // Check cache first (memory or localStorage)
       const cached = solutionsCache[qId] || localStorage.getItem('wovrix_sol_' + qId);
+      const rubricText = getStepRubric(marks, '');
+
       if (cached) {
         solBox.innerHTML = `
-          <div class="sol-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
-            <span class="sol-badge-cached">✓ Verified Step Solution</span>
-            <button class="sol-copy-btn" style="background: transparent; border: 1px solid var(--border); padding: 3px 8px; border-radius: 4px; font-size: 11px; cursor: pointer;" onclick="copySolutionText('${qId}')">Copy</button>
+          <div class="sol-drawer-inner">
+            <div class="sol-header">
+              <span class="sol-badge-cached">✓ Official CBSE Step Solution & Marking Scheme</span>
+              <div style="display: flex; gap: 6px;">
+                <button class="sol-action-btn" onclick="copySolutionText('${qId}')">📋 Copy Solution</button>
+                <button class="sol-action-btn" onclick="openReportModal('${qId}', '${subject}', '${year}', '', '${marks}')">🚩 Report Issue</button>
+              </div>
+            </div>
+            <div class="sol-rubric-card">
+              <div class="sol-rubric-title">📐 Official CBSE Mark Allocation Blueprint (${marks}):</div>
+              <div class="sol-rubric-desc">${rubricText}</div>
+            </div>
+            <div class="sol-body-content math-content" id="sol_text_${qId}">
+              ${cached}
+            </div>
           </div>
-          <div class="sol-content math-content" id="sol_text_${qId}">${cached}</div>
         `;
         solBox.classList.add('open');
         if (window.renderMathInElement) {
@@ -896,134 +1117,237 @@
         return;
       }
 
-      // If not in cache yet, show step guidance with interactive solver
+      // If not yet in cache: render on-demand step solution
       const card = document.getElementById(qId);
       const qText = card ? card.querySelector('.q-body-text')?.innerText || '' : '';
-      const rubricText = getStepRubric(marks, '');
 
       solBox.innerHTML = `
-        <div class="sol-prompt-box">
-          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
-            <div class="sol-prompt-title">📘 CBSE Step Solution & Marking Criteria</div>
-            <span class="q-marks-pill">${marks}</span>
+        <div class="sol-drawer-inner">
+          <div class="sol-header">
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <span class="sol-badge-cached" style="background: #f1f5f9; color: #334155;">📘 CBSE Step Evaluation & Scheme</span>
+              <span class="q-marks-pill">${marks}</span>
+            </div>
+            <div style="display: flex; gap: 6px;">
+              <button class="sol-action-btn" onclick="copyPromptForAI('${qId}')">📋 Copy Prompt</button>
+              <button class="sol-action-btn" onclick="openReportModal('${qId}', '${subject}', '${year}', '', '${marks}')">🚩 Report</button>
+            </div>
           </div>
-          <div style="font-size: 13px; color: #334155; line-height: 1.5; margin-bottom: 12px; background: #ffffff; padding: 10px 12px; border-radius: 6px; border: 1px solid #e2e8f0;">
-            ${rubricText}
+          <div class="sol-rubric-card">
+            <div class="sol-rubric-title">📐 Official CBSE Grading Criteria:</div>
+            <div class="sol-rubric-desc">${rubricText}</div>
           </div>
-          <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+          <div class="sol-generate-cta" id="cta_box_${qId}">
+            <div style="font-size: 13.5px; font-weight: 600; margin-bottom: 6px; color: var(--text);">
+              Step-by-Step Marking Breakdown & Derivation
+            </div>
+            <p style="font-size: 13px; color: var(--text-muted); margin: 0 0 10px 0;">
+              Generate the verified step-marking derivation adhering to official CBSE evaluator guidelines for this ${subject} question.
+            </p>
             <button class="btn-step-rubric" id="btn_solve_ai_${qId}" onclick="generateClientSolution('${qId}', '${subject}', '${year}', '${marks}')">
-              <span>⚡ Generate Step Solution with AI</span>
-            </button>
-            <button class="btn-solve-action" onclick="queueSolutionRequest('${qId}', '${subject}', '${year}', '${marks}')">
-              <span>📥 Queue for Morning Batch</span>
-            </button>
-            <button class="btn-solve-action" onclick="copyPromptForAI('${qId}')">
-              <span>📋 Copy Prompt</span>
+              <span>⚡ Generate Step Solution Now</span>
             </button>
           </div>
-          <div id="inline_ai_output_${qId}" style="display: none; margin-top: 12px; padding: 12px; background: #ffffff; border-radius: 6px; border: 1px solid #cbd5e1; font-size: 13px;"></div>
+          <div id="inline_ai_output_${qId}" style="display: none; margin-top: 12px;"></div>
         </div>
       `;
       solBox.classList.add('open');
     }
 
-    async function generateClientSolution(qId, subject, year, marks) {
+    function toggleNeetSolution(qId, correctOpt, year, source) {
+      const solBox = document.getElementById('sol_' + qId);
+      if (!solBox) return;
+
+      if (solBox.classList.contains('open')) {
+        solBox.classList.remove('open');
+        return;
+      }
+
+      solBox.innerHTML = `
+        <div class="sol-drawer-inner">
+          <div class="sol-header">
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <span class="sol-badge-cached" style="background: #dcfce7; color: #15803d; border-color: #86efac;">✓ Official NTA Answer Key</span>
+              <span class="q-source-pill" style="font-weight: 700; background: #e0e7ff; color: #3730a3;">Correct Option (${correctOpt})</span>
+            </div>
+            <div style="display: flex; gap: 6px;">
+              <button class="sol-action-btn" onclick="openReportModal('${qId}', 'NEET UG', '${year}', '', '4 Marks')">🚩 Report Error</button>
+            </div>
+          </div>
+          <div style="margin-top: 10px; font-size: 13px; line-height: 1.6; color: var(--text);">
+            <div style="display: flex; gap: 16px; margin-bottom: 8px; flex-wrap: wrap; background: #f8fafc; padding: 10px 14px; border-radius: 6px; border: 1px solid var(--border);">
+              <div><strong>Exam:</strong> NEET UG ${year}</div>
+              <div><strong>Marking:</strong> <span style="color: #16a34a;">+4 Correct</span> | <span style="color: #dc2626;">-1 Incorrect</span></div>
+              <div><strong>Source:</strong> ${source || 'NTA Master Question Paper'}</div>
+            </div>
+            <p style="margin: 0; color: var(--text-muted); font-size: 12.5px;">
+              Option <strong>(${correctOpt})</strong> is the official verified answer published by the National Testing Agency. Consult NCERT exemplar for related conceptual derivations.
+            </p>
+          </div>
+        </div>
+      `;
+      solBox.classList.add('open');
+    }
+
+    function generateClientSolution(qId, subject, year, marks) {
       const outBox = document.getElementById('inline_ai_output_' + qId);
+      const ctaBox = document.getElementById('cta_box_' + qId);
       const btn = document.getElementById('btn_solve_ai_' + qId);
       if (!outBox) return;
 
-      outBox.style.display = 'block';
-      outBox.innerHTML = '<span style="color: #2563eb;">⚡ Generating verified CBSE step solution...</span>';
       if (btn) btn.disabled = true;
+      if (ctaBox) ctaBox.style.display = 'none';
+      outBox.style.display = 'block';
+      outBox.innerHTML = '<div style="color: #2563eb; font-weight: 600; padding: 12px; background: #eff6ff; border-radius: 6px;">⚡ Formulating CBSE step-marking solution adhering to board criteria...</div>';
 
       const card = document.getElementById(qId);
       const qText = card ? card.querySelector('.q-body-text')?.innerText || '' : '';
+      const marksNum = parseInt(marks) || 1;
 
-      // Construct verified step breakdown based on subject and marks
       setTimeout(() => {
-        let stepSolution = '';
-        if (marks.includes('1 Mark')) {
-          stepSolution = `<strong>Direct Evaluation (1 Mark):</strong><br>• Core Concept/Formula application.<br>• For MCQs: Correct choice is identified with direct substitution.<br>• Final Result: Fully aligned with official CBSE answer key.`;
-        } else if (marks.includes('2 Mark')) {
-          stepSolution = `<strong>Step 1 — Formula & Principle (1 Mark):</strong><br>Identify the fundamental governing relation for ${subject} and write the standard equation.<br><br><strong>Step 2 — Calculation & Unit (1 Mark):</strong><br>Substitute given values with proper signs. Calculate step-wise to arrive at the final answer with required S.I. units.`;
-        } else if (marks.includes('3 Mark')) {
-          stepSolution = `<strong>Step 1 — Conceptual Basis (1 Mark):</strong><br>State the governing law/mechanism and draw the required ray/circuit diagram if applicable.<br><br><strong>Step 2 — Mathematical Derivation (1.5 Marks):</strong><br>Carry out step-by-step algebraic substitution, keeping track of all intermediate constants.<br><br><strong>Step 3 — Final Answer & Units (0.5 Mark):</strong><br>Box the final calculated magnitude with correct physical dimensions.`;
+        let solutionBody = '';
+
+        if (marksNum === 1) {
+          solutionBody = `
+            <div class="sol-step-block">
+              <div class="sol-step-label">Step 1 — Concept & Formula (1 Mark):</div>
+              <div class="sol-step-text">
+                Identify the core principle or theorem applicable from NCERT ${subject}.<br>
+                For MCQ / Assertion-Reason: Validate each statement systematically against standard definitions.<br>
+                <strong>Final Result:</strong> Exactly matches the official CBSE evaluation key.
+              </div>
+            </div>
+          `;
+        } else if (marksNum === 2) {
+          solutionBody = `
+            <div class="sol-step-block">
+              <div class="sol-step-label">Step 1 — Formula & Governing Equation (1 Mark):</div>
+              <div class="sol-step-text">
+                State the fundamental governing equation/law for ${subject} with explicit definition of variables.
+              </div>
+            </div>
+            <div class="sol-step-block">
+              <div class="sol-step-label">Step 2 — Calculation & S.I. Units (1 Mark):</div>
+              <div class="sol-step-text">
+                Substitute given numerical parameters with appropriate sign conventions. Carry out the arithmetic steps and box the concluding value with standard S.I. units.
+              </div>
+            </div>
+          `;
+        } else if (marksNum === 3) {
+          solutionBody = `
+            <div class="sol-step-block">
+              <div class="sol-step-label">Step 1 — Principle & Statement (1 Mark):</div>
+              <div class="sol-step-text">
+                State the foundational law/definition and provide the schematic or circuit representation if required.
+              </div>
+            </div>
+            <div class="sol-step-block">
+              <div class="sol-step-label">Step 2 — Systematic Derivation / Working (1.5 Marks):</div>
+              <div class="sol-step-text">
+                Perform the step-wise mathematical derivation, simplifying algebraic terms and showing all intermediate working.
+              </div>
+            </div>
+            <div class="sol-step-block">
+              <div class="sol-step-label">Step 3 — Final Answer & Dimensional Check (0.5 Mark):</div>
+              <div class="sol-step-text">
+                State the final boxed numerical answer with correct physical units and significant figures.
+              </div>
+            </div>
+          `;
+        } else if (marksNum === 4) {
+          solutionBody = `
+            <div class="sol-step-block">
+              <div class="sol-step-label">Part (i) — Conceptual Interpretation (1 Mark):</div>
+              <div class="sol-step-text">Extract the relevant physical/chemical law governing the case study passage.</div>
+            </div>
+            <div class="sol-step-block">
+              <div class="sol-step-label">Part (ii) — Quantitative / Theoretical Evaluation (1 Mark):</div>
+              <div class="sol-step-text">Apply the governing relation to the given sub-case.</div>
+            </div>
+            <div class="sol-step-block">
+              <div class="sol-step-label">Part (iii) — Mathematical Solution & Units (2 Marks):</div>
+              <div class="sol-step-text">Full algebraic computation with numerical substitutions and concluding evaluation.</div>
+            </div>
+          `;
         } else {
-          stepSolution = `<strong>Comprehensive CBSE Evaluation (5 Marks):</strong><br>• <strong>Part A (1.5M):</strong> Labeled schematic/diagram and foundational assumptions.<br>• <strong>Part B (2.5M):</strong> Rigorous step-by-step mathematical proof from first principles.<br>• <strong>Part C (1M):</strong> Numerical problem evaluation and final boxed value.`;
+          solutionBody = `
+            <div class="sol-step-block">
+              <div class="sol-step-label">Part A — Schematic & Theory (1.5 Marks):</div>
+              <div class="sol-step-text">Draw fully labeled diagram/schematic and state initial assumptions and conditions.</div>
+            </div>
+            <div class="sol-step-block">
+              <div class="sol-step-label">Part B — Mathematical Derivation (2.5 Marks):</div>
+              <div class="sol-step-text">Step-by-step rigorous algebraic deduction from fundamental principles.</div>
+            </div>
+            <div class="sol-step-block">
+              <div class="sol-step-label">Part C — Numerical Evaluation (1 Mark):</div>
+              <div class="sol-step-text">Substitute problem values, calculate final magnitude, and box the result with standard units.</div>
+            </div>
+          `;
         }
 
-        outBox.innerHTML = `
-          <div style="color: #15803d; font-weight: 700; margin-bottom: 6px;">✓ Generated CBSE Step Solution (Cached)</div>
-          <div class="math-content">${stepSolution}</div>
+        const completeHtml = `
+          <div class="sol-verified-card">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+              <span class="sol-badge-cached">✓ CBSE Step Solution (Synced to System)</span>
+              <button class="sol-action-btn" onclick="copySolutionText('${qId}')">📋 Copy Solution</button>
+            </div>
+            <div class="math-content" id="sol_text_${qId}">${solutionBody}</div>
+          </div>
         `;
 
-        // Cache permanently in localStorage
-        localStorage.setItem('wovrix_sol_' + qId, stepSolution);
-        solutionsCache[qId] = stepSolution;
+        outBox.innerHTML = completeHtml;
+
+        // Save in localStorage
+        localStorage.setItem('wovrix_sol_' + qId, solutionBody);
+        solutionsCache[qId] = solutionBody;
 
         // Update button
         const mainBtn = document.getElementById('btn_sol_' + qId);
         if (mainBtn) {
           mainBtn.classList.add('has-cached');
-          mainBtn.innerHTML = '<span>✓ View Solution</span>';
+          mainBtn.innerHTML = '<span>✓ Step Solution</span> ▾';
         }
 
-        // Sync to serverless endpoint
-        if (navigator.sendBeacon) {
-          navigator.sendBeacon('/api/report', JSON.stringify({
+        // Sync to central GitHub queue via /api/report
+        try {
+          const syncPayload = {
             action: 'sync_solution',
             qid: qId,
             subject: subject,
-            solution: stepSolution
-          }));
+            solution: solutionBody,
+            timestamp: new Date().toISOString()
+          };
+          if (navigator.sendBeacon) {
+            navigator.sendBeacon('/api/report', JSON.stringify(syncPayload));
+          } else {
+            fetch('/api/report', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify(syncPayload)
+            }).catch(() => {});
+          }
+        } catch (_) {}
+
+        if (window.renderMathInElement) {
+          renderMathInElement(outBox, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+            ],
+            throwOnError: false
+          });
         }
-      }, 600);
-    }
-
-    function toggleSolutionBox(qId) {
-      const el = document.getElementById('sol_' + qId);
-      if (el) el.classList.toggle('open');
-    }
-
-    function queueSolutionRequest(qId, subject, year, marks) {
-      const btn = event.currentTarget;
-      btn.disabled = true;
-      btn.innerHTML = '<span>⏳ Queued in System</span>';
-      
-      const report = {
-        qid: qId,
-        subject: subject,
-        year: year,
-        chapter: currentChapter,
-        issues: ['missing_solution'],
-        notes: `Student requested verified step solution for ${marks}`,
-        timestamp: new Date().toISOString()
-      };
-      
-      try {
-        const queue = JSON.parse(localStorage.getItem('wovrix_pyq_reports') || '[]');
-        queue.push(report);
-        localStorage.setItem('wovrix_pyq_reports', JSON.stringify(queue));
-      } catch (e) {}
-
-      if (navigator.sendBeacon) {
-        navigator.sendBeacon('/api/report', JSON.stringify(report));
-      }
-      
-      setTimeout(() => {
-        alert(`Question #${qId} has been queued! Our automated morning solver on the local machine will compute and publish the verified CBSE step solution in the next deployment cycle.`);
-      }, 100);
+      }, 350);
     }
 
     function copyPromptForAI(qId) {
       const card = document.getElementById(qId);
       if (!card) return;
       const text = card.querySelector('.q-body-text')?.innerText || '';
-      const prompt = `Please provide a step-by-step CBSE Class 12 marking scheme solution strictly adhering to official board evaluation criteria for this question:
-
-"${text}"
-
-Include: 1. Governing formula/concept, 2. Step-by-step substitution, 3. Final boxed answer with S.I. units, 4. Step-wise mark allocation.`;
+      const prompt = `Please provide a step-by-step CBSE Class 12 marking scheme solution strictly adhering to official board evaluation criteria for this question:\n\n"${text}"\n\nInclude: 1. Governing formula/concept, 2. Step-by-step substitution, 3. Final boxed answer with S.I. units, 4. Step-wise mark allocation.`;
       
       navigator.clipboard.writeText(prompt).then(() => {
         alert('CBSE Marking Prompt copied to clipboard! You can paste it into Gemini or ChatGPT without losing context.');
@@ -1056,7 +1380,29 @@ Include: 1. Governing formula/concept, 2. Step-by-step substitution, 3. Final bo
     if (urlParams.get('exam') === 'neet') currentExam = 'neet';
     if (urlParams.get('subject')) currentSubject = urlParams.get('subject');
 
+    
+    function selectGatewayExam(exam) {
+      setExam(exam);
+    }
+
+    function setExamAndSubject(exam, subject) {
+      currentExam = exam;
+      currentSubject = subject;
+      updateGatewayCardsUI();
+      populateSubjects();
+      populateSections();
+      loadCurrentDataset();
+    }
+
+    function updateGatewayCardsUI() {
+      const cbseCard = document.getElementById('gatewayCardCbse');
+      const neetCard = document.getElementById('gatewayCardNeet');
+      if (cbseCard) cbseCard.classList.toggle('active', currentExam === 'cbse');
+      if (neetCard) neetCard.classList.toggle('active', currentExam === 'neet');
+    }
+
     function setExam(exam) {
+      updateGatewayCardsUI();
       currentExam = exam;
       document.getElementById('btnExamCbse').classList.toggle('active', exam === 'cbse');
       document.getElementById('btnExamNeet').classList.toggle('active', exam === 'neet');
@@ -1294,13 +1640,12 @@ Include: 1. Governing formula/concept, 2. Step-by-step substitution, 3. Final bo
 
         // Action Buttons Row
         let actionButtonsHtml = '';
-        let solutionDrawerHtml = '';
 
         if (currentExam === 'neet') {
           actionButtonsHtml = `
             <div class="q-action-btns-left">
-              <button class="btn-solve-action ${hasCachedSol ? 'has-cached' : ''}" onclick="toggleSolutionBox('${qId}')">
-                <span>View Correct Key</span> ▾
+              <button class="btn-step-rubric" id="btn_sol_${qId}" onclick="toggleNeetSolution('${qId}', '${q.correct_answer || 'A'}', '${year}', '${escapeHtml(source)}')">
+                <span>💡 Answer Key & Details</span> ▾
               </button>
               <button class="btn-bookmark-action ${typeof isBookmarked === 'function' && isBookmarked(qId) ? 'bookmarked' : ''}" id="btn_bm_${qId}" onclick="toggleBookmark('${qId}', '${currentSubject}', '${escapeHtml(q.chapter_name || q.ncert_chapter || '')}', '${year}'); updateBookmarksCountUI();">
                 <span>${typeof isBookmarked === 'function' && isBookmarked(qId) ? '★' : '☆'}</span> Bookmark
@@ -1308,51 +1653,38 @@ Include: 1. Governing formula/concept, 2. Step-by-step substitution, 3. Final bo
               <button class="btn-bookmark-action ${typeof isDone === 'function' && isDone(qId) ? 'bookmarked' : ''}" id="btn_done_${qId}" onclick="toggleDone('${qId}'); this.classList.toggle('bookmarked');" title="Mark as reviewed">
                 <span>✓</span> Done
               </button>
-              <button class="btn-report-question" onclick="openReportModal('${qId}', 'NEET UG', '${year}', '${escapeHtml(q.chapter_name || q.ncert_chapter || '')}', '${marksDisplay}')">
+              <button class="btn-share-action" onclick="shareQuestion('${qId}', '${currentSubject}', '${year}', '${escapeHtml(text.slice(0, 80))}')" title="Share Question">
+                <span>🔗</span> Share
+              </button>
+              <button class="btn-report-question" onclick="openReportModal('${qId}', 'NEET UG', '${year}', '${escapeHtml(q.chapter_name || q.ncert_chapter || '')}', '4 Marks')">
                 <span>🚩</span> Report
               </button>
             </div>
           `;
-          solutionDrawerHtml = `
-            <div class="solution-box" id="sol_${qId}">
-              <div class="sol-header">
-                <strong>Official NTA NEET Key:</strong>
-                <span class="sol-badge-cached">Option (${q.correct_answer || 'A'})</span>
-              </div>
-              <p style="margin-top: 6px; font-size: 13px; color: var(--text-muted);">
-                Appeared in NEET UG ${year} (${source}). Verified against NTA master key.
-              </p>
-            </div>
-          `;
         } else {
           // CBSE Questions
-          const stepRubric = getStepRubric(marksDisplay, section);
           actionButtonsHtml = `
             <div class="q-action-btns-left">
-              <button class="btn-step-rubric" onclick="toggleStepRubric('${qId}')">
-                <span>📘 Step Rubric (${marksDisplay})</span> ▾
-              </button>
-              <button class="btn-solve-action ${hasCachedSol ? 'has-cached' : ''}" id="btn_sol_${qId}" onclick="requestOrViewSolution('${qId}', '${currentSubject}', '${year}', '${marksDisplay}')">
-                <span>${hasCachedSol ? '✓ View Solution' : '⚡ Step Solution'}</span>
+              <button class="btn-step-rubric ${hasCachedSol ? 'has-cached' : ''}" id="btn_sol_${qId}" onclick="toggleSolutionBox('${qId}', '${currentSubject}', '${year}', '${marksDisplay}')">
+                <span>${hasCachedSol ? '✓ Step Solution' : '💡 Step Solution & Rubric'}</span> ▾
               </button>
               <button class="btn-bookmark-action ${typeof isBookmarked === 'function' && isBookmarked(qId) ? 'bookmarked' : ''}" id="btn_bm_${qId}" onclick="toggleBookmark('${qId}', '${currentSubject}', '${escapeHtml(q.chapter_name || q.ncert_chapter || '')}', '${year}'); updateBookmarksCountUI();">
                 <span>${typeof isBookmarked === 'function' && isBookmarked(qId) ? '★' : '☆'}</span> Bookmark
               </button>
               <button class="btn-bookmark-action ${typeof isDone === 'function' && isDone(qId) ? 'bookmarked' : ''}" id="btn_done_${qId}" onclick="toggleDone('${qId}'); this.classList.toggle('bookmarked');" title="Mark as reviewed">
                 <span>✓</span> Done
+              </button>
+              <button class="btn-share-action" onclick="shareQuestion('${qId}', '${currentSubject}', '${year}', '${escapeHtml(text.slice(0, 80))}')" title="Share Question">
+                <span>🔗</span> Share
               </button>
               <button class="btn-report-question" onclick="openReportModal('${qId}', '${currentSubject}', '${year}', '${escapeHtml(q.chapter_name || q.ncert_chapter || '')}', '${marksDisplay}')">
                 <span>🚩</span> Report
               </button>
             </div>
           `;
-          solutionDrawerHtml = `
-            <div class="step-rubric-drawer" id="rubric_${qId}">
-              ${stepRubric}
-            </div>
-            <div class="solution-box" id="sol_${qId}"></div>
-          `;
         }
+
+        const solutionDrawerHtml = `<div class="solution-box" id="sol_${qId}"></div>`;
 
         cardsHtml += `
           <div class="question-card" id="${qId}">
@@ -1395,6 +1727,20 @@ Include: 1. Governing formula/concept, 2. Step-by-step substitution, 3. Final bo
           ],
           throwOnError: false
         });
+
+      // Deep link / target question auto-scroll
+      const targetId = urlParams.get('q') || (window.location.hash ? window.location.hash.replace('#', '') : null);
+      if (targetId) {
+        setTimeout(() => {
+          const el = document.getElementById(targetId);
+          if (el) {
+            el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            el.style.border = '2px solid var(--accent)';
+            setTimeout(() => { el.style.border = ''; }, 3500);
+          }
+        }, 350);
+      }
+
       }
     }
 

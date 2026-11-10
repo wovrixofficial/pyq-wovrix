@@ -3,61 +3,129 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CBSE Class 12 Most Repeated Questions Bank (2022–2026) | PYQ Wovrix</title>
-  <meta name="description" content="Verified high-yield repeat questions and frequent parallel set clones from CBSE Class 12 Physics, Chemistry, and Mathematics board papers.">
+  <title>Most Repeated Questions Bank (CBSE & NEET) | PYQ Wovrix</title>
+  <meta name="description" content="Proprietary repetition frequency intelligence for CBSE Class 12 and NEET UG. Filter recurring questions by repetition count with our dynamic frequency slider.">
   <link rel="canonical" href="https://pyq.wovrix.in/repeated/">
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="stylesheet" href="/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;600;700&display=swap">
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body, {delimiters: [{left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}, {left: '\\(', right: '\\)', display: false}, {left: '\\[', right: '\\]', display: true}], throwOnError: false});"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
   <style>
-    .filter-tabs {
+    .repeats-container {
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+    .slider-control-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 20px 24px;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow-card);
+    }
+    .slider-header-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+    .slider-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .slider-count-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      color: #1d4ed8;
+      font-size: 13px;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: 9999px;
+    }
+    [data-theme="dark"] .slider-count-badge {
+      background: #1e3a8a33;
+      border-color: #1d4ed8;
+      color: #93c5fd;
+    }
+    .frequency-slider {
+      width: 100%;
+      height: 8px;
+      border-radius: 4px;
+      background: #e2e8f0;
+      outline: none;
+      cursor: pointer;
+      accent-color: var(--accent);
+    }
+    [data-theme="dark"] .frequency-slider {
+      background: #374151;
+    }
+    .slider-ticks {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 6px;
+      font-size: 12px;
+      color: var(--text-muted);
+      font-family: var(--font-mono);
+    }
+    .exam-nav-tabs {
       display: flex;
       gap: 10px;
-      margin-bottom: 24px;
+      margin-bottom: 16px;
       flex-wrap: wrap;
     }
-    .filter-btn {
-      font-family: var(--font-mono);
-      font-size: 0.84rem;
-      font-weight: 700;
-      padding: 8px 16px;
+    .exam-nav-btn {
+      padding: 8px 18px;
       border-radius: 8px;
       border: 1px solid var(--border);
       background: var(--surface);
-      color: var(--text-muted);
+      color: var(--text);
+      font-size: 13.5px;
+      font-weight: 700;
       cursor: pointer;
       transition: all 0.15s ease;
     }
-    .filter-btn.active {
+    .exam-nav-btn.active {
       background: #18181b;
       color: #ffffff;
       border-color: #18181b;
     }
-    .view-switcher {
+    [data-theme="dark"] .exam-nav-btn.active {
+      background: #3b82f6;
+      border-color: #3b82f6;
+      color: #ffffff;
+    }
+    .subj-filter-pills {
       display: flex;
-      gap: 12px;
+      gap: 8px;
+      flex-wrap: wrap;
       margin-bottom: 24px;
-      border-bottom: 1px solid var(--border);
-      padding-bottom: 12px;
     }
-    .view-tab {
-      font-family: var(--font-sans);
-      font-size: 1rem;
-      font-weight: 700;
-      padding: 8px 16px;
-      border-radius: 8px;
-      background: none;
-      border: none;
+    .subj-pill {
+      padding: 6px 14px;
+      border-radius: 9999px;
+      border: 1px solid var(--border);
+      background: var(--surface);
       color: var(--text-muted);
+      font-size: 12.5px;
+      font-weight: 600;
       cursor: pointer;
+      transition: all 0.12s ease;
     }
-    .view-tab.active {
-      color: var(--text);
-      background: rgba(0,0,0,0.05);
+    .subj-pill.active {
+      background: var(--surface-alt);
+      border-color: var(--accent);
+      color: var(--accent);
     }
   </style>
   <link rel="stylesheet" href="/report-modal.css">
@@ -75,1670 +143,297 @@
       </a>
       <nav class="nav-links">
         <a href="/#cbse-section" class="nav-link">CBSE 12 PCM</a>
-        <a href="/#neet-section" class="nav-link">NEET UG Archive</a>
-        <a href="/repeated/" class="nav-link">★ Repeated Qs</a>
+        <a href="/practice/?exam=neet" class="nav-link">NEET UG Archive</a>
+        <a href="/repeated/" class="nav-link active">★ Repeated Qs</a>
         <a href="/practice/" class="nav-link">Practice Hub</a>
         <a href="/paper-maker/" class="nav-link">Paper Maker</a>
-        <a href="/practice/?exam=neet" class="nav-cta-pill">Launch NEET Portal ➔</a>
+        <button id="themeToggleBtn" class="btn-theme-toggle" onclick="toggleTheme()" aria-label="Toggle Dark Mode" title="Toggle Dark/Light Mode">
+          <span class="theme-icon-light">☀️</span>
+          <span class="theme-icon-dark">🌙</span>
+        </button>
       </nav>
     </div>
   </header>
 
-  <main class="page-container">
+  <main class="repeats-container">
     <nav class="breadcrumbs">
-      <a href="/">Home</a> / <a href="/#cbse-section">CBSE Class 12</a> / <span>Most Repeated Questions</span>
+      <a href="/">Home</a> / <span>Most Repeated Questions</span>
     </nav>
 
-    <div class="chapter-header-box">
-      <span class="sub-label">FREQUENCY INTELLIGENCE • 2022–2026 ARCHIVE</span>
-      <h1 class="chapter-title">CBSE Class 12 High-Yield Repeat Bank</h1>
+    <div class="chapter-header-box" style="margin-top: 14px;">
+      <span class="sub-label">FREQUENCY RADAR • PROPRIETARY EXTRACTION</span>
+      <h1 class="chapter-title">High-Yield Repeated Questions Bank</h1>
       <p class="chapter-desc">
-        Questions that appeared across multiple examination years or across 3 to 6 parallel board sets. Filtered directly from 10,279 raw paper entries to eliminate duplicate noise.
+        Comprehensive pattern intelligence scanning over 12,000 official CBSE (2022–2026) and NEET UG (2016–2026) problems. Filter by minimum repeat frequency to identify high-probability exam concepts.
       </p>
     </div>
 
-    <div class="view-switcher">
-      <button class="view-tab active" id="tab-btn-multi" onclick="switchView('multi')">
-        ★ Multi-Year Repeats (19)
+    <!-- Exam Selector -->
+    <div class="exam-nav-tabs">
+      <button class="exam-nav-btn active" id="btnExamCbse" onclick="setRepeatsExam('cbse')">
+        CBSE Class 12 (5-Year Sets)
       </button>
-      <button class="view-tab" id="tab-btn-freq" onclick="switchView('freq')">
-        High-Frequency Set Clones (150)
+      <button class="exam-nav-btn" id="btnExamNeet" onclick="setRepeatsExam('neet')">
+        NEET UG (11-Year Master Papers)
       </button>
     </div>
 
-    <div class="filter-tabs">
-      <button class="filter-btn active" onclick="filterSubject('all')">All Subjects</button>
-      <button class="filter-btn" onclick="filterSubject('Physics')">Physics</button>
-      <button class="filter-btn" onclick="filterSubject('Chemistry')">Chemistry</button>
-      <button class="filter-btn" onclick="filterSubject('Mathematics')">Mathematics</button>
+    <!-- Subject Filters -->
+    <div class="subj-filter-pills" id="subjectFilterContainer"></div>
+
+    <!-- User-Requested Repetition Frequency Slider -->
+    <div class="slider-control-card">
+      <div class="slider-header-row">
+        <div class="slider-title">
+          <span>🔁 Repetition Frequency Filter:</span>
+          <span style="font-size: 14px; color: var(--text-muted); font-weight: 500;">
+            Minimum <strong id="sliderValueText" style="color: var(--accent);">2x</strong> appearances
+          </span>
+        </div>
+        <div class="slider-count-badge" id="repeatsMatchedBadge">
+          Scanning repeat patterns...
+        </div>
+      </div>
+      <input 
+        type="range" 
+        id="repeatFrequencySlider" 
+        class="frequency-slider" 
+        min="2" 
+        max="6" 
+        value="2" 
+        step="1" 
+        oninput="onSliderChange(this.value)"
+      >
+      <div class="slider-ticks" id="sliderTicksContainer">
+        <span>2x (Duplicates & Clones)</span>
+        <span>3x (High Yield)</span>
+        <span>4x (Recurring Pattern)</span>
+        <span>5x+ (Core Master Repeats)</span>
+      </div>
     </div>
 
-    <div id="view-multi" class="question-list">
-      
-        <article class="question-card" data-subject="Mathematics">
-          <div class="card-meta">
-            <span class="tag tag-marks">1 Marks</span>
-            <span class="tag tag-primary">Mathematics</span>
-            <span class="repeat-pill repeat-pill-gold">★ Multi-Year Repeat: 2025, 2026 (6 sets)</span>
-            <span class="repeat-pill">Relations and Functions</span>
-          </div>
-          <div class="question-text math-content">
-            Questions number 19 and 20 are Assertion and Reason based questions. Two statements are given, one labelled Assertion (A) and the other labelled Reason (R). Select the correct answer from the codes (A), (B), (C) and (D) as given below.
-(A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of the Assertion (A).
-(B) Both Assertion (A) and Reason (R) are true, but Reason (R) is not the correct explanation of the Assertion (A).
-(C) Assertion (A) is true, but Reason (R) is false.
-(D) Assertion (A) is false, but Reason (R) is true.
-
-Assertion (A) : A relation $R$ on the set $\{1, 2, 3\}$ defined as $R = \{(1, 1), (1, 2), (2, 1), (2, 2), (3, 3)\}$ is an equivalence relation.
-Reason (R) : A relation that is reflexive, symmetric and transitive is an equivalence relation.
-          </div>
-          <div class="card-action">
-            <a href="/practice/?q=1719#card_1719" class="card-link">Practice in Hub ➔</a>
-            <a href="/cbse-12/mathematics/" class="card-link-subtle">View Chapter Hub</a>
-            <a href="mailto:contact@wovrix.in?subject=Report%20Question%201719" class="report-link-small">Report</a>
-            <button class="btn-report-question" onclick="openReportModal('detail', 'CBSE', '2026', '')"><span>🚩</span> Report</button>
-</div>
-        </article>
-        <article class="question-card" data-subject="Chemistry">
-          <div class="card-meta">
-            <span class="tag tag-marks">5 Marks</span>
-            <span class="tag tag-primary">Chemistry</span>
-            <span class="repeat-pill repeat-pill-gold">★ Multi-Year Repeat: 2023, 2025 (4 sets)</span>
-            <span class="repeat-pill">Aldehydes, Ketones and Carboxylic Acids</span>
-          </div>
-          <div class="question-text math-content">
-            (a) (i) An organic compound (X) having molecular formula $\text{C}_5\text{H}_{10}\text{O}$ can show various properties depending on its structures. Draw each of the structures if it :
-(I) shows Cannizzaro reaction.  (1)
-(II) reduces Tollens' reagent and has a chiral carbon.  (1)
-(III) gives positive iodoform test.  (1)
-(ii) Write the reaction involved in the following :  (2)
-(I) Clemmensen reduction
-(II) Etard reaction
-          </div>
-          <div class="card-action">
-            <a href="/practice/?q=3161#card_3161" class="card-link">Practice in Hub ➔</a>
-            <a href="/cbse-12/chemistry/" class="card-link-subtle">View Chapter Hub</a>
-            <a href="mailto:contact@wovrix.in?subject=Report%20Question%203161" class="report-link-small">Report</a>
-            <button class="btn-report-question" onclick="openReportModal('detail', 'CBSE', '2026', '')"><span>🚩</span> Report</button>
-</div>
-        </article>
-        <article class="question-card" data-subject="Chemistry">
-          <div class="card-meta">
-            <span class="tag tag-marks">1 Marks</span>
-            <span class="tag tag-primary">Chemistry</span>
-            <span class="repeat-pill repeat-pill-gold">★ Multi-Year Repeat: 2025, 2026 (3 sets)</span>
-            <span class="repeat-pill">Unclassified</span>
-          </div>
-          <div class="question-text math-content">
-            For questions number 13 to 16, two statements are given — one labelled as Assertion (A) and the other labelled as Reason (R). Select the correct answer to these questions from the codes (A), (B), (C) and (D) as given below :
-(A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of the Assertion (A).
-(B) Both Assertion (A) and Reason (R) are true, but Reason (R) is not the correct explanation of the Assertion (A).
-(C) Assertion (A) is true, but Reason (R) is false.
-(D) Assertion (A) is false, but Reason (R) is true.
-
-Assertion (A) : The presence of $-\text{OH}$ group in phenols directs the incoming group to ortho and para positions.
-Reason (R) : $-\text{OH}$ group in phenols activates the aromatic ring towards electrophilic substitution reaction.
-          </div>
-          <div class="card-action">
-            <a href="/practice/?q=132#card_132" class="card-link">Practice in Hub ➔</a>
-            <a href="/cbse-12/chemistry/" class="card-link-subtle">View Chapter Hub</a>
-            <a href="mailto:contact@wovrix.in?subject=Report%20Question%20132" class="report-link-small">Report</a>
-            <button class="btn-report-question" onclick="openReportModal('detail', 'CBSE', '2026', '')"><span>🚩</span> Report</button>
-</div>
-        </article>
-        <article class="question-card" data-subject="Chemistry">
-          <div class="card-meta">
-            <span class="tag tag-marks">3 Marks</span>
-            <span class="tag tag-primary">Chemistry</span>
-            <span class="repeat-pill repeat-pill-gold">★ Multi-Year Repeat: 2025, 2026 (3 sets)</span>
-            <span class="repeat-pill">Coordination Compounds</span>
-          </div>
-          <div class="question-text math-content">
-            (a) When a coordination compound $	ext{CoCl}_3 \cdot 6	ext{NH}_3$ is mixed with excess of $	ext{AgNO}_3$ solution, $3$ moles of $	ext{AgCl}$ are precipitated per mole of the compound. Write the structural formula of the complex, IUPAC name, its hybridisation and magnetic behaviour on the basis of valence bond theory.
-
-OR
-
-(b) (i) How many geometrical isomers are possible in each of the following complexes ?
-(I) $[	ext{Cr}(	ext{C}_2	ext{O}_4)_3]^{3-}$
-(II) $[	ext{Co}(	ext{NH}_3)_3	ext{Cl}_3]$
-(ii) $[	ext{Co}(	ext{NH}_3)_6]^{3+}$ is an inner orbital complex whereas $[	ext{Ni}(	ext{NH}_3)_6]^{2+}$ is an outer orbital complex. Why ?
-[Atomic number : $	ext{Co} = 27, 	ext{Ni} = 28$]
-(iii) Write the formula of Wilkinson catalyst and its use.
-          </div>
-          <div class="card-action">
-            <a href="/practice/?q=917#card_917" class="card-link">Practice in Hub ➔</a>
-            <a href="/cbse-12/chemistry/" class="card-link-subtle">View Chapter Hub</a>
-            <a href="mailto:contact@wovrix.in?subject=Report%20Question%20917" class="report-link-small">Report</a>
-            <button class="btn-report-question" onclick="openReportModal('detail', 'CBSE', '2026', '')"><span>🚩</span> Report</button>
-</div>
-        </article>
-        <article class="question-card" data-subject="Mathematics">
-          <div class="card-meta">
-            <span class="tag tag-marks">1 Marks</span>
-            <span class="tag tag-primary">Mathematics</span>
-            <span class="repeat-pill repeat-pill-gold">★ Multi-Year Repeat: 2025, 2026 (3 sets)</span>
-            <span class="repeat-pill">Linear Programming</span>
-          </div>
-          <div class="question-text math-content">
-            Questions number 19 and 20 are Assertion and Reason based questions. Two statements are given, one labelled Assertion (A) and the other labelled Reason (R). Select the correct answer from the codes (A), (B), (C) and (D) as given below.
-(A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of the Assertion (A).
-(B) Both Assertion (A) and Reason (R) are true, but Reason (R) is not the correct explanation of the Assertion (A).
-(C) Assertion (A) is true, but Reason (R) is false.
-(D) Assertion (A) is false, but Reason (R) is true.
-
-Assertion (A) : Consider a Linear Programming Problem with minimise $Z = x + 2y$ subject to constraints $2x + y \ge 3$, $x + 2y \ge 6$, $x, y \ge 0$ which gives minimum $Z$ at infinitely many points. The corner points of feasible region are $(0, 3)$ and $(6, 0)$.
-Reason (R) : If two corner points produce the same minimum value of the objective function, then every point on the line segment joining the points will give the same minimum value.
-          </div>
-          <div class="card-action">
-            <a href="/practice/?q=1720#card_1720" class="card-link">Practice in Hub ➔</a>
-            <a href="/cbse-12/mathematics/" class="card-link-subtle">View Chapter Hub</a>
-            <a href="mailto:contact@wovrix.in?subject=Report%20Question%201720" class="report-link-small">Report</a>
-            <button class="btn-report-question" onclick="openReportModal('detail', 'CBSE', '2026', '')"><span>🚩</span> Report</button>
-</div>
-        </article>
-        <article class="question-card" data-subject="Chemistry">
-          <div class="card-meta">
-            <span class="tag tag-marks">2 Marks</span>
-            <span class="tag tag-primary">Chemistry</span>
-            <span class="repeat-pill repeat-pill-gold">★ Multi-Year Repeat: 2022, 2023 (3 sets)</span>
-            <span class="repeat-pill">Chemical Kinetics</span>
-          </div>
-          <div class="question-text math-content">
-            Write two differences between order of reaction and molecularity of reaction.
-          </div>
-          <div class="card-action">
-            <a href="/practice/?q=8100#card_8100" class="card-link">Practice in Hub ➔</a>
-            <a href="/cbse-12/chemistry/" class="card-link-subtle">View Chapter Hub</a>
-            <a href="mailto:contact@wovrix.in?subject=Report%20Question%208100" class="report-link-small">Report</a>
-            <button class="btn-report-question" onclick="openReportModal('detail', 'CBSE', '2026', '')"><span>🚩</span> Report</button>
-</div>
-        </article>
-        <article class="question-card" data-subject="Mathematics">
-          <div class="card-meta">
-            <span class="tag tag-marks">5 Marks</span>
-            <span class="tag tag-primary">Mathematics</span>
-            <span class="repeat-pill repeat-pill-gold">★ Multi-Year Repeat: 2022, 2023 (3 sets)</span>
-            <span class="repeat-pill">Integrals</span>
-          </div>
-          <div class="question-text math-content">
-            Evaluate : $\int_{0}^{\pi} \frac{x}{1 + \sin x} dx$
-          </div>
-          <div class="card-action">
-            <a href="/practice/?q=8973#card_8973" class="card-link">Practice in Hub ➔</a>
-            <a href="/cbse-12/mathematics/" class="card-link-subtle">View Chapter Hub</a>
-            <a href="mailto:contact@wovrix.in?subject=Report%20Question%208973" class="report-link-small">Report</a>
-            <button class="btn-report-question" onclick="openReportModal('detail', 'CBSE', '2026', '')"><span>🚩</span> Report</button>
-</div>
-        </article>
-        <article class="question-card" data-subject="Chemistry">
-          <div class="card-meta">
-            <span class="tag tag-marks">1 Marks</span>
-            <span class="tag tag-primary">Chemistry</span>
-            <span class="repeat-pill repeat-pill-gold">★ Multi-Year Repeat: 2025, 2026 (2 sets)</span>
-            <span class="repeat-pill">The d- and f-Block Elements</span>
-          </div>
-          <div class="question-text math-content">
-            Assertion (A) : Actinoids show wide range of oxidation states.
-Reason (R) : Actinoids are radioactive in nature.
-          </div>
-          <div class="card-action">
-            <a href="/practice/?q=15#card_15" class="card-link">Practice in Hub ➔</a>
-            <a href="/cbse-12/chemistry/" class="card-link-subtle">View Chapter Hub</a>
-            <a href="mailto:contact@wovrix.in?subject=Report%20Question%2015" class="report-link-small">Report</a>
-            <button class="btn-report-question" onclick="openReportModal('detail', 'CBSE', '2026', '')"><span>🚩</span> Report</button>
-</div>
-        </article>
-        <article class="question-card" data-subject="Chemistry">
-          <div class="card-meta">
-            <span class="tag tag-marks">4 Marks</span>
-            <span class="tag tag-primary">Chemistry</span>
-            <span class="repeat-pill repeat-pill-gold">★ Multi-Year Repeat: 2023, 2026 (2 sets)</span>
-            <span class="repeat-pill">Biomolecules</span>
-          </div>
-          <div class="question-text math-content">
-            Carbohydrates are broadly classified into three groups — monosaccharides, oligosaccharides and polysaccharides. Monosaccharides are held together by glycosidic linkages to form disaccharides and polysaccharides. An important monosaccharide glucose was assigned an open chain structure on the basis of its reaction with different reagents, such as $	ext{HI}$, to confirm the presence of a straight chain, and $	ext{H}_2	ext{N}-	ext{OH}$ or $	ext{HCN}$ to confirm the presence of a carbonyl group.
-(a) How do you confirm the presence of straight chain and the presence of a carbonyl group in the open chain structure of glucose ?
-(b) (i) What are polysaccharides ?
-OR
-(b) (ii) How are carbohydrates used as food storage molecules in plants and animals ?
-(c) Define glycosidic linkage.
-          </div>
-          <div class="card-action">
-            <a href="/practice/?q=727#card_727" class="card-link">Practice in Hub ➔</a>
-            <a href="/cbse-12/chemistry/" class="card-link-subtle">View Chapter Hub</a>
-            <a href="mailto:contact@wovrix.in?subject=Report%20Question%20727" class="report-link-small">Report</a>
-            <button class="btn-report-question" onclick="openReportModal('detail', 'CBSE', '2026', '')"><span>🚩</span> Report</button>
-</div>
-        </article>
-        <article class="question-card" data-subject="Chemistry">
-          <div class="card-meta">
-            <span class="tag tag-marks">3 Marks</span>
-            <span class="tag tag-primary">Chemistry</span>
-            <span class="repeat-pill repeat-pill-gold">★ Multi-Year Repeat: 2024, 2026 (2 sets)</span>
-            <span class="repeat-pill">Solutions</span>
-          </div>
-          <div class="question-text math-content">
-            An antifreeze solution is prepared by dissolving $31\text{ g}$ of ethylene glycol (Molar mass = $62\text{ g mol}^{-1}$) in $600\text{ g}$ of water. Calculate the freezing point of the solution. ($K_f$ for water = $1\cdot86\text{ K kg mol}^{-1}$)
-          </div>
-          <div class="card-action">
-            <a href="/practice/?q=836#card_836" class="card-link">Practice in Hub ➔</a>
-            <a href="/cbse-12/chemistry/" class="card-link-subtle">View Chapter Hub</a>
-            <a href="mailto:contact@wovrix.in?subject=Report%20Question%20836" class="report-link-small">Report</a>
-            <button class="btn-report-question" onclick="openReportModal('detail', 'CBSE', '2026', '')"><span>🚩</span> Report</button>
-</div>
-        </article>
-        <article class="question-card" data-subject="Mathematics">
-          <div class="card-meta">
-            <span class="tag tag-marks">1 Marks</span>
-            <span class="tag tag-primary">Mathematics</span>
-            <span class="repeat-pill repeat-pill-gold">★ Multi-Year Repeat: 2025, 2026 (2 sets)</span>
-            <span class="repeat-pill">Vectors</span>
-          </div>
-          <div class="question-text math-content">
-            Questions number 19 and 20 are Assertion and Reason based questions. Two statements are given, one labelled Assertion (A) and the other labelled Reason (R). Select the correct answer from the codes (A), (B), (C) and (D) as given below.
-(A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of the Assertion (A).
-(B) Both Assertion (A) and Reason (R) are true, but Reason (R) is not the correct explanation of the Assertion (A).
-(C) Assertion (A) is true, but Reason (R) is false.
-(D) Assertion (A) is false, but Reason (R) is true.
-
-Assertion (A) : The vectors $\vec{a}$ and $$-2\vec{a}$$, where $\vec{a} \neq \vec{0}$ are collinear vectors.
-Reason (R) : $\vec{a} \cdot $-2\vec{a}$ = 0$.
-          </div>
-          <div class="card-action">
-            <a href="/practice/?q=1333#card_1333" class="card-link">Practice in Hub ➔</a>
-            <a href="/cbse-12/mathematics/" class="card-link-subtle">View Chapter Hub</a>
-            <a href="mailto:contact@wovrix.in?subject=Report%20Question%201333" class="report-link-small">Report</a>
-            <button class="btn-report-question" onclick="openReportModal('detail', 'CBSE', '2026', '')"><span>🚩</span> Report</button>
-</div>
-        </article>
-        <article class="question-card" data-subject="Chemistry">
-          <div class="card-meta">
-            <span class="tag tag-marks">1 Marks</span>
-            <span class="tag tag-primary">Chemistry</span>
-            <span class="repeat-pill repeat-pill-gold">★ Multi-Year Repeat: 2023, 2025 (2 sets)</span>
-            <span class="repeat-pill">Biomolecules</span>
-          </div>
-          <div class="question-text math-content">
-            Assertion (A) : When glucose is added to water, an elevation in boiling point is observed.
-Reason (R) : The lowering of vapour pressure causes elevation in the boiling point.
-          </div>
-          <div class="card-action">
-            <a href="/practice/?q=2714#card_2714" class="card-link">Practice in Hub ➔</a>
-            <a href="/cbse-12/chemistry/" class="card-link-subtle">View Chapter Hub</a>
-            <a href="mailto:contact@wovrix.in?subject=Report%20Question%202714" class="report-link-small">Report</a>
-            <button class="btn-report-question" onclick="openReportModal('detail', 'CBSE', '2026', '')"><span>🚩</span> Report</button>
-</div>
-        </article>
-        <article class="question-card" data-subject="Mathematics">
-          <div class="card-meta">
-            <span class="tag tag-marks">1 Marks</span>
-            <span class="tag tag-primary">Mathematics</span>
-            <span class="repeat-pill repeat-pill-gold">★ Multi-Year Repeat: 2024, 2025 (2 sets)</span>
-            <span class="repeat-pill">Unclassified</span>
-          </div>
-          <div class="question-text math-content">
-            Questions number 19 and 20 are Assertion and Reason based questions. Two statements are given, one labelled Assertion (A) and the other labelled Reason (R). Select the correct answer from the codes (A), (B), (C) and (D) as given below.
-(A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of the Assertion (A).
-(B) Both Assertion (A) and Reason (R) are true, but Reason (R) is not the correct explanation of the Assertion (A).
-(C) Assertion (A) is true, but Reason (R) is false.
-(D) Assertion (A) is false, but Reason (R) is true.
-
-Assertion (A) : Solution set of inequality $|3x - 2| \le \frac{1}{2}, x \in \text{R}$ is $\left[\frac{1}{2}, \frac{5}{6}\right]$.
-Reason (R) : $|x - a| \le r \iff x \le a - r \quad \text{or} \quad x \ge a + r$.
-          </div>
-          <div class="card-action">
-            <a href="/practice/?q=4062#card_4062" class="card-link">Practice in Hub ➔</a>
-            <a href="/cbse-12/mathematics/" class="card-link-subtle">View Chapter Hub</a>
-            <a href="mailto:contact@wovrix.in?subject=Report%20Question%204062" class="report-link-small">Report</a>
-            <button class="btn-report-question" onclick="openReportModal('detail', 'CBSE', '2026', '')"><span>🚩</span> Report</button>
-</div>
-        </article>
-        <article class="question-card" data-subject="Mathematics">
-          <div class="card-meta">
-            <span class="tag tag-marks">5 Marks</span>
-            <span class="tag tag-primary">Mathematics</span>
-            <span class="repeat-pill repeat-pill-gold">★ Multi-Year Repeat: 2023, 2025 (2 sets)</span>
-            <span class="repeat-pill">Integrals</span>
-          </div>
-          <div class="question-text math-content">
-            Evaluate : $\int_{\pi/2}^{\pi} e^x \left$ \frac{1-\sin x}{1-\cos x} \right$ dx$
-          </div>
-          <div class="card-action">
-            <a href="/practice/?q=4802#card_4802" class="card-link">Practice in Hub ➔</a>
-            <a href="/cbse-12/mathematics/" class="card-link-subtle">View Chapter Hub</a>
-            <a href="mailto:contact@wovrix.in?subject=Report%20Question%204802" class="report-link-small">Report</a>
-            <button class="btn-report-question" onclick="openReportModal('detail', 'CBSE', '2026', '')"><span>🚩</span> Report</button>
-</div>
-        </article>
-        <article class="question-card" data-subject="Physics">
-          <div class="card-meta">
-            <span class="tag tag-marks">1 Marks</span>
-            <span class="tag tag-primary">Physics</span>
-            <span class="repeat-pill repeat-pill-gold">★ Multi-Year Repeat: 2022, 2024 (2 sets)</span>
-            <span class="repeat-pill">Moving Charges and Magnetism</span>
-          </div>
-          <div class="question-text math-content">
-            A long straight wire of circular cross section of radius 'a' carries a steady current I. The current is uniformly distributed across its cross section. The ratio of magnitudes of the magnetic field at a point $a/2$ above the surface of wire to that of a point $a/2$ below its surface is (A) 4:1 (B) 1:1 (C) 4:3 (D) 3:4
-          </div>
-          <div class="card-action">
-            <a href="/practice/?q=5556#card_5556" class="card-link">Practice in Hub ➔</a>
-            <a href="/cbse-12/physics/" class="card-link-subtle">View Chapter Hub</a>
-            <a href="mailto:contact@wovrix.in?subject=Report%20Question%205556" class="report-link-small">Report</a>
-            <button class="btn-report-question" onclick="openReportModal('detail', 'CBSE', '2026', '')"><span>🚩</span> Report</button>
-</div>
-        </article>
-        <article class="question-card" data-subject="Chemistry">
-          <div class="card-meta">
-            <span class="tag tag-marks">1 Marks</span>
-            <span class="tag tag-primary">Chemistry</span>
-            <span class="repeat-pill repeat-pill-gold">★ Multi-Year Repeat: 2023, 2024 (2 sets)</span>
-            <span class="repeat-pill">Chemical Kinetics</span>
-          </div>
-          <div class="question-text math-content">
-            Assertion (A) : For a zero order reaction, the unit of rate constant and rate of reaction are same.
-Reason (R) : Rate of reaction for zero order reaction is independent of concentration of reactant.
-          </div>
-          <div class="card-action">
-            <a href="/practice/?q=5880#card_5880" class="card-link">Practice in Hub ➔</a>
-            <a href="/cbse-12/chemistry/" class="card-link-subtle">View Chapter Hub</a>
-            <a href="mailto:contact@wovrix.in?subject=Report%20Question%205880" class="report-link-small">Report</a>
-            <button class="btn-report-question" onclick="openReportModal('detail', 'CBSE', '2026', '')"><span>🚩</span> Report</button>
-</div>
-        </article>
-        <article class="question-card" data-subject="Chemistry">
-          <div class="card-meta">
-            <span class="tag tag-marks">1 Marks</span>
-            <span class="tag tag-primary">Chemistry</span>
-            <span class="repeat-pill repeat-pill-gold">★ Multi-Year Repeat: 2023, 2024 (2 sets)</span>
-            <span class="repeat-pill">Biomolecules</span>
-          </div>
-          <div class="question-text math-content">
-            Assertion (A) : Vitamin C cannot be stored in our body.
-Reason (R) : Vitamin C is fat soluble and is excreted from the body in urine.
-          </div>
-          <div class="card-action">
-            <a href="/practice/?q=6172#card_6172" class="card-link">Practice in Hub ➔</a>
-            <a href="/cbse-12/chemistry/" class="card-link-subtle">View Chapter Hub</a>
-            <a href="mailto:contact@wovrix.in?subject=Report%20Question%206172" class="report-link-small">Report</a>
-            <button class="btn-report-question" onclick="openReportModal('detail', 'CBSE', '2026', '')"><span>🚩</span> Report</button>
-</div>
-        </article>
-        <article class="question-card" data-subject="Chemistry">
-          <div class="card-meta">
-            <span class="tag tag-marks">1 Marks</span>
-            <span class="tag tag-primary">Chemistry</span>
-            <span class="repeat-pill repeat-pill-gold">★ Multi-Year Repeat: 2023, 2024 (2 sets)</span>
-            <span class="repeat-pill">Solutions</span>
-          </div>
-          <div class="question-text math-content">
-            Assertion (A) : When NaCl is added to water, a depression in freezing point is observed. Reason (R) : The lowering of vapour pressure of a solution causes depression in the freezing point.
-          </div>
-          <div class="card-action">
-            <a href="/practice/?q=6174#card_6174" class="card-link">Practice in Hub ➔</a>
-            <a href="/cbse-12/chemistry/" class="card-link-subtle">View Chapter Hub</a>
-            <a href="mailto:contact@wovrix.in?subject=Report%20Question%206174" class="report-link-small">Report</a>
-            <button class="btn-report-question" onclick="openReportModal('detail', 'CBSE', '2026', '')"><span>🚩</span> Report</button>
-</div>
-        </article>
-        <article class="question-card" data-subject="Mathematics">
-          <div class="card-meta">
-            <span class="tag tag-marks">1 Marks</span>
-            <span class="tag tag-primary">Mathematics</span>
-            <span class="repeat-pill repeat-pill-gold">★ Multi-Year Repeat: 2023, 2024 (2 sets)</span>
-            <span class="repeat-pill">Unclassified</span>
-          </div>
-          <div class="question-text math-content">
-            If $x + y = 8$, then the maximum value of $(xy)$ is :
-(A) 12
-(B) 16
-(C) 20
-(D) 24
-          </div>
-          <div class="card-action">
-            <a href="/practice/?q=7371#card_7371" class="card-link">Practice in Hub ➔</a>
-            <a href="/cbse-12/mathematics/" class="card-link-subtle">View Chapter Hub</a>
-            <a href="mailto:contact@wovrix.in?subject=Report%20Question%207371" class="report-link-small">Report</a>
-            <button class="btn-report-question" onclick="openReportModal('detail', 'CBSE', '2026', '')"><span>🚩</span> Report</button>
-</div>
-        </article>
-    </div>
-
-    <div id="view-freq" class="question-list" style="display:none;">
-      
-        <article class="question-card" data-subject="Mathematics">
-          <div class="card-meta">
-            <span class="tag tag-marks">1 Marks</span>
-            <span class="tag">Mathematics</span>
-            <span class="repeat-pill">Appeared in 6 Board Sets</span>
-            <span class="repeat-pill">Matrices</span>
-          </div>
-          <div class="question-text math-content">
-            If inverse of matrix $\begin{bmatrix} 7 & -3 & -3 \\ -1 & 1 & 0 \\ -1 & 0 & 1 \end{bmatrix}$ is the matrix $\begin{bmatrix} 1 & 3 & 3 \\ 1 & \lambda & 3 \\ 1 & 3 & 4 \end{bmatrix}$, then value of $\lambda$ is:
-(A) -4
-(B) 1
-(C) 3
-(D) 4
-          </div>
-          <div class="card-action">
-            <a href="/practice/?q=6502#card_6502" class="card-link">Practice in Hub ➔</a>
-            <a href="mailto:contact@wovrix.in?subject=Report%20Question%206502" class="report-link-small">Report</a>
-            <button class="btn-report-question" onclick="openReportModal('detail', 'CBSE', '2026', '')"><span>🚩</span> Report</button>
-</div>
-        </article>
-        <article class="question-card" data-subject="Mathematics">
-          <div class="card-meta">
-            <span class="tag tag-marks">1 Marks</span>
-            <span class="tag">Mathematics</span>
-            <span class="repeat-pill">Appeared in 6 Board Sets</span>
-            <span class="repeat-pill">Matrices</span>
-          </div>
-          <div class="question-text math-content">
-            Find the matrix $A^2$, where $A = [a_{ij}]$ is a $2 \times 2$ matrix whose elements are given by $a_{ij} = \text{maximum} (i, j) - \text{minimum} (i, j) :$ (A) $\begin{bmatrix} 0 & 0 \\ 0 & 0 \end{bmatrix}$ (B) $\begin{bmatrix} 0 & 1 \\ 1 & 0 \end{bmatrix}$ (C) $\begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix}$ (D) $\begin{bmatrix} 1 & 1 \\ 1 & 1 \end{bmatrix}$
-          </div>
-          <div class="card-action">
-            <a href="/practice/?q=6504#card_6504" class="card-link">Practice in Hub ➔</a>
-            <a href="mailto:contact@wovrix.in?subject=Report%20Question%206504" class="report-link-small">Report</a>
-            <button class="btn-report-question" onclick="openReportModal('detail', 'CBSE', '2026', '')"><span>🚩</span> Report</button>
-</div>
-        </article>
-        <article class="question-card" data-subject="Mathematics">
-          <div class="card-meta">
-            <span class="tag tag-marks">1 Marks</span>
-            <span class="tag">Mathematics</span>
-            <span class="repeat-pill">Appeared in 6 Board Sets</span>
-            <span class="repeat-pill">Relations and Functions</span>
-          </div>
-          <div class="question-text math-content">
-            The function $f(x) = \frac{x}{2} + \frac{2}{x}$ has a local minima at $x$ equal to : (A) $2$ (B) $1$ (C) $0$ (D) $-2$
-          </div>
-          <div class="card-action">
-            <a href="/practice/?q=6507#card_6507" class="card-link">Practice in Hub ➔</a>
-            <a href="mailto:contact@wovrix.in?subject=Report%20Question%206507" class="report-link-small">Report</a>
-            <button class="btn-report-question" onclick="openReportModal('detail', 'CBSE', '2026', '')"><span>🚩</span> Report</button>
-</div>
-        </article>
-        <article class="question-card" data-subject="Mathematics">
-          <div class="card-meta">
-            <span class="tag tag-marks">1 Marks</span>
-            <span class="tag">Mathematics</span>
-            <span class="repeat-pill">Appeared in 6 Board Sets</span>
-            <span class="repeat-pill">Vectors</span>
-          </div>
-          <div class="question-text math-content">
-            The position vectors of points P and Q are $\vec{p}$ and $\vec{q}$ respectively. The point R divides line segment PQ in the ratio $3:1$ and S is the mid-point of line segment PR. The position vector of S is : (A) $\frac{\vec{p} + 3\vec{q}}{4}$ (B) $\frac{\vec{p} + 3\vec{q}}{8}$ (C) $\frac{5\vec{p} + 3\vec{q}}{4}$ (D) $\frac{5\vec{p} + 3\vec{q}}{8}$
-          </div>
-          <div class="card-action">
-            <a href="/practice/?q=6513#card_6513" class="card-link">Practice in Hub ➔</a>
-            <a href="mailto:contact@wovrix.in?subject=Report%20Question%206513" class="report-link-small">Report</a>
-            <button class="btn-report-question" onclick="openReportModal('detail', 'CBSE', '2026', '')"><span>🚩</span> Report</button>
-</div>
-        </article>
-        <article class="question-card" data-subject="Mathematics">
-          <div class="card-meta">
-            <span class="tag tag-marks">1 Marks</span>
-            <span class="tag">Mathematics</span>
-            <span class="repeat-pill">Appeared in 6 Board Sets</span>
-            <span class="repeat-pill">Unclassified</span>
-          </div>
-          <div class="question-text math-content">
-            The angle which the line $\frac{x}{1} = \frac{y}{-1} = \frac{z}{0}$ makes with the positive direction of Y-axis is : (A) $\frac{5\pi}{6}$ (B) $\frac{3\pi}{4}$ (C) $\frac{5\pi}{4}$ (D) $\frac{7\pi}{4}$
-          </div>
-          <div class="card-action">
-            <a href="/practice/?q=6514#card_6514" class="card-link">Practice in Hub ➔</a>
-            <a href="mailto:contact@wovrix.in?subject=Report%20Question%206514" class="report-link-small">Report</a>
-            <button class="btn-report-question" onclick="openReportModal('detail', 'CBSE', '2026', '')"><span>🚩</span> Report</button>
-</div>
-        </article>
-        <article class="question-card" data-subject="Mathematics">
-          <div class="card-meta">
-            <span class="tag tag-marks">1 Marks</span>
-            <span class="tag">Mathematics</span>
-            <span class="repeat-pill">Appeared in 6 Board Sets</span>
-            <span class="repeat-pill">Vectors</span>
-          </div>
-          <div class="question-text math-content">
-            The Cartesian equation of the line passing through the point $(1, -3, 2)$ and parallel to the line: $\vec{r} = $2 + \lambda$\hat{i} + \lambda\hat{j} + $2\lambda - 1$\hat{k}$ is (A) $\frac{x - 1}{2} = \frac{y + 3}{0} = \frac{z - 2}{-1}$ (B) $\frac{x + 1}{1} = \frac{y - 3}{1} = \frac{z + 2}{2}$ (C) $\frac{x + 1}{2} = \frac{y - 3}{0} = \frac{z + 2}{-1}$ (D) $\frac{x - 1}{1} = \frac{y + 3}{1} = \frac{z - 2}{2}$
-          </div>
-          <div class="card-action">
-            <a href="/practice/?q=6515#card_6515" class="card-link">Practice in Hub ➔</a>
-            <a href="mailto:contact@wovrix.in?subject=Report%20Question%206515" class="report-link-small">Report</a>
-            <button class="btn-report-question" onclick="openReportModal('detail', 'CBSE', '2026', '')"><span>🚩</span> Report</button>
-</div>
-        </article>
-        <article class="question-card" data-subject="Mathematics">
-          <div class="card-meta">
-            <span class="tag tag-marks">1 Marks</span>
-            <span class="tag">Mathematics</span>
-            <span class="repeat-pill">Appeared in 6 Board Sets</span>
-            <span class="repeat-pill">Vectors</span>
-          </div>
-          <div class="question-text math-content">
-            Assertion (A) : The vectors 
-$\vec{a} = 6\hat{i} + 2\hat{j} - 8\hat{k}$
-$\vec{b} = 10\hat{i} - 2\hat{j} - 6\hat{k}$
-$\vec{c} = 4\hat{i} - 4\hat{j} + 2\hat{k}$
-represent the sides of a right angled triangle.
-Reason (R) : Three non-zero vectors of which none of two are collinear forms a triangle if their resultant is zero vector or sum of any two vectors is equal to the third.
-          </div>
-          <div class="card-action">
-            <a href="/practice/?q=6518#card_6518" class="card-link">Practice in Hub ➔</a>
-            <a href="mailto:contact@wovrix.in?subject=Report%20Question%206518" class="report-link-small">Report</a>
-            <button class="btn-report-question" onclick="openReportModal('detail', 'CBSE', '2026', '')"><span>🚩</span> Report</button>
-</div>
-        </article>
-        <article class="question-card" data-subject="Mathematics">
-          <div class="card-meta">
-            <span class="tag tag-marks">2 Marks</span>
-            <span class="tag">Mathematics</span>
-            <span class="repeat-pill">Appeared in 6 Board Sets</span>
-            <span class="repeat-pill">Unclassified</span>
-          </div>
-          <div class="question-text math-content">
-            Find the vector equation of the line passing through the point $(2, 3, -5)$ and making equal angles with the co-ordinate axes.
-          </div>
-          <div class="card-action">
-            <a href="/practice/?q=6523#card_6523" class="card-link">Practice in Hub ➔</a>
-            <a href="mailto:contact@wovrix.in?subject=Report%20Question%206523" class="report-link-small">Report</a>
-            <button class="btn-report-question" onclick="openReportModal('detail', 'CBSE', '2026', '')"><span>🚩</span> Report</button>
-</div>
-        </article>
-        <article class="question-card" data-subject="Mathematics">
-          <div class="card-meta">
-            <span class="tag tag-marks">5 Marks</span>
-            <span class="tag">Mathematics</span>
-            <span class="repeat-pill">Appeared in 6 Board Sets</span>
-            <span class="repeat-pill">Applications of the Integrals</span>
-          </div>
-          <div class="question-text math-content">
-            Find the area of the region bounded by the curve $4x^2 + y^2 = 36$ using integration.
-          </div>
-          <div class="card-action">
-            <a href="/practice/?q=6532#card_6532" class="card-link">Practice in Hub ➔</a>
-            <a href="mailto:contact@wovrix.in?subject=Report%20Question%206532" class="report-link-small">Report</a>
-            <button class="btn-report-question" onclick="openReportModal('detail', 'CBSE', '2026', '')"><span>🚩</span> Report</button>
-</div>
-        </article>
-        <article class="question-card" data-subject="Mathematics">
-          <div class="card-meta">
-            <span class="tag tag-marks">4 Marks</span>
-            <span class="tag">Mathematics</span>
-            <span class="repeat-pill">Appeared in 6 Board Sets</span>
-            <span class="repeat-pill">Relations and Functions</span>
-          </div>
-          <div class="question-text math-content">
-            (a) Students of a school are taken to a railway museum to learn about railways heritage and its history. An exhibit in the museum depicted many rail lines on the track near the railway station. Let L be the set of all rail lines on the railway track and R be the relation on L defined by R = {(l_1, l_2) : l_1 is parallel to l_2}. On the basis of the above information, answer the following questions : (i) Find whether the relation R is symmetric or not. (ii) Find whether the relation R is transitive or not. (iii) If one of the rail lines on the railway track is represented by the equation y = 3x + 2, then find the set of rail lines in R related to it. OR (b) Let S be the relation defined by S = {(l_1, l_2) : l_1 is perpendicular to l_2} check whether the relation S is symmetric and transitive.
-          </div>
-          <div class="card-action">
-            <a href="/practice/?q=6536#card_6536" class="card-link">Practice in Hub ➔</a>
-            <a href="mailto:contact@wovrix.in?subject=Report%20Question%206536" class="report-link-small">Report</a>
-            <button class="btn-report-question" onclick="openReportModal('detail', 'CBSE', '2026', '')"><span>🚩</span> Report</button>
-</div>
-        </article>
-        <article class="question-card" data-subject="Chemistry">
-          <div class="card-meta">
-            <span class="tag tag-marks">2 Marks</span>
-            <span class="tag">Chemistry</span>
-            <span class="repeat-pill">Appeared in 5 Board Sets</span>
-            <span class="repeat-pill">Biomolecules</span>
-          </div>
-          <div class="question-text math-content">
-            Carbohydrates are optically active polyhydroxy aldehydes or ketones or the compounds which produce such units on hydrolysis. They have been broadly classified into three groups — monosaccharides, oligosaccharides and polysaccharides. The carbohydrates may also be classified as either reducing or non-reducing sugars. An important monosaccharide glucose is an aldohexose and is correctly named as $	ext{D}(+)	ext{--glucose}$. It was assigned the open structure on the basis of its reactions with $	ext{HI}$, $	ext{NH}_2	ext{OH}$, $	ext{Br}_2	ext{ water}$, $(	ext{CH}_3	ext{CO})_2	ext{O}$ and nitric acid.
-Despite having the $-	ext{CHO}$ group, glucose does not give Schiff's test and hydrogen sulphite addition product with $	ext{NaHSO}_3$. It was found that glucose forms a six-membered ring in which one of the $-	ext{OH}$ groups add to the $-	ext{CHO}$ group and form a cyclic hemiacetal structure.
-Answer the following questions :
-(a) How do you explain the following ?
-(i) Presence of a carbonyl group in glucose
-(ii) Presence of five $-	ext{OH}$ groups in glucose which are attached to different carbon atoms.
-          </div>
-          <div class="card-action">
-            <a href="/practice/?q=926#card_926" class="card-link">Practice in Hub ➔</a>
-            <a href="mailto:contact@wovrix.in?subject=Report%20Question%20926" class="report-link-small">Report</a>
-            <button class="btn-report-question" onclick="openReportModal('detail', 'CBSE', '2026', '')"><span>🚩</span> Report</button>
-</div>
-        </article>
-        <article class="question-card" data-subject="Mathematics">
-          <div class="card-meta">
-            <span class="tag tag-marks">1 Marks</span>
-            <span class="tag">Mathematics</span>
-            <span class="repeat-pill">Appeared in 5 Board Sets</span>
-            <span class="repeat-pill">Matrices</span>
-          </div>
-          <div class="question-text math-content">
-            If $A$ is a square matrix of order 3 such that the value of $|\text{adj } A| = 8$, then the value of $|A^T|$ is:
-(A) $\sqrt{2}$
-(B) $-\sqrt{2}$
-(C) 8
-(D) $2\sqrt{2}$
-          </div>
-          <div class="card-action">
-            <a href="/practice/?q=6501#card_6501" class="card-link">Practice in Hub ➔</a>
-            <a href="mailto:contact@wovrix.in?subject=Report%20Question%206501" class="report-link-small">Report</a>
-            <button class="btn-report-question" onclick="openReportModal('detail', 'CBSE', '2026', '')"><span>🚩</span> Report</button>
-</div>
-        </article>
-        <article class="question-card" data-subject="Mathematics">
-          <div class="card-meta">
-            <span class="tag tag-marks">1 Marks</span>
-            <span class="tag">Mathematics</span>
-            <span class="repeat-pill">Appeared in 5 Board Sets</span>
-            <span class="repeat-pill">Unclassified</span>
-          </div>
-          <div class="question-text math-content">
-            Derivative of $e^{\sin^2 x}$ with respect to $\cos x$ is : (A) $\sin x \, e^{\sin^2 x}$ (B) $\cos x \, e^{\sin^2 x}$ (C) $-2 \cos x \, e^{\sin^2 x}$ (D) $-2 \sin^2 x \cos x \, e^{\sin^2 x}$
-          </div>
-          <div class="card-action">
-            <a href="/practice/?q=6506#card_6506" class="card-link">Practice in Hub ➔</a>
-            <a href="mailto:contact@wovrix.in?subject=Report%20Question%206506" class="report-link-small">Report</a>
-            <button class="btn-report-question" onclick="openReportModal('detail', 'CBSE', '2026', '')"><span>🚩</span> Report</button>
-</div>
-        </article>
-        <article class="question-card" data-subject="Mathematics">
-          <div class="card-meta">
-            <span class="tag tag-marks">1 Marks</span>
-            <span class="tag">Mathematics</span>
-            <span class="repeat-pill">Appeared in 5 Board Sets</span>
-            <span class="repeat-pill">Unclassified</span>
-          </div>
-          <div class="question-text math-content">
-            If A and B are events such that $P(A/B) = P(B/A) \neq 0$, then: (A) $A \subset B$, but $A \neq B$ (B) $A = B$ (C) $A \cap B = \phi$ (D) $P(A) = P(B)$
-          </div>
-          <div class="card-action">
-            <a href="/practice/?q=6516#card_6516" class="card-link">Practice in Hub ➔</a>
-            <a href="mailto:contact@wovrix.in?subject=Report%20Question%206516" class="report-link-small">Report</a>
-            <button class="btn-report-question" onclick="openReportModal('detail', 'CBSE', '2026', '')"><span>🚩</span> Report</button>
-</div>
-        </article>
-        <article class="question-card" data-subject="Mathematics">
-          <div class="card-meta">
-            <span class="tag tag-marks">1 Marks</span>
-            <span class="tag">Mathematics</span>
-            <span class="repeat-pill">Appeared in 5 Board Sets</span>
-            <span class="repeat-pill">Inverse Trigonometric Functions</span>
-          </div>
-          <div class="question-text math-content">
-            Assertion (A) : Domain of $y = \cos^{-1}(x)$ is $[-1, 1]$. Reason (R) : The range of the principal value branch of $y = \cos^{-1}(x)$ is $[0, \pi] - \{\frac{\pi}{2}\}$.
-          </div>
-          <div class="card-action">
-            <a href="/practice/?q=6517#card_6517" class="card-link">Practice in Hub ➔</a>
-            <a href="mailto:contact@wovrix.in?subject=Report%20Question%206517" class="report-link-small">Report</a>
-            <button class="btn-report-question" onclick="openReportModal('detail', 'CBSE', '2026', '')"><span>🚩</span> Report</button>
-</div>
-        </article>
-        <article class="question-card" data-subject="Mathematics">
-          <div class="card-meta">
-            <span class="tag tag-marks">2 Marks</span>
-            <span class="tag">Mathematics</span>
-            <span class="repeat-pill">Appeared in 5 Board Sets</span>
-            <span class="repeat-pill">Relations and Functions</span>
-          </div>
-          <div class="question-text math-content">
-            (a) Verify whether the function f defined by
-$f(x) = \begin{cases} x \sin\left$ \frac{1}{x} \right$, & x \neq 0 \\ 0, & x = 0 \end{cases}$
-is continuous at $x = 0$ or not.
-OR
-(b) Check for differentiability of the function f defined by $f(x) = |x - 5|$, at the point $x = 5$.
-          </div>
-          <div class="card-action">
-            <a href="/practice/?q=6520#card_6520" class="card-link">Practice in Hub ➔</a>
-            <a href="mailto:contact@wovrix.in?subject=Report%20Question%206520" class="report-link-small">Report</a>
-            <button class="btn-report-question" onclick="openReportModal('detail', 'CBSE', '2026', '')"><span>🚩</span> Report</button>
-</div>
-        </article>
-        <article class="question-card" data-subject="Mathematics">
-          <div class="card-meta">
-            <span class="tag tag-marks">1 Marks</span>
-            <span class="tag">Mathematics</span>
-            <span class="repeat-pill">Appeared in 5 Board Sets</span>
-            <span class="repeat-pill">Relations and Functions</span>
-          </div>
-          <div class="question-text math-content">
-            A function $f: \mathbb{R} \to \mathbb{R}$ defined as $f(x) = x^{2} - 4x + 5$ is : (A) injective but not surjective. (B) surjective but not injective. (C) both injective and surjective. (D) neither injective nor surjective.
-          </div>
-          <div class="card-action">
-            <a href="/practice/?q=6539#card_6539" class="card-link">Practice in Hub ➔</a>
-            <a href="mailto:contact@wovrix.in?subject=Report%20Question%206539" class="report-link-small">Report</a>
-            <button class="btn-report-question" onclick="openReportModal('detail', 'CBSE', '2026', '')"><span>🚩</span> Report</button>
-</div>
-        </article>
-        <article class="question-card" data-subject="Mathematics">
-          <div class="card-meta">
-            <span class="tag tag-marks">1 Marks</span>
-            <span class="tag">Mathematics</span>
-            <span class="repeat-pill">Appeared in 4 Board Sets</span>
-            <span class="repeat-pill">Unclassified</span>
-          </div>
-          <div class="question-text math-content">
-            A man took a home loan of $\text{₹ } 40,00,000$ from a bank at the interest of $6\cdot75\%$ per annum compounded monthly which is to be amortized by equal payments at the end of each month for $10$ years.
-Based on the above information, answer the following questions :
-Find the monthly instalment.
-$\text{[Use } (1\cdot005625)^{-120} = 0\cdot510120]$
-          </div>
-          <div class="card-action">
-            <a href="/practice/?q=4088#card_4088" class="card-link">Practice in Hub ➔</a>
-            <a href="mailto:contact@wovrix.in?subject=Report%20Question%204088" class="report-link-small">Report</a>
-            <button class="btn-report-question" onclick="openReportModal('detail', 'CBSE', '2026', '')"><span>🚩</span> Report</button>
-</div>
-        </article>
-        <article class="question-card" data-subject="Mathematics">
-          <div class="card-meta">
-            <span class="tag tag-marks">1 Marks</span>
-            <span class="tag">Mathematics</span>
-            <span class="repeat-pill">Appeared in 4 Board Sets</span>
-            <span class="repeat-pill">Unclassified</span>
-          </div>
-          <div class="question-text math-content">
-            Given a curve $y = 7x - x^3$ and $x$ increases at the rate of $2$ units per second. The rate at which the slope of the curve is changing, when $x = 5$ is : (A) $-60$ units/sec (B) $60$ units/sec (C) $-70$ units/sec (D) $-140$ units/sec
-          </div>
-          <div class="card-action">
-            <a href="/practice/?q=6508#card_6508" class="card-link">Practice in Hub ➔</a>
-            <a href="mailto:contact@wovrix.in?subject=Report%20Question%206508" class="report-link-small">Report</a>
-            <button class="btn-report-question" onclick="openReportModal('detail', 'CBSE', '2026', '')"><span>🚩</span> Report</button>
-</div>
-        </article>
-        <article class="question-card" data-subject="Mathematics">
-          <div class="card-meta">
-            <span class="tag tag-marks">3 Marks</span>
-            <span class="tag">Mathematics</span>
-            <span class="repeat-pill">Appeared in 4 Board Sets</span>
-            <span class="repeat-pill">Continuity and Differentiability</span>
-          </div>
-          <div class="question-text math-content">
-            (a) Find $\frac{dy}{dx}$, if $(\cos x)^y = (\cos y)^x$. OR (b) If $\sqrt{1-x^2} + \sqrt{1-y^2} = a(x-y)$, prove that $\frac{dy}{dx} = \sqrt{\frac{1-y^2}{1-x^2}}$.
-          </div>
-          <div class="card-action">
-            <a href="/practice/?q=6524#card_6524" class="card-link">Practice in Hub ➔</a>
-            <a href="mailto:contact@wovrix.in?subject=Report%20Question%206524" class="report-link-small">Report</a>
-            <button class="btn-report-question" onclick="openReportModal('detail', 'CBSE', '2026', '')"><span>🚩</span> Report</button>
-</div>
-        </article>
-        <article class="question-card" data-subject="Mathematics">
-          <div class="card-meta">
-            <span class="tag tag-marks">5 Marks</span>
-            <span class="tag">Mathematics</span>
-            <span class="repeat-pill">Appeared in 4 Board Sets</span>
-            <span class="repeat-pill">Differential Equations</span>
-          </div>
-          <div class="question-text math-content">
-            (a) Find the particular solution of the differential equation $\frac{dy}{dx} - 2xy = 3x^2 e^{x^2} ; y(0) = 5$. OR (b) Solve the following differential equation : $x^2 dy + y(x + y) dx = 0$
-          </div>
-          <div class="card-action">
-            <a href="/practice/?q=6527#card_6527" class="card-link">Practice in Hub ➔</a>
-            <a href="mailto:contact@wovrix.in?subject=Report%20Question%206527" class="report-link-small">Report</a>
-            <button class="btn-report-question" onclick="openReportModal('detail', 'CBSE', '2026', '')"><span>🚩</span> Report</button>
-</div>
-        </article>
-        <article class="question-card" data-subject="Chemistry">
-          <div class="card-meta">
-            <span class="tag tag-marks">1 Marks</span>
-            <span class="tag">Chemistry</span>
-            <span class="repeat-pill">Appeared in 3 Board Sets</span>
-            <span class="repeat-pill">Haloalkanes and Haloarenes</span>
-          </div>
-          <div class="question-text math-content">
-            Which of the following is 'not' true about enantiomers ?
-(A) They have the same chemical reactivity.
-(B) They have the same specific rotation.
-(C) They have the same melting or boiling point.
-(D) They have the same refractive index.
-          </div>
-          <div class="card-action">
-            <a href="/practice/?q=9#card_9" class="card-link">Practice in Hub ➔</a>
-            <a href="mailto:contact@wovrix.in?subject=Report%20Question%209" class="report-link-small">Report</a>
-            <button class="btn-report-question" onclick="openReportModal('detail', 'CBSE', '2026', '')"><span>🚩</span> Report</button>
-</div>
-        </article>
-        <article class="question-card" data-subject="Chemistry">
-          <div class="card-meta">
-            <span class="tag tag-marks">1 Marks</span>
-            <span class="tag">Chemistry</span>
-            <span class="repeat-pill">Appeared in 3 Board Sets</span>
-            <span class="repeat-pill">Amines</span>
-          </div>
-          <div class="question-text math-content">
-            Aniline on direct nitration yields
-(A) $51\%$-ortho, $47\%$-para, $2\%$-meta derivatives
-(B) $51\%$-meta, $47\%$-ortho, $2\%$-para derivatives
-(C) $51\%$-para, $47\%$-meta, $2\%$-ortho derivatives
-(D) $51\%$-ortho, $47\%$-meta, $2\%$-para derivatives
-          </div>
-          <div class="card-action">
-            <a href="/practice/?q=10#card_10" class="card-link">Practice in Hub ➔</a>
-            <a href="mailto:contact@wovrix.in?subject=Report%20Question%2010" class="report-link-small">Report</a>
-            <button class="btn-report-question" onclick="openReportModal('detail', 'CBSE', '2026', '')"><span>🚩</span> Report</button>
-</div>
-        </article>
-        <article class="question-card" data-subject="Chemistry">
-          <div class="card-meta">
-            <span class="tag tag-marks">2 Marks</span>
-            <span class="tag">Chemistry</span>
-            <span class="repeat-pill">Appeared in 3 Board Sets</span>
-            <span class="repeat-pill">Haloalkanes and Haloarenes</span>
-          </div>
-          <div class="question-text math-content">
-            Why are haloarenes less reactive towards nucleophilic substitution reaction ? Give two reasons.
-          </div>
-          <div class="card-action">
-            <a href="/practice/?q=18#card_18" class="card-link">Practice in Hub ➔</a>
-            <a href="mailto:contact@wovrix.in?subject=Report%20Question%2018" class="report-link-small">Report</a>
-            <button class="btn-report-question" onclick="openReportModal('detail', 'CBSE', '2026', '')"><span>🚩</span> Report</button>
-</div>
-        </article>
-        <article class="question-card" data-subject="Chemistry">
-          <div class="card-meta">
-            <span class="tag tag-marks">2 Marks</span>
-            <span class="tag">Chemistry</span>
-            <span class="repeat-pill">Appeared in 3 Board Sets</span>
-            <span class="repeat-pill">Coordination Compounds</span>
-          </div>
-          <div class="question-text math-content">
-            (a) Write IUPAC names of the following coordination compounds :
-(i) $[\text{Ag}(\text{NH}_3)_2] [\text{Ag}(\text{CN})_2]$
-(ii) $\text{K}_3[\text{Fe}(\text{C}_2\text{O}_4)_3]$
-OR
-(b) (i) Give a chemical test to show that $[\text{Co}(\text{NH}_3)_5\text{SO}_4]\text{Cl}$ and $[\text{Co}(\text{NH}_3)_5\text{Cl}]\text{SO}_4$ are ionisation isomers.
-(ii) What is meant by the ‘Chelate effect’ ? Give an example.
-          </div>
-          <div class="card-action">
-            <a href="/practice/?q=19#card_19" class="card-link">Practice in Hub ➔</a>
-            <a href="mailto:contact@wovrix.in?subject=Report%20Question%2019" class="report-link-small">Report</a>
-            <button class="btn-report-question" onclick="openReportModal('detail', 'CBSE', '2026', '')"><span>🚩</span> Report</button>
-</div>
-        </article>
-        <article class="question-card" data-subject="Chemistry">
-          <div class="card-meta">
-            <span class="tag tag-marks">2 Marks</span>
-            <span class="tag">Chemistry</span>
-            <span class="repeat-pill">Appeared in 3 Board Sets</span>
-            <span class="repeat-pill">Unclassified</span>
-          </div>
-          <div class="question-text math-content">
-            Following reaction takes place in one step :
-$2\text{A} + \text{B} \longrightarrow 2\text{C}$
-How will the rate of above reaction change if the volume of the reaction vessel is decreased to one third of its original volume ? Will there be any change in the order of reaction with the reduced volume ?
-          </div>
-          <div class="card-action">
-            <a href="/practice/?q=21#card_21" class="card-link">Practice in Hub ➔</a>
-            <a href="mailto:contact@wovrix.in?subject=Report%20Question%2021" class="report-link-small">Report</a>
-            <button class="btn-report-question" onclick="openReportModal('detail', 'CBSE', '2026', '')"><span>🚩</span> Report</button>
-</div>
-        </article>
-        <article class="question-card" data-subject="Chemistry">
-          <div class="card-meta">
-            <span class="tag tag-marks">3 Marks</span>
-            <span class="tag">Chemistry</span>
-            <span class="repeat-pill">Appeared in 3 Board Sets</span>
-            <span class="repeat-pill">Alcohols, Phenols and Ethers</span>
-          </div>
-          <div class="question-text math-content">
-            Write the reaction involved in the following :
-(a) Reimer-Tiemann reaction
-(b) Kolbe's reaction
-(c) Friedal-Crafts acylation of anisole
-          </div>
-          <div class="card-action">
-            <a href="/practice/?q=27#card_27" class="card-link">Practice in Hub ➔</a>
-            <a href="mailto:contact@wovrix.in?subject=Report%20Question%2027" class="report-link-small">Report</a>
-            <button class="btn-report-question" onclick="openReportModal('detail', 'CBSE', '2026', '')"><span>🚩</span> Report</button>
-</div>
-        </article>
-        <article class="question-card" data-subject="Chemistry">
-          <div class="card-meta">
-            <span class="tag tag-marks">4 Marks</span>
-            <span class="tag">Chemistry</span>
-            <span class="repeat-pill">Appeared in 3 Board Sets</span>
-            <span class="repeat-pill">Amines</span>
-          </div>
-          <div class="question-text math-content">
-            The reaction of amines with mineral acids to form ammonium salts shows that these are basic in nature. Aliphatic amines are stronger bases than ammonia whereas aromatic amines are weaker bases than ammonia. Aliphatic and aromatic primary and secondary amines react with acid chlorides, anhydrides and esters by nucleophilic substitution reaction. The main problem encountered during electrophilic substitution reactions of aromatic amines is that of their high reactivity. Substitution tends to occur at ortho- and para-positions. Hinsberg reagent is used for the identification and distinction between primary, secondary and tertiary amines. Aryldiazonium salts, usually obtained from arylamines, undergo replacement of the diazonium group with a variety of nucleophiles to provide advantageous methods for producing aryl halides, cyanides, phenols and arenes.
-Answer the following questions :
-(a) (i) Why $	ext{CH}_3 - 	ext{NH}_2$ is a stronger base than $(	ext{CH}_3)_3	ext{N}$ in aqueous solution ?
-(ii) Write structural formulae of the compound A and B :
-$$	ext{CH}_3	ext{CONH}_2 \xrightarrow{	ext{NaOBr}} 	ext{A} \xrightarrow[	ext{Base}]{	ext{C}_6	ext{H}_5	ext{COCl}} 	ext{B}$$
-(b) A compound 'X' with molecular formula $	ext{C}_3	ext{H}_9	ext{N}$ reacts with Hinsberg reagent to give a product insoluble in alkali. Identify 'X'.
-OR
-(b) How can you convert aniline to benzonitrile ?
-(c) Why is $-	ext{NH}_2$ group of aniline acetylated before carrying out nitration ?
-          </div>
-          <div class="card-action">
-            <a href="/practice/?q=29#card_29" class="card-link">Practice in Hub ➔</a>
-            <a href="mailto:contact@wovrix.in?subject=Report%20Question%2029" class="report-link-small">Report</a>
-            <button class="btn-report-question" onclick="openReportModal('detail', 'CBSE', '2026', '')"><span>🚩</span> Report</button>
-</div>
-        </article>
-        <article class="question-card" data-subject="Chemistry">
-          <div class="card-meta">
-            <span class="tag tag-marks">2 Marks</span>
-            <span class="tag">Chemistry</span>
-            <span class="repeat-pill">Appeared in 3 Board Sets</span>
-            <span class="repeat-pill">Coordination Compounds</span>
-          </div>
-          <div class="question-text math-content">
-            The Valence Bond Theory (VBT) explains the formation, magnetic behaviour and geometry of coordination compounds. The Crystal Field Theory (CFT) of coordination compounds is based on the effect of different crystal fields (provided by the ligands taken as point charges), on the degeneracy of d-orbital energies of the central metal atom/ion. The splitting of the d-orbitals provides different electronic arrangements in strong and weak crystal fields.
-Answer the following questions :
-(a) In octahedral crystal field, energies of which d-orbitals will be raised when ligands approach the central metal atom/ion ? Give reason in support of your answer.
-          </div>
-          <div class="card-action">
-            <a href="/practice/?q=30#card_30" class="card-link">Practice in Hub ➔</a>
-            <a href="mailto:contact@wovrix.in?subject=Report%20Question%2030" class="report-link-small">Report</a>
-            <button class="btn-report-question" onclick="openReportModal('detail', 'CBSE', '2026', '')"><span>🚩</span> Report</button>
-</div>
-        </article>
-        <article class="question-card" data-subject="Mathematics">
-          <div class="card-meta">
-            <span class="tag tag-marks">1 Marks</span>
-            <span class="tag">Mathematics</span>
-            <span class="repeat-pill">Appeared in 3 Board Sets</span>
-            <span class="repeat-pill">Matrices</span>
-          </div>
-          <div class="question-text math-content">
-            Which of the following properties is/are true for two matrices of suitable orders ?
-(i) $(A + B)' = A' + B'$
-(ii) $(A - B)' = B' - A'$
-(iii) $(AB)' = A'B'$
-(iv) $(kAB)' = kB'A'$ ($k$ is a scalar)
-(A) (i) only
-(B) (i), (ii) and (iii)
-(C) (i) and (ii)
-(D) (i) and (iv)
-          </div>
-          <div class="card-action">
-            <a href="/practice/?q=41#card_41" class="card-link">Practice in Hub ➔</a>
-            <a href="mailto:contact@wovrix.in?subject=Report%20Question%2041" class="report-link-small">Report</a>
-            <button class="btn-report-question" onclick="openReportModal('detail', 'CBSE', '2026', '')"><span>🚩</span> Report</button>
-</div>
-        </article>
-        <article class="question-card" data-subject="Mathematics">
-          <div class="card-meta">
-            <span class="tag tag-marks">1 Marks</span>
-            <span class="tag">Mathematics</span>
-            <span class="repeat-pill">Appeared in 3 Board Sets</span>
-            <span class="repeat-pill">Matrices</span>
-          </div>
-          <div class="question-text math-content">
-            If $\Delta_1 = \begin{vmatrix} 1 & 0 & 0 \\ 0 & 2 & 0 \\ 0 & 0 & 3 \end{vmatrix}$ and $\Delta_2 = \begin{vmatrix} 0 & 2 & 0 \\ 1 & 0 & 0 \\ 0 & 0 & 6 \end{vmatrix}$, then
-(A) $\Delta_1 = 2\Delta_2$
-(B) $\Delta_2 = -2\Delta_1$
-(C) $\Delta_1 = \Delta_2$
-(D) $\Delta_2 = -\Delta_1$
-          </div>
-          <div class="card-action">
-            <a href="/practice/?q=42#card_42" class="card-link">Practice in Hub ➔</a>
-            <a href="mailto:contact@wovrix.in?subject=Report%20Question%2042" class="report-link-small">Report</a>
-            <button class="btn-report-question" onclick="openReportModal('detail', 'CBSE', '2026', '')"><span>🚩</span> Report</button>
-</div>
-        </article>
-        <article class="question-card" data-subject="Mathematics">
-          <div class="card-meta">
-            <span class="tag tag-marks">1 Marks</span>
-            <span class="tag">Mathematics</span>
-            <span class="repeat-pill">Appeared in 3 Board Sets</span>
-            <span class="repeat-pill">Vectors</span>
-          </div>
-          <div class="question-text math-content">
-            The value of m for which the points with position vectors $-\hat{i} - \hat{j} + 2\hat{k}$, $2\hat{i} + m\hat{j} + 5\hat{k}$ and $3\hat{i} + 11\hat{j} + 6\hat{k}$ are collinear, is
-(A) $8$
-(B) $-8$
-(C) $2$
-(D) $\ rac{5}{2}$
-          </div>
-          <div class="card-action">
-            <a href="/practice/?q=52#card_52" class="card-link">Practice in Hub ➔</a>
-            <a href="mailto:contact@wovrix.in?subject=Report%20Question%2052" class="report-link-small">Report</a>
-            <button class="btn-report-question" onclick="openReportModal('detail', 'CBSE', '2026', '')"><span>🚩</span> Report</button>
-</div>
-        </article>
-        <article class="question-card" data-subject="Mathematics">
-          <div class="card-meta">
-            <span class="tag tag-marks">1 Marks</span>
-            <span class="tag">Mathematics</span>
-            <span class="repeat-pill">Appeared in 3 Board Sets</span>
-            <span class="repeat-pill">Linear Programming</span>
-          </div>
-          <div class="question-text math-content">
-            The degree of an objective function of a linear programming problem is
-(A) $0$
-(B) $1$
-(C) $2$
-(D) Any natural number
-          </div>
-          <div class="card-action">
-            <a href="/practice/?q=56#card_56" class="card-link">Practice in Hub ➔</a>
-            <a href="mailto:contact@wovrix.in?subject=Report%20Question%2056" class="report-link-small">Report</a>
-            <button class="btn-report-question" onclick="openReportModal('detail', 'CBSE', '2026', '')"><span>🚩</span> Report</button>
-</div>
-        </article>
-        <article class="question-card" data-subject="Mathematics">
-          <div class="card-meta">
-            <span class="tag tag-marks">1 Marks</span>
-            <span class="tag">Mathematics</span>
-            <span class="repeat-pill">Appeared in 3 Board Sets</span>
-            <span class="repeat-pill">Probability</span>
-          </div>
-          <div class="question-text math-content">
-            Assertion (A) : In an experiment of throwing an unbiased die, the probability of getting a prime number given that number appearing on the die being odd is $\ rac{2}{3}$.
-Reason (R) : For any two events A and B, $P(A|B) = \ rac{P(A \cup B)}{P(B)}$
-          </div>
-          <div class="card-action">
-            <a href="/practice/?q=57#card_57" class="card-link">Practice in Hub ➔</a>
-            <a href="mailto:contact@wovrix.in?subject=Report%20Question%2057" class="report-link-small">Report</a>
-            <button class="btn-report-question" onclick="openReportModal('detail', 'CBSE', '2026', '')"><span>🚩</span> Report</button>
-</div>
-        </article>
-        <article class="question-card" data-subject="Mathematics">
-          <div class="card-meta">
-            <span class="tag tag-marks">1 Marks</span>
-            <span class="tag">Mathematics</span>
-            <span class="repeat-pill">Appeared in 3 Board Sets</span>
-            <span class="repeat-pill">Vectors</span>
-          </div>
-          <div class="question-text math-content">
-            Assertion (A) : Lines given by $x = py + q$, $z = ry + s$ and $x = p'y + q'$, $z = r'y + s'$ are perpendicular to each other when $pp' + rr' = 1$.
-Reason (R) : Two lines $\vec{r} = \vec{a}_1 + \lambda \vec{b}_1$ and $\vec{r} = \vec{a}_2 + \mu \vec{b}_2$ are perpendicular to each other if $\vec{b}_1 \cdot \vec{b}_2 = 0$.
-          </div>
-          <div class="card-action">
-            <a href="/practice/?q=58#card_58" class="card-link">Practice in Hub ➔</a>
-            <a href="mailto:contact@wovrix.in?subject=Report%20Question%2058" class="report-link-small">Report</a>
-            <button class="btn-report-question" onclick="openReportModal('detail', 'CBSE', '2026', '')"><span>🚩</span> Report</button>
-</div>
-        </article>
-        <article class="question-card" data-subject="Mathematics">
-          <div class="card-meta">
-            <span class="tag tag-marks">2 Marks</span>
-            <span class="tag">Mathematics</span>
-            <span class="repeat-pill">Appeared in 3 Board Sets</span>
-            <span class="repeat-pill">Vectors</span>
-          </div>
-          <div class="question-text math-content">
-            Vectors $\vec{a} = 3\hat{i} - 2\hat{j} + 2\hat{k}$ and $\vec{b} = \hat{i} + 2\hat{k}$ represent the two adjacent sides of a parallelogram. Find the vectors representing its diagonals and hence find their lengths.
-          </div>
-          <div class="card-action">
-            <a href="/practice/?q=62#card_62" class="card-link">Practice in Hub ➔</a>
-            <a href="mailto:contact@wovrix.in?subject=Report%20Question%2062" class="report-link-small">Report</a>
-            <button class="btn-report-question" onclick="openReportModal('detail', 'CBSE', '2026', '')"><span>🚩</span> Report</button>
-</div>
-        </article>
-        <article class="question-card" data-subject="Mathematics">
-          <div class="card-meta">
-            <span class="tag tag-marks">3 Marks</span>
-            <span class="tag">Mathematics</span>
-            <span class="repeat-pill">Appeared in 3 Board Sets</span>
-            <span class="repeat-pill">Probability</span>
-          </div>
-          <div class="question-text math-content">
-            (a) Out of two bags, bag I contains $3$ red and $4$ white balls and bag II contains $8$ red and $6$ white balls. A die is thrown. If it shows a number less than $3$ then a ball is drawn at random from bag I, otherwise a ball is drawn at random from bag II. Find the probability that the ball drawn from one of the bags is a red ball.
-OR
-(b) The probability of simultaneous occurrence of atleast one of the two events X and Y is a. If the probability that exactly one of the events X, Y occurs is b, prove that $\text{P}(X') + \text{P}(Y') = 2 - 2a + b$.
-          </div>
-          <div class="card-action">
-            <a href="/practice/?q=69#card_69" class="card-link">Practice in Hub ➔</a>
-            <a href="mailto:contact@wovrix.in?subject=Report%20Question%2069" class="report-link-small">Report</a>
-            <button class="btn-report-question" onclick="openReportModal('detail', 'CBSE', '2026', '')"><span>🚩</span> Report</button>
-</div>
-        </article>
-        <article class="question-card" data-subject="Mathematics">
-          <div class="card-meta">
-            <span class="tag tag-marks">5 Marks</span>
-            <span class="tag">Mathematics</span>
-            <span class="repeat-pill">Appeared in 3 Board Sets</span>
-            <span class="repeat-pill">Probability</span>
-          </div>
-          <div class="question-text math-content">
-            In an online jackpot, there is one first prize of ₹ $3,00,000$, two second prizes of ₹ $2,00,000$ each and three third prizes of ₹ $50,000$ each.
-
-A total of $1,00,000$ jackpot tickets each costing ₹ $100$ were sold there by raising a fund of ₹ $1,00,00,000$.
-
-Rohan bought one ticket.
-
-Based on given information, answer the following questions :
-(i) What are the possible amounts, the person can win ?
-(ii) (a) What is the probability that the person wins atleast ₹ $2,00,000$ ?
-OR
-(ii) (b) What is the probability that the person does not win any amount ?
-(iii) In another jackpot, Rohan also bought a ticket having a prize money of ₹ $5,00,000$. The chances of winning the jackpot are $1$ in $1,00,000$. Find the probability that on exactly one of tickets he wins the jackpot.
-          </div>
-          <div class="card-action">
-            <a href="/practice/?q=77#card_77" class="card-link">Practice in Hub ➔</a>
-            <a href="mailto:contact@wovrix.in?subject=Report%20Question%2077" class="report-link-small">Report</a>
-            <button class="btn-report-question" onclick="openReportModal('detail', 'CBSE', '2026', '')"><span>🚩</span> Report</button>
-</div>
-        </article>
-        <article class="question-card" data-subject="Physics">
-          <div class="card-meta">
-            <span class="tag tag-marks">1 Marks</span>
-            <span class="tag">Physics</span>
-            <span class="repeat-pill">Appeared in 3 Board Sets</span>
-            <span class="repeat-pill">Unclassified</span>
-          </div>
-          <div class="question-text math-content">
-            A conducting wire connects two charged metallic spheres A and B of radii $r_1$ and $r_2$ respectively. The distance between the spheres is very large compared to their radii. The ratio of electric fields, $(E_A/E_B)$ at the surfaces of spheres A and B will be
-
-(A) $\frac{r_1}{r_2}$
-
-(B) $\frac{r_2}{r_1}$
-
-(C) $\frac{{r_1}^2}{{r_2}^2}$
-
-(D) $\frac{{r_2}^2}{{r_1}^2}$
-          </div>
-          <div class="card-action">
-            <a href="/practice/?q=80#card_80" class="card-link">Practice in Hub ➔</a>
-            <a href="mailto:contact@wovrix.in?subject=Report%20Question%2080" class="report-link-small">Report</a>
-            <button class="btn-report-question" onclick="openReportModal('detail', 'CBSE', '2026', '')"><span>🚩</span> Report</button>
-</div>
-        </article>
-        <article class="question-card" data-subject="Physics">
-          <div class="card-meta">
-            <span class="tag tag-marks">1 Marks</span>
-            <span class="tag">Physics</span>
-            <span class="repeat-pill">Appeared in 3 Board Sets</span>
-            <span class="repeat-pill">Semiconductor Electronics: Materials, Devices and Simple Circuits</span>
-          </div>
-          <div class="question-text math-content">
-            An electromagnetic wave passes from vacuum into a dielectric medium with relative electrical permittivity $(3/2)$ and relative magnetic permeability $(8/3)$. Then, its
-(A) wavelength is doubled and frequency remains unchanged.
-(B) wavelength is doubled and frequency is halved.
-(C) wavelength is halved and frequency remains unchanged.
-(D) wavelength and frequency both will remain unchanged.
-          </div>
-          <div class="card-action">
-            <a href="/practice/?q=83#card_83" class="card-link">Practice in Hub ➔</a>
-            <a href="mailto:contact@wovrix.in?subject=Report%20Question%2083" class="report-link-small">Report</a>
-            <button class="btn-report-question" onclick="openReportModal('detail', 'CBSE', '2026', '')"><span>🚩</span> Report</button>
-</div>
-        </article>
-        <article class="question-card" data-subject="Physics">
-          <div class="card-meta">
-            <span class="tag tag-marks">1 Marks</span>
-            <span class="tag">Physics</span>
-            <span class="repeat-pill">Appeared in 3 Board Sets</span>
-            <span class="repeat-pill">Unclassified</span>
-          </div>
-          <div class="question-text math-content">
-            Four independent waves are expressed as
-
-(i) $y_1 = A_1 \sin \omega t$
-
-(ii) $y_2 = A_2 \sin 2\omega t$
-
-(iii) $y_3 = A_3 \cos \omega t$
-
-(iv) $y_4 = A_4 \sin $\omega t + \pi/3$$
-
-The interference between two of these waves is possible in
-
-(A) (i) and (iii) only
-
-(B) (iii) and (iv) only
-
-(C) (i), (iii) and (iv) only
-
-(D) All of them
-          </div>
-          <div class="card-action">
-            <a href="/practice/?q=88#card_88" class="card-link">Practice in Hub ➔</a>
-            <a href="mailto:contact@wovrix.in?subject=Report%20Question%2088" class="report-link-small">Report</a>
-            <button class="btn-report-question" onclick="openReportModal('detail', 'CBSE', '2026', '')"><span>🚩</span> Report</button>
-</div>
-        </article>
-        <article class="question-card" data-subject="Physics">
-          <div class="card-meta">
-            <span class="tag tag-marks">1 Marks</span>
-            <span class="tag">Physics</span>
-            <span class="repeat-pill">Appeared in 3 Board Sets</span>
-            <span class="repeat-pill">Semiconductor Electronics: Materials, Devices and Simple Circuits</span>
-          </div>
-          <div class="question-text math-content">
-            In an unbiased p-n junction, at equilibrium, which of the following statements is true ?
-(A) Diffusion current is zero but drift current exists.
-(B) Diffusion current exists but drift current is zero.
-(C) Diffusion and drift currents are equal and opposite.
-(D) Both the diffusion and drift currents exist but are unequal.
-          </div>
-          <div class="card-action">
-            <a href="/practice/?q=90#card_90" class="card-link">Practice in Hub ➔</a>
-            <a href="mailto:contact@wovrix.in?subject=Report%20Question%2090" class="report-link-small">Report</a>
-            <button class="btn-report-question" onclick="openReportModal('detail', 'CBSE', '2026', '')"><span>🚩</span> Report</button>
-</div>
-        </article>
-        <article class="question-card" data-subject="Physics">
-          <div class="card-meta">
-            <span class="tag tag-marks">1 Marks</span>
-            <span class="tag">Physics</span>
-            <span class="repeat-pill">Appeared in 3 Board Sets</span>
-            <span class="repeat-pill">Magnetism and Matter</span>
-          </div>
-          <div class="question-text math-content">
-            Assertion (A) : All atoms have a net magnetic moment.
-Reason (R) : A current loop does not always behave as a magnetic dipole.
-          </div>
-          <div class="card-action">
-            <a href="/practice/?q=91#card_91" class="card-link">Practice in Hub ➔</a>
-            <a href="mailto:contact@wovrix.in?subject=Report%20Question%2091" class="report-link-small">Report</a>
-            <button class="btn-report-question" onclick="openReportModal('detail', 'CBSE', '2026', '')"><span>🚩</span> Report</button>
-</div>
-        </article>
-        <article class="question-card" data-subject="Physics">
-          <div class="card-meta">
-            <span class="tag tag-marks">1 Marks</span>
-            <span class="tag">Physics</span>
-            <span class="repeat-pill">Appeared in 3 Board Sets</span>
-            <span class="repeat-pill">Unclassified</span>
-          </div>
-          <div class="question-text math-content">
-            Assertion (A) : If accelerated electrons are passed through a narrow slit, a diffraction pattern is observed.
-Reason (R) : Electrons behave as both particles and waves.
-          </div>
-          <div class="card-action">
-            <a href="/practice/?q=92#card_92" class="card-link">Practice in Hub ➔</a>
-            <a href="mailto:contact@wovrix.in?subject=Report%20Question%2092" class="report-link-small">Report</a>
-            <button class="btn-report-question" onclick="openReportModal('detail', 'CBSE', '2026', '')"><span>🚩</span> Report</button>
-</div>
-        </article>
-        <article class="question-card" data-subject="Physics">
-          <div class="card-meta">
-            <span class="tag tag-marks">1 Marks</span>
-            <span class="tag">Physics</span>
-            <span class="repeat-pill">Appeared in 3 Board Sets</span>
-            <span class="repeat-pill">Unclassified</span>
-          </div>
-          <div class="question-text math-content">
-            Assertion (A) : The mass of a nucleus is less than the sum of the masses of the constituent nucleons.
-Reason (R) : Energy is absorbed when the nucleons are bound together to form a nucleus.
-          </div>
-          <div class="card-action">
-            <a href="/practice/?q=93#card_93" class="card-link">Practice in Hub ➔</a>
-            <a href="mailto:contact@wovrix.in?subject=Report%20Question%2093" class="report-link-small">Report</a>
-            <button class="btn-report-question" onclick="openReportModal('detail', 'CBSE', '2026', '')"><span>🚩</span> Report</button>
-</div>
-        </article>
-        <article class="question-card" data-subject="Physics">
-          <div class="card-meta">
-            <span class="tag tag-marks">1 Marks</span>
-            <span class="tag">Physics</span>
-            <span class="repeat-pill">Appeared in 3 Board Sets</span>
-            <span class="repeat-pill">Atoms</span>
-          </div>
-          <div class="question-text math-content">
-            Assertion (A) : In Bohr model of hydrogen atom, the energy levels are discrete and quantised.
-Reason (R) : In a hydrogen atom, the electrostatic force on the electron provides the necessary centripetal force to it to revolve around the nucleus.
-          </div>
-          <div class="card-action">
-            <a href="/practice/?q=94#card_94" class="card-link">Practice in Hub ➔</a>
-            <a href="mailto:contact@wovrix.in?subject=Report%20Question%2094" class="report-link-small">Report</a>
-            <button class="btn-report-question" onclick="openReportModal('detail', 'CBSE', '2026', '')"><span>🚩</span> Report</button>
-</div>
-        </article>
-        <article class="question-card" data-subject="Physics">
-          <div class="card-meta">
-            <span class="tag tag-marks">2 Marks</span>
-            <span class="tag">Physics</span>
-            <span class="repeat-pill">Appeared in 3 Board Sets</span>
-            <span class="repeat-pill">Wave Optics</span>
-          </div>
-          <div class="question-text math-content">
-            (a) A beam of light consisting of two wavelengths $400\text{ nm}$ and $600\text{ nm}$ is used to illuminate a single slit of width $1\text{ mm}$. Find the least distance of the point from the central maximum where the dark fringes due to both wavelengths coincide on the screen placed $1.5\text{ m}$ from the slit.
-
-OR
-
-(b) In a Young's double-slit experimental set-up with slit separation $0.6\text{ mm}$ a beam of light consisting of two wavelengths $440\text{ nm}$ and $660\text{ nm}$ is used to obtain interference pattern on a screen kept $1.5\text{ m}$ in front of the slits. Find the least distance of the point from the central maximum where the bright fringes due to both the wavelengths coincide.
-          </div>
-          <div class="card-action">
-            <a href="/practice/?q=96#card_96" class="card-link">Practice in Hub ➔</a>
-            <a href="mailto:contact@wovrix.in?subject=Report%20Question%2096" class="report-link-small">Report</a>
-            <button class="btn-report-question" onclick="openReportModal('detail', 'CBSE', '2026', '')"><span>🚩</span> Report</button>
-</div>
-        </article>
-        <article class="question-card" data-subject="Physics">
-          <div class="card-meta">
-            <span class="tag tag-marks">2 Marks</span>
-            <span class="tag">Physics</span>
-            <span class="repeat-pill">Appeared in 3 Board Sets</span>
-            <span class="repeat-pill">Moving Charges and Magnetism</span>
-          </div>
-          <div class="question-text math-content">
-            A wire of length $L$ is bent round into (i) a square coil having $N$ turns and (ii) a circular coil having $N$ turns. The coil in both cases is free to turn about a vertical axis coinciding with the plane of the coil, in a uniform, horizontal magnetic field and carry the same currents. Find the ratio of the maximum value of the torque acting on the square coil to that on the circular coil.
-          </div>
-          <div class="card-action">
-            <a href="/practice/?q=97#card_97" class="card-link">Practice in Hub ➔</a>
-            <a href="mailto:contact@wovrix.in?subject=Report%20Question%2097" class="report-link-small">Report</a>
-            <button class="btn-report-question" onclick="openReportModal('detail', 'CBSE', '2026', '')"><span>🚩</span> Report</button>
-</div>
-        </article>
-        <article class="question-card" data-subject="Physics">
-          <div class="card-meta">
-            <span class="tag tag-marks">2 Marks</span>
-            <span class="tag">Physics</span>
-            <span class="repeat-pill">Appeared in 3 Board Sets</span>
-            <span class="repeat-pill">Current Electricity</span>
-          </div>
-          <div class="question-text math-content">
-            What is the order of magnitude of drift velocity of electrons in a conductor? Deduce the relation between the current flowing through a conductor and drift velocity of electrons in it.
-          </div>
-          <div class="card-action">
-            <a href="/practice/?q=98#card_98" class="card-link">Practice in Hub ➔</a>
-            <a href="mailto:contact@wovrix.in?subject=Report%20Question%2098" class="report-link-small">Report</a>
-            <button class="btn-report-question" onclick="openReportModal('detail', 'CBSE', '2026', '')"><span>🚩</span> Report</button>
-</div>
-        </article>
-        <article class="question-card" data-subject="Physics">
-          <div class="card-meta">
-            <span class="tag tag-marks">3 Marks</span>
-            <span class="tag">Physics</span>
-            <span class="repeat-pill">Appeared in 3 Board Sets</span>
-            <span class="repeat-pill">Electric Charges and Fields</span>
-          </div>
-          <div class="question-text math-content">
-            (a) Using Gauss's law, deduce an expression for electric field at a point due to a uniformly charged infinite plane thin sheet.
-(b) Two large thin plane sheets, each having surface charge density $\sigma$, are held close and parallel to each other in air. What is the net electric field at a point (i) inside and (ii) outside, the sheets ?
-OR
-(a) Obtain the condition of balance of a Wheatstone bridge.
-(b) Find net resistance of the network of resistors connected between A and B, as shown in figure.
-[Diagram]
-          </div>
-          <div class="card-action">
-            <a href="/practice/?q=100#card_100" class="card-link">Practice in Hub ➔</a>
-            <a href="mailto:contact@wovrix.in?subject=Report%20Question%20100" class="report-link-small">Report</a>
-            <button class="btn-report-question" onclick="openReportModal('detail', 'CBSE', '2026', '')"><span>🚩</span> Report</button>
-</div>
-        </article>
-        <article class="question-card" data-subject="Physics">
-          <div class="card-meta">
-            <span class="tag tag-marks">3 Marks</span>
-            <span class="tag">Physics</span>
-            <span class="repeat-pill">Appeared in 3 Board Sets</span>
-            <span class="repeat-pill">Ray Optics and Optical Instruments</span>
-          </div>
-          <div class="question-text math-content">
-            (a) State the two conditions under which total internal reflection occurs.
-(b) A transparent container contains layers of three immiscible transparent liquids A, B and C of refractive indices $n$, $\ rac{3}{4}n$ and $\ rac{2}{3}n$, respectively. A laser beam is incident at the interface between A and B at an angle $\	heta$ as shown in figure. Prove that the beam does not enter region C at all for $\sin \	heta \ge \ rac{2}{3}$.
-          </div>
-          <div class="card-action">
-            <a href="/practice/?q=106#card_106" class="card-link">Practice in Hub ➔</a>
-            <a href="mailto:contact@wovrix.in?subject=Report%20Question%20106" class="report-link-small">Report</a>
-            <button class="btn-report-question" onclick="openReportModal('detail', 'CBSE', '2026', '')"><span>🚩</span> Report</button>
-</div>
-        </article>
-        <article class="question-card" data-subject="Physics">
-          <div class="card-meta">
-            <span class="tag tag-marks">4 Marks</span>
-            <span class="tag">Physics</span>
-            <span class="repeat-pill">Appeared in 3 Board Sets</span>
-            <span class="repeat-pill">Moving Charges and Magnetism</span>
-          </div>
-          <div class="question-text math-content">
-            A galvanometer is used to detect or/and measure small currents in an electrical circuit. It essentially works on the fact that a current-carrying coil experiences a deflecting torque when placed in a magnetic field. This deflection in the coil can be measured and it is related to the current flowing in the coil, the number of turns in the coil, area of the coil and the magnetic field. A hair spring attached to the coil provides a counter torque and helps in measuring the deflection. A galvanometer can be converted to an ammeter or a voltmeter of desired range by using suitable resistances.
-          </div>
-          <div class="card-action">
-            <a href="/practice/?q=107#card_107" class="card-link">Practice in Hub ➔</a>
-            <a href="mailto:contact@wovrix.in?subject=Report%20Question%20107" class="report-link-small">Report</a>
-            <button class="btn-report-question" onclick="openReportModal('detail', 'CBSE', '2026', '')"><span>🚩</span> Report</button>
-</div>
-        </article>
-        <article class="question-card" data-subject="Physics">
-          <div class="card-meta">
-            <span class="tag tag-marks">4 Marks</span>
-            <span class="tag">Physics</span>
-            <span class="repeat-pill">Appeared in 3 Board Sets</span>
-            <span class="repeat-pill">Dual Nature of Radiation and Matter</span>
-          </div>
-          <div class="question-text math-content">
-            A researcher performs an experiment on photo-electric effect using two metals A and B with unknown work functions. She illuminates the surfaces of A and B with monochromatic radiation of various frequencies and records the value of corresponding stopping potentials ($V_s$). The graph shows the variation of stopping potential ($V_s$) with the frequency of incident radiation ($\nu$) for metals A and B.
-          </div>
-          <div class="card-action">
-            <a href="/practice/?q=111#card_111" class="card-link">Practice in Hub ➔</a>
-            <a href="mailto:contact@wovrix.in?subject=Report%20Question%20111" class="report-link-small">Report</a>
-            <button class="btn-report-question" onclick="openReportModal('detail', 'CBSE', '2026', '')"><span>🚩</span> Report</button>
-</div>
-        </article>
-        <article class="question-card" data-subject="Physics">
-          <div class="card-meta">
-            <span class="tag tag-marks">1 Marks</span>
-            <span class="tag">Physics</span>
-            <span class="repeat-pill">Appeared in 3 Board Sets</span>
-            <span class="repeat-pill">Semiconductor Electronics: Materials, Devices and Simple Circuits</span>
-          </div>
-          <div class="question-text math-content">
-            (III) If the intensity of the incident radiation for both metals A and B, is doubled keeping its frequency constant, then
-
-(A) the slope of the parallel lines will increase.
-(B) the slope of the parallel lines will decrease.
-(C) the threshold frequencies for both A and B will decrease.
-(D) the slope of the parallel lines will not change but more electrons will be emitted per second.
-          </div>
-          <div class="card-action">
-            <a href="/practice/?q=114#card_114" class="card-link">Practice in Hub ➔</a>
-            <a href="mailto:contact@wovrix.in?subject=Report%20Question%20114" class="report-link-small">Report</a>
-            <button class="btn-report-question" onclick="openReportModal('detail', 'CBSE', '2026', '')"><span>🚩</span> Report</button>
-</div>
-        </article>
-        <article class="question-card" data-subject="Physics">
-          <div class="card-meta">
-            <span class="tag tag-marks">5 Marks</span>
-            <span class="tag">Physics</span>
-            <span class="repeat-pill">Appeared in 3 Board Sets</span>
-            <span class="repeat-pill">Ray Optics and Optical Instruments</span>
-          </div>
-          <div class="question-text math-content">
-            (a) Using the relation for refraction at a curved spherical surface, derive the expression for lens maker's formula.
-(b) Three lenses $L_1$, $L_2$ and $L_3$, each of focal length $40\text{ cm}$, are placed coaxially. The distance between $L_1$ and $L_2$ and between $L_2$ and $L_3$ are $120\text{ cm}$ and $20\text{ cm}$ respectively. An object is kept at a distance of $80\text{ cm}$ to the left of lens $L_1$.
-Find the distance of the final image formed from the object.
-
-OR
-
-(a) Draw a ray diagram to show the image formation by a concave mirror when the object is kept between its focus and the centre of curvature. Using this diagram, derive the mirror formula.
-(b) A concave mirror produces a two times magnified virtual image of an object kept $10\text{ cm}$ in front of it. Calculate the focal length of the mirror.
-          </div>
-          <div class="card-action">
-            <a href="/practice/?q=117#card_117" class="card-link">Practice in Hub ➔</a>
-            <a href="mailto:contact@wovrix.in?subject=Report%20Question%20117" class="report-link-small">Report</a>
-            <button class="btn-report-question" onclick="openReportModal('detail', 'CBSE', '2026', '')"><span>🚩</span> Report</button>
-</div>
-        </article>
-        <article class="question-card" data-subject="Physics">
-          <div class="card-meta">
-            <span class="tag tag-marks">5 Marks</span>
-            <span class="tag">Physics</span>
-            <span class="repeat-pill">Appeared in 3 Board Sets</span>
-            <span class="repeat-pill">Electromagnetic Induction</span>
-          </div>
-          <div class="question-text math-content">
-            (a) State Faraday's law of electromagnetic induction.
-(b) Derive an expression for the self-inductance of an air-filled long solenoid of length $l$ and cross-sectional area $A$ having $N$ turns.
-          </div>
-          <div class="card-action">
-            <a href="/practice/?q=118#card_118" class="card-link">Practice in Hub ➔</a>
-            <a href="mailto:contact@wovrix.in?subject=Report%20Question%20118" class="report-link-small">Report</a>
-            <button class="btn-report-question" onclick="openReportModal('detail', 'CBSE', '2026', '')"><span>🚩</span> Report</button>
-</div>
-        </article>
-        <article class="question-card" data-subject="Chemistry">
-          <div class="card-meta">
-            <span class="tag tag-marks">1 Marks</span>
-            <span class="tag">Chemistry</span>
-            <span class="repeat-pill">Appeared in 3 Board Sets</span>
-            <span class="repeat-pill">Chemical Kinetics</span>
-          </div>
-          <div class="question-text math-content">
-            Identify the correct statement :
-(A) Molecularity of a reaction is an experimental quantity.
-(B) For complex reactions molecularity has no meaning.
-(C) Molecularity of a reaction can be zero or even a fraction.
-(D) Molecularity more than three is very common in chemical reactions.
-          </div>
-          <div class="card-action">
-            <a href="/practice/?q=353#card_353" class="card-link">Practice in Hub ➔</a>
-            <a href="mailto:contact@wovrix.in?subject=Report%20Question%20353" class="report-link-small">Report</a>
-            <button class="btn-report-question" onclick="openReportModal('detail', 'CBSE', '2026', '')"><span>🚩</span> Report</button>
-</div>
-        </article>
-        <article class="question-card" data-subject="Chemistry">
-          <div class="card-meta">
-            <span class="tag tag-marks">1 Marks</span>
-            <span class="tag">Chemistry</span>
-            <span class="repeat-pill">Appeared in 3 Board Sets</span>
-            <span class="repeat-pill">Chemical Kinetics</span>
-          </div>
-          <div class="question-text math-content">
-            Assertion (A) : The molecularity of the given reaction is $2$
-$2\text{HI} \longrightarrow \text{H}_2 + \text{I}_2$
-Reason (R) : Two molecules of the reactants are involved in simultaneous collision between them.
-          </div>
-          <div class="card-action">
-            <a href="/practice/?q=364#card_364" class="card-link">Practice in Hub ➔</a>
-            <a href="mailto:contact@wovrix.in?subject=Report%20Question%20364" class="report-link-small">Report</a>
-            <button class="btn-report-question" onclick="openReportModal('detail', 'CBSE', '2026', '')"><span>🚩</span> Report</button>
-</div>
-        </article>
-        <article class="question-card" data-subject="Chemistry">
-          <div class="card-meta">
-            <span class="tag tag-marks">1 Marks</span>
-            <span class="tag">Chemistry</span>
-            <span class="repeat-pill">Appeared in 3 Board Sets</span>
-            <span class="repeat-pill">The d- and f-Block Elements</span>
-          </div>
-          <div class="question-text math-content">
-            Assertion (A) : Zinc, cadmium and mercury are not considered as transition elements.
-Reason (R) : These elements have completely filled orbitals in their ground state as well as in their common oxidation states.
-          </div>
-          <div class="card-action">
-            <a href="/practice/?q=365#card_365" class="card-link">Practice in Hub ➔</a>
-            <a href="mailto:contact@wovrix.in?subject=Report%20Question%20365" class="report-link-small">Report</a>
-            <button class="btn-report-question" onclick="openReportModal('detail', 'CBSE', '2026', '')"><span>🚩</span> Report</button>
-</div>
-        </article>
-        <article class="question-card" data-subject="Chemistry">
-          <div class="card-meta">
-            <span class="tag tag-marks">1 Marks</span>
-            <span class="tag">Chemistry</span>
-            <span class="repeat-pill">Appeared in 3 Board Sets</span>
-            <span class="repeat-pill">Haloalkanes and Haloarenes</span>
-          </div>
-          <div class="question-text math-content">
-            Assertion (A) : Aromatic primary amines can be prepared by Gabriel Phthalimide synthesis.
-Reason (R) : Aryl halides do not undergo nucleophilic substitution with the anion formed by phthalimide.
-          </div>
-          <div class="card-action">
-            <a href="/practice/?q=366#card_366" class="card-link">Practice in Hub ➔</a>
-            <a href="mailto:contact@wovrix.in?subject=Report%20Question%20366" class="report-link-small">Report</a>
-            <button class="btn-report-question" onclick="openReportModal('detail', 'CBSE', '2026', '')"><span>🚩</span> Report</button>
-</div>
-        </article>
+    <!-- Questions Feed Container -->
+    <div id="repeatsFeedContainer">
+      <div class="loading-state">Loading repeated question intelligence...</div>
     </div>
   </main>
 
+  <script src="/report-modal.js"></script>
+  <script src="/js/study_storage.js"></script>
+  <script src="/js/analytics.js"></script>
   <script>
-    function switchView(mode) {
-      document.getElementById('view-multi').style.display = mode === 'multi' ? 'flex' : 'none';
-      document.getElementById('view-freq').style.display = mode === 'freq' ? 'flex' : 'none';
-      document.getElementById('tab-btn-multi').classList.toggle('active', mode === 'multi');
-      document.getElementById('tab-btn-freq').classList.toggle('active', mode === 'freq');
+    let repeatsData = null;
+    let currentExam = 'cbse';
+    let currentSubject = 'all';
+    let minFrequency = 2;
+
+    async function loadRepeats() {
+      try {
+        const res = await fetch('/data/repeated_questions.json');
+        repeatsData = await res.json();
+        renderSubjectPills();
+        renderFeed();
+      } catch (e) {
+        document.getElementById('repeatsFeedContainer').innerHTML = '<div class="loading-state" style="color: #ef4444;">Failed to load repeats data.</div>';
+      }
+    }
+
+    function setRepeatsExam(exam) {
+      currentExam = exam;
+      currentSubject = 'all';
+      document.getElementById('btnExamCbse').classList.toggle('active', exam === 'cbse');
+      document.getElementById('btnExamNeet').classList.toggle('active', exam === 'neet');
+      
+      const slider = document.getElementById('repeatFrequencySlider');
+      const ticks = document.getElementById('sliderTicksContainer');
+      if (exam === 'neet') {
+        slider.min = "2";
+        slider.max = "30";
+        slider.value = "2";
+        minFrequency = 2;
+        document.getElementById('sliderValueText').innerText = "2x";
+        if (ticks) {
+          ticks.innerHTML = '<span>2x (All Recurrent)</span><span>10x (High Yield)</span><span>20x (Core Frequency)</span><span>30x (Every Single Year)</span>';
+        }
+      } else {
+        slider.min = "2";
+        slider.max = "6";
+        slider.value = "2";
+        minFrequency = 2;
+        document.getElementById('sliderValueText').innerText = "2x";
+        if (ticks) {
+          ticks.innerHTML = '<span>2x (Duplicates & Clones)</span><span>3x (High Yield)</span><span>4x (Recurring Pattern)</span><span>5x+ (Core Master Repeats)</span>';
+        }
+      }
+
+      renderSubjectPills();
+      renderFeed();
+    }
+
+    function renderSubjectPills() {
+      const cont = document.getElementById('subjectFilterContainer');
+      const subjects = currentExam === 'cbse' 
+        ? ['all', 'Physics', 'Chemistry', 'Mathematics']
+        : ['all', 'Physics', 'Chemistry', 'Botany', 'Zoology'];
+
+      cont.innerHTML = subjects.map(s => `
+        <button class="subj-pill ${s === currentSubject ? 'active' : ''}" onclick="filterSubject('${s}')">
+          ${s === 'all' ? 'All Subjects' : s}
+        </button>
+      `).join('');
     }
 
     function filterSubject(subj) {
-      document.querySelectorAll('.filter-btn').forEach(b => {
-        b.classList.toggle('active', b.innerText.includes(subj) || (subj === 'all' && b.innerText.includes('All')));
-      });
-      document.querySelectorAll('.question-card').forEach(c => {
-        if (subj === 'all' || c.getAttribute('data-subject') === subj) {
-          c.style.display = 'block';
-        } else {
-          c.style.display = 'none';
-        }
-      });
+      currentSubject = subj;
+      renderSubjectPills();
+      renderFeed();
     }
+
+    function onSliderChange(val) {
+      minFrequency = parseInt(val, 10);
+      document.getElementById('sliderValueText').innerText = `${minFrequency}x`;
+      renderFeed();
+    }
+
+    function renderFeed() {
+      if (!repeatsData) return;
+      const feed = document.getElementById('repeatsFeedContainer');
+      const badge = document.getElementById('repeatsMatchedBadge');
+
+      const rawList = currentExam === 'cbse' ? (repeatsData.cbse_repeats || []) : (repeatsData.neet_repeats || []);
+      
+      let filtered = rawList.filter(q => q.repeat_count >= minFrequency);
+      if (currentSubject !== 'all') {
+        filtered = filtered.filter(q => (q.subject || '').toLowerCase() === currentSubject.toLowerCase());
+      }
+
+      badge.innerText = `${filtered.length.toLocaleString()} Questions Found (≥ ${minFrequency}x)`;
+
+      if (filtered.length === 0) {
+        feed.innerHTML = `
+          <div style="background: var(--surface); border: 1px dashed var(--border); border-radius: var(--radius-md); padding: 48px 24px; text-align: center; margin-top: 20px;">
+            <div style="font-size: 28px; margin-bottom: 8px;">🔍</div>
+            <h3 style="margin: 0 0 6px 0;">No Questions Found at ${minFrequency}x Frequency</h3>
+            <p style="color: var(--text-muted); font-size: 13.5px; margin: 0;">Try lowering the frequency slider to 2x or 3x to view more question patterns.</p>
+          </div>
+        `;
+        return;
+      }
+
+      // Display up to 100 top matching repeats for crisp performance
+      const pageSlice = filtered.slice(0, 100);
+
+      let cardsHtml = '';
+      pageSlice.forEach((q, idx) => {
+        const qId = q.id || `rep_${idx+1}`;
+        const subj = q.subject || 'General';
+        const ch = q.chapter_name || q.ncert_chapter || 'Chapter';
+        const repCount = q.repeat_count;
+        const yearsStr = (q.years || []).join(', ');
+        const marksStr = q.marks ? `${q.marks} Mark${q.marks > 1 ? 's' : ''}` : '4 Marks';
+
+        const tierClass = repCount >= 5 ? 'badge-tier-5' : (repCount >= 4 ? 'badge-tier-4' : (repCount >= 3 ? 'badge-tier-3' : 'badge-tier-2'));
+
+        let optionsHtml = '';
+        if (q.options && typeof q.options === 'object') {
+          optionsHtml = '<div class="neet-options-grid" style="margin: 12px 0;">';
+          ['A', 'B', 'C', 'D'].forEach(opt => {
+            if (q.options[opt]) {
+              const isCorrect = q.correct_answer === opt;
+              optionsHtml += `
+                <div class="neet-opt-btn ${isCorrect ? 'correct' : ''}">
+                  <span class="opt-label">${opt}</span>
+                  <span class="opt-text">${escapeHtml(q.options[opt])}</span>
+                </div>
+              `;
+            }
+          });
+          optionsHtml += '</div>';
+        }
+
+        cardsHtml += `
+          <div class="question-card" id="${qId}" style="margin-bottom: 20px;">
+            <div class="q-meta-top">
+              <div class="q-badges-left">
+                <span class="q-source-pill" style="font-weight: 700;">#${idx+1} • ${subj}</span>
+                <span class="q-marks-pill">${marksStr}</span>
+                <span class="q-repeat-pill ${tierClass}">
+                  ★ Repeated ${repCount} Times (${q.type || 'Board Pattern'})
+                </span>
+              </div>
+              <span class="q-source-pill" style="opacity: 0.75;">${ch}</span>
+            </div>
+
+            <div class="q-body-text math-content" style="font-size: 14.5px; margin: 12px 0;">${escapeHtml(q.text)}</div>
+
+            ${optionsHtml}
+
+            <div style="font-size: 12px; color: var(--text-muted); font-family: var(--font-mono); margin: 8px 0 12px 0;">
+              Appeared across: <strong>${yearsStr}</strong> examination papers
+            </div>
+
+            <div class="q-actions-row">
+              <div class="q-action-btns-left">
+                <a href="/practice/?exam=${currentExam}&subject=${encodeURIComponent(subj)}&q=${qId}#${qId}" class="btn-step-rubric" style="text-decoration: none;">
+                  <span>Practice in Hub ➔</span>
+                </a>
+                <button class="btn-bookmark-action ${typeof isBookmarked === 'function' && isBookmarked(qId) ? 'bookmarked' : ''}" onclick="toggleBookmark('${qId}', '${subj}', '${escapeHtml(ch)}', 'Repeated')">
+                  <span>★</span> Bookmark
+                </button>
+                <button class="btn-share-action" onclick="shareQuestion('${qId}', '${subj}', 'Repeats', '${escapeHtml(q.text.slice(0, 80))}')">
+                  <span>🔗</span> Share
+                </button>
+                <button class="btn-report-question" onclick="openReportModal('${qId}', '${subj}', 'Repeats', '${escapeHtml(ch)}', '${marksStr}')">
+                  <span>🚩</span> Report
+                </button>
+              </div>
+              <div style="font-size: 11.5px; color: var(--text-muted); font-family: var(--font-mono);">
+                ID: ${qId}
+              </div>
+            </div>
+          </div>
+        `;
+      });
+
+      feed.innerHTML = cardsHtml;
+
+      if (window.renderMathInElement) {
+        renderMathInElement(feed, {
+          delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false},
+            {left: '\(', right: '\)', display: false},
+            {left: '\[', right: '\]', display: true}
+          ],
+          throwOnError: false
+        });
+      }
+    }
+
+    function shareQuestion(qId, subj, year, snippet) {
+      const shareUrl = `${window.location.origin}/practice/?q=${qId}#${qId}`;
+      const title = `PYQ Wovrix • ${subj} (${year})`;
+      const text = `Check this high-yield repeat question on PYQ Wovrix: "${snippet}..."`;
+
+      if (navigator.share) {
+        navigator.share({ title, text, url: shareUrl }).catch(() => {});
+      } else {
+        navigator.clipboard.writeText(`${title}
+${text}
+${shareUrl}`).then(() => {
+          alert('Question link copied to clipboard!');
+        });
+      }
+    }
+
+    function escapeHtml(str) {
+      if (!str) return '';
+      return str.replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;');
+    }
+
+    window.addEventListener('DOMContentLoaded', loadRepeats);
   </script>
-
-    <footer class="site-footer">
-    <div class="footer-top-grid">
-      <div class="footer-brand-column">
-        <div class="brand">
-          <svg class="brand-logo-icon" width="20" height="20" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="32" height="32" rx="7" fill="#18181b"/>
-            <path d="M6 10L11 23L16 14L21 23L26 10" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
-            <circle cx="16" cy="14" r="2.2" fill="#3b82f6"/>
-          </svg>
-          <span class="brand-name">WOVRIX <span class="brand-slash">/</span> <span class="brand-sub">PYQ</span></span>
-        </div>
-        <p class="footer-brand-desc">
-          Official past paper intelligence for CBSE Class 12 and NEET UG. Pure NCERT alignment, multi-year frequency filters, and zero distractions.
-        </p>
-        <div class="footer-exam-pills">
-          <span class="f-pill active">CBSE 12 PCM</span>
-          <span class="f-pill active">NEET UG</span>
-          <span class="f-pill">Class 10 (Soon)</span>
-        </div>
-      </div>
-
-      <div class="footer-col">
-        <h4 class="footer-heading">CBSE Class 12 Hubs</h4>
-        <ul class="footer-links">
-          <li><a href="/cbse-12/physics/">Physics (14 Chapters)</a></li>
-          <li><a href="/cbse-12/chemistry/">Chemistry (10 Chapters)</a></li>
-          <li><a href="/cbse-12/mathematics/">Mathematics (13 Chapters)</a></li>
-          <li><a href="/practice/?exam=cbse">Interactive Question Stream</a></li>
-          <li><a href="/repeated/?exam=cbse">★ Most Repeated PYQs</a></li>
-          <li><a href="/paper-maker/">Custom Board Paper Maker</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h4 class="footer-heading">NEET UG Archives</h4>
-        <ul class="footer-links">
-          <li><a href="/neet/physics/">NEET Physics (28 Chapters)</a></li>
-          <li><a href="/neet/chemistry/">NEET Chemistry (20 Chapters)</a></li>
-          <li><a href="/neet/biology/">NEET Biology (Botany & Zoology)</a></li>
-          <li><a href="/practice/?exam=neet">Interactive NEET Quiz Hub</a></li>
-          <li><a href="/repeated/?exam=neet">High-Yield NEET Clones</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h4 class="footer-heading">Platform & Tools</h4>
-        <ul class="footer-links">
-          <li><a href="/paper-maker/">Custom Paper Maker (20M/35M/70M)</a></li>
-          <li><a href="/repeated/">Repeated Question Radar</a></li>
-          <li><a href="/practice/">Full Question Bank</a></li>
-          <li><a href="/formula-sheets/">Formula Reference Sheets</a></li>
-          <li><a href="https://wovrix.in">Wovrix Main Portal</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="footer-bottom-bar">
-      <div class="footer-copy">
-        © 2026 PYQ Wovrix • Educational Past Paper Search & Interactive Practice Platform.
-      </div>
-      <div class="footer-bottom-links">
-        <a href="#top">Back to Top ↑</a>
-        <a href="https://wovrix.in/privacy">Privacy</a>
-        <a href="https://wovrix.in/terms">Terms</a>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Persistent Mobile Bottom Dock -->
-  <nav class="mobile-bottom-dock" aria-label="Mobile Navigation">
-    <a href="/" class="dock-item">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-      <span>Home</span>
-    </a>
-    <a href="/practice/" class="dock-item">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="m9 12 2 2 4-4"/></svg>
-      <span>Practice</span>
-    </a>
-    <a href="/repeated/" class="dock-item">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-      <span>Repeats</span>
-    </a>
-    <a href="/paper-maker/" class="dock-item">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
-      <span>Maker</span>
-    </a>
-    <a href="/practice/?exam=neet" class="dock-item">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24"/><path d="m14.83 9.17 4.24-4.24"/><path d="m14.83 14.83 4.24 4.24"/><path d="m9.17 14.83-4.24 4.24"/></svg>
-      <span>NEET</span>
-    </a>
-  </nav>
-
-  <script src="/report-modal.js"></script>
 </body>
 </html>

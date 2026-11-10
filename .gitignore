@@ -1,1 +1,7 @@
 .vercel
+scratch/
+graphify-out/
+
+.env
+.env*
+*.env

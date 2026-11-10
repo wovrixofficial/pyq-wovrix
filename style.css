@@ -1220,8 +1220,39 @@ a {
   --shadow-elevated: 0 12px 24px -4px rgba(0, 0, 0, 0.6);
 }
 
+[data-theme="dark"] body {
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+[data-theme="dark"] h1, [data-theme="dark"] h2, [data-theme="dark"] h3, [data-theme="dark"] h4 {
+  color: #f9fafb;
+}
+
+[data-theme="dark"] p {
+  color: #cbd5e1;
+}
+
 [data-theme="dark"] .site-header {
   background: rgba(17, 24, 39, 0.85);
+  border-bottom-color: #1f2937;
+}
+
+[data-theme="dark"] .site-footer {
+  background: #0b0f19;
+  border-top-color: #1f2937;
+}
+
+[data-theme="dark"] .footer-brand-desc,
+[data-theme="dark"] .footer-links a,
+[data-theme="dark"] .footer-links-list a,
+[data-theme="dark"] .footer-bottom {
+  color: #9ca3af;
+}
+
+[data-theme="dark"] .footer-links a:hover,
+[data-theme="dark"] .footer-links-list a:hover {
+  color: #60a5fa;
 }
 
 [data-theme="dark"] .mobile-bottom-dock {
@@ -1233,19 +1264,165 @@ a {
   fill: #3b82f6;
 }
 
-[data-theme="dark"] .question-card {
+[data-theme="dark"] .question-card,
+[data-theme="dark"] .chapter-card,
+[data-theme="dark"] .subject-card,
+[data-theme="dark"] .neet-card,
+[data-theme="dark"] .chapter-header-box,
+[data-theme="dark"] .question-detail-card,
+[data-theme="dark"] .hub-control-panel,
+[data-theme="dark"] .filter-box,
+[data-theme="dark"] .faq-item {
   background: #111827;
   border-color: #1f2937;
+  color: #f9fafb;
 }
 
-[data-theme="dark"] .hub-control-panel {
-  background: #111827;
-  border-color: #1f2937;
+[data-theme="dark"] .q-body-text,
+[data-theme="dark"] .math-content {
+  color: #f9fafb;
 }
 
-[data-theme="dark"] .q-source-pill {
+[data-theme="dark"] .katex {
+  color: #f9fafb !important;
+}
+
+[data-theme="dark"] .q-source-pill,
+[data-theme="dark"] .tag {
   background: #1f2937;
   color: #9ca3af;
+  border-color: #374151;
+}
+
+[data-theme="dark"] .q-marks-pill,
+[data-theme="dark"] .tag-marks {
+  background: #1e3a8a33;
+  color: #93c5fd;
+  border-color: #1d4ed8;
+}
+
+[data-theme="dark"] .telemetry-status-bar {
+  background: #111827;
+  border-color: #1f2937;
+}
+
+[data-theme="dark"] .status-title {
+  color: #9ca3af;
+}
+
+[data-theme="dark"] .status-value {
+  color: #f9fafb;
+}
+
+[data-theme="dark"] .neet-meta,
+[data-theme="dark"] .chapter-desc,
+[data-theme="dark"] .section-desc,
+[data-theme="dark"] .hero-editorial-lead {
+  color: #9ca3af;
+}
+
+/* Practice hub controls in dark mode */
+[data-theme="dark"] .filter-select,
+[data-theme="dark"] .search-input,
+[data-theme="dark"] input,
+[data-theme="dark"] select,
+[data-theme="dark"] textarea {
+  background: #1f2937 !important;
+  border-color: #374151 !important;
+  color: #f9fafb !important;
+}
+
+[data-theme="dark"] .sec-pill {
+  background: #1f2937;
+  border-color: #374151;
+  color: #9ca3af;
+}
+[data-theme="dark"] .sec-pill:hover,
+[data-theme="dark"] .sec-pill.active {
+  background: #3b82f6;
+  border-color: #3b82f6;
+  color: #ffffff;
+}
+
+[data-theme="dark"] .exam-tab-btn {
+  background: #111827;
+  border-color: #1f2937;
+  color: #9ca3af;
+}
+[data-theme="dark"] .exam-tab-btn.active {
+  background: #3b82f6;
+  color: #ffffff;
+  border-color: #3b82f6;
+}
+
+/* NEET Options buttons in dark mode */
+[data-theme="dark"] .neet-opt-btn {
+  background: #1f2937;
+  border-color: #374151;
+  color: #f9fafb;
+}
+[data-theme="dark"] .neet-opt-btn:hover {
+  background: #374151;
+  border-color: #60a5fa;
+}
+[data-theme="dark"] .neet-opt-btn.correct {
+  background: #064e3b;
+  border-color: #10b981;
+  color: #ecfdf5;
+}
+[data-theme="dark"] .neet-opt-btn.incorrect {
+  background: #7f1d1d;
+  border-color: #ef4444;
+  color: #fef2f2;
+}
+
+/* Solution Box & Drawers in dark mode */
+[data-theme="dark"] .solution-box {
+  background: #111827 !important;
+  border-color: #1f2937 !important;
+  border-left-color: #3b82f6 !important;
+}
+[data-theme="dark"] .sol-drawer-inner {
+  color: #f9fafb;
+}
+[data-theme="dark"] .sol-rubric-card {
+  background: #1f2937 !important;
+  border-color: #374151 !important;
+  color: #e5e7eb !important;
+}
+[data-theme="dark"] .sol-rubric-desc {
+  color: #cbd5e1 !important;
+}
+[data-theme="dark"] .sol-step-text {
+  color: #f3f4f6 !important;
+}
+[data-theme="dark"] .sol-action-btn {
+  background: #1f2937;
+  border-color: #374151;
+  color: #e5e7eb;
+}
+[data-theme="dark"] .sol-action-btn:hover {
+  background: #374151;
+  color: #ffffff;
+}
+[data-theme="dark"] .btn-step-rubric {
+  background: #1e3a8a33;
+  border-color: #1d4ed8;
+  color: #93c5fd;
+}
+[data-theme="dark"] .btn-step-rubric.has-cached {
+  background: #064e3b33;
+  border-color: #059669;
+  color: #6ee7b7;
+}
+
+/* Breadcrumbs in dark mode */
+[data-theme="dark"] .breadcrumbs,
+[data-theme="dark"] .breadcrumbs a {
+  color: #9ca3af;
+}
+[data-theme="dark"] .breadcrumbs span {
+  color: #f9fafb;
 }
 
 [data-theme="dark"] .report-modal-card {
@@ -1268,6 +1445,114 @@ a {
   background: #090d16;
   border-color: #374151;
   color: #f9fafb;
+}
+
+
+/* Repeat Frequency Tier Badges (High Contrast Light/Dark) */
+.q-repeat-pill.badge-tier-5 {
+  background: #fef2f2;
+  color: #dc2626;
+  border: 1px solid rgba(220, 38, 38, 0.25);
+  font-weight: 800;
+}
+[data-theme="dark"] .q-repeat-pill.badge-tier-5 {
+  background: rgba(239, 68, 68, 0.2) !important;
+  color: #fca5a5 !important;
+  border-color: rgba(239, 68, 68, 0.4) !important;
+}
+.q-repeat-pill.badge-tier-4 {
+  background: #fff7ed;
+  color: #ea580c;
+  border: 1px solid rgba(234, 88, 12, 0.25);
+  font-weight: 800;
+}
+[data-theme="dark"] .q-repeat-pill.badge-tier-4 {
+  background: rgba(249, 115, 22, 0.2) !important;
+  color: #fdba74 !important;
+  border-color: rgba(249, 115, 22, 0.4) !important;
+}
+.q-repeat-pill.badge-tier-3 {
+  background: #fefce8;
+  color: #b45309;
+  border: 1px solid rgba(180, 83, 9, 0.25);
+  font-weight: 800;
+}
+[data-theme="dark"] .q-repeat-pill.badge-tier-3 {
+  background: rgba(234, 179, 8, 0.2) !important;
+  color: #fde047 !important;
+  border-color: rgba(234, 179, 8, 0.4) !important;
+}
+.q-repeat-pill.badge-tier-2 {
+  background: #eff6ff;
+  color: #2563eb;
+  border: 1px solid rgba(37, 99, 235, 0.25);
+  font-weight: 800;
+}
+[data-theme="dark"] .q-repeat-pill.badge-tier-2 {
+  background: rgba(59, 130, 246, 0.2) !important;
+  color: #93c5fd !important;
+  border-color: rgba(59, 130, 246, 0.4) !important;
+}
+
+/* Base NEET Options Grid & Button */
+.neet-options-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 14px 0;
+}
+@media (max-width: 640px) {
+  .neet-options-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.neet-opt-btn {
+  padding: 10px 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-serif);
+  font-size: 15px;
+  cursor: pointer;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.15s ease;
+}
+.neet-opt-btn:hover {
+  border-color: var(--accent);
+  background: var(--surface);
+}
+.neet-opt-btn.correct {
+  background: #ecfdf5 !important;
+  border-color: #10b981 !important;
+  color: #065f46 !important;
+  font-weight: 600;
+}
+.neet-opt-btn.incorrect {
+  background: #fef2f2 !important;
+  border-color: #ef4444 !important;
+  color: #991b1b !important;
+}
+.opt-label {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 12px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 2px 7px;
+  border-radius: 4px;
+  color: var(--text-muted);
+}
+[data-theme="dark"] .opt-label {
+  background: #111827 !important;
+  border-color: #374151 !important;
+  color: #9ca3af !important;
+}
+.opt-text {
+  flex: 1;
 }
 
 /* Theme Switcher Button */

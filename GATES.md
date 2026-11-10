@@ -54,3 +54,19 @@
   CHECK: python scripts/verify_links.py
   EXPECT: Link Integrity Audit: PASSED (0 broken NEET or dead /neetug/ links across all files!)
   EVIDENCE: automatic-evidence=v1; definition-sha256=80a9be66dabfc515a191fa838c263b652624dc41ae9351d1b744f58bb6cb38f2; exit=0; EXPECT=matched; output-sha256=76d930bf8ef508e2b03a4425fe8ec46100f6e094103b351e0f207e01f966d7b4; output-bytes=87; shell=C:\Windows\system32\cmd.exe; cwd=C:\Users\Srijan\.gemini\antigravity\scratch\pyq-wovrix; path=b1289237da97/70 entries
+
+- [x] GATE-REPEATS-FREQUENCY-SLIDER: Repeat page has dynamic frequency slider and strict repeat dataset
+  CHECK: node -e "const fs = require('fs'); const html = fs.readFileSync('repeated/index.html', 'utf8'); const data = JSON.parse(fs.readFileSync('data/repeated_questions.json', 'utf8')); if (!html.includes('repeatFrequencySlider') || !data.cbse_repeats || data.cbse_repeats.length < 100) { console.error('Missing slider or data'); process.exit(1); } console.log('REPEATS_SLIDER_OK');"
+  EXPECT: REPEATS_SLIDER_OK
+  EVIDENCE: automatic-evidence=v1; definition-sha256=d4c3ee44cbe9583e9271786efde6b6bc866117fa433a09e35c57af10fa472de2; exit=0; EXPECT=matched; output-sha256=550aff02ff3a157efb0f14c69b673b32e51a3ff4bfa7ffce952d3d2f303ba64e; output-bytes=18; shell=C:\Windows\system32\cmd.exe; cwd=C:\Users\Srijan\.gemini\antigravity\scratch\pyq-wovrix; path=575c3f81a554/70 entries
+
+- [x] GATE-PAPER-MAKER-NEET: Paper Maker generates both CBSE board papers and NEET UG mock papers
+  CHECK: node -e "const fs = require('fs'); const html = fs.readFileSync('paper-maker/index.html', 'utf8'); if (!html.includes('renderNeetPaper') || !html.includes('renderCbsePaper') || !html.includes('sel-exam')) { console.error('Missing NEET paper maker'); process.exit(1); } console.log('PAPER_MAKER_NEET_OK');"
+  EXPECT: PAPER_MAKER_NEET_OK
+  EVIDENCE: automatic-evidence=v1; definition-sha256=148b516916755ff963cc40e656e36980774321025f112bfba4e21510fc3c623c; exit=0; EXPECT=matched; output-sha256=73802653e4fc07eae9bf69f1d3d20abb6d8813a7931b02e307aa5eb798718074; output-bytes=20; shell=C:\Windows\system32\cmd.exe; cwd=C:\Users\Srijan\.gemini\antigravity\scratch\pyq-wovrix; path=575c3f81a554/70 entries
+
+
+- [x] GATE-NEET-CURATED-REPEATS: NEET curated high-yield repeat clusters ingested and max repeats verified
+  CHECK: node -e "const fs = require('fs'); const data = JSON.parse(fs.readFileSync('data/repeated_questions.json', 'utf8')); if (!data.summary || data.summary.neet_max_repeats < 30 || data.neet_repeats.length < 50) { console.error('NEET repeats not ingested'); process.exit(1); } console.log('NEET_REPEATS_OK');"
+  EXPECT: NEET_REPEATS_OK
+  EVIDENCE: automatic-evidence=v1; definition-sha256=4b2bf30011fa2c991fad521c2c3887c5c01e21c6bc38c2d9cecc795d1268b4dc; exit=0; EXPECT=matched; output-sha256=d6259353e61e01b9f8ffb2f52ce4362a7812ac1209d2984c59a3592881b56bb4; output-bytes=16; shell=C:\Windows\system32\cmd.exe; cwd=E:\PYQ_Wovrix_Portal\pyq-wovrix; path=441b33bf7197/70 entries

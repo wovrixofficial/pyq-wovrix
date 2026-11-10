@@ -69,6 +69,22 @@
       margin-right: 4px;
       margin-bottom: 4px;
     }
+    .source-tag {
+      display: inline-block;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    .source-cloud {
+      background: #dbeafe;
+      color: #1e40af;
+    }
+    .source-local {
+      background: #f1f5f9;
+      color: #475569;
+    }
     .btn-action-primary {
       background: var(--accent);
       color: #ffffff;
@@ -98,15 +114,18 @@
   <div class="reports-container">
     <div class="reports-header-card">
       <div>
-        <div class="reports-badge">System Diagnostic</div>
+        <div class="reports-badge">Central Diagnostic Console</div>
         <h1 style="font-size: 24px; margin: 8px 0 4px 0;">Student Reports & Error Resolution</h1>
         <p style="color: var(--text-muted); font-size: 13px; margin: 0;">
-          Inspect all client-side queued question reports, export to <code style="font-family: var(--font-mono); font-size: 12px;">reports_queue.json</code>, or trigger batch resolution.
+          Synchronized across all user devices via GitHub repo queue. Run <code style="font-family: var(--font-mono); font-size: 12px;">python scripts/morning_autofix.py</code> to auto-resolve.
         </p>
       </div>
       <div style="display: flex; gap: 8px; flex-wrap: wrap;">
         <button class="btn-action-primary" onclick="exportReportsQueue()">
           <span>📥 Download reports_queue.json</span>
+        </button>
+        <button class="btn-action-secondary" onclick="loadReports(true)">
+          <span>🔄 Refresh Live Queue</span>
         </button>
         <button class="btn-action-secondary" onclick="copyQueueJson()">
           <span>📋 Copy Queue JSON</span>
@@ -118,27 +137,54 @@
     </div>
 
     <div id="reportsListContainer">
-      <div class="loading-state">Loading reports from local system...</div>
+      <div class="loading-state">Fetching reports from central queue & local cache...</div>
     </div>
   </div>
 
   <script>
-    function loadReports() {
+    let allReports = [];
+
+    async function loadReports(forceRefresh = false) {
       const container = document.getElementById('reportsListContainer');
-      let reports = [];
+      container.innerHTML = '<div class="loading-state">Fetching reports from central queue & local cache...</div>';
+
+      let localReports = [];
       try {
-        reports = JSON.parse(localStorage.getItem('wovrix_pyq_reports') || '[]');
+        localReports = JSON.parse(localStorage.getItem('wovrix_pyq_reports') || '[]');
+        localReports.forEach(r => r._source = 'Local Browser');
       } catch (e) {
-        reports = [];
+        localReports = [];
       }
 
-      if (reports.length === 0) {
+      let cloudReports = [];
+      try {
+        const res = await fetch('/api/report');
+        if (res.ok) {
+          const d = await res.json();
+          cloudReports = d.reports || [];
+          cloudReports.forEach(r => r._source = 'Central Queue');
+        }
+      } catch (_) {}
+
+      // Deduplicate by qid + timestamp
+      const seen = new Set();
+      allReports = [];
+
+      [...cloudReports, ...localReports].forEach(r => {
+        const key = `${r.qid}_${r.timestamp || r.notes || ''}`;
+        if (!seen.has(key)) {
+          seen.add(key);
+          allReports.push(r);
+        }
+      });
+
+      if (allReports.length === 0) {
         container.innerHTML = `
           <div style="background: var(--surface); border: 1px dashed var(--border); border-radius: var(--radius-md); padding: 48px 24px; text-align: center;">
             <div style="font-size: 32px; margin-bottom: 12px;">✅</div>
             <h3 style="margin: 0 0 6px 0;">No Pending Reports</h3>
             <p style="color: var(--text-muted); font-size: 13px; margin: 0 0 16px 0;">
-              Zero error reports logged in your browser. Questions reported via the 🚩 button will appear here immediately.
+              Zero error reports currently pending in the central queue or your browser. Questions reported via the 🚩 button on any device will appear here automatically.
             </p>
             <a href="/practice/" class="btn-action-primary" style="text-decoration: none;">Go to Practice Hub</a>
           </div>
@@ -147,8 +193,12 @@
       }
 
       let rowsHtml = '';
-      reports.forEach((r, idx) => {
+      allReports.forEach((r, idx) => {
         const issuesBadges = (r.issues || []).map(i => `<span class="issue-tag">${i.replace('_', ' ')}</span>`).join('');
+        const sourceBadge = r._source === 'Central Queue' 
+          ? `<span class="source-tag source-cloud">Central (GitHub #${r.issueNumber || ''})</span>` 
+          : `<span class="source-tag source-local">Browser Local</span>`;
+
         rowsHtml += `
           <tr>
             <td><strong>#${r.qid || 'N/A'}</strong></td>
@@ -157,7 +207,8 @@
             <td>${r.chapter || '—'}</td>
             <td>${issuesBadges || 'General Issue'}</td>
             <td>${r.notes ? `<em>${r.notes}</em>` : '<span style="color: var(--text-muted);">None</span>'}</td>
-            <td style="font-family: var(--font-mono); font-size: 11px; color: var(--text-muted);">${new Date(r.timestamp).toLocaleTimeString()}</td>
+            <td>${sourceBadge}</td>
+            <td style="font-family: var(--font-mono); font-size: 11px; color: var(--text-muted);">${r.timestamp ? new Date(r.timestamp).toLocaleTimeString() : 'Recent'}</td>
           </tr>
         `;
       });
@@ -172,6 +223,7 @@
               <th>Chapter</th>
               <th>Issues Reported</th>
               <th>Student Notes</th>
+              <th>Origin</th>
               <th>Time</th>
             </tr>
           </thead>
@@ -183,25 +235,23 @@
     }
 
     function exportReportsQueue() {
-      const reports = JSON.parse(localStorage.getItem('wovrix_pyq_reports') || '[]');
-      if (reports.length === 0) {
+      if (allReports.length === 0) {
         alert('Queue is empty! Report a question first using the 🚩 button on any question card.');
         return;
       }
-      const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(reports, null, 2));
+      const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(allReports, null, 2));
       const downloadAnchor = document.createElement('a');
       downloadAnchor.setAttribute("href", dataStr);
       downloadAnchor.setAttribute("download", "reports_queue.json");
       document.body.appendChild(downloadAnchor);
       downloadAnchor.click();
       downloadAnchor.remove();
-      alert('Downloaded reports_queue.json! Place this inside your pyq-wovrix/data/ directory for your morning script to resolve.');
+      alert('Downloaded reports_queue.json! Saved into your downloads.');
     }
 
     function copyQueueJson() {
-      const reports = JSON.parse(localStorage.getItem('wovrix_pyq_reports') || '[]');
-      navigator.clipboard.writeText(JSON.stringify(reports, null, 2)).then(() => {
-        alert(`Copied ${reports.length} report(s) to clipboard in JSON format!`);
+      navigator.clipboard.writeText(JSON.stringify(allReports, null, 2)).then(() => {
+        alert(`Copied ${allReports.length} report(s) to clipboard in JSON format!`);
       });
     }
 

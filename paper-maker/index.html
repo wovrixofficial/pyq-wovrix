@@ -3,135 +3,151 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Custom CBSE Board Question Paper Maker | PYQ Wovrix</title>
-  <meta name="description" content="Generate authentic CBSE Class 12 board examination papers, unit tests, and pre-board mocks with A4 print layout and official marking schemes.">
+  <title>Custom Question Paper & Mock Maker (CBSE 12 & NEET UG) | PYQ Wovrix</title>
+  <meta name="description" content="Generate authentic CBSE Class 12 board examination papers and NEET UG 180/720 marks mock tests with A4 print layout, OMR instructions, and official answer keys.">
   <link rel="canonical" href="https://pyq.wovrix.in/paper-maker/">
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="stylesheet" href="/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;600;700&display=swap">
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
   <style>
     .maker-config-card {
       background: var(--surface);
       border: 1px solid var(--border);
-      border-radius: 14px;
+      border-radius: var(--radius-lg);
       padding: 28px;
       margin-bottom: 32px;
+      box-shadow: var(--shadow-card);
     }
     .config-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
       margin-bottom: 24px;
     }
     .config-field label {
       display: block;
-      font-family: var(--font-mono);
-      font-size: 0.8rem;
+      font-size: 0.85rem;
       font-weight: 700;
       color: var(--text-muted);
-      margin-bottom: 8px;
       text-transform: uppercase;
       letter-spacing: 0.05em;
+      margin-bottom: 8px;
     }
     .config-field select {
       width: 100%;
       padding: 10px 14px;
-      border-radius: 8px;
+      border-radius: var(--radius-sm);
       border: 1px solid var(--border);
-      background: #fafaf9;
-      font-family: var(--font-sans);
-      font-size: 0.95rem;
+      background: var(--bg);
       color: var(--text);
+      font-size: 0.95rem;
+      font-weight: 600;
     }
     .chapter-checkbox-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-      gap: 8px;
+      gap: 10px;
       max-height: 220px;
       overflow-y: auto;
       padding: 12px;
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      background: #fafaf9;
+      background: var(--bg);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-sm);
     }
     .chapter-checkbox-item {
       display: flex;
       align-items: center;
       gap: 8px;
-      font-family: var(--font-sans);
       font-size: 0.85rem;
+      color: var(--text);
+      cursor: pointer;
     }
     .paper-sheet {
       background: #ffffff;
-      border: 1px solid #d4d4d8;
-      border-radius: 8px;
+      color: #000000;
       padding: 40px;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.06);
-      margin-top: 32px;
-      display: none;
+      border: 1px solid #d4d4d8;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-elevated);
+      max-width: 850px;
+      margin: 0 auto 40px auto;
+      font-family: var(--font-serif);
     }
     .paper-official-header {
       text-align: center;
-      border-bottom: 2px solid #18181b;
-      padding-bottom: 16px;
-      margin-bottom: 24px;
+      border-bottom: 2px solid #000000;
+      padding-bottom: 12px;
+      margin-bottom: 16px;
     }
     .paper-official-header h2 {
-      font-family: var(--font-sans);
       font-size: 1.4rem;
-      font-weight: 900;
-      letter-spacing: 0.05em;
-      margin-bottom: 4px;
+      font-weight: 800;
+      margin: 0 0 4px 0;
+      letter-spacing: 0.04em;
     }
     .paper-meta-row {
       display: flex;
       justify-content: space-between;
       font-family: var(--font-mono);
-      font-size: 0.85rem;
+      font-size: 0.9rem;
       font-weight: 700;
-      margin-top: 12px;
+      margin-top: 10px;
+      border-top: 1px solid #000000;
+      padding-top: 6px;
     }
     .paper-instructions {
-      font-family: var(--font-serif);
-      font-size: 0.92rem;
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
       line-height: 1.5;
-      padding: 12px;
-      background: #fbfbfb;
-      border: 1px solid #eee;
-      border-radius: 6px;
       margin-bottom: 24px;
+      padding: 10px 14px;
+      background: #f4f4f5;
+      border-radius: 4px;
     }
-    .section-title-rule {
+    .paper-section-title {
       font-family: var(--font-sans);
       font-size: 1rem;
       font-weight: 800;
       text-align: center;
-      border-top: 1px solid #e4e4e7;
-      border-bottom: 1px solid #e4e4e7;
-      padding: 6px 0;
-      margin: 24px 0 16px;
-      letter-spacing: 0.05em;
+      margin: 24px 0 16px 0;
+      padding: 4px;
+      background: #f4f4f5;
+      border: 1px solid #e4e4e7;
     }
-  
+    .paper-q-item {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 16px;
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+    .paper-q-num {
+      font-family: var(--font-mono);
+      font-weight: 700;
+      min-width: 24px;
+    }
+    .paper-q-marks {
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      font-weight: 700;
+      margin-left: auto;
+      padding-left: 12px;
+    }
+    .neet-paper-options {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6px 16px;
+      margin-top: 6px;
+      font-family: var(--font-sans);
+      font-size: 0.88rem;
+    }
     @media print {
-      .site-header, .site-footer, .mobile-bottom-dock, .card-action, .report-link, .btn-no-print {
-        display: none !important;
-      }
-      body {
-        background: #ffffff !important;
-        color: #000000 !important;
-        padding: 0 !important;
-        margin: 0 !important;
-      }
-      .page-container {
-        max-width: 100% !important;
-        padding: 0 !important;
-        margin: 0 !important;
-      }
+      body * { visibility: hidden; }
+      .paper-sheet, .paper-sheet * { visibility: visible; }
+      .paper-sheet { position: absolute; left: 0; top: 0; width: 100%; border: none; box-shadow: none; padding: 0; }
+      .btn-no-print { display: none !important; }
     }
   </style>
   <link rel="stylesheet" href="/report-modal.css">
@@ -149,51 +165,57 @@
       </a>
       <nav class="nav-links">
         <a href="/#cbse-section" class="nav-link">CBSE 12 PCM</a>
-        <a href="/#neet-section" class="nav-link">NEET UG Archive</a>
+        <a href="/practice/?exam=neet" class="nav-link">NEET UG Archive</a>
         <a href="/repeated/" class="nav-link">★ Repeated Qs</a>
         <a href="/practice/" class="nav-link">Practice Hub</a>
-        <a href="/paper-maker/" class="nav-link">Paper Maker</a>
-        <a href="/practice/?exam=neet" class="nav-cta-pill">Launch NEET Portal ➔</a>
+        <a href="/paper-maker/" class="nav-link active">Paper Maker</a>
+        <button id="themeToggleBtn" class="btn-theme-toggle" onclick="toggleTheme()" aria-label="Toggle Dark Mode" title="Toggle Dark/Light Mode">
+          <span class="theme-icon-light">☀️</span>
+          <span class="theme-icon-dark">🌙</span>
+        </button>
       </nav>
     </div>
   </header>
 
   <main class="page-container">
     <nav class="breadcrumbs">
-      <a href="/">Home</a> / <a href="/#cbse-section">CBSE Class 12</a> / <span>Custom Paper Maker</span>
+      <a href="/">Home</a> / <span>Custom Paper Maker</span>
     </nav>
 
-    <div class="chapter-header-box">
+    <div class="chapter-header-box" style="margin-top: 14px;">
       <span class="sub-label">AUTHENTIC BLUEPRINT GENERATOR</span>
-      <h1 class="chapter-title">CBSE Board Question Paper Maker</h1>
+      <h1 class="chapter-title">CBSE Board & NEET UG Question Paper Maker</h1>
       <p class="chapter-desc">
-        Create balanced, authentic CBSE examination papers or unit tests. Select chapters, choose mark distribution, and generate a print-ready A4 PDF with marking schemes.
+        Create balanced, authentic examination papers, unit tests, or full NEET mock tests. Select exam mode, choose chapters, and generate a print-ready A4 PDF with answer keys.
       </p>
     </div>
 
     <div class="maker-config-card btn-no-print">
       <div class="config-grid">
         <div class="config-field">
-          <label>1. Select Subject</label>
-          <select id="sel-subject" onchange="onSubjectChange()">
-            <option value="Physics">Physics (2,539 Qs)</option>
-            <option value="Chemistry">Chemistry (2,074 Qs)</option>
-            <option value="Mathematics">Mathematics (3,156 Qs)</option>
+          <label>1. Select Exam Target</label>
+          <select id="sel-exam" onchange="onExamChange()">
+            <option value="cbse">CBSE Class 12 Board Exam (5-Year Sets)</option>
+            <option value="neet">NEET UG Medical Mock Exam (11-Year Papers)</option>
           </select>
         </div>
         <div class="config-field">
-          <label>2. Exam Pattern / Marks</label>
+          <label>2. Select Subject</label>
+          <select id="sel-subject" onchange="onSubjectChange()">
+            <!-- Populated dynamically -->
+          </select>
+        </div>
+        <div class="config-field">
+          <label>3. Test Pattern</label>
           <select id="sel-pattern">
-            <option value="70">70 Marks Board Paper (33 Questions • 180 Mins)</option>
-            <option value="35">35 Marks Half-Syllabus (18 Questions • 90 Mins)</option>
-            <option value="20">20 Marks Unit Test (10 Questions • 45 Mins)</option>
+            <!-- Populated dynamically -->
           </select>
         </div>
       </div>
 
       <div class="config-field" style="margin-bottom:24px;">
         <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
-          <label style="margin:0;">3. Select Chapters to Include</label>
+          <label style="margin:0;">4. Select Chapters to Include</label>
           <div>
             <button type="button" class="btn-ghost-link" style="font-size:0.8rem;padding:2px 8px;" onclick="selectAllChapters(true)">Select All</button>
             <button type="button" class="btn-ghost-link" style="font-size:0.8rem;padding:2px 8px;" onclick="selectAllChapters(false)">Clear</button>
@@ -206,7 +228,7 @@
 
       <div style="display:flex;gap:12px;flex-wrap:wrap;">
         <button type="button" class="btn-dark-pill" onclick="generatePaper()" style="padding:12px 28px;">
-          Generate Official Question Paper ➔
+          Generate Question Paper ➔
         </button>
       </div>
     </div>
@@ -221,9 +243,9 @@
         </button>
       </div>
 
-      <div class="paper-official-header">
-        <h2>CENTRAL BOARD OF SECONDARY EDUCATION</h2>
-        <div style="font-family:var(--font-mono);font-size:0.85rem;color:var(--text-muted);margin-top:2px;">
+      <div class="paper-official-header" id="out-header">
+        <h2 id="out-org-name">CENTRAL BOARD OF SECONDARY EDUCATION</h2>
+        <div id="out-exam-sub" style="font-family:var(--font-mono);font-size:0.85rem;color:#52525b;margin-top:2px;">
           SENIOR SCHOOL CERTIFICATE EXAMINATION (PRACTICE TEST)
         </div>
         <div class="paper-meta-row">
@@ -233,21 +255,28 @@
         </div>
       </div>
 
-      <div class="paper-instructions">
+      <div class="paper-instructions" id="out-instructions">
         <strong>General Instructions:</strong><br>
         1. All questions are compulsory. There are <span id="out-qcount">33</span> questions in this question paper.<br>
-        2. This question paper has five sections: Section A, Section B, Section C, Section D, and Section E.<br>
-        3. All Sections are compulsory. Use of calculators is not permitted.
+        2. Section A contains 1M questions; Section B contains 2M questions; Section C contains 3M questions; Section D contains 4M case questions; Section E contains 5M long questions.<br>
+        3. Use of calculators is not permitted.
       </div>
 
       <div id="paper-sections-container">
         <!-- Rendered by JS -->
       </div>
+
+      <div id="paper-answer-key-container" style="margin-top: 36px; padding-top: 20px; border-top: 2px dashed #a1a1aa;">
+        <!-- Answer key rendered here -->
+      </div>
     </div>
   </main>
 
+  <script src="/report-modal.js"></script>
+  <script src="/js/study_storage.js"></script>
+  <script src="/js/analytics.js"></script>
   <script>
-    const CHAPTERS = {
+    const CHAPTERS_CBSE = {
       Physics: [
         "Electric Charges and Fields", "Electrostatic Potential and Capacitance", "Current Electricity",
         "Moving Charges and Magnetism", "Magnetism and Matter", "Electromagnetic Induction",
@@ -268,229 +297,286 @@
       ]
     };
 
-    let loadedQuestions = [];
+    const CHAPTERS_NEET = {
+      Physics: ["Alternating Current", "Atoms", "Current Electricity", "Dual Nature of Radiation & Matter", "Electric Charges and Fields", "Electromagnetic Induction", "Electromagnetic Waves", "Electrostatic Potential & Capacitance", "Gravitation", "Kinetic Theory of Gases", "Laws of Motion", "Magnetism and Matter", "Mechanical Properties of Fluids", "Mechanical Properties of Solids", "Motion in a Plane", "Motion in a Straight Line", "Moving Charges and Magnetism", "Nuclei", "Oscillations", "Physical World & Measurement", "Ray Optics & Optical Instruments", "Semiconductor Electronics", "System of Particles & Rotational Motion", "Thermal Properties of Matter", "Thermodynamics", "Wave Optics", "Waves", "Work, Energy and Power"],
+      Chemistry: ["Alcohols, Phenols and Ethers", "Aldehydes, Ketones and Carboxylic Acids", "Amines", "Biomolecules", "Chemical Bonding & Molecular Structure", "Chemical Kinetics", "Coordination Compounds", "Electrochemistry", "Equilibrium", "Haloalkanes and Haloarenes", "Hydrocarbons", "Organic Chemistry: Basic Principles & Techniques", "Redox Reactions", "Solutions", "Some Basic Concepts of Chemistry", "Structure of Atom", "The d- and f-Block Elements", "Thermodynamics (Chemical)"],
+      Botany: ["Anatomy of Flowering Plants", "Biological Classification (Plant Kingdom & Monera/Fungi)", "Biotechnology: Principles and Processes", "Cell Cycle and Cell Division", "Cell: The Unit of Life (Plant Aspects)", "Microbes in Human Welfare", "Molecular Basis of Inheritance (Plant)", "Morphology of Flowering Plants", "Photosynthesis in Higher Plants", "Plant Growth and Development", "Plant Kingdom", "Principles of Inheritance & Variation (Botany)", "Sexual Reproduction in Flowering Plants"],
+      Zoology: ["Animal Kingdom", "Biomolecules (Animal Physiology & Enzymes)", "Biotechnology and its Applications (Medicine/Animals)", "Body Fluids and Circulation", "Breathing and Exchange of Gases", "Chemical Coordination and Integration", "Evolution", "Excretory Products and their Elimination", "Human Health and Disease", "Human Reproduction", "Locomotion and Movement", "Neural Control and Coordination", "Organisms and Populations", "Reproductive Health"]
+    };
+
+    let currentExam = 'cbse';
+    let loadedData = [];
+    const cache = {};
+
+    function onExamChange() {
+      currentExam = document.getElementById('sel-exam').value;
+      const subjSelect = document.getElementById('sel-subject');
+      const patternSelect = document.getElementById('sel-pattern');
+
+      if (currentExam === 'cbse') {
+        subjSelect.innerHTML = `
+          <option value="Physics">Physics (3,258 Qs)</option>
+          <option value="Chemistry">Chemistry (3,023 Qs)</option>
+          <option value="Mathematics">Mathematics (3,998 Qs)</option>
+        `;
+        patternSelect.innerHTML = `
+          <option value="70">70 Marks Board Paper (33 Questions • 180 Mins)</option>
+          <option value="35">35 Marks Half-Syllabus (18 Questions • 90 Mins)</option>
+          <option value="20">20 Marks Unit Test (10 Questions • 45 Mins)</option>
+        `;
+      } else {
+        subjSelect.innerHTML = `
+          <option value="Physics">Physics (515 Qs)</option>
+          <option value="Chemistry">Chemistry (515 Qs)</option>
+          <option value="Botany">Botany (515 Qs)</option>
+          <option value="Zoology">Zoology (515 Qs)</option>
+        `;
+        patternSelect.innerHTML = `
+          <option value="neet_subject">180 Marks Subject Paper (Section A: 35 + Section B: 15 Qs)</option>
+          <option value="neet_sprint">100 Marks Sprint Test (25 Questions • 30 Mins)</option>
+          <option value="neet_micro">40 Marks Quick Quiz (10 Questions • 15 Mins)</option>
+        `;
+      }
+      onSubjectChange();
+    }
 
     function onSubjectChange() {
       const subj = document.getElementById('sel-subject').value;
       const container = document.getElementById('chapter-list-container');
-      container.innerHTML = CHAPTERS[subj].map((ch, idx) => `
+      const chList = currentExam === 'cbse' ? (CHAPTERS_CBSE[subj] || []) : (CHAPTERS_NEET[subj] || []);
+
+      container.innerHTML = chList.map((ch, idx) => `
         <label class="chapter-checkbox-item">
           <input type="checkbox" name="chapter" value="${ch}" checked>
           <span>${idx + 1}. ${ch}</span>
         </label>
       `).join('');
-      loadSubjectData(subj);
+
+      loadData();
     }
 
     function selectAllChapters(val) {
       document.querySelectorAll('#chapter-list-container input[type="checkbox"]').forEach(c => c.checked = val);
     }
 
-    async function loadSubjectData(subj) {
-      const map = {
-        Physics: '/data/cbse_physics.json',
-        Chemistry: '/data/cbse_chemistry.json',
-        Mathematics: '/data/cbse_mathematics.json'
-      };
+    async function loadData() {
+      const subj = document.getElementById('sel-subject').value;
+      let url = currentExam === 'cbse' ? `/data/cbse_${subj.toLowerCase()}.json` : '/data/neet_all.json';
+      
       try {
-        const res = await fetch(map[subj]);
-        loadedQuestions = await res.json();
-      } catch (err) {
-        console.error('Failed to load subject dataset', err);
+        if (!cache[url]) {
+          const res = await fetch(url);
+          cache[url] = await res.json();
+        }
+        loadedData = cache[url];
+        if (currentExam === 'neet') {
+          loadedData = loadedData.filter(q => (q.subject || '').toLowerCase() === subj.toLowerCase());
+        }
+      } catch (e) {
+        console.error('Failed to load dataset:', e);
       }
+    }
+
+    function shuffle(arr) {
+      const a = [...arr];
+      for (let i = a.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [a[i], a[j]] = [a[j], a[i]];
+      }
+      return a;
     }
 
     async function generatePaper() {
-      const subj = document.getElementById('sel-subject').value;
-      if (!loadedQuestions || loadedQuestions.length === 0) {
-        await loadSubjectData(subj);
+      if (!loadedData || loadedData.length === 0) {
+        await loadData();
       }
 
+      const subj = document.getElementById('sel-subject').value;
+      const pattern = document.getElementById('sel-pattern').value;
       const selectedChapters = Array.from(document.querySelectorAll('#chapter-list-container input:checked')).map(c => c.value);
+
       if (selectedChapters.length === 0) {
-        alert('Please select at least one chapter.');
+        alert('Please select at least one chapter to include in the paper.');
         return;
       }
 
-      const pool = loadedQuestions.filter(q => selectedChapters.includes(q.chapter_name));
-      const pattern = document.getElementById('sel-pattern').value;
-
-      document.getElementById('out-subject-label').innerText = 'SUBJECT: ' + subj.toUpperCase();
-      document.getElementById('out-marks-label').innerText = 'Maximum Marks: ' + pattern;
-      document.getElementById('out-time-label').innerText = pattern === '70' ? 'Time Allowed: 3 Hours' : (pattern === '35' ? 'Time Allowed: 1.5 Hours' : 'Time Allowed: 45 Mins');
-
-      let sections = [];
-      if (pattern === '70') {
-        sections = [
-          { name: 'SECTION A (16 Questions • 1 Mark Each)', marks: 1, count: 16 },
-          { name: 'SECTION B (5 Questions • 2 Marks Each)', marks: 2, count: 5 },
-          { name: 'SECTION C (7 Questions • 3 Marks Each)', marks: 3, count: 7 },
-          { name: 'SECTION D (2 Case-Based Questions • 4 Marks Each)', marks: 4, count: 2 },
-          { name: 'SECTION E (3 Long Answer Questions • 5 Marks Each)', marks: 5, count: 3 }
-        ];
-      } else if (pattern === '35') {
-        sections = [
-          { name: 'SECTION A (8 Questions • 1 Mark Each)', marks: 1, count: 8 },
-          { name: 'SECTION B (3 Questions • 2 Marks Each)', marks: 2, count: 3 },
-          { name: 'SECTION C (4 Questions • 3 Marks Each)', marks: 3, count: 4 },
-          { name: 'SECTION D (1 Question • 4 Marks)', marks: 4, count: 1 },
-          { name: 'SECTION E (2 Questions • 5 Marks Each)', marks: 5, count: 2 }
-        ];
-      } else {
-        sections = [
-          { name: 'SECTION A (4 Questions • 1 Mark Each)', marks: 1, count: 4 },
-          { name: 'SECTION B (2 Questions • 2 Marks Each)', marks: 2, count: 2 },
-          { name: 'SECTION C (2 Questions • 3 Marks Each)', marks: 3, count: 2 },
-          { name: 'SECTION D (1 Question • 5 Marks)', marks: 5, count: 1 }
-        ];
-      }
-
-      let html = '';
-      let qNum = 1;
-      let totalCount = 0;
-
-      sections.forEach(sec => {
-        html += `<div class="section-title-rule">${sec.name}</div>`;
-        const qPool = pool.filter(q => q.marks === sec.marks);
-        const candidates = qPool.length >= sec.count ? qPool : pool;
-        
-        // Shuffle candidates
-        const shuffled = [...candidates].sort(() => 0.5 - Math.random());
-        const picked = shuffled.slice(0, sec.count);
-        totalCount += picked.length;
-
-        picked.forEach(q => {
-          html += `
-            <div class="question-card" style="margin-bottom:14px;">
-              <div style="display:flex;justify-content:space-between;margin-bottom:6px;font-family:var(--font-mono);font-size:0.8rem;color:var(--text-muted);">
-                <strong>Q.${qNum++}</strong>
-                <span>[${q.marks || sec.marks} Mark${(q.marks || sec.marks) > 1 ? 's' : ''}]</span>
-              </div>
-              <div class="math-content" style="margin-bottom:8px;">${q.text}</div>
-              <div style="font-family:var(--font-mono);font-size:0.75rem;color:#71717a;" class="btn-no-print">
-                CBSE Past Paper Question • ${q.chapter_name}
-              </div>
-            </div>
-          `;
-        });
+      // Filter questions by selected chapters
+      const pool = loadedData.filter(q => {
+        const ch = q.chapter_name || q.ncert_chapter || '';
+        return selectedChapters.some(sc => ch.toLowerCase().includes(sc.toLowerCase()));
       });
 
-      document.getElementById('out-qcount').innerText = totalCount;
-      document.getElementById('paper-sections-container').innerHTML = html;
-      document.getElementById('paper-output').style.display = 'block';
+      if (pool.length === 0) {
+        alert('No questions found in dataset matching selected chapters.');
+        return;
+      }
+
+      if (currentExam === 'neet') {
+        renderNeetPaper(subj, pattern, pool);
+      } else {
+        renderCbsePaper(subj, pattern, pool);
+      }
+    }
+
+    function renderNeetPaper(subj, pattern, pool) {
+      const orgName = document.getElementById('out-org-name');
+      const examSub = document.getElementById('out-exam-sub');
+      const subLabel = document.getElementById('out-subject-label');
+      const timeLabel = document.getElementById('out-time-label');
+      const marksLabel = document.getElementById('out-marks-label');
+      const instructions = document.getElementById('out-instructions');
+      const sectionsContainer = document.getElementById('paper-sections-container');
+      const keyContainer = document.getElementById('paper-answer-key-container');
+
+      let qCount = pattern === 'neet_subject' ? 50 : (pattern === 'neet_sprint' ? 25 : 10);
+      let totalMarks = qCount * 4;
+      let duration = pattern === 'neet_subject' ? '60 Minutes' : (pattern === 'neet_sprint' ? '30 Minutes' : '15 Minutes');
+
+      orgName.innerText = "NATIONAL TESTING AGENCY (NTA)";
+      examSub.innerText = "NATIONAL ELIGIBILITY CUM ENTRANCE TEST (UG) • MOCK PRACTICE TEST";
+      subLabel.innerText = `SUBJECT: ${subj.toUpperCase()}`;
+      timeLabel.innerText = `Time Allowed: ${duration}`;
+      marksLabel.innerText = `Maximum Marks: ${totalMarks}`;
+
+      instructions.innerHTML = `
+        <strong>General Instructions:</strong><br>
+        1. This question paper contains <strong>${qCount} Multiple Choice Questions</strong>.<br>
+        2. <strong>Marking Scheme:</strong> Correct Answer: <strong>+4 Marks</strong>, Incorrect Answer: <strong>-1 Mark</strong>, Unattempted: <strong>0 Marks</strong>.<br>
+        3. Each question has four options: (A), (B), (C), (D). Only one option is correct. Use of calculators or log tables is strictly prohibited.
+      `;
+
+      const sampled = shuffle(pool).slice(0, qCount);
+      let html = '<div class="paper-section-title">SECTION — CORE MULTIPLE CHOICE QUESTIONS</div>';
+      let keyHtml = '<h3>OFFICIAL ANSWER KEY & SCORING BLUEPRINT</h3><div style="display:grid; grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); gap: 8px; margin-top: 10px; font-family: var(--font-mono); font-size: 13px;">';
+
+      sampled.forEach((q, idx) => {
+        const qNum = idx + 1;
+        const correctOpt = q.correct_answer || 'A';
+        keyHtml += `<div style="background:#f4f4f5; padding:6px 10px; border-radius:4px; text-align:center;">Q${qNum}: <strong>[${correctOpt}]</strong></div>`;
+
+        let opts = '';
+        if (q.options) {
+          opts = '<div class="neet-paper-options">';
+          ['A', 'B', 'C', 'D'].forEach(opt => {
+            if (q.options[opt]) {
+              opts += `<div><strong>(${opt})</strong> ${escapeHtml(q.options[opt])}</div>`;
+            }
+          });
+          opts += '</div>';
+        }
+
+        html += `
+          <div class="paper-q-item">
+            <span class="paper-q-num">${qNum}.</span>
+            <div style="flex:1;">
+              <div class="math-content">${escapeHtml(q.text)}</div>
+              ${opts}
+            </div>
+            <span class="paper-q-marks">[4]</span>
+          </div>
+        `;
+      });
+
+      keyHtml += '</div>';
+      sectionsContainer.innerHTML = html;
+      keyContainer.innerHTML = keyHtml;
 
       if (window.renderMathInElement) {
-        renderMathInElement(document.getElementById('paper-sections-container'), {
-          delimiters: [
-            {left: '$$', right: '$$', display: true},
-            {left: '$', right: '$', display: false},
-            {left: '\\(', right: '\\)', display: false},
-            {left: '\\[', right: '\\]', display: true}
-          ],
+        renderMathInElement(document.getElementById('paper-output'), {
+          delimiters: [{left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}],
           throwOnError: false
         });
       }
-
-      document.getElementById('paper-output').scrollIntoView({ behavior: 'smooth' });
     }
 
-    window.addEventListener('DOMContentLoaded', () => {
-      onSubjectChange();
-    });
-  </script>
+    function renderCbsePaper(subj, pattern, pool) {
+      const orgName = document.getElementById('out-org-name');
+      const examSub = document.getElementById('out-exam-sub');
+      const subLabel = document.getElementById('out-subject-label');
+      const timeLabel = document.getElementById('out-time-label');
+      const marksLabel = document.getElementById('out-marks-label');
+      const instructions = document.getElementById('out-instructions');
+      const sectionsContainer = document.getElementById('paper-sections-container');
+      const keyContainer = document.getElementById('paper-answer-key-container');
 
-    <footer class="site-footer">
-    <div class="footer-top-grid">
-      <div class="footer-brand-column">
-        <div class="brand">
-          <svg class="brand-logo-icon" width="20" height="20" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="32" height="32" rx="7" fill="#18181b"/>
-            <path d="M6 10L11 23L16 14L21 23L26 10" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
-            <circle cx="16" cy="14" r="2.2" fill="#3b82f6"/>
-          </svg>
-          <span class="brand-name">WOVRIX <span class="brand-slash">/</span> <span class="brand-sub">PYQ</span></span>
-        </div>
-        <p class="footer-brand-desc">
-          Official past paper intelligence for CBSE Class 12 and NEET UG. Pure NCERT alignment, multi-year frequency filters, and zero distractions.
+      orgName.innerText = "CENTRAL BOARD OF SECONDARY EDUCATION";
+      examSub.innerText = "SENIOR SCHOOL CERTIFICATE EXAMINATION • OFFICIAL PRACTICE TEST";
+      subLabel.innerText = `SUBJECT: ${subj.toUpperCase()}`;
+
+      let targetMarks = parseInt(pattern, 10);
+      marksLabel.innerText = `Maximum Marks: ${targetMarks}`;
+      timeLabel.innerText = targetMarks >= 70 ? 'Time Allowed: 3 Hours' : (targetMarks >= 35 ? 'Time Allowed: 90 Mins' : 'Time Allowed: 45 Mins');
+
+      // Sample by marks distribution
+      const q1m = shuffle(pool.filter(q => q.marks === 1));
+      const q2m = shuffle(pool.filter(q => q.marks === 2));
+      const q3m = shuffle(pool.filter(q => q.marks === 3));
+      const q4m = shuffle(pool.filter(q => q.marks === 4));
+      const q5m = shuffle(pool.filter(q => q.marks === 5));
+
+      let secA_count = targetMarks >= 70 ? 16 : (targetMarks >= 35 ? 8 : 4);
+      let secB_count = targetMarks >= 70 ? 5 : (targetMarks >= 35 ? 3 : 2);
+      let secC_count = targetMarks >= 70 ? 7 : (targetMarks >= 35 ? 4 : 2);
+      let secD_count = targetMarks >= 70 ? 2 : (targetMarks >= 35 ? 1 : 0);
+      let secE_count = targetMarks >= 70 ? 3 : (targetMarks >= 35 ? 1 : 1);
+
+      let totalQ = secA_count + secB_count + secC_count + secD_count + secE_count;
+      instructions.innerHTML = `
+        <strong>General Instructions:</strong><br>
+        1. All questions are compulsory. There are <strong>${totalQ} questions</strong> in this question paper.<br>
+        2. <strong>Section A:</strong> Q1 to Q${secA_count} (1 Mark each).<br>
+        3. <strong>Section B:</strong> Q${secA_count+1} to Q${secA_count+secB_count} (2 Marks each).<br>
+        4. <strong>Section C:</strong> Q${secA_count+secB_count+1} to Q${secA_count+secB_count+secC_count} (3 Marks each).<br>
+        5. <strong>Section D:</strong> Case study questions (4 Marks each).<br>
+        6. <strong>Section E:</strong> Long answer questions (5 Marks each). Use of calculators is not permitted.
+      `;
+
+      let html = '';
+      let currentQNum = 1;
+
+      const renderSection = (title, items, count, marksEach) => {
+        if (count === 0 || items.length === 0) return;
+        html += `<div class="paper-section-title">${title} (${count} Questions • ${marksEach} Mark${marksEach>1?'s':''} each)</div>`;
+        const slice = items.slice(0, count);
+        slice.forEach(q => {
+          html += `
+            <div class="paper-q-item">
+              <span class="paper-q-num">${currentQNum++}.</span>
+              <div class="math-content" style="flex:1;">${escapeHtml(q.text)}</div>
+              <span class="paper-q-marks">[${marksEach}]</span>
+            </div>
+          `;
+        });
+      };
+
+      renderSection("SECTION A — MULTIPLE CHOICE / 1M QUESTIONS", q1m, secA_count, 1);
+      renderSection("SECTION B — SHORT ANSWER TYPE I", q2m, secB_count, 2);
+      renderSection("SECTION C — SHORT ANSWER TYPE II", q3m, secC_count, 3);
+      renderSection("SECTION D — CASE STUDY BASED QUESTIONS", q4m, secD_count, 4);
+      renderSection("SECTION E — LONG ANSWER QUESTIONS", q5m, secE_count, 5);
+
+      sectionsContainer.innerHTML = html;
+      keyContainer.innerHTML = `
+        <h3>CBSE EVALUATION & STEP-MARKING BLUEPRINT</h3>
+        <p style="font-size: 13.5px; color: #52525b; line-height: 1.6;">
+          Full step-wise marks allocation is governed by the official CBSE Marking Scheme. Refer to Wovrix Practice Hub for step derivations and diagrams.
         </p>
-        <div class="footer-exam-pills">
-          <span class="f-pill active">CBSE 12 PCM</span>
-          <span class="f-pill active">NEET UG</span>
-          <span class="f-pill">Class 10 (Soon)</span>
-        </div>
-      </div>
+      `;
 
-      <div class="footer-col">
-        <h4 class="footer-heading">CBSE Class 12 Hubs</h4>
-        <ul class="footer-links">
-          <li><a href="/cbse-12/physics/">Physics (14 Chapters)</a></li>
-          <li><a href="/cbse-12/chemistry/">Chemistry (10 Chapters)</a></li>
-          <li><a href="/cbse-12/mathematics/">Mathematics (13 Chapters)</a></li>
-          <li><a href="/practice/?exam=cbse">Interactive Question Stream</a></li>
-          <li><a href="/repeated/?exam=cbse">★ Most Repeated PYQs</a></li>
-          <li><a href="/paper-maker/">Custom Board Paper Maker</a></li>
-        </ul>
-      </div>
+      if (window.renderMathInElement) {
+        renderMathInElement(document.getElementById('paper-output'), {
+          delimiters: [{left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}],
+          throwOnError: false
+        });
+      }
+    }
 
-      <div class="footer-col">
-        <h4 class="footer-heading">NEET UG Archives</h4>
-        <ul class="footer-links">
-          <li><a href="/neet/physics/">NEET Physics (28 Chapters)</a></li>
-          <li><a href="/neet/chemistry/">NEET Chemistry (20 Chapters)</a></li>
-          <li><a href="/neet/biology/">NEET Biology (Botany & Zoology)</a></li>
-          <li><a href="/practice/?exam=neet">Interactive NEET Quiz Hub</a></li>
-          <li><a href="/repeated/?exam=neet">High-Yield NEET Clones</a></li>
-        </ul>
-      </div>
+    function escapeHtml(str) {
+      if (!str) return '';
+      return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    }
 
-      <div class="footer-col">
-        <h4 class="footer-heading">Platform & Tools</h4>
-        <ul class="footer-links">
-          <li><a href="/paper-maker/">Custom Paper Maker (20M/35M/70M)</a></li>
-          <li><a href="/repeated/">Repeated Question Radar</a></li>
-          <li><a href="/practice/">Full Question Bank</a></li>
-          <li><a href="/formula-sheets/">Formula Reference Sheets</a></li>
-          <li><a href="https://wovrix.in">Wovrix Main Portal</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="footer-bottom-bar">
-      <div class="footer-copy">
-        © 2026 PYQ Wovrix • Educational Past Paper Search & Interactive Practice Platform.
-      </div>
-      <div class="footer-bottom-links">
-        <a href="#top">Back to Top ↑</a>
-        <a href="https://wovrix.in/privacy">Privacy</a>
-        <a href="https://wovrix.in/terms">Terms</a>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Persistent Mobile Bottom Dock -->
-  <nav class="mobile-bottom-dock" aria-label="Mobile Navigation">
-    <a href="/" class="dock-item">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-      <span>Home</span>
-    </a>
-    <a href="/practice/" class="dock-item">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="m9 12 2 2 4-4"/></svg>
-      <span>Practice</span>
-    </a>
-    <a href="/repeated/" class="dock-item">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-      <span>Repeats</span>
-    </a>
-    <a href="/paper-maker/" class="dock-item">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
-      <span>Maker</span>
-    </a>
-    <a href="/practice/?exam=neet" class="dock-item">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24"/><path d="m14.83 9.17 4.24-4.24"/><path d="m14.83 14.83 4.24 4.24"/><path d="m9.17 14.83-4.24 4.24"/></svg>
-      <span>NEET</span>
-    </a>
-  </nav>
-
-  <script src="/report-modal.js"></script>
+    window.addEventListener('DOMContentLoaded', onExamChange);
+  </script>
 </body>
 </html>
