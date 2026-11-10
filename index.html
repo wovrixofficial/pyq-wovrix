@@ -91,7 +91,7 @@
           <span class="theme-icon-dark">🌙</span>
         </button>
         <button class="btn-hamburger" onclick="toggleMobileDrawer(true)" aria-label="Open Navigation Menu">
-          ☰
+          ☰ Menu
         </button>
       </nav>
     </div>
@@ -301,61 +301,147 @@
 
     <!-- Unified Multi-Exam Directory Section -->
     
-    <!-- Repeat Analytics & Frequency Radar Section -->
-    <section class="repeat-radar-section" style="max-width: 1200px; margin: 40px auto; padding: 0 20px;">
-      <div class="section-header-row" style="margin-bottom: 24px; display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 12px;">
+    <!-- Recurrence Intelligence Leaderboard Bento (Dual-Track CBSE 1,792 + NEET 119) -->
+    <section class="recurrence-bento-section">
+      <div class="bento-header-row">
         <div>
-          <span class="hub-badge" style="background: #fef3c7; color: #b45309; border: 1px solid #fde68a;">★ PROPRIETARY REPEAT RADAR</span>
-          <h2 style="font-size: 26px; font-weight: 800; margin: 8px 0 4px 0;">Board Exam Repetition Intelligence</h2>
-          <p style="color: var(--text-muted); font-size: 14px; margin: 0;">
-            4,176 parallel set clones and recurring core derivations identified across CBSE Class 12 board examination papers.
+          <span class="bento-eyebrow">🔥 PROPRIETARY RECURRENCE INTELLIGENCE</span>
+          <h2 class="bento-title">Verified Multi-Year Exam Repeats</h2>
+          <p class="bento-subtitle">
+            1,792 CBSE parallel set clones and 119 verified NEET concept clusters tested across 11 official exam years (2016–2026).
           </p>
         </div>
-        <a href="/repeated/" class="btn-dark-pill" style="font-size: 13px; padding: 8px 16px;">Explore All 169 Repeated PYQs &rarr;</a>
+        <div class="bento-track-bar">
+          <button id="bentoCbseBtn" class="bento-track-btn active" onclick="switchRecurrenceTrack('cbse')">🎯 CBSE Class 12 (1,792 Clusters)</button>
+          <button id="bentoNeetBtn" class="bento-track-btn" onclick="switchRecurrenceTrack('neet')">🩺 NEET UG (119 Leaderboard Concepts)</button>
+        </div>
       </div>
 
-      <div class="radar-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 18px; margin-bottom: 30px;">
-        <!-- Card 1: Sample Multi-Year Repeat -->
-        <div class="question-card radar-card-physics" style="margin-bottom: 0;">
-          <div class="q-meta-top">
-            <span class="q-repeat-pill" style="background: #f59e0b; color: #ffffff;">★ Appeared 5 Times</span>
-            <span class="q-source-pill">CBSE Physics • 3 Marks</span>
+      <!-- CBSE Repeats Grid (Default) -->
+      <div id="recurrenceCbseGrid" class="bento-grid">
+        <!-- Card 1: Physics 5-Year Regular -->
+        <div class="bento-repeat-card">
+          <div class="bento-card-top">
+            <span class="bento-freq-badge">⚡ 5 OF 5 BOARD YEARS</span>
+            <span class="bento-subj-pill">Physics • 3 Marks</span>
           </div>
-          <div class="q-body-text" style="font-size: 14px; font-weight: 600; margin: 12px 0;">
-            "State Kirchhoff's rules. Explain how a Wheatstone bridge principle is derived from these rules and calculate condition for balance."
+          <h3 class="bento-concept-title">Kirchhoff's Rules & Wheatstone Bridge Principle</h3>
+          <p class="bento-question-text">
+            "State Kirchhoff's rules. Explain how a Wheatstone bridge principle is derived from these rules and calculate the condition for balance."
+          </p>
+          <div class="bento-years-row">
+            <span>📅 Repeated in 2026, 2024, 2022, 2020, 2018 sets</span>
           </div>
-          <div class="radar-pill-physics" style="font-size: 12px; padding: 6px 10px; border-radius: 6px; font-family: var(--font-mono);">
-            Repeated in: 2018, 2020, 2022, 2024, 2026 Sets
-          </div>
+          <a href="/repeated/?exam=cbse&subject=Physics" class="bento-card-action">
+            <span>Drill Physics Concept</span>
+            <span>➔</span>
+          </a>
         </div>
 
-        <!-- Card 2: Chemistry Multi-Year Repeat -->
-        <div class="question-card radar-card-chemistry" style="margin-bottom: 0;">
-          <div class="q-meta-top">
-            <span class="q-repeat-pill" style="background: #ea580c; color: #ffffff;">★ Appeared 4 Times</span>
-            <span class="q-source-pill">CBSE Chemistry • 2 Marks</span>
+        <!-- Card 2: Chemistry 4-Year Regular -->
+        <div class="bento-repeat-card">
+          <div class="bento-card-top">
+            <span class="bento-freq-badge">⚡ 4 OF 5 BOARD YEARS</span>
+            <span class="bento-subj-pill">Chemistry • 2 Marks</span>
           </div>
-          <div class="q-body-text" style="font-size: 14px; font-weight: 600; margin: 12px 0;">
-            "Write the IUPAC name of the complex [Co(NH₃)₅(CO₃)]Cl and state whether it exhibits linkage or coordination isomerism."
+          <h3 class="bento-concept-title">IUPAC Nomenclature & Coordination Isomerism</h3>
+          <p class="bento-question-text">
+            "Write the IUPAC name of the complex $[Co(NH_3)_5(CO_3)]Cl$ and state whether it exhibits linkage or coordination isomerism."
+          </p>
+          <div class="bento-years-row">
+            <span>📅 Repeated in 2025, 2023, 2021, 2019 sets</span>
           </div>
-          <div class="radar-pill-chemistry" style="font-size: 12px; padding: 6px 10px; border-radius: 6px; font-family: var(--font-mono);">
-            Repeated in: 2019, 2021, 2023, 2025 Sets
-          </div>
+          <a href="/repeated/?exam=cbse&subject=Chemistry" class="bento-card-action">
+            <span>Drill Chemistry Concept</span>
+            <span>➔</span>
+          </a>
         </div>
 
-        <!-- Card 3: Mathematics Multi-Year Repeat -->
-        <div class="question-card radar-card-math" style="margin-bottom: 0;">
-          <div class="q-meta-top">
-            <span class="q-repeat-pill" style="background: #16a34a; color: #ffffff;">★ Appeared 4 Times</span>
-            <span class="q-source-pill">CBSE Mathematics • 5 Marks</span>
+        <!-- Card 3: Mathematics 4-Year Regular -->
+        <div class="bento-repeat-card">
+          <div class="bento-card-top">
+            <span class="bento-freq-badge">⚡ 4 OF 5 BOARD YEARS</span>
+            <span class="bento-subj-pill">Mathematics • 5 Marks</span>
           </div>
-          <div class="q-body-text" style="font-size: 14px; font-weight: 600; margin: 12px 0;">
+          <h3 class="bento-concept-title">Shortest Distance Between Skew Lines</h3>
+          <p class="bento-question-text">
             "Find the shortest distance between the lines $\vec{r} = \vec{a}_1 + \lambda\vec{b}_1$ and $\vec{r} = \vec{a}_2 + \mu\vec{b}_2$."
+          </p>
+          <div class="bento-years-row">
+            <span>📅 Repeated in 2026, 2023, 2020, 2017 sets</span>
           </div>
-          <div class="radar-pill-math" style="font-size: 12px; padding: 6px 10px; border-radius: 6px; font-family: var(--font-mono);">
-            Repeated in: 2017, 2020, 2023, 2026 Sets
-          </div>
+          <a href="/repeated/?exam=cbse&subject=Mathematics" class="bento-card-action">
+            <span>Drill Mathematics Concept</span>
+            <span>➔</span>
+          </a>
         </div>
+      </div>
+
+      <!-- NEET Repeats Grid (Toggled) -->
+      <div id="recurrenceNeetGrid" class="bento-grid" style="display: none;">
+        <!-- Card 1: Chemistry 11/11 Years -->
+        <div class="bento-repeat-card">
+          <div class="bento-card-top">
+            <span class="bento-freq-badge" style="background: rgba(16, 185, 129, 0.15); color: #059669; border-color: rgba(16, 185, 129, 0.3);">⚡ 100% RECURRENCE (11/11 YEARS)</span>
+            <span class="bento-subj-pill">NEET Chemistry • 234 Qs</span>
+          </div>
+          <h3 class="bento-concept-title">Chemical Bonding, Dipole & Molecular Geometries</h3>
+          <p class="bento-question-text">
+            Direct questions assessing formal charges, dipole moments, VSEPR geometries, bond orders, and hybridisation of interhalogen and noble gas compounds.
+          </p>
+          <div class="bento-years-row">
+            <span>📅 Tested every year: 2016 through 2026 uninterrupted</span>
+          </div>
+          <a href="/repeated/?exam=neet&subject=Chemistry" class="bento-card-action">
+            <span>Drill NEET Chemistry Twins</span>
+            <span>➔</span>
+          </a>
+        </div>
+
+        <!-- Card 2: Physics 11/11 Years -->
+        <div class="bento-repeat-card">
+          <div class="bento-card-top">
+            <span class="bento-freq-badge" style="background: rgba(16, 185, 129, 0.15); color: #059669; border-color: rgba(16, 185, 129, 0.3);">⚡ 100% RECURRENCE (11/11 YEARS)</span>
+            <span class="bento-subj-pill">NEET Physics • 188 Qs</span>
+          </div>
+          <h3 class="bento-concept-title">Ray Optics, Lens Maker's Formula & Critical Angles</h3>
+          <p class="bento-question-text">
+            Equivalent focal length of combination lenses in contact, minimum angle of deviation in glass prisms, and total internal reflection at optical fiber boundaries.
+          </p>
+          <div class="bento-years-row">
+            <span>📅 Tested every year: 2016 through 2026 uninterrupted</span>
+          </div>
+          <a href="/repeated/?exam=neet&subject=Physics" class="bento-card-action">
+            <span>Drill NEET Physics Twins</span>
+            <span>➔</span>
+          </a>
+        </div>
+
+        <!-- Card 3: Botany 11/11 Years -->
+        <div class="bento-repeat-card">
+          <div class="bento-card-top">
+            <span class="bento-freq-badge" style="background: rgba(16, 185, 129, 0.15); color: #059669; border-color: rgba(16, 185, 129, 0.3);">⚡ 100% RECURRENCE (11/11 YEARS)</span>
+            <span class="bento-subj-pill">NEET Botany • 210 Qs</span>
+          </div>
+          <h3 class="bento-concept-title">Principles of Inheritance & Mendelian Genetics</h3>
+          <p class="bento-question-text">
+            Dihybrid test cross ratios, incomplete dominance in plants, chromosomal disorders, non-disjunction events, and pedigree analysis.
+          </p>
+          <div class="bento-years-row">
+            <span>📅 Tested every year: 2016 through 2026 uninterrupted</span>
+          </div>
+          <a href="/repeated/?exam=neet&subject=Botany" class="bento-card-action">
+            <span>Drill NEET Botany Twins</span>
+            <span>➔</span>
+          </a>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 32px;">
+        <a href="/repeated/" class="portal-action-btn" style="margin: 0 auto; width: fit-content; padding: 13px 32px;">
+          <span>Explore All 1,792 CBSE Repeats & 119 NEET Concepts</span>
+          <span>➔</span>
+        </a>
       </div>
     </section>
 
@@ -876,7 +962,7 @@
         Disclaimer: This independent study tool is not affiliated with, endorsed by, or connected to the Central Board of Secondary Education (CBSE) or the National Testing Agency (NTA). Examination papers and questions are reproduced under fair dealing for educational non-commercial study, reference, and personal revision.
       </p>
       <div class="footer-copy-row">
-        <span>© 2026 Wovrix Technologies • All Rights Reserved.</span>
+        <span>© 2026 Wovrix (wovrix.in) • All Rights Reserved.</span>
         <span>Built for calm, focused revision.</span>
       </div>
     </div>
@@ -958,6 +1044,33 @@
   }
   updatePositions();
 
+  // Dynamic Theme Synchronization for Three.js 3D Viewport
+  function updateThreeTheme(isDark) {
+    icoMat.color.setHex(isDark ? 0x94a3b8 : 0x18181b);
+    icoMat.opacity = isDark ? 0.38 : 0.22;
+    innerIcoMat.color.setHex(isDark ? 0x1e293b : 0xf4f4f5);
+    innerIcoMat.opacity = isDark ? 0.45 : 0.65;
+    octMat.color.setHex(isDark ? 0x60a5fa : 0x2563eb);
+    octMat.opacity = isDark ? 0.65 : 0.45;
+    torusMat.color.setHex(isDark ? 0x64748b : 0x18181b);
+    torusMat.opacity = isDark ? 0.45 : 0.28;
+    boxMat.color.setHex(isDark ? 0x475569 : 0x52525b);
+  }
+  window.updateThreeTheme = updateThreeTheme;
+
+  const initialDark = document.documentElement.getAttribute('data-theme') === 'dark';
+  updateThreeTheme(initialDark);
+
+  const themeObserver = new MutationObserver(function(mutations) {
+    mutations.forEach(function(m) {
+      if (m.attributeName === 'data-theme') {
+        const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+        updateThreeTheme(isDark);
+      }
+    });
+  });
+  themeObserver.observe(document.documentElement, { attributes: true });
+
   // 5. Floating Coordinate Particle Field
   const particleCount = 70;
   const particleGeo = new THREE.BufferGeometry();
@@ -1020,6 +1133,32 @@
 
 
   <script>
+  function switchRecurrenceTrack(track) {
+    const isCbse = track === 'cbse';
+    const cbseBtn = document.getElementById('bentoCbseBtn');
+    const neetBtn = document.getElementById('bentoNeetBtn');
+    const cbseGrid = document.getElementById('recurrenceCbseGrid');
+    const neetGrid = document.getElementById('recurrenceNeetGrid');
+
+    if (cbseBtn) cbseBtn.classList.toggle('active', isCbse);
+    if (neetBtn) neetBtn.classList.toggle('active', !isCbse);
+    if (cbseGrid) cbseGrid.style.display = isCbse ? 'grid' : 'none';
+    if (neetGrid) neetGrid.style.display = isCbse ? 'none' : 'grid';
+
+    if (window.renderMathInElement) {
+      const activeEl = isCbse ? cbseGrid : neetGrid;
+      if (activeEl) {
+        renderMathInElement(activeEl, {
+          delimiters: [
+            { left: "$$", right: "$$", display: true },
+            { left: "$", right: "$", display: false }
+          ],
+          throwOnError: false
+        });
+      }
+    }
+  }
+
   function switchExamTab(tab) {
     const cbsePanel = document.getElementById('cbse-section');
     const neetPanel = document.getElementById('neet-section');

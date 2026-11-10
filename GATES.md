@@ -105,3 +105,33 @@
   EXPECT: MOBILE_DRAWER_OK
   EVIDENCE: automatic-evidence=v1; definition-sha256=7257b05dba9c717cd3cb310e65ad40cb25e63f97a7cd7cb1c218222c51bee3f9; exit=0; EXPECT=matched; output-sha256=fd49655fa487d3c67ccfdfaa015acad08a735548de44c6a4d832224e8b9681df; output-bytes=17; shell=C:\Windows\system32\cmd.exe; cwd=E:\PYQ_Wovrix_Portal\pyq-wovrix; path=9818e233a779/70 entries
 
+- [x] GATE-COPYRIGHT-BRANDING: Footer copyright uses modern Wovrix (wovrix.in) branding
+  CHECK: node -e "const fs = require('fs'); const html = fs.readFileSync('index.html', 'utf8'); if (html.includes('Wovrix Technologies') || !html.includes('Wovrix (wovrix.in)')) { console.error('Copyright string mismatch'); process.exit(1); } console.log('COPYRIGHT_BRANDING_OK');"
+  EXPECT: COPYRIGHT_BRANDING_OK
+  EVIDENCE: automatic-evidence=v1; definition-sha256=4df07e45e93a8234bde1d5bb3014e20b25ced83ddf3c7fc42215ce080e04f07e; exit=0; EXPECT=matched; output-sha256=8266199fb66d7888a768af422815756d1d1718d468a38695665db11b6e2906e8; output-bytes=22; shell=C:\Windows\system32\cmd.exe; cwd=E:\PYQ_Wovrix_Portal\pyq-wovrix; path=63ea99d964ba/70 entries
+
+- [x] GATE-UNIVERSAL-DRAWER: Desktop and mobile headers have clean minimal design with slide-out side menu
+  CHECK: node -e "const fs = require('fs'); ['index.html', 'practice/index.html', 'repeated/index.html', 'paper-maker/index.html', 'saved/index.html'].forEach(f => { const html = fs.readFileSync(f, 'utf8'); if (!html.includes('btn-hamburger') || !html.includes('mobile-nav-drawer')) { console.error(f, 'missing universal drawer'); process.exit(1); } }); console.log('UNIVERSAL_DRAWER_OK');"
+  EXPECT: UNIVERSAL_DRAWER_OK
+  EVIDENCE: automatic-evidence=v1; definition-sha256=6f6b377b48fd1f74b389b521227ad1be2f5db65ff5f5f6305660050a2677ea83; exit=0; EXPECT=matched; output-sha256=3ea878f4aa57aa9f78b3ef09e0a0eed9a63a3f485f65630017fae66b0149ce18; output-bytes=20; shell=C:\Windows\system32\cmd.exe; cwd=E:\PYQ_Wovrix_Portal\pyq-wovrix; path=63ea99d964ba/70 entries
+
+- [x] GATE-HOMEPAGE-BENTO: Homepage has modern Dual-Track Recurrence Leaderboard Bento with CBSE & NEET
+  CHECK: node -e "const fs = require('fs'); const html = fs.readFileSync('index.html', 'utf8'); if (html.includes('169 Repeated PYQs') || !html.includes('recurrence-bento') || !html.includes('switchRecurrenceTrack')) { console.error('Outdated repeat radar section or missing bento'); process.exit(1); } console.log('HOMEPAGE_BENTO_OK');"
+  EXPECT: HOMEPAGE_BENTO_OK
+  EVIDENCE: automatic-evidence=v1; definition-sha256=97dc29f70376a81ab71c23aa4e4cb01cf824f2a0a9e91b4a9a5b8bab525c8b08; exit=0; EXPECT=matched; output-sha256=74fa49a784fabc9f72841b1c065eaa0fcc8fbc06899f5c5df3340cc9d8d62f4c; output-bytes=18; shell=C:\Windows\system32\cmd.exe; cwd=E:\PYQ_Wovrix_Portal\pyq-wovrix; path=63ea99d964ba/70 entries
+
+- [x] GATE-NEET-REPEAT-SYNC: NEET dataset enriched with repeat clusters from repeated_questions.json
+  CHECK: node -e "const fs = require('fs'); const neet = JSON.parse(fs.readFileSync('data/neet_all.json', 'utf8')); const withCluster = neet.filter(q => q.cluster_size && q.cluster_size >= 2); if (withCluster.length < 50) { console.error('NEET repeat clusters missing in neet_all.json:', withCluster.length); process.exit(1); } console.log('NEET_REPEAT_SYNC_OK');"
+  EXPECT: NEET_REPEAT_SYNC_OK
+  EVIDENCE: automatic-evidence=v1; definition-sha256=f4dedf4269acd0e9e667bd1d26e7db36248414928e50475e0743b32f23d6a9cd; exit=0; EXPECT=matched; output-sha256=4554d0f8c82ef0683c4a590945a642f6fad3907142858c3c6c4df8c75be36a25; output-bytes=20; shell=C:\Windows\system32\cmd.exe; cwd=E:\PYQ_Wovrix_Portal\pyq-wovrix; path=63ea99d964ba/70 entries
+
+- [x] GATE-DARK-CONTRAST: Dark mode hero and glass cards have high-contrast tokens and Three.js dynamic sync
+  CHECK: node -e "const fs = require('fs'); const css = fs.readFileSync('style.css', 'utf8'); const html = fs.readFileSync('index.html', 'utf8'); if (!css.includes('.hero-fullscreen-viewport') || !html.includes('updateThreeTheme')) { process.exit(1); } console.log('DARK_CONTRAST_OK');"
+  EXPECT: DARK_CONTRAST_OK
+  EVIDENCE: automatic-evidence=v1; definition-sha256=603a96977cd11471bb143a1cc9c90ff2bfef748293f2fdfadc1cef0535efd344; exit=0; EXPECT=matched; output-sha256=1ea4c55c41e219b8fa92e00bda90c39d103d74519297bfcb136535c4c8591102; output-bytes=17; shell=C:\Windows\system32\cmd.exe; cwd=E:\PYQ_Wovrix_Portal\pyq-wovrix; path=63ea99d964ba/70 entries
+
+- [x] GATE-TOPIC-SELECTOR: Chapter topic taxonomy exists and topic selector pills render in practice hub
+  CHECK: node -e "const fs = require('fs'); if (!fs.existsSync('data/chapter_topics.json')) { console.error('Missing chapter_topics.json'); process.exit(1); } const html = fs.readFileSync('practice/index.html', 'utf8'); if (!html.includes('topic-pill') || !html.includes('filterByTopic')) { console.error('Missing topic selector in practice hub'); process.exit(1); } console.log('TOPIC_SELECTOR_OK');"
+  EXPECT: TOPIC_SELECTOR_OK
+  EVIDENCE: automatic-evidence=v1; definition-sha256=be7958ec03adc4fe88f09d54246af09363ff1c0cb9b1f0d0dbb86b4b1e2733a0; exit=0; EXPECT=matched; output-sha256=7650b60c8178ea5471a2936b679b99fcd95b6e2a4c5ea04f707f6c5602383753; output-bytes=18; shell=C:\Windows\system32\cmd.exe; cwd=E:\PYQ_Wovrix_Portal\pyq-wovrix; path=63ea99d964ba/70 entries
+

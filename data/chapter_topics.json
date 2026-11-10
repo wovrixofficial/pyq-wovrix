@@ -1,0 +1,1214 @@
+{
+  "cbse": {
+    "Physics": {
+      "1": [
+        {
+          "slug": "coulombs-law",
+          "title": "Coulomb's Law and Superposition",
+          "keywords": [
+            "coulomb",
+            "force between",
+            "dielectric constant",
+            "point charges"
+          ],
+          "is_high_yield": true
+        },
+        {
+          "slug": "electric-field-dipole",
+          "title": "Electric Field and Dipole Moment",
+          "keywords": [
+            "dipole",
+            "electric field",
+            "axial",
+            "equatorial",
+            "torque"
+          ],
+          "is_high_yield": true
+        },
+        {
+          "slug": "gauss-law-flux",
+          "title": "Electric Flux and Gauss's Law",
+          "keywords": [
+            "gauss",
+            "flux",
+            "gaussian surface",
+            "shell",
+            "infinite wire",
+            "plane sheet"
+          ],
+          "is_high_yield": true
+        }
+      ],
+      "2": [
+        {
+          "slug": "electric-potential",
+          "title": "Electric Potential and Equipotential",
+          "keywords": [
+            "potential",
+            "equipotential",
+            "work done",
+            "conservative"
+          ],
+          "is_high_yield": true
+        },
+        {
+          "slug": "capacitors-dielectrics",
+          "title": "Capacitance and Dielectric Slabs",
+          "keywords": [
+            "capacitor",
+            "capacitance",
+            "dielectric",
+            "parallel plate",
+            "energy stored"
+          ],
+          "is_high_yield": true
+        }
+      ],
+      "3": [
+        {
+          "slug": "drift-velocity-ohms-law",
+          "title": "Ohm's Law and Drift Velocity",
+          "keywords": [
+            "drift velocity",
+            "relaxation time",
+            "resistivity",
+            "temperature coefficient"
+          ],
+          "is_high_yield": false
+        },
+        {
+          "slug": "kirchhoff-wheatstone",
+          "title": "Kirchhoff's Rules and Wheatstone Bridge",
+          "keywords": [
+            "kirchhoff",
+            "wheatstone",
+            "loop rule",
+            "junction rule",
+            "bridge balance"
+          ],
+          "is_high_yield": true
+        },
+        {
+          "slug": "cells-internal-resistance",
+          "title": "Cells, EMF and Internal Resistance",
+          "keywords": [
+            "emf",
+            "internal resistance",
+            "terminal potential",
+            "cells in parallel",
+            "cells in series"
+          ],
+          "is_high_yield": true
+        }
+      ],
+      "4": [
+        {
+          "slug": "biot-savart-law",
+          "title": "Biot-Savart Law and Circular Coils",
+          "keywords": [
+            "biot",
+            "savart",
+            "circular coil",
+            "magnetic field on axis"
+          ],
+          "is_high_yield": true
+        },
+        {
+          "slug": "amperes-law-solenoid",
+          "title": "Ampere's Circuital Law and Solenoid",
+          "keywords": [
+            "ampere",
+            "circuital",
+            "solenoid",
+            "toroid"
+          ],
+          "is_high_yield": true
+        },
+        {
+          "slug": "lorentz-force-galvanometer",
+          "title": "Lorentz Force and Moving Coil Galvanometer",
+          "keywords": [
+            "lorentz",
+            "galvanometer",
+            "shunt",
+            "voltmeter",
+            "ammeter",
+            "torque on loop"
+          ],
+          "is_high_yield": true
+        }
+      ],
+      "5": [
+        {
+          "slug": "magnetic-properties",
+          "title": "Dia, Para and Ferromagnetism",
+          "keywords": [
+            "diamagnetic",
+            "paramagnetic",
+            "ferromagnetic",
+            "susceptibility",
+            "permeability"
+          ],
+          "is_high_yield": true
+        },
+        {
+          "slug": "magnetic-dipole-earth",
+          "title": "Magnetic Dipole and Earth Elements",
+          "keywords": [
+            "dipole moment",
+            "declination",
+            "horizontal component",
+            "angle of dip"
+          ],
+          "is_high_yield": false
+        }
+      ],
+      "6": [
+        {
+          "slug": "faraday-lenz-law",
+          "title": "Faraday's and Lenz's Law",
+          "keywords": [
+            "faraday",
+            "lenz",
+            "induced emf",
+            "flux linkage",
+            "direction of induced"
+          ],
+          "is_high_yield": true
+        },
+        {
+          "slug": "inductance-eddy",
+          "title": "Self/Mutual Inductance and Motional EMF",
+          "keywords": [
+            "inductance",
+            "self induction",
+            "mutual induction",
+            "motional emf",
+            "eddy currents"
+          ],
+          "is_high_yield": true
+        }
+      ],
+      "7": [
+        {
+          "slug": "ac-circuits-lcr",
+          "title": "Series LCR Circuits and Resonance",
+          "keywords": [
+            "lcr",
+            "resonance",
+            "impedance",
+            "phasor",
+            "q factor"
+          ],
+          "is_high_yield": true
+        },
+        {
+          "slug": "transformers-ac-power",
+          "title": "Transformers and Power Factor",
+          "keywords": [
+            "transformer",
+            "power factor",
+            "wattless",
+            "step up",
+            "step down"
+          ],
+          "is_high_yield": true
+        }
+      ],
+      "8": [
+        {
+          "slug": "em-waves-spectrum",
+          "title": "Displacement Current and EM Spectrum",
+          "keywords": [
+            "displacement current",
+            "spectrum",
+            "microwaves",
+            "x rays",
+            "gamma",
+            "ultraviolet"
+          ],
+          "is_high_yield": true
+        }
+      ],
+      "9": [
+        {
+          "slug": "lens-makers-formula",
+          "title": "Lens Maker's Formula and Combinations",
+          "keywords": [
+            "lens maker",
+            "refraction at spherical",
+            "focal length",
+            "combination of lenses"
+          ],
+          "is_high_yield": true
+        },
+        {
+          "slug": "prism-refraction",
+          "title": "Prism Deviation and Refractive Index",
+          "keywords": [
+            "prism",
+            "minimum deviation",
+            "angle of prism"
+          ],
+          "is_high_yield": true
+        },
+        {
+          "slug": "microscope-telescope",
+          "title": "Compound Microscope and Astronomical Telescope",
+          "keywords": [
+            "microscope",
+            "telescope",
+            "magnifying power",
+            "normal adjustment"
+          ],
+          "is_high_yield": true
+        }
+      ],
+      "10": [
+        {
+          "slug": "huygens-principle",
+          "title": "Huygens Principle and Wavefronts",
+          "keywords": [
+            "huygens",
+            "wavefront",
+            "laws of reflection",
+            "laws of refraction"
+          ],
+          "is_high_yield": true
+        },
+        {
+          "slug": "youngs-double-slit",
+          "title": "Young's Double Slit and Single Slit",
+          "keywords": [
+            "interference",
+            "young",
+            "fringe width",
+            "diffraction",
+            "central maximum"
+          ],
+          "is_high_yield": true
+        }
+      ],
+      "11": [
+        {
+          "slug": "photoelectric-effect",
+          "title": "Photoelectric Effect and Einstein's Eq",
+          "keywords": [
+            "photoelectric",
+            "stopping potential",
+            "work function",
+            "threshold frequency"
+          ],
+          "is_high_yield": true
+        },
+        {
+          "slug": "de-broglie-wavelength",
+          "title": "De Broglie Wavelength and Matter Waves",
+          "keywords": [
+            "de broglie",
+            "wavelength of electron",
+            "matter wave"
+          ],
+          "is_high_yield": true
+        }
+      ],
+      "12": [
+        {
+          "slug": "bohr-model-hydrogen",
+          "title": "Bohr Postulates and Hydrogen Spectra",
+          "keywords": [
+            "bohr",
+            "radius of orbit",
+            "energy levels",
+            "lyman",
+            "balmer",
+            "paschen"
+          ],
+          "is_high_yield": true
+        }
+      ],
+      "13": [
+        {
+          "slug": "binding-energy-fission",
+          "title": "Mass Defect, Binding Energy and Fission",
+          "keywords": [
+            "mass defect",
+            "binding energy",
+            "fission",
+            "fusion",
+            "nuclear density"
+          ],
+          "is_high_yield": true
+        }
+      ],
+      "14": [
+        {
+          "slug": "pn-junction-diode",
+          "title": "p-n Junction and V-I Characteristics",
+          "keywords": [
+            "pn junction",
+            "depletion layer",
+            "barrier potential",
+            "forward bias",
+            "reverse bias"
+          ],
+          "is_high_yield": true
+        },
+        {
+          "slug": "rectifiers-semiconductors",
+          "title": "Half/Full Wave Rectifiers and Bands",
+          "keywords": [
+            "rectifier",
+            "half wave",
+            "full wave",
+            "intrinsic",
+            "extrinsic",
+            "doping"
+          ],
+          "is_high_yield": true
+        }
+      ]
+    },
+    "Chemistry": {
+      "1": [
+        {
+          "slug": "raoults-law-ideal",
+          "title": "Raoult's Law and Ideal Solutions",
+          "keywords": [
+            "raoult",
+            "ideal solution",
+            "azeotrope",
+            "negative deviation",
+            "positive deviation"
+          ],
+          "is_high_yield": true
+        },
+        {
+          "slug": "colligative-properties",
+          "title": "Colligative Properties and Van't Hoff",
+          "keywords": [
+            "colligative",
+            "depression in freezing",
+            "elevation in boiling",
+            "osmotic",
+            "van't hoff"
+          ],
+          "is_high_yield": true
+        }
+      ],
+      "2": [
+        {
+          "slug": "nernst-equation",
+          "title": "Nernst Equation and Cell Potential",
+          "keywords": [
+            "nernst",
+            "cell potential",
+            "emf of cell",
+            "standard hydrogen"
+          ],
+          "is_high_yield": true
+        },
+        {
+          "slug": "kohlrausch-conductance",
+          "title": "Kohlrausch's Law and Molar Conductivity",
+          "keywords": [
+            "kohlrausch",
+            "molar conductivity",
+            "limiting molar",
+            "conductance"
+          ],
+          "is_high_yield": true
+        },
+        {
+          "slug": "batteries-corrosion",
+          "title": "Batteries, Fuel Cells and Corrosion",
+          "keywords": [
+            "battery",
+            "fuel cell",
+            "lead storage",
+            "corrosion",
+            "rusting"
+          ],
+          "is_high_yield": false
+        }
+      ],
+      "3": [
+        {
+          "slug": "order-rate-law",
+          "title": "Rate Laws, Order and Molecularity",
+          "keywords": [
+            "order of reaction",
+            "molecularity",
+            "rate constant",
+            "rate law"
+          ],
+          "is_high_yield": true
+        },
+        {
+          "slug": "integrated-rate-equations",
+          "title": "Integrated Rate Equations and Half-Life",
+          "keywords": [
+            "integrated rate",
+            "half life",
+            "first order",
+            "zero order"
+          ],
+          "is_high_yield": true
+        },
+        {
+          "slug": "arrhenius-activation",
+          "title": "Arrhenius Equation and Activation Energy",
+          "keywords": [
+            "arrhenius",
+            "activation energy",
+            "collision frequency"
+          ],
+          "is_high_yield": true
+        }
+      ],
+      "4": [
+        {
+          "slug": "d-block-properties",
+          "title": "d-Block General Properties and Trends",
+          "keywords": [
+            "transition metals",
+            "oxidation state",
+            "ionization enthalpy",
+            "magnetic behavior",
+            "colored ions"
+          ],
+          "is_high_yield": true
+        },
+        {
+          "slug": "lanthanoid-contraction",
+          "title": "Lanthanoid Contraction and Consequences",
+          "keywords": [
+            "lanthanoid",
+            "actinoid",
+            "contraction",
+            "atomic radii"
+          ],
+          "is_high_yield": true
+        },
+        {
+          "slug": "kmno4-k2cr2o7",
+          "title": "Potassium Dichromate and Permanganate",
+          "keywords": [
+            "dichromate",
+            "permanganate",
+            "kmno4",
+            "k2cr2o7",
+            "oxidizing agent"
+          ],
+          "is_high_yield": true
+        }
+      ],
+      "5": [
+        {
+          "slug": "iupac-coordination",
+          "title": "IUPAC Nomenclature and Formulas",
+          "keywords": [
+            "iupac",
+            "nomenclature",
+            "formula of complex",
+            "coordination sphere"
+          ],
+          "is_high_yield": true
+        },
+        {
+          "slug": "isomerism-complexes",
+          "title": "Isomerism in Coordination Complexes",
+          "keywords": [
+            "isomerism",
+            "geometrical",
+            "optical",
+            "linkage",
+            "coordination isomerism"
+          ],
+          "is_high_yield": true
+        },
+        {
+          "slug": "vbt-cft-theories",
+          "title": "Valence Bond and Crystal Field Theory (CFT)",
+          "keywords": [
+            "crystal field",
+            "crystal field splitting",
+            "valence bond",
+            "cfse",
+            "hybridisation",
+            "magnetic moment"
+          ],
+          "is_high_yield": true
+        }
+      ],
+      "6": [
+        {
+          "slug": "sn1-sn2-mechanisms",
+          "title": "SN1 and SN2 Reaction Mechanisms",
+          "keywords": [
+            "sn1",
+            "sn2",
+            "nucleophilic substitution",
+            "carbocation",
+            "inversion of configuration"
+          ],
+          "is_high_yield": true
+        },
+        {
+          "slug": "haloarenes-reactions",
+          "title": "Haloarenes and Electrophilic Substitution",
+          "keywords": [
+            "chlorobenzene",
+            "electrophilic substitution",
+            "friedel crafts",
+            "wurtz fittig"
+          ],
+          "is_high_yield": true
+        }
+      ],
+      "7": [
+        {
+          "slug": "acidity-phenols-prep",
+          "title": "Phenols: Acidity and Electrophilic Reactions",
+          "keywords": [
+            "phenol",
+            "acidity",
+            "kolbe",
+            "reimer tiemann",
+            "picric acid"
+          ],
+          "is_high_yield": true
+        },
+        {
+          "slug": "alcohols-dehydration",
+          "title": "Alcohols: Lucas Test and Dehydration",
+          "keywords": [
+            "alcohol",
+            "lucas",
+            "dehydration",
+            "primary secondary tertiary"
+          ],
+          "is_high_yield": true
+        },
+        {
+          "slug": "williamson-ethers",
+          "title": "Williamson Synthesis of Ethers",
+          "keywords": [
+            "ether",
+            "williamson",
+            "cleavage of c-o"
+          ],
+          "is_high_yield": true
+        }
+      ],
+      "8": [
+        {
+          "slug": "nucleophilic-addition-co",
+          "title": "Nucleophilic Addition to Carbonyls",
+          "keywords": [
+            "nucleophilic addition",
+            "hcn",
+            "nahso3",
+            "grignard",
+            "hydrazone"
+          ],
+          "is_high_yield": true
+        },
+        {
+          "slug": "aldol-cannizzaro",
+          "title": "Aldol Condensation and Cannizzaro Reaction",
+          "keywords": [
+            "aldol",
+            "cannizzaro",
+            "cross aldol",
+            "alpha hydrogen",
+            "fehling",
+            "tollens"
+          ],
+          "is_high_yield": true
+        },
+        {
+          "slug": "carboxylic-acids-reactions",
+          "title": "Carboxylic Acids Acidity and Reactions",
+          "keywords": [
+            "carboxylic",
+            "acidity of benzoic",
+            "hell volhard",
+            "decarboxylation"
+          ],
+          "is_high_yield": true
+        }
+      ],
+      "9": [
+        {
+          "slug": "basicity-amines-hoffmann",
+          "title": "Basicity of Amines and Hoffmann Bromamide",
+          "keywords": [
+            "basicity of amines",
+            "hoffmann bromamide",
+            "gabriel phthalimide",
+            "carbylamine"
+          ],
+          "is_high_yield": true
+        },
+        {
+          "slug": "diazonium-sandmeyer",
+          "title": "Diazonium Salts and Sandmeyer Reaction",
+          "keywords": [
+            "diazonium",
+            "sandmeyer",
+            "gattermann",
+            "azo dye",
+            "coupling reaction"
+          ],
+          "is_high_yield": true
+        }
+      ],
+      "10": [
+        {
+          "slug": "carbohydrates-glucose",
+          "title": "Glucose, Fructose and Glycosidic Linkage",
+          "keywords": [
+            "glucose",
+            "fructose",
+            "glycosidic",
+            "reducing sugar",
+            "mutarotation"
+          ],
+          "is_high_yield": true
+        },
+        {
+          "slug": "proteins-nucleic-acids",
+          "title": "Peptide Bond, Denaturation and DNA/RNA",
+          "keywords": [
+            "peptide bond",
+            "denaturation",
+            "nucleic acid",
+            "dna",
+            "rna",
+            "structure of protein"
+          ],
+          "is_high_yield": true
+        }
+      ]
+    },
+    "Mathematics": {
+      "1": [
+        {
+          "slug": "equivalence-relations",
+          "title": "Reflexive, Symmetric and Transitive Relations",
+          "keywords": [
+            "equivalence",
+            "reflexive",
+            "symmetric",
+            "transitive"
+          ],
+          "is_high_yield": true
+        },
+        {
+          "slug": "one-one-onto-functions",
+          "title": "Bijective, Injective and Surjective Functions",
+          "keywords": [
+            "one-one",
+            "onto",
+            "injective",
+            "surjective",
+            "bijective"
+          ],
+          "is_high_yield": true
+        }
+      ],
+      "2": [
+        {
+          "slug": "principal-values-itf",
+          "title": "Principal Values and Domain of ITF",
+          "keywords": [
+            "principal value",
+            "sin^-1",
+            "cos^-1",
+            "tan^-1",
+            "domain and range"
+          ],
+          "is_high_yield": true
+        }
+      ],
+      "3": [
+        {
+          "slug": "matrix-multiplication-transpose",
+          "title": "Matrix Multiplication, Transpose and Symmetric",
+          "keywords": [
+            "multiplication of matrices",
+            "transpose",
+            "symmetric",
+            "skew-symmetric"
+          ],
+          "is_high_yield": true
+        },
+        {
+          "slug": "inverse-elementary",
+          "title": "Invertible Matrices and Elementary Operations",
+          "keywords": [
+            "invertible",
+            "elementary row",
+            "inverse of matrix"
+          ],
+          "is_high_yield": true
+        }
+      ],
+      "4": [
+        {
+          "slug": "adjoint-inverse-system",
+          "title": "Adjoint, Inverse and System of Linear Equations",
+          "keywords": [
+            "adjoint",
+            "matrix method",
+            "system of equations",
+            "cramer"
+          ],
+          "is_high_yield": true
+        },
+        {
+          "slug": "determinant-expansion",
+          "title": "Determinant Value and Minors/Cofactors",
+          "keywords": [
+            "determinant",
+            "cofactor",
+            "minor",
+            "singular matrix"
+          ],
+          "is_high_yield": false
+        }
+      ],
+      "5": [
+        {
+          "slug": "continuity-differentiation",
+          "title": "Continuity and Chain Rule",
+          "keywords": [
+            "continuous",
+            "discontinuity",
+            "chain rule",
+            "differentiable"
+          ],
+          "is_high_yield": true
+        },
+        {
+          "slug": "logarithmic-implicit-diff",
+          "title": "Logarithmic and Implicit Differentiation",
+          "keywords": [
+            "logarithmic differentiation",
+            "implicit function",
+            "parametric"
+          ],
+          "is_high_yield": true
+        },
+        {
+          "slug": "second-order-derivatives",
+          "title": "Second Order Derivative Proofs",
+          "keywords": [
+            "d^2y/dx^2",
+            "second order",
+            "prove that"
+          ],
+          "is_high_yield": true
+        }
+      ],
+      "6": [
+        {
+          "slug": "increasing-decreasing",
+          "title": "Increasing and Decreasing Functions",
+          "keywords": [
+            "strictly increasing",
+            "decreasing",
+            "intervals in which"
+          ],
+          "is_high_yield": true
+        },
+        {
+          "slug": "maxima-minima-problems",
+          "title": "Maxima and Minima Word Problems",
+          "keywords": [
+            "maxima",
+            "minima",
+            "maximum volume",
+            "minimum cost",
+            "largest box"
+          ],
+          "is_high_yield": true
+        }
+      ],
+      "7": [
+        {
+          "slug": "integration-by-parts-substitution",
+          "title": "Integration by Parts and Substitution",
+          "keywords": [
+            "by parts",
+            "substitution",
+            "e^x",
+            "partial fractions"
+          ],
+          "is_high_yield": true
+        },
+        {
+          "slug": "definite-integrals-properties",
+          "title": "Definite Integrals and Kings Property",
+          "keywords": [
+            "definite integral",
+            "properties of definite",
+            "fundamental theorem"
+          ],
+          "is_high_yield": true
+        }
+      ],
+      "8": [
+        {
+          "slug": "area-bounded-curves",
+          "title": "Area Bounded by Parabolas, Circles and Lines",
+          "keywords": [
+            "area of region",
+            "bounded by",
+            "parabola",
+            "ellipse",
+            "circle and line"
+          ],
+          "is_high_yield": true
+        }
+      ],
+      "9": [
+        {
+          "slug": "linear-differential-eq",
+          "title": "Linear Differential Equations and IF",
+          "keywords": [
+            "integrating factor",
+            "dy/dx + py = q",
+            "linear differential"
+          ],
+          "is_high_yield": true
+        },
+        {
+          "slug": "separable-homogeneous",
+          "title": "Variable Separable and Homogeneous Equations",
+          "keywords": [
+            "homogeneous",
+            "variable separable",
+            "general solution",
+            "particular solution"
+          ],
+          "is_high_yield": true
+        }
+      ],
+      "10": [
+        {
+          "slug": "dot-cross-products",
+          "title": "Scalar (Dot) and Vector (Cross) Product",
+          "keywords": [
+            "dot product",
+            "cross product",
+            "perpendicular vectors",
+            "projection of vector"
+          ],
+          "is_high_yield": true
+        },
+        {
+          "slug": "unit-vectors-coplanar",
+          "title": "Unit Vectors and Collinearity",
+          "keywords": [
+            "unit vector",
+            "collinear",
+            "direction cosines"
+          ],
+          "is_high_yield": true
+        }
+      ],
+      "11": [
+        {
+          "slug": "shortest-distance-lines",
+          "title": "Shortest Distance between Skew Lines",
+          "keywords": [
+            "shortest distance",
+            "skew lines",
+            "parallel lines",
+            "vector equation of line"
+          ],
+          "is_high_yield": true
+        },
+        {
+          "slug": "equations-of-line",
+          "title": "Cartesian and Vector Equations of Lines",
+          "keywords": [
+            "cartesian equation",
+            "direction ratios",
+            "point of intersection"
+          ],
+          "is_high_yield": true
+        }
+      ],
+      "12": [
+        {
+          "slug": "lpp-graphical-method",
+          "title": "Linear Programming Graphical Solutions",
+          "keywords": [
+            "linear programming",
+            "lpp",
+            "corner points",
+            "maximize",
+            "minimize",
+            "feasible region"
+          ],
+          "is_high_yield": true
+        }
+      ],
+      "13": [
+        {
+          "slug": "bayes-theorem",
+          "title": "Bayes' Theorem and Total Probability",
+          "keywords": [
+            "bayes",
+            "total probability",
+            "conditional probability",
+            "defective items"
+          ],
+          "is_high_yield": true
+        },
+        {
+          "slug": "independent-events",
+          "title": "Independent Events and Multiplication Rule",
+          "keywords": [
+            "independent events",
+            "p(a|b)",
+            "multiplication theorem"
+          ],
+          "is_high_yield": true
+        }
+      ]
+    }
+  },
+  "neet": {
+    "Physics": [
+      {
+        "slug": "mechanics-kinematics",
+        "title": "Mechanics and Rotational Dynamics",
+        "keywords": [
+          "motion",
+          "velocity",
+          "acceleration",
+          "friction",
+          "torque",
+          "moment of inertia"
+        ],
+        "is_high_yield": true
+      },
+      {
+        "slug": "electrodynamics-circuits",
+        "title": "Current Electricity and Magnetism",
+        "keywords": [
+          "current",
+          "resistor",
+          "magnetic",
+          "capacitance",
+          "inductance",
+          "flux"
+        ],
+        "is_high_yield": true
+      },
+      {
+        "slug": "optics-wave-optics",
+        "title": "Ray Optics and Wave Interference",
+        "keywords": [
+          "lens",
+          "refraction",
+          "focal",
+          "interference",
+          "slit",
+          "optical"
+        ],
+        "is_high_yield": true
+      },
+      {
+        "slug": "modern-physics-atoms",
+        "title": "Dual Nature and Semiconductor Electronics",
+        "keywords": [
+          "photoelectric",
+          "wavelength",
+          "bohr",
+          "nucleus",
+          "semiconductor",
+          "diode"
+        ],
+        "is_high_yield": true
+      }
+    ],
+    "Chemistry": [
+      {
+        "slug": "chemical-bonding-structure",
+        "title": "Chemical Bonding and Molecular Structure",
+        "keywords": [
+          "hybridisation",
+          "dipole",
+          "geometry",
+          "vsepr",
+          "bond order",
+          "paramagnetic"
+        ],
+        "is_high_yield": true
+      },
+      {
+        "slug": "physical-equilibrium-kinetics",
+        "title": "Equilibrium, Electrochemistry and Kinetics",
+        "keywords": [
+          "equilibrium",
+          "ph",
+          "kp",
+          "nernst",
+          "rate constant",
+          "activation energy",
+          "half life"
+        ],
+        "is_high_yield": true
+      },
+      {
+        "slug": "organic-reaction-mechanisms",
+        "title": "Organic Reaction Mechanisms and Functional Groups",
+        "keywords": [
+          "nucleophilic",
+          "aldol",
+          "electrophilic",
+          "alcohol",
+          "amine",
+          "carbocation",
+          "aromatic"
+        ],
+        "is_high_yield": true
+      },
+      {
+        "slug": "inorganic-blocks-coordination",
+        "title": "Coordination Compounds and Transition Elements",
+        "keywords": [
+          "coordination",
+          "ligand",
+          "isomerism",
+          "crystal field",
+          "lanthanoid",
+          "oxidation state"
+        ],
+        "is_high_yield": true
+      }
+    ],
+    "Botany": [
+      {
+        "slug": "genetics-inheritance",
+        "title": "Mendelian Genetics and Molecular Inheritance",
+        "keywords": [
+          "mendel",
+          "dihybrid",
+          "chromosome",
+          "dna",
+          "transcription",
+          "translation",
+          "allele"
+        ],
+        "is_high_yield": true
+      },
+      {
+        "slug": "plant-physiology-photosynthesis",
+        "title": "Photosynthesis and Plant Physiology",
+        "keywords": [
+          "photosynthesis",
+          "c3",
+          "c4",
+          "calvin",
+          "krebs",
+          "atp",
+          "chloroplast",
+          "transpiration"
+        ],
+        "is_high_yield": true
+      },
+      {
+        "slug": "cell-division-structure",
+        "title": "Cell Structure and Division",
+        "keywords": [
+          "mitosis",
+          "meiosis",
+          "prophase",
+          "metaphase",
+          "ribosome",
+          "membrane",
+          "cell cycle"
+        ],
+        "is_high_yield": true
+      },
+      {
+        "slug": "ecology-biodiversity",
+        "title": "Ecosystems and Biodiversity",
+        "keywords": [
+          "ecosystem",
+          "trophic",
+          "pyramid",
+          "biodiversity",
+          "pollution",
+          "population"
+        ],
+        "is_high_yield": true
+      }
+    ],
+    "Zoology": [
+      {
+        "slug": "human-physiology-systems",
+        "title": "Human Physiology and Organ Systems",
+        "keywords": [
+          "blood",
+          "cardiac",
+          "nephron",
+          "kidney",
+          "lungs",
+          "neural",
+          "hormone",
+          "endocrine"
+        ],
+        "is_high_yield": true
+      },
+      {
+        "slug": "human-reproduction-health",
+        "title": "Human Reproduction and Reproductive Health",
+        "keywords": [
+          "spermatogenesis",
+          "oogenesis",
+          "ovary",
+          "testis",
+          "menstrual",
+          "contraceptive",
+          "art"
+        ],
+        "is_high_yield": true
+      },
+      {
+        "slug": "evolution-animal-kingdom",
+        "title": "Evolution and Animal Classification",
+        "keywords": [
+          "homologous",
+          "analogous",
+          "natural selection",
+          "phylum",
+          "chordata",
+          "arthropoda"
+        ],
+        "is_high_yield": true
+      },
+      {
+        "slug": "biotechnology-human-health",
+        "title": "Biotechnology and Human Health",
+        "keywords": [
+          "plasmid",
+          "restriction enzyme",
+          "pcr",
+          "recombinant",
+          "antibody",
+          "antigen",
+          "immunity",
+          "aids"
+        ],
+        "is_high_yield": true
+      }
+    ]
+  }
+}

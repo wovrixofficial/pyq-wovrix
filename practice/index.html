@@ -449,6 +449,48 @@
       border-color: var(--text);
     }
 
+    /* Horizontal Topic Pill Carousel */
+    .topic-pill-carousel {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding: 4px 2px 14px 2px;
+      margin-bottom: 16px;
+      scrollbar-width: thin;
+    }
+    .topic-pill-carousel::-webkit-scrollbar {
+      height: 4px;
+    }
+    .topic-pill {
+      white-space: nowrap;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      font-size: 12.5px;
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 9999px;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .topic-pill:hover {
+      border-color: var(--accent);
+      color: var(--text);
+    }
+    .topic-pill.active {
+      background: var(--text);
+      color: var(--surface);
+      border-color: var(--text);
+    }
+    [data-theme="dark"] .topic-pill.active {
+      background: #3b82f6;
+      color: #ffffff;
+      border-color: #3b82f6;
+    }
+
     .stream-search-input {
       padding: 7px 12px;
       border-radius: var(--radius-sm);
@@ -626,7 +668,7 @@
           <span class="theme-icon-dark">🌙</span>
         </button>
         <button class="btn-hamburger" onclick="toggleMobileDrawer(true)" aria-label="Open Navigation Menu">
-          ☰
+          ☰ Menu
         </button>
       </nav>
     </div>
@@ -815,6 +857,9 @@
           <span class="q-marks-pill" id="streamTotalBadge" style="font-size:12px;">0 Questions Available</span>
         </div>
       </div>
+
+      <!-- Horizontal Swipeable Sub-Topic Selector Carousel -->
+      <div id="topicPillCarousel" class="topic-pill-carousel" style="display:none;"></div>
 
       <!-- Compact Filter Bar -->
       <div class="stream-filter-bar">
@@ -1034,6 +1079,15 @@
     let currentYear = 'all';
     let currentSearch = '';
     let showRepeatsOnly = false;
+    let currentTopic = 'all';
+    let chapterTopicsCache = null;
+    fetch('/data/chapter_topics.json')
+      .then(r => r.ok ? r.json() : null)
+      .then(d => {
+        chapterTopicsCache = d;
+        if (currentStep === 'stream') renderTopicPills();
+      })
+      .catch(() => {});
 
     let datasetCache = {};
     let loadedQuestions = [];
@@ -1077,6 +1131,8 @@
         currentChapter = urlCh;
         currentChapterName = urlCh === 'all' ? 'All Chapters' : urlCh;
       }
+      const urlTopic = p.get('topic');
+      if (urlTopic) currentTopic = urlTopic;
 
       // Determine initial step
       if (urlQ || (urlExam && urlSubj && urlCh)) {
@@ -1096,6 +1152,7 @@
         p.set('exam', currentExam);
         p.set('subject', currentSubject);
         p.set('chapter', currentChapter);
+        if (currentTopic && currentTopic !== 'all') p.set('topic', currentTopic);
       } else if (currentStep === 'chapter') {
         p.set('exam', currentExam);
         p.set('subject', currentSubject);
@@ -1138,6 +1195,11 @@
       currentExam = exam;
       setActiveGoal(exam);
       currentSubject = 'Physics';
+      currentChapter = 'all';
+      currentChapterName = 'All Chapters';
+      showRepeatsOnly = false;
+      const btn = document.getElementById('btnStreamRepeats');
+      if (btn) btn.classList.remove('active');
       goToStep('subject');
     }
 
@@ -1200,6 +1262,9 @@
       currentSubject = s;
       currentChapter = 'all';
       currentChapterName = 'All Chapters';
+      showRepeatsOnly = false;
+      const btn = document.getElementById('btnStreamRepeats');
+      if (btn) btn.classList.remove('active');
       goToStep('chapter');
     }
 
@@ -1282,6 +1347,7 @@
     function selectChapter(chKey, chDisplayName) {
       currentChapter = String(chKey);
       currentChapterName = chDisplayName;
+      currentTopic = 'all';
       goToStep('stream');
     }
 
@@ -1293,9 +1359,61 @@
       document.getElementById('streamChapterHeading').innerText = `${currentSubject} · ${currentChapterName}`;
 
       renderSectionPills();
+      renderTopicPills();
+      const btn = document.getElementById('btnStreamRepeats');
+      if (btn) btn.classList.toggle('active', showRepeatsOnly);
       displayedQuestionsCount = PAGE_BATCH_SIZE;
 
       await loadQuestionsDataset();
+    }
+
+    function getActiveChapterTopics() {
+      if (!chapterTopicsCache) return [];
+      if (currentExam === 'cbse') {
+        const subjObj = chapterTopicsCache.cbse ? chapterTopicsCache.cbse[currentSubject] : null;
+        if (!subjObj) return [];
+        if (currentChapter !== 'all') {
+          return subjObj[currentChapter] || [];
+        } else {
+          return Object.values(subjObj).flat().slice(0, 12);
+        }
+      } else {
+        return (chapterTopicsCache.neet && chapterTopicsCache.neet[currentSubject]) || [];
+      }
+    }
+
+    function renderTopicPills() {
+      const carousel = document.getElementById('topicPillCarousel');
+      if (!carousel) return;
+      const topics = getActiveChapterTopics();
+      if (!topics || topics.length === 0) {
+        carousel.style.display = 'none';
+        return;
+      }
+      carousel.style.display = 'flex';
+
+      let html = `
+        <button class="topic-pill ${currentTopic === 'all' ? 'active' : ''}" onclick="filterByTopic('all', this)">All Topics</button>
+      `;
+
+      topics.forEach(t => {
+        const isActive = currentTopic === t.slug;
+        html += `
+          <button class="topic-pill ${isActive ? 'active' : ''}" onclick="filterByTopic('${t.slug}', this)">
+            ${t.is_high_yield ? '🔥 ' : ''}${escapeHtml(t.title)}
+          </button>
+        `;
+      });
+
+      carousel.innerHTML = html;
+    }
+
+    function filterByTopic(slug, btn) {
+      currentTopic = slug;
+      const pills = document.querySelectorAll('#topicPillCarousel .topic-pill');
+      pills.forEach(p => p.classList.remove('active'));
+      if (btn) btn.classList.add('active');
+      applyStreamFilters();
     }
 
     function renderSectionPills() {
@@ -1395,6 +1513,20 @@
       // Filter repeats
       if (showRepeatsOnly) {
         list = list.filter(q => (q.multi_year_count && q.multi_year_count > 1) || (q.repeat_years && q.repeat_years.length > 1) || (q.cluster_size && q.cluster_size >= 3));
+      }
+
+      // Filter by sub-topic
+      if (currentTopic !== 'all') {
+        const topics = getActiveChapterTopics();
+        const activeT = topics.find(t => t.slug === currentTopic);
+        if (activeT && Array.isArray(activeT.keywords)) {
+          const kws = activeT.keywords.map(k => k.toLowerCase());
+          list = list.filter(q => {
+            const txt = (q.text || '').toLowerCase();
+            const sig = (q.signature || '').toLowerCase();
+            return kws.some(k => txt.includes(k) || sig.includes(k));
+          });
+        }
       }
 
       filteredQuestions = list;
