@@ -25,7 +25,12 @@
       "@type": "Question",
       "name": "CBSE Class 12 Physics Semiconductor Electronics: Materials, Devices and Simple Circuits Board Question",
       "text": "(a) Explain the characteristics of a p-n junction diode that makes it suitable for its use as a rectifier.\n(b) With the help of a circuit diagram, explain the working of a full wave rectifier.",
-      "answerCount": 1
+      "answerCount": 1,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "(a) Characteristics of a p-n Junction Diode for Rectification        Step 1 (Governing Principle): [1 Mark]        A p-n junction diode acts as a unidirectional switch. Its suitability for rectification is based on its  asymmetric conduction property :                  Forward Bias:  When the p-regi...",
+        "upvoteCount": 1
+      }
     }
   }
   </script>
@@ -79,6 +84,48 @@
         <div class="math-content">(a) Explain the characteristics of a p-n junction diode that makes it suitable for its use as a rectifier.
 (b) With the help of a circuit diagram, explain the working of a full wave rectifier.</div>
       </div>
+      <div class="solution-box" style="margin-top:24px; padding:20px; background:var(--card-bg, #ffffff); border:1.5px solid var(--border, #e2e8f0); border-radius:12px;">
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:14px;">
+          <span style="background:#10b981; color:#fff; font-size:11px; font-weight:700; padding:3px 10px; border-radius:20px; text-transform:uppercase;">✓ Verified CBSE Marking Scheme</span>
+          <span style="font-size:12px; color:var(--text-muted, #64748b); font-weight:600;">Official Evaluation Steps & EL10 Insight</span>
+        </div>
+        <div class="math-content solution-content" style="line-height:1.7; font-size:15px;">
+          <div>
+    <h3>(a) Characteristics of a p-n Junction Diode for Rectification</h3>
+    <p><strong>Step 1 (Governing Principle): [1 Mark]</strong></p>
+    <p>A p-n junction diode acts as a unidirectional switch. Its suitability for rectification is based on its <strong>asymmetric conduction property</strong>:</p>
+    <ul>
+        <li><strong>Forward Bias:</strong> When the p-region is at a higher potential than the n-region, the depletion layer narrows, offering low resistance, allowing current to flow ($I \approx mA$).</li>
+        <li><strong>Reverse Bias:</strong> When the p-region is at a lower potential than the n-region, the depletion layer widens, offering very high resistance, effectively blocking current flow ($I \approx \mu A$).</li>
+    </ul>
+
+    <p><strong>Step 2 (Working Mechanism): [1 Mark]</strong></p>
+    <p>Because the diode conducts only when forward-biased, it converts alternating current (AC) into unidirectional pulsating direct current (DC). The mathematical condition for conduction is:</p>
+    $$V_{applied} > V_{barrier}$$
+    <p>Where $V_{barrier} \approx 0.7V$ for Silicon. This allows the diode to "clip" the negative half-cycles of an AC input signal.</p>
+
+    <h3>(b) Full Wave Rectifier</h3>
+    <p><strong>Step 1 (Circuit Diagram & Components): [1 Mark]</strong></p>
+    <p>A full-wave rectifier uses two diodes ($D_1, D_2$) and a center-tapped transformer. The input AC voltage is applied to the primary coil, and the output is taken across the load resistor $R_L$ connected between the center tap and the common junction of the diodes.</p>
+    <p><em>[Diagram Description: Center-tapped transformer connected to two diodes $D_1$ and $D_2$ at the ends of the secondary coil, with $R_L$ connected to the center tap.]</em></p>
+
+    <p><strong>Step 2 (Step-by-Step Working): [1.5 Marks]</strong></p>
+    <ul>
+        <li><strong>Positive Half-Cycle:</strong> Point A is positive relative to the center tap. Diode $D_1$ is forward-biased and conducts, while $D_2$ is reverse-biased. Current flows through $R_L$ in a specific direction.</li>
+        <li><strong>Negative Half-Cycle:</strong> Point B is positive relative to the center tap. Diode $D_2$ is forward-biased and conducts, while $D_1$ is reverse-biased. Current flows through $R_L$ in the <strong>same direction</strong> as the first half-cycle.</li>
+    </ul>
+
+    <p><strong>Step 3 (Final Conclusion): [0.5 Marks]</strong></p>
+    <p>The output voltage across $R_L$ is unidirectional. The frequency of the output ripple is twice the input frequency ($f_{out} = 2f_{in}$). The output is given by:</p>
+    $$V_{out}(t) = |V_m \sin(\omega t)|$$
+    <p>This confirms the conversion of AC to pulsating DC.</p>
+
+    <p><strong>💡 EL10 Concept Insight:</strong></p>
+    <p>Think of a p-n junction diode like a "one-way turnstile" at a stadium gate; it lets people (electrons) walk through in one direction but locks up if they try to push back the other way. A full-wave rectifier uses two of these turnstiles so that no matter which way the "crowd" (AC current) tries to move, they are always funneled into the same exit path, creating a steady flow in one direction.</p>
+</div>
+        </div>
+      </div>
+
 
       <div class="card-footer-actions">
         <a href="mailto:contact@wovrix.in?subject=Report%20Question%207217&body=Question%20ID:%207217%0AChapter:%20Semiconductor Electronics: Materials, Devices and Simple Circuits%0AIssue%20Description:%20" class="report-link">

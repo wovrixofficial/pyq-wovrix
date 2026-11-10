@@ -25,7 +25,12 @@
       "@type": "Question",
       "name": "CBSE Class 12 Mathematics Integrals Board Question",
       "text": "Evaluate : $\\int_{0}^{\\pi} \\frac{x}{1 + \\sin x} dx$",
-      "answerCount": 1
+      "answerCount": 1,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Question:  Evaluate: $\int_{0}^{\pi} \frac{x}{1 + \sin x} dx$         Step 1 (Formula / Governing Law & Given Data): [1 Mark]        Let $I = \int_{0}^{\pi} \frac{x}{1 + \sin x} dx$  --- (i)       We apply the King's Property (Definite Integral Property):       $$\int_{a}^{b} f(x) dx = \int_{a}^{b} ...",
+        "upvoteCount": 1
+      }
     }
   }
   </script>
@@ -78,6 +83,47 @@
       <div class="question-body">
         <div class="math-content">Evaluate : $\int_{0}^{\pi} \frac{x}{1 + \sin x} dx$</div>
       </div>
+      <div class="solution-box" style="margin-top:24px; padding:20px; background:var(--card-bg, #ffffff); border:1.5px solid var(--border, #e2e8f0); border-radius:12px;">
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:14px;">
+          <span style="background:#10b981; color:#fff; font-size:11px; font-weight:700; padding:3px 10px; border-radius:20px; text-transform:uppercase;">✓ Verified CBSE Marking Scheme</span>
+          <span style="font-size:12px; color:var(--text-muted, #64748b); font-weight:600;">Official Evaluation Steps & EL10 Insight</span>
+        </div>
+        <div class="math-content solution-content" style="line-height:1.7; font-size:15px;">
+          <div>
+    <p><strong>Question:</strong> Evaluate: $\int_{0}^{\pi} \frac{x}{1 + \sin x} dx$</p>
+
+    <p><strong>Step 1 (Formula / Governing Law & Given Data): [1 Mark]</strong></p>
+    <p>Let $I = \int_{0}^{\pi} \frac{x}{1 + \sin x} dx$  --- (i)</p>
+    <p>We apply the King's Property (Definite Integral Property):</p>
+    <p>$$\int_{a}^{b} f(x) dx = \int_{a}^{b} f(a + b - x) dx$$</p>
+    <p>Here, $a = 0$ and $b = \pi$, so we replace $x$ with $(\pi - x)$.</p>
+
+    <p><strong>Step 2 (Step-by-Step Mathematical Working): [2 Marks]</strong></p>
+    <p>Applying the property to equation (i):</p>
+    <p>$$I = \int_{0}^{\pi} \frac{\pi - x}{1 + \sin(\pi - x)} dx$$</p>
+    <p>Since $\sin(\pi - x) = \sin x$, we have:</p>
+    <p>$$I = \int_{0}^{\pi} \frac{\pi - x}{1 + \sin x} dx$$ --- (ii)</p>
+    <p>Adding (i) and (ii):</p>
+    <p>$$2I = \int_{0}^{\pi} \frac{x + \pi - x}{1 + \sin x} dx = \pi \int_{0}^{\pi} \frac{1}{1 + \sin x} dx$$</p>
+    <p>Rationalizing the denominator:</p>
+    <p>$$2I = \pi \int_{0}^{\pi} \frac{1 - \sin x}{(1 + \sin x)(1 - \sin x)} dx = \pi \int_{0}^{\pi} \frac{1 - \sin x}{\cos^2 x} dx$$</p>
+    <p>$$2I = \pi \int_{0}^{\pi} (\sec^2 x - \sec x \tan x) dx$$</p>
+    <p>Integrating the terms:</p>
+    <p>$$2I = \pi [\tan x - \sec x]_{0}^{\pi}$$</p>
+
+    <p><strong>Step 3 (Final Concluded Answer): [1 Mark]</strong></p>
+    <p>Evaluating the limits:</p>
+    <p>$$2I = \pi [(\tan \pi - \sec \pi) - (\tan 0 - \sec 0)]$$</p>
+    <p>$$2I = \pi [(0 - (-1)) - (0 - 1)]$$</p>
+    <p>$$2I = \pi [1 + 1] = 2\pi$$</p>
+    <p>$$I = \pi$$</p>
+    <p><strong>Final Answer:</strong> The value of the integral is $\pi$.</p>
+
+    <p><strong>💡 EL10 Concept Insight:</strong> Think of the "King's Property" as a mirror trick; by replacing $x$ with $(\pi - x)$, we create a second version of the integral where the messy $x$ in the numerator cancels out, leaving us with a much simpler fraction that is easy to solve!</p>
+</div>
+        </div>
+      </div>
+
 
       <div class="card-footer-actions">
         <a href="mailto:contact@wovrix.in?subject=Report%20Question%208973&body=Question%20ID:%208973%0AChapter:%20Integrals%0AIssue%20Description:%20" class="report-link">

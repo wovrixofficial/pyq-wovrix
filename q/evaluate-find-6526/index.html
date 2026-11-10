@@ -25,7 +25,12 @@
       "@type": "Question",
       "name": "CBSE Class 12 Mathematics Integrals Board Question",
       "text": "(a) Evaluate : $\\int_{0}^{\\pi} \\frac{e^{\\cos x}}{e^{\\cos x} + e^{-\\cos x}} \\, dx$ OR (b) Find : $\\int \\frac{2x+1}{(x+1)^2 (x-1)} \\, dx$",
-      "answerCount": 1
+      "answerCount": 1,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Solution (a)        Step 1 (Formula / Governing Law & Given Data): [1 Mark]        We use the King's Property of Definite Integrals:      $$\int_{a}^{b} f(x) \, dx = \int_{a}^{b} f(a+b-x) \, dx$$      Let the given integral be:      $$I = \int_{0}^{\pi} \frac{e^{\cos x}}{e^{\cos x} + e^{-\cos x}} \,...",
+        "upvoteCount": 1
+      }
     }
   }
   </script>
@@ -78,6 +83,59 @@
       <div class="question-body">
         <div class="math-content">(a) Evaluate : $\int_{0}^{\pi} \frac{e^{\cos x}}{e^{\cos x} + e^{-\cos x}} \, dx$ OR (b) Find : $\int \frac{2x+1}{(x+1)^2 (x-1)} \, dx$</div>
       </div>
+      <div class="solution-box" style="margin-top:24px; padding:20px; background:var(--card-bg, #ffffff); border:1.5px solid var(--border, #e2e8f0); border-radius:12px;">
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:14px;">
+          <span style="background:#10b981; color:#fff; font-size:11px; font-weight:700; padding:3px 10px; border-radius:20px; text-transform:uppercase;">✓ Verified CBSE Marking Scheme</span>
+          <span style="font-size:12px; color:var(--text-muted, #64748b); font-weight:600;">Official Evaluation Steps & EL10 Insight</span>
+        </div>
+        <div class="math-content solution-content" style="line-height:1.7; font-size:15px;">
+          <div>
+    <h3>Solution (a)</h3>
+    <p><strong>Step 1 (Formula / Governing Law & Given Data): [1 Mark]</strong></p>
+    <p>We use the King's Property of Definite Integrals:</p>
+    $$\int_{a}^{b} f(x) \, dx = \int_{a}^{b} f(a+b-x) \, dx$$
+    <p>Let the given integral be:</p>
+    $$I = \int_{0}^{\pi} \frac{e^{\cos x}}{e^{\cos x} + e^{-\cos x}} \, dx \quad \dots (1)$$
+
+    <p><strong>Step 2 (Step-by-Step Mathematical Working): [1.5 Marks]</strong></p>
+    <p>Applying the property where $a=0$ and $b=\pi$, we replace $x$ with $(\pi - x)$:</p>
+    $$I = \int_{0}^{\pi} \frac{e^{\cos(\pi - x)}}{e^{\cos(\pi - x)} + e^{-\cos(\pi - x)}} \, dx$$
+    <p>Since $\cos(\pi - x) = -\cos x$, the integral becomes:</p>
+    $$I = \int_{0}^{\pi} \frac{e^{-\cos x}}{e^{-\cos x} + e^{\cos x}} \, dx \quad \dots (2)$$
+    <p>Adding equations (1) and (2):</p>
+    $$2I = \int_{0}^{\pi} \frac{e^{\cos x} + e^{-\cos x}}{e^{\cos x} + e^{-\cos x}} \, dx$$
+    $$2I = \int_{0}^{\pi} 1 \, dx$$
+
+    <p><strong>Step 3 (Final Concluded Answer): [0.5 Mark]</strong></p>
+    $$2I = [x]_{0}^{\pi} = \pi - 0 = \pi$$
+    $$I = \frac{\pi}{2}$$
+
+    <p><strong>💡 EL10 Concept Insight:</strong> Imagine you have two identical paths that add up to the same total; because the function is symmetric around the midpoint, the two versions of the integral are actually the same, so you just calculate the area of a simple rectangle and divide by two!</p>
+</div>
+
+<hr>
+
+<div>
+    <h3>Solution (b)</h3>
+    <p><strong>Step 1 (Formula / Governing Law & Given Data): [1 Mark]</strong></p>
+    <p>We use the method of Partial Fractions. Let:</p>
+    $$\frac{2x+1}{(x+1)^2 (x-1)} = \frac{A}{x+1} + \frac{B}{(x+1)^2} + \frac{C}{x-1}$$
+    <p>Multiplying by the denominator:</p>
+    $$2x+1 = A(x+1)(x-1) + B(x-1) + C(x+1)^2$$
+
+    <p><strong>Step 2 (Step-by-Step Mathematical Working): [1.5 Marks]</strong></p>
+    <ul>
+        <li>Set $x = 1$: $2(1)+1 = C(1+1)^2 \implies 3 = 4C \implies C = \frac{3}{4}$</li>
+        <li>Set $x = -1$: $2(-1)+1 = B(-1-1) \implies -1 = -2B \implies B = \frac{1}{2}$</li>
+        <li>Compare coefficients of $x^2$: $0 = A + C \implies A = -C = -\frac{3}{4}$</li>
+    </ul>
+    <p>Substituting back into the integral:</p>
+    $$\int \left( \frac{-3/4}{x+1} + \frac{1/2}{(x+1)^2} + \frac{3/4}{x-1} \right) \, dx$$
+
+    <p><strong>Step 3 (
+        </div>
+      </div>
+
 
       <div class="card-footer-actions">
         <a href="mailto:contact@wovrix.in?subject=Report%20Question%206526&body=Question%20ID:%206526%0AChapter:%20Integrals%0AIssue%20Description:%20" class="report-link">

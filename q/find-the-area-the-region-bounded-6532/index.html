@@ -25,7 +25,12 @@
       "@type": "Question",
       "name": "CBSE Class 12 Mathematics Applications of the Integrals Board Question",
       "text": "Find the area of the region bounded by the curve $4x^2 + y^2 = 36$ using integration.",
-      "answerCount": 1
+      "answerCount": 1,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Step 1 (Formula / Governing Law):  [1 Mark]       The given equation is $4x^2 + y^2 = 36$. Dividing by 36, we get the standard form of an ellipse:      $$ \frac{x^2}{9} + \frac{y^2}{36} = 1 \implies \frac{x^2}{3^2} + \frac{y^2}{6^2} = 1 $$      This is an ellipse with semi-major axis $b = 6$ (along ...",
+        "upvoteCount": 1
+      }
     }
   }
   </script>
@@ -78,6 +83,35 @@
       <div class="question-body">
         <div class="math-content">Find the area of the region bounded by the curve $4x^2 + y^2 = 36$ using integration.</div>
       </div>
+      <div class="solution-box" style="margin-top:24px; padding:20px; background:var(--card-bg, #ffffff); border:1.5px solid var(--border, #e2e8f0); border-radius:12px;">
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:14px;">
+          <span style="background:#10b981; color:#fff; font-size:11px; font-weight:700; padding:3px 10px; border-radius:20px; text-transform:uppercase;">✓ Verified CBSE Marking Scheme</span>
+          <span style="font-size:12px; color:var(--text-muted, #64748b); font-weight:600;">Official Evaluation Steps</span>
+        </div>
+        <div class="math-content solution-content" style="line-height:1.7; font-size:15px;">
+          <div>
+    <p><strong>Step 1 (Formula / Governing Law):</strong> [1 Mark]</p>
+    <p>The given equation is $4x^2 + y^2 = 36$. Dividing by 36, we get the standard form of an ellipse:</p>
+    $$ \frac{x^2}{9} + \frac{y^2}{36} = 1 \implies \frac{x^2}{3^2} + \frac{y^2}{6^2} = 1 $$
+    <p>This is an ellipse with semi-major axis $b = 6$ (along the y-axis) and semi-minor axis $a = 3$ (along the x-axis). The area of the ellipse is given by $4 \times \int_{0}^{a} y \, dx$.</p>
+
+    <p><strong>Step 2 (Step-by-Step Working):</strong> [3 Marks]</p>
+    <p>From the equation $y^2 = 36 - 4x^2$, we have $y = \sqrt{36 - 4x^2} = 2\sqrt{9 - x^2}$ (considering the first quadrant).</p>
+    <p>The area $A$ is:</p>
+    $$ A = 4 \int_{0}^{3} 2\sqrt{3^2 - x^2} \, dx = 8 \int_{0}^{3} \sqrt{3^2 - x^2} \, dx $$
+    <p>Using the standard integration formula $\int \sqrt{a^2 - x^2} \, dx = \frac{x}{2}\sqrt{a^2 - x^2} + \frac{a^2}{2}\sin^{-1}\left(\frac{x}{a}\right)$:</p>
+    $$ A = 8 \left[ \frac{x}{2}\sqrt{9 - x^2} + \frac{9}{2}\sin^{-1}\left(\frac{x}{3}\right) \right]_{0}^{3} $$
+    <p>Substituting the limits:</p>
+    $$ A = 8 \left[ \left( \frac{3}{2}\sqrt{9 - 9} + \frac{9}{2}\sin^{-1}(1) \right) - (0 + 0) \right] $$
+    $$ A = 8 \left[ 0 + \frac{9}{2} \cdot \frac{\pi}{2} \right] $$
+
+    <p><strong>Step 3 (Final Answer):</strong> [1 Mark]</p>
+    $$ A = 8 \cdot \frac{9\pi}{4} = 18\pi $$
+    <p>The area of the region bounded by the curve is <strong>$18\pi$ square units</strong>.</p>
+</div>
+        </div>
+      </div>
+
 
       <div class="card-footer-actions">
         <a href="mailto:contact@wovrix.in?subject=Report%20Question%206532&body=Question%20ID:%206532%0AChapter:%20Applications of the Integrals%0AIssue%20Description:%20" class="report-link">

@@ -123,10 +123,18 @@
       <div class="drawer-goal-options">
         <button class="drawer-goal-btn goal-toggle-pill active" data-goal="cbse" onclick="selectGoal('cbse')">🎯 CBSE 12</button>
         <button class="drawer-goal-btn goal-toggle-pill" data-goal="neet" onclick="selectGoal('neet')">🩺 NEET UG</button>
+        <a href="/jee/" class="drawer-goal-btn goal-toggle-pill" style="text-decoration:none; display:inline-flex; align-items:center; justify-content:center;">⚡ JEE Main</a>
       </div>
     </div>
 
     <nav class="drawer-nav-list">
+      <a href="/jee/" class="drawer-nav-item" onclick="toggleMobileDrawer(false)">
+        <span class="drawer-nav-icon">⚡</span>
+        <div>
+          <div>JEE Main 2024 (20 Shifts)</div>
+          <span class="drawer-nav-desc">1,786 Questions with CBT Simulator</span>
+        </div>
+      </a>
       <a href="/practice/" class="drawer-nav-item" onclick="toggleMobileDrawer(false)">
         <span class="drawer-nav-icon">🎯</span>
         <div>
@@ -218,6 +226,7 @@
           <div class="portal-chips-row">
             <span class="portal-chip">CBSE 12 PCM (8,089 Qs)</span>
             <span class="portal-chip">NEET UG (2,060 Qs)</span>
+            <a href="/jee/" class="portal-chip" style="background:#eff6ff; color:#1d4ed8; font-weight:700;">⚡ JEE Main (1,786 Qs)</a>
             <span class="portal-chip">Instant Paginated Feed</span>
           </div>
           <a href="/practice/" class="portal-action-btn">

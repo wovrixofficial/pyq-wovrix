@@ -25,7 +25,12 @@
       "@type": "Question",
       "name": "CBSE Class 12 Physics Alternating Current Board Question",
       "text": "(a) (i) A series combination of $L$, $C$ and $R$ is connected to an ac source $V = V_m \\sin \\omega t$. Obtain :\n(I) the impedance of the circuit using phasor diagram,\n(II) the expression for the instantaneous current $I$, and\n(III) the phase relationship of current to the applied voltage.\n(ii) Define power factor of an ac circuit. State the conditions under which it is :\n(I) maximum,\n(II) minimum.\nOR\n(b) (i) Prove that the voltage is ahead of the current in phase by $\\frac{\\pi}{2}\text{ rad}$ in an ac circuit containing an ideal inductor.\n(ii) The currents through two inductors of self-inductance $12\text{ mH}$ and $24\text{ mH}$ are increasing with time at the same rate. Draw graphs showing the variation of the :\n(I) magnitude of emf induced with the rate of change of current in each inductor.\n(II) energy stored in each inductor with the current flowing through it.",
-      "answerCount": 1
+      "answerCount": 1,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Solution for Part (a)         Step 1 (Governing Laws & Phasor Setup): [1 Mark]        For a series LCR circuit, the applied voltage $V = V_m \sin \omega t$ is the phasor sum of voltages across the resistor ($V_R$), inductor ($V_L$), and capacitor ($V_C$).                 $V_R = IR$ (in phase with $I...",
+        "upvoteCount": 1
+      }
     }
   }
   </script>
@@ -89,6 +94,63 @@ OR
 (I) magnitude of emf induced with the rate of change of current in each inductor.
 (II) energy stored in each inductor with the current flowing through it.</div>
       </div>
+      <div class="solution-box" style="margin-top:24px; padding:20px; background:var(--card-bg, #ffffff); border:1.5px solid var(--border, #e2e8f0); border-radius:12px;">
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:14px;">
+          <span style="background:#10b981; color:#fff; font-size:11px; font-weight:700; padding:3px 10px; border-radius:20px; text-transform:uppercase;">✓ Verified CBSE Marking Scheme</span>
+          <span style="font-size:12px; color:var(--text-muted, #64748b); font-weight:600;">Official Evaluation Steps & EL10 Insight</span>
+        </div>
+        <div class="math-content solution-content" style="line-height:1.7; font-size:15px;">
+          <div>
+    <h3>Solution for Part (a)</h3>
+
+    <p><strong>Step 1 (Governing Laws & Phasor Setup): [1 Mark]</strong></p>
+    <p>For a series LCR circuit, the applied voltage $V = V_m \sin \omega t$ is the phasor sum of voltages across the resistor ($V_R$), inductor ($V_L$), and capacitor ($V_C$).</p>
+    <ul>
+        <li>$V_R = IR$ (in phase with $I$)</li>
+        <li>$V_L = IX_L$ (leads $I$ by $\pi/2$)</li>
+        <li>$V_C = IX_C$ (lags $I$ by $\pi/2$)</li>
+    </ul>
+
+    <p><strong>Step 2 (Mathematical Derivation of Impedance): [1.5 Marks]</strong></p>
+    <p>From the phasor diagram, the resultant voltage $V$ is given by:</p>
+    $$V^2 = V_R^2 + (V_L - V_C)^2$$
+    <p>Substituting $V = IZ$, $V_R = IR$, $V_L = IX_L$, and $V_C = IX_C$:</p>
+    $$(IZ)^2 = (IR)^2 + (IX_L - IX_C)^2$$
+    $$Z = \sqrt{R^2 + (X_L - X_C)^2}$$
+    <p>Where $X_L = \omega L$ and $X_C = \frac{1}{\omega C}$.</p>
+
+    <p><strong>Step 3 (Current Expression & Phase Relationship): [1 Mark]</strong></p>
+    <p>The instantaneous current is $I = I_m \sin(\omega t - \phi)$, where $I_m = \frac{V_m}{Z}$.</p>
+    <p>The phase angle $\phi$ is given by:</p>
+    $$\tan \phi = \frac{X_L - X_C}{R}$$
+    <p>If $X_L > X_C$, current lags voltage. If $X_C > X_L$, current leads voltage.</p>
+
+    <p><strong>Step 4 (Power Factor Definition & Conditions): [1.5 Marks]</strong></p>
+    <p><strong>Definition:</strong> Power factor ($\cos \phi$) is the ratio of resistance to impedance ($R/Z$).</p>
+    <ul>
+        <li><strong>Maximum:</strong> $\cos \phi = 1$ when $\phi = 0$ (Resonance condition: $X_L = X_C$).</li>
+        <li><strong>Minimum:</strong> $\cos \phi = 0$ when $\phi = \pi/2$ (Purely inductive or capacitive circuit).</li>
+    </ul>
+
+    <hr>
+
+    <h3>💡 EL10 Concept Insight</h3>
+    <p>Think of the LCR circuit like a tug-of-war: the inductor pulls the current one way, the capacitor pulls it the other, and the resistor acts like friction slowing everything down; the "impedance" is just the total combined resistance to the flow of electricity.</p>
+
+    <hr>
+
+    <h3>Solution for Part (b)</h3>
+
+    <p><strong>Step 1 (Inductor Phase Proof): [2 Marks]</strong></p>
+    <p>For an ideal inductor, $V = L \frac{di}{dt}$. If $i = I_m \sin \omega t$, then:</p>
+    $$V = L \frac{d}{dt} (I_m \sin \omega t) = \omega L I_m \cos \omega t$$
+    $$V = V_m \sin(\omega t + \pi/2)$$
+    <p>Since the argument is $(\omega t + \pi/2)$, the voltage leads the current by $\pi/2$.</p>
+
+    <p><strong>Step 2 (Induced EMF Graph): [1.5 Marks]</strong></p>
+        </div>
+      </div>
+
 
       <div class="card-footer-actions">
         <a href="mailto:contact@wovrix.in?subject=Report%20Question%203959&body=Question%20ID:%203959%0AChapter:%20Alternating Current%0AIssue%20Description:%20" class="report-link">

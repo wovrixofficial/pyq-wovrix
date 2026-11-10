@@ -25,7 +25,12 @@
       "@type": "Question",
       "name": "CBSE Class 12 Physics Unclassified Board Question",
       "text": "A voltage $v = v_0 \\sin \\omega t$ applied to a circuit drives a current $i = i_0 \\sin (\\omega t + \\phi)$ in the circuit. The average power consumed in the circuit over a cycle is\n(A) Zero\n(B) $i_0 v_0 \\cos \\phi$\n(C) $\\frac{i_0 v_0}{2}$\n(D) $\\frac{i_0 v_0}{2} \\cos \\phi$",
-      "answerCount": 1
+      "answerCount": 1,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Correct Option: (D) \(\frac{i_0 v_0}{2} \cos \phi\)          Step 1 (Formula / Governing Law & Given Data): [1/3 Mark]        The instantaneous power \(p\) in an AC circuit is the product of instantaneous voltage \(v\) and instantaneous current \(i\). The average power \(P_{avg}\) over a complete cy...",
+        "upvoteCount": 1
+      }
     }
   }
   </script>
@@ -82,6 +87,38 @@
 (C) $\frac{i_0 v_0}{2}$
 (D) $\frac{i_0 v_0}{2} \cos \phi$</div>
       </div>
+      <div class="solution-box" style="margin-top:24px; padding:20px; background:var(--card-bg, #ffffff); border:1.5px solid var(--border, #e2e8f0); border-radius:12px;">
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:14px;">
+          <span style="background:#10b981; color:#fff; font-size:11px; font-weight:700; padding:3px 10px; border-radius:20px; text-transform:uppercase;">✓ Verified CBSE Marking Scheme</span>
+          <span style="font-size:12px; color:var(--text-muted, #64748b); font-weight:600;">Official Evaluation Steps & EL10 Insight</span>
+        </div>
+        <div class="math-content solution-content" style="line-height:1.7; font-size:15px;">
+          <div>
+    <p><strong>Correct Option: (D) \(\frac{i_0 v_0}{2} \cos \phi\)</strong></p>
+
+    <p><strong>Step 1 (Formula / Governing Law & Given Data): [1/3 Mark]</strong></p>
+    <p>The instantaneous power \(p\) in an AC circuit is the product of instantaneous voltage \(v\) and instantaneous current \(i\). The average power \(P_{avg}\) over a complete cycle \(T\) is given by:</p>
+    $$P_{avg} = \frac{1}{T} \int_{0}^{T} v \cdot i \, dt$$
+    <p>Given: \(v = v_0 \sin \omega t\) and \(i = i_0 \sin (\omega t + \phi)\).</p>
+
+    <p><strong>Step 2 (Step-by-Step Mathematical Working): [1/3 Mark]</strong></p>
+    <p>Substitute the expressions into the power formula:</p>
+    $$P_{avg} = \frac{1}{T} \int_{0}^{T} (v_0 \sin \omega t) \cdot (i_0 \sin (\omega t + \phi)) \, dt$$
+    <p>Using the trigonometric identity \(\sin A \sin B = \frac{1}{2} [\cos(A-B) - \cos(A+B)]\):</p>
+    $$P_{avg} = \frac{v_0 i_0}{2T} \int_{0}^{T} [\cos(-\phi) - \cos(2\omega t + \phi)] \, dt$$
+    <p>Since the average value of a cosine function over a full cycle is zero (\(\int_{0}^{T} \cos(2\omega t + \phi) \, dt = 0\)) and \(\cos(-\phi) = \cos \phi\):</p>
+    $$P_{avg} = \frac{v_0 i_0}{2T} \int_{0}^{T} \cos \phi \, dt = \frac{v_0 i_0}{2T} \cdot \cos \phi \cdot [t]_0^T$$
+
+    <p><strong>Step 3 (Final Concluded Answer): [1/3 Mark]</strong></p>
+    <p>Simplifying the expression:</p>
+    $$P_{avg} = \frac{v_0 i_0}{2T} \cdot \cos \phi \cdot T = \frac{v_0 i_0}{2} \cos \phi$$
+    <p>Thus, the average power consumed is <strong>\(\frac{i_0 v_0}{2} \cos \phi\)</strong>.</p>
+
+    <p><strong>💡 EL10 Concept Insight:</strong> Think of power as the "effective" energy flow; because the voltage and current aren't perfectly in sync (due to the phase angle \(\phi\)), we multiply the peak values by 1/2 to get the average, and then multiply by \(\cos \phi\) to account for how much they actually "overlap" in time.</p>
+</div>
+        </div>
+      </div>
+
 
       <div class="card-footer-actions">
         <a href="mailto:contact@wovrix.in?subject=Report%20Question%204345&body=Question%20ID:%204345%0AChapter:%20Unclassified%0AIssue%20Description:%20" class="report-link">

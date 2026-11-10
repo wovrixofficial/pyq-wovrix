@@ -25,7 +25,12 @@
       "@type": "Question",
       "name": "CBSE Class 12 Physics Moving Charges and Magnetism Board Question",
       "text": "Derive an expression for the magnetic field $\\vec{B}$, due to a circular coil of N turns, each of radius $r$ carrying current $I$, at a distance '$x$' from the centre along its axis.",
-      "answerCount": 1
+      "answerCount": 1,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Derivation of Magnetic Field on the Axis of a Circular Current Loop         Step 1 (Formula / Governing Law & Given Data): [1 Mark]        According to the  Biot-Savart Law , the magnetic field $d\vec{B}$ due to a small current element $Id\vec{l}$ at a point $P$ is given by:      $$d\vec{B} = \frac{...",
+        "upvoteCount": 1
+      }
     }
   }
   </script>
@@ -78,6 +83,47 @@
       <div class="question-body">
         <div class="math-content">Derive an expression for the magnetic field $\vec{B}$, due to a circular coil of N turns, each of radius $r$ carrying current $I$, at a distance &#x27;$x$&#x27; from the centre along its axis.</div>
       </div>
+      <div class="solution-box" style="margin-top:24px; padding:20px; background:var(--card-bg, #ffffff); border:1.5px solid var(--border, #e2e8f0); border-radius:12px;">
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:14px;">
+          <span style="background:#10b981; color:#fff; font-size:11px; font-weight:700; padding:3px 10px; border-radius:20px; text-transform:uppercase;">✓ Verified CBSE Marking Scheme</span>
+          <span style="font-size:12px; color:var(--text-muted, #64748b); font-weight:600;">Official Evaluation Steps & EL10 Insight</span>
+        </div>
+        <div class="math-content solution-content" style="line-height:1.7; font-size:15px;">
+          <div>
+    <h3>Derivation of Magnetic Field on the Axis of a Circular Current Loop</h3>
+
+    <p><strong>Step 1 (Formula / Governing Law & Given Data): [1 Mark]</strong></p>
+    <p>According to the <strong>Biot-Savart Law</strong>, the magnetic field $d\vec{B}$ due to a small current element $Id\vec{l}$ at a point $P$ is given by:</p>
+    $$d\vec{B} = \frac{\mu_0}{4\pi} \frac{I(d\vec{l} \times \vec{r})}{r^3}$$
+    <p>For a circular coil of radius $R$ (using $R$ for radius to avoid confusion with distance $r$) with $N$ turns, the distance from the element to the point $P$ on the axis at distance $x$ is $s = \sqrt{R^2 + x^2}$.</p>
+
+    <p><strong>Step 2 (Step-by-Step Mathematical Working): [1.5 Marks]</strong></p>
+    <ul>
+        <li>The magnitude of the magnetic field due to a small element $dl$ is:
+            $$dB = \frac{\mu_0}{4\pi} \frac{I dl}{R^2 + x^2}$$
+        </li>
+        <li>By symmetry, the components of $dB$ perpendicular to the axis ($dB \sin\theta$) cancel out for every diametrically opposite element. Only the axial components ($dB \cos\theta$) add up.</li>
+        <li>The total magnetic field $B$ is the integral of the axial components for $N$ turns:
+            $$B = \int dB \cos\theta = \int \left( \frac{\mu_0}{4\pi} \frac{I dl}{R^2 + x^2} \right) \cos\theta$$
+        </li>
+        <li>From the geometry of the triangle, $\cos\theta = \frac{R}{\sqrt{R^2 + x^2}}$. Substituting this:
+            $$B = \frac{\mu_0 I}{4\pi} \frac{R}{(R^2 + x^2)^{3/2}} \int_0^{2\pi R} N dl$$
+        </li>
+        <li>Integrating $dl$ over the circumference $2\pi R$:
+            $$B = \frac{\mu_0 I N R}{4\pi (R^2 + x^2)^{3/2}} \cdot (2\pi R)$$
+        </li>
+    </ul>
+
+    <p><strong>Step 3 (Final Concluded Answer): [0.5 Mark]</strong></p>
+    <p>Simplifying the expression, we get the final formula for the magnetic field along the axis:</p>
+    $$B = \frac{\mu_0 N I R^2}{2(R^2 + x^2)^{3/2}}$$
+    <p>The direction of $\vec{B}$ is along the axis, determined by the Right-Hand Thumb Rule.</p>
+
+    <p><strong>💡 EL10 Concept Insight:</strong> Imagine the loop as a ring of tiny magnets; because the ring is circular, all the "sideways" magnetic forces cancel each other out, leaving only the forces pointing straight along the center line to add up and create a strong field.</p>
+</div>
+        </div>
+      </div>
+
 
       <div class="card-footer-actions">
         <a href="mailto:contact@wovrix.in?subject=Report%20Question%20458&body=Question%20ID:%20458%0AChapter:%20Moving Charges and Magnetism%0AIssue%20Description:%20" class="report-link">

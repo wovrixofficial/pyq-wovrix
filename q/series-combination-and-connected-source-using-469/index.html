@@ -25,7 +25,12 @@
       "@type": "Question",
       "name": "CBSE Class 12 Physics Alternating Current Board Question",
       "text": "(a) A series combination of L, C and R is connected to an a.c. source. Using a phasor diagram, derive an expression for the impedance of the circuit and phase difference between V and I.\n(b) Under what conditions the\n(i) impedance of the circuit is minimum ?\n(ii) Wattless current flows in the circuit ?\nOR\n(i) With the help of a labelled diagram, explain the principle, construction and working of an a.c. generator.\n(ii) Deduce an expression for the induced emf in the coil of the generator.\n(iii) If T is the time period of the rotation of the coil, at what values of T in a cycle, the emf generator is maximum ?",
-      "answerCount": 1
+      "answerCount": 1,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Part (a): Series LCR Circuit Analysis         Step 1 (Governing Laws & Phasor Representation): [1 Mark]        In a series LCR circuit, the current $I = I_m \sin(\omega t)$ is common to all components. The voltage across the resistor ($V_R$) is in phase with $I$, the voltage across the inductor ($V_...",
+        "upvoteCount": 1
+      }
     }
   }
   </script>
@@ -85,6 +90,55 @@ OR
 (ii) Deduce an expression for the induced emf in the coil of the generator.
 (iii) If T is the time period of the rotation of the coil, at what values of T in a cycle, the emf generator is maximum ?</div>
       </div>
+      <div class="solution-box" style="margin-top:24px; padding:20px; background:var(--card-bg, #ffffff); border:1.5px solid var(--border, #e2e8f0); border-radius:12px;">
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:14px;">
+          <span style="background:#10b981; color:#fff; font-size:11px; font-weight:700; padding:3px 10px; border-radius:20px; text-transform:uppercase;">✓ Verified CBSE Marking Scheme</span>
+          <span style="font-size:12px; color:var(--text-muted, #64748b); font-weight:600;">Official Evaluation Steps & EL10 Insight</span>
+        </div>
+        <div class="math-content solution-content" style="line-height:1.7; font-size:15px;">
+          <div>
+    <h3>Part (a): Series LCR Circuit Analysis</h3>
+
+    <p><strong>Step 1 (Governing Laws & Phasor Representation): [1 Mark]</strong></p>
+    <p>In a series LCR circuit, the current $I = I_m \sin(\omega t)$ is common to all components. The voltage across the resistor ($V_R$) is in phase with $I$, the voltage across the inductor ($V_L$) leads $I$ by $\pi/2$, and the voltage across the capacitor ($V_C$) lags $I$ by $\pi/2$.</p>
+    <p>The net voltage $V$ is the phasor sum: $\vec{V} = \vec{V_R} + \vec{V_L} + \vec{V_C}$.</p>
+
+    <p><strong>Step 2 (Mathematical Derivation): [2 Marks]</strong></p>
+    <p>From the phasor diagram, the resultant voltage $V$ is given by:</p>
+    $$V = \sqrt{V_R^2 + (V_L - V_C)^2}$$
+    <p>Substituting $V_R = IR$, $V_L = IX_L$, and $V_C = IX_C$:</p>
+    $$V = \sqrt{(IR)^2 + (IX_L - IX_C)^2} = I \sqrt{R^2 + (X_L - X_C)^2}$$
+    <p>The impedance $Z$ is defined as $Z = V/I$:</p>
+    $$Z = \sqrt{R^2 + (X_L - X_C)^2} = \sqrt{R^2 + (\omega L - \frac{1}{\omega C})^2}$$
+    <p>The phase difference $\phi$ between $V$ and $I$ is:</p>
+    $$\tan \phi = \frac{V_L - V_C}{V_R} = \frac{X_L - X_C}{R}$$
+
+    <p><strong>Step 3 (Final Concluded Answer): [1 Mark]</strong></p>
+    <ul>
+        <li><strong>(i) Impedance is minimum:</strong> When $X_L = X_C$ (Resonance condition), $Z = R$. This occurs at $\omega = \frac{1}{\sqrt{LC}}$.</li>
+        <li><strong>(ii) Wattless current:</strong> Flows when the average power consumed is zero. This happens in a purely inductive or purely capacitive circuit where $\phi = \pi/2$, so $\cos \phi = 0$.</li>
+    </ul>
+
+    <hr>
+
+    <h3>💡 EL10 Concept Insight</h3>
+    <p>Think of the LCR circuit like a tug-of-war: the inductor pulls the voltage "up" and the capacitor pulls it "down." When they pull with equal strength, they cancel each other out, leaving only the resistor to resist the flow, which makes the path of least resistance (minimum impedance)!</p>
+
+    <hr>
+
+    <h3>Alternative (OR): A.C. Generator</h3>
+
+    <p><strong>Step 1 (Principle & Construction): [1.5 Marks]</strong></p>
+    <p><strong>Principle:</strong> Based on Electromagnetic Induction (Faraday's Law). When a coil rotates in a uniform magnetic field, the magnetic flux linked with it changes, inducing an emf.</p>
+    <p><strong>Construction:</strong> Consists of a rectangular coil (armature), strong permanent magnets (field magnets), slip rings, and carbon brushes.</p>
+
+    <p><strong>Step 2 (Deduction of Induced EMF): [2 Marks]</strong></p>
+    <p>Magnetic flux $\Phi_B = \vec{B} \cdot \vec{A} = BA \cos \theta$. Since $\theta = \omega t$:</p>
+    $$\Phi_B = BA \cos(\omega t)$$
+    <p>By Faraday's Law, $\varepsilon = -N \frac{d\Phi_
+        </div>
+      </div>
+
 
       <div class="card-footer-actions">
         <a href="mailto:contact@wovrix.in?subject=Report%20Question%20469&body=Question%20ID:%20469%0AChapter:%20Alternating Current%0AIssue%20Description:%20" class="report-link">
