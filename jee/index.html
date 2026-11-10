@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Learnosha | JEE Main 2024 Master Shift Archive & CBT Simulator</title>
+  <title>PYQ Wovrix | JEE Main 2024 Master Shift Archive & CBT Simulator</title>
   <meta name="description" content="All 20 official JEE Main 2024 shifts (January & April sessions). 1,786 authentic questions across Physics, Chemistry, and Mathematics with NTA keys and full solutions.">
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -404,17 +404,14 @@
     .q-sol-pane {
       display: none;
       margin-top: 16px;
-      padding: 18px 20px;
+      padding: 16px;
       background: #f8fafc;
       border: 1px solid #e2e8f0;
-      border-left: 4px solid #2563eb;
       border-radius: var(--radius-md);
-      font-size: 14px;
-      color: #1e293b;
-      line-height: 1.7;
-      white-space: normal;
-      max-height: 420px;
-      overflow-y: auto;
+      font-size: 13px;
+      color: #334155;
+      line-height: 1.6;
+      white-space: pre-wrap;
     }
 
     .q-sol-pane.open {
@@ -436,10 +433,6 @@
       color: var(--text-muted);
     }
   </style>
-  <!-- KaTeX for Rich Math Typography -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
 </head>
 <body>
 
@@ -452,7 +445,7 @@
           <path d="M6 10L11 23L16 14L21 23L26 10" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
           <circle cx="16" cy="14" r="2.2" fill="#3b82f6"/>
         </svg>
-        <span class="brand-name">LEARNOSHA <span class="brand-slash">/</span> <span class="brand-sub">JEE</span></span>
+        <span class="brand-name">WOVRIX <span class="brand-slash">/</span> <span class="brand-sub">JEE MAIN</span></span>
       </a>
 
       <nav class="nav-links">
@@ -603,8 +596,6 @@
 
   </main>
 
-  <!-- Pre-bundled dataset for instant file:// and offline execution -->
-  <script src="../data/jee_main_all.js"></script>
   <script>
     let ALL_QUESTIONS = [];
     let FILTERED_QUESTIONS = [];
@@ -626,17 +617,12 @@
       applyFilters();
     }
 
-    // Initialize master dataset (Supports file:// and http://)
+    // Fetch master dataset
     async function init() {
-      if (window.JEE_DATA && Array.isArray(window.JEE_DATA) && window.JEE_DATA.length > 0) {
-        ALL_QUESTIONS = window.JEE_DATA;
-        populateShiftDropdown();
-        applyFilters();
-        return;
-      }
       try {
         const res = await fetch('../data/jee_main_all.json');
         ALL_QUESTIONS = await res.json();
+        
         populateShiftDropdown();
         applyFilters();
       } catch (e) {
@@ -644,7 +630,7 @@
         document.getElementById('questionsStream').innerHTML = `
           <div style="padding:40px; text-align:center; color:#ef4444;">
             <i class="fa-solid fa-triangle-exclamation fa-2x"></i>
-            <p style="margin-top:12px;">Failed to load dataset. Please run a local web server (e.g. <code>http://localhost:8080/jee/</code>) or ensure <code>data/jee_main_all.js</code> is present.</p>
+            <p style="margin-top:12px;">Failed to load dataset. Please ensure <code>data/jee_main_all.json</code> is accessible.</p>
           </div>
         `;
       }
@@ -705,36 +691,7 @@
       const nextBatch = FILTERED_QUESTIONS.slice(visibleIndex, visibleIndex + PAGE_SIZE);
       
       if (nextBatch.length === 0 && visibleIndex === 0) {
-        if (currentYear === '2026' || currentYear === '2025') {
-          const shiftList = currentYear === '2026' ? [
-            '21 Jan (Shift 1 & 2)', '22 Jan (Shift 1 & 2)', '23 Jan (Shift 1 & 2)', 
-            '24 Jan (Shift 1 & 2)', '28 Jan (Shift 1 & 2)', '02 Apr (Shift 1 & 2)', 
-            '04 Apr (Shift 1 & 2)', '05 Apr (Shift 1 & 2)', '06 Apr (Shift 1 & 2)', '08 Apr (Shift 2)'
-          ] : [
-            '22 Jan (Shift 1 & 2)', '23 Jan (Shift 1 & 2)', '24 Jan (Shift 1 & 2)', 
-            '28 Jan (Shift 1 & 2)', '29 Jan (Shift 1 & 2)', '02 Apr (Shift 1 & 2)', 
-            '03 Apr (Shift 1 & 2)', '04 Apr (Shift 1 & 2)', '07 Apr (Shift 1 & 2)', '08 Apr (Shift 2)'
-          ];
-          
-          container.innerHTML = `
-            <div style="background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-lg); padding:32px; text-align:center;">
-              <div style="font-size:32px; margin-bottom:12px;">📥</div>
-              <h3 style="font-size:18px; font-weight:800; margin-bottom:8px;">JEE Main ${currentYear} (19 Official Shifts Downloaded)</h3>
-              <p style="font-size:14px; color:var(--text-muted); max-width:650px; margin:0 auto 20px auto; line-height:1.6;">
-                All 19 official shift PDF papers for ${currentYear} are 100% saved on Drive E in <code>raw_papers/${currentYear}/</code>. 
-                The OCR question parser is currently converting them into the interactive feed. You can practice <strong>2024 (1,786 questions)</strong> right now or access the downloaded shifts below.
-              </p>
-              <div style="display:flex; flex-wrap:wrap; gap:8px; justify-content:center; max-width:750px; margin:0 auto 24px auto;">
-                ${shiftList.map(s => `<span class="q-badge" style="padding:6px 12px; font-size:12px;"><i class="fa-regular fa-file-pdf"></i> ${s}</span>`).join('')}
-              </div>
-              <button class="btn-act primary" onclick="setYear('2024', document.querySelectorAll('#yearPillGrid .subj-pill')[3])">
-                Switch to 2024 Live Practice (1,786 Questions)
-              </button>
-            </div>
-          `;
-        } else {
-          container.innerHTML = `<div style="text-align:center; padding:40px; color:var(--text-muted);">No questions match the selected filters.</div>`;
-        }
+        container.innerHTML = `<div style="text-align:center; padding:40px; color:var(--text-muted);">No questions match the selected filters.</div>`;
         document.getElementById('loadMoreWrap').style.display = 'none';
         return;
       }
@@ -791,11 +748,10 @@
           ${optionsHtml}
 
           <div class="q-sol-pane ${showSolutionsGlobally ? 'open' : ''}" id="sol_${q.id}">
-            <div style="display:flex; align-items:center; gap:8px; font-weight:700; color:#1e3a8a; margin-bottom:10px; padding-bottom:8px; border-bottom:1px solid #e2e8f0;">
-              <i class="fa-solid fa-circle-check" style="color:#2563eb;"></i>
-              <span>Official NTA Key: Option (${q.correct_answer || 'N/A'})</span>
+            <div style="font-weight:700; color:#0f172a; margin-bottom:6px;">
+              Official Answer Key: Option (${q.correct_answer || 'N/A'})
             </div>
-            <div class="q-sol-content" style="white-space: pre-wrap; line-height: 1.7;">${(q.solution || 'Step-by-step derivation available in Master Vault.').replace(/Official NTA Answer: Option \([^\)]+\)\s*/g, '')}</div>
+            ${q.solution || 'Detailed step-by-step solution available in Master Vault.'}
           </div>
 
           <div class="q-foot-actions">
@@ -809,18 +765,7 @@
         container.appendChild(card);
       });
 
-            visibleIndex += nextBatch.length;
-      if (window.renderMathInElement) {
-        renderMathInElement(container, {
-          delimiters: [
-            {left: '$$', right: '$$', display: true},
-            {left: '$', right: '$', display: false},
-            {left: '\(', right: '\)', display: false},
-            {left: '\[', right: '\]', display: true}
-          ],
-          throwOnError: false
-        });
-      }
+      visibleIndex += nextBatch.length;
       document.getElementById('loadMoreWrap').style.display = (visibleIndex >= FILTERED_QUESTIONS.length) ? 'none' : 'block';
     }
 
@@ -838,7 +783,7 @@
           }
         });
       }
-      // Keep solution collapsed until user clicks View Solution
+      document.getElementById(`sol_${qid}`).classList.add('open');
     }
 
     function checkNumerical(qid, correct) {
@@ -851,7 +796,7 @@
       } else {
         fb.innerHTML = `<span style="color:#ef4444;">✗ Incorrect. Correct answer is ${correct}</span>`;
       }
-      // Keep solution collapsed until user clicks View Solution
+      document.getElementById(`sol_${qid}`).classList.add('open');
     }
 
     function toggleSolution(qid) {
@@ -864,17 +809,6 @@
       } else {
         pane.classList.add('open');
         btnText.textContent = 'Hide Solution';
-        if (window.renderMathInElement) {
-          renderMathInElement(pane, {
-            delimiters: [
-              {left: '$$', right: '$$', display: true},
-              {left: '$', right: '$', display: false},
-              {left: '\\(', right: '\\)', display: false},
-              {left: '\\[', right: '\\]', display: true}
-            ],
-            throwOnError: false
-          });
-        }
       }
     }
 

@@ -1,5 +1,5 @@
 /**
- * Learnosha In-App Universal Question Reporting Modal
+ * Wovrix PYQ In-App Universal Question Reporting Modal
  * Saves student reports locally in localStorage and syncs to API queue.
  */
 (function() {
@@ -160,9 +160,8 @@ function submitQuestionReport(e) {
 
   // 1. Save to local storage
   try {
-    const existing = JSON.parse(localStorage.getItem('learnosha_pyq_reports') || localStorage.getItem('wovrix_pyq_reports') || '[]');
+    const existing = JSON.parse(localStorage.getItem('wovrix_pyq_reports') || '[]');
     existing.push(reportPayload);
-    localStorage.setItem('learnosha_pyq_reports', JSON.stringify(existing));
     localStorage.setItem('wovrix_pyq_reports', JSON.stringify(existing));
   } catch (err) {
     console.warn('LocalStorage save error:', err);
