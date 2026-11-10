@@ -533,6 +533,17 @@
     </div>
   </header>
 
+  
+  <!-- Floating Stopwatch / Countdown Widget -->
+  <div id="floatingTimerBar" class="floating-timer-bar">
+    <div style="display: flex; align-items: center; gap: 8px;">
+      <span class="timed-mode-badge" id="timerDisplay">⏱️ 00:00</span>
+      <span style="font-size: 12px; color: var(--text-muted);" id="timerProgressCount">0 Done</span>
+    </div>
+    <button class="btn-timer-ctrl" onclick="toggleTimerPause()" id="btnTimerPause">Pause</button>
+    <button class="btn-timer-ctrl" onclick="resetTimer()">Reset</button>
+  </div>
+
   <main class="practice-container">
     <!-- Top Control Bar -->
     <section class="hub-control-panel">
@@ -718,6 +729,83 @@
     let showRepeatsOnly = false;
 
     let showBookmarksOnly = false;
+
+    
+    // Timed Practice Mode Engine
+    let timerDurationSeconds = 0;
+    let timerRemainingSeconds = 0;
+    let timerInterval = null;
+    let isTimerPaused = false;
+
+    function setTimedMode(minutes) {
+      const mins = parseInt(minutes) || 0;
+      const bar = document.getElementById('floatingTimerBar');
+      if (timerInterval) clearInterval(timerInterval);
+
+      if (mins === 0) {
+        if (bar) bar.classList.remove('active');
+        return;
+      }
+
+      timerDurationSeconds = mins * 60;
+      timerRemainingSeconds = timerDurationSeconds;
+      isTimerPaused = false;
+      if (bar) bar.classList.add('active');
+      updateTimerDisplay();
+
+      timerInterval = setInterval(() => {
+        if (!isTimerPaused) {
+          timerRemainingSeconds--;
+          updateTimerDisplay();
+          if (timerRemainingSeconds <= 0) {
+            clearInterval(timerInterval);
+            alert(`⏱️ Time's up! You practiced for ${mins} minutes. Great focus session!`);
+          }
+        }
+      }, 1000);
+    }
+
+    function updateTimerDisplay() {
+      const el = document.getElementById('timerDisplay');
+      const countEl = document.getElementById('timerProgressCount');
+      if (!el) return;
+
+      const mins = Math.floor(timerRemainingSeconds / 60);
+      const secs = timerRemainingSeconds % 60;
+      el.innerText = `⏱️ ${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+
+      const completed = typeof getCompleted === 'function' ? getCompleted().length : 0;
+      if (countEl) countEl.innerText = `${completed} Completed`;
+    }
+
+    function toggleTimerPause() {
+      isTimerPaused = !isTimerPaused;
+      const btn = document.getElementById('btnTimerPause');
+      if (btn) btn.innerText = isTimerPaused ? 'Resume' : 'Pause';
+    }
+
+    function resetTimer() {
+      setTimedMode(document.getElementById('timerModeSelect')?.value || 0);
+    }
+
+    // Question Sharing Engine
+    function shareQuestion(qId, previewText) {
+      const url = `https://pyq.wovrix.in/practice/?q=${qId}`;
+      const title = `CBSE / NEET Board Question #${qId} | PYQ Wovrix`;
+      const shareText = `Check out this CBSE/NEET past board question: "${previewText}..."\n\nPractice with marking scheme on PYQ Wovrix: ${url}`;
+
+      if (navigator.share) {
+        navigator.share({
+          title: title,
+          text: shareText,
+          url: url
+        }).catch(() => {});
+      } else {
+        navigator.clipboard.writeText(`${shareText}`).then(() => {
+          alert('Question link and excerpt copied to clipboard! Ready to share on WhatsApp or Telegram.');
+        });
+      }
+    }
 
     function toggleBookmarksOnly() {
       showBookmarksOnly = !showBookmarksOnly;
@@ -1380,5 +1468,6 @@ Include: 1. Governing formula/concept, 2. Step-by-step substitution, 3. Final bo
   </nav>
   <script src="/report-modal.js"></script>
   <script src="/js/study_storage.js"></script>
+  <script src="/js/analytics.js"></script>
 </body>
 </html>
