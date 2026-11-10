@@ -32,6 +32,8 @@ jobs:
           python-version: '3.11'
 
       - name: Run Cloud Batch Solver
+        env:
+          GEMINI_KEYS: ${{ secrets.GEMINI_KEYS }}
         run: |
           BATCH_SIZE="${{ github.event.inputs.batch_size || '250' }}"
           python scripts/batch_gemini_solver.py "$BATCH_SIZE"
