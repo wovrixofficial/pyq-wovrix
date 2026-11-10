@@ -1240,18 +1240,23 @@ a {
 }
 
 [data-theme="dark"] .hero-content-left {
-  background: rgba(17, 24, 39, 0.92);
+  background: transparent;
+}
+
+[data-theme="dark"] .hero-big-type {
+  color: #f9fafb !important;
 }
 
 [data-theme="dark"] .hero-eyebrow {
-  background: rgba(31, 41, 55, 0.85);
-  border-color: #374151;
-  color: #f9fafb;
+  background: rgba(30, 41, 59, 0.85);
+  border-color: #3b82f6;
+  color: #93c5fd !important;
 }
 
 [data-theme="dark"] .hero-editorial-lead {
-  background: rgba(31, 41, 55, 0.75);
-  color: #cbd5e1;
+  background: rgba(17, 24, 39, 0.75);
+  border-left-color: #3b82f6;
+  color: #e2e8f0 !important;
 }
 
 [data-theme="dark"] .btn-outline-pill {
@@ -2236,8 +2241,9 @@ a {
   background: var(--surface);
 }
 
-/* Hide horizontal desktop nav links to keep the header uncluttered */
-.nav-links .nav-link-desktop {
+/* Hide horizontal desktop nav links and bookmark pill to keep the header uncluttered */
+.nav-links .nav-link-desktop,
+.nav-links .nav-bookmark-pill {
   display: none !important;
 }
 

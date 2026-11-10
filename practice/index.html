@@ -1559,9 +1559,13 @@
         const section = q.section || '';
         const source = q.source || 'Official Board Exam';
         const text = q.text || '';
-        const repeats = q.repeat_years && q.repeat_years.length > 1 
-          ? `🔁 Repeated across ${q.repeat_years.join(', ')}` 
-          : (q.cluster_size >= 3 ? `🔥 Frequent Repeat (${q.cluster_size} Sets)` : '');
+        const repYears = q.recurrence_years || q.repeat_years;
+        const repCount = q.recurrence_count_10yr || q.cluster_size || 1;
+        const repeats = repYears && repYears.length > 1 
+          ? `🔁 Repeated across ${repYears.join(', ')} (${repCount}x)` 
+          : (repCount >= 3 ? `🔥 Frequent Repeat (${repCount} Sets)` : '');
+        const tierBadge = q.recurrence_tier ? `<span class="q-source-pill" style="color:var(--accent); font-weight:700;">${escapeHtml(q.recurrence_tier)}</span>` : '';
+        const twinBadge = q.historical_twins && q.historical_twins.length > 0 ? `<span class="q-source-pill" title="Historical Twin Questions in Archive">👯 ${q.historical_twins.length} Twins</span>` : '';
         const hasCachedSol = solutionsCache[qId] || localStorage.getItem('wovrix_sol_' + qId);
 
         let optionsHtml = '';
@@ -1595,7 +1599,9 @@
                 <span class="q-source-pill">#${globalNum} · ${year}</span>
                 <span class="q-marks-pill">${marksDisplay}</span>
                 ${section ? `<span class="q-source-pill">${section}</span>` : ''}
+                ${tierBadge}
                 ${repeats ? `<span class="q-repeat-pill">${repeats}</span>` : ''}
+                ${twinBadge}
               </div>
               <span class="q-source-pill" style="opacity:0.7;">${source}</span>
             </div>

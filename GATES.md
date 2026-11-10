@@ -135,3 +135,19 @@
   EXPECT: TOPIC_SELECTOR_OK
   EVIDENCE: automatic-evidence=v1; definition-sha256=be7958ec03adc4fe88f09d54246af09363ff1c0cb9b1f0d0dbb86b4b1e2733a0; exit=0; EXPECT=matched; output-sha256=7650b60c8178ea5471a2936b679b99fcd95b6e2a4c5ea04f707f6c5602383753; output-bytes=18; shell=C:\Windows\system32\cmd.exe; cwd=E:\PYQ_Wovrix_Portal\pyq-wovrix; path=63ea99d964ba/70 entries
 
+- [x] GATE-MASTER-AI-VAULT: All 4 Master AI Vault and 10-Year Dossier files exist in vault/
+  CHECK: node -e "const fs = require('fs'); const files = ['vault/NEET_UG_10_YEAR_MASTER_AI_VAULT.md', 'vault/NEET_AI_SUPER_PROMPT.md', 'vault/NEET_Most_Repeated_Questions_10_Years.md', 'vault/NEET_2027_Forecasting_and_NCERT_Trap_Analysis.md']; files.forEach(f => { if (!fs.existsSync(f) || fs.statSync(f).size < 1000) { console.error('Missing or empty vault file:', f); process.exit(1); } }); console.log('MASTER_AI_VAULT_OK');"
+  EXPECT: MASTER_AI_VAULT_OK
+  EVIDENCE: automatic-evidence=v1; definition-sha256=82a678e923698f8cff2cb90c167dd8c9332e10d74c6aeb0be608672b53a37c17; exit=0; EXPECT=matched; output-sha256=7e8bcc8cbd8cffa4a73f7ddab4b39c5db4349522461a25cbb5fefec5a3860c6b; output-bytes=19; shell=C:\Windows\system32\cmd.exe; cwd=E:\PYQ_Wovrix_Portal\pyq-wovrix; path=5a5a067f565f/70 entries
+
+- [x] GATE-NEET-140-CLUSTERS: Authoritative 140 concept clusters and 2000+ repeat questions synced
+  CHECK: node -e "const fs = require('fs'); const rep = JSON.parse(fs.readFileSync('data/repeated_questions.json', 'utf8')); const neet = JSON.parse(fs.readFileSync('data/neet_all.json', 'utf8')); if (rep.neet_concepts.length < 140) { console.error('Expected at least 140 concept clusters, got', rep.neet_concepts.length); process.exit(1); } const repeats = neet.filter(q => q.multi_year_count > 1 || q.cluster_size >= 2); if (repeats.length < 2000) { console.error('Expected at least 2000 repeat questions, got', repeats.length); process.exit(1); } console.log('NEET_140_CLUSTERS_OK');"
+  EXPECT: NEET_140_CLUSTERS_OK
+  EVIDENCE: automatic-evidence=v1; definition-sha256=6b4574a94c185ad2acddc8b6cc4c6eb3e480399eeef8ff96c128c9fe2750f5c6; exit=0; EXPECT=matched; output-sha256=7101406940cfb6c41334447bacd14647301f0082558c617641d2ef9d180d779c; output-bytes=21; shell=C:\Windows\system32\cmd.exe; cwd=E:\PYQ_Wovrix_Portal\pyq-wovrix; path=5a5a067f565f/70 entries
+
+- [x] GATE-HEADER-BOOKMARK-CLEAN: Desktop header hides bookmark pill and horizontal links into slide drawer
+  CHECK: node -e "const fs = require('fs'); const css = fs.readFileSync('style.css', 'utf8'); if (!css.includes('.nav-bookmark-pill') || !css.includes('display: none !important')) { console.error('Bookmark pill not hidden in header'); process.exit(1); } console.log('HEADER_BOOKMARK_CLEAN_OK');"
+  EXPECT: HEADER_BOOKMARK_CLEAN_OK
+  EVIDENCE: automatic-evidence=v1; definition-sha256=000ad87c934b56c636c70bd6777042a8d124fde14f38b8bb9690708b8085af6b; exit=0; EXPECT=matched; output-sha256=87641894133830d6a0b7c444ab349fdbd795d0b2aefa87899845f101092dd096; output-bytes=25; shell=C:\Windows\system32\cmd.exe; cwd=E:\PYQ_Wovrix_Portal\pyq-wovrix; path=5a5a067f565f/70 entries
+
+

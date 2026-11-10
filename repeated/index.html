@@ -598,13 +598,13 @@
           <div class="exam-track-icon">🩺</div>
           <h2 class="exam-track-title">NEET UG 10-Year Master Radar</h2>
           <p class="exam-track-desc">
-            119 comprehensive concept tiers spanning 2016–2026 national papers with verified recurrence rates up to 234x.
+            140 comprehensive concept tiers spanning 2016–2026 national papers with 2,039 verified repeat questions and recurrence rates up to 234x.
           </p>
           <div class="exam-track-pills">
-            <span class="exam-pill-item">Physics</span>
-            <span class="exam-pill-item">Chemistry</span>
-            <span class="exam-pill-item">Botany</span>
-            <span class="exam-pill-item">Zoology</span>
+            <span class="exam-pill-item">Physics (30+ Clusters)</span>
+            <span class="exam-pill-item">Chemistry (35+ Clusters)</span>
+            <span class="exam-pill-item">Botany (38+ Clusters)</span>
+            <span class="exam-pill-item">Zoology (37+ Clusters)</span>
           </div>
           <button class="btn-select-track">
             <span>Explore NEET Medical Repeats</span>
@@ -651,6 +651,22 @@
             </p>
           </div>
           <span class="slider-count-badge" id="repeatsMatchedBadge">0 Patterns</span>
+        </div>
+      </div>
+
+      <!-- NEET Master AI Vault Download Box (Visible for NEET) -->
+      <div id="radarNeetVaultBanner" style="display:none; background: linear-gradient(135deg, rgba(37,99,235,0.08) 0%, rgba(147,51,234,0.08) 100%); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 16px 20px; margin-bottom: 20px;">
+        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px;">
+          <div>
+            <div style="font-size:11.5px; font-weight:800; color:var(--accent); letter-spacing:0.04em;">NEET UG 10-YEAR MASTER AI VAULT (2.05 MB)</div>
+            <div style="font-size:14px; font-weight:700; color:var(--text); margin-top:2px;">All 2,060 questions formatted with exact recurrence counts, twin links & NTA keys.</div>
+          </div>
+          <div style="display:flex; gap:8px; flex-wrap:wrap;">
+            <a href="/vault/NEET_UG_10_YEAR_MASTER_AI_VAULT.md" download class="btn-dark-pill" style="font-size:12px; padding:7px 14px; text-decoration:none;">📥 Master Vault (.md)</a>
+            <a href="/vault/NEET_AI_SUPER_PROMPT.md" download class="btn-outline-pill" style="font-size:12px; padding:7px 14px; text-decoration:none;">📋 AI Super-Prompt</a>
+            <a href="/vault/NEET_Most_Repeated_Questions_10_Years.md" download class="btn-outline-pill" style="font-size:12px; padding:7px 14px; text-decoration:none;">📊 10-Yr Dossier</a>
+            <a href="/vault/NEET_2027_Forecasting_and_NCERT_Trap_Analysis.md" download class="btn-outline-pill" style="font-size:12px; padding:7px 14px; text-decoration:none;">🔮 2027 Forecast</a>
+          </div>
         </div>
       </div>
 
@@ -937,6 +953,9 @@
       const isCbse = currentExam === 'cbse';
       document.getElementById('radarStageHeading').innerText = `${currentSubject} Recurrence Radar (${isCbse ? 'CBSE 12' : 'NEET UG'})`;
       
+      const vaultBanner = document.getElementById('radarNeetVaultBanner');
+      if (vaultBanner) vaultBanner.style.display = isCbse ? 'none' : 'block';
+
       const slider = document.getElementById('repeatFrequencySlider');
       const ticks = document.getElementById('sliderTicksContainer');
 
@@ -974,10 +993,12 @@
 
       let filtered = rawList.filter(q => {
         const matchesSubj = (q.subject || '').toLowerCase() === currentSubject.toLowerCase();
-        const matchesFreq = q.repeat_count >= minFrequency;
+        const freq = q.repeat_count || q.total_questions || q.recurrence_count_10yr || (q.years_tested ? q.years_tested.length : 1);
+        const matchesFreq = freq >= minFrequency;
         const matchesSearch = !search || 
           (q.concept_name && q.concept_name.toLowerCase().includes(search)) ||
           (q.text && q.text.toLowerCase().includes(search)) ||
+          (q.chapter && q.chapter.toLowerCase().includes(search)) ||
           (q.chapter_name && q.chapter_name.toLowerCase().includes(search)) ||
           (q.ncert_chapter && q.ncert_chapter.toLowerCase().includes(search));
         return matchesSubj && matchesFreq && matchesSearch;
@@ -1006,10 +1027,12 @@
       const slice = filteredRepeats.slice(0, 100);
 
       container.innerHTML = slice.map((item, idx) => {
-        const title = item.concept_name || item.text.slice(0, 90) + '...';
-        const chName = item.chapter_name || item.ncert_chapter || 'General Chapter';
-        const rep = item.repeat_count || 2;
-        const years = item.years || [];
+        const title = item.concept_name || (item.text ? item.text.slice(0, 90) + '...' : 'Recurring Concept');
+        const chName = item.chapter || item.chapter_name || item.ncert_chapter || 'General Chapter';
+        const rep = item.repeat_count || item.total_questions || item.recurrence_count_10yr || 2;
+        const years = item.years_tested || item.years || item.repeat_years || [];
+        const tierBadge = item.recurrence_tier ? `<div style="margin-bottom:6px;"><span class="repeat-year-chip" style="color:var(--accent); font-weight:800; border-color:rgba(37,99,235,0.3);">${escapeHtml(item.recurrence_tier)}</span></div>` : '';
+        const twinCount = item.historical_twin_ids ? item.historical_twin_ids.length : rep;
 
         return `
           <div class="repeat-item-card" onclick="openConceptDrill(${idx})">
@@ -1019,13 +1042,14 @@
                 <span class="repeat-badge-hero">🔥 ${rep}x Tested</span>
               </div>
               <h3 class="repeat-concept-title">${escapeHtml(title)}</h3>
+              ${tierBadge}
               <div class="repeat-years-row">
                 ${years.slice(0, 6).map(y => `<span class="repeat-year-chip">${y}</span>`).join('')}
                 ${years.length > 6 ? `<span class="repeat-year-chip">+${years.length - 6} more</span>` : ''}
               </div>
             </div>
             <div class="repeat-card-footer">
-              <span>Inspect Question Twins</span>
+              <span>Inspect Question Twins (${twinCount})</span>
               <span>➔</span>
             </div>
           </div>
@@ -1049,12 +1073,13 @@
 
       const q = currentConceptData;
       const title = q.concept_name || (q.chapter_name ? `${q.chapter_name} Problem Pattern` : 'Question Twin Pattern');
-      const rep = q.repeat_count || 2;
-      const years = (q.years || []).join(', ');
+      const rep = q.repeat_count || q.total_questions || q.recurrence_count_10yr || 2;
+      const yearsArr = q.years_tested || q.years || q.repeat_years || [];
+      const years = yearsArr.join(', ');
 
       document.getElementById('drillConceptTitle').innerText = title;
       document.getElementById('drillConceptSubtitle').innerText = `Tested in ${years}. Repeated ${rep} times across authentic past papers.`;
-      document.getElementById('drillRecurrencePill').innerText = `🔥 ${rep}X TESTED PATTERN`;
+      document.getElementById('drillRecurrencePill').innerText = q.recurrence_tier || `🔥 ${rep}X TESTED PATTERN`;
 
       const container = document.getElementById('drillQuestionsContainer');
       const marksDisplay = q.marks ? `${q.marks} Mark${q.marks > 1 ? 's' : ''}` : '4 Marks';
@@ -1076,19 +1101,45 @@
         optionsHtml += '</div>';
       }
 
+      let twinsHtml = '';
+      const twinIds = q.historical_twin_ids || q.historical_twins || [];
+      if (twinIds.length > 0) {
+        twinsHtml = `
+          <div style="margin-top:20px; padding:16px; background:var(--surface-alt); border:1px solid var(--border); border-radius:var(--radius-sm);">
+            <div style="font-size:13px; font-weight:800; margin-bottom:8px;">🔗 Historical Twin Question IDs in Archive (${twinIds.length}):</div>
+            <div style="display:flex; flex-wrap:wrap; gap:6px;">
+              ${twinIds.slice(0, 30).map(tid => `<span class="tag" style="font-family:var(--font-mono); font-size:11.5px; font-weight:700;">${tid}</span>`).join('')}
+              ${twinIds.length > 30 ? `<span class="tag" style="font-size:11.5px;">+${twinIds.length - 30} more</span>` : ''}
+            </div>
+          </div>
+        `;
+      }
+
       container.innerHTML = `
         <div class="question-card" style="margin-bottom:24px;">
           <div class="q-meta-top">
-            <span class="q-source-pill">Primary Exam Appearance: ${q.years ? q.years[0] : 'Past Paper'}</span>
+            <span class="q-source-pill">Primary Exam Appearance: ${yearsArr[0] || 'Past Paper'}</span>
             <span class="q-marks-pill">${marksDisplay}</span>
             <span class="q-repeat-pill">🔥 ${rep}x Multi-Year Repeat</span>
           </div>
 
           <div class="q-body-text math-content" style="font-size:17px; line-height:1.65; margin:16px 0;">
-            ${escapeHtml(q.text)}
+            ${escapeHtml(q.text || `Core recurring ${currentExam.toUpperCase()} concept in ${q.chapter || q.chapter_name || ''} tested across ${yearsArr.length} consecutive exam cycles.`)}
           </div>
 
           ${optionsHtml}
+          ${twinsHtml}
+
+          <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-top:20px; padding-top:14px; border-top:1px solid var(--border-light);">
+            <a href="/practice/?exam=${currentExam}&subject=${currentSubject}&chapter=${encodeURIComponent(q.chapter || q.chapter_name || q.ncert_chapter || 'all')}" class="btn-dark-pill" style="padding:10px 20px; font-size:13.5px; text-decoration:none;">
+              🎯 Practice Similar Questions in Hub ➔
+            </a>
+            <button class="btn-outline-pill" onclick="shareQuestion('${q.id || q.slug}', '${escapeHtml(title)}')" style="padding:10px 18px; font-size:13px;">
+              🔗 Share Recurrence
+            </button>
+          </div>
+        </div>
+      `;
 
           <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-top:20px; padding-top:14px; border-top:1px solid var(--border-light);">
             <a href="/practice/?exam=${currentExam}&subject=${currentSubject}&chapter=${encodeURIComponent(q.chapter_name || q.ncert_chapter || 'all')}" class="btn-dark-pill" style="padding:10px 20px; font-size:13.5px; text-decoration:none;">
