@@ -3,8 +3,8 @@ import json
 import random
 import requests
 
-TELEGRAM_BOT_TOKEN = os.getenv('TELEGRAM_BOT_TOKEN', '')
-TELEGRAM_CHANNEL_ID = os.getenv('TELEGRAM_CHANNEL_ID', '')
+TELEGRAM_BOT_TOKEN = os.getenv('TELEGRAM_BOT_TOKEN', '9016562499:AAEhGsDtPIDMgEtbV7PFSVWdinW9XB6ex4w')
+TELEGRAM_CHANNEL_ID = os.getenv('TELEGRAM_CHANNEL_ID', '@pyq_wovrix')
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 NEET_JSON = os.path.join(REPO_ROOT, 'data', 'neet_all.json')
@@ -97,7 +97,7 @@ def post_quiz_to_telegram(dry_run=False):
         'chat_id': TELEGRAM_CHANNEL_ID,
         'question': poll_question,
         'options': json.dumps(options),
-        'is_anonymous': False,
+        'is_anonymous': True,
         'type': 'quiz',
         'correct_option_id': correct_idx,
         'explanation': explanation
@@ -107,4 +107,4 @@ def post_quiz_to_telegram(dry_run=False):
     print(f"Telegram API Response: {res.status_code} - {res.text}")
 
 if __name__ == '__main__':
-    post_quiz_to_telegram(dry_run=True)
+    post_quiz_to_telegram(dry_run=False)
