@@ -141,19 +141,98 @@
         </svg>
         <span class="brand-name">WOVRIX <span class="brand-slash">/</span> <span class="brand-sub">PYQ</span></span>
       </a>
+
+      <!-- Universal Sticky Goal Switcher Dropdown -->
+      <div class="goal-switcher-container">
+        <button id="goalSwitcherBtn" class="goal-switcher-btn" onclick="toggleGoalDropdown(event)" aria-label="Switch Exam Goal">
+          <span class="active-goal-label">🎯 CBSE Class 12</span>
+          <span style="font-size: 10px; opacity: 0.7;">▾</span>
+        </button>
+        <div id="goalDropdownMenu" class="goal-dropdown-menu">
+          <button class="goal-dropdown-item" onclick="selectGoal('cbse')">🎯 CBSE Class 12 (PCM)</button>
+          <button class="goal-dropdown-item" onclick="selectGoal('neet')">🩺 NEET UG (10-Year Archive)</button>
+        </div>
+      </div>
+
       <nav class="nav-links">
-        <a href="/#cbse-section" class="nav-link">CBSE 12 PCM</a>
-        <a href="/practice/?exam=neet" class="nav-link">NEET UG Archive</a>
-        <a href="/repeated/" class="nav-link active">★ Repeated Qs</a>
-        <a href="/practice/" class="nav-link">Practice Hub</a>
-        <a href="/paper-maker/" class="nav-link">Paper Maker</a>
+        <a href="/practice/" class="nav-link nav-link-desktop">Practice Hub</a>
+        <a href="/repeated/" class="nav-link nav-link-desktop active">Repeats Radar</a>
+        <a href="/paper-maker/" class="nav-link nav-link-desktop">Paper Maker & Mock</a>
+        <a href="/saved/" class="nav-bookmark-pill" title="Saved Questions & Notes">
+          <span>📌</span>
+          <span class="nav-link-desktop">Saved</span>
+          <span class="nav-bookmark-count">0</span>
+        </a>
         <button id="themeToggleBtn" class="btn-theme-toggle" onclick="toggleTheme()" aria-label="Toggle Dark Mode" title="Toggle Dark/Light Mode">
           <span class="theme-icon-light">☀️</span>
           <span class="theme-icon-dark">🌙</span>
         </button>
+        <button class="btn-hamburger" onclick="toggleMobileDrawer(true)" aria-label="Open Navigation Menu">
+          ☰
+        </button>
       </nav>
     </div>
   </header>
+
+  <!-- Mobile Slide-Out Drawer & Backdrop -->
+  <div id="drawerBackdrop" class="drawer-backdrop" onclick="toggleMobileDrawer(false)"></div>
+  <aside id="mobileNavDrawer" class="mobile-nav-drawer" aria-label="Mobile Navigation">
+    <div class="drawer-header">
+      <div class="brand">
+        <span class="brand-name">WOVRIX <span class="brand-sub">PYQ</span></span>
+      </div>
+      <button class="btn-drawer-close" onclick="toggleMobileDrawer(false)" aria-label="Close menu">✕</button>
+    </div>
+
+    <div class="drawer-goal-box">
+      <div class="drawer-goal-title">Active Exam Goal</div>
+      <div class="drawer-goal-options">
+        <button class="drawer-goal-btn goal-toggle-pill active" data-goal="cbse" onclick="selectGoal('cbse')">🎯 CBSE 12</button>
+        <button class="drawer-goal-btn goal-toggle-pill" data-goal="neet" onclick="selectGoal('neet')">🩺 NEET UG</button>
+      </div>
+    </div>
+
+    <nav class="drawer-nav-list">
+      <a href="/practice/" class="drawer-nav-item" onclick="toggleMobileDrawer(false)">
+        <span class="drawer-nav-icon">🎯</span>
+        <div>
+          <div>Practice Hub</div>
+          <span class="drawer-nav-desc">Chapterwise questions & solutions</span>
+        </div>
+      </a>
+      <a href="/repeated/" class="drawer-nav-item" onclick="toggleMobileDrawer(false)">
+        <span class="drawer-nav-icon">🔥</span>
+        <div>
+          <div>Repeats Radar</div>
+          <span class="drawer-nav-desc">10-Year recurrence & twin questions</span>
+        </div>
+      </a>
+      <a href="/paper-maker/" class="drawer-nav-item" onclick="toggleMobileDrawer(false)">
+        <span class="drawer-nav-icon">⏱️</span>
+        <div>
+          <div>Paper Maker & Mock</div>
+          <span class="drawer-nav-desc">Printable papers & timed tests</span>
+        </div>
+      </a>
+      <a href="/saved/" class="drawer-nav-item" onclick="toggleMobileDrawer(false)">
+        <span class="drawer-nav-icon">📌</span>
+        <div>
+          <div>Saved & Revision</div>
+          <span class="drawer-nav-desc">Custom collections & notes</span>
+        </div>
+      </a>
+    </nav>
+
+    <div class="drawer-footer">
+      <button class="drawer-theme-toggle" onclick="toggleTheme()">
+        <span>Dark / Light Mode</span>
+        <span>☀️ / 🌙</span>
+      </button>
+      <div style="display: flex; gap: 8px; font-size: 11px; color: var(--text-muted); justify-content: center; margin-top: 10px;">
+        <a href="/about/">About</a> • <a href="/privacy/">Privacy</a> • <a href="/contact/">Contact</a> • <a href="/takedown/">Takedown</a>
+      </div>
+    </div>
+  </aside>
 
   
     <!-- Unified Workspace View Switcher -->
@@ -449,6 +528,28 @@ ${shareUrl}`).then(() => {
                 .replace(/</g, '&lt;')
                 .replace(/>/g, '&gt;');
     }
+
+    function toggleGoalDropdown(e) {
+      if (e) e.stopPropagation();
+      const menu = document.getElementById('goalDropdownMenu');
+      if (menu) menu.classList.toggle('show');
+    }
+
+    function selectGoal(goal) {
+      setActiveGoal(goal);
+      setRepeatsExam(goal);
+      const menu = document.getElementById('goalDropdownMenu');
+      if (menu) menu.classList.remove('show');
+      toggleMobileDrawer(false);
+    }
+
+    document.addEventListener('click', (e) => {
+      const container = document.querySelector('.goal-switcher-container');
+      const menu = document.getElementById('goalDropdownMenu');
+      if (container && !container.contains(e.target) && menu) {
+        menu.classList.remove('show');
+      }
+    });
 
     window.addEventListener('DOMContentLoaded', loadRepeats);
   </script>

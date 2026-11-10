@@ -58,26 +58,104 @@
     <div class="header-inner">
       <a href="/" class="brand">
         <svg class="brand-logo-icon" width="22" height="22" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="32" height="32" rx="7" fill="#18181b"/>
-  <path d="M6 10L11 23L16 14L21 23L26 10" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
-  <circle cx="16" cy="14" r="2.2" fill="#3b82f6"/>
-</svg>
+          <rect width="32" height="32" rx="7" fill="#18181b"/>
+          <path d="M6 10L11 23L16 14L21 23L26 10" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="16" cy="14" r="2.2" fill="#3b82f6"/>
+        </svg>
         <span class="brand-name">WOVRIX <span class="brand-slash">/</span> <span class="brand-sub">PYQ</span></span>
       </a>
-            <nav class="nav-links">
-        <a href="#cbse-section" class="nav-link" onclick="switchExamTab('cbse')">CBSE 12 PCM</a>
-        <a href="#neet-section" class="nav-link" onclick="switchExamTab('neet')">NEET UG Archive</a>
-        <a href="/repeated/" class="nav-link">★ Repeated Qs</a>
-        <a href="/practice/" class="nav-link">Practice Hub</a>
-        <a href="/paper-maker/" class="nav-link">Paper Maker</a>
-        <a href="/practice/?exam=neet" class="nav-cta-pill">Launch NEET Portal ➔</a>
-          <button id="themeToggleBtn" class="btn-theme-toggle" onclick="toggleTheme()" aria-label="Toggle Dark Mode" title="Toggle Dark/Light Mode">
-      <span class="theme-icon-light">☀️</span>
-      <span class="theme-icon-dark">🌙</span>
-    </button>
-  </nav>
+
+      <!-- Universal Sticky Goal Switcher Dropdown -->
+      <div class="goal-switcher-container">
+        <button id="goalSwitcherBtn" class="goal-switcher-btn" onclick="toggleGoalDropdown(event)" aria-label="Switch Exam Goal">
+          <span class="active-goal-label">🎯 CBSE Class 12</span>
+          <span style="font-size: 10px; opacity: 0.7;">▾</span>
+        </button>
+        <div id="goalDropdownMenu" class="goal-dropdown-menu">
+          <button class="goal-dropdown-item" onclick="selectGoal('cbse')">🎯 CBSE Class 12 (PCM)</button>
+          <button class="goal-dropdown-item" onclick="selectGoal('neet')">🩺 NEET UG (10-Year Archive)</button>
+        </div>
+      </div>
+
+      <nav class="nav-links">
+        <a href="/practice/" class="nav-link nav-link-desktop">Practice Hub</a>
+        <a href="/repeated/" class="nav-link nav-link-desktop">Repeats Radar</a>
+        <a href="/paper-maker/" class="nav-link nav-link-desktop">Paper Maker & Mock</a>
+        <a href="/saved/" class="nav-bookmark-pill" title="Saved Questions & Notes">
+          <span>📌</span>
+          <span class="nav-link-desktop">Saved</span>
+          <span class="nav-bookmark-count">0</span>
+        </a>
+        <button id="themeToggleBtn" class="btn-theme-toggle" onclick="toggleTheme()" aria-label="Toggle Dark Mode" title="Toggle Dark/Light Mode">
+          <span class="theme-icon-light">☀️</span>
+          <span class="theme-icon-dark">🌙</span>
+        </button>
+        <button class="btn-hamburger" onclick="toggleMobileDrawer(true)" aria-label="Open Navigation Menu">
+          ☰
+        </button>
+      </nav>
     </div>
   </header>
+
+  <!-- Mobile Slide-Out Drawer & Backdrop -->
+  <div id="drawerBackdrop" class="drawer-backdrop" onclick="toggleMobileDrawer(false)"></div>
+  <aside id="mobileNavDrawer" class="mobile-nav-drawer" aria-label="Mobile Navigation">
+    <div class="drawer-header">
+      <div class="brand">
+        <span class="brand-name">WOVRIX <span class="brand-sub">PYQ</span></span>
+      </div>
+      <button class="btn-drawer-close" onclick="toggleMobileDrawer(false)" aria-label="Close menu">✕</button>
+    </div>
+
+    <div class="drawer-goal-box">
+      <div class="drawer-goal-title">Active Exam Goal</div>
+      <div class="drawer-goal-options">
+        <button class="drawer-goal-btn goal-toggle-pill active" data-goal="cbse" onclick="selectGoal('cbse')">🎯 CBSE 12</button>
+        <button class="drawer-goal-btn goal-toggle-pill" data-goal="neet" onclick="selectGoal('neet')">🩺 NEET UG</button>
+      </div>
+    </div>
+
+    <nav class="drawer-nav-list">
+      <a href="/practice/" class="drawer-nav-item" onclick="toggleMobileDrawer(false)">
+        <span class="drawer-nav-icon">🎯</span>
+        <div>
+          <div>Practice Hub</div>
+          <span class="drawer-nav-desc">Chapterwise questions & solutions</span>
+        </div>
+      </a>
+      <a href="/repeated/" class="drawer-nav-item" onclick="toggleMobileDrawer(false)">
+        <span class="drawer-nav-icon">🔥</span>
+        <div>
+          <div>Repeats Radar</div>
+          <span class="drawer-nav-desc">10-Year recurrence & twin questions</span>
+        </div>
+      </a>
+      <a href="/paper-maker/" class="drawer-nav-item" onclick="toggleMobileDrawer(false)">
+        <span class="drawer-nav-icon">⏱️</span>
+        <div>
+          <div>Paper Maker & Mock</div>
+          <span class="drawer-nav-desc">Printable papers & timed tests</span>
+        </div>
+      </a>
+      <a href="/saved/" class="drawer-nav-item" onclick="toggleMobileDrawer(false)">
+        <span class="drawer-nav-icon">📌</span>
+        <div>
+          <div>Saved & Revision</div>
+          <span class="drawer-nav-desc">Custom collections & notes</span>
+        </div>
+      </a>
+    </nav>
+
+    <div class="drawer-footer">
+      <button class="drawer-theme-toggle" onclick="toggleTheme()">
+        <span>Dark / Light Mode</span>
+        <span>☀️ / 🌙</span>
+      </button>
+      <div style="display: flex; gap: 8px; font-size: 11px; color: var(--text-muted); justify-content: center; margin-top: 10px;">
+        <a href="/about/">About</a> • <a href="/privacy/">Privacy</a> • <a href="/contact/">Contact</a> • <a href="/takedown/">Takedown</a>
+      </div>
+    </div>
+  </aside>
 
 
   <main class="landing-main">
@@ -101,9 +179,94 @@
         </p>
 
         <div class="hero-cta-group">
-          <a href="/practice/" class="btn-dark-pill">Launch CBSE Practice Hub ➔</a>
-          <a href="/practice/?exam=neet" class="btn-outline-pill">Launch NEET UG Archive ➔</a>
-          <a href="#browse-section" class="btn-ghost-link">Browse Syllabi ↓</a>
+          <a href="/practice/" class="btn-dark-pill">Launch Practice Hub ➔</a>
+          <a href="/repeated/" class="btn-outline-pill">Explore Repeats Radar ➔</a>
+          <a href="#workspace-pillars" class="btn-ghost-link">View Workspace ↓</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4 Core Pillars Portal Hub -->
+    <section class="portal-hub-section" id="workspace-pillars">
+      <div class="portal-hub-header">
+        <span class="portal-hub-eyebrow">UNIFIED STUDENT WORKSPACE</span>
+        <h2 class="portal-hub-title">Choose Your Practice Mode</h2>
+        <p class="portal-hub-subtitle">
+          Engineered for focused revision. Four dedicated tools built on authentic NCERT past examination questions with zero distractions.
+        </p>
+      </div>
+
+      <div class="workspace-portal-grid">
+        <!-- Pillar 1: Practice Hub -->
+        <div class="portal-pillar-card">
+          <span class="portal-card-badge badge-blue">Core Question Bank</span>
+          <h3 class="portal-card-title">🎯 Practice Hub</h3>
+          <p class="portal-card-desc">
+            Step-by-step chapterwise practice with official solutions, KaTeX rendering, and multi-year filters.
+          </p>
+          <div class="portal-chips-row">
+            <span class="portal-chip">CBSE 12 PCM (8,089 Qs)</span>
+            <span class="portal-chip">NEET UG (2,060 Qs)</span>
+            <span class="portal-chip">Batch 25 Streaming</span>
+          </div>
+          <a href="/practice/" class="portal-action-btn">
+            <span>Open Practice Hub</span>
+            <span>➔</span>
+          </a>
+        </div>
+
+        <!-- Pillar 2: High-Yield Repeats Radar -->
+        <div class="portal-pillar-card">
+          <span class="portal-card-badge badge-amber">10-Year Recurrence Intelligence</span>
+          <h3 class="portal-card-title">🔥 Repeats Radar</h3>
+          <p class="portal-card-desc">
+            Visual concept frequency map. Master the topics and question archetypes tested in 100% of consecutive board and NTA cycles.
+          </p>
+          <div class="portal-chips-row">
+            <span class="portal-chip">119 NEET Concept Tiers</span>
+            <span class="portal-chip">1,792 CBSE Clusters</span>
+            <span class="portal-chip">Historical Twin Linking</span>
+          </div>
+          <a href="/repeated/" class="portal-action-btn">
+            <span>Explore Repeats Radar</span>
+            <span>➔</span>
+          </a>
+        </div>
+
+        <!-- Pillar 3: Paper Maker & Mock Exam -->
+        <div class="portal-pillar-card">
+          <span class="portal-card-badge badge-emerald">Step Wizard & Test Engine</span>
+          <h3 class="portal-card-title">⏱️ Paper Maker & Mock</h3>
+          <p class="portal-card-desc">
+            Generate custom printable board papers with separate marking schemes, or enter the fullscreen timed exam simulator with instant autopsy.
+          </p>
+          <div class="portal-chips-row">
+            <span class="portal-chip">Printable PDF + Answer Key</span>
+            <span class="portal-chip">Timed CBT Mode</span>
+            <span class="portal-chip">CBSE Step Rubrics</span>
+          </div>
+          <a href="/paper-maker/" class="portal-action-btn">
+            <span>Launch Paper Maker & Mock</span>
+            <span>➔</span>
+          </a>
+        </div>
+
+        <!-- Pillar 4: Personal Saved Dashboard -->
+        <div class="portal-pillar-card">
+          <span class="portal-card-badge badge-purple">100% Private Local Storage</span>
+          <h3 class="portal-card-title">📌 Saved & Revision</h3>
+          <p class="portal-card-desc">
+            Organize questions into custom folders, add personal revision notes, and track your mock exam performance locally in your browser.
+          </p>
+          <div class="portal-chips-row">
+            <span class="portal-chip">Custom Folders</span>
+            <span class="portal-chip">Formula Notes</span>
+            <span class="portal-chip">Zero Login Required</span>
+          </div>
+          <a href="/saved/" class="portal-action-btn">
+            <span>Open My Saved Dashboard</span>
+            <span>➔</span>
+          </a>
         </div>
       </div>
     </section>
@@ -874,29 +1037,28 @@
       buttons[1].classList.add('active');
     }
   }
+
+  function toggleGoalDropdown(e) {
+    if (e) e.stopPropagation();
+    const menu = document.getElementById('goalDropdownMenu');
+    if (menu) menu.classList.toggle('show');
+  }
+
+  function selectGoal(goal) {
+    setActiveGoal(goal);
+    const menu = document.getElementById('goalDropdownMenu');
+    if (menu) menu.classList.remove('show');
+    toggleMobileDrawer(false);
+  }
+
+  document.addEventListener('click', (e) => {
+    const container = document.querySelector('.goal-switcher-container');
+    const menu = document.getElementById('goalDropdownMenu');
+    if (container && !container.contains(e.target) && menu) {
+      menu.classList.remove('show');
+    }
+  });
   </script>
-  <nav class="mobile-bottom-dock">
-    <a href="/" class="mobile-dock-item active">
-      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
-      <span>Home</span>
-    </a>
-    <a href="/practice/" class="mobile-dock-item">
-      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
-      <span>Practice</span>
-    </a>
-    <a href="/repeated/" class="mobile-dock-item">
-      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-      <span>Repeats</span>
-    </a>
-    <a href="/paper-maker/" class="mobile-dock-item">
-      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
-      <span>Maker</span>
-    </a>
-    <a href="/practice/?exam=neet" class="mobile-dock-item">
-      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 8v8"></path><path d="M8 12h8"></path></svg>
-      <span>NEET</span>
-    </a>
-  </nav>
   <script src="/js/study_storage.js"></script>
   <script src="/js/analytics.js"></script>
 </body>

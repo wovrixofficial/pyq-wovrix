@@ -2,7 +2,7 @@ import os
 import glob
 import re
 
-ROOT = r"C:\Users\Srijan\.gemini\antigravity\scratch\pyq-wovrix"
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 broken_patterns = [
     r'•subject=',

@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Saved Questions & Revision Dashboard | PYQ Wovrix</title>
+  <meta name="description" content="Personal study dashboard with custom folders, personal formula notes, solved question tracking, and mock test scores. 100% private in browser storage.">
+  <link rel="canonical" href="https://pyq.wovrix.in/saved/">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+
+  <style>
+    .saved-container {
+      max-width: 1200px;
+      margin: 30px auto 80px auto;
+      padding: 0 20px;
+    }
+
+    .profile-welcome-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 28px 32px;
+      margin-bottom: 28px;
+      box-shadow: var(--shadow-card);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .welcome-title-group h1 {
+      font-size: 26px;
+      font-weight: 900;
+      letter-spacing: -0.02em;
+      color: var(--text);
+      margin: 0 0 6px 0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .editable-name-pill {
+      cursor: pointer;
+      border-bottom: 2px dashed var(--accent);
+      padding: 0 4px;
+      color: var(--accent);
+      transition: all 0.15s ease;
+    }
+
+    .editable-name-pill:hover {
+      background: var(--surface-alt);
+    }
+
+    .welcome-subtitle {
+      font-size: 14px;
+      color: var(--text-muted);
+      margin: 0;
+    }
+
+    .stats-summary-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-bottom: 32px;
+    }
+
+    @media (max-width: 800px) {
+      .stats-summary-row {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    .stat-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 18px 20px;
+      box-shadow: var(--shadow-subtle);
+    }
+
+    .stat-number {
+      font-size: 28px;
+      font-weight: 900;
+      font-family: var(--font-mono);
+      color: var(--text);
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+
+    .stat-label {
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+    }
+
+    /* Folder Tab Pills (Instagram/YouTube collection style) */
+    .folders-scroll-bar {
+      display: flex;
+      gap: 10px;
+      overflow-x: auto;
+      padding-bottom: 12px;
+      margin-bottom: 24px;
+    }
+
+    .folder-chip {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      font-size: 13.5px;
+      font-weight: 700;
+      padding: 8px 16px;
+      border-radius: 9999px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      white-space: nowrap;
+      transition: all 0.15s ease;
+    }
+
+    .folder-chip:hover {
+      border-color: var(--accent);
+      color: var(--text);
+    }
+
+    .folder-chip.active {
+      background: var(--text);
+      color: var(--surface);
+      border-color: var(--text);
+    }
+
+    .btn-new-folder {
+      border: 1px dashed var(--accent);
+      color: var(--accent);
+      background: transparent;
+    }
+
+    .btn-new-folder:hover {
+      background: var(--surface-alt);
+    }
+
+    /* Note Editor Inline Box */
+    .note-inline-box {
+      margin-top: 10px;
+      background: var(--surface-alt);
+      border-left: 3px solid #f59e0b;
+      padding: 10px 14px;
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      font-size: 13px;
+    }
+
+    .note-label {
+      font-weight: 800;
+      color: #b45309;
+      font-size: 11px;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    [data-theme="dark"] .note-label {
+      color: #fde68a;
+    }
+
+    .note-text {
+      color: var(--text);
+      line-height: 1.5;
+    }
+
+    .btn-edit-note {
+      background: transparent;
+      border: none;
+      color: var(--accent);
+      font-weight: 700;
+      cursor: pointer;
+      font-size: 11px;
+    }
+
+    .dashboard-section-title {
+      font-size: 18px;
+      font-weight: 800;
+      letter-spacing: -0.01em;
+      color: var(--text);
+      margin: 36px 0 16px 0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .data-controls-bar {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 40px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+    }
+
+    .btn-data-action {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 8px 16px;
+      border-radius: var(--radius-sm);
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.15s ease;
+    }
+
+    .btn-data-action:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Universal Site Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="brand">
+        <svg class="brand-logo-icon" width="22" height="22" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="32" height="32" rx="7" fill="#18181b"/>
+          <path d="M6 10L11 23L16 14L21 23L26 10" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="16" cy="14" r="2.2" fill="#3b82f6"/>
+        </svg>
+        <span class="brand-name">WOVRIX <span class="brand-slash">/</span> <span class="brand-sub">PYQ</span></span>
+      </a>
+
+      <!-- Universal Sticky Goal Switcher Dropdown -->
+      <div class="goal-switcher-container">
+        <button id="goalSwitcherBtn" class="goal-switcher-btn" onclick="toggleGoalDropdown(event)" aria-label="Switch Exam Goal">
+          <span class="active-goal-label">🎯 CBSE Class 12</span>
+          <span style="font-size: 10px; opacity: 0.7;">▾</span>
+        </button>
+        <div id="goalDropdownMenu" class="goal-dropdown-menu">
+          <button class="goal-dropdown-item" onclick="selectGoal('cbse')">🎯 CBSE Class 12 (PCM)</button>
+          <button class="goal-dropdown-item" onclick="selectGoal('neet')">🩺 NEET UG (10-Year Archive)</button>
+        </div>
+      </div>
+
+      <nav class="nav-links">
+        <a href="/practice/" class="nav-link nav-link-desktop">Practice Hub</a>
+        <a href="/repeated/" class="nav-link nav-link-desktop">Repeats Radar</a>
+        <a href="/paper-maker/" class="nav-link nav-link-desktop">Paper Maker & Mock</a>
+        <a href="/saved/" class="nav-bookmark-pill active" title="Saved Questions & Notes">
+          <span>📌</span>
+          <span class="nav-link-desktop">Saved</span>
+          <span class="nav-bookmark-count">0</span>
+        </a>
+        <button id="themeToggleBtn" class="btn-theme-toggle" onclick="toggleTheme()" aria-label="Toggle Dark Mode" title="Toggle Dark/Light Mode">
+          <span class="theme-icon-light">☀️</span>
+          <span class="theme-icon-dark">🌙</span>
+        </button>
+        <button class="btn-hamburger" onclick="toggleMobileDrawer(true)" aria-label="Open Navigation Menu">
+          ☰
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Slide-Out Drawer & Backdrop -->
+  <div id="drawerBackdrop" class="drawer-backdrop" onclick="toggleMobileDrawer(false)"></div>
+  <aside id="mobileNavDrawer" class="mobile-nav-drawer" aria-label="Mobile Navigation">
+    <div class="drawer-header">
+      <div class="brand">
+        <span class="brand-name">WOVRIX <span class="brand-sub">PYQ</span></span>
+      </div>
+      <button class="btn-drawer-close" onclick="toggleMobileDrawer(false)" aria-label="Close menu">✕</button>
+    </div>
+
+    <div class="drawer-goal-box">
+      <div class="drawer-goal-title">Active Exam Goal</div>
+      <div class="drawer-goal-options">
+        <button class="drawer-goal-btn goal-toggle-pill active" data-goal="cbse" onclick="selectGoal('cbse')">🎯 CBSE 12</button>
+        <button class="drawer-goal-btn goal-toggle-pill" data-goal="neet" onclick="selectGoal('neet')">🩺 NEET UG</button>
+      </div>
+    </div>
+
+    <nav class="drawer-nav-list">
+      <a href="/practice/" class="drawer-nav-item" onclick="toggleMobileDrawer(false)">
+        <span class="drawer-nav-icon">🎯</span>
+        <div>
+          <div>Practice Hub</div>
+          <span class="drawer-nav-desc">Chapterwise questions & solutions</span>
+        </div>
+      </a>
+      <a href="/repeated/" class="drawer-nav-item" onclick="toggleMobileDrawer(false)">
+        <span class="drawer-nav-icon">🔥</span>
+        <div>
+          <div>Repeats Radar</div>
+          <span class="drawer-nav-desc">10-Year recurrence & twin questions</span>
+        </div>
+      </a>
+      <a href="/paper-maker/" class="drawer-nav-item" onclick="toggleMobileDrawer(false)">
+        <span class="drawer-nav-icon">⏱️</span>
+        <div>
+          <div>Paper Maker & Mock</div>
+          <span class="drawer-nav-desc">Printable papers & timed tests</span>
+        </div>
+      </a>
+      <a href="/saved/" class="drawer-nav-item" onclick="toggleMobileDrawer(false)">
+        <span class="drawer-nav-icon">📌</span>
+        <div>
+          <div>Saved & Revision</div>
+          <span class="drawer-nav-desc">Custom collections & notes</span>
+        </div>
+      </a>
+    </nav>
+
+    <div class="drawer-footer">
+      <button class="drawer-theme-toggle" onclick="toggleTheme()">
+        <span>Dark / Light Mode</span>
+        <span>☀️ / 🌙</span>
+      </button>
+      <div style="display: flex; gap: 8px; font-size: 11px; color: var(--text-muted); justify-content: center; margin-top: 10px;">
+        <a href="/about/">About</a> • <a href="/privacy/">Privacy</a> • <a href="/contact/">Contact</a> • <a href="/takedown/">Takedown</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Dashboard Container -->
+  <main class="saved-container">
+    <nav class="breadcrumbs">
+      <a href="/">Home</a> / <span>Personal Saved Dashboard</span>
+    </nav>
+
+    <!-- Student Profile Greeting -->
+    <div class="profile-welcome-card">
+      <div class="welcome-title-group">
+        <h1>
+          <span>Welcome back,</span>
+          <span id="studentNameDisplay" class="editable-name-pill" onclick="promptStudentName()" title="Click to edit your name">Student</span>!
+        </h1>
+        <p class="welcome-subtitle">
+          Your private, local revision space. Bookmarks, custom folders, and test diagnostics saved right in your browser.
+        </p>
+      </div>
+      <div>
+        <button class="btn-card-action" onclick="promptStudentName()">
+          <span>✏️</span> Edit Name
+        </button>
+      </div>
+    </div>
+
+    <!-- Statistics Overview -->
+    <div class="stats-summary-row">
+      <div class="stat-card">
+        <div class="stat-number" id="statSavedCount">0</div>
+        <div class="stat-label">Saved Questions</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" id="statMasteredCount">0</div>
+        <div class="stat-label">Mastered Problems</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" id="statFoldersCount">3</div>
+        <div class="stat-label">Active Folders</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" id="statMocksCount">0</div>
+        <div class="stat-label">Mocks Completed</div>
+      </div>
+    </div>
+
+    <!-- Custom Folder Tabs (YouTube/Instagram Style) -->
+    <div class="dashboard-section-title">
+      <span>📂</span> Revision Collections & Folders
+    </div>
+
+    <div class="folders-scroll-bar" id="foldersContainer">
+      <!-- Populated by JS -->
+    </div>
+
+    <!-- Questions Feed in Active Folder -->
+    <div id="savedFeedContainer">
+      <!-- Populated by JS -->
+    </div>
+
+    <!-- Mock Exam Diagnostic History -->
+    <div class="dashboard-section-title">
+      <span>📊</span> Timed Mock Exam History
+    </div>
+    <div id="mockHistoryContainer" style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 20px;">
+      <!-- Populated by JS -->
+    </div>
+
+    <!-- Backup, Export & Clear Local Storage Controls -->
+    <div class="data-controls-bar">
+      <button class="btn-data-action" onclick="exportStudyData()">
+        <span>📥</span> Export Study Data (JSON Backup)
+      </button>
+      <button class="btn-data-action" onclick="importStudyData()">
+        <span>📤</span> Import Backup
+      </button>
+      <input type="file" id="importFileInput" accept=".json" style="display: none;" onchange="handleImportFile(event)">
+      <button class="btn-data-action" onclick="clearAllData()" style="color: #ef4444; border-color: #fecaca; margin-left: auto;">
+        <span>🗑️</span> Reset Local Storage
+      </button>
+    </div>
+  </main>
+
+  <script src="/js/study_storage.js"></script>
+  <script src="/js/analytics.js"></script>
+  <script>
+    let activeFolder = 'All';
+
+    function promptStudentName() {
+      const current = getStudentName() || 'Student';
+      const newName = prompt('Enter your name for your local revision dashboard:', current);
+      if (newName !== null) {
+        setStudentName(newName);
+        updateNameDisplay();
+      }
+    }
+
+    function updateNameDisplay() {
+      const name = getStudentName() || 'Champion';
+      const el = document.getElementById('studentNameDisplay');
+      if (el) el.textContent = name;
+    }
+
+    function promptNewFolder() {
+      const folderName = prompt('Enter a name for your new collection folder (e.g., "Physics Formula Traps"):');
+      if (folderName && folderName.trim()) {
+        createFolder(folderName.trim());
+        activeFolder = folderName.trim();
+        renderDashboard();
+      }
+    }
+
+    function selectFolder(folder) {
+      activeFolder = folder;
+      renderDashboard();
+    }
+
+    function editNoteForQuestion(qId) {
+      const item = getBookmarkItem(qId);
+      const currentNote = item ? (item.note || '') : '';
+      const newNote = prompt('Write a private revision note for this question:', currentNote);
+      if (newNote !== null && item) {
+        saveBookmark(qId, {
+          ...item,
+          note: newNote.trim()
+        });
+        renderDashboard();
+      }
+    }
+
+    function renderDashboard() {
+      updateNameDisplay();
+
+      const bms = getBookmarks();
+      const completed = getCompleted();
+      const folders = getFolders();
+      const mocks = getMockHistory();
+
+      // Update Top Stats
+      document.getElementById('statSavedCount').textContent = bms.length;
+      document.getElementById('statMasteredCount').textContent = completed.length;
+      document.getElementById('statFoldersCount').textContent = folders.length;
+      document.getElementById('statMocksCount').textContent = mocks.length;
+
+      // Render Folder Pills
+      const foldersCont = document.getElementById('foldersContainer');
+      let folderHtml = `
+        <button class="folder-chip ${activeFolder === 'All' ? 'active' : ''}" onclick="selectFolder('All')">
+          <span>📁</span> All Saved (${bms.length})
+        </button>
+      `;
+
+      folders.forEach(f => {
+        const countInF = bms.filter(b => b.folder === f).length;
+        folderHtml += `
+          <button class="folder-chip ${activeFolder === f ? 'active' : ''}" onclick="selectFolder('${escapeHtml(f)}')">
+            <span>🏷️</span> ${escapeHtml(f)} (${countInF})
+          </button>
+        `;
+      });
+
+      folderHtml += `
+        <button class="folder-chip btn-new-folder" onclick="promptNewFolder()">
+          <span>+</span> Create New Folder
+        </button>
+      `;
+      foldersCont.innerHTML = folderHtml;
+
+      // Render Saved Feed
+      const feed = document.getElementById('savedFeedContainer');
+      let displayList = bms;
+      if (activeFolder !== 'All') {
+        displayList = bms.filter(b => b.folder === activeFolder);
+      }
+
+      if (displayList.length === 0) {
+        feed.innerHTML = `
+          <div style="background: var(--surface); border: 1px dashed var(--border); border-radius: var(--radius-md); padding: 48px 24px; text-align: center; margin-top: 16px;">
+            <div style="font-size: 32px; margin-bottom: 8px;">📌</div>
+            <h3 style="margin: 0 0 6px 0;">No Questions in this Collection</h3>
+            <p style="color: var(--text-muted); font-size: 14px; margin: 0 0 16px 0;">
+              Browse the Practice Hub or Repeats Radar and tap <strong>"📌 Save"</strong> on any question to add it here.
+            </p>
+            <a href="/practice/" class="portal-action-btn" style="display: inline-flex; width: auto;">Go to Practice Hub ➔</a>
+          </div>
+        `;
+      } else {
+        let cardsHtml = '';
+        displayList.forEach((item, idx) => {
+          const qId = item.id;
+          const noteHtml = item.note ? `
+            <div class="note-inline-box">
+              <div class="note-label">
+                <span>Personal Note</span>
+                <button class="btn-edit-note" onclick="editNoteForQuestion('${qId}')">Edit Note</button>
+              </div>
+              <div class="note-text">${escapeHtml(item.note)}</div>
+            </div>
+          ` : `
+            <div style="margin-top: 8px;">
+              <button class="btn-edit-note" onclick="editNoteForQuestion('${qId}')">+ Add Personal Revision Note</button>
+            </div>
+          `;
+
+          cardsHtml += `
+            <div class="question-card" id="card_${qId}" style="margin-bottom: 16px;">
+              <div class="q-meta-top">
+                <div class="q-badges-left">
+                  <span class="q-source-pill">#${idx+1} • ${escapeHtml(item.subject)}</span>
+                  <span class="q-repeat-pill">📁 ${escapeHtml(item.folder || 'Quick Bookmarks')}</span>
+                </div>
+                <span class="q-source-pill" style="opacity: 0.75;">${escapeHtml(item.chapter || 'Chapter')}</span>
+              </div>
+
+              <div class="q-body-text math-content" style="font-size: 14.5px; margin: 10px 0;">
+                ${item.textSnippet ? escapeHtml(item.textSnippet) : `Saved Question #${qId}`}
+              </div>
+
+              ${noteHtml}
+
+              <div class="card-action-bar-compact" style="margin-top: 14px;">
+                <a href="/practice/?q=${qId}#${qId}" class="btn-card-action" style="text-decoration: none;">
+                  <span>🎯</span> <span class="btn-action-label">Practice in Hub</span>
+                </a>
+                <button class="btn-card-action" onclick="editNoteForQuestion('${qId}')" title="Edit Note">
+                  <span>📝</span> <span class="btn-action-label">Note</span>
+                </button>
+                <button class="btn-card-action" onclick="removeBookmark('${qId}'); renderDashboard();" style="color: #ef4444;" title="Remove from Saved">
+                  <span>🗑️</span> <span class="btn-action-label">Remove</span>
+                </button>
+              </div>
+            </div>
+          `;
+        });
+        feed.innerHTML = cardsHtml;
+      }
+
+      // Render Mock History
+      const mockCont = document.getElementById('mockHistoryContainer');
+      if (mocks.length === 0) {
+        mockCont.innerHTML = `
+          <div style="text-align: center; color: var(--text-muted); font-size: 13.5px; padding: 16px 0;">
+            No mock tests completed yet. Test yourself in the <a href="/paper-maker/" style="color: var(--accent); font-weight: 700;">Paper Maker & Mock Simulator</a> to log your scores here!
+          </div>
+        `;
+      } else {
+        let mockTable = `
+          <div style="overflow-x: auto;">
+            <table style="width: 100%; border-collapse: collapse; font-size: 13.5px;">
+              <thead>
+                <tr style="border-bottom: 2px solid var(--border); text-align: left; color: var(--text-muted); font-size: 12px; text-transform: uppercase;">
+                  <th style="padding: 8px 12px;">Date</th>
+                  <th style="padding: 8px 12px;">Exam & Target</th>
+                  <th style="padding: 8px 12px;">Score</th>
+                  <th style="padding: 8px 12px;">Accuracy</th>
+                  <th style="padding: 8px 12px;">Time Spent</th>
+                </tr>
+              </thead>
+              <tbody>
+        `;
+        mocks.forEach(m => {
+          mockTable += `
+            <tr style="border-bottom: 1px solid var(--border-light);">
+              <td style="padding: 10px 12px; font-weight: 600;">${m.date}</td>
+              <td style="padding: 10px 12px;">${escapeHtml(m.examName || 'Mock Test')}</td>
+              <td style="padding: 10px 12px; font-family: var(--font-mono); font-weight: 700; color: var(--accent);">${m.score} / ${m.totalMarks}</td>
+              <td style="padding: 10px 12px; font-weight: 700; color: #10b981;">${m.accuracy || '100%'}</td>
+              <td style="padding: 10px 12px; color: var(--text-muted);">${m.timeSpent || '30 mins'}</td>
+            </tr>
+          `;
+        });
+        mockTable += `</tbody></table></div>`;
+        mockCont.innerHTML = mockTable;
+      }
+
+      if (window.renderMathInElement) {
+        renderMathInElement(feed, {
+          delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false},
+            {left: '\\(', right: '\\)', display: false},
+            {left: '\\[', right: '\\]', display: true}
+          ],
+          throwOnError: false
+        });
+      }
+    }
+
+    function exportStudyData() {
+      const data = {
+        studentName: getStudentName(),
+        bookmarks: getBookmarks(),
+        completed: getCompleted(),
+        folders: getFolders(),
+        mockHistory: getMockHistory(),
+        exportedAt: new Date().toISOString()
+      };
+
+      const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `wovrix_study_backup_${new Date().toISOString().slice(0, 10)}.json`;
+      a.click();
+      URL.revokeObjectURL(url);
+    }
+
+    function importStudyData() {
+      document.getElementById('importFileInput').click();
+    }
+
+    function handleImportFile(e) {
+      const file = e.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = function(event) {
+        try {
+          const imported = JSON.parse(event.target.result);
+          if (imported.studentName) setStudentName(imported.studentName);
+          if (imported.bookmarks) localStorage.setItem(STORAGE_KEYS.BOOKMARKS, JSON.stringify(imported.bookmarks));
+          if (imported.completed) localStorage.setItem(STORAGE_KEYS.DONE, JSON.stringify(imported.completed));
+          if (imported.folders) localStorage.setItem(STORAGE_KEYS.FOLDERS, JSON.stringify(imported.folders));
+          if (imported.mockHistory) localStorage.setItem(STORAGE_KEYS.MOCK_HISTORY, JSON.stringify(imported.mockHistory));
+          alert('Study data successfully restored!');
+          renderDashboard();
+        } catch (err) {
+          alert('Failed to parse backup file. Please ensure it is a valid JSON backup.');
+        }
+      };
+      reader.readAsText(file);
+    }
+
+    function clearAllData() {
+      if (confirm('Are you sure you want to reset all bookmarks, folders, and notes? This cannot be undone.')) {
+        localStorage.removeItem(STORAGE_KEYS.BOOKMARKS);
+        localStorage.removeItem(STORAGE_KEYS.DONE);
+        localStorage.removeItem(STORAGE_KEYS.FOLDERS);
+        localStorage.removeItem(STORAGE_KEYS.MOCK_HISTORY);
+        renderDashboard();
+      }
+    }
+
+    function toggleGoalDropdown(e) {
+      if (e) e.stopPropagation();
+      const menu = document.getElementById('goalDropdownMenu');
+      if (menu) menu.classList.toggle('show');
+    }
+
+    function selectGoal(goal) {
+      setActiveGoal(goal);
+      const menu = document.getElementById('goalDropdownMenu');
+      if (menu) menu.classList.remove('show');
+      toggleMobileDrawer(false);
+    }
+
+    document.addEventListener('click', (e) => {
+      const container = document.querySelector('.goal-switcher-container');
+      const menu = document.getElementById('goalDropdownMenu');
+      if (container && !container.contains(e.target) && menu) {
+        menu.classList.remove('show');
+      }
+    });
+
+    function escapeHtml(str) {
+      if (!str) return '';
+      return String(str).replace(/&/g, '&amp;')
+                        .replace(/</g, '&lt;')
+                        .replace(/>/g, '&gt;');
+    }
+
+    window.addEventListener('DOMContentLoaded', renderDashboard);
+  </script>
+</body>
+</html>

@@ -84,3 +84,24 @@
   CHECK: node -e "const fs = require('fs'); const data = JSON.parse(fs.readFileSync('data/repeated_questions.json', 'utf8')); if (data.summary.cbse_verified_repeat_clusters < 1500 || data.summary.neet_verified_repeat_clusters < 100) { console.error('Low cluster count'); process.exit(1); } console.log('COMPREHENSIVE_REPEATS_OK');"
   EXPECT: COMPREHENSIVE_REPEATS_OK
   EVIDENCE: automatic-evidence=v1; definition-sha256=e148cdc536498b42d3ac3454ccac5abb856bbd3544cd7b8766accd8574d6cbcf; exit=0; EXPECT=matched; output-sha256=ebbd9c85b394c177535e496decb1745fcb43cc95a598fbc6eab0c37d270302f3; output-bytes=25; shell=C:\Windows\system32\cmd.exe; cwd=E:\PYQ_Wovrix_Portal\pyq-wovrix; path=5a7e38b983eb/70 entries
+
+- [x] GATE-SAVED-DASHBOARD: Personal saved dashboard exists with collections, note editor, and mock history
+  CHECK: node -e "const fs = require('fs'); if (!fs.existsSync('saved/index.html')) { console.error('Missing saved page'); process.exit(1); } const html = fs.readFileSync('saved/index.html', 'utf8'); if (!html.includes('folder-chip') || !html.includes('mockHistoryContainer') || !html.includes('exportStudyData')) { console.error('Missing saved dashboard logic'); process.exit(1); } console.log('SAVED_DASHBOARD_OK');"
+  EXPECT: SAVED_DASHBOARD_OK
+  EVIDENCE: automatic-evidence=v1; definition-sha256=1d4c4c7fa22ec4f2697bd5740aa99e8fb56555e653e32456a60316a0a7be5921; exit=0; EXPECT=matched; output-sha256=9004c4e0461ed1563f4807d3d1790b320f68bca6ff0c20463c4996f754077661; output-bytes=19; shell=C:\Windows\system32\cmd.exe; cwd=E:\PYQ_Wovrix_Portal\pyq-wovrix; path=b500a6248b05/70 entries
+
+- [x] GATE-ZERO-UNCLASSIFIED: Zero unclassified questions across CBSE Math, Physics, and Chemistry
+  CHECK: node -e "const fs = require('fs'); ['data/cbse_mathematics.json', 'data/cbse_physics.json', 'data/cbse_chemistry.json'].forEach(f => { const data = JSON.parse(fs.readFileSync(f, 'utf8')); const uncl = data.filter(q => q.chapter_name === 'Unclassified'); if (uncl.length > 0) { console.error(f, 'has unclassified:', uncl.length); process.exit(1); } }); console.log('ZERO_UNCLASSIFIED_OK');"
+  EXPECT: ZERO_UNCLASSIFIED_OK
+  EVIDENCE: automatic-evidence=v1; definition-sha256=a026f9578d97d5929436221efb8a4bd8ad6927c59eed8358a66a0712de5aa9bc; exit=0; EXPECT=matched; output-sha256=06dc3f6de08976409ff28d8385b7e53ef6a454e54b1b35f2171761ae536679df; output-bytes=21; shell=C:\Windows\system32\cmd.exe; cwd=E:\PYQ_Wovrix_Portal\pyq-wovrix; path=9818e233a779/70 entries
+
+- [x] GATE-MOCK-SIMULATOR: Paper maker has 4-step wizard, interactive timed mock engine, and CBT palette
+  CHECK: node -e "const fs = require('fs'); const html = fs.readFileSync('paper-maker/index.html', 'utf8'); if (!html.includes('launchInteractiveMock') || !html.includes('cbtJumpTo') || !html.includes('saveActiveMockSession') || !html.includes('reportCardModal')) { console.error('Missing mock simulator components'); process.exit(1); } console.log('MOCK_SIMULATOR_OK');"
+  EXPECT: MOCK_SIMULATOR_OK
+  EVIDENCE: automatic-evidence=v1; definition-sha256=3c0f80685ca9b8dd4b76c34a5e2c5cd6c7ba4d74b107bd007b35a3b965f7db93; exit=0; EXPECT=matched; output-sha256=5afdc4e8117f2aa1bf833861dfd8e096a723097786bae879a23ca2745f54d062; output-bytes=18; shell=C:\Windows\system32\cmd.exe; cwd=E:\PYQ_Wovrix_Portal\pyq-wovrix; path=9818e233a779/70 entries
+
+- [x] GATE-MOBILE-DRAWER: Universal mobile drawer and backdrop exist across all core pages
+  CHECK: node -e "const fs = require('fs'); ['index.html', 'practice/index.html', 'repeated/index.html', 'paper-maker/index.html', 'saved/index.html'].forEach(f => { const html = fs.readFileSync(f, 'utf8'); if (!html.includes('mobileNavDrawer') || !html.includes('drawerBackdrop')) { console.error(f, 'missing mobile drawer'); process.exit(1); } }); console.log('MOBILE_DRAWER_OK');"
+  EXPECT: MOBILE_DRAWER_OK
+  EVIDENCE: automatic-evidence=v1; definition-sha256=7257b05dba9c717cd3cb310e65ad40cb25e63f97a7cd7cb1c218222c51bee3f9; exit=0; EXPECT=matched; output-sha256=fd49655fa487d3c67ccfdfaa015acad08a735548de44c6a4d832224e8b9681df; output-bytes=17; shell=C:\Windows\system32\cmd.exe; cwd=E:\PYQ_Wovrix_Portal\pyq-wovrix; path=9818e233a779/70 entries
+
