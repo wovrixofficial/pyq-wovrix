@@ -1209,6 +1209,7 @@ a {
 
 /* Dark Mode Tokens & Overrides */
 [data-theme="dark"] {
+  --accent-light: rgba(37, 99, 235, 0.22);
   --hero-bg: radial-gradient(circle at 75% 45%, #18181b 0%, #090d16 65%);
   --bg: #090d16;
   --surface: #111827;
@@ -2845,16 +2846,8 @@ a {
   color: #ffffff;
   border-color: var(--accent);
 }
-  text-decoration: none;
-  transition: all 0.15s ease;
-}
 
-.bento-card-action:hover {
-  background: var(--accent);
-  color: #ffffff;
-  border-color: var(--accent);
-}
-
+.card-action-bar-compact {
   display: flex;
   align-items: center;
   gap: 6px;
@@ -2900,3 +2893,25 @@ a {
   }
 }
 
+
+[data-theme="dark"] .card-action-bar-compact {
+  border-top-color: #1f2937 !important;
+}
+
+[data-theme="dark"] .btn-card-action {
+  background: #1f2937 !important;
+  border-color: #374151 !important;
+  color: #f3f4f6 !important;
+}
+
+[data-theme="dark"] .btn-card-action:hover {
+  background: #374151 !important;
+  border-color: #60a5fa !important;
+  color: #93c5fd !important;
+}
+
+[data-theme="dark"] .btn-card-action.active {
+  background: #2563eb !important;
+  border-color: #3b82f6 !important;
+  color: #ffffff !important;
+}

@@ -8,7 +8,7 @@
   <link rel="canonical" href="https://pyq.wovrix.in/practice/">
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <link rel="stylesheet" href="/style.css?v=20261110_5">
+  <link rel="stylesheet" href="/style.css?v=20261110_6">
 
   <!-- KaTeX -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
@@ -543,11 +543,116 @@
       color: #047857 !important;
       font-weight: 700;
     }
+    .neet-opt-btn.correct .opt-text,
+    .neet-opt-btn.correct .katex {
+      color: #047857 !important;
+    }
+    .neet-opt-btn.correct .opt-label {
+      background: #10b981 !important;
+      color: #ffffff !important;
+      border-color: #059669 !important;
+    }
 
     .neet-opt-btn.incorrect {
       background: #fef2f2 !important;
       border-color: #dc2626 !important;
       color: #991b1b !important;
+    }
+    .neet-opt-btn.incorrect .opt-text,
+    .neet-opt-btn.incorrect .katex {
+      color: #991b1b !important;
+    }
+    .neet-opt-btn.incorrect .opt-label {
+      background: #ef4444 !important;
+      color: #ffffff !important;
+      border-color: #dc2626 !important;
+    }
+
+    /* Dark Mode High-Contrast Option Tokens */
+    [data-theme="dark"] .neet-opt-btn {
+      background: #111827;
+      border-color: #374151;
+      color: #f9fafb;
+    }
+    [data-theme="dark"] .neet-opt-btn:hover {
+      background: #1f2937;
+      border-color: #60a5fa;
+    }
+    [data-theme="dark"] .neet-opt-btn .opt-label {
+      background: #1f2937;
+      border-color: #374151;
+      color: #9ca3af;
+    }
+
+    [data-theme="dark"] .neet-opt-btn.correct {
+      background: rgba(16, 185, 129, 0.22) !important;
+      border-color: #10b981 !important;
+      color: #6ee7b7 !important;
+    }
+    [data-theme="dark"] .neet-opt-btn.correct .opt-text,
+    [data-theme="dark"] .neet-opt-btn.correct .katex {
+      color: #a7f3d0 !important;
+    }
+    [data-theme="dark"] .neet-opt-btn.correct .opt-label {
+      background: #065f46 !important;
+      color: #ecfdf5 !important;
+      border-color: #10b981 !important;
+    }
+
+    [data-theme="dark"] .neet-opt-btn.incorrect {
+      background: rgba(239, 68, 68, 0.22) !important;
+      border-color: #ef4444 !important;
+      color: #fca5a5 !important;
+    }
+    [data-theme="dark"] .neet-opt-btn.incorrect .opt-text,
+    [data-theme="dark"] .neet-opt-btn.incorrect .katex {
+      color: #fca5a5 !important;
+    }
+    [data-theme="dark"] .neet-opt-btn.incorrect .opt-label {
+      background: #991b1b !important;
+      color: #fee2e2 !important;
+      border-color: #ef4444 !important;
+    }
+
+    .sol-correct-badge {
+      background: #e0e7ff;
+      color: #3730a3;
+      font-weight: 800;
+      padding: 4px 10px;
+      border-radius: 9999px;
+      font-size: 12px;
+      font-family: var(--font-mono);
+    }
+    [data-theme="dark"] .sol-correct-badge {
+      background: rgba(99, 102, 241, 0.25) !important;
+      color: #a5b4fc !important;
+      border: 1px solid rgba(99, 102, 241, 0.4);
+    }
+
+    [data-theme="dark"] .solution-box {
+      background: #0f172a !important;
+      border-color: #3b82f6 !important;
+      color: #e2e8f0 !important;
+    }
+
+    [data-theme="dark"] .card-action-bar-compact {
+      border-top-color: #1f2937 !important;
+    }
+
+    [data-theme="dark"] .btn-card-action {
+      background: #1f2937 !important;
+      border-color: #374151 !important;
+      color: #f3f4f6 !important;
+    }
+    [data-theme="dark"] .btn-card-action:hover {
+      background: #374151 !important;
+      border-color: #60a5fa !important;
+      color: #93c5fd !important;
+    }
+    [data-theme="dark"] .btn-card-action.active {
+      background: #2563eb !important;
+      border-color: #3b82f6 !important;
+      color: #ffffff !important;
     }
 
     .opt-label {
@@ -941,7 +1046,7 @@
 
   <!-- Scripts -->
   <script src="/report-modal.js"></script>
-  <script src="/js/study_storage.js?v=20261110_5"></script>
+  <script src="/js/study_storage.js?v=20261110_6"></script>
   <script src="/js/analytics.js"></script>
 
   <script>
@@ -1438,7 +1543,7 @@
       const feed = document.getElementById('streamQuestionsFeed');
       feed.innerHTML = '<div class="loading-state">Loading questions dataset...</div>';
 
-      const cacheBust = '?v=20261110_5';
+      const cacheBust = '?v=20261110_6';
       const url = currentExam === 'cbse'
         ? `/data/cbse_${currentSubject.toLowerCase()}.json${cacheBust}`
         : `/data/neet_all.json${cacheBust}`;
@@ -1678,7 +1783,7 @@
       box.innerHTML = `
         <div class="sol-header">
           <span class="sol-badge-cached">✓ Official NTA Answer Key</span>
-          <span class="q-marks-pill" style="background:#e0e7ff; color:#3730a3; font-weight:800;">Correct Option: (${correctOpt})</span>
+          <span class="sol-correct-badge">Correct Option: (${correctOpt})</span>
         </div>
         <div style="font-size:13.5px; color:var(--text); line-height:1.6;">
           <p style="margin:0 0 6px 0;"><strong>Examination:</strong> NEET UG ${year} (${source})</p>
