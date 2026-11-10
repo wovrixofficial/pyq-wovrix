@@ -690,6 +690,50 @@
 </head>
 <body>
 
+  <!-- 2-Step Onboarding Modal -->
+  <div id="onboardingModal" class="onboarding-overlay" role="dialog" aria-modal="true" aria-labelledby="onboardTitle">
+    <div class="onboarding-modal-card">
+      <button class="onboarding-close-btn" onclick="closeOnboardingModal()" aria-label="Close">✕</button>
+      
+      <!-- Step 1: Select Exam -->
+      <div id="onboardStep1">
+        <span class="onboarding-step-badge">STEP 1 OF 2 • TARGET EXAM</span>
+        <h2 class="onboarding-title" id="onboardTitle">What are you preparing for?</h2>
+        <p class="onboarding-subtitle">Select your academic track to load official past papers, chapter weightage, and marking criteria.</p>
+        
+        <div class="onboarding-cards-grid">
+          <div class="onboarding-opt-card" id="onboardOptCbse" onclick="selectOnboardExam('cbse')">
+            <span class="gateway-badge badge-cbse">5-Year Archive (2022–2026)</span>
+            <div class="onboarding-opt-title">🎓 CBSE Class 12 Board</div>
+            <p class="onboarding-opt-desc">10,279 official questions across Delhi, All India, and Foreign sets with step-marking criteria.</p>
+          </div>
+          
+          <div class="onboarding-opt-card" id="onboardOptNeet" onclick="selectOnboardExam('neet')">
+            <span class="gateway-badge badge-neet">11-Year Archive (2016–2026)</span>
+            <div class="onboarding-opt-title">🩺 NEET UG Entrance</div>
+            <p class="onboarding-opt-desc">2,060 questions with verified NTA answer keys, 135 diagrams, and +4/-1 marking scheme.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 2: Select Subject -->
+      <div id="onboardStep2" style="display: none;">
+        <span class="onboarding-step-badge">STEP 2 OF 2 • FOCUS SUBJECT</span>
+        <h2 class="onboarding-title">Which subject do you want to master first?</h2>
+        <p class="onboarding-subtitle" id="onboardStep2Subtitle">Choose your starting subject. You can freely switch subjects anytime.</p>
+        
+        <div class="onboarding-subjects-list" id="onboardSubjectsList">
+          <!-- Populated dynamically based on chosen exam -->
+        </div>
+
+        <button type="button" class="sol-action-btn" onclick="backToOnboardStep1()" style="margin-top: 10px;">
+          ← Back to Exam Selection
+        </button>
+      </div>
+    </div>
+  </div>
+
+
   <!-- Universal Site Header -->
   <header class="site-header">
     <div class="header-inner">
@@ -708,7 +752,10 @@
         <a href="/practice/" class="nav-link active">Practice Hub</a>
         <a href="/paper-maker/" class="nav-link">Paper Maker</a>
         <a href="/practice/?exam=neet" class="nav-cta-pill">Launch NEET Portal ➔</a>
-          <button id="themeToggleBtn" class="btn-theme-toggle" onclick="toggleTheme()" aria-label="Toggle Dark Mode" title="Toggle Dark/Light Mode">
+          <button id="goalSwitcherBtn" class="goal-switcher-btn" onclick="openOnboardingModal()" title="Change Target Exam or Subject">
+          🎯 <span id="currentGoalText">CBSE Class 12 • Physics</span> <span style="font-size: 11px; opacity: 0.7;">▾</span>
+        </button>
+        <button id="themeToggleBtn" class="btn-theme-toggle" onclick="toggleTheme()" aria-label="Toggle Dark Mode" title="Toggle Dark/Light Mode">
       <span class="theme-icon-light">☀️</span>
       <span class="theme-icon-dark">🌙</span>
     </button>
@@ -729,6 +776,22 @@
 
   <main class="practice-container">
     <!-- Top Control Bar -->
+    
+    <!-- Unified Workspace View Switcher -->
+    <div class="workspace-tabs-bar" id="workspaceTabsBar">
+      <button class="ws-tab-btn active" id="tabPractice" onclick="switchWorkspaceTab('practice')">
+        📚 Practice Question Bank
+      </button>
+      <button class="ws-tab-btn" id="tabRepeats" onclick="switchWorkspaceTab('repeats')">
+        🔁 High-Yield Repeats Radar
+      </button>
+      <button class="ws-tab-btn" id="tabPaperMaker" onclick="switchWorkspaceTab('papermaker')">
+        📝 Mock Paper Maker
+      </button>
+      <button class="ws-tab-btn" id="tabBookmarks" onclick="switchWorkspaceTab('bookmarks')">
+        ★ Saved & Bookmarks (<span id="wsBookmarkCount">0</span>)
+      </button>
+    </div>
     <section class="hub-control-panel">
       <!-- Split Exam Gateway Cards -->
       <div class="practice-gateway-grid">
@@ -1391,6 +1454,8 @@
       updateGatewayCardsUI();
       populateSubjects();
       populateSections();
+      checkOnboardingStatus();
+      updateGoalSwitcherText();
       loadCurrentDataset();
     }
 
@@ -1426,6 +1491,8 @@
 
       populateSubjects();
       populateSections();
+      checkOnboardingStatus();
+      updateGoalSwitcherText();
       loadCurrentDataset();
     }
 
@@ -1515,6 +1582,8 @@
     function onSubjectChange() {
       currentSubject = document.getElementById('selectSubject').value;
       populateChapters();
+      checkOnboardingStatus();
+      updateGoalSwitcherText();
       loadCurrentDataset();
     }
 
@@ -1786,6 +1855,95 @@
     }
 
     // Initial boot
+    
+    let activeWorkspaceTab = 'practice';
+    let tempOnboardExam = 'cbse';
+
+    function openOnboardingModal() {
+      document.getElementById('onboardStep1').style.display = 'block';
+      document.getElementById('onboardStep2').style.display = 'none';
+      document.getElementById('onboardingModal').classList.add('open');
+    }
+
+    function closeOnboardingModal() {
+      document.getElementById('onboardingModal').classList.remove('open');
+    }
+
+    function selectOnboardExam(exam) {
+      tempOnboardExam = exam;
+      document.getElementById('onboardStep1').style.display = 'none';
+      document.getElementById('onboardStep2').style.display = 'block';
+
+      const listCont = document.getElementById('onboardSubjectsList');
+      const subTitle = document.getElementById('onboardStep2Subtitle');
+      subTitle.innerText = exam === 'cbse' 
+        ? 'Select from CBSE Class 12 PCM subjects with official step rubrics:'
+        : 'Select from NEET UG entrance subjects with verified NTA keys:';
+
+      const subjects = exam === 'cbse' 
+        ? ['Physics', 'Chemistry', 'Mathematics']
+        : ['Physics', 'Chemistry', 'Botany', 'Zoology'];
+
+      listCont.innerHTML = subjects.map(s => `
+        <button class="onboarding-subj-btn" onclick="finalizeOnboardSelection('${exam}', '${s}')">
+          <span>${s}</span>
+          <span style="color: var(--accent);">Start ➔</span>
+        </button>
+      `).join('');
+    }
+
+    function backToOnboardStep1() {
+      document.getElementById('onboardStep1').style.display = 'block';
+      document.getElementById('onboardStep2').style.display = 'none';
+    }
+
+    function finalizeOnboardSelection(exam, subject) {
+      localStorage.setItem('wovrix_goal_exam', exam);
+      localStorage.setItem('wovrix_goal_subject', subject);
+      closeOnboardingModal();
+      setExamAndSubject(exam, subject);
+      updateGoalSwitcherText();
+    }
+
+    function updateGoalSwitcherText() {
+      const el = document.getElementById('currentGoalText');
+      if (el) {
+        const examName = currentExam === 'cbse' ? 'CBSE Class 12' : 'NEET UG';
+        el.innerText = `${examName} • ${currentSubject}`;
+      }
+    }
+
+    function checkOnboardingStatus() {
+      const savedExam = localStorage.getItem('wovrix_goal_exam');
+      const savedSubject = localStorage.getItem('wovrix_goal_subject');
+      if (!savedExam || !savedSubject) {
+        openOnboardingModal();
+      } else {
+        if (!urlParams.get('exam')) currentExam = savedExam;
+        if (!urlParams.get('subject')) currentSubject = savedSubject;
+        updateGoalSwitcherText();
+      }
+    }
+
+    function switchWorkspaceTab(tab) {
+      activeWorkspaceTab = tab;
+      ['practice', 'repeats', 'papermaker', 'bookmarks'].forEach(t => {
+        const btn = document.getElementById('tab' + t.charAt(0).toUpperCase() + t.slice(1));
+        if (btn) btn.classList.toggle('active', t === tab);
+      });
+
+      if (tab === 'repeats') {
+        window.location.href = '/repeated/';
+      } else if (tab === 'papermaker') {
+        window.location.href = '/paper-maker/?exam=' + currentExam;
+      } else if (tab === 'bookmarks') {
+        toggleBookmarksOnly();
+      } else {
+        bookmarksOnly = false;
+        applyFilters();
+      }
+    }
+
     window.addEventListener('DOMContentLoaded', () => {
       setExam(currentExam);
     });

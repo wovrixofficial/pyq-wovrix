@@ -70,3 +70,17 @@
   CHECK: node -e "const fs = require('fs'); const data = JSON.parse(fs.readFileSync('data/repeated_questions.json', 'utf8')); if (!data.summary || data.summary.neet_max_repeats < 30 || data.neet_repeats.length < 50) { console.error('NEET repeats not ingested'); process.exit(1); } console.log('NEET_REPEATS_OK');"
   EXPECT: NEET_REPEATS_OK
   EVIDENCE: automatic-evidence=v1; definition-sha256=4b2bf30011fa2c991fad521c2c3887c5c01e21c6bc38c2d9cecc795d1268b4dc; exit=0; EXPECT=matched; output-sha256=d6259353e61e01b9f8ffb2f52ce4362a7812ac1209d2984c59a3592881b56bb4; output-bytes=16; shell=C:\Windows\system32\cmd.exe; cwd=E:\PYQ_Wovrix_Portal\pyq-wovrix; path=441b33bf7197/70 entries
+- [x] GATE-ONBOARDING-MODAL: Practice hub contains 2-step onboarding modal and sticky goal switcher
+  CHECK: node -e "const fs = require('fs'); const html = fs.readFileSync('practice/index.html', 'utf8'); if (!html.includes('onboardingModal') || !html.includes('goalSwitcherBtn') || !html.includes('workspaceTabsBar')) { console.error('Missing onboarding modal or workspace tabs'); process.exit(1); } console.log('ONBOARDING_MODAL_OK');"
+  EXPECT: ONBOARDING_MODAL_OK
+  EVIDENCE: automatic-evidence=v1; definition-sha256=c3a49e4c48463491b92f09013f1144894d53fb2f707647e547e351ae4d84423e; exit=0; EXPECT=matched; output-sha256=54364c8a1d03146fc50a538b169b1c0c3c103b5914a4ebbef090827628923538; output-bytes=20; shell=C:\Windows\system32\cmd.exe; cwd=E:\PYQ_Wovrix_Portal\pyq-wovrix; path=5a7e38b983eb/70 entries
+
+- [x] GATE-LOCAL-14B-PIPELINE: Local Qwen 14B solver script exists and monitors model paths
+  CHECK: python scripts/local_qwen_solver.py --status
+  EXPECT: === LOCAL 14B QWEN SOLVER PIPELINE STATUS ===
+  EVIDENCE: automatic-evidence=v1; definition-sha256=479f8ec4e97dafc9134e49e7c5b3e04a1422e45ccfa75187f43dc57ac3257fd1; exit=0; EXPECT=matched; output-sha256=2b7c8609cf181281e4eb9e24c8c3bc510ddb2beb4947025792fbe1a6fcf26a61; output-bytes=296; shell=C:\Windows\system32\cmd.exe; cwd=E:\PYQ_Wovrix_Portal\pyq-wovrix; path=5a7e38b983eb/70 entries
+
+- [x] GATE-COMPREHENSIVE-REPEATS: Comprehensive scan yields over 1,500 CBSE clusters and 100+ NEET patterns
+  CHECK: node -e "const fs = require('fs'); const data = JSON.parse(fs.readFileSync('data/repeated_questions.json', 'utf8')); if (data.summary.cbse_verified_repeat_clusters < 1500 || data.summary.neet_verified_repeat_clusters < 100) { console.error('Low cluster count'); process.exit(1); } console.log('COMPREHENSIVE_REPEATS_OK');"
+  EXPECT: COMPREHENSIVE_REPEATS_OK
+  EVIDENCE: automatic-evidence=v1; definition-sha256=e148cdc536498b42d3ac3454ccac5abb856bbd3544cd7b8766accd8574d6cbcf; exit=0; EXPECT=matched; output-sha256=ebbd9c85b394c177535e496decb1745fcb43cc95a598fbc6eab0c37d270302f3; output-bytes=25; shell=C:\Windows\system32\cmd.exe; cwd=E:\PYQ_Wovrix_Portal\pyq-wovrix; path=5a7e38b983eb/70 entries
