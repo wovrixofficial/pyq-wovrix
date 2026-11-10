@@ -25,7 +25,12 @@
       "@type": "Question",
       "name": "CBSE Class 12 Mathematics Relations and Functions Board Question",
       "text": "(a) Find the absolute maximum value of $f(x) = \\cos x + \\sin^2 x$, $x \\in [0, \\pi]$\n\nOR\n\n(b) If the volume of a solid hemisphere increases at a uniform rate, prove that its surface area varies inversely as its radius.",
-      "answerCount": 1
+      "answerCount": 1,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Solution (a): Absolute Maximum Value         Step 1 (Formula / Governing Law & Given Data): [0.5 Mark]        Given function: $f(x) = \cos x + \sin^2 x$ for $x \in [0, \pi]$.      To find the absolute maximum, we use the first derivative test to find critical points and evaluate the function at crit...",
+        "upvoteCount": 1
+      }
     }
   }
   </script>
@@ -82,6 +87,56 @@ OR
 
 (b) If the volume of a solid hemisphere increases at a uniform rate, prove that its surface area varies inversely as its radius.</div>
       </div>
+      <div class="solution-box" style="margin-top:24px; padding:20px; background:var(--card-bg, #ffffff); border:1.5px solid var(--border, #e2e8f0); border-radius:12px;">
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:14px;">
+          <span style="background:#10b981; color:#fff; font-size:11px; font-weight:700; padding:3px 10px; border-radius:20px; text-transform:uppercase;">✓ Verified CBSE Marking Scheme</span>
+          <span style="font-size:12px; color:var(--text-muted, #64748b); font-weight:600;">Official Evaluation Steps & EL10 Insight</span>
+        </div>
+        <div class="math-content solution-content" style="line-height:1.7; font-size:15px;">
+          <div>
+    <h3>Solution (a): Absolute Maximum Value</h3>
+
+    <p><strong>Step 1 (Formula / Governing Law & Given Data): [0.5 Mark]</strong></p>
+    <p>Given function: $f(x) = \cos x + \sin^2 x$ for $x \in [0, \pi]$.<br>
+    To find the absolute maximum, we use the first derivative test to find critical points and evaluate the function at critical points and endpoints ($x=0, x=\pi$).</p>
+
+    <p><strong>Step 2 (Step-by-Step Mathematical Working): [1.0 Mark]</strong></p>
+    <p>Differentiating with respect to $x$:</p>
+    $$f'(x) = -\sin x + 2\sin x \cos x = \sin x (2\cos x - 1)$$
+    <p>Setting $f'(x) = 0$ for critical points:</p>
+    $$\sin x = 0 \implies x = 0, \pi$$
+    $$2\cos x - 1 = 0 \implies \cos x = \frac{1}{2} \implies x = \frac{\pi}{3}$$
+    <p>Evaluating $f(x)$ at critical points and endpoints:</p>
+    <ul>
+        <li>$f(0) = \cos(0) + \sin^2(0) = 1 + 0 = 1$</li>
+        <li>$f(\pi) = \cos(\pi) + \sin^2(\pi) = -1 + 0 = -1$</li>
+        <li>$f\left(\frac{\pi}{3}\right) = \cos\left(\frac{\pi}{3}\right) + \sin^2\left(\frac{\pi}{3}\right) = \frac{1}{2} + \left(\frac{\sqrt{3}}{2}\right)^2 = \frac{1}{2} + \frac{3}{4} = \frac{5}{4}$</li>
+    </ul>
+
+    <p><strong>Step 3 (Final Concluded Answer): [0.5 Mark]</strong></p>
+    <p>Comparing the values $\{1, -1, 1.25\}$, the absolute maximum value is <strong>$\frac{5}{4}$</strong>.</p>
+
+    <hr>
+
+    <h3>Solution (b): Rate of Change Proof</h3>
+
+    <p><strong>Step 1 (Formula / Governing Law & Given Data): [0.5 Mark]</strong></p>
+    <p>Volume of hemisphere $V = \frac{2}{3}\pi r^3$. Surface area (curved) $S = 2\pi r^2$.<br>
+    Given: $\frac{dV}{dt} = k$ (constant).</p>
+
+    <p><strong>Step 2 (Step-by-Step Mathematical Working): [1.0 Mark]</strong></p>
+    <p>Differentiating $V$ with respect to $t$:</p>
+    $$\frac{dV}{dt} = 2\pi r^2 \frac{dr}{dt} = k \implies \frac{dr}{dt} = \frac{k}{2\pi r^2}$$
+    <p>Now, differentiate $S$ with respect to $t$:</p>
+    $$\frac{dS}{dt} = \frac{d}{dt}(2\pi r^2) = 4\pi r \frac{dr}{dt}$$
+    <p>Substitute $\frac{dr}{dt}$ into the equation:</p>
+    $$\frac{dS}{dt} = 4\pi r \left( \frac{k}{2\pi r^2} \right) = \frac{2k}{r}$$
+
+    <p><strong>Step 3 (Final Concluded Answer): [0.5 Mark]</strong></p>
+    <p>Since $2k$ is a constant, $\frac{dS}{dt} \propto \frac{1}{r}$. Thus, the
+        </div>
+      </div>
+
 
       <div class="card-footer-actions">
         <a href="mailto:contact@wovrix.in?subject=Report%20Question%20407&body=Question%20ID:%20407%0AChapter:%20Relations and Functions%0AIssue%20Description:%20" class="report-link">

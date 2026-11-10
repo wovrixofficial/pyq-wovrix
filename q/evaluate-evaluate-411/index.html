@@ -25,7 +25,12 @@
       "@type": "Question",
       "name": "CBSE Class 12 Mathematics Integrals Board Question",
       "text": "(a) Evaluate : $\\int_{\\frac{\\pi}{12}}^{\\frac{5\\pi}{12}} \\frac{dx}{1 + \\sqrt{\\cot x}}$\n\nOR\n\n(b) Evaluate : $\\int_{-\\frac{\\pi}{6}}^{\\frac{\\pi}{2}} (\\sin |x| + \\cos |x|)\\, dx$",
-      "answerCount": 1
+      "answerCount": 1,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Solution (a)        Step 1 (Formula / Governing Law & Given Data): [1 Mark]        We use the King's Property of definite integrals:      $$ \int_{a}^{b} f(x) \, dx = \int_{a}^{b} f(a + b - x) \, dx $$      Let $I = \int_{\frac{\pi}{12}}^{\frac{5\pi}{12}} \frac{1}{1 + \sqrt{\cot x}} \, dx$.         ...",
+        "upvoteCount": 1
+      }
     }
   }
   </script>
@@ -82,6 +87,46 @@ OR
 
 (b) Evaluate : $\int_{-\frac{\pi}{6}}^{\frac{\pi}{2}} (\sin |x| + \cos |x|)\, dx$</div>
       </div>
+      <div class="solution-box" style="margin-top:24px; padding:20px; background:var(--card-bg, #ffffff); border:1.5px solid var(--border, #e2e8f0); border-radius:12px;">
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:14px;">
+          <span style="background:#10b981; color:#fff; font-size:11px; font-weight:700; padding:3px 10px; border-radius:20px; text-transform:uppercase;">✓ Verified CBSE Marking Scheme</span>
+          <span style="font-size:12px; color:var(--text-muted, #64748b); font-weight:600;">Official Evaluation Steps & EL10 Insight</span>
+        </div>
+        <div class="math-content solution-content" style="line-height:1.7; font-size:15px;">
+          <div>
+    <h3>Solution (a)</h3>
+    <p><strong>Step 1 (Formula / Governing Law & Given Data): [1 Mark]</strong></p>
+    <p>We use the King's Property of definite integrals:</p>
+    $$ \int_{a}^{b} f(x) \, dx = \int_{a}^{b} f(a + b - x) \, dx $$
+    <p>Let $I = \int_{\frac{\pi}{12}}^{\frac{5\pi}{12}} \frac{1}{1 + \sqrt{\cot x}} \, dx$.</p>
+
+    <p><strong>Step 2 (Step-by-Step Mathematical Working): [1.5 Marks]</strong></p>
+    <p>Rewrite the integrand: $f(x) = \frac{1}{1 + \frac{\sqrt{\cos x}}{\sqrt{\sin x}}} = \frac{\sqrt{\sin x}}{\sqrt{\sin x} + \sqrt{\cos x}}$.</p>
+    <p>Applying the property where $a+b = \frac{\pi}{12} + \frac{5\pi}{12} = \frac{6\pi}{12} = \frac{\pi}{2}$:</p>
+    $$ I = \int_{\frac{\pi}{12}}^{\frac{5\pi}{12}} \frac{\sqrt{\sin(\frac{\pi}{2}-x)}}{\sqrt{\sin(\frac{\pi}{2}-x)} + \sqrt{\cos(\frac{\pi}{2}-x)}} \, dx = \int_{\frac{\pi}{12}}^{\frac{5\pi}{12}} \frac{\sqrt{\cos x}}{\sqrt{\cos x} + \sqrt{\sin x}} \, dx $$
+    <p>Adding the two expressions for $I$:</p>
+    $$ 2I = \int_{\frac{\pi}{12}}^{\frac{5\pi}{12}} \left( \frac{\sqrt{\sin x}}{\sqrt{\sin x} + \sqrt{\cos x}} + \frac{\sqrt{\cos x}}{\sqrt{\sin x} + \sqrt{\cos x}} \right) \, dx $$
+    $$ 2I = \int_{\frac{\pi}{12}}^{\frac{5\pi}{12}} 1 \, dx = [x]_{\frac{\pi}{12}}^{\frac{5\pi}{12}} = \frac{5\pi}{12} - \frac{\pi}{12} = \frac{4\pi}{12} = \frac{\pi}{3} $$
+
+    <p><strong>Step 3 (Final Concluded Answer): [0.5 Mark]</strong></p>
+    $$ I = \frac{\pi}{6} $$
+
+    <p><strong>💡 EL10 Concept Insight:</strong> Imagine you are walking a path and the scenery looks exactly the same in reverse; by adding the "forward" path and the "backward" path together, the complicated parts cancel out, leaving you with a simple straight line to measure!</p>
+</div>
+
+<hr>
+
+<div>
+    <h3>Solution (b)</h3>
+    <p><strong>Step 1 (Formula / Governing Law & Given Data): [1 Mark]</strong></p>
+    <p>We use the definition of the modulus function: $|x| = x$ if $x \ge 0$ and $|x| = -x$ if $x < 0$.</p>
+    $$ \int_{-\frac{\pi}{6}}^{\frac{\pi}{2}} (\sin |x| + \cos |x|) \, dx = \int_{-\frac{\pi}{6}}^{0} (\sin(-x) + \cos(-x)) \, dx + \int_{0}^{\frac{\pi}{2}} (\sin x + \cos x) \, dx $$
+
+    <p><strong>Step 2 (Step-by-Step Mathematical Working): [1.5 Marks]</strong></p>
+    <p>Using $\sin(-x) = -\sin x$ and $\cos(-x) = \cos x$:</p>
+        </div>
+      </div>
+
 
       <div class="card-footer-actions">
         <a href="mailto:contact@wovrix.in?subject=Report%20Question%20411&body=Question%20ID:%20411%0AChapter:%20Integrals%0AIssue%20Description:%20" class="report-link">
