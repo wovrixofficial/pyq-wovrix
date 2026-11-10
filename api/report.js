@@ -21,7 +21,7 @@ export default async function handler(req, res) {
       const ghRes = await fetch(`https://api.github.com/repos/${GITHUB_REPO}/issues?labels=student-report&state=open&per_page=50`, {
         headers: {
           'Authorization': `token ${GITHUB_TOKEN}`,
-          'User-Agent': 'WovrixReportsAPI',
+          'User-Agent': 'LearnoshaReportsAPI',
           'Accept': 'application/vnd.github.v3+json'
         }
       });
@@ -62,7 +62,7 @@ export default async function handler(req, res) {
 
       return res.status(200).json({
         status: 'online',
-        service: 'Wovrix PYQ Report & Solution Sync Service',
+        service: 'Learnosha PYQ Report & Solution Sync Service',
         count: parsedReports.length,
         reports: parsedReports
       });
@@ -100,7 +100,7 @@ export default async function handler(req, res) {
           method: 'POST',
           headers: {
             'Authorization': `token ${GITHUB_TOKEN}`,
-            'User-Agent': 'WovrixReportsAPI',
+            'User-Agent': 'LearnoshaReportsAPI',
             'Content-Type': 'application/json',
             'Accept': 'application/vnd.github.v3+json'
           },
@@ -135,7 +135,7 @@ export default async function handler(req, res) {
         method: 'POST',
         headers: {
           'Authorization': `token ${GITHUB_TOKEN}`,
-          'User-Agent': 'WovrixReportsAPI',
+          'User-Agent': 'LearnoshaReportsAPI',
           'Content-Type': 'application/json',
           'Accept': 'application/vnd.github.v3+json'
         },

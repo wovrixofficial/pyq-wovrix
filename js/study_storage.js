@@ -1,18 +1,28 @@
 /**
- * Wovrix PYQ Unified Study Storage & Shell Controller
+ * Learnosha Unified Study Storage & Shell Controller
  * 100% Client-side, privacy-preserving study state (Student Name, Folders, Bookmarks, Notes, Mock History, Theme, Active Goal).
  * Zero server login required. Saved locally in browser localStorage.
  */
 
+// Auto-migrate legacy storage keys from wovrix to learnosha
+try {
+  ['bookmarks', 'saved_folders', 'student_name', 'done', 'theme', 'active_goal', 'mock_history', 'active_mock_session'].forEach(k => {
+    const oldV = localStorage.getItem('wovrix_' + k);
+    if (oldV && !localStorage.getItem('learnosha_' + k)) {
+      localStorage.setItem('learnosha_' + k, oldV);
+    }
+  });
+} catch (_) {}
+
 const STORAGE_KEYS = {
-  BOOKMARKS: 'wovrix_bookmarks',
-  FOLDERS: 'wovrix_saved_folders',
-  STUDENT_NAME: 'wovrix_student_name',
-  DONE: 'wovrix_done',
-  THEME: 'wovrix_theme',
-  ACTIVE_GOAL: 'wovrix_active_goal',
-  MOCK_HISTORY: 'wovrix_mock_history',
-  ACTIVE_MOCK: 'wovrix_active_mock_session'
+  BOOKMARKS: 'learnosha_bookmarks',
+  FOLDERS: 'learnosha_saved_folders',
+  STUDENT_NAME: 'learnosha_student_name',
+  DONE: 'learnosha_done',
+  THEME: 'learnosha_theme',
+  ACTIVE_GOAL: 'learnosha_active_goal',
+  MOCK_HISTORY: 'learnosha_mock_history',
+  ACTIVE_MOCK: 'learnosha_active_mock_session'
 };
 
 // -----------------------------------------------------------------------------
@@ -68,6 +78,7 @@ function setActiveGoal(goal) {
   if (goal !== 'cbse' && goal !== 'neet') return;
   localStorage.setItem(STORAGE_KEYS.ACTIVE_GOAL, goal);
   updateGoalSwitcherUI(goal);
+  window.dispatchEvent(new CustomEvent('learnosha:goalChange', { detail: { goal } }));
   window.dispatchEvent(new CustomEvent('wovrix:goalChange', { detail: { goal } }));
 }
 
@@ -92,6 +103,7 @@ function getStudentName() {
 function setStudentName(name) {
   const trimmed = (name || '').trim();
   localStorage.setItem(STORAGE_KEYS.STUDENT_NAME, trimmed);
+  window.dispatchEvent(new CustomEvent('learnosha:nameChange', { detail: { name: trimmed } }));
   window.dispatchEvent(new CustomEvent('wovrix:nameChange', { detail: { name: trimmed } }));
   return trimmed;
 }

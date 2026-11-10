@@ -1,4 +1,4 @@
-/* Modern Editorial Design - PYQ Wovrix */
+/* Modern Editorial Design - Learnosha */
 @import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;600;700&display=swap');
 
 :root {
@@ -563,7 +563,7 @@ a {
   border-top: 1px solid #1f1f23;
 }
 
-.footer-massive-wovrix {
+.footer-massive-learnosha {
   max-width: 1400px;
   margin: 40px auto 0;
   text-align: center;
@@ -571,7 +571,7 @@ a {
   padding-top: 24px;
 }
 
-.footer-massive-wovrix span {
+.footer-massive-learnosha span {
   display: block;
   font-family: var(--font-sans);
   font-size: clamp(72px, 16vw, 220px);
@@ -584,7 +584,7 @@ a {
   transition: color 0.3s ease;
 }
 
-.footer-massive-wovrix span:hover {
+.footer-massive-learnosha span:hover {
   color: #27272e;
 }
 
