@@ -43,6 +43,26 @@
       "source": "/formula-sheets/",
       "destination": "/syllabus/",
       "permanent": true
+    },
+    {
+      "source": "/q/the-threshold-voltage-silicon-diode-operated-:id/",
+      "destination": "/q/the-threshold-voltage-silicon-diode-operated-this-a605c8/",
+      "permanent": true
+    },
+    {
+      "source": "/q/the-threshold-voltage-silicon-diode-operated-:id",
+      "destination": "/q/the-threshold-voltage-silicon-diode-operated-this-a605c8/",
+      "permanent": true
+    },
+    {
+      "source": "/q/the-current-the-resistor-:id/",
+      "destination": "/q/the-current-the-resistor-99a924/",
+      "permanent": true
+    },
+    {
+      "source": "/q/the-current-the-resistor-:id",
+      "destination": "/q/the-current-the-resistor-99a924/",
+      "permanent": true
     }
   ],
   "headers": [
