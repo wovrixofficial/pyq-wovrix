@@ -1,5 +1,5 @@
 /**
- * Wovrix PYQ Unified Study Storage & Shell Controller
+ * Learnosha Unified Study Storage & Shell Controller
  * 100% Client-side, privacy-preserving study state (Student Name, Folders, Bookmarks, Notes, Mock History, Theme, Active Goal).
  * Zero server login required. Saved locally in browser localStorage.
  */

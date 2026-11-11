@@ -60,14 +60,27 @@ if "11 complete exam cycles from 2016 through 2026. This encompasses 8,089" in h
 if "Are the step-marking rubrics official?" in html:
     errors.append("FAQ still has risky 'rubrics official' question title!")
 
-if "follows CBSE's official marking pattern" not in html:
-    errors.append("FAQ does not state 'follows CBSE's official marking pattern'!")
+if "follow CBSE's official marking pattern" not in html and "follows CBSE's official marking pattern" not in html:
+    errors.append("FAQ does not state 'follow CBSE's official marking pattern'!")
 
 # 6. Check Footer Links
-neet_links = re.findall(r'href="(/practice/\?exam=neet[^"]*)"', html)
-print(f"NEET links in footer: {neet_links}")
-if len(neet_links) != len(set(neet_links)):
-    errors.append(f"NEET footer links have duplicates: {neet_links}")
+footer_med = re.search(r'<span class="footer-col-heading">Medical Entrance</span>[\s\S]*?</ul>', html)
+if not footer_med:
+    errors.append("Medical Entrance footer section not found!")
+else:
+    footer_neet_links = re.findall(r'href="([^"]+)"', footer_med.group(0))
+    print(f"Footer Medical Entrance links ({len(footer_neet_links)}): {footer_neet_links}")
+    if len(footer_neet_links) != len(set(footer_neet_links)):
+        errors.append(f"Medical Entrance footer links have duplicates: {footer_neet_links}")
+    expected_links = [
+        "/practice/?exam=neet",
+        "/practice/?exam=neet&subject=Physics",
+        "/practice/?exam=neet&subject=Chemistry",
+        "/practice/?exam=neet&subject=Botany",
+        "/practice/?exam=neet&subject=Zoology"
+    ]
+    if footer_neet_links != expected_links:
+        errors.append(f"Medical Entrance footer links {footer_neet_links} != {expected_links}")
 
 if '<li><a href="/practice/">Parallel Set Comparison</a></li>' in html:
     errors.append("Parallel Set Comparison still points to generic /practice/!")

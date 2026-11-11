@@ -62,7 +62,7 @@ export default async function handler(req, res) {
 
       return res.status(200).json({
         status: 'online',
-        service: 'Wovrix PYQ Report & Solution Sync Service',
+        service: 'Learnosha Report & Solution Sync Service',
         count: parsedReports.length,
         reports: parsedReports
       });

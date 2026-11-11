@@ -3,6 +3,28 @@
   "trailingSlash": true,
   "redirects": [
     {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "learnosha.in"
+        }
+      ],
+      "destination": "https://learnosha.in/$1",
+      "permanent": true
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.learnosha.in"
+        }
+      ],
+      "destination": "https://learnosha.in/$1",
+      "permanent": true
+    },
+    {
       "source": "/neetug",
       "destination": "/practice/?exam=neet",
       "permanent": true

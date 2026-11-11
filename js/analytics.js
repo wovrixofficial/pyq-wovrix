@@ -1,5 +1,5 @@
 /**
- * Wovrix PYQ Privacy-Friendly Telemetry & Analytics
+ * Learnosha Privacy-Friendly Telemetry & Analytics
  * Tracks chapter visits and study interactions with zero invasive cookies.
  */
 (function() {

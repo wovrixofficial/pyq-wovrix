@@ -1,5 +1,5 @@
 /**
- * Wovrix PYQ In-App Universal Question Reporting Modal
+ * Learnosha In-App Universal Question Reporting Modal
  * Saves student reports locally in localStorage and syncs to API queue.
  */
 (function() {
