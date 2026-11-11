@@ -37,7 +37,7 @@ REPLACEMENTS = [
 
 EXTENSIONS = {".html", ".js", ".css", ".json"}
 IGNORE_DIRS = {".git", "node_modules", ".gemini", "automation-suite", ".github"}
-IGNORE_FILES = {"jee_main_all.json", "jee_main_all.js", "questions_all.json", "questions_all.js", "solutions_cache.json", "package-lock.json"}
+IGNORE_FILES = {"jee_main_all.json", "jee_main_all.js", "questions_all.json", "questions_all.js", "solutions_cache.json", "package-lock.json", "vercel.json"}
 
 total_files_updated = 0
 total_replacements = 0

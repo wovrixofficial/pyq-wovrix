@@ -7,7 +7,7 @@
       "has": [
         {
           "type": "host",
-          "value": "learnosha.in"
+          "value": "pyq.wovrix.in"
         }
       ],
       "destination": "https://learnosha.in/$1",
