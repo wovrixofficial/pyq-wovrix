@@ -18,7 +18,7 @@
   <meta name="msvalidate.01" content="234D8A897888758C71737D1F7AA3D808">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <link rel="stylesheet" href="/style.css?v=20261111_5">
+  <link rel="stylesheet" href="/style.css?v=20261111_6">
 
   <!-- KaTeX -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
@@ -26,45 +26,44 @@
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
 
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "How many years of CBSE Class 12 past papers are included?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Learnosha includes 5 complete CBSE Class 12 board cycles (2022–2026) and 11 NEET UG national cycles (2016–2026), comprising over 10,200 past question appearances deduplicated into canonical NCERT-aligned questions."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How does the Repeat Radar identify recurring questions?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "The algorithm analyzes mathematical formula structures and conceptual keywords across 11 years of papers to highlight multi-year repeat questions."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How do the step-marking schemes work?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Our step-marking schemes follow CBSE's official marking pattern. Rather than offering bare final answers, solutions are broken down into discrete steps (formula statement, substitution, derivation/calculation, and final answer with proper units or concluding statement), showing exactly how evaluators allocate marks across 1M, 2M, 3M, 4M case-based, and 5M questions."
-        }
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How many years of CBSE Class 12, NEET UG, and JEE past papers are included?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Learnosha includes 5 complete CBSE Class 12 board cycles (10,279 Qs), 11 NEET UG national cycles (2,060 Qs), 8 years of JEE Main shifts (12,667 Qs), 11 years of JEE Advanced (1,174 Qs), and 15 years of BITSAT (2,278 Qs), completely free with zero login."
       }
-      },
-      {
-        "@type": "Question",
-        "name": "Do I need to create an account to bookmark questions?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "No, all bookmarks and study progress are saved locally in your browser memory with zero login requirements."
-        }
+    },
+    {
+      "@type": "Question",
+      "name": "How does the Repeat Radar identify recurring questions?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The algorithm analyzes mathematical formula structures and conceptual keywords across multi-year official papers to highlight recurring concepts and identical twin questions."
       }
-    ]
-  }
+    },
+    {
+      "@type": "Question",
+      "name": "How do the step-marking schemes work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our step-marking schemes follow official examination guidelines. Solutions are broken down into discrete steps (formula statement, substitution, derivation, and concluding statement), showing exactly how evaluators allocate marks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to create an account to bookmark questions or take mock tests?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No, all bookmarks, solved question states, and CBT test results are stored locally in your browser with zero login or sign-up required."
+      }
+    }
+  ]
+}
   </script>
 
 
@@ -112,7 +111,7 @@
 
   <!-- Mobile Slide-Out Drawer & Backdrop -->
   <div id="drawerBackdrop" class="drawer-backdrop" onclick="toggleMobileDrawer(false)"></div>
-  <aside id="mobileNavDrawer" class="mobile-drawer" style="position: fixed; top: 0; right: -420px; z-index: 9999;" aria-label="Navigation Drawer">
+  <aside id="mobileNavDrawer" class="mobile-drawer" style="position: fixed; top: 0; right: -420px; z-index: 9999; visibility: hidden; pointer-events: none;" aria-label="Navigation Drawer">
     <div class="drawer-header">
       <div class="brand">
         <span class="brand-name">LEARNOSHA</span>
@@ -120,12 +119,29 @@
       <button class="btn-drawer-close" onclick="toggleMobileDrawer(false)" aria-label="Close menu">✕</button>
     </div>
 
-    <div class="drawer-goal-box">
-      <div class="drawer-goal-title">Active Exam Goal</div>
-      <div class="drawer-goal-options">
-        <button class="drawer-goal-btn goal-toggle-pill active" data-goal="cbse" onclick="selectGoal('cbse')">🎯 CBSE 12</button>
-        <button class="drawer-goal-btn goal-toggle-pill" data-goal="neet" onclick="selectGoal('neet')">🩺 NEET UG</button>
-        <button class="drawer-goal-btn goal-toggle-pill" data-goal="jee" onclick="selectGoal('jee')">⚡ JEE Main</button>
+        <div class="drawer-goal-box">
+      <div class="drawer-goal-title">Select Active Track</div>
+      <div class="drawer-goal-grid">
+        <button class="drawer-goal-btn" onclick="setActiveGoal('cbse'); window.location.href='/practice/?exam=cbse'">
+          <span class="drawer-goal-icon">🎯</span>
+          <span>CBSE 12</span>
+        </button>
+        <button class="drawer-goal-btn" onclick="setActiveGoal('neet'); window.location.href='/practice/?exam=neet'">
+          <span class="drawer-goal-icon">🩺</span>
+          <span>NEET UG</span>
+        </button>
+        <button class="drawer-goal-btn" onclick="setActiveGoal('jee'); window.location.href='/practice/?exam=jee'">
+          <span class="drawer-goal-icon">⚡</span>
+          <span>JEE Main</span>
+        </button>
+        <button class="drawer-goal-btn" onclick="setActiveGoal('jee-adv'); window.location.href='/practice/?exam=jee-adv'">
+          <span class="drawer-goal-icon">🔥</span>
+          <span>JEE Adv</span>
+        </button>
+        <button class="drawer-goal-btn" onclick="setActiveGoal('bitsat'); window.location.href='/practice/?exam=bitsat'">
+          <span class="drawer-goal-icon">🎯</span>
+          <span>BITSAT</span>
+        </button>
       </div>
     </div>
 
@@ -644,9 +660,11 @@
         
         <!-- Interactive Exam Switcher Tabs -->
         <div class="exam-switcher-bar">
-          <button class="exam-tab-btn active" onclick="switchExamTab('cbse')">CBSE Class 12 PCM (37 Chapters)</button>
-          <button class="exam-tab-btn" onclick="switchExamTab('neet')">NEET UG 11-Year Master Archive (2016–2026)</button>
-          <button class="exam-tab-btn" onclick="switchExamTab('jee')">⚡ JEE Main 8-Year Archive (186 Shifts • 12,667 Qs)</button>
+          <button class="exam-tab-btn active" onclick="switchExamTab('cbse')">🎯 CBSE Class 12 (10,279 Qs)</button>
+          <button class="exam-tab-btn" onclick="switchExamTab('neet')">🩺 NEET UG (2,060 Qs)</button>
+          <button class="exam-tab-btn" onclick="switchExamTab('jee')">⚡ JEE Main (12,667 Qs)</button>
+          <button class="exam-tab-btn" onclick="switchExamTab('jee-adv')">🔥 JEE Advanced (1,174 Qs)</button>
+          <button class="exam-tab-btn" onclick="switchExamTab('bitsat')">🎯 BITSAT (2,278 Qs)</button>
         </div>
       </div>
 
@@ -1089,6 +1107,102 @@
 
         </div>
       </div>
+
+      <!-- JEE Advanced Directory View -->
+      <div id="jee-adv-section" class="exam-panel" style="display: none;">
+        <div style="background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-lg); padding:28px; margin-bottom:28px; box-shadow:var(--shadow-subtle);">
+          <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px; margin-bottom:20px;">
+            <div>
+              <span class="section-tag" style="background:rgba(239,68,68,0.1); color:#dc2626;">IIT JEE ADVANCED MASTER ARCHIVE (2016–2026)</span>
+              <h2 style="font-size:24px; font-weight:800; margin:6px 0; color:var(--text);">22 Official IIT Papers • 1,174 Verified Questions</h2>
+              <p style="color:var(--text-muted); font-size:14px; margin:0;">
+                Authentic Paper 1 & Paper 2 shifts with Multi-Correct MCQs (+4/-2), Single Correct (+3/-1), and Numerical Integers (+3/0).
+              </p>
+            </div>
+            <div style="display:flex; gap:10px; flex-wrap:wrap;">
+              <a href="/practice/?exam=jee-adv" class="btn-dark-pill" style="padding:10px 20px; font-size:13.5px; text-decoration:none;">
+                ⚡ Chapterwise Practice Hub ➔
+              </a>
+              <a href="/paper-maker/?exam=jee-adv" class="btn-outline-pill" style="padding:10px 18px; font-size:13.5px; text-decoration:none;">
+                📝 3-Hour CBT Simulator
+              </a>
+              <a href="/repeated/?exam=jee-adv" class="btn-outline-pill" style="padding:10px 18px; font-size:13.5px; text-decoration:none;">
+                🔥 Concept Twins Radar
+              </a>
+            </div>
+          </div>
+          <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:16px;">
+            <div style="background:var(--surface-alt); border:1px solid var(--border); border-radius:var(--radius-md); padding:18px;">
+              <h3 style="font-size:17px; margin-bottom:6px; color:var(--text);">⚛️ Physics (371 Qs)</h3>
+              <p style="font-size:13px; color:var(--text-muted); margin-bottom:12px;">Kinematics (69 Qs), Work Power (32 Qs), Optics (23 Qs), Rotation & SHM.</p>
+              <a href="/practice/?exam=jee-adv&subject=Physics" style="font-size:13px; font-weight:700; color:var(--accent); text-decoration:none;">Practice Physics ➔</a>
+            </div>
+            <div style="background:var(--surface-alt); border:1px solid var(--border); border-radius:var(--radius-md); padding:18px;">
+              <h3 style="font-size:17px; margin-bottom:6px; color:var(--text);">🧪 Chemistry (356 Qs)</h3>
+              <p style="font-size:13px; color:var(--text-muted); margin-bottom:12px;">Thermodynamics (16 Qs), Mole Concept (15 Qs), Equilibrium (15 Qs), GOC.</p>
+              <a href="/practice/?exam=jee-adv&subject=Chemistry" style="font-size:13px; font-weight:700; color:var(--accent); text-decoration:none;">Practice Chemistry ➔</a>
+            </div>
+            <div style="background:var(--surface-alt); border:1px solid var(--border); border-radius:var(--radius-md); padding:18px;">
+              <h3 style="font-size:17px; margin-bottom:6px; color:var(--text);">📐 Mathematics (447 Qs)</h3>
+              <p style="font-size:13px; color:var(--text-muted); margin-bottom:12px;">Trigonometry (61 Qs), Straight Lines (40 Qs), Probability (29 Qs), Matrices.</p>
+              <a href="/practice/?exam=jee-adv&subject=Mathematics" style="font-size:13px; font-weight:700; color:var(--accent); text-decoration:none;">Practice Mathematics ➔</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- BITSAT Directory View -->
+      <div id="bitsat-section" class="exam-panel" style="display: none;">
+        <div style="background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-lg); padding:28px; margin-bottom:28px; box-shadow:var(--shadow-subtle);">
+          <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px; margin-bottom:20px;">
+            <div>
+              <span class="section-tag" style="background:rgba(16,185,129,0.1); color:#059669;">BITSAT SPEED MASTER ARCHIVE (2011–2025)</span>
+              <h2 style="font-size:24px; font-weight:800; margin:6px 0; color:var(--text);">15 Master Papers • 2,278 Verified Questions</h2>
+              <p style="color:var(--text-muted); font-size:14px; margin:0;">
+                High-speed 130-question sprints across Physics, Chemistry, Mathematics, English Proficiency & Logical Reasoning with +3 / -1 scoring.
+              </p>
+            </div>
+            <div style="display:flex; gap:10px; flex-wrap:wrap;">
+              <a href="/practice/?exam=bitsat" class="btn-dark-pill" style="padding:10px 20px; font-size:13.5px; text-decoration:none;">
+                🎯 Chapterwise Practice Hub ➔
+              </a>
+              <a href="/paper-maker/?exam=bitsat" class="btn-outline-pill" style="padding:10px 18px; font-size:13.5px; text-decoration:none;">
+                ⏱️ 130-Question Speed Mock
+              </a>
+              <a href="/repeated/?exam=bitsat" class="btn-outline-pill" style="padding:10px 18px; font-size:13.5px; text-decoration:none;">
+                ⚡ 45-Sec Speed Radar
+              </a>
+            </div>
+          </div>
+          <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:16px;">
+            <div style="background:var(--surface-alt); border:1px solid var(--border); border-radius:var(--radius-md); padding:16px;">
+              <h3 style="font-size:16px; margin-bottom:6px; color:var(--text);">⚛️ Physics (629 Qs)</h3>
+              <p style="font-size:12.5px; color:var(--text-muted); margin-bottom:10px;">Kinematics (144 Qs), Work Power (42 Qs), Circuits (35 Qs).</p>
+              <a href="/practice/?exam=bitsat&subject=Physics" style="font-size:12.5px; font-weight:700; color:var(--accent); text-decoration:none;">Practice Physics ➔</a>
+            </div>
+            <div style="background:var(--surface-alt); border:1px solid var(--border); border-radius:var(--radius-md); padding:16px;">
+              <h3 style="font-size:16px; margin-bottom:6px; color:var(--text);">🧪 Chemistry (604 Qs)</h3>
+              <p style="font-size:12.5px; color:var(--text-muted); margin-bottom:10px;">Biomolecules (18 Qs), s-Block (15 Qs), Kinetics, Thermodynamics.</p>
+              <a href="/practice/?exam=bitsat&subject=Chemistry" style="font-size:12.5px; font-weight:700; color:var(--accent); text-decoration:none;">Practice Chemistry ➔</a>
+            </div>
+            <div style="background:var(--surface-alt); border:1px solid var(--border); border-radius:var(--radius-md); padding:16px;">
+              <h3 style="font-size:16px; margin-bottom:6px; color:var(--text);">📐 Mathematics (694 Qs)</h3>
+              <p style="font-size:12.5px; color:var(--text-muted); margin-bottom:10px;">Trigonometry (75 Qs), Coordinate Lines (28 Qs), Probability.</p>
+              <a href="/practice/?exam=bitsat&subject=Mathematics" style="font-size:12.5px; font-weight:700; color:var(--accent); text-decoration:none;">Practice Maths ➔</a>
+            </div>
+            <div style="background:var(--surface-alt); border:1px solid var(--border); border-radius:var(--radius-md); padding:16px;">
+              <h3 style="font-size:16px; margin-bottom:6px; color:var(--text);">📖 English (187 Qs)</h3>
+              <p style="font-size:12.5px; color:var(--text-muted); margin-bottom:10px;">Vocabulary, Syntax, Grammar, Reading Comprehension.</p>
+              <a href="/practice/?exam=bitsat&subject=English%20Proficiency" style="font-size:12.5px; font-weight:700; color:var(--accent); text-decoration:none;">Practice English ➔</a>
+            </div>
+            <div style="background:var(--surface-alt); border:1px solid var(--border); border-radius:var(--radius-md); padding:16px;">
+              <h3 style="font-size:16px; margin-bottom:6px; color:var(--text);">🧩 Logic (164 Qs)</h3>
+              <p style="font-size:12.5px; color:var(--text-muted); margin-bottom:10px;">Figure Matrices, Spatial Logic, Series Completion.</p>
+              <a href="/practice/?exam=bitsat&subject=Logical%20Reasoning" style="font-size:12.5px; font-weight:700; color:var(--accent); text-decoration:none;">Practice Logic ➔</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
@@ -1443,12 +1557,16 @@
     const cbsePanel = document.getElementById('cbse-section');
     const neetPanel = document.getElementById('neet-section');
     const jeePanel = document.getElementById('jee-section');
+    const jeeAdvPanel = document.getElementById('jee-adv-section');
+    const bitsatPanel = document.getElementById('bitsat-section');
     const buttons = document.querySelectorAll('.exam-tab-btn');
 
     buttons.forEach(b => b.classList.remove('active'));
     if (cbsePanel) cbsePanel.style.display = 'none';
     if (neetPanel) neetPanel.style.display = 'none';
     if (jeePanel) jeePanel.style.display = 'none';
+    if (jeeAdvPanel) jeeAdvPanel.style.display = 'none';
+    if (bitsatPanel) bitsatPanel.style.display = 'none';
 
     if (tab === 'cbse') {
       if (cbsePanel) cbsePanel.style.display = 'block';
@@ -1459,6 +1577,12 @@
     } else if (tab === 'jee') {
       if (jeePanel) jeePanel.style.display = 'block';
       if (buttons[2]) buttons[2].classList.add('active');
+    } else if (tab === 'jee-adv') {
+      if (jeeAdvPanel) jeeAdvPanel.style.display = 'block';
+      if (buttons[3]) buttons[3].classList.add('active');
+    } else if (tab === 'bitsat') {
+      if (bitsatPanel) bitsatPanel.style.display = 'block';
+      if (buttons[4]) buttons[4].classList.add('active');
     }
   }
 

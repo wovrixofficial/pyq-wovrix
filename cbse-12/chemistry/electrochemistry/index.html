@@ -13,7 +13,7 @@
   <title>CBSE Class 12 Chemistry Electrochemistry PYQs (2022–2026) | learnosha.in</title>
   <meta name="description" content="All CBSE Class 12 Chemistry previous year questions for Electrochemistry. 184 distinct questions across 224 board appearances. Free, no login.">
   <link rel="canonical" href="https://learnosha.in/cbse-12/chemistry/electrochemistry/">
-  <link rel="stylesheet" href="/style.css?v=20261111_5">
+  <link rel="stylesheet" href="/style.css?v=20261111_6">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body, {delimiters: [{left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}, {left: '\\(', right: '\\)', display: false}, {left: '\\[', right: '\\]', display: true}], throwOnError: false});"></script>
@@ -62,7 +62,7 @@
 
   <!-- Unified Slide-in Navigation Drawer (Both Desktop & Mobile) -->
   <div id="drawerBackdrop" class="drawer-backdrop" onclick="toggleMobileDrawer(false)"></div>
-  <aside id="mobileNavDrawer" class="mobile-drawer" style="position: fixed; top: 0; right: -420px; z-index: 9999;" aria-label="Navigation Drawer">
+  <aside id="mobileNavDrawer" class="mobile-drawer" style="position: fixed; top: 0; right: -420px; z-index: 9999; visibility: hidden; pointer-events: none;" aria-label="Navigation Drawer">
     <div class="drawer-header">
       <a href="/" class="brand">
         <svg class="brand-logo-icon" width="22" height="23" viewBox="8 6 48 51" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -76,7 +76,7 @@
       <button class="drawer-close" onclick="toggleMobileDrawer(false)" aria-label="Close Navigation Menu">✕</button>
     </div>
 
-    <div class="drawer-goal-box">
+        <div class="drawer-goal-box">
       <div class="drawer-goal-title">Select Active Track</div>
       <div class="drawer-goal-grid">
         <button class="drawer-goal-btn" onclick="setActiveGoal('cbse'); window.location.href='/practice/?exam=cbse'">
@@ -90,6 +90,14 @@
         <button class="drawer-goal-btn" onclick="setActiveGoal('jee'); window.location.href='/practice/?exam=jee'">
           <span class="drawer-goal-icon">⚡</span>
           <span>JEE Main</span>
+        </button>
+        <button class="drawer-goal-btn" onclick="setActiveGoal('jee-adv'); window.location.href='/practice/?exam=jee-adv'">
+          <span class="drawer-goal-icon">🔥</span>
+          <span>JEE Adv</span>
+        </button>
+        <button class="drawer-goal-btn" onclick="setActiveGoal('bitsat'); window.location.href='/practice/?exam=bitsat'">
+          <span class="drawer-goal-icon">🎯</span>
+          <span>BITSAT</span>
         </button>
       </div>
     </div>
@@ -1200,7 +1208,8 @@ How can we increase the emf of the cell using the same substances ?
                   </div>
                   <div class="question-text math-content">
                     33. (a) (i) Calculate $E_{	ext{cell}}^{0}$ for the following reaction which is at equilibrium :
-$	ext{Cu (s)} + 2	ext{Ag}^{+} 	ext{(aq)} ightleftharpoons 	ext{Cu}^{2+} 	ext{(aq)} + 2	ext{Ag (s)}$
+$	ext{Cu (s)} + 2	ext{Ag}^{+} 	ext{(aq)} 
+ightleftharpoons 	ext{Cu}^{2+} 	ext{(aq)} + 2	ext{Ag (s)}$
 Equilibrium constant ($K_c$) for the cell is $10^{15}$.
 [Given : $\log 10 = 1$]
 (ii) Write anode, cathode and overall reaction of lead storage battery wh ...
@@ -1296,7 +1305,8 @@ How can we increase the emf of the cell using the same substances ?
                   </div>
                   <div class="question-text math-content">
                     (a) (i) Calculate $E_{	ext{cell}}^{\circ}$ for the following reaction which is at equilibrium :
-$	ext{Cu (s)} + 2	ext{Ag}^+ 	ext{(aq)} ightleftharpoons 	ext{Cu}^{2+} 	ext{(aq)} + 2	ext{Ag (s)}$
+$	ext{Cu (s)} + 2	ext{Ag}^+ 	ext{(aq)} 
+ightleftharpoons 	ext{Cu}^{2+} 	ext{(aq)} + 2	ext{Ag (s)}$
 Equilibrium constant ($K_c$) for the cell is $10^{15}$.
 [Given : $\log 10 = 1$]
 
@@ -1483,8 +1493,10 @@ Equilibrium constant ($K_c$) for the cell is $10^{15}$.
                   <div class="question-text math-content">
                     Write the Nernst equation for the following:
 
-I. $	ext{Ni (s)} + 	ext{Cu}^{2+} 	ext{ (aq)} ightarrow 	ext{Ni}^{2+} 	ext{ (aq)} + 	ext{Cu (s)}$
-II. $	ext{Al (s)} + 	ext{FeSO}_4 	ext{ (aq)} ightarrow 	ext{Al}_2(	ext{SO}_4)_3 	ext{ (aq)} + 	ext{Fe (s)}$
+I. $	ext{Ni (s)} + 	ext{Cu}^{2+} 	ext{ (aq)} 
+ightarrow 	ext{Ni}^{2+} 	ext{ (aq)} + 	ext{Cu (s)}$
+II. $	ext{Al (s)} + 	ext{FeSO}_4 	ext{ (aq)} 
+ightarrow 	ext{Al}_2(	ext{SO}_4)_3 	ext{ (aq)} + 	ext{Fe (s)}$
 III. $	ext{Mg (s)}/	ext{Mg}^{2+} 	ext{ (aq)}//	ext{Ag}^+ 	ext{ (aq)}/	ext{Ag(s)}$
                   </div>
                   <div class="card-action">
@@ -3525,7 +3537,8 @@ Write the reduction half-reaction at cathode.
 (ii) How much electricity in terms of Faraday is required to produce $40 	ext{ g}$ of $	ext{Al}$ from molten $	ext{Al}_2	ext{O}_3$ ?
 (Given : atomic mass of $	ext{Al} = 27 	ext{ u}$)
 (iii) Calculate $\log 	ext{K}_c$ for the following reaction at $298 	ext{ K}$ :
-$	ext{Zn (s)} + 	ext{Cu}^{2+} 	ext{(aq)} ightleftharpoons 	ext{Zn}^{2+} 	ext{(aq)} + 	ext{Cu (s)}$
+$	ext{Zn (s)} + 	ext{Cu}^{2+} 	ext{(aq)} 
+ightleftharpoons 	ext{Zn}^{2+} 	ext{(aq)} + 	ext{Cu (s)}$
 Given : $	ext{E}^\circ_{	ext{Zn}^{2+} / 	ext{Zn}} = - 0.76 	ext{ V}$, $	ext{E}^\circ_{	ext{Cu}^{2+} / 	ext{Cu}} = + 0.34 	ext{ V}$
                   </div>
                   <div class="card-action">

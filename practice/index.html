@@ -15,7 +15,7 @@
   <link rel="canonical" href="https://learnosha.in/practice/">
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <link rel="stylesheet" href="/style.css?v=20261111_5">
+  <link rel="stylesheet" href="/style.css?v=20261111_6">
 
   <!-- KaTeX -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
@@ -890,7 +890,7 @@
 
   <!-- Mobile Slide-Out Drawer & Backdrop -->
   <div id="drawerBackdrop" class="drawer-backdrop" onclick="toggleMobileDrawer(false)"></div>
-  <aside id="mobileNavDrawer" class="mobile-drawer" style="position: fixed; top: 0; right: -420px; z-index: 9999;" aria-label="Navigation Drawer">
+  <aside id="mobileNavDrawer" class="mobile-drawer" style="position: fixed; top: 0; right: -420px; z-index: 9999; visibility: hidden; pointer-events: none;" aria-label="Navigation Drawer">
     <div class="drawer-header">
       <div class="brand">
         <span class="brand-name">LEARNOSHA</span>
@@ -898,12 +898,29 @@
       <button class="btn-drawer-close" onclick="toggleMobileDrawer(false)" aria-label="Close menu">✕</button>
     </div>
 
-    <div class="drawer-goal-box">
-      <div class="drawer-goal-title">Active Exam Goal</div>
-      <div class="drawer-goal-options">
-        <button class="drawer-goal-btn goal-toggle-pill active" data-goal="cbse" onclick="selectGoal('cbse')">🎯 CBSE 12</button>
-        <button class="drawer-goal-btn goal-toggle-pill" data-goal="neet" onclick="selectGoal('neet')">🩺 NEET UG</button>
-        <button class="drawer-goal-btn goal-toggle-pill" data-goal="jee" onclick="selectGoal('jee')">⚡ JEE Main</button>
+        <div class="drawer-goal-box">
+      <div class="drawer-goal-title">Select Active Track</div>
+      <div class="drawer-goal-grid">
+        <button class="drawer-goal-btn" onclick="setActiveGoal('cbse'); window.location.href='/practice/?exam=cbse'">
+          <span class="drawer-goal-icon">🎯</span>
+          <span>CBSE 12</span>
+        </button>
+        <button class="drawer-goal-btn" onclick="setActiveGoal('neet'); window.location.href='/practice/?exam=neet'">
+          <span class="drawer-goal-icon">🩺</span>
+          <span>NEET UG</span>
+        </button>
+        <button class="drawer-goal-btn" onclick="setActiveGoal('jee'); window.location.href='/practice/?exam=jee'">
+          <span class="drawer-goal-icon">⚡</span>
+          <span>JEE Main</span>
+        </button>
+        <button class="drawer-goal-btn" onclick="setActiveGoal('jee-adv'); window.location.href='/practice/?exam=jee-adv'">
+          <span class="drawer-goal-icon">🔥</span>
+          <span>JEE Adv</span>
+        </button>
+        <button class="drawer-goal-btn" onclick="setActiveGoal('bitsat'); window.location.href='/practice/?exam=bitsat'">
+          <span class="drawer-goal-icon">🎯</span>
+          <span>BITSAT</span>
+        </button>
       </div>
     </div>
 
@@ -1028,6 +1045,44 @@
           </div>
           <button class="btn-select-track">
             <span>Select JEE Engineering Track</span>
+            <span>➔</span>
+          </button>
+        </div>
+
+        <!-- JEE Advanced Card -->
+        <div class="exam-track-card" onclick="selectExamTrack('jee-adv')">
+          <div class="exam-track-icon">🔥</div>
+          <h2 class="exam-track-title">JEE Advanced (IIT Entrance)</h2>
+          <p class="exam-track-desc">
+            1,174 authentic IIT past examination questions (2016–2026) across 22 official Paper 1 & Paper 2 shifts with multi-correct MCQs, numerical integers, and concept twins.
+          </p>
+          <div class="exam-track-pills">
+            <span class="exam-pill-item">Physics (371 Qs)</span>
+            <span class="exam-pill-item">Chemistry (356 Qs)</span>
+            <span class="exam-pill-item">Mathematics (447 Qs)</span>
+            <span class="exam-pill-item">22 Papers (11 Years)</span>
+          </div>
+          <button class="btn-select-track">
+            <span>Select JEE Advanced Track</span>
+            <span>➔</span>
+          </button>
+        </div>
+
+        <!-- BITSAT Card -->
+        <div class="exam-track-card" onclick="selectExamTrack('bitsat')">
+          <div class="exam-track-icon">🎯</div>
+          <h2 class="exam-track-title">BITSAT (Birla Institute Speed Entrance)</h2>
+          <p class="exam-track-desc">
+            2,278 verified past examination questions (2011–2025) across 15 master papers with speed calculation MCQs, English proficiency, and logical reasoning drills.
+          </p>
+          <div class="exam-track-pills">
+            <span class="exam-pill-item">Physics (629 Qs)</span>
+            <span class="exam-pill-item">Chemistry (604 Qs)</span>
+            <span class="exam-pill-item">Mathematics (694 Qs)</span>
+            <span class="exam-pill-item">English & Logic (351 Qs)</span>
+          </div>
+          <button class="btn-select-track">
+            <span>Select BITSAT Speed Track</span>
             <span>➔</span>
           </button>
         </div>
@@ -1375,7 +1430,90 @@
     };
 
 
-    // State Variables
+    
+    const CHAPTERS_JEE_ADV = {
+      Physics: [
+        { name: "Kinematics & 1D/2D Motion", count: "69 Qs", highYield: true },
+        { name: "Work, Power & Energy", count: "32 Qs", highYield: true },
+        { name: "Ray Optics & Optical Instruments", count: "23 Qs", highYield: true },
+        { name: "Oscillations & SHM", count: "22 Qs", highYield: true },
+        { name: "Rotational Dynamics & Rigid Body", count: "21 Qs", highYield: true },
+        { name: "Electrostatics & Electric Potential", count: "20 Qs", highYield: true },
+        { name: "Capacitance & Dielectrics", count: "16 Qs", highYield: true },
+        { name: "Thermodynamics & KTG", count: "10 Qs", highYield: false },
+        { name: "Newton's Laws & Friction", count: "10 Qs", highYield: false },
+        { name: "General Physics", count: "90 Qs", highYield: true }
+      ],
+      Chemistry: [
+        { name: "Chemical Thermodynamics & Thermochemistry", count: "16 Qs", highYield: true },
+        { name: "Mole Concept & Stoichiometry", count: "15 Qs", highYield: true },
+        { name: "Chemical & Ionic Equilibrium", count: "15 Qs", highYield: true },
+        { name: "General Organic Chemistry (GOC)", count: "14 Qs", highYield: true },
+        { name: "Biomolecules & Polymers", count: "13 Qs", highYield: false },
+        { name: "Redox Reactions", count: "13 Qs", highYield: false },
+        { name: "Chemical Kinetics", count: "12 Qs", highYield: false },
+        { name: "Qualitative / Salt Analysis", count: "12 Qs", highYield: false },
+        { name: "General Chemistry", count: "160 Qs", highYield: true }
+      ],
+      Mathematics: [
+        { name: "Trigonometry & Trigonometric Equations", count: "61 Qs", highYield: true },
+        { name: "Straight Lines & Circles", count: "40 Qs", highYield: true },
+        { name: "Probability & Bayes Theorem", count: "29 Qs", highYield: true },
+        { name: "Matrices and Determinants", count: "27 Qs", highYield: true },
+        { name: "Limits, Continuity & Differentiability", count: "26 Qs", highYield: true },
+        { name: "Application of Derivatives (AOD)", count: "23 Qs", highYield: true },
+        { name: "Conic Sections: Parabola, Ellipse, Hyperbola", count: "20 Qs", highYield: true },
+        { name: "Three Dimensional Geometry (3D)", count: "18 Qs", highYield: true },
+        { name: "General Mathematics", count: "153 Qs", highYield: true }
+      ]
+    };
+
+    const CHAPTERS_BITSAT = {
+      Physics: [
+        { name: "Kinematics & 1D/2D Motion", count: "144 Qs", highYield: true },
+        { name: "Work, Power & Energy", count: "42 Qs", highYield: true },
+        { name: "Current Electricity & Circuits", count: "35 Qs", highYield: true },
+        { name: "Magnetic Field & Moving Charges", count: "23 Qs", highYield: true },
+        { name: "Electrostatics & Electric Potential", count: "22 Qs", highYield: true },
+        { name: "Newton's Laws & Friction", count: "19 Qs", highYield: false },
+        { name: "Oscillations & SHM", count: "18 Qs", highYield: false },
+        { name: "Ray Optics & Optical Instruments", count: "16 Qs", highYield: false },
+        { name: "General Physics", count: "209 Qs", highYield: true }
+      ],
+      Chemistry: [
+        { name: "Biomolecules & Polymers", count: "18 Qs", highYield: true },
+        { name: "Hydrogen & s-Block Elements", count: "15 Qs", highYield: true },
+        { name: "p-Block Elements", count: "14 Qs", highYield: true },
+        { name: "Chemical Thermodynamics", count: "12 Qs", highYield: false },
+        { name: "Chemical Kinetics", count: "11 Qs", highYield: false },
+        { name: "General Organic Chemistry (GOC)", count: "10 Qs", highYield: false },
+        { name: "General Chemistry", count: "434 Qs", highYield: true }
+      ],
+      Mathematics: [
+        { name: "Trigonometric Functions & Equations", count: "75 Qs", highYield: true },
+        { name: "Straight Lines & Circles", count: "28 Qs", highYield: true },
+        { name: "Probability & Bayes Theorem", count: "27 Qs", highYield: true },
+        { name: "Statistics & Linear Programming", count: "19 Qs", highYield: false },
+        { name: "Binomial Theorem & Sequences", count: "17 Qs", highYield: false },
+        { name: "Conic Sections: Parabola, Ellipse, Hyperbola", count: "16 Qs", highYield: false },
+        { name: "Matrices and Determinants", count: "14 Qs", highYield: false },
+        { name: "General Mathematics", count: "430 Qs", highYield: true }
+      ],
+      "English Proficiency": [
+        { name: "General English Proficiency", count: "177 Qs", highYield: true },
+        { name: "Reading Comprehension & Passages", count: "3 Qs", highYield: false },
+        { name: "Vocabulary: One Word Substitution", count: "2 Qs", highYield: false },
+        { name: "Grammar: Subject-Verb & Syntax", count: "2 Qs", highYield: false }
+      ],
+      "Logical Reasoning": [
+        { name: "General Logical Reasoning", count: "94 Qs", highYield: true },
+        { name: "Figure Patterns & Spatial Reasoning", count: "27 Qs", highYield: true },
+        { name: "Series Completion: Number & Letter", count: "23 Qs", highYield: true },
+        { name: "Blood Relations & Family Tree", count: "8 Qs", highYield: false }
+      ]
+    };
+
+// State Variables
     let currentStep = 'exam'; // 'exam' | 'subject' | 'chapter' | 'stream'
     let currentExam = 'cbse';
     let currentSubject = 'Physics';
@@ -1426,7 +1564,7 @@
       const urlCh = p.get('chapter');
       const urlQ = p.get('q');
 
-      if (urlExam && (urlExam === 'cbse' || urlExam === 'neet' || urlExam === 'jee')) {
+      if (urlExam && (urlExam === 'cbse' || urlExam === 'neet' || urlExam === 'jee' || urlExam === 'jee-adv' || urlExam === 'bitsat')) {
         currentExam = urlExam;
         setActiveGoal(urlExam);
       } else {
@@ -1558,6 +1696,20 @@
           { name: 'Botany', icon: '🌿', count: '520 Qs', desc: 'Genetics, Cell Biology, Plant Physiology & Ecology.' },
           { name: 'Zoology', icon: '🐾', count: '500 Qs', desc: 'Human Physiology, Reproduction, Evolution & Health.' }
         ];
+      } else if (currentExam === 'jee-adv') {
+        subjects = [
+          { name: 'Physics', icon: '⚛️', count: '371 Qs', desc: 'Multi-correct Mechanics, Rotation, Wave Optics & Electrodynamics.' },
+          { name: 'Chemistry', icon: '🧪', count: '356 Qs', desc: 'Thermodynamics, Coordination Compounds, GOC & Salt Analysis.' },
+          { name: 'Mathematics', icon: '📐', count: '447 Qs', desc: 'Calculus, Complex Numbers, 3D Geometry & Bayes Probability.' }
+        ];
+      } else if (currentExam === 'bitsat') {
+        subjects = [
+          { name: 'Physics', icon: '⚛️', count: '629 Qs', desc: 'Speed Mechanics, Current Electricity, Optics & Modern Physics.' },
+          { name: 'Chemistry', icon: '🧪', count: '604 Qs', desc: 'Speed Physical, Inorganic, Biomolecules & GOC.' },
+          { name: 'Mathematics', icon: '📐', count: '694 Qs', desc: 'Trigonometry, Coordinate Geometry, Matrices & Probability.' },
+          { name: 'English Proficiency', icon: '📖', count: '187 Qs', desc: 'Grammar, Reading Comprehension & Vocabulary Drills.' },
+          { name: 'Logical Reasoning', icon: '🧩', count: '164 Qs', desc: 'Series Completion, Figure Patterns & Spatial Logic.' }
+        ];
       } else {
         subjects = [
           { name: 'Physics', icon: '⚛️', count: '5,398 Qs', desc: 'Kinematics, Mechanics, Electrodynamics, Optics, AC & Modern Physics.' },
@@ -1612,7 +1764,12 @@
 
       const isCbse = currentExam === 'cbse';
       const isNeet = currentExam === 'neet';
-      const list = isCbse ? CHAPTERS_CBSE[currentSubject] : (isNeet ? CHAPTERS_NEET[currentSubject] : CHAPTERS_JEE[currentSubject]);
+      let list = [];
+      if (currentExam === 'cbse') list = CHAPTERS_CBSE[currentSubject];
+      else if (currentExam === 'neet') list = CHAPTERS_NEET[currentSubject];
+      else if (currentExam === 'jee-adv') list = CHAPTERS_JEE_ADV[currentSubject] || [];
+      else if (currentExam === 'bitsat') list = CHAPTERS_BITSAT[currentSubject] || [];
+      else list = CHAPTERS_JEE[currentSubject];
       const container = document.getElementById('chapterCardsContainer');
       const search = (document.getElementById('chapterSearchInput').value || '').toLowerCase().trim();
 
@@ -1682,7 +1839,14 @@
     // 5. STAGE 4: FOCUSED PRACTICE STREAM
     // ---------------------------------------------------------
     async function renderStreamScreen() {
-      document.getElementById('streamExamPill').innerText = currentExam === 'cbse' ? 'CBSE Class 12' : (currentExam === 'neet' ? 'NEET UG' : 'JEE MAIN');
+      const pillMap = {
+        'cbse': 'CBSE Class 12',
+        'neet': 'NEET UG',
+        'jee': 'JEE MAIN',
+        'jee-adv': 'JEE ADVANCED',
+        'bitsat': 'BITSAT'
+      };
+      document.getElementById('streamExamPill').innerText = pillMap[currentExam] || 'LEARNOSHA';
       document.getElementById('streamChapterHeading').innerText = `${currentSubject} · ${currentChapterName}`;
 
       renderSectionPills();
@@ -1754,6 +1918,17 @@
           <button class="filter-mini-btn" onclick="setStreamMarksFilter(4, this)">4M Case</button>
           <button class="filter-mini-btn" onclick="setStreamMarksFilter(5, this)">5M Long</button>
         `;
+      } else if (currentExam === 'jee-adv') {
+        grp.innerHTML = `
+          <button class="filter-mini-btn active" onclick="setStreamSection('all', this)">All Question Types</button>
+          <button class="filter-mini-btn" onclick="setStreamSection('Single-Correct MCQ', this)">Single Correct (+3/-1)</button>
+          <button class="filter-mini-btn" onclick="setStreamSection('Multi-Correct MCQ', this)">Multi-Correct (+4/-2)</button>
+          <button class="filter-mini-btn" onclick="setStreamSection('Numerical', this)">Numerical (+3/0)</button>
+        `;
+      } else if (currentExam === 'bitsat') {
+        grp.innerHTML = `
+          <button class="filter-mini-btn active" onclick="setStreamSection('all', this)">All Speed MCQs (+3/-1)</button>
+        `;
       } else if (currentExam === 'jee') {
         grp.innerHTML = `
           <button class="filter-mini-btn active" onclick="setStreamSection('all', this)">All Question Types</button>
@@ -1807,6 +1982,11 @@ function setStreamSection(sec, btn) {
         url = `/data/cbse_${currentSubject.toLowerCase()}.json${cacheBust}`;
       } else if (currentExam === 'neet') {
         url = `/data/neet_all.json${cacheBust}`;
+      } else if (currentExam === 'jee-adv') {
+        url = `/data/jee_adv_${currentSubject.toLowerCase()}.json${cacheBust}`;
+      } else if (currentExam === 'bitsat') {
+        const subKey = currentSubject.toLowerCase().replace(/ /g, '_');
+        url = `/data/bitsat_${subKey}.json${cacheBust}`;
       } else {
         url = `/data/jee_${currentSubject.toLowerCase()}.json${cacheBust}`;
       }
@@ -2078,6 +2258,14 @@ function setStreamSection(sec, btn) {
     // 6. SOLUTIONS & MARKS
     // ---------------------------------------------------------
     function getMarksDisplay(q) {
+      if (currentExam === 'jee-adv') {
+        if (q.type === 'Multi-Correct MCQ') return 'Multi-Correct (+4 / -2)';
+        if (q.type === 'Numerical') return 'NVQ (+3 / 0)';
+        return 'Single (+3 / -1)';
+      }
+      if (currentExam === 'bitsat') {
+        return 'Speed (+3 / -1)';
+      }
       if (currentExam === 'jee') {
         return q.type === 'Numerical' ? 'NVQ (+4 / -1)' : 'MCQ (+4 / -1)';
       }

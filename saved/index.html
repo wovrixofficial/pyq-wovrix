@@ -14,7 +14,7 @@
   <meta name="description" content="Personal study dashboard with custom folders, personal formula notes, solved question tracking, and mock test scores. 100% private in browser storage.">
   <link rel="canonical" href="https://learnosha.in/saved/">
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
-  <link rel="stylesheet" href="/style.css?v=20261111_5">
+  <link rel="stylesheet" href="/style.css?v=20261111_6">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
@@ -322,7 +322,7 @@
 
   <!-- Mobile Slide-Out Drawer & Backdrop -->
   <div id="drawerBackdrop" class="drawer-backdrop" onclick="toggleMobileDrawer(false)"></div>
-  <aside id="mobileNavDrawer" class="mobile-drawer" style="position: fixed; top: 0; right: -420px; z-index: 9999;" aria-label="Navigation Drawer">
+  <aside id="mobileNavDrawer" class="mobile-drawer" style="position: fixed; top: 0; right: -420px; z-index: 9999; visibility: hidden; pointer-events: none;" aria-label="Navigation Drawer">
     <div class="drawer-header">
       <div class="brand">
         <span class="brand-name">LEARNOSHA</span>
@@ -330,11 +330,29 @@
       <button class="btn-drawer-close" onclick="toggleMobileDrawer(false)" aria-label="Close menu">✕</button>
     </div>
 
-    <div class="drawer-goal-box">
-      <div class="drawer-goal-title">Active Exam Goal</div>
-      <div class="drawer-goal-options">
-        <button class="drawer-goal-btn goal-toggle-pill active" data-goal="cbse" onclick="selectGoal('cbse')">🎯 CBSE 12</button>
-        <button class="drawer-goal-btn goal-toggle-pill" data-goal="neet" onclick="selectGoal('neet')">🩺 NEET UG</button>
+        <div class="drawer-goal-box">
+      <div class="drawer-goal-title">Select Active Track</div>
+      <div class="drawer-goal-grid">
+        <button class="drawer-goal-btn" onclick="setActiveGoal('cbse'); window.location.href='/practice/?exam=cbse'">
+          <span class="drawer-goal-icon">🎯</span>
+          <span>CBSE 12</span>
+        </button>
+        <button class="drawer-goal-btn" onclick="setActiveGoal('neet'); window.location.href='/practice/?exam=neet'">
+          <span class="drawer-goal-icon">🩺</span>
+          <span>NEET UG</span>
+        </button>
+        <button class="drawer-goal-btn" onclick="setActiveGoal('jee'); window.location.href='/practice/?exam=jee'">
+          <span class="drawer-goal-icon">⚡</span>
+          <span>JEE Main</span>
+        </button>
+        <button class="drawer-goal-btn" onclick="setActiveGoal('jee-adv'); window.location.href='/practice/?exam=jee-adv'">
+          <span class="drawer-goal-icon">🔥</span>
+          <span>JEE Adv</span>
+        </button>
+        <button class="drawer-goal-btn" onclick="setActiveGoal('bitsat'); window.location.href='/practice/?exam=bitsat'">
+          <span class="drawer-goal-icon">🎯</span>
+          <span>BITSAT</span>
+        </button>
       </div>
     </div>
 
@@ -465,6 +483,8 @@
       <!-- Exam Track Switcher for Mastery -->
       <div style="display:flex; gap:8px; margin-bottom:20px; flex-wrap:wrap;">
         <button class="filter-mini-btn active" id="btnMasteryJee" onclick="setMasteryTrack('jee', this)" style="padding:7px 14px; font-weight:700;">⚡ JEE Main (12,667 Qs)</button>
+        <button class="filter-mini-btn" id="btnMasteryJeeAdv" onclick="setMasteryTrack('jee-adv', this)" style="padding:7px 14px; font-weight:700;">🔥 JEE Advanced (1,174 Qs)</button>
+        <button class="filter-mini-btn" id="btnMasteryBitsat" onclick="setMasteryTrack('bitsat', this)" style="padding:7px 14px; font-weight:700;">🎯 BITSAT (2,278 Qs)</button>
         <button class="filter-mini-btn" id="btnMasteryCbse" onclick="setMasteryTrack('cbse', this)" style="padding:7px 14px; font-weight:700;">🎯 CBSE Class 12 (10,279 Qs)</button>
         <button class="filter-mini-btn" id="btnMasteryNeet" onclick="setMasteryTrack('neet', this)" style="padding:7px 14px; font-weight:700;">🩺 NEET UG (2,060 Qs)</button>
       </div>
@@ -594,6 +614,24 @@
           { name: 'Physics', icon: '⚛️', total: 5398, exam: 'jee' },
           { name: 'Chemistry', icon: '🧪', total: 3727, exam: 'jee' },
           { name: 'Mathematics', icon: '📐', total: 3542, exam: 'jee' }
+        ]
+      },
+      'jee-adv': {
+        total: 1174,
+        subjects: [
+          { name: 'Physics', icon: '⚛️', total: 371, exam: 'jee-adv' },
+          { name: 'Chemistry', icon: '🧪', total: 356, exam: 'jee-adv' },
+          { name: 'Mathematics', icon: '📐', total: 447, exam: 'jee-adv' }
+        ]
+      },
+      bitsat: {
+        total: 2278,
+        subjects: [
+          { name: 'Physics', icon: '⚛️', total: 629, exam: 'bitsat' },
+          { name: 'Chemistry', icon: '🧪', total: 604, exam: 'bitsat' },
+          { name: 'Mathematics', icon: '📐', total: 694, exam: 'bitsat' },
+          { name: 'English Proficiency', icon: '📖', total: 187, exam: 'bitsat' },
+          { name: 'Logical Reasoning', icon: '🧩', total: 164, exam: 'bitsat' }
         ]
       },
       cbse: {

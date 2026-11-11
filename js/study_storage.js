@@ -57,7 +57,8 @@ function updateThemeToggleUI(theme) {
 function getActiveGoal() {
   const urlParams = new URLSearchParams(window.location.search);
   const urlExam = urlParams.get('exam');
-  if (urlExam && (urlExam.toLowerCase() === 'cbse' || urlExam.toLowerCase() === 'neet' || urlExam.toLowerCase() === 'jee')) {
+  const valid = ['cbse', 'neet', 'jee', 'jee-adv', 'bitsat'];
+  if (urlExam && valid.includes(urlExam.toLowerCase())) {
     localStorage.setItem(STORAGE_KEYS.ACTIVE_GOAL, urlExam.toLowerCase());
     return urlExam.toLowerCase();
   }
@@ -65,7 +66,8 @@ function getActiveGoal() {
 }
 
 function setActiveGoal(goal) {
-  if (goal !== 'cbse' && goal !== 'neet' && goal !== 'jee') return;
+  const valid = ['cbse', 'neet', 'jee', 'jee-adv', 'bitsat'];
+  if (!valid.includes(goal)) return;
   localStorage.setItem(STORAGE_KEYS.ACTIVE_GOAL, goal);
   updateGoalSwitcherUI(goal);
   window.dispatchEvent(new CustomEvent('wovrix:goalChange', { detail: { goal } }));
@@ -74,7 +76,11 @@ function setActiveGoal(goal) {
 function updateGoalSwitcherUI(goal) {
   const labels = document.querySelectorAll('.active-goal-label');
   labels.forEach(el => {
-    el.innerHTML = goal === 'jee' ? '⚡ JEE Main' : (goal === 'neet' ? '🩺 NEET UG' : '🎯 CBSE Class 12');
+    if (goal === 'jee-adv') el.innerHTML = '🔥 JEE Advanced';
+    else if (goal === 'bitsat') el.innerHTML = '🎯 BITSAT';
+    else if (goal === 'jee') el.innerHTML = '⚡ JEE Main';
+    else if (goal === 'neet') el.innerHTML = '🩺 NEET UG';
+    else el.innerHTML = '🎯 CBSE Class 12';
   });
   const pills = document.querySelectorAll('.goal-toggle-pill');
   pills.forEach(p => {
@@ -291,6 +297,8 @@ function toggleMobileDrawer(forceOpen) {
 
   drawer.classList.toggle('open', shouldOpen);
   drawer.style.right = shouldOpen ? '0' : '-420px';
+  drawer.style.visibility = shouldOpen ? 'visible' : 'hidden';
+  drawer.style.pointerEvents = shouldOpen ? 'auto' : 'none';
   if (backdrop) {
     backdrop.classList.toggle('active', shouldOpen);
     backdrop.style.display = shouldOpen ? 'block' : 'none';

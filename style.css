@@ -31,6 +31,11 @@
   box-sizing: border-box;
 }
 
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
 body {
   background-color: var(--bg);
   color: var(--text);
@@ -1247,7 +1252,12 @@ a {
   --shadow-elevated: 0 12px 24px -4px rgba(0, 0, 0, 0.6);
 }
 
-[data-theme="dark"] body {
+[data-theme="dark"] html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+body {
   background-color: var(--bg);
   color: var(--text);
 }
@@ -2318,7 +2328,6 @@ a {
 }
 
 .mobile-nav-drawer,
-.mobile-nav-drawer,
 .mobile-drawer,
 #mobileNavDrawer {
   position: fixed !important;
@@ -2331,16 +2340,20 @@ a {
   z-index: 9999;
   display: flex;
   flex-direction: column;
-  transition: right 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: right 0.28s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.28s ease;
   box-shadow: -10px 0 35px rgba(0,0,0,0.3);
   padding: 24px;
   overflow-y: auto;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .mobile-nav-drawer.open,
 .mobile-drawer.open,
 #mobileNavDrawer.open {
   right: 0 !important;
+  visibility: visible !important;
+  pointer-events: auto !important;
 }
 
 .drawer-header {

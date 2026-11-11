@@ -13,7 +13,7 @@
   <title>Privacy Policy | Learnosha</title>
   <meta name="description" content="Privacy Policy for Learnosha. Learn how we prioritize student privacy with 100% client-side study data and zero personal tracking.">
   <link rel="canonical" href="https://learnosha.in/privacy/">
-  <link rel="stylesheet" href="/style.css?v=20261111_5">
+  <link rel="stylesheet" href="/style.css?v=20261111_6">
   <style>
     .page-hero {
       max-width: 900px;
@@ -95,7 +95,7 @@
 
   <!-- Unified Slide-in Navigation Drawer (Both Desktop & Mobile) -->
   <div id="drawerBackdrop" class="drawer-backdrop" onclick="toggleMobileDrawer(false)"></div>
-  <aside id="mobileNavDrawer" class="mobile-drawer" style="position: fixed; top: 0; right: -420px; z-index: 9999;" aria-label="Navigation Drawer">
+  <aside id="mobileNavDrawer" class="mobile-drawer" style="position: fixed; top: 0; right: -420px; z-index: 9999; visibility: hidden; pointer-events: none;" aria-label="Navigation Drawer">
     <div class="drawer-header">
       <a href="/" class="brand">
         <svg class="brand-logo-icon" width="22" height="23" viewBox="8 6 48 51" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -109,7 +109,7 @@
       <button class="drawer-close" onclick="toggleMobileDrawer(false)" aria-label="Close Navigation Menu">✕</button>
     </div>
 
-    <div class="drawer-goal-box">
+        <div class="drawer-goal-box">
       <div class="drawer-goal-title">Select Active Track</div>
       <div class="drawer-goal-grid">
         <button class="drawer-goal-btn" onclick="setActiveGoal('cbse'); window.location.href='/practice/?exam=cbse'">
@@ -123,6 +123,14 @@
         <button class="drawer-goal-btn" onclick="setActiveGoal('jee'); window.location.href='/practice/?exam=jee'">
           <span class="drawer-goal-icon">⚡</span>
           <span>JEE Main</span>
+        </button>
+        <button class="drawer-goal-btn" onclick="setActiveGoal('jee-adv'); window.location.href='/practice/?exam=jee-adv'">
+          <span class="drawer-goal-icon">🔥</span>
+          <span>JEE Adv</span>
+        </button>
+        <button class="drawer-goal-btn" onclick="setActiveGoal('bitsat'); window.location.href='/practice/?exam=bitsat'">
+          <span class="drawer-goal-icon">🎯</span>
+          <span>BITSAT</span>
         </button>
       </div>
     </div>

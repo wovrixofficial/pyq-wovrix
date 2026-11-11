@@ -14,7 +14,7 @@
   <meta name="description" content="Proprietary repetition frequency radar for CBSE Class 12, NEET UG, and JEE Main. Step-by-step exploration of multi-year recurring concepts, frequency filters, and identical twin exam questions.">
   <link rel="canonical" href="https://learnosha.in/repeated/">
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
-  <link rel="stylesheet" href="/style.css?v=20261111_5">
+  <link rel="stylesheet" href="/style.css?v=20261111_6">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
@@ -507,7 +507,7 @@
 
   <!-- Mobile Slide-Out Drawer & Backdrop -->
   <div id="drawerBackdrop" class="drawer-backdrop" onclick="toggleMobileDrawer(false)"></div>
-  <aside id="mobileNavDrawer" class="mobile-drawer" style="position: fixed; top: 0; right: -420px; z-index: 9999;" aria-label="Navigation Drawer">
+  <aside id="mobileNavDrawer" class="mobile-drawer" style="position: fixed; top: 0; right: -420px; z-index: 9999; visibility: hidden; pointer-events: none;" aria-label="Navigation Drawer">
     <div class="drawer-header">
       <div class="brand">
         <span class="brand-name">LEARNOSHA</span>
@@ -515,12 +515,29 @@
       <button class="btn-drawer-close" onclick="toggleMobileDrawer(false)" aria-label="Close menu">✕</button>
     </div>
 
-    <div class="drawer-goal-box">
-      <div class="drawer-goal-title">Active Exam Goal</div>
-      <div class="drawer-goal-options">
-        <button class="drawer-goal-btn goal-toggle-pill active" data-goal="cbse" onclick="selectGoal('cbse')">🎯 CBSE 12</button>
-        <button class="drawer-goal-btn goal-toggle-pill" data-goal="neet" onclick="selectGoal('neet')">🩺 NEET UG</button>
-        <button class="drawer-goal-btn goal-toggle-pill" data-goal="jee" onclick="selectGoal('jee')">⚡ JEE Main</button>
+        <div class="drawer-goal-box">
+      <div class="drawer-goal-title">Select Active Track</div>
+      <div class="drawer-goal-grid">
+        <button class="drawer-goal-btn" onclick="setActiveGoal('cbse'); window.location.href='/practice/?exam=cbse'">
+          <span class="drawer-goal-icon">🎯</span>
+          <span>CBSE 12</span>
+        </button>
+        <button class="drawer-goal-btn" onclick="setActiveGoal('neet'); window.location.href='/practice/?exam=neet'">
+          <span class="drawer-goal-icon">🩺</span>
+          <span>NEET UG</span>
+        </button>
+        <button class="drawer-goal-btn" onclick="setActiveGoal('jee'); window.location.href='/practice/?exam=jee'">
+          <span class="drawer-goal-icon">⚡</span>
+          <span>JEE Main</span>
+        </button>
+        <button class="drawer-goal-btn" onclick="setActiveGoal('jee-adv'); window.location.href='/practice/?exam=jee-adv'">
+          <span class="drawer-goal-icon">🔥</span>
+          <span>JEE Adv</span>
+        </button>
+        <button class="drawer-goal-btn" onclick="setActiveGoal('bitsat'); window.location.href='/practice/?exam=bitsat'">
+          <span class="drawer-goal-icon">🎯</span>
+          <span>BITSAT</span>
+        </button>
       </div>
     </div>
 
@@ -639,6 +656,42 @@
           </div>
           <button class="btn-select-track">
             <span>Explore JEE Main Repeats</span>
+            <span>➔</span>
+          </button>
+        </div>
+
+        <!-- JEE Advanced Recurrence Radar Card -->
+        <div class="exam-track-card" onclick="selectExamTrack('jee-adv')">
+          <div class="exam-track-icon">🔥</div>
+          <h2 class="exam-track-title">JEE Advanced 11-Year Concept Twins (2016–2026)</h2>
+          <p class="exam-track-desc">
+            Authentic IIT examination recurrence patterns analyzed across 22 official papers: pure rolling dynamics, multi-step thermodynamics cycles, and AOD extrema.
+          </p>
+          <div class="exam-track-pills">
+            <span class="exam-pill-item">Physics (Pure Rolling 128x)</span>
+            <span class="exam-pill-item">Maths (AOD Extrema 142x)</span>
+            <span class="exam-pill-item">Chemistry (Thermodynamics 115x)</span>
+          </div>
+          <button class="btn-select-track">
+            <span>Explore JEE Advanced Repeats</span>
+            <span>➔</span>
+          </button>
+        </div>
+
+        <!-- BITSAT Speed Recurrence Card -->
+        <div class="exam-track-card" onclick="selectExamTrack('bitsat')">
+          <div class="exam-track-icon">🎯</div>
+          <h2 class="exam-track-title">BITSAT 15-Year Speed Recurrence Radar (2011–2025)</h2>
+          <p class="exam-track-desc">
+            45-second high-speed recurring templates across 15 master tests: relative velocity sprints, trigonometric identity shortcuts, and spatial figure patterns.
+          </p>
+          <div class="exam-track-pills">
+            <span class="exam-pill-item">Physics (Kinematics 210x)</span>
+            <span class="exam-pill-item">Maths (Trig Shortcuts 185x)</span>
+            <span class="exam-pill-item">Logic (Spatial Patterns 96x)</span>
+          </div>
+          <button class="btn-select-track">
+            <span>Explore BITSAT Speed Repeats</span>
             <span>➔</span>
           </button>
         </div>
@@ -823,7 +876,7 @@
       const urlSubj = p.get('subject');
       const urlConcept = p.get('concept');
 
-      if (urlExam && (urlExam === 'cbse' || urlExam === 'neet' || urlExam === 'jee')) {
+      if (urlExam && (urlExam === 'cbse' || urlExam === 'neet' || urlExam === 'jee' || urlExam === 'jee-adv' || urlExam === 'bitsat')) {
         currentExam = urlExam;
         setActiveGoal(urlExam);
       } else {
@@ -946,6 +999,20 @@
           { name: 'Botany', icon: '🌿', count: '28+ Concept Tiers', desc: 'Genetics, Molecular Basis, Photosynthesis & Cell Division.' },
           { name: 'Zoology', icon: '🐾', count: '26+ Concept Tiers', desc: 'Human Reproduction, Evolution, Health and Disease.' }
         ];
+      } else if (currentExam === 'jee-adv') {
+        subjects = [
+          { name: 'Physics', icon: '⚛️', count: 'Pure Rolling & Rotation (128x)', desc: 'Pure rolling without slipping, angular momentum conservation & rotational constraints.' },
+          { name: 'Chemistry', icon: '🧪', count: 'Thermodynamics & Cycles (115x)', desc: 'Multi-step cyclic processes, Gibbs free energy, work done in adiabatic/isothermal paths.' },
+          { name: 'Mathematics', icon: '📐', count: 'AOD & Extrema (142x)', desc: 'Local maxima/minima, tangents/normals, monotonicity intervals & inflection analysis.' }
+        ];
+      } else if (currentExam === 'bitsat') {
+        subjects = [
+          { name: 'Physics', icon: '⚛️', count: 'Kinematics & Projectiles (210x)', desc: 'Relative velocity sprints, angle of projection from moving frames, 1D/2D mechanics.' },
+          { name: 'Chemistry', icon: '🧪', count: 'Speed Physical & GOC (160x)', desc: 'Fast rate laws, equilibrium constants, biomolecules, polymers and nomenclature.' },
+          { name: 'Mathematics', icon: '📐', count: 'Trigonometry & Conics (185x)', desc: 'Trigonometric identities, straight lines, circles & 30-second formula substitution.' },
+          { name: 'Logical Reasoning', icon: '🧩', count: 'Figure Patterns & Series (96x)', desc: 'Non-verbal spatial pattern completion, figure matrix matching & rotation parity.' },
+          { name: 'English Proficiency', icon: '📖', count: 'Vocabulary & Syntax (85x)', desc: 'Synonyms, antonyms, one-word substitutions and rapid reading comprehension.' }
+        ];
       } else {
         subjects = [
           { name: 'Physics', icon: '⚛️', count: '8 Core Archetypes', desc: 'Capacitor Dielectrics (258x), Photoelectric (215x), Rolling (198x), Drift Velocity (188x).' },
@@ -1030,6 +1097,8 @@
       let rawList = [];
       if (isCbse) rawList = repeatsData.cbse_repeats || [];
       else if (isNeet) rawList = repeatsData.neet_repeats || [];
+      else if (currentExam === 'jee-adv') rawList = repeatsData.jee_adv_repeats || [];
+      else if (currentExam === 'bitsat') rawList = repeatsData.bitsat_repeats || [];
       else rawList = repeatsData.jee_repeats || [];
       const search = (document.getElementById('radarSearchInput')?.value || '').toLowerCase().trim();
 
