@@ -1230,7 +1230,9 @@ a {
 
 /* Dark Mode Tokens & Overrides */
 [data-theme="dark"] {
-  --accent-light: rgba(37, 99, 235, 0.22);
+  --accent: #60a5fa;
+  --accent-hover: #93c5fd;
+  --accent-light: rgba(96, 165, 250, 0.22);
   --hero-bg: radial-gradient(circle at 75% 45%, #18181b 0%, #090d16 65%);
   --bg: #090d16;
   --surface: #111827;
@@ -2976,4 +2978,22 @@ a {
 }
 [data-theme="dark"] .q-source-pill {
   color: #94a3b8 !important;
+}
+
+
+/* WCAG AA High Contrast Dark Mode Adjustments */
+[data-theme="dark"] .portal-hub-eyebrow,
+[data-theme="dark"] .section-tag {
+  color: #60a5fa !important;
+}
+
+[data-theme="dark"] .bento-track-btn.active .track-badge {
+  background: rgba(59, 130, 246, 0.25) !important;
+  color: #93c5fd !important;
+}
+
+[data-theme="dark"] .bento-freq-badge.blue {
+  background: rgba(59, 130, 246, 0.25) !important;
+  color: #93c5fd !important;
+  border-color: rgba(59, 130, 246, 0.4) !important;
 }

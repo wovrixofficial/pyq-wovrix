@@ -614,7 +614,21 @@
       }
     }
 
-    .neet-opt-btn {
+    
+    .neet-opt-btn,
+    .jee-opt-btn {
+      width: 100%;
+      text-align: left;
+      font: inherit;
+      cursor: pointer;
+      outline: none;
+    }
+    .neet-opt-btn:focus-visible,
+    .jee-opt-btn:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+    }
+.neet-opt-btn {
       padding: 10px 14px;
       border: 1px solid var(--border);
       border-radius: var(--radius-sm);
@@ -1954,10 +1968,10 @@ function setStreamSection(sec, btn) {
           ['A', 'B', 'C', 'D'].forEach(optKey => {
             const optVal = q.options[optKey] || '';
             optionsHtml += `
-              <div class="neet-opt-btn" id="opt_${qId}_${optKey}" onclick="checkNeetOption('${qId}', '${optKey}', '${q.correct_answer}')">
+              <button type="button" class="neet-opt-btn" id="opt_${qId}_${optKey}" role="radio" aria-checked="false" onclick="checkNeetOption('${qId}', '${optKey}', '${q.correct_answer}')">
                 <span class="opt-label">${optKey}</span>
                 <span class="opt-text">${escapeHtml(optVal)}</span>
-              </div>
+              </button>
             `;
           });
           optionsHtml += '</div>';
@@ -1967,10 +1981,10 @@ function setStreamSection(sec, btn) {
             for (let k of ['1', '2', '3', '4']) {
               if (q.options[k]) {
                 optionsHtml += `
-                  <div class="jee-opt-btn" id="opt_${qId}_${k}" onclick="checkJeeOption('${qId}', '${k}', '${q.correct_answer}')">
+                  <button type="button" class="jee-opt-btn" id="opt_${qId}_${k}" role="radio" aria-checked="false" onclick="checkJeeOption('${qId}', '${k}', '${q.correct_answer}')">
                     <span class="opt-label">(${k})</span>
                     <span class="opt-text math-content">${q.options[k]}</span>
-                  </div>
+                  </button>
                 `;
               }
             }
@@ -2146,6 +2160,7 @@ function setStreamSection(sec, btn) {
       ['A', 'B', 'C', 'D'].forEach(opt => {
         const el = document.getElementById(`opt_${qId}_${opt}`);
         if (el) {
+          el.setAttribute('aria-checked', opt === selectedOpt ? 'true' : 'false');
           if (opt === correctOpt) el.classList.add('correct');
           else if (opt === selectedOpt) el.classList.add('incorrect');
         }
@@ -2157,6 +2172,7 @@ function setStreamSection(sec, btn) {
       for (let k of ['1', '2', '3', '4']) {
         const el = document.getElementById(`opt_${qId}_${k}`);
         if (el) {
+          el.setAttribute('aria-checked', String(k) === String(selectedOpt) ? 'true' : 'false');
           if (String(k) === String(correctOpt)) el.classList.add('correct');
           else if (String(k) === String(selectedOpt)) el.classList.add('incorrect');
         }
