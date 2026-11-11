@@ -519,10 +519,18 @@
       <div class="drawer-goal-options">
         <button class="drawer-goal-btn goal-toggle-pill active" data-goal="cbse" onclick="selectGoal('cbse')">🎯 CBSE 12</button>
         <button class="drawer-goal-btn goal-toggle-pill" data-goal="neet" onclick="selectGoal('neet')">🩺 NEET UG</button>
+        <a href="/jee/" class="drawer-goal-btn goal-toggle-pill" style="text-decoration:none; display:inline-flex; align-items:center; justify-content:center;">⚡ JEE Main</a>
       </div>
     </div>
 
     <nav class="drawer-nav-list">
+      <a href="/jee/" class="drawer-nav-item" onclick="toggleMobileDrawer(false)">
+        <span class="drawer-nav-icon">⚡</span>
+        <div>
+          <div>JEE Main 8-Year Archive (186 Shifts)</div>
+          <span class="drawer-nav-desc">12,667 Questions (2019–2026) with CBT Simulator</span>
+        </div>
+      </a>
       <a href="/practice/" class="drawer-nav-item" onclick="toggleMobileDrawer(false)">
         <span class="drawer-nav-icon">🎯</span>
         <div>
@@ -611,6 +619,25 @@
           </div>
           <button class="btn-select-track">
             <span>Explore NEET Medical Repeats</span>
+            <span>➔</span>
+          </button>
+        </div>
+
+        <!-- JEE Main Recurrence Radar Card -->
+        <div class="exam-track-card" onclick="window.location.href='/jee/'">
+          <div class="exam-track-icon">⚡</div>
+          <h2 class="exam-track-title">JEE Main 8-Year Recurrence Radar (2019–2026)</h2>
+          <p class="exam-track-desc">
+            Top 22 recurring concept archetypes analyzed across 12,667 questions and 186 shifts, including King's Property integration (302x), capacitor dielectrics (258x), and matrix adjoint identities (225x).
+          </p>
+          <div class="exam-track-pills">
+            <span class="exam-pill-item">Maths (302x King's Property)</span>
+            <span class="exam-pill-item">Physics (258x Dielectrics)</span>
+            <span class="exam-pill-item">Chemistry (183x CFSE)</span>
+            <span class="exam-pill-item">22 Core Archetypes</span>
+          </div>
+          <button class="btn-select-track">
+            <span>Explore JEE Main Repeats</span>
             <span>➔</span>
           </button>
         </div>
