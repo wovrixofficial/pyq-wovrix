@@ -13,7 +13,7 @@
   <title>Contact & Academic Corrections | Learnosha</title>
   <meta name="description" content="Contact the Learnosha academic team for syllabus inquiries, bug reporting, and question corrections.">
   <link rel="canonical" href="https://learnosha.in/contact/">
-  <link rel="stylesheet" href="/style.css?v=20261110_7">
+  <link rel="stylesheet" href="/style.css?v=20261111_5">
   <style>
     .page-hero {
       max-width: 800px;
@@ -102,7 +102,7 @@
 
   <!-- Unified Slide-in Navigation Drawer (Both Desktop & Mobile) -->
   <div id="drawerBackdrop" class="drawer-backdrop" onclick="toggleMobileDrawer(false)"></div>
-  <aside id="mobileNavDrawer" class="mobile-drawer" aria-label="Navigation Drawer">
+  <aside id="mobileNavDrawer" class="mobile-drawer" style="position: fixed; top: 0; right: -420px; z-index: 9999;" aria-label="Navigation Drawer">
     <div class="drawer-header">
       <a href="/" class="brand">
         <svg class="brand-logo-icon" width="22" height="23" viewBox="8 6 48 51" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -126,6 +126,10 @@
         <button class="drawer-goal-btn" onclick="setActiveGoal('neet'); window.location.href='/practice/?exam=neet'">
           <span class="drawer-goal-icon">🩺</span>
           <span>NEET UG</span>
+        </button>
+        <button class="drawer-goal-btn" onclick="setActiveGoal('jee'); window.location.href='/practice/?exam=jee'">
+          <span class="drawer-goal-icon">⚡</span>
+          <span>JEE Main</span>
         </button>
       </div>
     </div>
@@ -239,6 +243,6 @@
     </div>
   </footer>
 
-  <script src="/js/study_storage.js?v=20261110_7"></script>
+  <script src="/js/study_storage.js?v=20261111_5"></script>
 </body>
 </html>

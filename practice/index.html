@@ -15,7 +15,7 @@
   <link rel="canonical" href="https://learnosha.in/practice/">
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <link rel="stylesheet" href="/style.css?v=20261110_8">
+  <link rel="stylesheet" href="/style.css?v=20261111_5">
 
   <!-- KaTeX -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
@@ -876,7 +876,7 @@
 
   <!-- Mobile Slide-Out Drawer & Backdrop -->
   <div id="drawerBackdrop" class="drawer-backdrop" onclick="toggleMobileDrawer(false)"></div>
-  <aside id="mobileNavDrawer" class="mobile-nav-drawer" aria-label="Mobile Navigation">
+  <aside id="mobileNavDrawer" class="mobile-drawer" style="position: fixed; top: 0; right: -420px; z-index: 9999;" aria-label="Navigation Drawer">
     <div class="drawer-header">
       <div class="brand">
         <span class="brand-name">LEARNOSHA</span>
@@ -1191,7 +1191,7 @@
 
   <!-- Scripts -->
   <script src="/report-modal.js"></script>
-  <script src="/js/study_storage.js?v=20261110_7"></script>
+  <script src="/js/study_storage.js?v=20261111_5"></script>
   <script src="/js/analytics.js"></script>
 
   <script>
@@ -1765,7 +1765,10 @@
       applyStreamFilters();
     }
 
-    function setStreamSection(sec, btn) {
+        function filterBySection(sec, btn) {
+      setStreamSection(sec, btn);
+    }
+function setStreamSection(sec, btn) {
       currentSection = sec;
       const btns = document.querySelectorAll('#sectionPillGroup .filter-mini-btn');
       btns.forEach(b => b.classList.remove('active'));
@@ -1784,7 +1787,7 @@
       const feed = document.getElementById('streamQuestionsFeed');
       feed.innerHTML = '<div class="loading-state">Loading questions dataset...</div>';
 
-      const cacheBust = '?v=20261111_3';
+      const cacheBust = '?v=20261111_5';
       let url = '';
       if (currentExam === 'cbse') {
         url = `/data/cbse_${currentSubject.toLowerCase()}.json${cacheBust}`;
@@ -1984,7 +1987,7 @@
         }
 
         // Action Buttons
-        const solBtnLabel = currentExam === 'cbse' ? (hasCachedSol ? '✓ Step Solution' : '💡 Solution & Rubric') : '💡 View Solution';
+        const solBtnLabel = currentExam === 'cbse' ? (hasCachedSol ? 'Step Solution' : 'Solution & Rubric') : 'View Solution';
         const solAction = currentExam === 'neet' 
           ? `toggleNeetSolution('${qId}', '${q.correct_answer || 'A'}', '${year}', '${escapeHtml(source)}')`
           : (currentExam === 'jee'

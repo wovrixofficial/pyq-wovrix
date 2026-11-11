@@ -2316,10 +2316,11 @@ a {
 }
 
 .mobile-nav-drawer,
+.mobile-nav-drawer,
 .mobile-drawer,
 #mobileNavDrawer {
-  position: fixed;
-  top: 0;
+  position: fixed !important;
+  top: 0 !important;
   right: -420px;
   width: min(380px, 92vw);
   height: 100vh;
@@ -2959,4 +2960,20 @@ a {
   background: #2563eb !important;
   border-color: #3b82f6 !important;
   color: #ffffff !important;
+}
+
+
+/* Accessibility & Dark Mode High-Contrast Enhancements */
+[data-theme="dark"] .footer-brand-desc,
+[data-theme="dark"] .footer-links a,
+[data-theme="dark"] .footer-links-list a,
+[data-theme="dark"] .footer-bottom {
+  color: #a1a1aa !important;
+}
+[data-theme="dark"] .footer-links a:hover,
+[data-theme="dark"] .footer-links-list a:hover {
+  color: #60a5fa !important;
+}
+[data-theme="dark"] .q-source-pill {
+  color: #94a3b8 !important;
 }

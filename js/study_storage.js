@@ -57,7 +57,7 @@ function updateThemeToggleUI(theme) {
 function getActiveGoal() {
   const urlParams = new URLSearchParams(window.location.search);
   const urlExam = urlParams.get('exam');
-  if (urlExam && (urlExam.toLowerCase() === 'cbse' || urlExam.toLowerCase() === 'neet')) {
+  if (urlExam && (urlExam.toLowerCase() === 'cbse' || urlExam.toLowerCase() === 'neet' || urlExam.toLowerCase() === 'jee')) {
     localStorage.setItem(STORAGE_KEYS.ACTIVE_GOAL, urlExam.toLowerCase());
     return urlExam.toLowerCase();
   }
@@ -65,7 +65,7 @@ function getActiveGoal() {
 }
 
 function setActiveGoal(goal) {
-  if (goal !== 'cbse' && goal !== 'neet') return;
+  if (goal !== 'cbse' && goal !== 'neet' && goal !== 'jee') return;
   localStorage.setItem(STORAGE_KEYS.ACTIVE_GOAL, goal);
   updateGoalSwitcherUI(goal);
   window.dispatchEvent(new CustomEvent('wovrix:goalChange', { detail: { goal } }));
@@ -74,7 +74,7 @@ function setActiveGoal(goal) {
 function updateGoalSwitcherUI(goal) {
   const labels = document.querySelectorAll('.active-goal-label');
   labels.forEach(el => {
-    el.innerHTML = goal === 'neet' ? '🩺 NEET UG' : '🎯 CBSE Class 12';
+    el.innerHTML = goal === 'jee' ? '⚡ JEE Main' : (goal === 'neet' ? '🩺 NEET UG' : '🎯 CBSE Class 12');
   });
   const pills = document.querySelectorAll('.goal-toggle-pill');
   pills.forEach(p => {
