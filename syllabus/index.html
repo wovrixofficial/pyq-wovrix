@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-W9TG2L83"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Official Syllabus & Marks Weightage Blueprint (CBSE 10/12, NEET, JEE & BITSAT) | Learnosha</title>
+  <meta name="description" content="Official CBSE Class 10 & 12 chapter-wise mark weightage, NEET UG unit percentages, JEE Main 186-shift frequency rankings, and BITSAT speed blueprints. Free, verified curriculum with 1-click PYQ practice.">
+  <link rel="canonical" href="https://learnosha.in/syllabus/">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="stylesheet" href="/style.css?v=20261111_6">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+  <link rel="stylesheet" href="/report-modal.css">
+
+  <style>
+    .syllabus-hero {
+      text-align: center;
+      padding: 40px 20px 28px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .syllabus-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 14px;
+      border-radius: 9999px;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      background: rgba(37, 99, 235, 0.1);
+      color: #2563eb;
+      margin-bottom: 12px;
+    }
+    .syllabus-title {
+      font-size: clamp(26px, 4vw, 38px);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      color: var(--text);
+      margin-bottom: 12px;
+    }
+    .syllabus-subtitle {
+      font-size: 15px;
+      color: var(--text-muted);
+      line-height: 1.6;
+      max-width: 720px;
+      margin: 0 auto 24px;
+    }
+    .syllabus-search-box {
+      max-width: 560px;
+      margin: 0 auto;
+      position: relative;
+    }
+    .syllabus-search-input {
+      width: 100%;
+      padding: 13px 18px 13px 44px;
+      border-radius: 9999px;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text);
+      font-size: 14.5px;
+      box-shadow: var(--shadow-subtle);
+      transition: all 0.2s ease;
+      outline: none;
+    }
+    .syllabus-search-input:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+    }
+    .syllabus-search-icon {
+      position: absolute;
+      left: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted);
+      font-size: 16px;
+      pointer-events: none;
+    }
+
+    /* Track Switcher */
+    .syllabus-track-bar {
+      display: flex;
+      gap: 8px;
+      background: var(--surface-alt);
+      padding: 5px;
+      border-radius: 9999px;
+      border: 1px solid var(--border);
+      max-width: 900px;
+      margin: 24px auto 32px;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+    }
+    .syllabus-track-bar::-webkit-scrollbar {
+      display: none;
+    }
+    .syllabus-track-btn {
+      flex: 0 0 auto;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 9px 18px;
+      border-radius: 9999px;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text-muted);
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      white-space: nowrap;
+    }
+    .syllabus-track-btn:hover {
+      color: var(--text);
+    }
+    .syllabus-track-btn.active {
+      background: var(--surface);
+      color: var(--text);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+
+    /* Subject Filter Pills */
+    .syllabus-subject-pills {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 28px;
+    }
+    .syllabus-sub-pill {
+      padding: 7px 16px;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text);
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    .syllabus-sub-pill:hover {
+      border-color: var(--accent);
+    }
+    .syllabus-sub-pill.active {
+      background: var(--accent);
+      color: #ffffff;
+      border-color: var(--accent);
+    }
+
+    /* Unit & Chapter Cards */
+    .unit-section {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      margin-bottom: 24px;
+      overflow: hidden;
+      box-shadow: var(--shadow-subtle);
+    }
+    .unit-header {
+      padding: 16px 22px;
+      background: var(--surface-alt);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .unit-title {
+      font-size: 15.5px;
+      font-weight: 800;
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .unit-marks-badge {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      font-weight: 800;
+      padding: 4px 10px;
+      border-radius: 9999px;
+      background: rgba(37, 99, 235, 0.12);
+      color: #2563eb;
+      border: 1px solid rgba(37, 99, 235, 0.25);
+    }
+
+    .chapter-row {
+      padding: 20px 22px;
+      border-bottom: 1px solid var(--border-light);
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .chapter-row:last-child {
+      border-bottom: none;
+    }
+    .chapter-meta-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .chapter-title-group h3 {
+      font-size: 17px;
+      font-weight: 800;
+      color: var(--text);
+      margin-bottom: 4px;
+    }
+    .chapter-typology-tag {
+      font-size: 12px;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+    .chapter-marks-pill {
+      font-family: var(--font-mono);
+      font-size: 13px;
+      font-weight: 800;
+      color: #059669;
+      background: rgba(16, 185, 129, 0.1);
+      padding: 4px 10px;
+      border-radius: 6px;
+      border: 1px solid rgba(16, 185, 129, 0.2);
+      white-space: nowrap;
+    }
+
+    /* Cross-Exam Overlap Bar */
+    .cross-exam-box {
+      background: var(--surface-alt);
+      border: 1px dashed var(--border);
+      border-radius: var(--radius-sm);
+      padding: 10px 14px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      font-size: 12.5px;
+    }
+    .cross-exam-title {
+      font-weight: 800;
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .overlap-chip {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 2px 7px;
+      font-size: 11.5px;
+      color: var(--text-muted);
+    }
+    .overlap-chip strong {
+      color: var(--text);
+    }
+
+    /* Collapsible Official Topics */
+    .topics-collapse {
+      border: 1px solid var(--border-light);
+      border-radius: 6px;
+      overflow: hidden;
+      background: var(--surface);
+    }
+    .topics-collapse summary {
+      padding: 9px 12px;
+      font-size: 12.5px;
+      font-weight: 700;
+      color: var(--accent);
+      cursor: pointer;
+      background: rgba(37, 99, 235, 0.04);
+      user-select: none;
+    }
+    .topics-collapse summary:hover {
+      background: rgba(37, 99, 235, 0.08);
+    }
+    .topics-body {
+      padding: 12px 14px;
+      font-size: 12.5px;
+      color: var(--text-muted);
+      line-height: 1.6;
+      border-top: 1px solid var(--border-light);
+    }
+
+    .chapter-actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 4px;
+    }
+    .btn-action-pyq {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--primary);
+      color: #ffffff;
+      padding: 8px 16px;
+      border-radius: 9999px;
+      font-size: 12.5px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: all 0.15s ease;
+    }
+    .btn-action-pyq:hover {
+      background: var(--primary-hover);
+    }
+    .btn-action-mock {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: transparent;
+      color: var(--accent);
+      border: 1px solid var(--border);
+      padding: 8px 14px;
+      border-radius: 9999px;
+      font-size: 12.5px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: all 0.15s ease;
+    }
+    .btn-action-mock:hover {
+      border-color: var(--accent);
+      background: rgba(37, 99, 235, 0.05);
+    }
+
+    @media (max-width: 768px) {
+      .chapter-actions {
+        width: 100%;
+      }
+      .btn-action-pyq, .btn-action-mock {
+        flex: 1;
+        justify-content: center;
+        text-align: center;
+      }
+    }
+  </style>
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://learnosha.in/syllabus/">
+  <meta property="og:title" content="Official Syllabus & Marks Weightage Blueprint | Learnosha">
+  <meta property="og:description" content="Official CBSE Class 10 & 12 chapter-wise mark weightage, NEET UG unit percentages, JEE Main 186-shift frequency rankings, and BITSAT speed blueprints.">
+  <meta property="og:image" content="https://learnosha.in/og-image.png">
+
+  <!-- Schema.org FAQ & BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://learnosha.in/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Syllabus & Weightage Blueprint",
+        "item": "https://learnosha.in/syllabus/"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Universal Header Shell -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="brand">
+        <svg class="brand-logo-icon" width="22" height="23" viewBox="8 6 48 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M19 17V46H45" fill="none" stroke="currentColor" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M29 26.5A10 10 0 0 1 39 36.5" fill="none" stroke="#D97706" stroke-width="3.5" stroke-linecap="round"/>
+          <path d="M29 18.5A18 18 0 0 1 47 36.5" fill="none" stroke="#D97706" stroke-opacity=".6" stroke-width="3.5" stroke-linecap="round"/>
+          <circle cx="29" cy="36.5" r="3" fill="#D97706"/>
+        </svg>
+        <span class="brand-name">LEARNOSHA</span>
+      </a>
+
+      <nav class="nav-links">
+        <button id="themeToggleBtn" class="btn-theme-toggle" onclick="toggleTheme()" aria-label="Toggle Dark Mode" title="Toggle Dark/Light Mode">
+          <span class="theme-icon-light">☀️</span>
+          <span class="theme-icon-dark">🌙</span>
+        </button>
+        <button class="btn-hamburger" onclick="toggleMobileDrawer(true)" aria-label="Open Navigation Menu">
+          ☰ Menu
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Slide-Out Drawer & Backdrop -->
+  <div id="drawerBackdrop" class="drawer-backdrop" onclick="toggleMobileDrawer(false)"></div>
+  <aside id="mobileNavDrawer" class="mobile-drawer" style="position: fixed; top: 0; right: -420px; z-index: 9999; visibility: hidden; pointer-events: none;" aria-label="Navigation Drawer">
+    <div class="drawer-header">
+      <a href="/" class="brand">
+        <svg class="brand-logo-icon" width="22" height="23" viewBox="8 6 48 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M19 17V46H45" fill="none" stroke="currentColor" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M29 26.5A10 10 0 0 1 39 36.5" fill="none" stroke="#D97706" stroke-width="3.5" stroke-linecap="round"/>
+          <path d="M29 18.5A18 18 0 0 1 47 36.5" fill="none" stroke="#D97706" stroke-opacity=".6" stroke-width="3.5" stroke-linecap="round"/>
+          <circle cx="29" cy="36.5" r="3" fill="#D97706"/>
+        </svg>
+        <span class="brand-name">LEARNOSHA</span>
+      </a>
+      <button class="drawer-close" onclick="toggleMobileDrawer(false)" aria-label="Close Navigation Menu">✕</button>
+    </div>
+
+    <div class="drawer-goal-box">
+      <div class="drawer-goal-title">Select Active Track</div>
+      <div class="drawer-goal-grid">
+        <button class="drawer-goal-btn" onclick="setActiveGoal('cbse'); window.location.href='/practice/?exam=cbse'">
+          <span class="drawer-goal-icon">🎯</span>
+          <span>CBSE 12</span>
+        </button>
+        <button class="drawer-goal-btn" onclick="setActiveGoal('neet'); window.location.href='/practice/?exam=neet'">
+          <span class="drawer-goal-icon">🩺</span>
+          <span>NEET UG</span>
+        </button>
+        <button class="drawer-goal-btn" onclick="setActiveGoal('jee'); window.location.href='/practice/?exam=jee'">
+          <span class="drawer-goal-icon">⚡</span>
+          <span>JEE Main</span>
+        </button>
+        <button class="drawer-goal-btn" onclick="setActiveGoal('jee-adv'); window.location.href='/practice/?exam=jee-adv'">
+          <span class="drawer-goal-icon">🔥</span>
+          <span>JEE Adv</span>
+        </button>
+        <button class="drawer-goal-btn" onclick="setActiveGoal('bitsat'); window.location.href='/practice/?exam=bitsat'">
+          <span class="drawer-goal-icon">🎯</span>
+          <span>BITSAT</span>
+        </button>
+      </div>
+    </div>
+
+    <nav class="drawer-nav">
+      <a href="/practice/" class="drawer-nav-item" onclick="toggleMobileDrawer(false)">
+        <span class="drawer-nav-icon">🎯</span>
+        <div>
+          <div>Practice Hub</div>
+          <span class="drawer-nav-desc">Chapterwise questions & sub-topic filters</span>
+        </div>
+      </a>
+      <a href="/repeated/" class="drawer-nav-item" onclick="toggleMobileDrawer(false)">
+        <span class="drawer-nav-icon">🔥</span>
+        <div>
+          <div>Repeats Radar</div>
+          <span class="drawer-nav-desc">11-Year recurrence & twin questions</span>
+        </div>
+      </a>
+      <a href="/paper-maker/" class="drawer-nav-item" onclick="toggleMobileDrawer(false)">
+        <span class="drawer-nav-icon">📝</span>
+        <div>
+          <div>Paper Maker & Mock</div>
+          <span class="drawer-nav-desc">Timed simulator & custom printable tests</span>
+        </div>
+      </a>
+      <a href="/saved/" class="drawer-nav-item" onclick="toggleMobileDrawer(false)">
+        <span class="drawer-nav-icon">📌</span>
+        <div>
+          <div>Saved Questions & Notes</div>
+          <span class="drawer-nav-desc">Personal notebook & bookmarks</span>
+        </div>
+      </a>
+      <a href="/syllabus/" class="drawer-nav-item" onclick="toggleMobileDrawer(false)">
+        <span class="drawer-nav-icon">📋</span>
+        <div>
+          <div>Syllabus & Blueprints</div>
+          <span class="drawer-nav-desc">Official marks weightage & topic lists</span>
+        </div>
+      </a>
+    </nav>
+
+    <div class="drawer-footer">
+      <button class="drawer-theme-toggle" onclick="toggleTheme()">
+        <span>Dark / Light Mode</span>
+        <span>☀️ / 🌙</span>
+      </button>
+      <div style="display: flex; gap: 8px; font-size: 11px; color: var(--text-muted); justify-content: center; margin-top: 10px;">
+        <a href="/about/">About</a> • <a href="/privacy/">Privacy</a> • <a href="/contact/">Contact</a> • <a href="/takedown/">Takedown</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Hero Section -->
+  <main class="page-container" style="max-width: 1040px; padding-top: 10px;">
+    <div class="syllabus-hero">
+      <span class="syllabus-badge">📋 OFFICIAL CURRICULUM BLUEPRINTS • AY 2025–2026</span>
+      <h1 class="syllabus-title">Official Syllabus & Marks Weightage Blueprints</h1>
+      <p class="syllabus-subtitle">
+        Prescribed CBSE chapter marks, official NTA NEET UG unit weights, JEE shift-frequency rankings, and BITSAT speed blueprints. Plan your revision with verified mark allocations and launch 1-click PYQ practice.
+      </p>
+
+      <div class="syllabus-search-box">
+        <span class="syllabus-search-icon">🔍</span>
+        <input type="text" id="syllabusSearchInput" class="syllabus-search-input" placeholder="Search chapters, topics, formulas, or keywords..." oninput="handleSyllabusSearch(this.value)">
+      </div>
+
+      <!-- 6-Track Switcher -->
+      <div class="syllabus-track-bar">
+        <button class="syllabus-track-btn active" data-track="cbse12" onclick="setSyllabusTrack('cbse12')">🎯 CBSE Class 12</button>
+        <button class="syllabus-track-btn" data-track="neet" onclick="setSyllabusTrack('neet')">🩺 NEET UG Medical</button>
+        <button class="syllabus-track-btn" data-track="jee_main" onclick="setSyllabusTrack('jee_main')">⚡ JEE Main</button>
+        <button class="syllabus-track-btn" data-track="jee_adv" onclick="setSyllabusTrack('jee_adv')">🔥 JEE Advanced</button>
+        <button class="syllabus-track-btn" data-track="bitsat" onclick="setSyllabusTrack('bitsat')">🎯 BITSAT Speed</button>
+        <button class="syllabus-track-btn" data-track="cbse10" onclick="setSyllabusTrack('cbse10')">📘 CBSE 10 Foundation</button>
+      </div>
+
+      <!-- Dynamic Subject Filter Pills -->
+      <div id="subjectPillsBar" class="syllabus-subject-pills">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+
+    <!-- Active Blueprint Container -->
+    <div id="blueprintContainer">
+      <!-- Dynamically populated -->
+    </div>
+  </main>
+
+  <!-- Universal Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="brand">
+          <span class="brand-name">LEARNOSHA</span>
+        </div>
+        <p class="footer-brand-desc">
+          Official examination intelligence for CBSE Class 10 & 12, NEET UG, JEE Main, JEE Advanced, and BITSAT. Authentic curriculum alignments and zero distractions.
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-heading">Platform Hubs</h4>
+        <ul class="footer-links">
+          <li><a href="/practice/?exam=cbse">CBSE 12 Practice Hub</a></li>
+          <li><a href="/practice/?exam=neet">NEET UG Practice Hub</a></li>
+          <li><a href="/practice/?exam=jee">JEE Main Practice Hub</a></li>
+          <li><a href="/practice/?exam=jee-adv">JEE Advanced Practice Hub</a></li>
+          <li><a href="/practice/?exam=bitsat">BITSAT Practice Hub</a></li>
+          <li><a href="/syllabus/">Syllabus & Weightage Vault</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-heading">Trust & Security</h4>
+        <ul class="footer-links">
+          <li><a href="/about/">About Learnosha</a></li>
+          <li><a href="/privacy/">Privacy Policy</a></li>
+          <li><a href="/contact/">Contact & Feedback</a></li>
+          <li><a href="/takedown/">Academic Fair Dealing</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Learnosha (learnosha.in) • Free, No-Login Educational Past Paper Archive.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="/report-modal.js"></script>
+  <script src="/js/study_storage.js?v=20261111_6"></script>
+  <script src="/js/analytics.js"></script>
+
+  <script>
+    let currentTrack = 'cbse12';
+    let currentSubject = 'Chemistry';
+    let searchQuery = '';
+
+    let dataCbse12 = null;
+    let dataCbse10 = null;
+    let dataEntrance = null;
+
+    document.addEventListener('DOMContentLoaded', async () => {
+      await loadAllSyllabusData();
+      initTrackFromURL();
+    });
+
+    async function loadAllSyllabusData() {
+      try {
+        const [r12, r10, rEnt] = await Promise.all([
+          fetch('/data/syllabus_cbse_12.json?v=20261111_6').then(r => r.json()),
+          fetch('/data/syllabus_cbse_10.json?v=20261111_6').then(r => r.json()),
+          fetch('/data/syllabus_entrance.json?v=20261111_6').then(r => r.json())
+        ]);
+        dataCbse12 = r12;
+        dataCbse10 = r10;
+        dataEntrance = rEnt;
+      } catch (e) {
+        console.error('Failed to load syllabus datasets:', e);
+      }
+    }
+
+    function initTrackFromURL() {
+      const p = new URLSearchParams(window.location.search);
+      const urlTrack = p.get('track');
+      const urlSub = p.get('subject');
+
+      if (urlTrack && ['cbse12', 'neet', 'jee_main', 'jee_adv', 'bitsat', 'cbse10'].includes(urlTrack)) {
+        currentTrack = urlTrack;
+      }
+      setSyllabusTrack(currentTrack, false);
+      if (urlSub) {
+        currentSubject = urlSub;
+        renderSyllabusView();
+      }
+    }
+
+    function setSyllabusTrack(track, updateUrl = true) {
+      currentTrack = track;
+      document.querySelectorAll('.syllabus-track-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.track === track);
+      });
+
+      // Default subject selection
+      if (track === 'cbse12') {
+        currentSubject = 'Chemistry';
+      } else if (track === 'neet') {
+        currentSubject = 'Physics';
+      } else if (track === 'jee_main' || track === 'jee_adv') {
+        currentSubject = 'Physics';
+      } else if (track === 'bitsat') {
+        currentSubject = 'All Sections';
+      } else if (track === 'cbse10') {
+        currentSubject = 'Mathematics';
+      }
+
+      renderSubjectPills();
+      renderSyllabusView();
+      if (updateUrl) syncURL();
+    }
+
+    function syncURL() {
+      const p = new URLSearchParams();
+      p.set('track', currentTrack);
+      if (currentSubject && currentSubject !== 'All Sections') p.set('subject', currentSubject);
+      window.history.pushState({}, '', '?' + p.toString());
+    }
+
+    function renderSubjectPills() {
+      const bar = document.getElementById('subjectPillsBar');
+      if (!bar) return;
+
+      let subjects = [];
+      if (currentTrack === 'cbse12' && dataCbse12) {
+        subjects = Object.keys(dataCbse12);
+      } else if (currentTrack === 'cbse10' && dataCbse10) {
+        subjects = Object.keys(dataCbse10);
+      } else if (currentTrack === 'neet' && dataEntrance && dataEntrance.neet) {
+        subjects = Object.keys(dataEntrance.neet.subjects);
+      } else if (currentTrack === 'jee_main' && dataEntrance && dataEntrance.jee_main) {
+        subjects = Object.keys(dataEntrance.jee_main.subjects);
+      } else if (currentTrack === 'jee_adv') {
+        subjects = ['Physics', 'Chemistry', 'Mathematics'];
+      } else if (currentTrack === 'bitsat') {
+        subjects = ['All Sections'];
+      }
+
+      if (!subjects.includes(currentSubject) && subjects.length > 0) {
+        currentSubject = subjects[0];
+      }
+
+      bar.innerHTML = subjects.map(s => `
+        <button class="syllabus-sub-pill ${s === currentSubject ? 'active' : ''}" onclick="selectSubject('${s}')">
+          ${s}
+        </button>
+      `).join('');
+    }
+
+    function selectSubject(s) {
+      currentSubject = s;
+      document.querySelectorAll('.syllabus-sub-pill').forEach(btn => {
+        btn.classList.toggle('active', btn.innerText.trim() === s);
+      });
+      renderSyllabusView();
+      syncURL();
+    }
+
+    function handleSyllabusSearch(val) {
+      searchQuery = (val || '').toLowerCase().trim();
+      renderSyllabusView();
+    }
+
+    function renderSyllabusView() {
+      const container = document.getElementById('blueprintContainer');
+      if (!container) return;
+
+      if (currentTrack === 'cbse12') {
+        renderCbse12View(container);
+      } else if (currentTrack === 'cbse10') {
+        renderCbse10View(container);
+      } else if (currentTrack === 'neet') {
+        renderNeetView(container);
+      } else if (currentTrack === 'jee_main') {
+        renderJeeMainView(container);
+      } else if (currentTrack === 'jee_adv') {
+        renderJeeAdvView(container);
+      } else if (currentTrack === 'bitsat') {
+        renderBitsatView(container);
+      }
+
+      if (window.renderMathInElement) {
+        renderMathInElement(container, {
+          delimiters: [
+            { left: "$$", right: "$$", display: true },
+            { left: "$", right: "$", display: false },
+            { left: "\\(", right: "\\)", display: false },
+            { left: "\\[", right: "\\]", display: true }
+          ],
+          throwOnError: false
+        });
+      }
+    }
+
+    function renderCbse12View(container) {
+      if (!dataCbse12 || !dataCbse12[currentSubject]) {
+        container.innerHTML = '<div style="text-align:center; padding:40px; color:var(--text-muted);">Loading curriculum data...</div>';
+        return;
+      }
+
+      const subData = dataCbse12[currentSubject];
+      let chapters = subData.chapters;
+
+      if (searchQuery) {
+        chapters = chapters.filter(ch => 
+          (ch.chapter && ch.chapter.toLowerCase().includes(searchQuery)) ||
+          (ch.unit_name && ch.unit_name.toLowerCase().includes(searchQuery)) ||
+          (ch.typology && ch.typology.toLowerCase().includes(searchQuery)) ||
+          (ch.official_topics && ch.official_topics.toLowerCase().includes(searchQuery))
+        );
+      }
+
+      // Group by Unit
+      const unitsMap = {};
+      chapters.forEach(ch => {
+        const uKey = `${ch.unit_no || 'I'}: ${ch.unit_name || ch.chapter}`;
+        if (!unitsMap[uKey]) unitsMap[uKey] = { unit: ch.unit_no, name: ch.unit_name, chapters: [] };
+        unitsMap[uKey].chapters.append ? unitsMap[uKey].chapters.append(ch) : unitsMap[uKey].chapters.push(ch);
+      });
+
+      let html = `
+        <div style="background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-md); padding:16px 20px; margin-bottom:20px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;">
+          <div>
+            <h2 style="font-size:18px; font-weight:800; color:var(--text); margin:0;">CBSE Class 12 ${currentSubject} (Code ${subData.code})</h2>
+            <p style="font-size:13px; color:var(--text-muted); margin:4px 0 0 0;">Official Examination Blueprint: ${subData.theory_marks} Marks Theory + ${subData.internal_marks} Marks Practical/Internal.</p>
+          </div>
+          <div style="display:flex; gap:8px;">
+            <a href="/practice/?exam=cbse&subject=${currentSubject}" class="btn-action-pyq">⚡ Practice All ${currentSubject} PYQs ➔</a>
+          </div>
+        </div>
+      `;
+
+      Object.keys(unitsMap).forEach(uKey => {
+        const u = unitsMap[uKey];
+        const unitTotalMarks = u.chapters.reduce((sum, c) => sum + (c.theory_marks || 0), 0);
+
+        html += `
+          <div class="unit-section">
+            <div class="unit-header">
+              <span class="unit-title">📖 Unit ${uKey}</span>
+              <span class="unit-marks-badge">${unitTotalMarks > 0 ? unitTotalMarks + ' Marks' : 'Official Unit'}</span>
+            </div>
+            <div>
+              ${u.chapters.map(ch => `
+                <div class="chapter-row">
+                  <div class="chapter-meta-bar">
+                    <div class="chapter-title-group">
+                      <h3>${ch.chapter}</h3>
+                      <div class="chapter-typology-tag"><strong>High-Probability Typology:</strong> ${ch.typology || 'Derivations, Case Studies, Numerical Problems'}</div>
+                    </div>
+                    <span class="chapter-marks-pill">${ch.theory_marks} Theory Marks</span>
+                  </div>
+
+                  <div class="cross-exam-box">
+                    <span class="cross-exam-title">🎯 Entrance Overlap:</span>
+                    ${ch.jee_overlap ? `<span class="overlap-chip">JEE Main: <strong>${ch.jee_overlap}</strong></span>` : ''}
+                    ${ch.neet_overlap ? `<span class="overlap-chip">NEET UG: <strong>${ch.neet_overlap}</strong></span>` : ''}
+                    ${ch.bitsat_overlap ? `<span class="overlap-chip">BITSAT: <strong>${ch.bitsat_overlap}</strong></span>` : ''}
+                  </div>
+
+                  ${ch.official_topics ? `
+                    <details class="topics-collapse">
+                      <summary>▶ Prescribed Official Syllabus Topics (cbseacademic.nic.in)</summary>
+                      <div class="topics-body">
+                        ${ch.official_topics}
+                      </div>
+                    </details>
+                  ` : ''}
+
+                  <div class="chapter-actions">
+                    <a href="/practice/?exam=cbse&subject=${currentSubject}&chapter=${encodeURIComponent(ch.chapter)}" class="btn-action-pyq">
+                      ⚡ Practice ${ch.chapter} PYQs ➔
+                    </a>
+                    <a href="/paper-maker/?exam=cbse&subject=${currentSubject}" class="btn-action-mock">
+                      📝 CBT Mock Test
+                    </a>
+                  </div>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+        `;
+      });
+
+      container.innerHTML = html;
+    }
+
+    function renderCbse10View(container) {
+      if (!dataCbse10 || !dataCbse10[currentSubject]) {
+        container.innerHTML = '<div style="text-align:center; padding:40px; color:var(--text-muted);">Loading Class 10 Foundation curriculum...</div>';
+        return;
+      }
+
+      const subData = dataCbse10[currentSubject];
+      let chapters = subData.chapters;
+
+      if (searchQuery) {
+        chapters = chapters.filter(ch => 
+          (ch.chapter && ch.chapter.toLowerCase().includes(searchQuery)) ||
+          (ch.unit_name && ch.unit_name.toLowerCase().includes(searchQuery)) ||
+          (ch.official_topics && ch.official_topics.toLowerCase().includes(searchQuery))
+        );
+      }
+
+      let html = `
+        <div style="background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-md); padding:16px 20px; margin-bottom:20px;">
+          <h2 style="font-size:18px; font-weight:800; color:var(--text); margin:0;">CBSE Class 10 ${currentSubject} (Subject Code ${subData.code})</h2>
+          <p style="font-size:13px; color:var(--text-muted); margin:4px 0 0 0;">Official Secondary School Blueprint: 80 Marks Theory + 20 Marks Internal Assessment = 100 Marks.</p>
+        </div>
+      `;
+
+      html += `
+        <div class="unit-section">
+          ${chapters.map(ch => `
+            <div class="chapter-row">
+              <div class="chapter-meta-bar">
+                <div class="chapter-title-group">
+                  <h3>${ch.chapter}</h3>
+                  <div class="chapter-typology-tag"><strong>Unit:</strong> ${ch.unit_no || 'I'} • ${ch.unit_name || 'Curriculum Core'}</div>
+                </div>
+                <span class="chapter-marks-pill">${ch.theory_marks || 6} Theory Marks</span>
+              </div>
+
+              ${ch.official_topics ? `
+                <details class="topics-collapse" open>
+                  <summary>▶ Prescribed Syllabus & Derivations</summary>
+                  <div class="topics-body">
+                    ${ch.official_topics}
+                  </div>
+                </details>
+              ` : ''}
+
+              <div class="chapter-actions">
+                <a href="/practice/?exam=cbse&subject=${currentSubject}&chapter=${encodeURIComponent(ch.chapter)}" class="btn-action-pyq">
+                  ⚡ Practice Board Questions ➔
+                </a>
+              </div>
+            </div>
+          `).join('')}
+        </div>
+      `;
+
+      container.innerHTML = html;
+    }
+
+    function renderNeetView(container) {
+      if (!dataEntrance || !dataEntrance.neet) return;
+      const neet = dataEntrance.neet;
+      const subList = neet.subjects[currentSubject] || [];
+
+      let html = `
+        <div style="background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-md); padding:18px 20px; margin-bottom:20px;">
+          <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;">
+            <div>
+              <h2 style="font-size:18px; font-weight:800; color:var(--text); margin:0;">🩺 NEET UG ${currentSubject} Blueprint (NTA National Archive)</h2>
+              <p style="font-size:13px; color:var(--text-muted); margin:4px 0 0 0;">Total Exam: 720 Marks (180 Questions to attempt in 200 Minutes). Scoring: +4 for correct, -1 for negative.</p>
+            </div>
+            <a href="/practice/?exam=neet&subject=${currentSubject}" class="btn-action-pyq">Practice All NEET ${currentSubject} PYQs ➔</a>
+          </div>
+        </div>
+
+        <div class="unit-section">
+          ${subList.map(unit => `
+            <div class="chapter-row">
+              <div class="chapter-meta-bar">
+                <div class="chapter-title-group">
+                  <h3>${unit.name}</h3>
+                  <div class="chapter-typology-tag"><strong>Key Tested Topics:</strong> ${unit.top_topics}</div>
+                </div>
+                <div style="text-align:right;">
+                  <span class="chapter-marks-pill">${unit.marks} (${unit.weightage_pct})</span>
+                  <div style="font-size:11px; font-weight:700; color:var(--accent); margin-top:2px;">${unit.avg_qs}</div>
+                </div>
+              </div>
+
+              <div class="cross-exam-box">
+                <span class="cross-exam-title">🔥 Recurrence Tier:</span>
+                <span class="overlap-chip" style="color:#dc2626; font-weight:800;">${unit.yield_tier}</span>
+              </div>
+
+              <div class="chapter-actions">
+                <a href="/practice/?exam=neet&subject=${currentSubject}&chapter=${encodeURIComponent(unit.name)}" class="btn-action-pyq">
+                  ⚡ Practice ${unit.name} ➔
+                </a>
+                <a href="/repeated/?exam=neet&subject=${currentSubject}" class="btn-action-mock">
+                  🔥 View Recurrence Radar
+                </a>
+              </div>
+            </div>
+          `).join('')}
+        </div>
+      `;
+
+      container.innerHTML = html;
+    }
+
+    function renderJeeMainView(container) {
+      if (!dataEntrance || !dataEntrance.jee_main) return;
+      const jee = dataEntrance.jee_main;
+      const subList = jee.subjects[currentSubject] || [];
+
+      let html = `
+        <div style="background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-md); padding:18px 20px; margin-bottom:20px;">
+          <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;">
+            <div>
+              <h2 style="font-size:18px; font-weight:800; color:var(--text); margin:0;">⚡ JEE Main ${currentSubject} Blueprint (186 Shifts • 12,667 Qs)</h2>
+              <p style="font-size:13px; color:var(--text-muted); margin:4px 0 0 0;">Total Exam: 300 Marks (75 Questions to attempt in 180 Minutes). +4 for correct, -1 for negative (MCQ & NVQ).</p>
+            </div>
+            <a href="/practice/?exam=jee&subject=${currentSubject}" class="btn-action-pyq">Practice JEE ${currentSubject} PYQs ➔</a>
+          </div>
+        </div>
+
+        <div class="unit-section">
+          ${subList.map(unit => `
+            <div class="chapter-row">
+              <div class="chapter-meta-bar">
+                <div class="chapter-title-group">
+                  <h3>${unit.name}</h3>
+                  <div class="chapter-typology-tag"><strong>High-Frequency Sub-topics:</strong> ${unit.top_topics}</div>
+                </div>
+                <div style="text-align:right;">
+                  <span class="chapter-marks-pill">${unit.shift_appearances}</span>
+                  <div style="font-size:11px; font-weight:700; color:var(--accent); margin-top:2px;">${unit.avg_qs}</div>
+                </div>
+              </div>
+
+              <div class="cross-exam-box">
+                <span class="cross-exam-title">⚡ Invariance Status:</span>
+                <span class="overlap-chip" style="color:#d97706; font-weight:800;">${unit.yield_tier}</span>
+              </div>
+
+              <div class="chapter-actions">
+                <a href="/practice/?exam=jee&subject=${currentSubject}&chapter=${encodeURIComponent(unit.name)}" class="btn-action-pyq">
+                  ⚡ Practice ${unit.name} ➔
+                </a>
+                <a href="/paper-maker/?exam=jee&subject=${currentSubject}" class="btn-action-mock">
+                  📝 3-Hour CBT Simulator
+                </a>
+              </div>
+            </div>
+          `).join('')}
+        </div>
+      `;
+
+      container.innerHTML = html;
+    }
+
+    function renderJeeAdvView(container) {
+      if (!dataEntrance || !dataEntrance.jee_adv) return;
+      const adv = dataEntrance.jee_adv;
+
+      let html = `
+        <div style="background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-md); padding:18px 20px; margin-bottom:20px;">
+          <h2 style="font-size:18px; font-weight:800; color:var(--text); margin:0;">🔥 JEE Advanced IIT Entrance Blueprint (2016–2026, 22 Official Papers)</h2>
+          <p style="font-size:13px; color:var(--text-muted); margin:4px 0 0 0;">Exam Structure: Paper 1 (180 Marks, 3 Hours) + Paper 2 (180 Marks, 3 Hours) = 360 Marks. Multi-correct (+4/-2), Single (+3/-1), Numerical (+3/0).</p>
+        </div>
+
+        <div class="unit-section">
+          ${adv.core_pillars.map(pillar => `
+            <div class="chapter-row">
+              <div class="chapter-meta-bar">
+                <div class="chapter-title-group">
+                  <h3>${pillar.subject} IIT Architectural Pillars</h3>
+                  <div class="chapter-typology-tag">${pillar.pillars}</div>
+                </div>
+              </div>
+
+              <div class="chapter-actions">
+                <a href="/practice/?exam=jee-adv&subject=${pillar.subject}" class="btn-action-pyq">
+                  ⚡ Practice IIT ${pillar.subject} PYQs ➔
+                </a>
+                <a href="/repeated/?exam=jee-adv&subject=${pillar.subject}" class="btn-action-mock">
+                  🔥 Concept Twins Radar
+                </a>
+              </div>
+            </div>
+          `).join('')}
+        </div>
+      `;
+
+      container.innerHTML = html;
+    }
+
+    function renderBitsatView(container) {
+      if (!dataEntrance || !dataEntrance.bitsat) return;
+      const b = dataEntrance.bitsat;
+
+      let html = `
+        <div style="background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-md); padding:18px 20px; margin-bottom:20px;">
+          <h2 style="font-size:18px; font-weight:800; color:var(--text); margin:0;">🎯 BITSAT Speed Blueprint (130 Questions • 390 Marks • 180 Minutes)</h2>
+          <p style="font-size:13px; color:var(--text-muted); margin:4px 0 0 0;">Scoring: Speed MCQ (+3 for correct, -1 for negative). Bonus 12 Questions unlock if all 130 questions are completed.</p>
+        </div>
+
+        <div class="unit-section">
+          ${b.sections.map(sec => `
+            <div class="chapter-row">
+              <div class="chapter-meta-bar">
+                <div class="chapter-title-group">
+                  <h3>${sec.part}: ${sec.name}</h3>
+                  <div class="chapter-typology-tag">Speed Benchmark: <strong>${sec.speed_target}</strong> ${sec.details ? '• ' + sec.details : ''}</div>
+                </div>
+                <div style="text-align:right;">
+                  <span class="chapter-marks-pill">${sec.marks} Marks</span>
+                  <div style="font-size:11px; font-weight:700; color:var(--accent); margin-top:2px;">${sec.questions} Questions</div>
+                </div>
+              </div>
+
+              <div class="chapter-actions">
+                <a href="/practice/?exam=bitsat&subject=${encodeURIComponent(sec.name)}" class="btn-action-pyq">
+                  ⚡ Practice Speed MCQs ➔
+                </a>
+                <a href="/paper-maker/?exam=bitsat" class="btn-action-mock">
+                  ⏱️ 130-Question Speed Mock
+                </a>
+              </div>
+            </div>
+          `).join('')}
+        </div>
+      `;
+
+      container.innerHTML = html;
+    }
+  </script>
+</body>
+</html>

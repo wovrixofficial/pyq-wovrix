@@ -939,6 +939,14 @@
           <span class="drawer-nav-desc">Chapterwise questions & solutions</span>
         </div>
       </a>
+      <a href="/syllabus/" class="drawer-nav-item" onclick="toggleMobileDrawer(false)">
+        <span class="drawer-nav-icon">📋</span>
+        <div>
+          <div>Syllabus & Blueprints</div>
+          <span class="drawer-nav-desc">Official marks weightage & topic lists</span>
+        </div>
+      </a>
+
       <a href="/repeated/" class="drawer-nav-item" onclick="toggleMobileDrawer(false)">
         <span class="drawer-nav-icon">🔥</span>
         <div>
@@ -1122,6 +1130,13 @@
         <p class="step-subtitle" id="chapterStageSubtitle">
           Choose a specific NCERT chapter or practice all chapters combined. High-yield recurrence chapters are flagged.
         </p>
+        <div style="margin-top: 10px;">
+          <a href="/syllabus/" style="display:inline-flex; align-items:center; gap:6px; font-size:12.5px; font-weight:700; color:var(--accent); text-decoration:none; padding:6px 12px; background:var(--surface-alt); border:1px solid var(--border); border-radius:8px;">
+            <span>📋</span>
+            <span>View Official Curriculum Syllabus & Marks Weightage Blueprints</span>
+            <span>➔</span>
+          </a>
+        </div>
       </div>
 
       <div class="chapter-search-row">
@@ -1574,6 +1589,16 @@
       if (urlSubj) {
         currentSubject = urlSubj.charAt(0).toUpperCase() + urlSubj.slice(1).toLowerCase();
       }
+
+      // Self-healing: prevent invalid exam/subject pairing
+      if (currentSubject === 'Mathematics' && currentExam === 'neet') {
+        currentExam = 'jee';
+        setActiveGoal('jee');
+      } else if ((currentSubject === 'Botany' || currentSubject === 'Zoology') && currentExam !== 'neet') {
+        currentExam = 'neet';
+        setActiveGoal('neet');
+      }
+
       if (urlCh) {
         currentChapter = urlCh;
         currentChapterName = urlCh === 'all' ? 'All Chapters' : urlCh;

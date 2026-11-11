@@ -1,0 +1,262 @@
+{
+  "neet": {
+    "title": "NEET UG Medical Entrance Blueprint",
+    "total_questions": 200,
+    "questions_to_attempt": 180,
+    "total_marks": 720,
+    "duration_minutes": 200,
+    "scoring": "+4 for correct, -1 for incorrect, 0 for unattempted",
+    "subjects": {
+      "Physics": [
+        {
+          "name": "Mechanics & Kinematics",
+          "weightage_pct": "17%",
+          "avg_qs": "7-8 Qs",
+          "marks": "28-32M",
+          "yield_tier": "\ud83d\udd25 Guaranteed Core",
+          "top_topics": "Projectiles, Relative Motion, Work-Energy Theorem, Rotational Dynamics"
+        },
+        {
+          "name": "Electrostatics & Current Electricity",
+          "weightage_pct": "18%",
+          "avg_qs": "8-9 Qs",
+          "marks": "32-36M",
+          "yield_tier": "\ud83d\udd25 Guaranteed Core",
+          "top_topics": "Coulomb's Law, Gauss Law, Capacitor Dielectrics, Kirchhoff's Rules, Drift Velocity"
+        },
+        {
+          "name": "Optics (Ray & Wave)",
+          "weightage_pct": "12%",
+          "avg_qs": "5-6 Qs",
+          "marks": "20-24M",
+          "yield_tier": "\u26a1 High Yield",
+          "top_topics": "Lens Maker Formula, Total Internal Reflection, Prism, YDSE Fringe Width"
+        },
+        {
+          "name": "Modern Physics & Semiconductors",
+          "weightage_pct": "16%",
+          "avg_qs": "7-8 Qs",
+          "marks": "28-32M",
+          "yield_tier": "\ud83d\udd25 Highest Scoring ROI",
+          "top_topics": "Photoelectric Equation, Bohr Model Orbit Radii, De Broglie, PN Junction Diodes"
+        },
+        {
+          "name": "Thermodynamics & KTG",
+          "weightage_pct": "9%",
+          "avg_qs": "4 Qs",
+          "marks": "16M",
+          "yield_tier": "\u26a1 High Yield",
+          "top_topics": "First Law, Isothermal/Adiabatic Work, Carnot Engine, Degrees of Freedom"
+        }
+      ],
+      "Chemistry": [
+        {
+          "name": "Organic Reaction Mechanisms (GOC & Oxygen)",
+          "weightage_pct": "22%",
+          "avg_qs": "10-11 Qs",
+          "marks": "40-44M",
+          "yield_tier": "\ud83d\udd25 Guaranteed Core",
+          "top_topics": "Electrophilic Aromatic Substitution, Aldol Condensation, Cannizzaro, SN1/SN2, Amines"
+        },
+        {
+          "name": "Inorganic & Coordination Compounds",
+          "weightage_pct": "20%",
+          "avg_qs": "9-10 Qs",
+          "marks": "36-40M",
+          "yield_tier": "\ud83d\udd25 Guaranteed Core",
+          "top_topics": "Crystal Field Theory (CFSE), Hybridization, d- and f-Block Trends, Chemical Bonding"
+        },
+        {
+          "name": "Physical Chemistry (Equilibrium, Kinetics, Electro)",
+          "weightage_pct": "24%",
+          "avg_qs": "11-12 Qs",
+          "marks": "44-48M",
+          "yield_tier": "\u26a1 Numerical Focus",
+          "top_topics": "Nernst Equation, Kohlrausch Law, First Order Integrated Rate Law, Le Chatelier"
+        }
+      ],
+      "Botany": [
+        {
+          "name": "Genetics and Molecular Biology",
+          "weightage_pct": "35%",
+          "avg_qs": "16-18 Qs",
+          "marks": "64-72M",
+          "yield_tier": "\ud83d\udd25 Decisive Rank Decider",
+          "top_topics": "Mendelian Ratios, Lac Operon, DNA Replication, Transcription, Genetic Code"
+        },
+        {
+          "name": "Plant Physiology & Photosynthesis",
+          "weightage_pct": "25%",
+          "avg_qs": "12-13 Qs",
+          "marks": "48-52M",
+          "yield_tier": "\u26a1 High Yield",
+          "top_topics": "C3/C4 Pathway, Photophosphorylation, Glycolysis, Plant Growth Regulators"
+        }
+      ],
+      "Zoology": [
+        {
+          "name": "Human Physiology",
+          "weightage_pct": "40%",
+          "avg_qs": "18-20 Qs",
+          "marks": "72-80M",
+          "yield_tier": "\ud83d\udd25 Decisive Rank Decider",
+          "top_topics": "Neural Transmission, Sliding Filament Muscle Contraction, Cardiac Cycle, Nephron Counter-Current"
+        },
+        {
+          "name": "Reproduction & Reproductive Health",
+          "weightage_pct": "25%",
+          "avg_qs": "11-12 Qs",
+          "marks": "44-48M",
+          "yield_tier": "\u26a1 High Yield",
+          "top_topics": "Spermatogenesis/Oogenesis Hormonal Control, Menstrual Cycle, IVF/ART Technologies"
+        }
+      ]
+    }
+  },
+  "jee_main": {
+    "title": "JEE Main Engineering Entrance Blueprint",
+    "total_questions": 90,
+    "questions_to_attempt": 75,
+    "total_marks": 300,
+    "duration_minutes": 180,
+    "scoring": "+4 for correct, -1 for incorrect (both MCQs & NVQs)",
+    "shift_database": "186 Shifts analyzed (2019-2026, 12,667 Qs)",
+    "subjects": {
+      "Physics": [
+        {
+          "name": "Current Electricity & Circuits",
+          "shift_appearances": "188 appearances",
+          "avg_qs": "2-3 Qs/shift",
+          "yield_tier": "\ud83d\udd25 100% Invariant in all 186 shifts",
+          "top_topics": "Meter Bridge, Potentiometer equivalents, Kirchhoff laws, temperature drift"
+        },
+        {
+          "name": "Capacitor Dielectrics & Electrostatics",
+          "shift_appearances": "258 appearances",
+          "avg_qs": "2 Qs/shift",
+          "yield_tier": "\ud83d\udd25 Guaranteed Numerical NVQ",
+          "top_topics": "Partial dielectric slab insertion, energy change on battery disconnection"
+        },
+        {
+          "name": "Rotational Motion & Rolling",
+          "shift_appearances": "198 appearances",
+          "avg_qs": "1-2 Qs/shift",
+          "yield_tier": "\u26a1 Critical Concept",
+          "top_topics": "Moment of inertia of composite cutouts, pure rolling acceleration"
+        },
+        {
+          "name": "Ray Optics & Optical Instruments",
+          "shift_appearances": "174 appearances",
+          "avg_qs": "1-2 Qs/shift",
+          "yield_tier": "\u26a1 Standard Scoring",
+          "top_topics": "Refraction at spherical surfaces, silvered lens, compound microscope"
+        }
+      ],
+      "Chemistry": [
+        {
+          "name": "Coordination Compounds & CFT",
+          "shift_appearances": "183 appearances",
+          "avg_qs": "2 Qs/shift",
+          "yield_tier": "\ud83d\udd25 100% Invariant Core",
+          "top_topics": "Crystal field splitting energy (CFSE), magnetic moment, isomerism"
+        },
+        {
+          "name": "Chemical Kinetics & Radioactivity",
+          "shift_appearances": "172 appearances",
+          "avg_qs": "1-2 Qs/shift",
+          "yield_tier": "\u26a1 Guaranteed NVQ",
+          "top_topics": "Arrhenius equation ratio calculations, first order half-life expressions"
+        },
+        {
+          "name": "Aldehydes, Ketones & Carboxylic Acids",
+          "shift_appearances": "165 appearances",
+          "avg_qs": "2 Qs/shift",
+          "yield_tier": "\ud83d\udd25 Multi-step Mechanism",
+          "top_topics": "Cross Aldol, Cannizzaro, Grignard additions, Tollens/Fehling distinguishing tests"
+        }
+      ],
+      "Mathematics": [
+        {
+          "name": "Definite Integrals & King's Property",
+          "shift_appearances": "302 appearances",
+          "avg_qs": "2-3 Qs/shift",
+          "yield_tier": "\ud83d\udd25 Highest Frequency in JEE History",
+          "top_topics": "f(a+b-x) symmetry cancellation, Leibniz theorem differentiation under integral"
+        },
+        {
+          "name": "Matrices & Adjoint Identities",
+          "shift_appearances": "225 appearances",
+          "avg_qs": "2 Qs/shift",
+          "yield_tier": "\ud83d\udd25 Guaranteed Scoring",
+          "top_topics": "|adj(adj A)| properties, Cayley-Hamilton characteristic polynomial, system of linear equations"
+        },
+        {
+          "name": "Three Dimensional Geometry (3D)",
+          "shift_appearances": "218 appearances",
+          "avg_qs": "2 Qs/shift",
+          "yield_tier": "\ud83d\udd25 Guaranteed Scoring",
+          "top_topics": "Shortest distance between skew lines, plane-line intersection, image of point in plane"
+        }
+      ]
+    }
+  },
+  "jee_adv": {
+    "title": "JEE Advanced IIT Entrance Blueprint",
+    "total_papers": 22,
+    "years": "2016-2026 (11 Years, 1,174 Qs)",
+    "pattern": "Paper 1 (3 Hours) + Paper 2 (3 Hours) = 360 Marks",
+    "scoring_rules": "Multi-Correct (+4/-2), Single-Correct (+3/-1), Numerical Integer (+3/0)",
+    "core_pillars": [
+      {
+        "subject": "Physics",
+        "pillars": "Rotational Rigid Body (128 appearances), Multi-loop Electromagnetic Induction, Fluid Statics with acceleration, Wave Optics interference with variable index"
+      },
+      {
+        "subject": "Chemistry",
+        "pillars": "Multi-step thermodynamics cyclic engines (115 appearances), Qualitative Salt Analysis cation separation, Stereochemistry in nucleophilic substitutions"
+      },
+      {
+        "subject": "Mathematics",
+        "pillars": "Application of Derivatives extrema & monotonicity (142 appearances), Bayes Theorem multi-tier probability, Conics tangents & normals parameterization"
+      }
+    ]
+  },
+  "bitsat": {
+    "title": "BITSAT Birla Institute Speed Blueprint",
+    "total_questions": 130,
+    "total_marks": 390,
+    "duration_minutes": 180,
+    "scoring": "+3 for correct, -1 for incorrect, 0 for unattempted",
+    "sections": [
+      {
+        "part": "Part I",
+        "name": "Physics",
+        "questions": 30,
+        "marks": 90,
+        "speed_target": "45\u201350 Minutes"
+      },
+      {
+        "part": "Part II",
+        "name": "Chemistry",
+        "questions": 30,
+        "marks": 90,
+        "speed_target": "30\u201335 Minutes"
+      },
+      {
+        "part": "Part III",
+        "name": "English Proficiency & Logical Reasoning",
+        "questions": 30,
+        "marks": 90,
+        "speed_target": "20\u201325 Minutes",
+        "details": "English (10 Qs) + Logic (20 Qs)"
+      },
+      {
+        "part": "Part IV",
+        "name": "Mathematics",
+        "questions": 40,
+        "marks": 120,
+        "speed_target": "65\u201370 Minutes"
+      }
+    ]
+  }
+}

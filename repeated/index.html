@@ -556,6 +556,14 @@
           <span class="drawer-nav-desc">Chapterwise questions & solutions</span>
         </div>
       </a>
+      <a href="/syllabus/" class="drawer-nav-item" onclick="toggleMobileDrawer(false)">
+        <span class="drawer-nav-icon">📋</span>
+        <div>
+          <div>Syllabus & Blueprints</div>
+          <span class="drawer-nav-desc">Official marks weightage & topic lists</span>
+        </div>
+      </a>
+
       <a href="/repeated/" class="drawer-nav-item" onclick="toggleMobileDrawer(false)">
         <span class="drawer-nav-icon">🔥</span>
         <div>
@@ -883,10 +891,22 @@
         currentExam = getActiveGoal() || 'cbse';
       }
 
-      if (urlSubj) currentSubject = urlSubj;
+      if (urlSubj) {
+        currentSubject = urlSubj.charAt(0).toUpperCase() + urlSubj.slice(1);
+      }
 
-      await ensureDataLoaded();
+      // Self-healing: if subject is Mathematics but exam is NEET, switch to JEE
+      if (currentSubject === 'Mathematics' && currentExam === 'neet') {
+        currentExam = 'jee';
+        setActiveGoal('jee');
+      }
+      // If subject is Botany or Zoology but exam is not NEET, switch to NEET
+      if ((currentSubject === 'Botany' || currentSubject === 'Zoology') && currentExam !== 'neet') {
+        currentExam = 'neet';
+        setActiveGoal('neet');
+      }
 
+      // 1. Render UI skeleton IMMEDIATELY - zero blank screen lag
       if (urlConcept) {
         goToStep('drill', updateHistory);
       } else if (urlExam && urlSubj) {
@@ -896,15 +916,33 @@
       } else {
         goToStep('exam', updateHistory);
       }
+
+      // 2. Fetch dataset asynchronously and populate cards
+      ensureDataLoaded().then(() => {
+        if (currentStep === 'radar') {
+          applyRadarFilters();
+        } else if (currentStep === 'drill') {
+          renderDrillScreen();
+        }
+      }).catch(err => {
+        console.error('Repeats dataset load error:', err);
+        const grid = document.getElementById('repeatCardsGrid');
+        if (grid) {
+          grid.innerHTML = '<div class="loading-state" style="color:#ef4444;">Failed to load recurrence patterns. <button onclick="location.reload()" style="margin-left:10px; padding:4px 12px; background:var(--accent); color:#fff; border:none; border-radius:6px; cursor:pointer;">Retry</button></div>';
+        }
+      });
     }
 
     async function ensureDataLoaded() {
-      if (repeatsData) return;
+      if (repeatsData) return repeatsData;
       try {
-        const res = await fetch('/data/repeated_questions.json');
+        const res = await fetch('/data/repeated_questions.json?v=20261111_6');
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
         repeatsData = await res.json();
+        return repeatsData;
       } catch (e) {
         console.error('Failed to load repeats data', e);
+        throw e;
       }
     }
 

@@ -2332,20 +2332,21 @@ body {
 #mobileNavDrawer {
   position: fixed !important;
   top: 0 !important;
-  right: -420px;
-  width: min(380px, 92vw);
-  height: 100vh;
+  right: -420px !important;
+  width: min(380px, 92vw) !important;
+  max-width: 380px !important;
+  height: 100vh !important;
   background: var(--surface);
   border-left: 1px solid var(--border);
-  z-index: 9999;
-  display: flex;
+  z-index: 9999 !important;
+  display: flex !important;
   flex-direction: column;
   transition: right 0.28s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.28s ease;
   box-shadow: -10px 0 35px rgba(0,0,0,0.3);
   padding: 24px;
   overflow-y: auto;
-  visibility: hidden;
-  pointer-events: none;
+  visibility: hidden !important;
+  pointer-events: none !important;
 }
 
 .mobile-nav-drawer.open,
