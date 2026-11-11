@@ -165,21 +165,25 @@ Strict Requirements for Full Marks:
                     return text, next_key
             except urllib.error.HTTPError as e:
                 if e.code == 429:
-                    # Rate limit hit: back off briefly and rotate
+                    # Rate limit hit: back off safely and rotate key
+                    time.sleep(5.0)
+                    continue
+                elif e.code in (400, 403):
+                    # Quota exceeded or permission issue
                     time.sleep(2.0)
                     continue
                 elif e.code == 503:
-                    time.sleep(1.5)
+                    time.sleep(3.0)
                     continue
                 else:
                     continue
             except Exception:
-                time.sleep(1.0)
+                time.sleep(2.0)
                 continue
                 
     # All keys hit rate limits across models: safe rest period to let quotas recharge
-    print("\n  [SAFETY THROTTLE] All keys rate-limited. Resting 30s to allow API quotas to refresh...", end=" ", flush=True)
-    time.sleep(30)
+    print("\n  [SAFETY THROTTLE] All keys temporarily rate-limited. Resting 45s to protect API quotas...", end=" ", flush=True)
+    time.sleep(45)
     print("Resuming.")
     return None, (key_idx + 1) % max(1, len(KEYS))
 
@@ -211,6 +215,7 @@ def run_continuous_solver(batch_size=50, max_total=None):
     key_idx = 0
     cycle_num = 1
     total_solved_in_session = 0
+    consecutive_failures = 0
 
     while True:
         # Check stop flag
@@ -250,6 +255,11 @@ def run_continuous_solver(batch_size=50, max_total=None):
                 print(f"\n[GOAL REACHED] Completed session target of {max_total} questions. Exiting cleanly.")
                 return
 
+            if consecutive_failures >= 5:
+                print("\n[CIRCUIT BREAKER] 5 consecutive failures across all rotated API keys.")
+                print("[SAFETY STOP] Halting loop to prevent quota lockout or API block. Will retry in next cloud schedule.")
+                return
+
             qid = str(q.get("id"))
             text = q.get("text", "").strip()
             subject = q.get("subject", "Physics")
@@ -267,8 +277,9 @@ def run_continuous_solver(batch_size=50, max_total=None):
                 inject_to_static_page(qid, sol)
                 batch_solved += 1
                 total_solved_in_session += 1
+                consecutive_failures = 0
                 print(f"INSTANT REUSE (Duplicate Question matched to existing solution!)", flush=True)
-                time.sleep(0.3)
+                time.sleep(0.5)
                 continue
 
             t0 = time.time()
@@ -284,12 +295,14 @@ def run_continuous_solver(batch_size=50, max_total=None):
                 inject_to_static_page(qid, sol)
                 batch_solved += 1
                 total_solved_in_session += 1
+                consecutive_failures = 0
                 print(f"DONE in {elapsed:.1f}s (Next Key #{key_idx+1})", flush=True)
-                # Enforce safe delay between questions to stay far below 15 RPM quota
-                time.sleep(2.5)
+                # Enforce safe 4.0s delay between questions to stay far below 15 RPM per key
+                time.sleep(4.0)
             else:
-                print("PAUSED/RETRY (Key Rotated)", flush=True)
-                time.sleep(2.0)
+                consecutive_failures += 1
+                print(f"PAUSED/RETRY (Key Rotated | Failures: {consecutive_failures}/5)", flush=True)
+                time.sleep(5.0)
 
         print(f"\n=== CYCLE {cycle_num} COMPLETED! Solved {batch_solved}/{len(current_batch)} in this batch.")
         print(f"=== Total Cached in Vault: {len(solutions)} / {total_pool}")
