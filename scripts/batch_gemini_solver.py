@@ -100,6 +100,13 @@ def inject_to_static_page(qid, sol_html):
         except Exception:
             pass
 
+def normalize_q_text(text):
+    """Normalize question text to detect duplicate and near-identical questions."""
+    text = re.sub(r'<[^>]+>', ' ', text)
+    text = re.sub(r'\s+', ' ', text)
+    text = re.sub(r'[^\w\s]', '', text)
+    return text.strip().lower()
+
 def solve_with_gemini(question_text, subject, marks, key_idx=0):
     prompt = f"""You are a Senior CBSE Class 12 Board Examiner and Master Teacher.
 Provide an authentic, full-marks step-by-step marking scheme solution for this past board examination question.
@@ -130,9 +137,15 @@ Strict Requirements for Full Marks:
         }
     }
 
+    if not KEYS:
+        print("[WARN] No Gemini API keys found in environment or .env!")
+        return None, key_idx
+
+    # Try models and keys with rate-limit handling
     for model_name in MODELS_POOL:
         for attempt in range(len(KEYS)):
-            current_k = KEYS[(key_idx + attempt) % len(KEYS)]
+            current_k_idx = (key_idx + attempt) % len(KEYS)
+            current_k = KEYS[current_k_idx]
             url = f"https://generativelanguage.googleapis.com/v1beta/models/{model_name}:generateContent?key={current_k}"
             
             try:
@@ -141,22 +154,34 @@ Strict Requirements for Full Marks:
                     data=json.dumps(payload).encode("utf-8"),
                     headers={"Content-Type": "application/json"}
                 )
-                with urllib.request.urlopen(req, timeout=12) as resp:
+                with urllib.request.urlopen(req, timeout=15) as resp:
                     data = json.loads(resp.read().decode("utf-8"))
                     text = data["candidates"][0]["content"]["parts"][0]["text"].strip()
                     text = re.sub(r"^```html\s*", "", text, flags=re.MULTILINE)
                     text = re.sub(r"^```\s*", "", text, flags=re.MULTILINE)
                     text = text.strip()
-                    return text, (key_idx + attempt) % len(KEYS)
+                    # Success: advance to next key for next question
+                    next_key = (current_k_idx + 1) % len(KEYS)
+                    return text, next_key
             except urllib.error.HTTPError as e:
-                if e.code in (429, 503):
+                if e.code == 429:
+                    # Rate limit hit: back off briefly and rotate
+                    time.sleep(2.0)
+                    continue
+                elif e.code == 503:
+                    time.sleep(1.5)
                     continue
                 else:
                     continue
             except Exception:
+                time.sleep(1.0)
                 continue
                 
-    return None, key_idx
+    # All keys hit rate limits across models: safe rest period to let quotas recharge
+    print("\n  [SAFETY THROTTLE] All keys rate-limited. Resting 30s to allow API quotas to refresh...", end=" ", flush=True)
+    time.sleep(30)
+    print("Resuming.")
+    return None, (key_idx + 1) % max(1, len(KEYS))
 
 def run_continuous_solver(batch_size=50, max_total=None):
     if os.path.exists(STOP_FILE):
@@ -195,6 +220,15 @@ def run_continuous_solver(batch_size=50, max_total=None):
 
         cache = load_cache()
         solutions = cache.setdefault("solutions", {})
+
+        # Build normalized text lookup from existing solutions to instant-link duplicates
+        text_to_solution = {}
+        for item in cbse_questions:
+            item_id = str(item.get("id"))
+            if item_id in solutions and len(solutions[item_id]) >= 50:
+                norm = normalize_q_text(item.get("text", ""))
+                if norm:
+                    text_to_solution[norm] = solutions[item_id]
         
         # Find unsolved questions
         unsolved = [q for q in cbse_questions if str(q.get("id")) not in solutions or len(solutions[str(q.get("id"))]) < 50]
@@ -225,22 +259,37 @@ def run_continuous_solver(batch_size=50, max_total=None):
 
             print(f"  [{i+1}/{len(current_batch)}] Q#{qid} ({subject} - {chapter[:20]}... {repeats_cnt}x)...", end=" ", flush=True)
 
+            norm_q = normalize_q_text(text)
+            if norm_q in text_to_solution:
+                sol = text_to_solution[norm_q]
+                solutions[qid] = sol
+                save_cache(cache)
+                inject_to_static_page(qid, sol)
+                batch_solved += 1
+                total_solved_in_session += 1
+                print(f"INSTANT REUSE (Duplicate Question matched to existing solution!)", flush=True)
+                time.sleep(0.3)
+                continue
+
             t0 = time.time()
             sol, key_idx = solve_with_gemini(text, subject, marks, key_idx)
             elapsed = time.time() - t0
 
             if sol:
                 solutions[qid] = sol
+                if norm_q:
+                    text_to_solution[norm_q] = sol
                 cache["_total_cached"] = len(solutions)
                 save_cache(cache)
                 inject_to_static_page(qid, sol)
                 batch_solved += 1
                 total_solved_in_session += 1
-                print(f"DONE in {elapsed:.1f}s (Key #{key_idx+1})", flush=True)
-                time.sleep(0.8)
+                print(f"DONE in {elapsed:.1f}s (Next Key #{key_idx+1})", flush=True)
+                # Enforce safe delay between questions to stay far below 15 RPM quota
+                time.sleep(2.5)
             else:
-                print("FAILED (Rotating/Skipped)", flush=True)
-                time.sleep(1.2)
+                print("PAUSED/RETRY (Key Rotated)", flush=True)
+                time.sleep(2.0)
 
         print(f"\n=== CYCLE {cycle_num} COMPLETED! Solved {batch_solved}/{len(current_batch)} in this batch.")
         print(f"=== Total Cached in Vault: {len(solutions)} / {total_pool}")
