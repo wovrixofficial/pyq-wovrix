@@ -320,16 +320,24 @@
 
         <div class="bento-track-switcher-centered">
           <button id="bentoJeeBtn" class="bento-track-btn active" onclick="switchRecurrenceTrack('jee')">
-            <span>⚡ JEE Main Entrance</span>
-            <span class="track-badge">22 Archetypes (302x)</span>
+            <span>⚡ JEE Main</span>
+            <span class="track-badge">22 Archetypes</span>
           </button>
           <button id="bentoCbseBtn" class="bento-track-btn" onclick="switchRecurrenceTrack('cbse')">
-            <span>🎯 CBSE Class 12</span>
+            <span>🎯 CBSE 12</span>
             <span class="track-badge">1,792 Clones</span>
           </button>
           <button id="bentoNeetBtn" class="bento-track-btn" onclick="switchRecurrenceTrack('neet')">
-            <span>🩺 NEET UG Medical</span>
+            <span>🩺 NEET UG</span>
             <span class="track-badge">140 Clusters</span>
+          </button>
+          <button id="bentoJeeAdvBtn" class="bento-track-btn" onclick="switchRecurrenceTrack('jee-adv')">
+            <span>🔥 JEE Adv</span>
+            <span class="track-badge">128x Rolling</span>
+          </button>
+          <button id="bentoBitsatBtn" class="bento-track-btn" onclick="switchRecurrenceTrack('bitsat')">
+            <span>🎯 BITSAT</span>
+            <span class="track-badge">210x Sprints</span>
           </button>
         </div>
       </div>
@@ -499,6 +507,162 @@
             <span class="bento-freq-badge">🔥 11/11 YEARS (100%) • 54 Qs</span>
             <span class="bento-subj-pill">NEET Botany • Rank #1</span>
           </div>
+      <!-- JEE Advanced Recurrence Grid -->
+      <div id="recurrenceJeeAdvGrid" class="bento-grid" style="display: none;">
+        <!-- Card 1: Pure Rolling Constraints -->
+        <div class="bento-repeat-card">
+          <div class="bento-card-top">
+            <span class="bento-freq-badge purple">🔥 11 OF 11 YEARS • 128x TESTED</span>
+            <span class="bento-subj-pill">Physics • 4 Marks</span>
+          </div>
+          <h3 class="bento-concept-title">Rotational Dynamics & Pure Rolling Constraints</h3>
+          <div class="math-content" style="background:var(--surface-alt); padding:8px 12px; border-radius:6px; font-size:13.5px; margin:10px 0; overflow-x:auto;">
+            $$\tau = I\alpha, \quad a_{\text{cm}} = R\alpha, \quad L = I\omega + m(r \times v)$$
+          </div>
+          <p class="bento-question-text">
+            Appears in every single official IIT JEE Advanced cycle (2016–2026). Involves rolling without slipping on moving planks, cylinders, and multi-disk contact kinematics.
+          </p>
+          <div class="bento-years-chips-row">
+            <span class="bento-years-label">Tested Cycles:</span>
+            <span class="bento-chip">2026</span>
+            <span class="bento-chip">2025</span>
+            <span class="bento-chip">2024</span>
+            <span class="bento-chip">2023</span>
+            <span class="bento-chip">2022</span>
+            <span class="bento-chip">11 Years</span>
+          </div>
+          <a href="/repeated/?exam=jee-adv&subject=Physics" class="bento-drill-link">Explore 70+ IIT Physics Twins ➔</a>
+        </div>
+
+        <!-- Card 2: Application of Derivatives Extrema -->
+        <div class="bento-repeat-card">
+          <div class="bento-card-top">
+            <span class="bento-freq-badge purple">🔥 11 OF 11 YEARS • 142x TESTED</span>
+            <span class="bento-subj-pill">Mathematics • 4 Marks</span>
+          </div>
+          <h3 class="bento-concept-title">Application of Derivatives: Extrema & Monotonicity</h3>
+          <div class="math-content" style="background:var(--surface-alt); padding:8px 12px; border-radius:6px; font-size:13.5px; margin:10px 0; overflow-x:auto;">
+            $$f'(x) = 0, \quad f''(x) < 0 \implies \text{Local Max}$$
+          </div>
+          <p class="bento-question-text">
+            Logarithmic and irrational composite function curve analysis, local maxima/minima intervals, and Rolle's/LMVT existence conditions in IIT papers.
+          </p>
+          <div class="bento-years-chips-row">
+            <span class="bento-years-label">Tested Cycles:</span>
+            <span class="bento-chip">2026</span>
+            <span class="bento-chip">2025</span>
+            <span class="bento-chip">2024</span>
+            <span class="bento-chip">2023</span>
+            <span class="bento-chip">2022</span>
+            <span class="bento-chip">11 Years</span>
+          </div>
+          <a href="/repeated/?exam=jee-adv&subject=Mathematics" class="bento-drill-link">Explore 75+ IIT Math Twins ➔</a>
+        </div>
+
+        <!-- Card 3: Multi-Step Thermodynamics Cycles -->
+        <div class="bento-repeat-card">
+          <div class="bento-card-top">
+            <span class="bento-freq-badge green">🔥 10 OF 11 YEARS • 115x TESTED</span>
+            <span class="bento-subj-pill">Chemistry • 4 Marks</span>
+          </div>
+          <h3 class="bento-concept-title">Thermodynamics: Cyclic Paths & Efficiency</h3>
+          <div class="math-content" style="background:var(--surface-alt); padding:8px 12px; border-radius:6px; font-size:13.5px; margin:10px 0; overflow-x:auto;">
+            $$\Delta U = q + w, \quad \eta = 1 - \frac{T_C}{T_H}, \quad \Delta S = \int \frac{dq_{\text{rev}}}{T}$$
+          </div>
+          <p class="bento-question-text">
+            P-V and T-S cyclic diagrams comparing isothermal, adiabatic, and isochoric legs with state function enthalpy and entropy evaluations.
+          </p>
+          <div class="bento-years-chips-row">
+            <span class="bento-years-label">Tested Cycles:</span>
+            <span class="bento-chip">2026</span>
+            <span class="bento-chip">2025</span>
+            <span class="bento-chip">2024</span>
+            <span class="bento-chip">2023</span>
+            <span class="bento-chip">2022</span>
+            <span class="bento-chip">10 Years</span>
+          </div>
+          <a href="/repeated/?exam=jee-adv&subject=Chemistry" class="bento-drill-link">Explore 65+ IIT Chemistry Twins ➔</a>
+        </div>
+      </div>
+
+      <!-- BITSAT Recurrence Grid -->
+      <div id="recurrenceBitsatGrid" class="bento-grid" style="display: none;">
+        <!-- Card 1: Relative Velocity Sprints -->
+        <div class="bento-repeat-card">
+          <div class="bento-card-top">
+            <span class="bento-freq-badge green">⚡ 15 OF 15 YEARS • 210x TESTED</span>
+            <span class="bento-subj-pill">Physics • 3 Marks</span>
+          </div>
+          <h3 class="bento-concept-title">Kinematics: Relative Velocity & Frame Sprints</h3>
+          <div class="math-content" style="background:var(--surface-alt); padding:8px 12px; border-radius:6px; font-size:13.5px; margin:10px 0; overflow-x:auto;">
+            $$\vec{v}_{A/B} = \vec{v}_A - \vec{v}_B, \quad \tan\theta = \frac{v_y}{v_x \pm v_{\text{car}}}$$
+          </div>
+          <p class="bento-question-text">
+            45-second projectile and relative velocity speed calculations involving moving vehicles, river-swimmer crossing, and minimal distance separation.
+          </p>
+          <div class="bento-years-chips-row">
+            <span class="bento-years-label">Tested Years:</span>
+            <span class="bento-chip">2025</span>
+            <span class="bento-chip">2024</span>
+            <span class="bento-chip">2023</span>
+            <span class="bento-chip">2022</span>
+            <span class="bento-chip">2021</span>
+            <span class="bento-chip">15 Years</span>
+          </div>
+          <a href="/repeated/?exam=bitsat&subject=Physics" class="bento-drill-link">Explore 85+ BITSAT Physics Twins ➔</a>
+        </div>
+
+        <!-- Card 2: Trigonometric Shortcuts -->
+        <div class="bento-repeat-card">
+          <div class="bento-card-top">
+            <span class="bento-freq-badge purple">⚡ 15 OF 15 YEARS • 185x TESTED</span>
+            <span class="bento-subj-pill">Mathematics • 3 Marks</span>
+          </div>
+          <h3 class="bento-concept-title">Trigonometric Inverse & Angle Substitutions</h3>
+          <div class="math-content" style="background:var(--surface-alt); padding:8px 12px; border-radius:6px; font-size:13.5px; margin:10px 0; overflow-x:auto;">
+            $$\tan^{-1}x \pm \tan^{-1}y = \tan^{-1}\left(\frac{x \pm y}{1 \mp xy}\right)$$
+          </div>
+          <p class="bento-question-text">
+            Rapid formula evaluation and option elimination for composite inverse trigonometric and hyperbolic expressions under strict speed timeframes.
+          </p>
+          <div class="bento-years-chips-row">
+            <span class="bento-years-label">Tested Years:</span>
+            <span class="bento-chip">2025</span>
+            <span class="bento-chip">2024</span>
+            <span class="bento-chip">2023</span>
+            <span class="bento-chip">2022</span>
+            <span class="bento-chip">2021</span>
+            <span class="bento-chip">15 Years</span>
+          </div>
+          <a href="/repeated/?exam=bitsat&subject=Mathematics" class="bento-drill-link">Explore 90+ BITSAT Math Twins ➔</a>
+        </div>
+
+        <!-- Card 3: Spatial Figure Matrix Logic -->
+        <div class="bento-repeat-card">
+          <div class="bento-card-top">
+            <span class="bento-freq-badge blue">⚡ 14 OF 15 YEARS • 96x TESTED</span>
+            <span class="bento-subj-pill">Logical Reasoning • 3 Marks</span>
+          </div>
+          <h3 class="bento-concept-title">Figure Patterns & Spatial Rotation Matrices</h3>
+          <div class="math-content" style="background:var(--surface-alt); padding:8px 12px; border-radius:6px; font-size:13.5px; margin:10px 0; overflow-x:auto;">
+            $$\text{Clockwise } 45^\circ / 90^\circ \text{ rotation with parity alternating shading}$$
+          </div>
+          <p class="bento-question-text">
+            Non-verbal reasoning problems testing series completion, rule identification, and paper-folding symmetries across 15 years of BITSAT exams.
+          </p>
+          <div class="bento-years-chips-row">
+            <span class="bento-years-label">Tested Years:</span>
+            <span class="bento-chip">2025</span>
+            <span class="bento-chip">2024</span>
+            <span class="bento-chip">2023</span>
+            <span class="bento-chip">2022</span>
+            <span class="bento-chip">2021</span>
+            <span class="bento-chip">14 Years</span>
+          </div>
+          <a href="/repeated/?exam=bitsat&subject=Logical%20Reasoning" class="bento-drill-link">Explore 30+ BITSAT Logic Twins ➔</a>
+        </div>
+      </div>
+
           <h3 class="bento-concept-title">Cell Division & Organelles (Mitosis & Meiosis)</h3>
           <p class="bento-question-text">
             Recombination nodules in Pachytene, synaptonemal complex dissolution in Diplotene, spindle attachment at kinetochores, and G1/S/G2 checkpoints.
@@ -1521,31 +1685,47 @@
   document.addEventListener('DOMContentLoaded', triggerKaTeXRendering);
   window.addEventListener('load', triggerKaTeXRendering);
 
-  function switchRecurrenceTrack(track) {
+    function switchRecurrenceTrack(track) {
     const cbseBtn = document.getElementById('bentoCbseBtn');
     const neetBtn = document.getElementById('bentoNeetBtn');
     const jeeBtn = document.getElementById('bentoJeeBtn');
+    const jeeAdvBtn = document.getElementById('bentoJeeAdvBtn');
+    const bitsatBtn = document.getElementById('bentoBitsatBtn');
+
     const cbseGrid = document.getElementById('recurrenceCbseGrid');
     const neetGrid = document.getElementById('recurrenceNeetGrid');
     const jeeGrid = document.getElementById('recurrenceJeeGrid');
+    const jeeAdvGrid = document.getElementById('recurrenceJeeAdvGrid');
+    const bitsatGrid = document.getElementById('recurrenceBitsatGrid');
 
     if (cbseBtn) cbseBtn.classList.toggle('active', track === 'cbse');
     if (neetBtn) neetBtn.classList.toggle('active', track === 'neet');
     if (jeeBtn) jeeBtn.classList.toggle('active', track === 'jee');
+    if (jeeAdvBtn) jeeAdvBtn.classList.toggle('active', track === 'jee-adv');
+    if (bitsatBtn) bitsatBtn.classList.toggle('active', track === 'bitsat');
 
     if (cbseGrid) cbseGrid.style.display = track === 'cbse' ? 'grid' : 'none';
     if (neetGrid) neetGrid.style.display = track === 'neet' ? 'grid' : 'none';
     if (jeeGrid) jeeGrid.style.display = track === 'jee' ? 'grid' : 'none';
+    if (jeeAdvGrid) jeeAdvGrid.style.display = track === 'jee-adv' ? 'grid' : 'none';
+    if (bitsatGrid) bitsatGrid.style.display = track === 'bitsat' ? 'grid' : 'none';
 
     if (window.renderMathInElement) {
-      const activeEl = track === 'cbse' ? cbseGrid : (track === 'neet' ? neetGrid : jeeGrid);
+      const gridMap = {
+        'cbse': cbseGrid,
+        'neet': neetGrid,
+        'jee': jeeGrid,
+        'jee-adv': jeeAdvGrid,
+        'bitsat': bitsatGrid
+      };
+      const activeEl = gridMap[track];
       if (activeEl) {
         renderMathInElement(activeEl, {
           delimiters: [
             { left: "$$", right: "$$", display: true },
             { left: "$", right: "$", display: false },
-            { left: "\\(", right: "\\)", display: false },
-            { left: "\\[", right: "\\]", display: true }
+            { left: "\(", right: "\)", display: false },
+            { left: "\[", right: "\]", display: true }
           ],
           throwOnError: false
         });

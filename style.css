@@ -2705,6 +2705,14 @@ body {
   border-radius: 9999px;
   border: 1px solid var(--border);
   margin-top: 20px;
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.bento-track-switcher-centered::-webkit-scrollbar {
+  display: none;
 }
 
 .bento-track-btn {
@@ -3009,4 +3017,37 @@ body {
   background: rgba(59, 130, 246, 0.25) !important;
   color: #93c5fd !important;
   border-color: rgba(59, 130, 246, 0.4) !important;
+}
+
+
+/* Bento Mobile Responsiveness */
+@media (max-width: 768px) {
+  .bento-header-center {
+    padding: 0 12px;
+    margin-bottom: 24px;
+  }
+  .bento-track-switcher-centered {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 9999px;
+    justify-content: flex-start;
+    padding: 4px;
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 6px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .bento-track-btn {
+    flex: 0 0 auto;
+    padding: 8px 14px;
+    font-size: 12.5px;
+    gap: 6px;
+    white-space: nowrap;
+  }
+  .track-badge {
+    font-size: 10px;
+    padding: 2px 6px;
+  }
 }
