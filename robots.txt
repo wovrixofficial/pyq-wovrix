@@ -2,5 +2,5 @@ User-agent: *
 Allow: /
 Disallow: /*?*
 
-Sitemap: https://pyq.wovrix.in/sitemap.xml
-Sitemap: https://pyq.wovrix.in/sitemap-index.xml
+Sitemap: https://learnosha.in/sitemap.xml
+Sitemap: https://learnosha.in/sitemap-index.xml
