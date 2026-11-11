@@ -76,8 +76,25 @@ a {
 
 .brand-logo-icon {
   display: block;
-  border-radius: 7px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+  color: #2D3A9E;
+  flex-shrink: 0;
+  transition: color 0.15s ease;
+}
+
+[data-theme="dark"] .brand-logo-icon {
+  color: #ffffff;
+}
+
+[data-theme="dark"] .brand-logo-icon path[stroke="#D97706"] {
+  stroke: #FFB43A;
+}
+
+[data-theme="dark"] .brand-logo-icon path[stroke-opacity=".6"] {
+  stroke: #FFB43A;
+}
+
+[data-theme="dark"] .brand-logo-icon circle {
+  fill: #FFB43A;
 }
 
 .brand-name {
@@ -1311,9 +1328,6 @@ a {
   border-top-color: #374151;
 }
 
-[data-theme="dark"] .brand-logo-icon rect {
-  fill: #3b82f6;
-}
 
 [data-theme="dark"] .question-card,
 [data-theme="dark"] .chapter-card,

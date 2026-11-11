@@ -10,8 +10,8 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>High-Yield Repeats Radar (CBSE 12 & NEET UG) | Learnosha</title>
-  <meta name="description" content="Proprietary repetition frequency radar for CBSE Class 12 and NEET UG. Step-by-step exploration of multi-year recurring concepts, frequency filters, and identical twin exam questions.">
+  <title>High-Yield Repeats Radar (CBSE 12, NEET UG & JEE Main) | Learnosha</title>
+  <meta name="description" content="Proprietary repetition frequency radar for CBSE Class 12, NEET UG, and JEE Main. Step-by-step exploration of multi-year recurring concepts, frequency filters, and identical twin exam questions.">
   <link rel="canonical" href="https://learnosha.in/repeated/">
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="stylesheet" href="/style.css?v=20261110_7">
@@ -466,7 +466,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://learnosha.in/repeated/">
   <meta property="og:title" content="High-Yield Repeats Radar (CBSE 12 & NEET UG) | Learnosha">
-  <meta property="og:description" content="Proprietary repetition frequency radar for CBSE Class 12 and NEET UG. Step-by-step exploration of multi-year recurring concepts, frequency filters, and identical twin exam questions.">
+  <meta property="og:description" content="Proprietary repetition frequency radar for CBSE Class 12, NEET UG, and JEE Main. Step-by-step exploration of multi-year recurring concepts, frequency filters, and identical twin exam questions.">
   <meta property="og:image" content="https://learnosha.in/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -475,7 +475,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:url" content="https://learnosha.in/repeated/">
   <meta name="twitter:title" content="High-Yield Repeats Radar (CBSE 12 & NEET UG) | Learnosha">
-  <meta name="twitter:description" content="Proprietary repetition frequency radar for CBSE Class 12 and NEET UG. Step-by-step exploration of multi-year recurring concepts, frequency filters, and identical twin exam questions.">
+  <meta name="twitter:description" content="Proprietary repetition frequency radar for CBSE Class 12, NEET UG, and JEE Main. Step-by-step exploration of multi-year recurring concepts, frequency filters, and identical twin exam questions.">
   <meta name="twitter:image" content="https://learnosha.in/og-image.png">
 </head>
 <body>
@@ -484,10 +484,11 @@
   <header class="site-header">
     <div class="header-inner">
       <a href="/" class="brand">
-        <svg class="brand-logo-icon" width="22" height="22" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect width="32" height="32" rx="7" fill="#18181b"/>
-          <path d="M6 10L11 23L16 14L21 23L26 10" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
-          <circle cx="16" cy="14" r="2.2" fill="#3b82f6"/>
+        <svg class="brand-logo-icon" width="22" height="23" viewBox="8 6 48 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M19 17V46H45" fill="none" stroke="currentColor" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M29 26.5A10 10 0 0 1 39 36.5" fill="none" stroke="#D97706" stroke-width="3.5" stroke-linecap="round"/>
+          <path d="M29 18.5A18 18 0 0 1 47 36.5" fill="none" stroke="#D97706" stroke-opacity=".6" stroke-width="3.5" stroke-linecap="round"/>
+          <circle cx="29" cy="36.5" r="3" fill="#D97706"/>
         </svg>
         <span class="brand-name">LEARNOSHA</span>
       </a>
@@ -519,7 +520,7 @@
       <div class="drawer-goal-options">
         <button class="drawer-goal-btn goal-toggle-pill active" data-goal="cbse" onclick="selectGoal('cbse')">🎯 CBSE 12</button>
         <button class="drawer-goal-btn goal-toggle-pill" data-goal="neet" onclick="selectGoal('neet')">🩺 NEET UG</button>
-        <a href="/jee/" class="drawer-goal-btn goal-toggle-pill" style="text-decoration:none; display:inline-flex; align-items:center; justify-content:center;">⚡ JEE Main</a>
+        <button class="drawer-goal-btn goal-toggle-pill" data-goal="jee" onclick="selectGoal('jee')">⚡ JEE Main</button>
       </div>
     </div>
 
@@ -624,7 +625,7 @@
         </div>
 
         <!-- JEE Main Recurrence Radar Card -->
-        <div class="exam-track-card" onclick="window.location.href='/jee/'">
+        <div class="exam-track-card" onclick="selectExamTrack('jee')">
           <div class="exam-track-icon">⚡</div>
           <h2 class="exam-track-title">JEE Main 8-Year Recurrence Radar (2019–2026)</h2>
           <p class="exam-track-desc">
@@ -748,11 +749,12 @@
     <div class="footer-top-grid">
       <div class="footer-brand-column">
         <div class="brand">
-          <svg class="brand-logo-icon" width="20" height="20" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="32" height="32" rx="7" fill="#18181b"/>
-            <path d="M6 10L11 23L16 14L21 23L26 10" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
-            <circle cx="16" cy="14" r="2.2" fill="#3b82f6"/>
-          </svg>
+          <svg class="brand-logo-icon" width="22" height="23" viewBox="8 6 48 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M19 17V46H45" fill="none" stroke="currentColor" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M29 26.5A10 10 0 0 1 39 36.5" fill="none" stroke="#D97706" stroke-width="3.5" stroke-linecap="round"/>
+          <path d="M29 18.5A18 18 0 0 1 47 36.5" fill="none" stroke="#D97706" stroke-opacity=".6" stroke-width="3.5" stroke-linecap="round"/>
+          <circle cx="29" cy="36.5" r="3" fill="#D97706"/>
+        </svg>
           <span class="brand-name">LEARNOSHA</span>
         </div>
         <p class="footer-brand-desc">
@@ -821,7 +823,7 @@
       const urlSubj = p.get('subject');
       const urlConcept = p.get('concept');
 
-      if (urlExam && (urlExam === 'cbse' || urlExam === 'neet')) {
+      if (urlExam && (urlExam === 'cbse' || urlExam === 'neet' || urlExam === 'jee')) {
         currentExam = urlExam;
         setActiveGoal(urlExam);
       } else {
@@ -924,20 +926,33 @@
     // ---------------------------------------------------------
     function renderSubjectScreen() {
       const isCbse = currentExam === 'cbse';
-      document.getElementById('subjStageBadge').innerText = `${isCbse ? 'CBSE CLASS 12' : 'NEET UG'} • STEP 2 OF 3`;
-      document.getElementById('subjStageHeading').innerText = `Select ${isCbse ? 'CBSE Class 12' : 'NEET UG'} Subject`;
+      const isNeet = currentExam === 'neet';
+      const badgeText = isCbse ? 'CBSE CLASS 12' : (isNeet ? 'NEET UG' : 'JEE MAIN');
+      document.getElementById('subjStageBadge').innerText = `${badgeText} • STEP 2 OF 3`;
+      document.getElementById('subjStageHeading').innerText = `Select ${isCbse ? 'CBSE Class 12' : (isNeet ? 'NEET UG' : 'JEE Main')} Subject`;
 
       const container = document.getElementById('subjectCardsContainer');
-      const subjects = isCbse ? [
-        { name: 'Physics', icon: '⚛️', count: '540+ Clusters', desc: 'Optics, Current Electricity, Capacitance, AC & Semiconductors.' },
-        { name: 'Chemistry', icon: '🧪', count: '610+ Clusters', desc: 'Solutions, Electrochemistry, Kinetics, Coordination & Aldehydes.' },
-        { name: 'Mathematics', icon: '📐', count: '640+ Clusters', desc: 'Matrices, Determinants, Integrals, Vectors & 3D Geometry.' }
-      ] : [
-        { name: 'Physics', icon: '⚛️', count: '30+ Concept Tiers', desc: 'Photoelectric effect, Ray Optics, Modern Physics & Rotational.' },
-        { name: 'Chemistry', icon: '🧪', count: '35+ Concept Tiers', desc: 'Coordination, Chemical Bonding, Electrochemistry & Kinetics.' },
-        { name: 'Botany', icon: '🌿', count: '28+ Concept Tiers', desc: 'Genetics, Molecular Basis, Photosynthesis & Cell Division.' },
-        { name: 'Zoology', icon: '🐾', count: '26+ Concept Tiers', desc: 'Human Reproduction, Evolution, Health and Disease.' }
-      ];
+      let subjects = [];
+      if (isCbse) {
+        subjects = [
+          { name: 'Physics', icon: '⚛️', count: '540+ Clusters', desc: 'Optics, Current Electricity, Capacitance, AC & Semiconductors.' },
+          { name: 'Chemistry', icon: '🧪', count: '610+ Clusters', desc: 'Solutions, Electrochemistry, Kinetics, Coordination & Aldehydes.' },
+          { name: 'Mathematics', icon: '📐', count: '640+ Clusters', desc: 'Matrices, Determinants, Integrals, Vectors & 3D Geometry.' }
+        ];
+      } else if (isNeet) {
+        subjects = [
+          { name: 'Physics', icon: '⚛️', count: '30+ Concept Tiers', desc: 'Photoelectric effect, Ray Optics, Modern Physics & Rotational.' },
+          { name: 'Chemistry', icon: '🧪', count: '35+ Concept Tiers', desc: 'Coordination, Chemical Bonding, Electrochemistry & Kinetics.' },
+          { name: 'Botany', icon: '🌿', count: '28+ Concept Tiers', desc: 'Genetics, Molecular Basis, Photosynthesis & Cell Division.' },
+          { name: 'Zoology', icon: '🐾', count: '26+ Concept Tiers', desc: 'Human Reproduction, Evolution, Health and Disease.' }
+        ];
+      } else {
+        subjects = [
+          { name: 'Physics', icon: '⚛️', count: '8 Core Archetypes', desc: 'Capacitor Dielectrics (258x), Photoelectric (215x), Rolling (198x), Drift Velocity (188x).' },
+          { name: 'Chemistry', icon: '🧪', count: '7 Core Archetypes', desc: 'CFSE (183x), Chemical Equilibrium (176x), First-Order Kinetics (172x), Aldol (165x).' },
+          { name: 'Mathematics', icon: '📐', count: '7 Core Archetypes', desc: 'King\'s Property Integrals (302x), Matrix Adjoints (225x), Skew Lines (218x), Binomial (198x).' }
+        ];
+      }
 
       container.innerHTML = subjects.map(s => `
         <div class="subject-select-card" onclick="selectSubject('${s.name}')">
@@ -965,10 +980,12 @@
     // ---------------------------------------------------------
     function renderRadarScreen() {
       const isCbse = currentExam === 'cbse';
-      document.getElementById('radarStageHeading').innerText = `${currentSubject} Recurrence Radar (${isCbse ? 'CBSE 12' : 'NEET UG'})`;
+      const isNeet = currentExam === 'neet';
+      const label = isCbse ? 'CBSE 12' : (isNeet ? 'NEET UG' : 'JEE Main');
+      document.getElementById('radarStageHeading').innerText = `${currentSubject} Recurrence Radar (${label})`;
       
       const vaultBanner = document.getElementById('radarNeetVaultBanner');
-      if (vaultBanner) vaultBanner.style.display = isCbse ? 'none' : 'block';
+      if (vaultBanner) vaultBanner.style.display = (isCbse || !isNeet) ? 'none' : 'block';
 
       const slider = document.getElementById('repeatFrequencySlider');
       const ticks = document.getElementById('sliderTicksContainer');
@@ -980,13 +997,20 @@
         minFrequency = 2;
         document.getElementById('sliderValueText').innerText = "2x (Duplicates & Clones)";
         ticks.innerHTML = '<span>2x (Twins & Clones)</span><span>3x (High Yield)</span><span>4x (Frequent Pattern)</span><span>5x+ (Core Master Repeats)</span>';
-      } else {
+      } else if (isNeet) {
         slider.min = "2";
         slider.max = "30";
         slider.value = "2";
         minFrequency = 2;
         document.getElementById('sliderValueText').innerText = "2x Appearances";
         ticks.innerHTML = '<span>2x (All Recurrent)</span><span>10x (High Yield)</span><span>20x (Core Frequency)</span><span>30x (Every Single Year)</span>';
+      } else {
+        slider.min = "2";
+        slider.max = "300";
+        slider.value = "2";
+        minFrequency = 2;
+        document.getElementById('sliderValueText').innerText = "2x Appearances";
+        ticks.innerHTML = '<span>2x (All Patterns)</span><span>50x (High Yield)</span><span>150x (Core Frequency)</span><span>300x (King\'s Property)</span>';
       }
 
       applyRadarFilters();
@@ -1002,7 +1026,11 @@
       if (!repeatsData) return;
 
       const isCbse = currentExam === 'cbse';
-      const rawList = isCbse ? (repeatsData.cbse_repeats || []) : (repeatsData.neet_repeats || []);
+      const isNeet = currentExam === 'neet';
+      let rawList = [];
+      if (isCbse) rawList = repeatsData.cbse_repeats || [];
+      else if (isNeet) rawList = repeatsData.neet_repeats || [];
+      else rawList = repeatsData.jee_repeats || [];
       const search = (document.getElementById('radarSearchInput')?.value || '').toLowerCase().trim();
 
       let filtered = rawList.filter(q => {
@@ -1048,6 +1076,8 @@
         const tierBadge = item.recurrence_tier ? `<div style="margin-bottom:6px;"><span class="repeat-year-chip" style="color:var(--accent); font-weight:800; border-color:rgba(37,99,235,0.3);">${escapeHtml(item.recurrence_tier)}</span></div>` : '';
         const twinCount = item.historical_twin_ids ? item.historical_twin_ids.length : rep;
 
+        const formulaHtml = item.formula ? `<div class="math-content" style="background:var(--surface-alt); padding:8px 12px; border-radius:6px; font-size:13px; margin:8px 0; overflow-x:auto;">$$${item.formula}$$</div>` : '';
+
         return `
           <div class="repeat-item-card" onclick="openConceptDrill(${idx})">
             <div>
@@ -1056,6 +1086,7 @@
                 <span class="repeat-badge-hero">🔥 ${rep}x Tested</span>
               </div>
               <h3 class="repeat-concept-title">${escapeHtml(title)}</h3>
+              ${formulaHtml}
               ${tierBadge}
               <div class="repeat-years-row">
                 ${years.slice(0, 6).map(y => `<span class="repeat-year-chip">${y}</span>`).join('')}
@@ -1069,6 +1100,18 @@
           </div>
         `;
       }).join('');
+
+      if (window.renderMathInElement) {
+        renderMathInElement(container, {
+          delimiters: [
+            { left: '$$', right: '$$', display: true },
+            { left: '$', right: '$', display: false },
+            { left: '\\(', right: '\\)', display: false },
+            { left: '\\[', right: '\\]', display: true }
+          ],
+          throwOnError: false
+        });
+      }
     }
 
     // ---------------------------------------------------------
@@ -1101,12 +1144,13 @@
       let optionsHtml = '';
       if (q.options && typeof q.options === 'object') {
         optionsHtml = '<div style="display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:14px 0;">';
-        ['A', 'B', 'C', 'D'].forEach(opt => {
+        const keysToUse = ['1', '2', '3', '4'].some(k => k in q.options) ? ['1', '2', '3', '4'] : ['A', 'B', 'C', 'D'];
+        keysToUse.forEach(opt => {
           if (q.options[opt]) {
-            const isCorrect = q.correct_answer === opt;
+            const isCorrect = String(q.correct_answer) === String(opt);
             optionsHtml += `
               <div style="background:${isCorrect ? '#ecfdf5' : 'var(--surface-alt)'}; border:1px solid ${isCorrect ? '#059669' : 'var(--border)'}; padding:10px 14px; border-radius:6px; font-size:14px;">
-                <strong>(${opt})</strong> ${escapeHtml(q.options[opt])}
+                <strong>(${opt})</strong> <span class="math-content">${q.options[opt]}</span>
                 ${isCorrect ? '<span style="color:#059669; font-weight:800; float:right;">✓ Official Key</span>' : ''}
               </div>
             `;
@@ -1168,7 +1212,7 @@
 
       if (window.renderMathInElement) {
         renderMathInElement(container, {
-          delimiters: [{left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}],
+          delimiters: [{left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}, {left: '\\(', right: '\\)', display: false}, {left: '\\[', right: '\\]', display: true}],
           throwOnError: false
         });
       }
