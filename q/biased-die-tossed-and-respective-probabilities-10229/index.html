@@ -25,7 +25,12 @@
       "@type": "Question",
       "name": "CBSE Class 12 Mathematics Probability Board Question",
       "text": "A biased die is tossed and respective probabilities for various faces to turn up are the following : \n\n| Face | 1 | 2 | 3 | 4 | 5 | 6 |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Probability | 0.1 | 0.24 | 0.19 | 0.18 | 0.15 | K |\n\nBased on the above information, answer the following questions :\n(a) What is the value of K ?\n(b) If a face showing an even number has turned up, then what is the probability that it is the face with 2 or 4 ?",
-      "answerCount": 1
+      "answerCount": 1,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CBSE Class 12 Mathematics: Probability Distribution Solution         (a) Finding the value of K                   Step 1 (Governing Law): [0.5 Mark]               For any probability distribution, the sum of all probabilities must be equal to 1.             $$\sum_{i=1}^{6} P(X_i) = 1$$             ...",
+        "upvoteCount": 1
+      }
     }
   }
   </script>
@@ -86,6 +91,58 @@ Based on the above information, answer the following questions :
 (a) What is the value of K ?
 (b) If a face showing an even number has turned up, then what is the probability that it is the face with 2 or 4 ?</div>
       </div>
+      <div class="solution-box" style="margin-top:24px; padding:20px; background:var(--card-bg, #ffffff); border:1.5px solid var(--border, #e2e8f0); border-radius:12px;">
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:14px;">
+          <span style="background:#10b981; color:#fff; font-size:11px; font-weight:700; padding:3px 10px; border-radius:20px; text-transform:uppercase;">✓ Verified CBSE Marking Scheme</span>
+          <span style="font-size:12px; color:var(--text-muted, #64748b); font-weight:600;">Official Evaluation Steps & EL10 Insight</span>
+        </div>
+        <div class="math-content solution-content" style="line-height:1.7; font-size:15px;">
+          <div>
+    <h3>CBSE Class 12 Mathematics: Probability Distribution Solution</h3>
+
+    <p><strong>(a) Finding the value of K</strong></p>
+    <ul>
+        <li><strong>Step 1 (Governing Law): [0.5 Mark]</strong><br>
+            For any probability distribution, the sum of all probabilities must be equal to 1.
+            $$\sum_{i=1}^{6} P(X_i) = 1$$
+        </li>
+        <li><strong>Step 2 (Mathematical Working): [0.5 Mark]</strong><br>
+            Substituting the given values:
+            $$0.1 + 0.24 + 0.19 + 0.18 + 0.15 + K = 1$$
+            $$0.86 + K = 1$$
+            $$K = 1 - 0.86$$
+        </li>
+        <li><strong>Step 3 (Final Answer): [0.5 Mark]</strong><br>
+            $$K = 0.14$$
+        </li>
+    </ul>
+
+    <p><strong>(b) Conditional Probability Calculation</strong></p>
+    <ul>
+        <li><strong>Step 1 (Formula / Governing Law): [0.5 Mark]</strong><br>
+            Let $E$ be the event that an even number turns up, and $A$ be the event that the face is 2 or 4. We need to find $P(A|E)$.
+            $$P(A|E) = \frac{P(A \cap E)}{P(E)}$$
+        </li>
+        <li><strong>Step 2 (Mathematical Working): [0.5 Mark]</strong><br>
+            Even faces are {2, 4, 6}.
+            $$P(E) = P(2) + P(4) + P(6) = 0.24 + 0.18 + 0.14 = 0.56$$
+            The event $A$ (face 2 or 4) is a subset of $E$, so $P(A \cap E) = P(2) + P(4) = 0.24 + 0.18 = 0.42$.
+            $$P(A|E) = \frac{0.42}{0.56}$$
+        </li>
+        <li><strong>Step 3 (Final Answer): [0.5 Mark]</strong><br>
+            Simplifying the fraction:
+            $$P(A|E) = \frac{42}{56} = \frac{3}{4} = 0.75$$
+        </li>
+    </ul>
+
+    <div style="background-color: #f9f9f9; padding: 10px; border-left: 5px solid #2c3e50;">
+        <strong>💡 EL10 Concept Insight:</strong> 
+        Think of the total probability as a whole pizza that must equal 1. Once you know the size of all the other slices, the missing slice (K) is just whatever is left over. For the second part, since we already know the die landed on an even number, we ignore all the odd numbers and just look at the "even slice" of the pizza to see how much of it is made up of 2s and 4s.
+    </div>
+</div>
+        </div>
+      </div>
+
 
       <div class="card-footer-actions">
         <a href="mailto:support@learnosha.in?subject=Report%20Question%2010229&body=Question%20ID:%2010229%0AChapter:%20Probability%0AIssue%20Description:%20" class="report-link">

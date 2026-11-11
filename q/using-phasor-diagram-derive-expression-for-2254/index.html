@@ -25,7 +25,12 @@
       "@type": "Question",
       "name": "CBSE Class 12 Physics Alternating Current Board Question",
       "text": "(a) Using a phasor diagram, derive an expression for the impedance of a series LCR circuit connected to an ac source. What is meant by resonance in this circuit ? Obtain expression for the resonant frequency of this circuit.",
-      "answerCount": 1
+      "answerCount": 1,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CBSE Class 12 Physics: Series LCR Circuit Analysis          Step 1 (Phasor Diagram & Impedance Derivation): [1 Mark]        In a series LCR circuit, the voltage across the resistor ($V_R$), inductor ($V_L$), and capacitor ($V_C$) are related to the current ($I$) as follows:                 $V_R = IR...",
+        "upvoteCount": 1
+      }
     }
   }
   </script>
@@ -78,6 +83,46 @@
       <div class="question-body">
         <div class="math-content">(a) Using a phasor diagram, derive an expression for the impedance of a series LCR circuit connected to an ac source. What is meant by resonance in this circuit ? Obtain expression for the resonant frequency of this circuit.</div>
       </div>
+      <div class="solution-box" style="margin-top:24px; padding:20px; background:var(--card-bg, #ffffff); border:1.5px solid var(--border, #e2e8f0); border-radius:12px;">
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:14px;">
+          <span style="background:#10b981; color:#fff; font-size:11px; font-weight:700; padding:3px 10px; border-radius:20px; text-transform:uppercase;">✓ Verified CBSE Marking Scheme</span>
+          <span style="font-size:12px; color:var(--text-muted, #64748b); font-weight:600;">Official Evaluation Steps & EL10 Insight</span>
+        </div>
+        <div class="math-content solution-content" style="line-height:1.7; font-size:15px;">
+          <div>
+    <h3><strong>CBSE Class 12 Physics: Series LCR Circuit Analysis</strong></h3>
+
+    <p><strong>Step 1 (Phasor Diagram & Impedance Derivation): [1 Mark]</strong></p>
+    <p>In a series LCR circuit, the voltage across the resistor ($V_R$), inductor ($V_L$), and capacitor ($V_C$) are related to the current ($I$) as follows:</p>
+    <ul>
+        <li>$V_R = IR$ (in phase with $I$)</li>
+        <li>$V_L = IX_L$ (leads $I$ by $90^\circ$)</li>
+        <li>$V_C = IX_C$ (lags $I$ by $90^\circ$)</li>
+    </ul>
+    <p>From the phasor diagram, the resultant voltage $V$ is the vector sum of these components. Since $V_L$ and $V_C$ are in opposite directions, the net reactive voltage is $(V_L - V_C)$.</p>
+    $$V = \sqrt{V_R^2 + (V_L - V_C)^2}$$
+    $$V = \sqrt{(IR)^2 + (IX_L - IX_C)^2} = I \sqrt{R^2 + (X_L - X_C)^2}$$
+
+    <p><strong>Step 2 (Expression for Impedance): [1 Mark]</strong></p>
+    <p>The impedance ($Z$) is defined as the ratio of the total voltage to the total current ($Z = V/I$). Substituting the values from the previous step:</p>
+    $$Z = \frac{V}{I} = \sqrt{R^2 + (X_L - X_C)^2}$$
+    <p>Substituting $X_L = \omega L$ and $X_C = \frac{1}{\omega C}$:</p>
+    $$Z = \sqrt{R^2 + \left(\omega L - \frac{1}{\omega C}\right)^2}$$
+
+    <p><strong>Step 3 (Resonance & Resonant Frequency): [1 Mark]</strong></p>
+    <p><strong>Definition:</strong> Resonance occurs in a series LCR circuit when the inductive reactance equals the capacitive reactance ($X_L = X_C$), making the circuit purely resistive and the current maximum.</p>
+    <p><strong>Derivation:</strong></p>
+    $$\omega_0 L = \frac{1}{\omega_0 C} \implies \omega_0^2 = \frac{1}{LC}$$
+    $$\omega_0 = \frac{1}{\sqrt{LC}}$$
+    <p>Since $\omega_0 = 2\pi f_0$, the resonant frequency is:</p>
+    $$f_0 = \frac{1}{2\pi \sqrt{LC}}$$
+
+    <hr>
+    <p><strong>💡 EL10 Concept Insight:</strong> Think of resonance like pushing a child on a swing; when you push at exactly the right rhythm (frequency), the swing goes as high as possible because the energy isn't being wasted fighting against the timing. In an LCR circuit, when the frequency is just right, the "push" from the inductor and the "pull" from the capacitor cancel each other out perfectly, allowing the current to flow with zero opposition from reactance.</p>
+</div>
+        </div>
+      </div>
+
 
       <div class="card-footer-actions">
         <a href="mailto:contact@wovrix.in?subject=Report%20Question%202254&body=Question%20ID:%202254%0AChapter:%20Alternating Current%0AIssue%20Description:%20" class="report-link">

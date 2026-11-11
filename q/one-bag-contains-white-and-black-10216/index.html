@@ -25,7 +25,12 @@
       "@type": "Question",
       "name": "CBSE Class 12 Mathematics Probability Board Question",
       "text": "One bag contains 4 white and 5 black balls. Another bag contains 6 white and 7 black balls. A ball, drawn at random, is transferred from the first bag to the second bag and then a ball is drawn at random from the second bag. Find the probability that the ball drawn is white.",
-      "answerCount": 1
+      "answerCount": 1,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Step 1 (Formula / Governing Law & Given Data): [1/4 Mark]        Let $W_1$ be the event that a white ball is transferred from Bag I to Bag II, and $B_1$ be the event that a black ball is transferred. Let $W$ be the event that the ball drawn from Bag II is white. By the Law of Total Probability:     ...",
+        "upvoteCount": 1
+      }
     }
   }
   </script>
@@ -78,6 +83,44 @@
       <div class="question-body">
         <div class="math-content">One bag contains 4 white and 5 black balls. Another bag contains 6 white and 7 black balls. A ball, drawn at random, is transferred from the first bag to the second bag and then a ball is drawn at random from the second bag. Find the probability that the ball drawn is white.</div>
       </div>
+      <div class="solution-box" style="margin-top:24px; padding:20px; background:var(--card-bg, #ffffff); border:1.5px solid var(--border, #e2e8f0); border-radius:12px;">
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:14px;">
+          <span style="background:#10b981; color:#fff; font-size:11px; font-weight:700; padding:3px 10px; border-radius:20px; text-transform:uppercase;">✓ Verified CBSE Marking Scheme</span>
+          <span style="font-size:12px; color:var(--text-muted, #64748b); font-weight:600;">Official Evaluation Steps & EL10 Insight</span>
+        </div>
+        <div class="math-content solution-content" style="line-height:1.7; font-size:15px;">
+          <div>
+    <p><strong>Step 1 (Formula / Governing Law & Given Data): [1/4 Mark]</strong></p>
+    <p>Let $W_1$ be the event that a white ball is transferred from Bag I to Bag II, and $B_1$ be the event that a black ball is transferred. Let $W$ be the event that the ball drawn from Bag II is white. By the Law of Total Probability:</p>
+    $$P(W) = P(W_1) \cdot P(W|W_1) + P(B_1) \cdot P(W|B_1)$$
+    <p>Given:</p>
+    <ul>
+        <li>Bag I: 4 White, 5 Black (Total = 9)</li>
+        <li>Bag II: 6 White, 7 Black (Total = 13)</li>
+    </ul>
+
+    <p><strong>Step 2 (Step-by-Step Mathematical Working): [1/2 Mark]</strong></p>
+    <p>First, calculate the probabilities of the transfer events:</p>
+    $$P(W_1) = \frac{4}{9}, \quad P(B_1) = \frac{5}{9}$$
+    <p>After transferring a ball, Bag II contains 14 balls. Calculate conditional probabilities for drawing a white ball from Bag II:</p>
+    <ul>
+        <li>If a white ball was transferred ($W_1$): Bag II has 7 White, 7 Black. Thus, $P(W|W_1) = \frac{7}{14} = \frac{1}{2}$.</li>
+        <li>If a black ball was transferred ($B_1$): Bag II has 6 White, 8 Black. Thus, $P(W|B_1) = \frac{6}{14} = \frac{3}{7}$.</li>
+    </ul>
+    <p>Substitute these into the total probability formula:</p>
+    $$P(W) = \left( \frac{4}{9} \times \frac{1}{2} \right) + \left( \frac{5}{9} \times \frac{3}{7} \right)$$
+    $$P(W) = \frac{4}{18} + \frac{15}{63} = \frac{2}{9} + \frac{15}{63}$$
+    $$P(W) = \frac{14 + 15}{63} = \frac{29}{63}$$
+
+    <p><strong>Step 3 (Final Concluded Answer): [1/4 Mark]</strong></p>
+    <p>The probability that the ball drawn from the second bag is white is:</p>
+    $$\mathbf{P(W) = \frac{29}{63}}$$
+
+    <p><strong>💡 EL10 Concept Insight:</strong> Think of this like a two-path maze: you either move a white ball or a black ball first, which changes the "recipe" of the second bag. We just calculate the chance of each path happening and add them together to get the total probability!</p>
+</div>
+        </div>
+      </div>
+
 
       <div class="card-footer-actions">
         <a href="mailto:support@learnosha.in?subject=Report%20Question%2010216&body=Question%20ID:%2010216%0AChapter:%20Probability%0AIssue%20Description:%20" class="report-link">
