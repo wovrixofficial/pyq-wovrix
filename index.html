@@ -646,6 +646,7 @@
         <div class="exam-switcher-bar">
           <button class="exam-tab-btn active" onclick="switchExamTab('cbse')">CBSE Class 12 PCM (37 Chapters)</button>
           <button class="exam-tab-btn" onclick="switchExamTab('neet')">NEET UG 11-Year Master Archive (2016–2026)</button>
+          <button class="exam-tab-btn" onclick="switchExamTab('jee')">⚡ JEE Main 8-Year Archive (186 Shifts • 12,667 Qs)</button>
         </div>
       </div>
 
@@ -1036,6 +1037,58 @@
         
         </div>
       </div>
+
+      <!-- JEE Main Directory View -->
+      <div id="jee-section" class="exam-panel" style="display:none;">
+        <div class="neet-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));">
+          
+        <div class="neet-subject-card">
+          <div class="neet-card-header">
+            <h3>⚡ Physics</h3>
+            <span class="neet-count-badge" style="background:#eff6ff; color:#1d4ed8;">5,398 Questions</span>
+          </div>
+          <p class="neet-meta">2019–2026 NTA Shifts • 186 Shift Papers • MCQs & NVQs</p>
+          <div class="neet-topics-preview">
+            <span class="topic-label">Key Syllabi:</span> Current Electricity, Thermodynamics, Rotational Motion, Moving Charges, Ray Optics, Modern Physics
+          </div>
+          <div style="display:flex; gap:10px; margin-top:16px;">
+            <a href="/practice/?exam=jee&subject=Physics" class="neet-action-link" style="flex:1;">Chapter Practice ➔</a>
+            <a href="/paper-maker/?exam=jee" class="neet-action-link" style="background:var(--accent); color:#ffffff; flex:1; text-align:center;">CBT Mock ➔</a>
+          </div>
+        </div>
+        
+        <div class="neet-subject-card">
+          <div class="neet-card-header">
+            <h3>⚡ Chemistry</h3>
+            <span class="neet-count-badge" style="background:#eff6ff; color:#1d4ed8;">3,727 Questions</span>
+          </div>
+          <p class="neet-meta">Physical, Inorganic & Organic • Numerical Value Questions</p>
+          <div class="neet-topics-preview">
+            <span class="topic-label">Key Syllabi:</span> Coordination Compounds, Chemical Bonding, Electrochemistry, Equilibrium, Kinetics, Carbonyls
+          </div>
+          <div style="display:flex; gap:10px; margin-top:16px;">
+            <a href="/practice/?exam=jee&subject=Chemistry" class="neet-action-link" style="flex:1;">Chapter Practice ➔</a>
+            <a href="/paper-maker/?exam=jee" class="neet-action-link" style="background:var(--accent); color:#ffffff; flex:1; text-align:center;">CBT Mock ➔</a>
+          </div>
+        </div>
+        
+        <div class="neet-subject-card">
+          <div class="neet-card-header">
+            <h3>⚡ Mathematics</h3>
+            <span class="neet-count-badge" style="background:#eff6ff; color:#1d4ed8;">3,542 Questions</span>
+          </div>
+          <p class="neet-meta">Calculus, Algebra, Vectors & 3D, Conic Sections</p>
+          <div class="neet-topics-preview">
+            <span class="topic-label">Key Syllabi:</span> Matrices & Determinants, Definite Integrals, 3D Geometry & Vectors, Differential Equations, Probability
+          </div>
+          <div style="display:flex; gap:10px; margin-top:16px;">
+            <a href="/practice/?exam=jee&subject=Mathematics" class="neet-action-link" style="flex:1;">Chapter Practice ➔</a>
+            <a href="/paper-maker/?exam=jee" class="neet-action-link" style="background:var(--accent); color:#ffffff; flex:1; text-align:center;">CBT Mock ➔</a>
+          </div>
+        </div>
+
+        </div>
+      </div>
     </section>
   </main>
 
@@ -1115,7 +1168,7 @@
           <span>Learnosha</span>
         </div>
         <p class="footer-brand-desc">
-          Unified previous year questions archive for CBSE Class 12 PCM and NEET UG. Pure study material organized by NCERT curriculum with repeat analytics.
+          Unified previous year questions archive for CBSE Class 12 PCM, NEET UG, and JEE Main. Pure study material organized by NCERT curriculum with repeat analytics and CBT simulation.
         </p>
       </div>
 
@@ -1125,27 +1178,38 @@
           <li><a href="/cbse-12/physics/electric-charges-and-fields/">Physics (14 Chapters)</a></li>
           <li><a href="/cbse-12/chemistry/solutions/">Chemistry (10 Chapters)</a></li>
           <li><a href="/cbse-12/mathematics/relations-and-functions/">Mathematics (13 Chapters)</a></li>
-          <li><a href="/practice/">Interactive Practice Hub</a></li>
+          <li><a href="/practice/?exam=cbse">Interactive Practice Hub</a></li>
         </ul>
       </div>
 
       <div class="footer-col">
-        <span class="footer-col-heading">Medical Entrance</span>
+        <span class="footer-col-heading">Medical (NEET UG)</span>
         <ul class="footer-links-list">
-          <li><a href="/practice/?exam=neet">NEET UG 11-Year Archive (2016–2026)</a></li>
-          <li><a href="/practice/?exam=neet&subject=Physics">NEET Physics (2016–2026)</a></li>
-          <li><a href="/practice/?exam=neet&subject=Chemistry">NEET Chemistry (2016–2026)</a></li>
-          <li><a href="/practice/?exam=neet&subject=Botany">NEET Botany (2016–2026)</a></li>
-          <li><a href="/practice/?exam=neet&subject=Zoology">NEET Zoology (2016–2026)</a></li>
+          <li><a href="/practice/?exam=neet">NEET UG 11-Year Archive</a></li>
+          <li><a href="/practice/?exam=neet&subject=Physics">NEET Physics</a></li>
+          <li><a href="/practice/?exam=neet&subject=Chemistry">NEET Chemistry</a></li>
+          <li><a href="/practice/?exam=neet&subject=Botany">NEET Botany</a></li>
+          <li><a href="/practice/?exam=neet&subject=Zoology">NEET Zoology</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <span class="footer-col-heading">Engineering (JEE Main)</span>
+        <ul class="footer-links-list">
+          <li><a href="/practice/?exam=jee&subject=Physics">JEE Physics (5,398 Qs)</a></li>
+          <li><a href="/practice/?exam=jee&subject=Chemistry">JEE Chemistry (3,727 Qs)</a></li>
+          <li><a href="/practice/?exam=jee&subject=Mathematics">JEE Mathematics (3,542 Qs)</a></li>
+          <li><a href="/paper-maker/?exam=jee">3-Hour CBT Simulator</a></li>
+          <li><a href="/repeated/?exam=jee">JEE Recurring Concepts</a></li>
         </ul>
       </div>
 
       <div class="footer-col">
         <span class="footer-col-heading">Study Tools</span>
         <ul class="footer-links-list">
-          <li><a href="/jee/">JEE Main 8-Year CBT Simulator (186 Shifts • 12,667 Qs)</a></li>
-          <li><a href="/paper-maker/">Custom Board Paper Maker</a></li>
-          <li><a href="/repeated/">Parallel Set & Repeat Radar</a></li>
+          <li><a href="/paper-maker/">Custom Paper & CBT Maker</a></li>
+          <li><a href="/repeated/">Repeats & Radar</a></li>
+          <li><a href="/saved/">Saved Questions Dashboard</a></li>
           <li><a href="mailto:support@learnosha.in">Report Question Correction</a></li>
         </ul>
       </div>
@@ -1378,18 +1442,23 @@
   function switchExamTab(tab) {
     const cbsePanel = document.getElementById('cbse-section');
     const neetPanel = document.getElementById('neet-section');
+    const jeePanel = document.getElementById('jee-section');
     const buttons = document.querySelectorAll('.exam-tab-btn');
 
+    buttons.forEach(b => b.classList.remove('active'));
+    if (cbsePanel) cbsePanel.style.display = 'none';
+    if (neetPanel) neetPanel.style.display = 'none';
+    if (jeePanel) jeePanel.style.display = 'none';
+
     if (tab === 'cbse') {
-      cbsePanel.style.display = 'block';
-      neetPanel.style.display = 'none';
-      buttons[0].classList.add('active');
-      buttons[1].classList.remove('active');
-    } else {
-      cbsePanel.style.display = 'none';
-      neetPanel.style.display = 'block';
-      buttons[0].classList.remove('active');
-      buttons[1].classList.add('active');
+      if (cbsePanel) cbsePanel.style.display = 'block';
+      if (buttons[0]) buttons[0].classList.add('active');
+    } else if (tab === 'neet') {
+      if (neetPanel) neetPanel.style.display = 'block';
+      if (buttons[1]) buttons[1].classList.add('active');
+    } else if (tab === 'jee') {
+      if (jeePanel) jeePanel.style.display = 'block';
+      if (buttons[2]) buttons[2].classList.add('active');
     }
   }
 

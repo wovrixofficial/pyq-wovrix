@@ -199,9 +199,14 @@
     /* Step 1: Exam Track Selector Cards */
     .exam-select-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 20px;
       margin-top: 10px;
+    }
+    @media (min-width: 960px) {
+      .exam-select-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
     }
 
     .exam-track-card {
@@ -1146,7 +1151,7 @@
           <span class="brand-name">LEARNOSHA</span>
         </div>
         <p class="footer-brand-desc">
-          Official past paper intelligence for CBSE Class 12 and NEET UG. Pure NCERT alignment, multi-year frequency filters, and zero distractions.
+          Official past paper intelligence for CBSE Class 12, NEET UG, and JEE Main. Pure NCERT alignment, multi-year frequency filters, and zero distractions.
         </p>
       </div>
 
@@ -1155,6 +1160,8 @@
         <ul class="footer-links">
           <li><a href="/practice/?exam=cbse">CBSE 12 Practice Hub</a></li>
           <li><a href="/practice/?exam=neet">NEET UG Practice Hub</a></li>
+          <li><a href="/practice/?exam=jee">JEE Main Practice Hub</a></li>
+          <li><a href="/paper-maker/?exam=jee">JEE CBT Mock Simulator</a></li>
           <li><a href="/repeated/">Repeats Radar</a></li>
           <li><a href="/paper-maker/">Custom Mock Maker</a></li>
           <li><a href="/saved/">Personal Saved Dashboard</a></li>
@@ -1661,7 +1668,7 @@
     // 5. STAGE 4: FOCUSED PRACTICE STREAM
     // ---------------------------------------------------------
     async function renderStreamScreen() {
-      document.getElementById('streamExamPill').innerText = currentExam === 'cbse' ? 'CBSE Class 12' : 'NEET UG';
+      document.getElementById('streamExamPill').innerText = currentExam === 'cbse' ? 'CBSE Class 12' : (currentExam === 'neet' ? 'NEET UG' : 'JEE MAIN');
       document.getElementById('streamChapterHeading').innerText = `${currentSubject} · ${currentChapterName}`;
 
       renderSectionPills();
@@ -1733,6 +1740,12 @@
           <button class="filter-mini-btn" onclick="setStreamMarksFilter(4, this)">4M Case</button>
           <button class="filter-mini-btn" onclick="setStreamMarksFilter(5, this)">5M Long</button>
         `;
+      } else if (currentExam === 'jee') {
+        grp.innerHTML = `
+          <button class="filter-mini-btn active" onclick="setStreamSection('all', this)">All Question Types</button>
+          <button class="filter-mini-btn" onclick="setStreamSection('Section A', this)">MCQs (+4 / -1)</button>
+          <button class="filter-mini-btn" onclick="setStreamSection('Section B', this)">Numerical NVQ</button>
+        `;
       } else {
         grp.innerHTML = `
           <button class="filter-mini-btn active" onclick="setStreamSection('all', this)">All Sections</button>
@@ -1771,7 +1784,7 @@
       const feed = document.getElementById('streamQuestionsFeed');
       feed.innerHTML = '<div class="loading-state">Loading questions dataset...</div>';
 
-      const cacheBust = '?v=20261111_2';
+      const cacheBust = '?v=20261111_3';
       let url = '';
       if (currentExam === 'cbse') {
         url = `/data/cbse_${currentSubject.toLowerCase()}.json${cacheBust}`;
@@ -1843,8 +1856,8 @@
         });
       }
 
-      // Filter by section for NEET
-      if (currentExam === 'neet' && currentSection !== 'all') {
+      // Filter by section for NEET & JEE
+      if ((currentExam === 'neet' || currentExam === 'jee') && currentSection !== 'all') {
         list = list.filter(q => q.section && q.section.toLowerCase().includes(currentSection.toLowerCase()));
       }
 
@@ -1906,7 +1919,7 @@
         html += `
           <div class="jee-cbt-switch-banner">
             <span>⚡ <strong>JEE Main Chapterwise Practice:</strong> Practicing 12,667 questions topic by topic. Looking for 3-Hour full shift mock papers?</span>
-            <a href="/jee/" class="btn-step-back" style="background:var(--accent); color:#ffffff; border-color:var(--accent); text-decoration:none;">Launch CBT Simulator ➔</a>
+            <a href="/paper-maker/?exam=jee" class="btn-step-back" style="background:var(--accent); color:#ffffff; border-color:var(--accent); text-decoration:none;">Launch CBT Simulator ➔</a>
           </div>
         `;
       }
@@ -1917,7 +1930,11 @@
         const year = q.year || '2026';
         const marksDisplay = getMarksDisplay(q);
         const section = q.section || '';
-        const source = q.source || 'Official Board Exam';
+        const defaultSource = currentExam === 'jee' ? 'Official NTA Shift Paper' : (currentExam === 'neet' ? 'Official NEET Paper' : 'Official Board Exam');
+        const source = q.source || defaultSource;
+        const shiftBadge = (currentExam === 'jee' && q.shift_name) 
+          ? `<span class="q-source-pill" style="font-weight:700; color:var(--accent);">📅 ${escapeHtml(q.shift_name.replace('jee-main-', '').replace('-paper', '').replace(/-/g, ' ').toUpperCase())}</span>` 
+          : '';
         const text = q.text || '';
         const repYears = q.recurrence_years || q.repeat_years;
         const repCount = q.recurrence_count_10yr || q.cluster_size || 1;
@@ -1983,6 +2000,7 @@
               <div class="q-badges-left">
                 <span class="q-source-pill">#${globalNum} · ${year}</span>
                 <span class="q-marks-pill">${marksDisplay}</span>
+                ${shiftBadge}
                 ${section ? `<span class="q-source-pill">${section}</span>` : ''}
                 ${tierBadge}
                 ${repeats ? `<span class="q-repeat-pill">${repeats}</span>` : ''}
@@ -2043,6 +2061,10 @@
     // 6. SOLUTIONS & MARKS
     // ---------------------------------------------------------
     function getMarksDisplay(q) {
+      if (currentExam === 'jee') {
+        return q.type === 'Numerical' ? 'NVQ (+4 / -1)' : 'MCQ (+4 / -1)';
+      }
+      if (currentExam === 'neet') return '+4 / -1';
       if (q.marks && q.marks > 0) return `${q.marks} Mark${q.marks > 1 ? 's' : ''}`;
       const sec = (q.section || '').toUpperCase();
       if (sec.includes('SECTION - A') || sec.includes('SECTION A')) return '1 Mark';

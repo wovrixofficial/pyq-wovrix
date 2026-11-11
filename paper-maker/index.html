@@ -10,8 +10,8 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Custom Question Paper & Timed Mock Exam Maker (CBSE 12 & NEET UG) | Learnosha</title>
-  <meta name="description" content="Generate authentic CBSE Class 12 board examination papers and NEET UG mock tests with printable A4 PDFs, separate answer key rubrics, and a fullscreen interactive timed mock simulator with CBT palette mode.">
+  <title>Custom Question Paper & Timed Mock Exam Maker (CBSE 12, NEET UG & JEE Main) | Learnosha</title>
+  <meta name="description" content="Generate authentic CBSE Class 12 board examination papers, NEET UG and JEE Main CBT mock tests with printable A4 PDFs, separate answer key rubrics, and a fullscreen interactive timed mock simulator with CBT palette mode.">
   <link rel="canonical" href="https://learnosha.in/paper-maker/">
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="stylesheet" href="/style.css?v=20261110_7">
@@ -379,7 +379,7 @@
 
     .mode-select-box {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       gap: 12px;
       margin-top: 6px;
     }
@@ -1221,6 +1221,7 @@
       <div class="drawer-goal-options">
         <button class="drawer-goal-btn goal-toggle-pill active" data-goal="cbse" onclick="selectGoal('cbse')">🎯 CBSE 12</button>
         <button class="drawer-goal-btn goal-toggle-pill" data-goal="neet" onclick="selectGoal('neet')">🩺 NEET UG</button>
+        <button class="drawer-goal-btn goal-toggle-pill" data-goal="jee" onclick="selectGoal('jee')">⚡ JEE Main</button>
       </div>
     </div>
 
@@ -1328,6 +1329,10 @@
           <div class="mode-card-btn" id="examCardNeet" onclick="setWizardExam('neet')">
             <div class="mode-card-title">🩺 NEET UG Medical Entrance</div>
             <p class="mode-card-desc">Authentic 180 / 720 Marks NTA MCQs (+4 for correct, -1 for negative).</p>
+          </div>
+          <div class="mode-card-btn" id="examCardJee" onclick="setWizardExam('jee')">
+            <div class="mode-card-title">⚡ JEE Main Engineering Entrance</div>
+            <p class="mode-card-desc">Authentic 300 Marks NTA CBT Simulator (MCQs + NVQs, +4 / -1 scoring).</p>
           </div>
         </div>
 
@@ -1764,6 +1769,67 @@
       ]
     };
 
+    const CHAPTERS_JEE = {
+      Physics: [
+        { name: "Current Electricity", highYield: true },
+        { name: "Moving Charges and Magnetism", highYield: true },
+        { name: "Thermodynamics & Kinetic Theory", highYield: true },
+        { name: "Rotational Motion & System of Particles", highYield: true },
+        { name: "Ray Optics and Optical Instruments", highYield: true },
+        { name: "Work, Energy and Power", highYield: true },
+        { name: "Electrostatic Potential and Capacitance", highYield: true },
+        { name: "Electric Charges and Fields", highYield: false },
+        { name: "Electromagnetic Induction & AC", highYield: false },
+        { name: "Dual Nature of Radiation and Matter", highYield: false },
+        { name: "Atoms and Nuclei", highYield: false },
+        { name: "Semiconductor Electronics", highYield: true },
+        { name: "Laws of Motion & Friction", highYield: false },
+        { name: "Gravitation", highYield: false },
+        { name: "Oscillations and Waves", highYield: false },
+        { name: "Properties of Bulk Matter & Fluids", highYield: false },
+        { name: "Motion in a Plane & Kinematics", highYield: false },
+        { name: "Units and Measurements", highYield: false },
+        { name: "Wave Optics", highYield: false },
+        { name: "Magnetism and Matter", highYield: false },
+        { name: "Electromagnetic Waves", highYield: false }
+      ],
+      Chemistry: [
+        { name: "Coordination Compounds", highYield: true },
+        { name: "Chemical Bonding and Molecular Structure", highYield: true },
+        { name: "Electrochemistry", highYield: true },
+        { name: "Solutions", highYield: true },
+        { name: "Equilibrium", highYield: true },
+        { name: "Chemical Kinetics", highYield: true },
+        { name: "Thermodynamics (Chemistry)", highYield: true },
+        { name: "Organic: Carbonyl Compounds (Aldehydes & Ketones)", highYield: true },
+        { name: "Organic: Hydrocarbons & Haloalkanes", highYield: true },
+        { name: "Organic: Alcohols, Phenols & Ethers", highYield: false },
+        { name: "Organic: Amines & Nitrogen Compounds", highYield: false },
+        { name: "d- and f-Block Elements", highYield: false },
+        { name: "p-Block Elements", highYield: false },
+        { name: "Biomolecules", highYield: false },
+        { name: "Structure of Atom", highYield: false },
+        { name: "Classification of Elements & Periodicity", highYield: false }
+      ],
+      Mathematics: [
+        { name: "Matrices and Determinants", highYield: true },
+        { name: "Integrals & Definite Integration", highYield: true },
+        { name: "Three Dimensional Geometry & Vectors", highYield: true },
+        { name: "Differential Equations", highYield: true },
+        { name: "Coordinate Geometry: Conic Sections", highYield: true },
+        { name: "Coordinate Geometry: Straight Lines & Circles", highYield: true },
+        { name: "Complex Numbers & Quadratic Equations", highYield: true },
+        { name: "Application of Derivatives", highYield: true },
+        { name: "Probability", highYield: true },
+        { name: "Sequences and Series", highYield: false },
+        { name: "Binomial Theorem", highYield: false },
+        { name: "Continuity and Differentiability", highYield: false },
+        { name: "Permutations and Combinations", highYield: false },
+        { name: "Statistics & Mathematical Reasoning", highYield: false },
+        { name: "Trigonometric Functions", highYield: false }
+      ]
+    };
+
     // State
     let wizardState = {
       exam: 'cbse',
@@ -1801,7 +1867,11 @@
     // 1. INITIALIZATION & GOAL SYNC
     // ---------------------------------------------------------
     document.addEventListener('DOMContentLoaded', () => {
-      const activeGoal = getActiveGoal();
+      const urlParams = new URLSearchParams(window.location.search);
+      const urlExam = urlParams.get('exam');
+      const activeGoal = (urlExam && ['cbse', 'neet', 'jee'].includes(urlExam.toLowerCase())) 
+        ? urlExam.toLowerCase() 
+        : getActiveGoal();
       setWizardExam(activeGoal, false);
       checkOngoingMockSession();
     });
@@ -1858,17 +1928,23 @@
       wizardState.exam = exam;
       document.getElementById('examCardCbse').classList.toggle('selected', exam === 'cbse');
       document.getElementById('examCardNeet').classList.toggle('selected', exam === 'neet');
+      const jeeCard = document.getElementById('examCardJee');
+      if (jeeCard) jeeCard.classList.toggle('selected', exam === 'jee');
 
       // Update preset descriptions
       const stdDesc = document.getElementById('presetStandardDesc');
       if (exam === 'cbse') {
         stdDesc.innerText = "CBSE: 70 Marks, 33 Questions • 3 Hours. All syllabus chapters.";
         wizardState.subject = 'Physics';
+      } else if (exam === 'jee') {
+        stdDesc.innerText = "JEE Main: 100 Marks, 25 Questions (or 75 Qs 300M Full Shift) • NTA CBT Simulator.";
+        wizardState.subject = 'Physics';
       } else {
         stdDesc.innerText = "NEET: 180 Marks, 50 Questions • 60 Mins. Full subject mock.";
         wizardState.subject = 'Physics';
       }
 
+      applyPresetSettings();
       renderSubjectPills();
       renderChaptersGrid();
     }
@@ -1889,6 +1965,9 @@
         if (wizardState.exam === 'cbse') {
           qInput.value = 33;
           dInput.value = 180;
+        } else if (wizardState.exam === 'jee') {
+          qInput.value = 25;
+          dInput.value = 60;
         } else {
           qInput.value = 50;
           dInput.value = 60;
@@ -1898,20 +1977,23 @@
         if (wizardState.exam === 'cbse') {
           qInput.value = 25;
           dInput.value = 120;
+        } else if (wizardState.exam === 'jee') {
+          qInput.value = 20;
+          dInput.value = 45;
         } else {
           qInput.value = 40;
           dInput.value = 45;
         }
         filterChapters('highyield');
       } else if (wizardState.preset === 'sprint') {
-        qInput.value = 20;
+        qInput.value = (wizardState.exam === 'jee' || wizardState.exam === 'cbse') ? 15 : 20;
         dInput.value = 30;
       }
     }
 
     function renderSubjectPills() {
       const bar = document.getElementById('subjectPillBar');
-      const subjects = wizardState.exam === 'cbse' 
+      const subjects = (wizardState.exam === 'cbse' || wizardState.exam === 'jee')
         ? ['Physics', 'Chemistry', 'Mathematics']
         : ['Physics', 'Chemistry', 'Botany', 'Zoology'];
 
@@ -1936,7 +2018,9 @@
 
     function renderChaptersGrid() {
       const container = document.getElementById('chapterGridContainer');
-      const list = wizardState.exam === 'cbse' ? CHAPTERS_CBSE[wizardState.subject] : CHAPTERS_NEET[wizardState.subject];
+      const list = wizardState.exam === 'cbse' 
+        ? CHAPTERS_CBSE[wizardState.subject] 
+        : (wizardState.exam === 'jee' ? CHAPTERS_JEE[wizardState.subject] : CHAPTERS_NEET[wizardState.subject]);
       if (!list) return;
 
       container.innerHTML = list.map((ch, idx) => `
@@ -1962,7 +2046,9 @@
 
     function filterChapters(type) {
       const checkboxes = document.querySelectorAll('#chapterGridContainer input');
-      const list = wizardState.exam === 'cbse' ? CHAPTERS_CBSE[wizardState.subject] : CHAPTERS_NEET[wizardState.subject];
+      const list = wizardState.exam === 'cbse' 
+        ? CHAPTERS_CBSE[wizardState.subject] 
+        : (wizardState.exam === 'jee' ? CHAPTERS_JEE[wizardState.subject] : CHAPTERS_NEET[wizardState.subject]);
       const highYieldNames = list.filter(c => c.highYield).map(c => c.name);
 
       checkboxes.forEach(cb => {
@@ -1980,7 +2066,7 @@
     }
 
     function updateStep4Summary() {
-      document.getElementById('summaryExam').innerText = wizardState.exam === 'cbse' ? 'CBSE Class 12' : 'NEET UG Medical';
+      document.getElementById('summaryExam').innerText = wizardState.exam === 'cbse' ? 'CBSE Class 12' : (wizardState.exam === 'jee' ? 'JEE Main Engineering' : 'NEET UG Medical');
       document.getElementById('summarySubject').innerText = wizardState.subject;
       document.getElementById('summaryDuration').innerText = `${wizardState.duration} Minutes`;
       document.getElementById('summaryCount').innerText = `${wizardState.qCount} Questions`;
@@ -1992,9 +2078,15 @@
     // 3. DATA FETCHING & QUESTION SAMPLING
     // ---------------------------------------------------------
     async function loadSubjectData() {
-      const url = wizardState.exam === 'cbse' 
-        ? `/data/cbse_${wizardState.subject.toLowerCase()}.json`
-        : `/data/neet_all.json`;
+      const cacheBust = '?v=20261111_3';
+      let url = '';
+      if (wizardState.exam === 'cbse') {
+        url = `/data/cbse_${wizardState.subject.toLowerCase()}.json${cacheBust}`;
+      } else if (wizardState.exam === 'neet') {
+        url = `/data/neet_all.json${cacheBust}`;
+      } else if (wizardState.exam === 'jee') {
+        url = `/data/jee_${wizardState.subject.toLowerCase()}.json${cacheBust}`;
+      }
 
       try {
         if (!datasetCache[url]) {
@@ -2203,7 +2295,7 @@
 
       document.getElementById('mockExamName').innerText = `${mockSession.exam.toUpperCase()} Mock Exam — ${mockSession.subject}`;
       document.getElementById('mockSubjectSubtitle').innerText = `${questions.length} Questions • ${durationSec / 60} Minutes`;
-      document.getElementById('mockExamIcon').innerText = mockSession.exam === 'neet' ? '🩺' : '🎯';
+      document.getElementById('mockExamIcon').innerText = mockSession.exam === 'jee' ? '⚡' : (mockSession.exam === 'neet' ? '🩺' : '🎯');
 
       document.getElementById('mockExamModal').classList.add('active');
       document.body.style.overflow = 'hidden';
@@ -2263,7 +2355,7 @@
 
       // Update badge
       document.getElementById('cbtQBadge').innerText = `Question ${mockSession.currentIndex + 1} of ${mockSession.questions.length}`;
-      document.getElementById('cbtQMarking').innerText = mockSession.exam === 'neet' ? '+4 / -1 Mark' : `[${q.marks || 1} Mark]`;
+      document.getElementById('cbtQMarking').innerText = (mockSession.exam === 'neet' || mockSession.exam === 'jee') ? '+4 / -1 Mark' : `[${q.marks || 1} Mark]`;
 
       // Update text
       document.getElementById('cbtQText').innerHTML = escapeHtml(q.text);
@@ -2278,16 +2370,28 @@
       }
 
       if (options) {
-        optContainer.innerHTML = ['A', 'B', 'C', 'D'].map(opt => {
-          const val = options[opt] || `Option (${opt})`;
-          const isSelected = mockSession.userAnswers[mockSession.currentIndex] === opt;
+        const optKeys = options['1'] ? ['1', '2', '3', '4'] : ['A', 'B', 'C', 'D'];
+        optContainer.innerHTML = optKeys.map(opt => {
+          const val = options[opt];
+          if (!val) return '';
+          const isSelected = String(mockSession.userAnswers[mockSession.currentIndex]) === String(opt);
           return `
             <div class="mock-option-row ${isSelected ? 'selected' : ''}" onclick="cbtSelectOption('${opt}')">
               <div class="mock-option-letter">${opt}</div>
-              <div style="flex:1;">${escapeHtml(val)}</div>
+              <div style="flex:1;" class="math-content">${escapeHtml(val)}</div>
             </div>
           `;
         }).join('');
+      } else if (q.type === 'Numerical') {
+        const val = mockSession.userAnswers[mockSession.currentIndex] || '';
+        optContainer.innerHTML = `
+          <div style="background:var(--surface-alt); padding:16px; border-radius:var(--radius-md); font-size:14px; margin-top:8px;">
+            <label style="font-size:13px; font-weight:700; color:var(--text); display:block; margin-bottom:8px;">
+              ⚡ Numerical Value Question (NVQ):
+            </label>
+            <input type="text" id="nvqMockInput" value="${escapeHtml(val)}" oninput="cbtSelectOption(this.value)" placeholder="Enter numerical answer..." style="padding:10px 14px; width:100%; max-width:280px; font-size:15px; font-weight:700; border:2px solid var(--border); border-radius:8px; background:var(--surface); color:var(--text);">
+          </div>
+        `;
       } else {
         optContainer.innerHTML = `
           <div style="background:var(--surface-alt); padding:16px; border-radius:var(--radius-md); font-size:13.5px; color:var(--text-muted);">
@@ -2301,8 +2405,13 @@
       document.getElementById('cbtBtnNext').innerText = mockSession.currentIndex === mockSession.questions.length - 1 ? 'Save & Review ➔' : 'Save & Next →';
 
       if (window.renderMathInElement) {
-        renderMathInElement(document.getElementById('cbtQText'), {
-          delimiters: [{left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}],
+        renderMathInElement(document.getElementById('cbtQuestionViewport') || document.getElementById('cbtQText'), {
+          delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false},
+            {left: '\\(', right: '\\)', display: false},
+            {left: '\\[', right: '\\]', display: true}
+          ],
           throwOnError: false
         });
       }
@@ -2521,29 +2630,30 @@
       let correct = 0, incorrect = 0, skipped = 0;
       let totalMarks = 0;
       const totalQs = mockSession.questions.length;
-      const maxMarks = mockSession.exam === 'neet' ? totalQs * 4 : totalQs * 2;
+      const isEntrance = (mockSession.exam === 'neet' || mockSession.exam === 'jee');
+      const maxMarks = isEntrance ? totalQs * 4 : totalQs * 2;
 
       const tableRows = mockSession.questions.map((q, idx) => {
         const userChoice = mockSession.userAnswers[idx];
-        const correctChoice = q.correct_answer || 'A';
+        const correctChoice = q.correct_answer || (q.type === 'Numerical' ? 'N/A' : 'A');
         const chName = q.chapter_name || q.ncert_chapter || 'General';
 
         let status = 'unattempted';
         let earned = 0;
 
-        if (userChoice === undefined) {
+        if (userChoice === undefined || userChoice === '') {
           skipped++;
           status = 'unattempted';
           earned = 0;
-        } else if (userChoice === correctChoice) {
+        } else if (String(userChoice).trim().toLowerCase() === String(correctChoice).trim().toLowerCase()) {
           correct++;
           status = 'correct';
-          earned = mockSession.exam === 'neet' ? 4 : (q.marks || 1);
+          earned = isEntrance ? 4 : (q.marks || 1);
           totalMarks += earned;
         } else {
           incorrect++;
           status = 'wrong';
-          earned = mockSession.exam === 'neet' ? -1 : 0;
+          earned = isEntrance ? -1 : 0;
           totalMarks += earned;
         }
 
