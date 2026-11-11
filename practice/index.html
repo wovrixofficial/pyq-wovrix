@@ -1670,13 +1670,23 @@
     // 3. STAGE 2: SUBJECT SELECTION
     // ---------------------------------------------------------
     function renderSubjectScreen() {
-      const isCbse = currentExam === 'cbse';
-      const isNeet = currentExam === 'neet';
-      const isJee = currentExam === 'jee';
-      
-      const badgeText = isCbse ? 'CBSE CLASS 12' : (isNeet ? 'NEET UG' : 'JEE MAIN');
+      const examNames = {
+        'cbse': 'CBSE Class 12',
+        'neet': 'NEET UG',
+        'jee': 'JEE Main',
+        'jee-adv': 'JEE Advanced',
+        'bitsat': 'BITSAT'
+      };
+      const badgeMap = {
+        'cbse': 'CBSE CLASS 12',
+        'neet': 'NEET UG',
+        'jee': 'JEE MAIN',
+        'jee-adv': 'JEE ADVANCED',
+        'bitsat': 'BITSAT'
+      };
+      const badgeText = badgeMap[currentExam] || 'LEARNOSHA';
       document.getElementById('subjStageBadge').innerText = `${badgeText} • STEP 2 OF 3`;
-      document.getElementById('subjStageHeading').innerText = `Select ${isCbse ? 'CBSE Class 12' : (isNeet ? 'NEET UG' : 'JEE Main')} Subject`;
+      document.getElementById('subjStageHeading').innerText = `Select ${examNames[currentExam] || 'Exam'} Subject`;
       document.getElementById('subjStageSubtitle').innerText = isCbse
         ? 'Choose Physics, Chemistry, or Mathematics to practice board questions with step-wise derivations.'
         : (isNeet ? 'Choose Physics, Chemistry, Botany, or Zoology with verified NTA answer keys.' : 'Choose Physics, Chemistry, or Mathematics with official NTA answer keys, MCQs and NVQs.');

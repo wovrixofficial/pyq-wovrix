@@ -2034,10 +2034,11 @@
 
     function setWizardExam(exam, switchUi = true) {
       wizardState.exam = exam;
-      document.getElementById('examCardCbse').classList.toggle('selected', exam === 'cbse');
-      document.getElementById('examCardNeet').classList.toggle('selected', exam === 'neet');
-      const jeeCard = document.getElementById('examCardJee');
-      if (jeeCard) jeeCard.classList.toggle('selected', exam === 'jee');
+      document.getElementById('examCardCbse')?.classList.toggle('selected', exam === 'cbse');
+      document.getElementById('examCardNeet')?.classList.toggle('selected', exam === 'neet');
+      document.getElementById('examCardJee')?.classList.toggle('selected', exam === 'jee');
+      document.getElementById('examCardJeeAdv')?.classList.toggle('selected', exam === 'jee-adv');
+      document.getElementById('examCardBitsat')?.classList.toggle('selected', exam === 'bitsat');
 
       // Update preset descriptions
       const stdDesc = document.getElementById('presetStandardDesc');
@@ -2047,8 +2048,14 @@
       } else if (exam === 'jee') {
         stdDesc.innerText = "JEE Main: 100 Marks, 25 Questions (or 75 Qs 300M Full Shift) • NTA CBT Simulator.";
         wizardState.subject = 'Physics';
+      } else if (exam === 'jee-adv') {
+        stdDesc.innerText = "JEE Advanced: 180 Marks, 54 Questions • 3 Hours (Paper 1 & 2 CBT). Multi-correct & numericals.";
+        wizardState.subject = 'Physics';
+      } else if (exam === 'bitsat') {
+        stdDesc.innerText = "BITSAT: 390 Marks, 130 Questions • 3 Hours Speed CBT (Physics 30, Chem 30, Maths 40, English 10, Logic 20).";
+        wizardState.subject = 'Physics';
       } else {
-        stdDesc.innerText = "NEET: 180 Marks, 50 Questions • 60 Mins. Full subject mock.";
+        stdDesc.innerText = "NEET UG: 720 Marks, 180 Questions • 3 Hours 20 Mins. Full PCB Syllabus.";
         wizardState.subject = 'Physics';
       }
 
