@@ -797,10 +797,18 @@
       <div class="drawer-goal-options">
         <button class="drawer-goal-btn goal-toggle-pill active" data-goal="cbse" onclick="selectGoal('cbse')">🎯 CBSE 12</button>
         <button class="drawer-goal-btn goal-toggle-pill" data-goal="neet" onclick="selectGoal('neet')">🩺 NEET UG</button>
+        <a href="/jee/" class="drawer-goal-btn goal-toggle-pill" style="text-decoration:none; display:inline-flex; align-items:center; justify-content:center;">⚡ JEE Main</a>
       </div>
     </div>
 
     <nav class="drawer-nav-list">
+      <a href="/jee/" class="drawer-nav-item" onclick="toggleMobileDrawer(false)">
+        <span class="drawer-nav-icon">⚡</span>
+        <div>
+          <div>JEE Main 5-Year Archive (101 Shifts)</div>
+          <span class="drawer-nav-desc">7,880 Questions (2022–2026) with CBT Simulator</span>
+        </div>
+      </a>
       <a href="/practice/" class="drawer-nav-item" onclick="toggleMobileDrawer(false)">
         <span class="drawer-nav-icon">🎯</span>
         <div>
@@ -895,6 +903,25 @@
           </div>
           <button class="btn-select-track">
             <span>Select NEET Medical Track</span>
+            <span>➔</span>
+          </button>
+        </div>
+
+        <!-- JEE Main Card -->
+        <div class="exam-track-card" onclick="window.location.href='/jee/'">
+          <div class="exam-track-icon">⚡</div>
+          <h2 class="exam-track-title">JEE Main Engineering Entrance</h2>
+          <p class="exam-track-desc">
+            7,880 authentic past examination questions (2022–2026) across 101 official NTA shifts with 3-hour CBT mock simulator, numerical value questions (NVQ), and step solutions.
+          </p>
+          <div class="exam-track-pills">
+            <span class="exam-pill-item">Physics (2,782 Qs)</span>
+            <span class="exam-pill-item">Chemistry (2,629 Qs)</span>
+            <span class="exam-pill-item">Mathematics (2,469 Qs)</span>
+            <span class="exam-pill-item">101 CBT Shifts</span>
+          </div>
+          <button class="btn-select-track">
+            <span>Launch JEE Main CBT Track</span>
             <span>➔</span>
           </button>
         </div>

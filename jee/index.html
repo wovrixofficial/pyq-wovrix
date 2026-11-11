@@ -7,8 +7,11 @@
   <meta name="description" content="All 101 official JEE Main shifts from 2022 through 2026. 7,880 authentic questions across Physics, Chemistry, and Mathematics with NTA keys and step-by-step solutions.">
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <link rel="stylesheet" href="/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="/style.css?v=20261110_7">
+  <!-- KaTeX for math rendering -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
 
   <style>
     .jee-container {
@@ -445,11 +448,15 @@
           <path d="M6 10L11 23L16 14L21 23L26 10" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
           <circle cx="16" cy="14" r="2.2" fill="#3b82f6"/>
         </svg>
-        <span class="brand-name">LEARNOSHA <span class="brand-slash">/</span> <span class="brand-sub">JEE</span></span>
+        <span class="brand-name">LEARNOSHA <span class="brand-slash">/</span> <span class="brand-sub">JEE MAIN</span></span>
       </a>
 
       <nav class="nav-links">
-        <a href="/" class="btn-act" style="font-size:12px;">← Back to All Exams</a>
+        <a href="/practice/" class="btn-act" style="font-size:12.5px; font-weight:700;">🎯 Practice Hub</a>
+        <button id="themeToggleBtn" class="btn-theme-toggle" onclick="toggleTheme()" aria-label="Toggle Dark Mode" title="Toggle Dark/Light Mode">
+          <span class="theme-icon-light">☀️</span>
+          <span class="theme-icon-dark">🌙</span>
+        </button>
       </nav>
     </div>
   </header>
@@ -488,16 +495,13 @@
 
       <div class="hero-actions-bar">
         <button class="btn-act primary" onclick="toggleCBTMode()" id="cbtToggleBtn">
-          <i class="fa-solid fa-stopwatch"></i> Start CBT Mock Mode
+          ⏱️ Start 3-Hour CBT Test Mode
         </button>
         <button class="btn-act" onclick="toggleAllSolutions()" id="solToggleBtn">
-          <i class="fa-solid fa-lightbulb"></i> Reveal All Solutions
+          💡 Show Solutions & NTA Answer Keys
         </button>
-        <a href="../jee-main-portal/JEE_MAIN_MASTER_AI_VAULT.md" download="JEE_MAIN_MASTER_AI_VAULT.md" class="btn-act" title="Download Master Markdown Vault for AI Ingestion">
-          <i class="fa-solid fa-robot"></i> Master AI Vault (.md)
-        </a>
-        <a href="../jee-main-portal/JEE_AI_SUPER_PROMPT.md" download="JEE_AI_SUPER_PROMPT.md" class="btn-act" title="Download System Prompt for ChatGPT / Claude">
-          <i class="fa-solid fa-terminal"></i> AI Prompt (.md)
+        <a href="/practice/" class="btn-act">
+          🎯 Back to Practice Hub
         </a>
       </div>
     </div>
@@ -875,6 +879,17 @@
     }
 
     init();
+  </script>
+  <script src="/js/study_storage.js?v=20261110_7"></script>
+  <script>
+    function toggleTheme() {
+      const current = document.documentElement.getAttribute('data-theme') || 'light';
+      const next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('learnosha_theme', next);
+    }
+    const savedTheme = localStorage.getItem('learnosha_theme') || 'light';
+    document.documentElement.setAttribute('data-theme', savedTheme);
   </script>
 </body>
 </html>
