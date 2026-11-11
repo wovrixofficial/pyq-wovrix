@@ -40,12 +40,15 @@ def main():
 
     conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
+    cursor.execute("DROP TABLE IF EXISTS verified_questions;")
     cursor.execute("""
     CREATE TABLE IF NOT EXISTS verified_questions (
         id TEXT PRIMARY KEY,
         exam TEXT NOT NULL,
         subject TEXT NOT NULL,
         chapter TEXT,
+        subtopic TEXT,
+        subtopic_slug TEXT,
         year INTEGER,
         q_num INTEGER,
         marks INTEGER,
@@ -68,6 +71,8 @@ def main():
     cursor.execute("CREATE INDEX IF NOT EXISTS idx_vh_rep ON verified_questions(repeat_count);")
     cursor.execute("CREATE INDEX IF NOT EXISTS idx_vh_year ON verified_questions(year);")
     cursor.execute("CREATE INDEX IF NOT EXISTS idx_vh_sol ON verified_questions(has_solution);")
+    cursor.execute("CREATE INDEX IF NOT EXISTS idx_vh_subtopic ON verified_questions(subtopic);")
+    cursor.execute("CREATE INDEX IF NOT EXISTS idx_vh_subtopic_slug ON verified_questions(subtopic_slug);")
     conn.commit()
 
     total_records = 0
@@ -80,14 +85,15 @@ def main():
         total_records += 1
         cursor.execute("""
         INSERT OR REPLACE INTO verified_questions (
-            id, exam, subject, chapter, year, q_num, marks, section,
+            id, exam, subject, chapter, subtopic, subtopic_slug, year, q_num, marks, section,
             paper_code, page_number, question_text, options_json,
             correct_answer, solution_marking_scheme, el10_intuition,
             repeat_count, repeat_years_proof, historical_twins_json,
             is_multi_year, proof_citation_text, has_solution
-        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         """, (
             rec["id"], rec["exam"], rec["subject"], rec["chapter"],
+            rec.get("subtopic"), rec.get("subtopic_slug"),
             rec["year"], rec["q_num"], rec["marks"], rec["section"],
             rec["paper_code"], rec["page_number"], rec["question_text"],
             rec["options_json"], rec["correct_answer"], rec["solution"],
@@ -138,6 +144,7 @@ def main():
 
             insert_rec({
                 "id": qid, "exam": "CBSE Class 12", "subject": sub, "chapter": item.get("chapter_name") or "General",
+                "subtopic": item.get("subtopic"), "subtopic_slug": item.get("subtopic_slug"),
                 "year": year, "q_num": q_num, "marks": marks, "section": item.get("section") or "",
                 "paper_code": paper_code, "page_number": page, "question_text": q_text,
                 "options_json": None, "correct_answer": None, "solution": sol_text or None,
@@ -170,7 +177,9 @@ def main():
 
         insert_rec({
             "id": qid, "exam": "NEET UG", "subject": item.get("subject") or "General",
-            "chapter": item.get("ncert_chapter") or "General", "year": year, "q_num": q_num,
+            "chapter": item.get("ncert_chapter") or "General",
+            "subtopic": item.get("subtopic"), "subtopic_slug": item.get("subtopic_slug"),
+            "year": year, "q_num": q_num,
             "marks": 4, "section": item.get("section") or "Section A", "paper_code": paper_code,
             "page_number": item.get("page"), "question_text": q_text, "options_json": opts_json,
             "correct_answer": corr, "solution": f"Correct Option: ({corr})" if corr else None,
@@ -200,7 +209,9 @@ def main():
 
         insert_rec({
             "id": qid, "exam": "JEE Main", "subject": item.get("subject") or "General",
-            "chapter": item.get("ncert_chapter") or "General", "year": year, "q_num": q_num,
+            "chapter": item.get("ncert_chapter") or "General",
+            "subtopic": item.get("subtopic"), "subtopic_slug": item.get("subtopic_slug"),
+            "year": year, "q_num": q_num,
             "marks": 4, "section": item.get("section") or "Section A",
             "paper_code": f"JEE Main {year} {shift}", "page_number": None,
             "question_text": q_text, "options_json": opts_json, "correct_answer": corr,
@@ -216,7 +227,7 @@ def main():
     # Export Anti-Hallucination Training Dataset
     print("Exporting Anti-Hallucination Training Samples...")
     cursor.execute("""
-    SELECT id, exam, subject, chapter, year, marks, question_text,
+    SELECT id, exam, subject, chapter, subtopic, subtopic_slug, year, marks, question_text,
            options_json, correct_answer, solution_marking_scheme,
            el10_intuition, proof_citation_text
     FROM verified_questions
@@ -225,8 +236,9 @@ def main():
     rows = cursor.fetchall()
     with open(TRAIN_PATH, "w", encoding="utf-8") as f_train, open(CORPUS_PATH, "w", encoding="utf-8") as f_corpus:
         for row in rows:
-            qid, exam, subject, chapter, year, marks, q_text, opts_json, corr, sol, intuition, citation = row
-            prompt = f"Exam: {exam}\nSubject: {subject}\nChapter: {chapter}\nMarks: {marks} Mark(s)\n\nQuestion:\n{q_text}"
+            qid, exam, subject, chapter, subtopic, subtopic_slug, year, marks, q_text, opts_json, corr, sol, intuition, citation = row
+            subtopic_line = f"Subtopic: {subtopic}\n" if subtopic else ""
+            prompt = f"Exam: {exam}\nSubject: {subject}\nChapter: {chapter}\n{subtopic_line}Marks: {marks} Mark(s)\n\nQuestion:\n{q_text}"
             if opts_json:
                 try:
                     options = json.loads(opts_json)
@@ -248,12 +260,14 @@ def main():
                     {"role": "user", "content": prompt},
                     {"role": "assistant", "content": "\n\n".join(ans)}
                 ],
-                "ground_truth_proof": {"id": qid, "exam": exam, "subject": subject, "chapter": chapter, "year": year}
+                "ground_truth_proof": {"id": qid, "exam": exam, "subject": subject, "chapter": chapter, "subtopic": subtopic, "subtopic_slug": subtopic_slug, "year": year}
             }, ensure_ascii=False) + "\n")
 
+            subtopic_tag = f" [{subtopic}]" if subtopic else ""
             f_corpus.write(json.dumps({
-                "id": qid, "exam": exam, "subject": subject, "chapter": chapter, "year": year,
-                "text_to_embed": f"{exam} {subject} {chapter}: {q_text}",
+                "id": qid, "exam": exam, "subject": subject, "chapter": chapter,
+                "subtopic": subtopic, "subtopic_slug": subtopic_slug, "year": year,
+                "text_to_embed": f"{exam} {subject} {chapter}{subtopic_tag}: {q_text}",
                 "full_question": prompt, "solution": sol or "", "correct_answer": corr or ""
             }, ensure_ascii=False) + "\n")
 

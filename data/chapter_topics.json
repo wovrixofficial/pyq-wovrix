@@ -1,1214 +1,2870 @@
 {
-  "cbse": {
-    "Physics": {
-      "1": [
-        {
-          "slug": "coulombs-law",
-          "title": "Coulomb's Law and Superposition",
-          "keywords": [
-            "coulomb",
-            "force between",
-            "dielectric constant",
-            "point charges"
-          ],
-          "is_high_yield": true
-        },
-        {
-          "slug": "electric-field-dipole",
-          "title": "Electric Field and Dipole Moment",
-          "keywords": [
-            "dipole",
-            "electric field",
-            "axial",
-            "equatorial",
-            "torque"
-          ],
-          "is_high_yield": true
-        },
-        {
-          "slug": "gauss-law-flux",
-          "title": "Electric Flux and Gauss's Law",
-          "keywords": [
-            "gauss",
-            "flux",
-            "gaussian surface",
-            "shell",
-            "infinite wire",
-            "plane sheet"
-          ],
-          "is_high_yield": true
-        }
+  "physics": [
+    {
+      "subtopic": "Dimensional Analysis & Quantities",
+      "slug": "dimensional-analysis",
+      "tags": [
+        "dimensions",
+        "dimensional formula",
+        "fundamental units",
+        "si units",
+        "dimensionless"
       ],
-      "2": [
-        {
-          "slug": "electric-potential",
-          "title": "Electric Potential and Equipotential",
-          "keywords": [
-            "potential",
-            "equipotential",
-            "work done",
-            "conservative"
-          ],
-          "is_high_yield": true
-        },
-        {
-          "slug": "capacitors-dielectrics",
-          "title": "Capacitance and Dielectric Slabs",
-          "keywords": [
-            "capacitor",
-            "capacitance",
-            "dielectric",
-            "parallel plate",
-            "energy stored"
-          ],
-          "is_high_yield": true
-        }
-      ],
-      "3": [
-        {
-          "slug": "drift-velocity-ohms-law",
-          "title": "Ohm's Law and Drift Velocity",
-          "keywords": [
-            "drift velocity",
-            "relaxation time",
-            "resistivity",
-            "temperature coefficient"
-          ],
-          "is_high_yield": false
-        },
-        {
-          "slug": "kirchhoff-wheatstone",
-          "title": "Kirchhoff's Rules and Wheatstone Bridge",
-          "keywords": [
-            "kirchhoff",
-            "wheatstone",
-            "loop rule",
-            "junction rule",
-            "bridge balance"
-          ],
-          "is_high_yield": true
-        },
-        {
-          "slug": "cells-internal-resistance",
-          "title": "Cells, EMF and Internal Resistance",
-          "keywords": [
-            "emf",
-            "internal resistance",
-            "terminal potential",
-            "cells in parallel",
-            "cells in series"
-          ],
-          "is_high_yield": true
-        }
-      ],
-      "4": [
-        {
-          "slug": "biot-savart-law",
-          "title": "Biot-Savart Law and Circular Coils",
-          "keywords": [
-            "biot",
-            "savart",
-            "circular coil",
-            "magnetic field on axis"
-          ],
-          "is_high_yield": true
-        },
-        {
-          "slug": "amperes-law-solenoid",
-          "title": "Ampere's Circuital Law and Solenoid",
-          "keywords": [
-            "ampere",
-            "circuital",
-            "solenoid",
-            "toroid"
-          ],
-          "is_high_yield": true
-        },
-        {
-          "slug": "lorentz-force-galvanometer",
-          "title": "Lorentz Force and Moving Coil Galvanometer",
-          "keywords": [
-            "lorentz",
-            "galvanometer",
-            "shunt",
-            "voltmeter",
-            "ammeter",
-            "torque on loop"
-          ],
-          "is_high_yield": true
-        }
-      ],
-      "5": [
-        {
-          "slug": "magnetic-properties",
-          "title": "Dia, Para and Ferromagnetism",
-          "keywords": [
-            "diamagnetic",
-            "paramagnetic",
-            "ferromagnetic",
-            "susceptibility",
-            "permeability"
-          ],
-          "is_high_yield": true
-        },
-        {
-          "slug": "magnetic-dipole-earth",
-          "title": "Magnetic Dipole and Earth Elements",
-          "keywords": [
-            "dipole moment",
-            "declination",
-            "horizontal component",
-            "angle of dip"
-          ],
-          "is_high_yield": false
-        }
-      ],
-      "6": [
-        {
-          "slug": "faraday-lenz-law",
-          "title": "Faraday's and Lenz's Law",
-          "keywords": [
-            "faraday",
-            "lenz",
-            "induced emf",
-            "flux linkage",
-            "direction of induced"
-          ],
-          "is_high_yield": true
-        },
-        {
-          "slug": "inductance-eddy",
-          "title": "Self/Mutual Inductance and Motional EMF",
-          "keywords": [
-            "inductance",
-            "self induction",
-            "mutual induction",
-            "motional emf",
-            "eddy currents"
-          ],
-          "is_high_yield": true
-        }
-      ],
-      "7": [
-        {
-          "slug": "ac-circuits-lcr",
-          "title": "Series LCR Circuits and Resonance",
-          "keywords": [
-            "lcr",
-            "resonance",
-            "impedance",
-            "phasor",
-            "q factor"
-          ],
-          "is_high_yield": true
-        },
-        {
-          "slug": "transformers-ac-power",
-          "title": "Transformers and Power Factor",
-          "keywords": [
-            "transformer",
-            "power factor",
-            "wattless",
-            "step up",
-            "step down"
-          ],
-          "is_high_yield": true
-        }
-      ],
-      "8": [
-        {
-          "slug": "em-waves-spectrum",
-          "title": "Displacement Current and EM Spectrum",
-          "keywords": [
-            "displacement current",
-            "spectrum",
-            "microwaves",
-            "x rays",
-            "gamma",
-            "ultraviolet"
-          ],
-          "is_high_yield": true
-        }
-      ],
-      "9": [
-        {
-          "slug": "lens-makers-formula",
-          "title": "Lens Maker's Formula and Combinations",
-          "keywords": [
-            "lens maker",
-            "refraction at spherical",
-            "focal length",
-            "combination of lenses"
-          ],
-          "is_high_yield": true
-        },
-        {
-          "slug": "prism-refraction",
-          "title": "Prism Deviation and Refractive Index",
-          "keywords": [
-            "prism",
-            "minimum deviation",
-            "angle of prism"
-          ],
-          "is_high_yield": true
-        },
-        {
-          "slug": "microscope-telescope",
-          "title": "Compound Microscope and Astronomical Telescope",
-          "keywords": [
-            "microscope",
-            "telescope",
-            "magnifying power",
-            "normal adjustment"
-          ],
-          "is_high_yield": true
-        }
-      ],
-      "10": [
-        {
-          "slug": "huygens-principle",
-          "title": "Huygens Principle and Wavefronts",
-          "keywords": [
-            "huygens",
-            "wavefront",
-            "laws of reflection",
-            "laws of refraction"
-          ],
-          "is_high_yield": true
-        },
-        {
-          "slug": "youngs-double-slit",
-          "title": "Young's Double Slit and Single Slit",
-          "keywords": [
-            "interference",
-            "young",
-            "fringe width",
-            "diffraction",
-            "central maximum"
-          ],
-          "is_high_yield": true
-        }
-      ],
-      "11": [
-        {
-          "slug": "photoelectric-effect",
-          "title": "Photoelectric Effect and Einstein's Eq",
-          "keywords": [
-            "photoelectric",
-            "stopping potential",
-            "work function",
-            "threshold frequency"
-          ],
-          "is_high_yield": true
-        },
-        {
-          "slug": "de-broglie-wavelength",
-          "title": "De Broglie Wavelength and Matter Waves",
-          "keywords": [
-            "de broglie",
-            "wavelength of electron",
-            "matter wave"
-          ],
-          "is_high_yield": true
-        }
-      ],
-      "12": [
-        {
-          "slug": "bohr-model-hydrogen",
-          "title": "Bohr Postulates and Hydrogen Spectra",
-          "keywords": [
-            "bohr",
-            "radius of orbit",
-            "energy levels",
-            "lyman",
-            "balmer",
-            "paschen"
-          ],
-          "is_high_yield": true
-        }
-      ],
-      "13": [
-        {
-          "slug": "binding-energy-fission",
-          "title": "Mass Defect, Binding Energy and Fission",
-          "keywords": [
-            "mass defect",
-            "binding energy",
-            "fission",
-            "fusion",
-            "nuclear density"
-          ],
-          "is_high_yield": true
-        }
-      ],
-      "14": [
-        {
-          "slug": "pn-junction-diode",
-          "title": "p-n Junction and V-I Characteristics",
-          "keywords": [
-            "pn junction",
-            "depletion layer",
-            "barrier potential",
-            "forward bias",
-            "reverse bias"
-          ],
-          "is_high_yield": true
-        },
-        {
-          "slug": "rectifiers-semiconductors",
-          "title": "Half/Full Wave Rectifiers and Bands",
-          "keywords": [
-            "rectifier",
-            "half wave",
-            "full wave",
-            "intrinsic",
-            "extrinsic",
-            "doping"
-          ],
-          "is_high_yield": true
-        }
+      "keywords": [
+        "dimension",
+        "dimensional formula",
+        "si unit",
+        "unit of",
+        "dimensionless",
+        "dimensions of"
       ]
     },
-    "Chemistry": {
-      "1": [
-        {
-          "slug": "raoults-law-ideal",
-          "title": "Raoult's Law and Ideal Solutions",
-          "keywords": [
-            "raoult",
-            "ideal solution",
-            "azeotrope",
-            "negative deviation",
-            "positive deviation"
-          ],
-          "is_high_yield": true
-        },
-        {
-          "slug": "colligative-properties",
-          "title": "Colligative Properties and Van't Hoff",
-          "keywords": [
-            "colligative",
-            "depression in freezing",
-            "elevation in boiling",
-            "osmotic",
-            "van't hoff"
-          ],
-          "is_high_yield": true
-        }
+    {
+      "subtopic": "Error Analysis, Least Count & Instruments",
+      "slug": "error-analysis-instruments",
+      "tags": [
+        "error analysis",
+        "percentage error",
+        "screw gauge",
+        "vernier calipers",
+        "least count",
+        "zero error"
       ],
-      "2": [
-        {
-          "slug": "nernst-equation",
-          "title": "Nernst Equation and Cell Potential",
-          "keywords": [
-            "nernst",
-            "cell potential",
-            "emf of cell",
-            "standard hydrogen"
-          ],
-          "is_high_yield": true
-        },
-        {
-          "slug": "kohlrausch-conductance",
-          "title": "Kohlrausch's Law and Molar Conductivity",
-          "keywords": [
-            "kohlrausch",
-            "molar conductivity",
-            "limiting molar",
-            "conductance"
-          ],
-          "is_high_yield": true
-        },
-        {
-          "slug": "batteries-corrosion",
-          "title": "Batteries, Fuel Cells and Corrosion",
-          "keywords": [
-            "battery",
-            "fuel cell",
-            "lead storage",
-            "corrosion",
-            "rusting"
-          ],
-          "is_high_yield": false
-        }
-      ],
-      "3": [
-        {
-          "slug": "order-rate-law",
-          "title": "Rate Laws, Order and Molecularity",
-          "keywords": [
-            "order of reaction",
-            "molecularity",
-            "rate constant",
-            "rate law"
-          ],
-          "is_high_yield": true
-        },
-        {
-          "slug": "integrated-rate-equations",
-          "title": "Integrated Rate Equations and Half-Life",
-          "keywords": [
-            "integrated rate",
-            "half life",
-            "first order",
-            "zero order"
-          ],
-          "is_high_yield": true
-        },
-        {
-          "slug": "arrhenius-activation",
-          "title": "Arrhenius Equation and Activation Energy",
-          "keywords": [
-            "arrhenius",
-            "activation energy",
-            "collision frequency"
-          ],
-          "is_high_yield": true
-        }
-      ],
-      "4": [
-        {
-          "slug": "d-block-properties",
-          "title": "d-Block General Properties and Trends",
-          "keywords": [
-            "transition metals",
-            "oxidation state",
-            "ionization enthalpy",
-            "magnetic behavior",
-            "colored ions"
-          ],
-          "is_high_yield": true
-        },
-        {
-          "slug": "lanthanoid-contraction",
-          "title": "Lanthanoid Contraction and Consequences",
-          "keywords": [
-            "lanthanoid",
-            "actinoid",
-            "contraction",
-            "atomic radii"
-          ],
-          "is_high_yield": true
-        },
-        {
-          "slug": "kmno4-k2cr2o7",
-          "title": "Potassium Dichromate and Permanganate",
-          "keywords": [
-            "dichromate",
-            "permanganate",
-            "kmno4",
-            "k2cr2o7",
-            "oxidizing agent"
-          ],
-          "is_high_yield": true
-        }
-      ],
-      "5": [
-        {
-          "slug": "iupac-coordination",
-          "title": "IUPAC Nomenclature and Formulas",
-          "keywords": [
-            "iupac",
-            "nomenclature",
-            "formula of complex",
-            "coordination sphere"
-          ],
-          "is_high_yield": true
-        },
-        {
-          "slug": "isomerism-complexes",
-          "title": "Isomerism in Coordination Complexes",
-          "keywords": [
-            "isomerism",
-            "geometrical",
-            "optical",
-            "linkage",
-            "coordination isomerism"
-          ],
-          "is_high_yield": true
-        },
-        {
-          "slug": "vbt-cft-theories",
-          "title": "Valence Bond and Crystal Field Theory (CFT)",
-          "keywords": [
-            "crystal field",
-            "crystal field splitting",
-            "valence bond",
-            "cfse",
-            "hybridisation",
-            "magnetic moment"
-          ],
-          "is_high_yield": true
-        }
-      ],
-      "6": [
-        {
-          "slug": "sn1-sn2-mechanisms",
-          "title": "SN1 and SN2 Reaction Mechanisms",
-          "keywords": [
-            "sn1",
-            "sn2",
-            "nucleophilic substitution",
-            "carbocation",
-            "inversion of configuration"
-          ],
-          "is_high_yield": true
-        },
-        {
-          "slug": "haloarenes-reactions",
-          "title": "Haloarenes and Electrophilic Substitution",
-          "keywords": [
-            "chlorobenzene",
-            "electrophilic substitution",
-            "friedel crafts",
-            "wurtz fittig"
-          ],
-          "is_high_yield": true
-        }
-      ],
-      "7": [
-        {
-          "slug": "acidity-phenols-prep",
-          "title": "Phenols: Acidity and Electrophilic Reactions",
-          "keywords": [
-            "phenol",
-            "acidity",
-            "kolbe",
-            "reimer tiemann",
-            "picric acid"
-          ],
-          "is_high_yield": true
-        },
-        {
-          "slug": "alcohols-dehydration",
-          "title": "Alcohols: Lucas Test and Dehydration",
-          "keywords": [
-            "alcohol",
-            "lucas",
-            "dehydration",
-            "primary secondary tertiary"
-          ],
-          "is_high_yield": true
-        },
-        {
-          "slug": "williamson-ethers",
-          "title": "Williamson Synthesis of Ethers",
-          "keywords": [
-            "ether",
-            "williamson",
-            "cleavage of c-o"
-          ],
-          "is_high_yield": true
-        }
-      ],
-      "8": [
-        {
-          "slug": "nucleophilic-addition-co",
-          "title": "Nucleophilic Addition to Carbonyls",
-          "keywords": [
-            "nucleophilic addition",
-            "hcn",
-            "nahso3",
-            "grignard",
-            "hydrazone"
-          ],
-          "is_high_yield": true
-        },
-        {
-          "slug": "aldol-cannizzaro",
-          "title": "Aldol Condensation and Cannizzaro Reaction",
-          "keywords": [
-            "aldol",
-            "cannizzaro",
-            "cross aldol",
-            "alpha hydrogen",
-            "fehling",
-            "tollens"
-          ],
-          "is_high_yield": true
-        },
-        {
-          "slug": "carboxylic-acids-reactions",
-          "title": "Carboxylic Acids Acidity and Reactions",
-          "keywords": [
-            "carboxylic",
-            "acidity of benzoic",
-            "hell volhard",
-            "decarboxylation"
-          ],
-          "is_high_yield": true
-        }
-      ],
-      "9": [
-        {
-          "slug": "basicity-amines-hoffmann",
-          "title": "Basicity of Amines and Hoffmann Bromamide",
-          "keywords": [
-            "basicity of amines",
-            "hoffmann bromamide",
-            "gabriel phthalimide",
-            "carbylamine"
-          ],
-          "is_high_yield": true
-        },
-        {
-          "slug": "diazonium-sandmeyer",
-          "title": "Diazonium Salts and Sandmeyer Reaction",
-          "keywords": [
-            "diazonium",
-            "sandmeyer",
-            "gattermann",
-            "azo dye",
-            "coupling reaction"
-          ],
-          "is_high_yield": true
-        }
-      ],
-      "10": [
-        {
-          "slug": "carbohydrates-glucose",
-          "title": "Glucose, Fructose and Glycosidic Linkage",
-          "keywords": [
-            "glucose",
-            "fructose",
-            "glycosidic",
-            "reducing sugar",
-            "mutarotation"
-          ],
-          "is_high_yield": true
-        },
-        {
-          "slug": "proteins-nucleic-acids",
-          "title": "Peptide Bond, Denaturation and DNA/RNA",
-          "keywords": [
-            "peptide bond",
-            "denaturation",
-            "nucleic acid",
-            "dna",
-            "rna",
-            "structure of protein"
-          ],
-          "is_high_yield": true
-        }
+      "keywords": [
+        "error in measurement",
+        "percentage error",
+        "fractional error",
+        "screw gauge",
+        "vernier caliper",
+        "least count",
+        "zero error",
+        "pitch"
       ]
     },
-    "Mathematics": {
-      "1": [
-        {
-          "slug": "equivalence-relations",
-          "title": "Reflexive, Symmetric and Transitive Relations",
-          "keywords": [
-            "equivalence",
-            "reflexive",
-            "symmetric",
-            "transitive"
-          ],
-          "is_high_yield": true
-        },
-        {
-          "slug": "one-one-onto-functions",
-          "title": "Bijective, Injective and Surjective Functions",
-          "keywords": [
-            "one-one",
-            "onto",
-            "injective",
-            "surjective",
-            "bijective"
-          ],
-          "is_high_yield": true
-        }
+    {
+      "subtopic": "1D Motion & Motion Under Gravity",
+      "slug": "1d-motion-gravity",
+      "tags": [
+        "kinematics",
+        "1d motion",
+        "velocity time graph",
+        "acceleration",
+        "stopping distance",
+        "free fall"
       ],
-      "2": [
-        {
-          "slug": "principal-values-itf",
-          "title": "Principal Values and Domain of ITF",
-          "keywords": [
-            "principal value",
-            "sin^-1",
-            "cos^-1",
-            "tan^-1",
-            "domain and range"
-          ],
-          "is_high_yield": true
-        }
+      "keywords": [
+        "straight line",
+        "v-t graph",
+        "position-time",
+        "retardation",
+        "stopping distance",
+        "free fall",
+        "dropped from",
+        "uniformly accelerated",
+        "speed and velocity"
+      ]
+    },
+    {
+      "subtopic": "Projectile Motion & 2D Kinematics",
+      "slug": "projectile-motion",
+      "tags": [
+        "projectile",
+        "horizontal range",
+        "maximum height",
+        "trajectory",
+        "angle of projection"
       ],
-      "3": [
-        {
-          "slug": "matrix-multiplication-transpose",
-          "title": "Matrix Multiplication, Transpose and Symmetric",
-          "keywords": [
-            "multiplication of matrices",
-            "transpose",
-            "symmetric",
-            "skew-symmetric"
-          ],
-          "is_high_yield": true
-        },
-        {
-          "slug": "inverse-elementary",
-          "title": "Invertible Matrices and Elementary Operations",
-          "keywords": [
-            "invertible",
-            "elementary row",
-            "inverse of matrix"
-          ],
-          "is_high_yield": true
-        }
+      "keywords": [
+        "projectile",
+        "trajectory",
+        "horizontal range",
+        "angle of projection",
+        "maximum height",
+        "time of flight"
+      ]
+    },
+    {
+      "subtopic": "Relative Motion & Circular Kinematics",
+      "slug": "relative-motion-circular",
+      "tags": [
+        "relative velocity",
+        "river boat",
+        "rain man",
+        "circular motion",
+        "centripetal acceleration",
+        "angular velocity"
       ],
-      "4": [
-        {
-          "slug": "adjoint-inverse-system",
-          "title": "Adjoint, Inverse and System of Linear Equations",
-          "keywords": [
-            "adjoint",
-            "matrix method",
-            "system of equations",
-            "cramer"
-          ],
-          "is_high_yield": true
-        },
-        {
-          "slug": "determinant-expansion",
-          "title": "Determinant Value and Minors/Cofactors",
-          "keywords": [
-            "determinant",
-            "cofactor",
-            "minor",
-            "singular matrix"
-          ],
-          "is_high_yield": false
-        }
+      "keywords": [
+        "relative velocity",
+        "river",
+        "boat",
+        "rain",
+        "swimmer",
+        "angular velocity",
+        "centripetal acceleration",
+        "radius of curvature",
+        "circular path"
+      ]
+    },
+    {
+      "subtopic": "Newton's Laws & Constraint Motion",
+      "slug": "newtons-laws-constraints",
+      "tags": [
+        "newtons laws",
+        "free body diagram",
+        "pulley",
+        "tension in string",
+        "pseudo force",
+        "elevator"
       ],
-      "5": [
-        {
-          "slug": "continuity-differentiation",
-          "title": "Continuity and Chain Rule",
-          "keywords": [
-            "continuous",
-            "discontinuity",
-            "chain rule",
-            "differentiable"
-          ],
-          "is_high_yield": true
-        },
-        {
-          "slug": "logarithmic-implicit-diff",
-          "title": "Logarithmic and Implicit Differentiation",
-          "keywords": [
-            "logarithmic differentiation",
-            "implicit function",
-            "parametric"
-          ],
-          "is_high_yield": true
-        },
-        {
-          "slug": "second-order-derivatives",
-          "title": "Second Order Derivative Proofs",
-          "keywords": [
-            "d^2y/dx^2",
-            "second order",
-            "prove that"
-          ],
-          "is_high_yield": true
-        }
+      "keywords": [
+        "newton's",
+        "pulley",
+        "tension",
+        "normal reaction",
+        "pseudo force",
+        "apparent weight",
+        "accelerating lift",
+        "law of conservation of linear momentum"
+      ]
+    },
+    {
+      "subtopic": "Friction (Static, Kinetic & Rolling)",
+      "slug": "friction-dynamics",
+      "tags": [
+        "friction",
+        "coefficient of friction",
+        "angle of repose",
+        "limiting friction",
+        "block on block"
       ],
-      "6": [
-        {
-          "slug": "increasing-decreasing",
-          "title": "Increasing and Decreasing Functions",
-          "keywords": [
-            "strictly increasing",
-            "decreasing",
-            "intervals in which"
-          ],
-          "is_high_yield": true
-        },
-        {
-          "slug": "maxima-minima-problems",
-          "title": "Maxima and Minima Word Problems",
-          "keywords": [
-            "maxima",
-            "minima",
-            "maximum volume",
-            "minimum cost",
-            "largest box"
-          ],
-          "is_high_yield": true
-        }
+      "keywords": [
+        "friction",
+        "coefficient of static",
+        "kinetic friction",
+        "angle of repose",
+        "limiting friction",
+        "rough surface",
+        "banking of road"
+      ]
+    },
+    {
+      "subtopic": "Work-Energy Theorem & Conservative Forces",
+      "slug": "work-energy-theorem",
+      "tags": [
+        "work done",
+        "work-energy theorem",
+        "kinetic energy",
+        "spring potential energy",
+        "conservative force"
       ],
-      "7": [
-        {
-          "slug": "integration-by-parts-substitution",
-          "title": "Integration by Parts and Substitution",
-          "keywords": [
-            "by parts",
-            "substitution",
-            "e^x",
-            "partial fractions"
-          ],
-          "is_high_yield": true
-        },
-        {
-          "slug": "definite-integrals-properties",
-          "title": "Definite Integrals and Kings Property",
-          "keywords": [
-            "definite integral",
-            "properties of definite",
-            "fundamental theorem"
-          ],
-          "is_high_yield": true
-        }
+      "keywords": [
+        "work done",
+        "work-energy",
+        "potential energy",
+        "spring constant",
+        "conservative force",
+        "power",
+        "vertical circle"
+      ]
+    },
+    {
+      "subtopic": "Collisions (Elastic, Inelastic & 2D)",
+      "slug": "collisions-momentum",
+      "tags": [
+        "collision",
+        "elastic collision",
+        "coefficient of restitution",
+        "conservation of momentum",
+        "inelastic"
       ],
-      "8": [
-        {
-          "slug": "area-bounded-curves",
-          "title": "Area Bounded by Parabolas, Circles and Lines",
-          "keywords": [
-            "area of region",
-            "bounded by",
-            "parabola",
-            "ellipse",
-            "circle and line"
-          ],
-          "is_high_yield": true
-        }
+      "keywords": [
+        "collision",
+        "elastic collision",
+        "inelastic",
+        "restitution",
+        "coefficient of restitution",
+        "head-on collision",
+        "oblique collision"
+      ]
+    },
+    {
+      "subtopic": "Centre of Mass & System Dynamics",
+      "slug": "centre-of-mass",
+      "tags": [
+        "centre of mass",
+        "com",
+        "internal force",
+        "explosion of projectile",
+        "reduced mass"
       ],
-      "9": [
-        {
-          "slug": "linear-differential-eq",
-          "title": "Linear Differential Equations and IF",
-          "keywords": [
-            "integrating factor",
-            "dy/dx + py = q",
-            "linear differential"
-          ],
-          "is_high_yield": true
-        },
-        {
-          "slug": "separable-homogeneous",
-          "title": "Variable Separable and Homogeneous Equations",
-          "keywords": [
-            "homogeneous",
-            "variable separable",
-            "general solution",
-            "particular solution"
-          ],
-          "is_high_yield": true
-        }
+      "keywords": [
+        "centre of mass",
+        "center of mass",
+        "coordinates of center",
+        "two particle system",
+        "explosion of"
+      ]
+    },
+    {
+      "subtopic": "Moment of Inertia & Theorems",
+      "slug": "moment-of-inertia",
+      "tags": [
+        "moment of inertia",
+        "parallel axis theorem",
+        "perpendicular axis theorem",
+        "radius of gyration"
       ],
-      "10": [
-        {
-          "slug": "dot-cross-products",
-          "title": "Scalar (Dot) and Vector (Cross) Product",
-          "keywords": [
-            "dot product",
-            "cross product",
-            "perpendicular vectors",
-            "projection of vector"
-          ],
-          "is_high_yield": true
-        },
-        {
-          "slug": "unit-vectors-coplanar",
-          "title": "Unit Vectors and Collinearity",
-          "keywords": [
-            "unit vector",
-            "collinear",
-            "direction cosines"
-          ],
-          "is_high_yield": true
-        }
+      "keywords": [
+        "moment of inertia",
+        "radius of gyration",
+        "parallel axis",
+        "perpendicular axis",
+        "rotational inertia"
+      ]
+    },
+    {
+      "subtopic": "Torque, Angular Momentum & Rolling",
+      "slug": "torque-angular-momentum-rolling",
+      "tags": [
+        "torque",
+        "angular momentum",
+        "pure rolling",
+        "rolling without slipping",
+        "iaor"
       ],
-      "11": [
-        {
-          "slug": "shortest-distance-lines",
-          "title": "Shortest Distance between Skew Lines",
-          "keywords": [
-            "shortest distance",
-            "skew lines",
-            "parallel lines",
-            "vector equation of line"
-          ],
-          "is_high_yield": true
-        },
-        {
-          "slug": "equations-of-line",
-          "title": "Cartesian and Vector Equations of Lines",
-          "keywords": [
-            "cartesian equation",
-            "direction ratios",
-            "point of intersection"
-          ],
-          "is_high_yield": true
-        }
+      "keywords": [
+        "torque",
+        "angular momentum",
+        "pure rolling",
+        "without slipping",
+        "instantaneous axis",
+        "angular acceleration",
+        "rolling down an incline"
+      ]
+    },
+    {
+      "subtopic": "Gravitational Field, Potential & Acceleration (g)",
+      "slug": "gravitational-field-potential",
+      "tags": [
+        "gravitation",
+        "acceleration due to gravity",
+        "gravitational potential",
+        "altitude",
+        "depth"
       ],
-      "12": [
-        {
-          "slug": "lpp-graphical-method",
-          "title": "Linear Programming Graphical Solutions",
-          "keywords": [
-            "linear programming",
-            "lpp",
-            "corner points",
-            "maximize",
-            "minimize",
-            "feasible region"
-          ],
-          "is_high_yield": true
-        }
+      "keywords": [
+        "acceleration due to gravity",
+        "variation of g",
+        "gravitational potential",
+        "gravitational field",
+        "altitude",
+        "depth",
+        "universal law of gravitation"
+      ]
+    },
+    {
+      "subtopic": "Kepler's Laws, Satellites & Escape Velocity",
+      "slug": "satellites-escape-velocity",
+      "tags": [
+        "escape velocity",
+        "orbital velocity",
+        "satellite",
+        "kepler",
+        "time period of satellite"
       ],
-      "13": [
-        {
-          "slug": "bayes-theorem",
-          "title": "Bayes' Theorem and Total Probability",
-          "keywords": [
-            "bayes",
-            "total probability",
-            "conditional probability",
-            "defective items"
-          ],
-          "is_high_yield": true
-        },
-        {
-          "slug": "independent-events",
-          "title": "Independent Events and Multiplication Rule",
-          "keywords": [
-            "independent events",
-            "p(a|b)",
-            "multiplication theorem"
-          ],
-          "is_high_yield": true
-        }
+      "keywords": [
+        "escape velocity",
+        "orbital velocity",
+        "satellite",
+        "kepler",
+        "geostationary",
+        "time period of satellite",
+        "planetary motion"
+      ]
+    },
+    {
+      "subtopic": "Elasticity & Hooke's Law",
+      "slug": "elasticity-youngs-modulus",
+      "tags": [
+        "elasticity",
+        "youngs modulus",
+        "bulk modulus",
+        "stress strain",
+        "hookes law"
+      ],
+      "keywords": [
+        "young's modulus",
+        "stress",
+        "strain",
+        "hooke's law",
+        "bulk modulus",
+        "modulus of rigidity",
+        "elongation of wire"
+      ]
+    },
+    {
+      "subtopic": "Fluid Statics & Dynamics (Pascal, Bernoulli, Archimedes)",
+      "slug": "fluid-mechanics-bernoulli",
+      "tags": [
+        "fluid mechanics",
+        "bernoulli",
+        "pascal law",
+        "buoyancy",
+        "equation of continuity",
+        "torricelli"
+      ],
+      "keywords": [
+        "bernoulli",
+        "pascal's law",
+        "fluid pressure",
+        "buoyancy",
+        "viscosity",
+        "terminal velocity",
+        "stokes' law",
+        "efflux",
+        "torricelli",
+        "streamline"
+      ]
+    },
+    {
+      "subtopic": "Surface Tension & Capillarity",
+      "slug": "surface-tension-capillary",
+      "tags": [
+        "surface tension",
+        "capillary rise",
+        "excess pressure",
+        "angle of contact",
+        "soap bubble"
+      ],
+      "keywords": [
+        "surface tension",
+        "capillary rise",
+        "excess pressure",
+        "angle of contact",
+        "soap bubble",
+        "surface energy",
+        "liquid drop"
+      ]
+    },
+    {
+      "subtopic": "Thermal Expansion, Calorimetry & Heat Transfer",
+      "slug": "calorimetry-heat-transfer",
+      "tags": [
+        "calorimetry",
+        "specific heat",
+        "latent heat",
+        "conduction",
+        "radiation",
+        "stefan law",
+        "wien"
+      ],
+      "keywords": [
+        "calorimeter",
+        "specific heat",
+        "latent heat",
+        "thermal conductivity",
+        "stefan's law",
+        "newton's law of cooling",
+        "wien's displacement",
+        "black body"
+      ]
+    },
+    {
+      "subtopic": "Thermodynamics Laws & Cyclic Processes",
+      "slug": "thermodynamics-processes",
+      "tags": [
+        "thermodynamics",
+        "first law",
+        "isothermal",
+        "adiabatic",
+        "pv diagram",
+        "work done in gas",
+        "carnot"
+      ],
+      "keywords": [
+        "thermodynamics",
+        "first law of thermodynamics",
+        "isothermal",
+        "adiabatic",
+        "isobaric",
+        "isochoric",
+        "p-v diagram",
+        "carnot",
+        "heat engine",
+        "cyclic process"
+      ]
+    },
+    {
+      "subtopic": "Kinetic Theory of Gases (KTG)",
+      "slug": "kinetic-theory-gases",
+      "tags": [
+        "ktg",
+        "rms speed",
+        "degrees of freedom",
+        "equipartition of energy",
+        "mean free path",
+        "gas laws"
+      ],
+      "keywords": [
+        "kinetic theory",
+        "rms speed",
+        "root mean square speed",
+        "degrees of freedom",
+        "mean free path",
+        "equipartition of energy",
+        "molar heat capacity of gas"
+      ]
+    },
+    {
+      "subtopic": "Simple Harmonic Motion (Kinematics & Energy)",
+      "slug": "shm-oscillations",
+      "tags": [
+        "shm",
+        "simple harmonic motion",
+        "simple pendulum",
+        "spring pendulum",
+        "time period of oscillation"
+      ],
+      "keywords": [
+        "shm",
+        "simple harmonic",
+        "simple pendulum",
+        "restoring force",
+        "spring constant",
+        "amplitude of oscillation",
+        "phase difference"
+      ]
+    },
+    {
+      "subtopic": "Waves, Resonance, Organ Pipes & Doppler Effect",
+      "slug": "waves-sound-doppler",
+      "tags": [
+        "wave motion",
+        "organ pipe",
+        "standing waves",
+        "resonance tube",
+        "beats",
+        "doppler effect"
+      ],
+      "keywords": [
+        "wave motion",
+        "organ pipe",
+        "standing wave",
+        "resonance tube",
+        "beats",
+        "doppler effect",
+        "speed of sound",
+        "frequency of wave",
+        "string vibrating"
+      ]
+    },
+    {
+      "subtopic": "Coulomb's Law, Electric Field & Dipole",
+      "slug": "coulombs-law-field-dipole",
+      "tags": [
+        "coulombs law",
+        "electric field",
+        "electric dipole",
+        "superposition",
+        "point charges",
+        "dipole moment"
+      ],
+      "keywords": [
+        "coulomb's law",
+        "point charge",
+        "electric field",
+        "electric dipole",
+        "dipole moment",
+        "dielectric constant",
+        "electrostatic force"
+      ]
+    },
+    {
+      "subtopic": "Gauss's Law, Flux & Electric Potential",
+      "slug": "gauss-law-potential",
+      "tags": [
+        "gauss law",
+        "electric flux",
+        "electric potential",
+        "equipotential surface",
+        "spherical shell"
+      ],
+      "keywords": [
+        "gauss's law",
+        "electric flux",
+        "electric potential",
+        "equipotential surface",
+        "potential difference",
+        "spherical shell",
+        "gaussian surface"
+      ]
+    },
+    {
+      "subtopic": "Capacitors, Dielectrics & Energy Storage",
+      "slug": "capacitors-dielectrics",
+      "tags": [
+        "capacitor",
+        "capacitance",
+        "parallel plate",
+        "dielectric slab",
+        "energy stored in capacitor"
+      ],
+      "keywords": [
+        "capacitor",
+        "capacitance",
+        "dielectric slab",
+        "parallel plate capacitor",
+        "energy stored in capacitor",
+        "capacitors in series",
+        "capacitors in parallel"
+      ]
+    },
+    {
+      "subtopic": "Ohm's Law, Drift Velocity & Resistance",
+      "slug": "ohms-law-drift-velocity",
+      "tags": [
+        "current electricity",
+        "drift velocity",
+        "ohms law",
+        "resistivity",
+        "temperature coefficient of resistance"
+      ],
+      "keywords": [
+        "drift velocity",
+        "ohm's law",
+        "resistivity",
+        "conductivity",
+        "temperature coefficient of resistance",
+        "relaxation time",
+        "current density"
+      ]
+    },
+    {
+      "subtopic": "Circuits, Kirchhoff's Laws, Cells & Bridges",
+      "slug": "circuits-kirchhoff-bridges",
+      "tags": [
+        "kirchhoff",
+        "wheatstone bridge",
+        "metre bridge",
+        "potentiometer",
+        "internal resistance",
+        "emf"
+      ],
+      "keywords": [
+        "kirchhoff",
+        "wheatstone bridge",
+        "metre bridge",
+        "meter bridge",
+        "potentiometer",
+        "internal resistance",
+        "emf of cell",
+        "terminal potential"
+      ]
+    },
+    {
+      "subtopic": "Biot-Savart, Ampere's Law & Lorentz Force",
+      "slug": "biot-savart-lorentz-force",
+      "tags": [
+        "biot savart",
+        "amperes law",
+        "lorentz force",
+        "magnetic field of wire",
+        "solenoid",
+        "circular coil"
+      ],
+      "keywords": [
+        "biot-savart",
+        "ampere's circuital",
+        "lorentz force",
+        "solenoid",
+        "magnetic field",
+        "force on moving charge",
+        "circular loop"
+      ]
+    },
+    {
+      "subtopic": "Magnetic Dipole, Earth's Magnetism & Galvanometer",
+      "slug": "magnetic-materials-galvanometer",
+      "tags": [
+        "galvanometer",
+        "magnetic materials",
+        "diamagnetic",
+        "paramagnetic",
+        "ferromagnetic",
+        "magnetic moment"
+      ],
+      "keywords": [
+        "galvanometer",
+        "ammeter",
+        "voltmeter",
+        "shunt",
+        "diamagnetic",
+        "paramagnetic",
+        "ferromagnetic",
+        "magnetic susceptibility",
+        "earth's magnetic field"
+      ]
+    },
+    {
+      "subtopic": "Electromagnetic Induction (Faraday, Lenz, Inductance)",
+      "slug": "emi-faraday-inductance",
+      "tags": [
+        "emi",
+        "faradays law",
+        "lenz law",
+        "motional emf",
+        "self inductance",
+        "mutual inductance"
+      ],
+      "keywords": [
+        "electromagnetic induction",
+        "faraday's law",
+        "lenz's law",
+        "induced emf",
+        "motional emf",
+        "self-inductance",
+        "mutual inductance",
+        "eddy currents"
+      ]
+    },
+    {
+      "subtopic": "Alternating Currents, LCR Circuits & Transformers",
+      "slug": "ac-circuits-lcr-transformers",
+      "tags": [
+        "alternating current",
+        "lcr circuit",
+        "resonance",
+        "impedance",
+        "power factor",
+        "transformer"
+      ],
+      "keywords": [
+        "alternating current",
+        "lcr",
+        "resonance frequency",
+        "impedance",
+        "power factor",
+        "wattless current",
+        "transformer",
+        "rms voltage",
+        "ac circuit"
+      ]
+    },
+    {
+      "subtopic": "Electromagnetic Waves & Spectrum",
+      "slug": "em-waves-spectrum",
+      "tags": [
+        "em waves",
+        "displacement current",
+        "electromagnetic spectrum",
+        "microwaves",
+        "x-rays",
+        "uv"
+      ],
+      "keywords": [
+        "electromagnetic wave",
+        "displacement current",
+        "em spectrum",
+        "transverse nature",
+        "microwaves",
+        "infrared",
+        "x-ray",
+        "gamma rays"
+      ]
+    },
+    {
+      "subtopic": "Reflection, Refraction & Spherical Mirrors/Lenses",
+      "slug": "ray-optics-refraction-lenses",
+      "tags": [
+        "ray optics",
+        "refraction",
+        "lens makers formula",
+        "total internal reflection",
+        "spherical mirror"
+      ],
+      "keywords": [
+        "refraction",
+        "lens maker's formula",
+        "total internal reflection",
+        "focal length",
+        "concave mirror",
+        "convex lens",
+        "combination of thin lenses"
+      ]
+    },
+    {
+      "subtopic": "Prisms & Optical Instruments (Microscope, Telescope)",
+      "slug": "prisms-optical-instruments",
+      "tags": [
+        "prism",
+        "angle of deviation",
+        "microscope",
+        "telescope",
+        "magnifying power",
+        "resolving power"
+      ],
+      "keywords": [
+        "prism",
+        "minimum deviation",
+        "compound microscope",
+        "astronomical telescope",
+        "magnifying power",
+        "resolving power",
+        "refracting telescope"
+      ]
+    },
+    {
+      "subtopic": "Wave Optics (Interference, YDSE, Diffraction & Polarisation)",
+      "slug": "wave-optics-interference-diffraction",
+      "tags": [
+        "wave optics",
+        "interference",
+        "youngs double slit",
+        "ydse",
+        "fringe width",
+        "diffraction",
+        "polarisation"
+      ],
+      "keywords": [
+        "interference",
+        "young's double slit",
+        "ydse",
+        "fringe width",
+        "diffraction due to single slit",
+        "polarisation",
+        "brewster's law",
+        "wavefront",
+        "coherent sources"
+      ]
+    },
+    {
+      "subtopic": "Photoelectric Effect & Matter Waves (de Broglie)",
+      "slug": "photoelectric-effect-matter-waves",
+      "tags": [
+        "photoelectric effect",
+        "einsteins equation",
+        "work function",
+        "stopping potential",
+        "de broglie wavelength"
+      ],
+      "keywords": [
+        "photoelectric effect",
+        "stopping potential",
+        "work function",
+        "threshold frequency",
+        "einstein's photoelectric",
+        "de broglie wavelength",
+        "matter wave"
+      ]
+    },
+    {
+      "subtopic": "Atomic Structure & Bohr Model",
+      "slug": "bohr-atom-hydrogen-spectra",
+      "tags": [
+        "bohr model",
+        "hydrogen spectrum",
+        "lyman series",
+        "balmer series",
+        "energy levels",
+        "rydberg"
+      ],
+      "keywords": [
+        "bohr model",
+        "hydrogen spectrum",
+        "energy level",
+        "lyman series",
+        "balmer series",
+        "paschen series",
+        "rydberg constant",
+        "radius of nth orbit"
+      ]
+    },
+    {
+      "subtopic": "Nuclear Physics, Binding Energy & Radioactivity",
+      "slug": "nuclear-physics-radioactivity",
+      "tags": [
+        "nucleus",
+        "mass defect",
+        "binding energy",
+        "fission",
+        "fusion",
+        "half-life",
+        "radioactive decay"
+      ],
+      "keywords": [
+        "nucleus",
+        "mass defect",
+        "binding energy per nucleon",
+        "nuclear fission",
+        "nuclear fusion",
+        "radioactive decay",
+        "half-life",
+        "decay constant",
+        "alpha decay"
+      ]
+    },
+    {
+      "subtopic": "Semiconductors, Diodes & Logic Gates",
+      "slug": "semiconductors-diodes-gates",
+      "tags": [
+        "semiconductors",
+        "pn junction",
+        "diode",
+        "rectifier",
+        "zener diode",
+        "transistor",
+        "logic gates"
+      ],
+      "keywords": [
+        "semiconductor",
+        "p-n junction",
+        "diode",
+        "half-wave rectifier",
+        "full-wave rectifier",
+        "zener diode",
+        "transistor",
+        "logic gate",
+        "truth table",
+        "nand gate",
+        "nor gate"
+      ]
+    },
+    {
+      "subtopic": "Communication Systems",
+      "slug": "communication-systems",
+      "tags": [
+        "communication systems",
+        "modulation",
+        "antenna",
+        "amplitude modulation",
+        "bandwidth",
+        "sky wave"
+      ],
+      "keywords": [
+        "communication system",
+        "modulation index",
+        "amplitude modulation",
+        "transmitting antenna",
+        "bandwidth",
+        "carrier wave",
+        "sky wave propagation"
       ]
     }
-  },
-  "neet": {
-    "Physics": [
-      {
-        "slug": "mechanics-kinematics",
-        "title": "Mechanics and Rotational Dynamics",
-        "keywords": [
-          "motion",
-          "velocity",
-          "acceleration",
-          "friction",
-          "torque",
-          "moment of inertia"
-        ],
-        "is_high_yield": true
-      },
-      {
-        "slug": "electrodynamics-circuits",
-        "title": "Current Electricity and Magnetism",
-        "keywords": [
-          "current",
-          "resistor",
-          "magnetic",
-          "capacitance",
-          "inductance",
-          "flux"
-        ],
-        "is_high_yield": true
-      },
-      {
-        "slug": "optics-wave-optics",
-        "title": "Ray Optics and Wave Interference",
-        "keywords": [
-          "lens",
-          "refraction",
-          "focal",
-          "interference",
-          "slit",
-          "optical"
-        ],
-        "is_high_yield": true
-      },
-      {
-        "slug": "modern-physics-atoms",
-        "title": "Dual Nature and Semiconductor Electronics",
-        "keywords": [
-          "photoelectric",
-          "wavelength",
-          "bohr",
-          "nucleus",
-          "semiconductor",
-          "diode"
-        ],
-        "is_high_yield": true
-      }
-    ],
-    "Chemistry": [
-      {
-        "slug": "chemical-bonding-structure",
-        "title": "Chemical Bonding and Molecular Structure",
-        "keywords": [
-          "hybridisation",
-          "dipole",
-          "geometry",
-          "vsepr",
-          "bond order",
-          "paramagnetic"
-        ],
-        "is_high_yield": true
-      },
-      {
-        "slug": "physical-equilibrium-kinetics",
-        "title": "Equilibrium, Electrochemistry and Kinetics",
-        "keywords": [
-          "equilibrium",
-          "ph",
-          "kp",
-          "nernst",
-          "rate constant",
-          "activation energy",
-          "half life"
-        ],
-        "is_high_yield": true
-      },
-      {
-        "slug": "organic-reaction-mechanisms",
-        "title": "Organic Reaction Mechanisms and Functional Groups",
-        "keywords": [
-          "nucleophilic",
-          "aldol",
-          "electrophilic",
-          "alcohol",
-          "amine",
-          "carbocation",
-          "aromatic"
-        ],
-        "is_high_yield": true
-      },
-      {
-        "slug": "inorganic-blocks-coordination",
-        "title": "Coordination Compounds and Transition Elements",
-        "keywords": [
-          "coordination",
-          "ligand",
-          "isomerism",
-          "crystal field",
-          "lanthanoid",
-          "oxidation state"
-        ],
-        "is_high_yield": true
-      }
-    ],
-    "Botany": [
-      {
-        "slug": "genetics-inheritance",
-        "title": "Mendelian Genetics and Molecular Inheritance",
-        "keywords": [
-          "mendel",
-          "dihybrid",
-          "chromosome",
-          "dna",
-          "transcription",
-          "translation",
-          "allele"
-        ],
-        "is_high_yield": true
-      },
-      {
-        "slug": "plant-physiology-photosynthesis",
-        "title": "Photosynthesis and Plant Physiology",
-        "keywords": [
-          "photosynthesis",
-          "c3",
-          "c4",
-          "calvin",
-          "krebs",
-          "atp",
-          "chloroplast",
-          "transpiration"
-        ],
-        "is_high_yield": true
-      },
-      {
-        "slug": "cell-division-structure",
-        "title": "Cell Structure and Division",
-        "keywords": [
-          "mitosis",
-          "meiosis",
-          "prophase",
-          "metaphase",
-          "ribosome",
-          "membrane",
-          "cell cycle"
-        ],
-        "is_high_yield": true
-      },
-      {
-        "slug": "ecology-biodiversity",
-        "title": "Ecosystems and Biodiversity",
-        "keywords": [
-          "ecosystem",
-          "trophic",
-          "pyramid",
-          "biodiversity",
-          "pollution",
-          "population"
-        ],
-        "is_high_yield": true
-      }
-    ],
-    "Zoology": [
-      {
-        "slug": "human-physiology-systems",
-        "title": "Human Physiology and Organ Systems",
-        "keywords": [
-          "blood",
-          "cardiac",
-          "nephron",
-          "kidney",
-          "lungs",
-          "neural",
-          "hormone",
-          "endocrine"
-        ],
-        "is_high_yield": true
-      },
-      {
-        "slug": "human-reproduction-health",
-        "title": "Human Reproduction and Reproductive Health",
-        "keywords": [
-          "spermatogenesis",
-          "oogenesis",
-          "ovary",
-          "testis",
-          "menstrual",
-          "contraceptive",
-          "art"
-        ],
-        "is_high_yield": true
-      },
-      {
-        "slug": "evolution-animal-kingdom",
-        "title": "Evolution and Animal Classification",
-        "keywords": [
-          "homologous",
-          "analogous",
-          "natural selection",
-          "phylum",
-          "chordata",
-          "arthropoda"
-        ],
-        "is_high_yield": true
-      },
-      {
-        "slug": "biotechnology-human-health",
-        "title": "Biotechnology and Human Health",
-        "keywords": [
-          "plasmid",
-          "restriction enzyme",
-          "pcr",
-          "recombinant",
-          "antibody",
-          "antigen",
-          "immunity",
-          "aids"
-        ],
-        "is_high_yield": true
-      }
-    ]
-  }
+  ],
+  "chemistry": [
+    {
+      "subtopic": "Mole Concept, Stoichiometry & Concentration Terms",
+      "slug": "mole-concept-stoichiometry",
+      "tags": [
+        "mole concept",
+        "stoichiometry",
+        "molarity",
+        "molality",
+        "limiting reagent",
+        "empirical formula"
+      ],
+      "keywords": [
+        "mole concept",
+        "molar mass",
+        "molarity",
+        "molality",
+        "mole fraction",
+        "limiting reagent",
+        "empirical formula",
+        "stoichiometry",
+        "percentage composition"
+      ]
+    },
+    {
+      "subtopic": "Atomic Models, Quantum Numbers & Electronic Configuration",
+      "slug": "atomic-structure-quantum-numbers",
+      "tags": [
+        "atomic structure",
+        "quantum numbers",
+        "orbitals",
+        "heisenberg",
+        "electronic configuration",
+        "radial nodes"
+      ],
+      "keywords": [
+        "quantum number",
+        "atomic orbital",
+        "heisenberg uncertainty",
+        "aufbau principle",
+        "hund's rule",
+        "pauli exclusion",
+        "electronic configuration",
+        "radial nodes",
+        "angular nodes"
+      ]
+    },
+    {
+      "subtopic": "Chemical Bonding (VSEPR, Hybridization, Dipole Moment, MOT)",
+      "slug": "chemical-bonding-mot",
+      "tags": [
+        "chemical bonding",
+        "vsepr",
+        "hybridization",
+        "molecular orbital theory",
+        "bond order",
+        "dipole moment"
+      ],
+      "keywords": [
+        "chemical bonding",
+        "vsepr",
+        "hybridization",
+        "molecular orbital",
+        "bond order",
+        "dipole moment",
+        "paramagnetic molecule",
+        "diamagnetic molecule",
+        "hydrogen bond"
+      ]
+    },
+    {
+      "subtopic": "States of Matter & Gas Laws (Ideal & Real Gases)",
+      "slug": "states-of-matter-real-gases",
+      "tags": [
+        "states of matter",
+        "gas laws",
+        "ideal gas",
+        "van der waals",
+        "compressibility factor",
+        "critical constants"
+      ],
+      "keywords": [
+        "gas laws",
+        "ideal gas equation",
+        "van der waals",
+        "compressibility factor",
+        "critical temperature",
+        "real gas",
+        "partial pressure",
+        "graham's law"
+      ]
+    },
+    {
+      "subtopic": "Thermodynamics & Thermochemistry (Hess, Entropy, Gibbs)",
+      "slug": "thermodynamics-gibbs-energy",
+      "tags": [
+        "chemical thermodynamics",
+        "enthalpy",
+        "hess law",
+        "entropy",
+        "gibbs free energy",
+        "spontaneity"
+      ],
+      "keywords": [
+        "chemical thermodynamics",
+        "enthalpy of formation",
+        "hess's law",
+        "entropy change",
+        "gibbs free energy",
+        "spontaneity of reaction",
+        "bond enthalpy"
+      ]
+    },
+    {
+      "subtopic": "Chemical Equilibrium & Le Chatelier's Principle",
+      "slug": "chemical-equilibrium-le-chatelier",
+      "tags": [
+        "chemical equilibrium",
+        "equilibrium constant",
+        "kp kc",
+        "le chatelier",
+        "reaction quotient"
+      ],
+      "keywords": [
+        "chemical equilibrium",
+        "equilibrium constant",
+        "kp",
+        "kc",
+        "le chatelier's principle",
+        "reaction quotient",
+        "degree of dissociation"
+      ]
+    },
+    {
+      "subtopic": "Ionic Equilibrium (pH, Buffers, Hydrolysis & Ksp)",
+      "slug": "ionic-equilibrium-ph-ksp",
+      "tags": [
+        "ionic equilibrium",
+        "ph",
+        "buffer solution",
+        "salt hydrolysis",
+        "solubility product",
+        "ksp",
+        "common ion effect"
+      ],
+      "keywords": [
+        "ionic equilibrium",
+        "ph of solution",
+        "buffer solution",
+        "salt hydrolysis",
+        "solubility product",
+        "ksp",
+        "common ion effect",
+        "henderson-hasselbalch"
+      ]
+    },
+    {
+      "subtopic": "Solid State (Unit Cells, Packing & Defects)",
+      "slug": "solid-state-crystal-defects",
+      "tags": [
+        "solid state",
+        "unit cell",
+        "bcc",
+        "fcc",
+        "packing efficiency",
+        "schottky defect",
+        "frenkel defect"
+      ],
+      "keywords": [
+        "solid state",
+        "crystal lattice",
+        "unit cell",
+        "bcc",
+        "fcc",
+        "schottky defect",
+        "frenkel defect",
+        "packing efficiency",
+        "coordination number in solid"
+      ]
+    },
+    {
+      "subtopic": "Solutions & Colligative Properties (Raoult, Van't Hoff)",
+      "slug": "solutions-colligative-properties",
+      "tags": [
+        "solutions",
+        "raoults law",
+        "colligative properties",
+        "elevation in boiling point",
+        "freezing depression",
+        "osmotic pressure",
+        "vant hoff"
+      ],
+      "keywords": [
+        "solution",
+        "raoult's law",
+        "colligative property",
+        "depression in freezing",
+        "elevation in boiling",
+        "osmotic pressure",
+        "van't hoff factor",
+        "ideal solution",
+        "non-ideal solution"
+      ]
+    },
+    {
+      "subtopic": "Electrochemistry (Nernst, Cells, Kohlrausch & Faraday)",
+      "slug": "electrochemistry-nernst-kohlrausch",
+      "tags": [
+        "electrochemistry",
+        "nernst equation",
+        "cell potential",
+        "emf",
+        "kohlrausch law",
+        "faraday laws",
+        "conductance"
+      ],
+      "keywords": [
+        "electrochemistry",
+        "nernst equation",
+        "cell potential",
+        "kohlrausch's law",
+        "molar conductivity",
+        "faraday's law",
+        "galvanic cell",
+        "standard electrode potential",
+        "electrolysis"
+      ]
+    },
+    {
+      "subtopic": "Chemical Kinetics & Catalysis (Rate Law, Order, Arrhenius)",
+      "slug": "chemical-kinetics-arrhenius",
+      "tags": [
+        "chemical kinetics",
+        "rate law",
+        "order of reaction",
+        "half life",
+        "arrhenius equation",
+        "activation energy"
+      ],
+      "keywords": [
+        "chemical kinetics",
+        "rate of reaction",
+        "first order reaction",
+        "zero order",
+        "half-life period",
+        "arrhenius equation",
+        "activation energy",
+        "rate constant"
+      ]
+    },
+    {
+      "subtopic": "Surface Chemistry (Adsorption, Colloids & Emulsions)",
+      "slug": "surface-chemistry-colloids",
+      "tags": [
+        "surface chemistry",
+        "adsorption",
+        "freundlich isotherm",
+        "colloids",
+        "micelles",
+        "hardy schulze"
+      ],
+      "keywords": [
+        "surface chemistry",
+        "adsorption isotherm",
+        "freundlich",
+        "colloid",
+        "lyophilic sol",
+        "lyophobic",
+        "micelle",
+        "hardy-schulze rule",
+        "coagulation value",
+        "emulsion"
+      ]
+    },
+    {
+      "subtopic": "Periodic Classification & Periodic Properties",
+      "slug": "periodic-classification-properties",
+      "tags": [
+        "periodic table",
+        "ionization enthalpy",
+        "electron gain enthalpy",
+        "electronegativity",
+        "atomic radii"
+      ],
+      "keywords": [
+        "periodic classification",
+        "ionization enthalpy",
+        "electron gain enthalpy",
+        "electronegativity",
+        "atomic radius",
+        "isoelectronic species",
+        "periodic trend"
+      ]
+    },
+    {
+      "subtopic": "Hydrogen & s-Block Elements (Alkali & Alkaline Earth)",
+      "slug": "hydrogen-s-block-elements",
+      "tags": [
+        "hydrogen",
+        "s block",
+        "alkali metals",
+        "alkaline earth metals",
+        "h2o2",
+        "heavy water"
+      ],
+      "keywords": [
+        "hydrogen",
+        "s-block",
+        "alkali metal",
+        "alkaline earth metal",
+        "sodium carbonate",
+        "plaster of paris",
+        "h2o2",
+        "heavy water",
+        "calcium oxide"
+      ]
+    },
+    {
+      "subtopic": "p-Block Elements (Groups 13 to 18)",
+      "slug": "p-block-elements-compounds",
+      "tags": [
+        "p block",
+        "boron family",
+        "carbon family",
+        "nitrogen family",
+        "halogens",
+        "noble gases",
+        "interhalogens"
+      ],
+      "keywords": [
+        "p-block",
+        "borax",
+        "silicate",
+        "ammonia",
+        "nitric acid",
+        "oxoacids of phosphorus",
+        "halogen",
+        "noble gas compound",
+        "xef4",
+        "interhalogen"
+      ]
+    },
+    {
+      "subtopic": "d- and f-Block Elements (Transition Metals, Lanthanoids)",
+      "slug": "d-and-f-block-elements",
+      "tags": [
+        "d block",
+        "transition elements",
+        "kmno4",
+        "k2cr2o7",
+        "lanthanoid contraction",
+        "magnetic moment"
+      ],
+      "keywords": [
+        "transition metal",
+        "d-block",
+        "f-block",
+        "lanthanoid contraction",
+        "actinoid",
+        "kmno4",
+        "k2cr2o7",
+        "spin-only magnetic moment",
+        "colour of transition"
+      ]
+    },
+    {
+      "subtopic": "Coordination Compounds (Nomenclature, Isomerism, CFT, VBT)",
+      "slug": "coordination-compounds-cft",
+      "tags": [
+        "coordination compounds",
+        "iupac nomenclature",
+        "isomerism",
+        "crystal field theory",
+        "valence bond theory",
+        "ligands"
+      ],
+      "keywords": [
+        "coordination compound",
+        "ligand",
+        "crystal field splitting",
+        "cfse",
+        "isomerism in complexes",
+        "chelating ligand",
+        "spectrochemical series",
+        "iupac name of complex"
+      ]
+    },
+    {
+      "subtopic": "Principles of Metallurgy & Extraction of Metals",
+      "slug": "metallurgy-extraction-principles",
+      "tags": [
+        "metallurgy",
+        "extraction of metals",
+        "ellingham diagram",
+        "froth floatation",
+        "zone refining",
+        "mond process"
+      ],
+      "keywords": [
+        "metallurgy",
+        "extraction of metal",
+        "ellingham diagram",
+        "froth floatation",
+        "calcination",
+        "roasting",
+        "smelting",
+        "zone refining",
+        "mond process"
+      ]
+    },
+    {
+      "subtopic": "Qualitative Inorganic Analysis (Salt Analysis)",
+      "slug": "qualitative-salt-analysis",
+      "tags": [
+        "salt analysis",
+        "qualitative analysis",
+        "cation detection",
+        "anion detection",
+        "brown ring test",
+        "borax bead"
+      ],
+      "keywords": [
+        "salt analysis",
+        "qualitative analysis",
+        "brown ring test",
+        "borax bead test",
+        "chromyl chloride test",
+        "precipitate",
+        "group reagent",
+        "cation analysis",
+        "anion analysis"
+      ]
+    },
+    {
+      "subtopic": "General Organic Chemistry (GOC, Resonance, Acidity/Basicity)",
+      "slug": "goc-electronic-effects",
+      "tags": [
+        "goc",
+        "iupac nomenclature",
+        "inductive effect",
+        "resonance",
+        "hyperconjugation",
+        "carbocation stability",
+        "aromaticity"
+      ],
+      "keywords": [
+        "iupac nomenclature",
+        "inductive effect",
+        "resonance structure",
+        "hyperconjugation",
+        "carbocation",
+        "carbanion",
+        "aromaticity",
+        "huckel's rule",
+        "acidic strength",
+        "basic strength"
+      ]
+    },
+    {
+      "subtopic": "Hydrocarbons (Alkanes, Alkenes, Alkynes & Arenes)",
+      "slug": "hydrocarbons-reactions-mechanisms",
+      "tags": [
+        "hydrocarbons",
+        "alkene",
+        "alkyne",
+        "benzene",
+        "electrophilic addition",
+        "ozonolysis",
+        "friedel crafts"
+      ],
+      "keywords": [
+        "hydrocarbon",
+        "alkane",
+        "alkene",
+        "alkyne",
+        "ozonolysis",
+        "markovnikov's rule",
+        "anti-markovnikov",
+        "friedel-crafts",
+        "electrophilic aromatic substitution",
+        "benzene"
+      ]
+    },
+    {
+      "subtopic": "Haloalkanes and Haloarenes (SN1, SN2, Elimination)",
+      "slug": "haloalkanes-haloarenes-sn1-sn2",
+      "tags": [
+        "haloalkanes",
+        "haloarenes",
+        "sn1",
+        "sn2",
+        "nucleophilic substitution",
+        "elimination reaction"
+      ],
+      "keywords": [
+        "haloalkane",
+        "haloarene",
+        "sn1",
+        "sn2",
+        "alkyl halide",
+        "nucleophilic substitution",
+        "elimination reaction",
+        "saytzeff",
+        "chirality"
+      ]
+    },
+    {
+      "subtopic": "Alcohols, Phenols & Ethers (Lucas, Kolbe, Reimer-Tiemann, Williamson)",
+      "slug": "alcohols-phenols-ethers",
+      "tags": [
+        "alcohols",
+        "phenols",
+        "ethers",
+        "lucas test",
+        "kolbe reaction",
+        "reimer tiemann",
+        "williamson synthesis"
+      ],
+      "keywords": [
+        "alcohol",
+        "phenol",
+        "ether",
+        "lucas test",
+        "reimer-tiemann",
+        "kolbe reaction",
+        "williamson ether synthesis",
+        "picric acid",
+        "dehydration of alcohol"
+      ]
+    },
+    {
+      "subtopic": "Aldehydes & Ketones (Nucleophilic Addition, Aldol, Cannizzaro)",
+      "slug": "aldehydes-ketones-carbonyls",
+      "tags": [
+        "aldehydes",
+        "ketones",
+        "carbonyl compounds",
+        "aldol condensation",
+        "cannizzaro reaction",
+        "clemmensen",
+        "haloform test"
+      ],
+      "keywords": [
+        "aldehyde",
+        "ketone",
+        "carbonyl group",
+        "aldol condensation",
+        "cannizzaro reaction",
+        "haloform test",
+        "clemmensen reduction",
+        "wolff-kishner",
+        "fehling's solution",
+        "tollens' reagent"
+      ]
+    },
+    {
+      "subtopic": "Carboxylic Acids and Derivatives",
+      "slug": "carboxylic-acids-derivatives",
+      "tags": [
+        "carboxylic acids",
+        "acidic strength",
+        "esterification",
+        "hvz reaction",
+        "acyl chlorides"
+      ],
+      "keywords": [
+        "carboxylic acid",
+        "benzoic acid",
+        "hell-volhard-zelinsky",
+        "hvz reaction",
+        "esterification",
+        "decarboxylation",
+        "acyl chloride",
+        "acid anhydride"
+      ]
+    },
+    {
+      "subtopic": "Amines & Diazonium Salts (Gabriel, Hoffmann, Sandmeyer)",
+      "slug": "amines-diazonium-salts",
+      "tags": [
+        "amines",
+        "diazonium salts",
+        "basic strength",
+        "gabriel phthalimide",
+        "hoffmann bromamide",
+        "sandmeyer reaction",
+        "hinsberg test"
+      ],
+      "keywords": [
+        "amine",
+        "diazonium salt",
+        "gabriel phthalimide",
+        "hoffmann bromamide",
+        "sandmeyer reaction",
+        "hinsberg's reagent",
+        "basic character of amines",
+        "coupling reaction"
+      ]
+    },
+    {
+      "subtopic": "Biomolecules (Carbohydrates, Amino Acids, Proteins & DNA/RNA)",
+      "slug": "biomolecules-proteins-nucleic-acids",
+      "tags": [
+        "biomolecules",
+        "carbohydrates",
+        "glucose",
+        "amino acids",
+        "peptide bond",
+        "proteins",
+        "nucleic acids",
+        "dna rna"
+      ],
+      "keywords": [
+        "biomolecule",
+        "carbohydrate",
+        "glucose",
+        "fructose",
+        "amino acid",
+        "peptide bond",
+        "protein denaturation",
+        "nucleic acid",
+        "dna",
+        "rna",
+        "nucleotide"
+      ]
+    },
+    {
+      "subtopic": "Polymers, Everyday Life & Environmental Chemistry",
+      "slug": "polymers-everyday-environmental",
+      "tags": [
+        "polymers",
+        "addition polymerization",
+        "nylon",
+        "bakelite",
+        "drugs",
+        "antiseptics",
+        "environmental chemistry",
+        "pollution"
+      ],
+      "keywords": [
+        "polymer",
+        "nylon",
+        "bakelite",
+        "dacron",
+        "copolymer",
+        "biodegradable polymer",
+        "antiseptic",
+        "analgesic",
+        "tranquilizer",
+        "atmospheric pollution",
+        "green chemistry"
+      ]
+    }
+  ],
+  "mathematics": [
+    {
+      "subtopic": "Sets, Relations & Types of Functions",
+      "slug": "sets-relations-functions",
+      "tags": [
+        "sets",
+        "relations",
+        "equivalence relation",
+        "one-one onto",
+        "bijective function",
+        "domain and range"
+      ],
+      "keywords": [
+        "equivalence relation",
+        "reflexive",
+        "symmetric",
+        "transitive",
+        "one-one",
+        "onto",
+        "injective",
+        "surjective",
+        "bijective",
+        "domain and range",
+        "composite function"
+      ]
+    },
+    {
+      "subtopic": "Complex Numbers (Modulus, Argument, Roots of Unity)",
+      "slug": "complex-numbers-algebra",
+      "tags": [
+        "complex numbers",
+        "argand plane",
+        "modulus argument",
+        "cube roots of unity",
+        "eulers form",
+        "locus in complex plane"
+      ],
+      "keywords": [
+        "complex number",
+        "argand plane",
+        "modulus",
+        "argument of complex",
+        "roots of unity",
+        "imaginary part",
+        "real part",
+        "conjugate of complex"
+      ]
+    },
+    {
+      "subtopic": "Quadratic Equations (Roots, Common Roots, Nature)",
+      "slug": "quadratic-equations-roots",
+      "tags": [
+        "quadratic equations",
+        "roots of equation",
+        "discriminant",
+        "common roots",
+        "range of quadratic"
+      ],
+      "keywords": [
+        "quadratic equation",
+        "roots of quadratic",
+        "discriminant",
+        "common root",
+        "sum of roots",
+        "product of roots",
+        "nature of roots"
+      ]
+    },
+    {
+      "subtopic": "Matrices (Algebra, Inverse, Symmetric, Cayley-Hamilton)",
+      "slug": "matrices-algebra-inverse",
+      "tags": [
+        "matrices",
+        "matrix multiplication",
+        "transpose",
+        "symmetric matrix",
+        "inverse of matrix",
+        "orthogonal matrix"
+      ],
+      "keywords": [
+        "matrix",
+        "matrices",
+        "symmetric matrix",
+        "skew-symmetric",
+        "inverse of matrix",
+        "cayley-hamilton",
+        "trace of matrix",
+        "adjoint matrix"
+      ]
+    },
+    {
+      "subtopic": "Determinants & System of Linear Equations (Cramer's Rule)",
+      "slug": "determinants-cramer-rule",
+      "tags": [
+        "determinants",
+        "cramers rule",
+        "system of linear equations",
+        "minors and cofactors",
+        "adjoint"
+      ],
+      "keywords": [
+        "determinant",
+        "cramer's rule",
+        "system of linear equations",
+        "singular matrix",
+        "consistency of equations",
+        "minors and cofactors"
+      ]
+    },
+    {
+      "subtopic": "Permutations & Combinations (Group Division, Arrangements)",
+      "slug": "permutations-combinations",
+      "tags": [
+        "permutations",
+        "combinations",
+        "counting principle",
+        "grouping",
+        "rank of word",
+        "integral solutions"
+      ],
+      "keywords": [
+        "permutation",
+        "combination",
+        "number of ways",
+        "arrangements",
+        "selection of",
+        "rank of word",
+        "circular permutation"
+      ]
+    },
+    {
+      "subtopic": "Binomial Theorem & Expansions",
+      "slug": "binomial-theorem-terms",
+      "tags": [
+        "binomial theorem",
+        "general term",
+        "middle term",
+        "term independent of x",
+        "binomial coefficients"
+      ],
+      "keywords": [
+        "binomial theorem",
+        "binomial expansion",
+        "general term",
+        "middle term",
+        "independent of x",
+        "coefficient of x",
+        "remainder when"
+      ]
+    },
+    {
+      "subtopic": "Sequences & Progressions (AP, GP, HP, AGP, Telescoping)",
+      "slug": "sequences-series-progressions",
+      "tags": [
+        "sequences and series",
+        "arithmetic progression",
+        "geometric progression",
+        "am gm inequality",
+        "sum of n terms"
+      ],
+      "keywords": [
+        "arithmetic progression",
+        "geometric progression",
+        "sum of n terms",
+        "am-gm inequality",
+        "infinite gp",
+        "common ratio",
+        "common difference"
+      ]
+    },
+    {
+      "subtopic": "Mathematical Reasoning & Induction",
+      "slug": "mathematical-reasoning-logic",
+      "tags": [
+        "mathematical reasoning",
+        "tautology",
+        "contradiction",
+        "contrapositive",
+        "truth table"
+      ],
+      "keywords": [
+        "tautology",
+        "contradiction",
+        "contrapositive",
+        "truth table",
+        "negation of statement",
+        "mathematical induction"
+      ]
+    },
+    {
+      "subtopic": "Limits, Continuity & Differentiability",
+      "slug": "limits-continuity-differentiability",
+      "tags": [
+        "limits",
+        "continuity",
+        "differentiability",
+        "l hopitals rule",
+        "standard limits",
+        "indeterminate forms"
+      ],
+      "keywords": [
+        "limit",
+        "continuous at",
+        "differentiable at",
+        "l'hopital's rule",
+        "indeterminate form",
+        "left hand limit",
+        "right hand limit"
+      ]
+    },
+    {
+      "subtopic": "Differentiation (Chain Rule, Implicit, Logarithmic, Higher Order)",
+      "slug": "differentiation-techniques",
+      "tags": [
+        "differentiation",
+        "derivative",
+        "chain rule",
+        "implicit differentiation",
+        "logarithmic differentiation",
+        "second derivative"
+      ],
+      "keywords": [
+        "derivative of",
+        "differentiation",
+        "chain rule",
+        "implicit function",
+        "logarithmic differentiation",
+        "second order derivative",
+        "parametric form"
+      ]
+    },
+    {
+      "subtopic": "Applications of Derivatives (Tangents, Normals, Monotonicity)",
+      "slug": "aod-tangents-monotonicity",
+      "tags": [
+        "application of derivatives",
+        "tangent to curve",
+        "normal to curve",
+        "increasing decreasing",
+        "rate of change"
+      ],
+      "keywords": [
+        "tangent to the curve",
+        "normal to the curve",
+        "strictly increasing",
+        "strictly decreasing",
+        "rate of change",
+        "monotonic function"
+      ]
+    },
+    {
+      "subtopic": "Applications of Derivatives (Maxima, Minima & Optimization)",
+      "slug": "aod-maxima-minima",
+      "tags": [
+        "maxima and minima",
+        "local maximum",
+        "local minimum",
+        "optimization problems",
+        "critical points"
+      ],
+      "keywords": [
+        "maxima and minima",
+        "maximum value",
+        "minimum value",
+        "local maximum",
+        "local minimum",
+        "critical points",
+        "optimization"
+      ]
+    },
+    {
+      "subtopic": "Indefinite Integration (Substitution, Parts, Partial Fractions)",
+      "slug": "indefinite-integration-methods",
+      "tags": [
+        "indefinite integrals",
+        "integration by parts",
+        "substitution method",
+        "partial fractions",
+        "antiderivative"
+      ],
+      "keywords": [
+        "indefinite integral",
+        "integration by parts",
+        "partial fractions",
+        "antiderivative",
+        "substitution method",
+        "constant of integration"
+      ]
+    },
+    {
+      "subtopic": "Definite Integrals & Properties (King's Rule, Periodic, Leibniz)",
+      "slug": "definite-integrals-properties",
+      "tags": [
+        "definite integrals",
+        "properties of definite integrals",
+        "kings property",
+        "leibniz rule",
+        "periodic integrals"
+      ],
+      "keywords": [
+        "definite integral",
+        "properties of definite integrals",
+        "king's property",
+        "leibniz rule",
+        "differentiation under integral",
+        "fundamental theorem of calculus"
+      ]
+    },
+    {
+      "subtopic": "Area Bounded by Curves (Application of Integrals)",
+      "slug": "area-under-curves",
+      "tags": [
+        "area under curve",
+        "bounded area",
+        "area between curves",
+        "parabola and line",
+        "circle and line"
+      ],
+      "keywords": [
+        "area bounded by",
+        "area of the region",
+        "enclosed by",
+        "area between curves",
+        "bounded by the parabola"
+      ]
+    },
+    {
+      "subtopic": "Differential Equations (Separable, Homogeneous, Linear IF)",
+      "slug": "differential-equations-solving",
+      "tags": [
+        "differential equations",
+        "order and degree",
+        "integrating factor",
+        "variable separable",
+        "homogeneous equation"
+      ],
+      "keywords": [
+        "differential equation",
+        "integrating factor",
+        "variable separable",
+        "homogeneous differential",
+        "order and degree of differential",
+        "general solution of differential"
+      ]
+    },
+    {
+      "subtopic": "Straight Lines & Pair of Lines",
+      "slug": "straight-lines-geometry",
+      "tags": [
+        "straight line",
+        "slope of line",
+        "distance of point from line",
+        "intercepts",
+        "concurrency of lines"
+      ],
+      "keywords": [
+        "straight line",
+        "slope of the line",
+        "perpendicular distance from point",
+        "pair of straight lines",
+        "concurrent lines",
+        "equation of line",
+        "intercepts on axes"
+      ]
+    },
+    {
+      "subtopic": "Circles (Equations, Tangents, Orthogonality, Chords)",
+      "slug": "circles-tangents-chords",
+      "tags": [
+        "circle",
+        "equation of circle",
+        "tangent to circle",
+        "chord of contact",
+        "director circle"
+      ],
+      "keywords": [
+        "circle",
+        "radius of circle",
+        "centre of circle",
+        "tangent to the circle",
+        "chord of contact",
+        "orthogonal circles",
+        "concentric circles"
+      ]
+    },
+    {
+      "subtopic": "Conic Sections (Parabola, Ellipse, Hyperbola)",
+      "slug": "conic-sections-parabola-ellipse-hyperbola",
+      "tags": [
+        "conic sections",
+        "parabola",
+        "ellipse",
+        "hyperbola",
+        "eccentricity",
+        "focal chords",
+        "latus rectum"
+      ],
+      "keywords": [
+        "parabola",
+        "ellipse",
+        "hyperbola",
+        "eccentricity",
+        "latus rectum",
+        "focus of",
+        "directrix",
+        "tangent to hyperbola",
+        "tangent to ellipse",
+        "tangent to parabola"
+      ]
+    },
+    {
+      "subtopic": "Vector Algebra (Dot, Cross & Triple Products)",
+      "slug": "vector-algebra-products",
+      "tags": [
+        "vectors",
+        "dot product",
+        "cross product",
+        "scalar triple product",
+        "vector triple product",
+        "projection of vector"
+      ],
+      "keywords": [
+        "vector",
+        "dot product",
+        "cross product",
+        "scalar triple product",
+        "vector triple product",
+        "projection of vector",
+        "coplanar vectors",
+        "unit vector"
+      ]
+    },
+    {
+      "subtopic": "Three Dimensional Geometry (Lines, Skew Lines, Planes)",
+      "slug": "3d-geometry-lines-planes",
+      "tags": [
+        "3d geometry",
+        "direction cosines",
+        "shortest distance",
+        "skew lines",
+        "equation of plane",
+        "angle between planes"
+      ],
+      "keywords": [
+        "three dimensional",
+        "direction cosines",
+        "direction ratios",
+        "skew lines",
+        "shortest distance between",
+        "equation of plane",
+        "plane passing through",
+        "angle between two lines"
+      ]
+    },
+    {
+      "subtopic": "Trigonometric Ratios, Identities & Equations",
+      "slug": "trigonometric-identities-equations",
+      "tags": [
+        "trigonometry",
+        "trigonometric identities",
+        "general solution",
+        "multiple angles",
+        "periodicity"
+      ],
+      "keywords": [
+        "trigonometric",
+        "general solution",
+        "trigonometric equation",
+        "sin",
+        "cos",
+        "tan",
+        "multiple angles"
+      ]
+    },
+    {
+      "subtopic": "Inverse Trigonometric Functions",
+      "slug": "inverse-trigonometric-functions",
+      "tags": [
+        "inverse trigonometric",
+        "itf",
+        "principal value branch",
+        "domain and range of itf",
+        "sum of inverse trig"
+      ],
+      "keywords": [
+        "inverse trigonometric",
+        "principal value",
+        "domain and range of inverse",
+        "sin^-1",
+        "cos^-1",
+        "tan^-1"
+      ]
+    },
+    {
+      "subtopic": "Properties and Solution of Triangles",
+      "slug": "solution-of-triangles",
+      "tags": [
+        "solution of triangles",
+        "sine rule",
+        "cosine rule",
+        "inradius",
+        "circumradius",
+        "exradius"
+      ],
+      "keywords": [
+        "solution of triangle",
+        "sine rule",
+        "cosine rule",
+        "incircle",
+        "circumcircle",
+        "inradius",
+        "circumradius"
+      ]
+    },
+    {
+      "subtopic": "Statistics (Mean, Variance & Standard Deviation)",
+      "slug": "statistics-mean-variance",
+      "tags": [
+        "statistics",
+        "mean",
+        "median",
+        "mode",
+        "variance",
+        "standard deviation",
+        "mean deviation"
+      ],
+      "keywords": [
+        "statistics",
+        "variance of observations",
+        "standard deviation",
+        "mean deviation",
+        "median and mode"
+      ]
+    },
+    {
+      "subtopic": "Probability (Bayes' Theorem, Conditional, Distributions)",
+      "slug": "probability-bayes-theorem",
+      "tags": [
+        "probability",
+        "conditional probability",
+        "bayes theorem",
+        "independent events",
+        "binomial distribution",
+        "random variable"
+      ],
+      "keywords": [
+        "probability",
+        "conditional probability",
+        "bayes' theorem",
+        "independent events",
+        "random variable",
+        "probability distribution",
+        "binomial distribution"
+      ]
+    },
+    {
+      "subtopic": "Linear Programming (LPP)",
+      "slug": "linear-programming-lpp",
+      "tags": [
+        "linear programming",
+        "lpp",
+        "feasible region",
+        "objective function",
+        "corner points"
+      ],
+      "keywords": [
+        "linear programming",
+        "lpp",
+        "feasible region",
+        "objective function",
+        "constraints",
+        "corner points"
+      ]
+    }
+  ],
+  "biology": [
+    {
+      "subtopic": "Living World & Biological Classification",
+      "slug": "living-world-classification",
+      "tags": [
+        "biological classification",
+        "five kingdoms",
+        "monera",
+        "protista",
+        "fungi",
+        "viruses",
+        "binomial nomenclature"
+      ],
+      "keywords": [
+        "biological classification",
+        "monera",
+        "protista",
+        "fungi",
+        "virus",
+        "viroid",
+        "binomial nomenclature",
+        "taxonomic hierarchy"
+      ]
+    },
+    {
+      "subtopic": "Plant Kingdom (Algae, Bryophytes, Pteridophytes, Gymnosperms)",
+      "slug": "plant-kingdom-divisions",
+      "tags": [
+        "plant kingdom",
+        "algae",
+        "bryophytes",
+        "pteridophytes",
+        "gymnosperms",
+        "alternation of generations"
+      ],
+      "keywords": [
+        "plant kingdom",
+        "algae",
+        "bryophyte",
+        "pteridophyte",
+        "gymnosperm",
+        "chlorophyceae",
+        "phaeophyceae",
+        "rhodophyceae",
+        "alternation of generations"
+      ]
+    },
+    {
+      "subtopic": "Animal Kingdom (Phyla Characteristics & Classification)",
+      "slug": "animal-kingdom-phyla",
+      "tags": [
+        "animal kingdom",
+        "invertebrates",
+        "chordates",
+        "coelom",
+        "porifera",
+        "arthropoda",
+        "mollusca"
+      ],
+      "keywords": [
+        "animal kingdom",
+        "porifera",
+        "coelenterata",
+        "arthropoda",
+        "mollusca",
+        "echinodermata",
+        "chordata",
+        "coelom",
+        "notochord"
+      ]
+    },
+    {
+      "subtopic": "Morphology of Flowering Plants & Plant Families",
+      "slug": "morphology-plant-families",
+      "tags": [
+        "morphology of flowering plants",
+        "placentation",
+        "floral formula",
+        "solanaceae",
+        "fabaceae",
+        "brassicaceae"
+      ],
+      "keywords": [
+        "morphology of flowering",
+        "placentation",
+        "inflorescence",
+        "floral formula",
+        "solanaceae",
+        "fabaceae",
+        "malvaceae",
+        "brassicaceae",
+        "cruciferae",
+        "asteraceae"
+      ]
+    },
+    {
+      "subtopic": "Anatomy of Flowering Plants (Tissues, Secondary Growth)",
+      "slug": "anatomy-flowering-plants",
+      "tags": [
+        "plant anatomy",
+        "meristematic tissues",
+        "vascular bundles",
+        "xylem phloem",
+        "cambium",
+        "secondary growth"
+      ],
+      "keywords": [
+        "anatomy of flowering",
+        "xylem",
+        "phloem",
+        "vascular bundle",
+        "meristematic",
+        "cambium",
+        "secondary growth",
+        "collenchyma"
+      ]
+    },
+    {
+      "subtopic": "Structural Organisation in Animals (Tissues, Cockroach, Frog)",
+      "slug": "animal-tissues-cockroach-frog",
+      "tags": [
+        "animal tissues",
+        "epithelial tissue",
+        "cockroach anatomy",
+        "frog anatomy",
+        "periplaneta",
+        "rana tigrina"
+      ],
+      "keywords": [
+        "epithelial tissue",
+        "connective tissue",
+        "cockroach",
+        "frog",
+        "rana tigrina",
+        "periplaneta americana",
+        "spiracle",
+        "malpighian tubules"
+      ]
+    },
+    {
+      "subtopic": "Cell Biology (Organelles & Endomembrane System)",
+      "slug": "cell-structure-organelles",
+      "tags": [
+        "cell biology",
+        "organelles",
+        "mitochondria",
+        "chloroplast",
+        "endoplasmic reticulum",
+        "ribosomes",
+        "nucleus"
+      ],
+      "keywords": [
+        "cell: the unit of life",
+        "mitochondria",
+        "chloroplast",
+        "endoplasmic reticulum",
+        "golgi apparatus",
+        "ribosome",
+        "plasma membrane",
+        "prokaryotic cell"
+      ]
+    },
+    {
+      "subtopic": "Biomolecules & Enzymes",
+      "slug": "biomolecules-enzymes-kinetics",
+      "tags": [
+        "biomolecules",
+        "enzymes",
+        "km value",
+        "competitive inhibition",
+        "proteins amino acids",
+        "nucleotides"
+      ],
+      "keywords": [
+        "enzyme",
+        "competitive inhibition",
+        "km value",
+        "biomolecule",
+        "substrate concentration",
+        "peptide bond",
+        "amino acid in protein",
+        "activation energy of enzyme"
+      ]
+    },
+    {
+      "subtopic": "Cell Cycle and Cell Division (Mitosis & Meiosis)",
+      "slug": "cell-cycle-mitosis-meiosis",
+      "tags": [
+        "cell cycle",
+        "mitosis",
+        "meiosis",
+        "prophase i",
+        "crossing over",
+        "chiasmata",
+        "synapsis"
+      ],
+      "keywords": [
+        "cell cycle",
+        "mitosis",
+        "meiosis",
+        "prophase i",
+        "metaphase",
+        "anaphase",
+        "telophase",
+        "crossing over",
+        "chiasmata",
+        "synapsis"
+      ]
+    },
+    {
+      "subtopic": "Plant Physiology (Photosynthesis & Photorespiration)",
+      "slug": "plant-photosynthesis-c3-c4",
+      "tags": [
+        "photosynthesis",
+        "light reaction",
+        "calvin cycle c3",
+        "c4 pathway",
+        "photorespiration",
+        "rubisco"
+      ],
+      "keywords": [
+        "photosynthesis",
+        "chlorophyll",
+        "light reaction",
+        "calvin cycle",
+        "c3 pathway",
+        "c4 pathway",
+        "kranz anatomy",
+        "rubisco",
+        "photophosphorylation"
+      ]
+    },
+    {
+      "subtopic": "Plant Physiology (Respiration & Glycolysis/Krebs)",
+      "slug": "plant-respiration-glycolysis-krebs",
+      "tags": [
+        "plant respiration",
+        "glycolysis",
+        "krebs cycle",
+        "etc",
+        "chemiosmosis",
+        "fermentation"
+      ],
+      "keywords": [
+        "respiration in plants",
+        "glycolysis",
+        "krebs cycle",
+        "tca cycle",
+        "electron transport chain",
+        "chemiosmotic hypothesis",
+        "atp synthesis"
+      ]
+    },
+    {
+      "subtopic": "Plant Growth Regulators & Phytohormones",
+      "slug": "plant-growth-regulators",
+      "tags": [
+        "plant growth",
+        "auxin",
+        "gibberellin",
+        "cytokinin",
+        "ethylene",
+        "abscisic acid"
+      ],
+      "keywords": [
+        "plant growth regulator",
+        "auxin",
+        "gibberellin",
+        "cytokinin",
+        "ethylene",
+        "abscisic acid",
+        "photoperiodism",
+        "phytohormone"
+      ]
+    },
+    {
+      "subtopic": "Human Physiology (Respiration & Breathing)",
+      "slug": "human-respiration-breathing",
+      "tags": [
+        "breathing and exchange of gases",
+        "respiratory volumes",
+        "vital capacity",
+        "oxygen dissociation curve"
+      ],
+      "keywords": [
+        "breathing and exchange",
+        "respiratory volume",
+        "vital capacity",
+        "tidal volume",
+        "oxygen dissociation curve",
+        "alveoli",
+        "haemoglobin binding"
+      ]
+    },
+    {
+      "subtopic": "Human Physiology (Circulation & Cardiac Cycle)",
+      "slug": "human-circulation-cardiac-cycle",
+      "tags": [
+        "body fluids and circulation",
+        "cardiac cycle",
+        "ecg",
+        "blood groups",
+        "heart structure"
+      ],
+      "keywords": [
+        "body fluids and circulation",
+        "cardiac cycle",
+        "ecg",
+        "electrocardiogram",
+        "blood group",
+        "double circulation",
+        "heart beat",
+        "blood pressure"
+      ]
+    },
+    {
+      "subtopic": "Human Physiology (Excretion & Counter-Current)",
+      "slug": "human-excretion-nephron",
+      "tags": [
+        "excretory products",
+        "nephron",
+        "counter current mechanism",
+        "urine formation",
+        "glomerular filtration"
+      ],
+      "keywords": [
+        "excretory products",
+        "nephron",
+        "counter-current mechanism",
+        "urine formation",
+        "glomerular filtration",
+        "loop of henle",
+        "micturition"
+      ]
+    },
+    {
+      "subtopic": "Human Physiology (Locomotion, Muscle & Skeletal System)",
+      "slug": "locomotion-movement-muscle",
+      "tags": [
+        "locomotion and movement",
+        "sliding filament theory",
+        "muscle contraction",
+        "joints",
+        "skeletal bones"
+      ],
+      "keywords": [
+        "locomotion and movement",
+        "muscle contraction",
+        "sliding filament theory",
+        "actin and myosin",
+        "synovial joint",
+        "skeletal system",
+        "vertebral column"
+      ]
+    },
+    {
+      "subtopic": "Human Physiology (Neural Control & Reflex)",
+      "slug": "human-neural-control",
+      "tags": [
+        "neural control",
+        "action potential",
+        "nerve impulse",
+        "synapse",
+        "brain and spinal cord"
+      ],
+      "keywords": [
+        "neural control",
+        "nerve impulse",
+        "action potential",
+        "synapse",
+        "neurotransmitter",
+        "reflex arc",
+        "brain parts",
+        "cranial nerves"
+      ]
+    },
+    {
+      "subtopic": "Human Physiology (Endocrine System & Hormones)",
+      "slug": "human-endocrine-hormones",
+      "tags": [
+        "chemical coordination",
+        "endocrine glands",
+        "pituitary",
+        "thyroid",
+        "adrenal",
+        "insulin glucagon"
+      ],
+      "keywords": [
+        "chemical coordination",
+        "endocrine gland",
+        "pituitary gland",
+        "thyroid gland",
+        "adrenal gland",
+        "insulin",
+        "glucagon",
+        "mechanism of hormone action"
+      ]
+    },
+    {
+      "subtopic": "Reproduction in Flowering Plants",
+      "slug": "flowering-plants-reproduction",
+      "tags": [
+        "sexual reproduction in flowering plants",
+        "pollination",
+        "double fertilization",
+        "embryo sac",
+        "apomixis"
+      ],
+      "keywords": [
+        "sexual reproduction in flowering",
+        "pollination",
+        "double fertilization",
+        "embryo sac",
+        "pollen grain",
+        "microsporogenesis",
+        "apomixis"
+      ]
+    },
+    {
+      "subtopic": "Human Reproduction & Embryonic Development",
+      "slug": "human-reproduction-embryo",
+      "tags": [
+        "human reproduction",
+        "spermatogenesis",
+        "oogenesis",
+        "menstrual cycle",
+        "fertilization",
+        "implantation"
+      ],
+      "keywords": [
+        "human reproduction",
+        "spermatogenesis",
+        "oogenesis",
+        "menstrual cycle",
+        "fertilization",
+        "placenta",
+        "cleavage",
+        "blastocyst"
+      ]
+    },
+    {
+      "subtopic": "Reproductive Health & Contraception",
+      "slug": "reproductive-health-art",
+      "tags": [
+        "reproductive health",
+        "contraception",
+        "ivf",
+        "zift gift",
+        "assisted reproductive technologies"
+      ],
+      "keywords": [
+        "reproductive health",
+        "contraception",
+        "ivf",
+        "zift",
+        "gift",
+        "amniocentesis",
+        "infertility treatment"
+      ]
+    },
+    {
+      "subtopic": "Genetics: Principles of Inheritance & Mendelian Genetics",
+      "slug": "mendelian-genetics-linkage",
+      "tags": [
+        "principles of inheritance",
+        "mendel",
+        "monohybrid dihybrid",
+        "linkage recombination",
+        "pedigree analysis",
+        "genetic disorders"
+      ],
+      "keywords": [
+        "principles of inheritance",
+        "mendel",
+        "dihybrid cross",
+        "monohybrid cross",
+        "linkage and recombination",
+        "pedigree analysis",
+        "hemophilia",
+        "down syndrome"
+      ]
+    },
+    {
+      "subtopic": "Genetics: Molecular Basis of Inheritance (DNA, Replication, Transcription)",
+      "slug": "molecular-basis-inheritance",
+      "tags": [
+        "molecular basis of inheritance",
+        "dna replication",
+        "transcription",
+        "genetic code",
+        "translation",
+        "lac operon"
+      ],
+      "keywords": [
+        "molecular basis of inheritance",
+        "dna replication",
+        "transcription",
+        "translation",
+        "genetic code",
+        "lac operon",
+        "dna fingerprinting",
+        "rna polymerase"
+      ]
+    },
+    {
+      "subtopic": "Evolution & Population Genetics",
+      "slug": "evolution-hardy-weinberg",
+      "tags": [
+        "evolution",
+        "darwin",
+        "natural selection",
+        "hardy weinberg",
+        "homologous organs",
+        "human evolution"
+      ],
+      "keywords": [
+        "evolution",
+        "hardy-weinberg",
+        "natural selection",
+        "homologous organs",
+        "analogous organs",
+        "adaptive radiation",
+        "human evolution",
+        "miller-urey"
+      ]
+    },
+    {
+      "subtopic": "Human Health, Diseases & Immune System",
+      "slug": "human-health-diseases-immunity",
+      "tags": [
+        "human health and disease",
+        "malaria",
+        "antibodies",
+        "acquired immunity",
+        "aids hiv",
+        "cancer"
+      ],
+      "keywords": [
+        "human health and disease",
+        "malaria parasite",
+        "plasmodium",
+        "innate immunity",
+        "acquired immunity",
+        "antibody structure",
+        "aids",
+        "hiv",
+        "cancer cells"
+      ]
+    },
+    {
+      "subtopic": "Microbes in Human Welfare",
+      "slug": "microbes-human-welfare",
+      "tags": [
+        "microbes in human welfare",
+        "biogas",
+        "sewage treatment",
+        "fermentation",
+        "biofertilizers"
+      ],
+      "keywords": [
+        "microbes in human welfare",
+        "sewage treatment plant",
+        "biogas production",
+        "biofertilizer",
+        "lactobacillus",
+        "antibiotics production",
+        "mycorrhiza"
+      ]
+    },
+    {
+      "subtopic": "Biotechnology: Principles & Recombinant DNA",
+      "slug": "biotechnology-principles-rdna",
+      "tags": [
+        "biotechnology principles",
+        "restriction enzymes",
+        "cloning vectors",
+        "pbr322",
+        "pcr",
+        "gel electrophoresis"
+      ],
+      "keywords": [
+        "biotechnology: principles",
+        "restriction enzyme",
+        "cloning vector",
+        "pbr322",
+        "pcr technique",
+        "gel electrophoresis",
+        "recombinant dna",
+        "dna ligase"
+      ]
+    },
+    {
+      "subtopic": "Biotechnology Applications (Medicine & Agriculture)",
+      "slug": "biotechnology-applications",
+      "tags": [
+        "biotechnology applications",
+        "bt cotton",
+        "rnai",
+        "genetically engineered insulin",
+        "gene therapy"
+      ],
+      "keywords": [
+        "biotechnology and its applications",
+        "bt cotton",
+        "rnai",
+        "rna interference",
+        "genetically engineered insulin",
+        "gene therapy",
+        "transgenic animals"
+      ]
+    },
+    {
+      "subtopic": "Ecology: Organisms, Populations & Interactions",
+      "slug": "ecology-organisms-populations",
+      "tags": [
+        "organisms and populations",
+        "population growth",
+        "logistic growth",
+        "mutualism",
+        "predation",
+        "adaptation"
+      ],
+      "keywords": [
+        "organisms and populations",
+        "population growth curve",
+        "logistic growth",
+        "mutualism",
+        "commensalism",
+        "predation",
+        "parasitism",
+        "adaptation of organisms"
+      ]
+    },
+    {
+      "subtopic": "Ecosystem Dynamics (Energy Flow & Productivity)",
+      "slug": "ecosystem-energy-flow",
+      "tags": [
+        "ecosystem",
+        "food chain",
+        "trophic levels",
+        "ecological pyramids",
+        "energy flow",
+        "productivity"
+      ],
+      "keywords": [
+        "ecosystem",
+        "food chain",
+        "trophic level",
+        "ecological pyramid",
+        "primary productivity",
+        "nutrient cycling in ecosystem"
+      ]
+    },
+    {
+      "subtopic": "Biodiversity, Conservation & Environment",
+      "slug": "biodiversity-conservation",
+      "tags": [
+        "biodiversity and conservation",
+        "species area relationship",
+        "hotspots",
+        "in situ ex situ",
+        "extinction"
+      ],
+      "keywords": [
+        "biodiversity",
+        "species-area relationship",
+        "biodiversity hotspot",
+        "in-situ conservation",
+        "ex-situ conservation",
+        "red data book",
+        "biosphere reserve"
+      ]
+    }
+  ],
+  "english": [
+    {
+      "subtopic": "English Grammar (Agreement, Tenses & Prepositions)",
+      "slug": "english-grammar-syntax",
+      "tags": [
+        "english proficiency",
+        "subject verb agreement",
+        "tenses",
+        "prepositions",
+        "voice",
+        "reported speech"
+      ],
+      "keywords": [
+        "grammar",
+        "preposition",
+        "subject-verb",
+        "passive voice",
+        "reported speech",
+        "tense",
+        "concord",
+        "correct sentence",
+        "error spotting"
+      ]
+    },
+    {
+      "subtopic": "English Vocabulary (Synonyms, Antonyms, Analogies & Idioms)",
+      "slug": "english-vocabulary-analogies",
+      "tags": [
+        "vocabulary",
+        "synonyms",
+        "antonyms",
+        "analogies",
+        "one word substitution",
+        "idioms"
+      ],
+      "keywords": [
+        "synonym",
+        "antonym",
+        "analogy",
+        "one word substitution",
+        "idiom",
+        "phrasal verb",
+        "closest in meaning",
+        "opposite in meaning"
+      ]
+    },
+    {
+      "subtopic": "Reading Comprehension & Composition",
+      "slug": "reading-comprehension-composition",
+      "tags": [
+        "reading comprehension",
+        "para jumbles",
+        "sentence completion",
+        "passage inference"
+      ],
+      "keywords": [
+        "reading comprehension",
+        "passage",
+        "para jumble",
+        "sentence rearrangement",
+        "paragraph",
+        "author's tone",
+        "sentence completion"
+      ]
+    }
+  ],
+  "reasoning": [
+    {
+      "subtopic": "Verbal Reasoning (Series, Syllogisms & Logic)",
+      "slug": "verbal-reasoning-series",
+      "tags": [
+        "verbal reasoning",
+        "series completion",
+        "syllogisms",
+        "blood relations",
+        "direction sense",
+        "coding decoding"
+      ],
+      "keywords": [
+        "series completion",
+        "syllogism",
+        "blood relation",
+        "direction sense",
+        "coding decoding",
+        "statement and assumption",
+        "analogous pair",
+        "logical deduction"
+      ]
+    },
+    {
+      "subtopic": "Non-Verbal Reasoning (Patterns, Cubes & Paper Folding)",
+      "slug": "non-verbal-reasoning-patterns",
+      "tags": [
+        "non verbal reasoning",
+        "pattern perception",
+        "figure series",
+        "cube and dice",
+        "paper folding",
+        "embedded figures"
+      ],
+      "keywords": [
+        "figure series",
+        "pattern perception",
+        "cube and dice",
+        "paper folding",
+        "mirror image",
+        "water image",
+        "embedded figure",
+        "rule detection"
+      ]
+    }
+  ]
 }

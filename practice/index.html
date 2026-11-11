@@ -2122,14 +2122,17 @@ function setStreamSection(sec, btn) {
       if (currentTopic !== 'all') {
         const topics = getActiveChapterTopics();
         const activeT = topics.find(t => t.slug === currentTopic);
-        if (activeT && Array.isArray(activeT.keywords)) {
-          const kws = activeT.keywords.map(k => k.toLowerCase());
-          list = list.filter(q => {
+        list = list.filter(q => {
+          if (q.subtopic_slug && q.subtopic_slug === currentTopic) return true;
+          if (activeT && q.subtopic && q.subtopic === activeT.title) return true;
+          if (activeT && Array.isArray(activeT.keywords)) {
+            const kws = activeT.keywords.map(k => k.toLowerCase());
             const txt = (q.text || '').toLowerCase();
             const sig = (q.signature || '').toLowerCase();
             return kws.some(k => txt.includes(k) || sig.includes(k));
-          });
-        }
+          }
+          return false;
+        });
       }
 
       filteredQuestions = list;
@@ -2238,6 +2241,7 @@ function setStreamSection(sec, btn) {
               <div class="q-badges-left">
                 <span class="q-source-pill">#${globalNum} · ${year}</span>
                 <span class="q-marks-pill">${marksDisplay}</span>
+                ${q.subtopic ? `<span class="q-source-pill q-subtopic-tag" style="font-weight:700; color:var(--accent); background:rgba(37,99,235,0.08); border-color:rgba(37,99,235,0.25);">🏷️ ${escapeHtml(q.subtopic)}</span>` : ''}
                 ${shiftBadge}
                 ${section ? `<span class="q-source-pill">${section}</span>` : ''}
                 ${tierBadge}
