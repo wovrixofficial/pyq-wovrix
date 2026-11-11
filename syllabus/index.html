@@ -453,6 +453,13 @@
           <span class="drawer-nav-desc">Chapterwise questions & sub-topic filters</span>
         </div>
       </a>
+            <a href="/derivations/" class="drawer-nav-item" onclick="toggleMobileDrawer(false)">
+        <span class="drawer-nav-icon">📐</span>
+        <div>
+          <div>Derivations & Formulas</div>
+          <span class="drawer-nav-desc">CBSE 12 step marking & formula sheets</span>
+        </div>
+      </a>
       <a href="/repeated/" class="drawer-nav-item" onclick="toggleMobileDrawer(false)">
         <span class="drawer-nav-icon">🔥</span>
         <div>
@@ -522,6 +529,21 @@
       <div id="subjectPillsBar" class="syllabus-subject-pills">
         <!-- Rendered dynamically -->
       </div>
+    </div>
+
+    <!-- Derivations & Formulas Vault Banner for CBSE 12 -->
+    <div id="cbseDerivVaultBanner" style="max-width:900px; margin: 0 auto 24px; background:rgba(37,99,235,0.08); border:1px solid rgba(37,99,235,0.25); border-radius:var(--radius-md); padding:14px 20px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px;">
+      <div>
+        <div style="font-weight:800; font-size:14.5px; color:var(--text); display:flex; align-items:center; gap:6px;">
+          <span>📐</span> <span>Official CBSE 12 Step Derivations & Formula Sheets</span>
+        </div>
+        <div style="font-size:12.5px; color:var(--text-muted); margin-top:2px;">
+          Verified step-marking rubrics ([1M], [1.5M]), labeled SVG diagrams, and complete chapter formula grids.
+        </div>
+      </div>
+      <a href="/derivations/" style="display:inline-flex; align-items:center; gap:6px; background:var(--primary); color:#ffffff; padding:7px 16px; border-radius:9999px; font-size:12.5px; font-weight:700; text-decoration:none;">
+        <span>Open Vault</span> <span>➔</span>
+      </a>
     </div>
 
     <!-- Active Blueprint Container -->
@@ -694,6 +716,9 @@
     function renderSyllabusView() {
       const container = document.getElementById('blueprintContainer');
       if (!container) return;
+
+      const derivBanner = document.getElementById('cbseDerivVaultBanner');
+      if (derivBanner) derivBanner.style.display = currentTrack === 'cbse12' ? 'flex' : 'none';
 
       if (currentTrack === 'cbse12') {
         renderCbse12View(container);

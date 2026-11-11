@@ -1,0 +1,298 @@
+import json
+
+def build_formulas():
+    formulas = {
+        "Physics": [
+            {
+                "chapter_num": 1,
+                "chapter": "Electric Charges and Fields",
+                "items": [
+                    { "name": "Coulomb's Law (Vacuum)", "formula": "F = \\frac{1}{4\\pi\\varepsilon_0}\\frac{|q_1 q_2|}{r^2}", "units": "N", "notes": "k = 1/(4πε0) = 8.988 * 10^9 N m^2 C^-2" },
+                    { "name": "Electric Dipole Moment", "formula": "\\vec{p} = q(2\\vec{a})", "units": "C m", "notes": "Directed from negative to positive charge" },
+                    { "name": "Dipole Field on Axial Line", "formula": "E_{\\text{axial}} = \\frac{1}{4\\pi\\varepsilon_0}\\frac{2pr}{(r^2 - a^2)^2} \\approx \\frac{2kp}{r^3}", "units": "N/C", "notes": "For r >> a; along dipole axis" },
+                    { "name": "Dipole Field on Equatorial Line", "formula": "E_{\\text{equat}} = \\frac{1}{4\\pi\\varepsilon_0}\\frac{p}{(r^2 + a^2)^{3/2}} \\approx \\frac{kp}{r^3}", "units": "N/C", "notes": "E_axial = 2 * E_equatorial for short dipole" },
+                    { "name": "Torque on Dipole in Uniform Field", "formula": "\\vec{\\tau} = \\vec{p} \\times \\vec{E} = pE\\sin\\theta", "units": "N m", "notes": "Max torque at θ = 90°; stable equilibrium at θ = 0°" },
+                    { "name": "Gauss's Law", "formula": "\\Phi = \\oint \\vec{E} \\cdot d\\vec{A} = \\frac{q_{\\text{enc}}}{\\varepsilon_0}", "units": "N m^2/C", "notes": "Independent of shape and size of Gaussian surface" },
+                    { "name": "Field of Infinitely Long Wire", "formula": "E = \\frac{\\lambda}{2\\pi\\varepsilon_0 r} = \\frac{2k\\lambda}{r}", "units": "N/C", "notes": "λ = linear charge density (C/m)" },
+                    { "name": "Field of Infinite Plane Sheet", "formula": "E = \\frac{\\sigma}{2\\varepsilon_0}", "units": "N/C", "notes": "Uniform field, independent of distance r" }
+                ]
+            },
+            {
+                "chapter_num": 2,
+                "chapter": "Electrostatic Potential and Capacitance",
+                "items": [
+                    { "name": "Potential due to Point Charge", "formula": "V = \\frac{1}{4\\pi\\varepsilon_0}\\frac{q}{r}", "units": "V (J/C)", "notes": "Scalar quantity, algebraic addition" },
+                    { "name": "Potential Energy of Dipole in Field", "formula": "U = -\\vec{p} \\cdot \\vec{E} = -pE\\cos\\theta", "units": "J", "notes": "Work done in rotating from θ1 to θ2: W = pE(cosθ1 - cosθ2)" },
+                    { "name": "Parallel Plate Capacitance", "formula": "C_0 = \\frac{\\varepsilon_0 A}{d}", "units": "F", "notes": "Vacuum or air between plates" },
+                    { "name": "Capacitor with Dielectric Slab (t < d)", "formula": "C = \\frac{\\varepsilon_0 A}{d - t(1 - 1/K)}", "units": "F", "notes": "If t = d, C = K * C0" },
+                    { "name": "Electrostatic Energy Stored", "formula": "U = \\frac{1}{2}CV^2 = \\frac{Q^2}{2C} = \\frac{1}{2}QV", "units": "J", "notes": "Energy density u = (1/2)ε0 E^2" }
+                ]
+            },
+            {
+                "chapter_num": 3,
+                "chapter": "Current Electricity",
+                "items": [
+                    { "name": "Current vs Drift Velocity", "formula": "I = n e A v_d", "units": "A", "notes": "vd = (eEτ)/m = (eVτ)/(mL)" },
+                    { "name": "Resistivity in terms of Relaxation Time", "formula": "\\rho = \\frac{m}{n e^2 \\tau}", "units": "\\Omega \\text{ m}", "notes": "Conductivity σ = 1/ρ = (n e^2 τ)/m" },
+                    { "name": "Temperature Dependence of Resistance", "formula": "R_T = R_0(1 + \\alpha(T - T_0))", "units": "\\Omega", "notes": "α is temperature coefficient of resistance" },
+                    { "name": "Cell Terminal Voltage & Internal Resistance", "formula": "V = \\mathcal{E} - Ir, \\quad r = R\\left(\\frac{\\mathcal{E}}{V} - 1\\right)", "units": "V, \\Omega", "notes": "V < E during discharging; V > E during charging" },
+                    { "name": "Wheatstone Bridge Balance", "formula": "\\frac{P}{Q} = \\frac{R}{S}", "units": "-", "notes": "Galvanometer current Ig = 0 at balance" }
+                ]
+            },
+            {
+                "chapter_num": 4,
+                "chapter": "Moving Charges and Magnetism",
+                "items": [
+                    { "name": "Lorentz Force", "formula": "\\vec{F} = q(\\vec{E} + \\vec{v} \\times \\vec{B})", "units": "N", "notes": "Magnetic force does zero work on charged particle" },
+                    { "name": "Biot-Savart Law", "formula": "d\\vec{B} = \\frac{\\mu_0}{4\\pi}\\frac{I(d\\vec{l} \\times \\hat{r})}{r^2}", "units": "T", "notes": "μ0/(4π) = 10^-7 T m A^-1" },
+                    { "name": "Field on Axis of Circular Loop", "formula": "B = \\frac{\\mu_0 I R^2}{2(R^2 + x^2)^{3/2}}", "units": "T", "notes": "At center (x = 0): B = (μ0 I)/(2R)" },
+                    { "name": "Ampere's Circuital Law", "formula": "\\oint \\vec{B} \\cdot d\\vec{l} = \\mu_0 I_{\\text{enc}}", "units": "T m", "notes": "Long straight wire: B = (μ0 I)/(2πr)" },
+                    { "name": "Force between Parallel Conductors", "formula": "\\frac{F}{L} = \\frac{\\mu_0 I_1 I_2}{2\\pi d}", "units": "N/m", "notes": "Attractive for like currents, repulsive for unlike" }
+                ]
+            },
+            {
+                "chapter_num": 5,
+                "chapter": "Magnetism and Matter",
+                "items": [
+                    { "name": "Magnetic Dipole Moment", "formula": "M = I A = m(2l)", "units": "A m^2", "notes": "Direction from S-pole to N-pole" },
+                    { "name": "Gauss's Law for Magnetism", "formula": "\\oint \\vec{B} \\cdot d\\vec{A} = 0", "units": "Wb", "notes": "Confirms non-existence of isolated magnetic monopoles" },
+                    { "name": "Magnetic Susceptibility & Permeability", "formula": "\\mu_r = 1 + \\chi_m, \\quad B = \\mu_0(H + M)", "units": "-", "notes": "Diamagnetic: χ < 0; Paramagnetic: χ > 0 small; Ferromagnetic: χ >> 1" }
+                ]
+            },
+            {
+                "chapter_num": 6,
+                "chapter": "Electromagnetic Induction",
+                "items": [
+                    { "name": "Faraday's & Lenz's Law", "formula": "\\mathcal{E} = -\\frac{d\\Phi_B}{dt} = -N\\frac{d\\Phi_B}{dt}", "units": "V", "notes": "Negative sign expresses Lenz's law (energy conservation)" },
+                    { "name": "Motional EMF", "formula": "\\mathcal{E} = B v l", "units": "V", "notes": "For conductor of length l moving perpendicular to B at velocity v" },
+                    { "name": "Self & Mutual Inductance", "formula": "\\mathcal{E}_L = -L\\frac{dI}{dt}, \\quad \\mathcal{E}_M = -M\\frac{dI_1}{dt}", "units": "H (V s / A)", "notes": "Solenoid self-inductance: L = μ0 n^2 A l" }
+                ]
+            },
+            {
+                "chapter_num": 7,
+                "chapter": "Alternating Current",
+                "items": [
+                    { "name": "RMS Voltage & Current", "formula": "V_{\\text{rms}} = \\frac{V_0}{\\sqrt{2}} \\approx 0.707 V_0", "units": "V", "notes": "For sinusoidal waveforms" },
+                    { "name": "Series LCR Impedance", "formula": "Z = \\sqrt{R^2 + (\\omega L - 1/\\omega C)^2}", "units": "\\Omega", "notes": "Inductive XL = ωL, Capacitive XC = 1/(ωC)" },
+                    { "name": "Resonant Frequency", "formula": "\\omega_0 = \\frac{1}{\\sqrt{LC}}, \\quad f_0 = \\frac{1}{2\\pi\\sqrt{LC}}", "units": "rad/s, Hz", "notes": "At resonance: Z = R (minimum), I = max" },
+                    { "name": "Average AC Power", "formula": "P_{\\text{avg}} = V_{\\text{rms}} I_{\\text{rms}} \\cos\\phi", "units": "W", "notes": "Power factor cosφ = R/Z" },
+                    { "name": "Transformer Turns Ratio", "formula": "\\frac{V_s}{V_p} = \\frac{N_s}{N_p} = \\frac{I_p}{I_s} = k", "units": "-", "notes": "Step-up if k > 1; Step-down if k < 1" }
+                ]
+            },
+            {
+                "chapter_num": 8,
+                "chapter": "Electromagnetic Waves",
+                "items": [
+                    { "name": "Maxwell's Displacement Current", "formula": "I_d = \\varepsilon_0 \\frac{d\\Phi_E}{dt}", "units": "A", "notes": "Completes Ampere's circuital law" },
+                    { "name": "Speed of EM Waves in Vacuum", "formula": "c = \\frac{1}{\\sqrt{\\mu_0 \\varepsilon_0}} = \\frac{E_0}{B_0} \\approx 3 \\times 10^8 \\text{ m/s}", "units": "m/s", "notes": "In dielectric medium: v = 1/√(με)" }
+                ]
+            },
+            {
+                "chapter_num": 9,
+                "chapter": "Ray Optics and Optical Instruments",
+                "items": [
+                    { "name": "Lens Maker's Formula", "formula": "\\frac{1}{f} = (\\mu - 1)\\left(\\frac{1}{R_1} - \\frac{1}{R_2}\\right)", "units": "m^-1 (D)", "notes": "Power P = 1/f in meters" },
+                    { "name": "Prism Formula", "formula": "\\mu = \\frac{\\sin\\left(\\frac{A + D_m}{2}\\right)}{\\sin\\left(\\frac{A}{2}\\right)}", "units": "-", "notes": "Dm is angle of minimum deviation" },
+                    { "name": "Astronomical Telescope Magnification", "formula": "m = -\\frac{f_o}{f_e} \\quad (\\text{Normal adjustment, length } L = f_o + f_e)", "units": "-", "notes": "For near point (D = 25cm): m = -(fo/fe)(1 + fe/D)" },
+                    { "name": "Compound Microscope Magnification", "formula": "m = -\\frac{L}{f_o}\\left(1 + \\frac{D}{f_e}\\right)", "units": "-", "notes": "Normal adjustment: m = -(L/fo)*(D/fe)" }
+                ]
+            },
+            {
+                "chapter_num": 10,
+                "chapter": "Wave Optics",
+                "items": [
+                    { "name": "YDSE Fringe Width", "formula": "\\beta = \\frac{\\lambda D}{d}", "units": "m", "notes": "Bright and dark fringes are equally spaced" },
+                    { "name": "Central Diffraction Width", "formula": "2\\theta = \\frac{2\\lambda}{a}, \\quad \\beta_0 = \\frac{2\\lambda D}{a}", "units": "rad, m", "notes": "Central maximum is twice as wide as secondary maxima" },
+                    { "name": "Brewster's Law", "formula": "\\tan i_p = \\mu", "units": "-", "notes": "Reflected and refracted rays are mutually perpendicular at ip" }
+                ]
+            },
+            {
+                "chapter_num": 11,
+                "chapter": "Dual Nature of Radiation and Matter",
+                "items": [
+                    { "name": "Einstein's Photoelectric Equation", "formula": "K_{\\text{max}} = h\\nu - \\Phi_0 = eV_0 = h(\\nu - \\nu_0)", "units": "J / eV", "notes": "V0 is cut-off/stopping potential" },
+                    { "name": "de Broglie Wavelength", "formula": "\\lambda = \\frac{h}{p} = \\frac{h}{mv} = \\frac{h}{\\sqrt{2mK}} = \\frac{h}{\\sqrt{2mqV}}", "units": "m", "notes": "For electron: λ = 1.227 / √V nm" }
+                ]
+            },
+            {
+                "chapter_num": 12,
+                "chapter": "Atoms",
+                "items": [
+                    { "name": "Bohr's Quantization Postulate", "formula": "L = m v r = \\frac{n h}{2\\pi} \\quad (n = 1, 2, 3...)", "units": "J s", "notes": "Electron orbits without radiating energy" },
+                    { "name": "Bohr Radius & Orbit Energy", "formula": "r_n = \\frac{n^2 h^2 \\varepsilon_0}{\\pi m Z e^2} \\approx 0.529 \\frac{n^2}{Z} \\text{ Å}, \\quad E_n = -\\frac{13.6 Z^2}{n^2} \\text{ eV}", "units": "Å, eV", "notes": "Total energy is negative, indicating bound state" },
+                    { "name": "Rydberg Formula for Hydrogen Spectra", "formula": "\\frac{1}{\\lambda} = R Z^2\\left(\\frac{1}{n_1^2} - \\frac{1}{n_2^2}\\right)", "units": "m^-1", "notes": "Rydberg constant R = 1.097 * 10^7 m^-1" }
+                ]
+            },
+            {
+                "chapter_num": 13,
+                "chapter": "Nuclei",
+                "items": [
+                    { "name": "Nuclear Radius", "formula": "R = R_0 A^{1/3} \\quad (R_0 \\approx 1.2 \\times 10^{-15} \\text{ m})", "units": "m (fm)", "notes": "Nuclear density is independent of mass number A" },
+                    { "name": "Mass Defect & Binding Energy", "formula": "\\Delta m = [Z m_p + (A - Z)m_n] - M_{\\text{nuc}}, \\quad E_b = \\Delta m \\cdot c^2 = \\Delta m(\\text{u}) \\times 931.5 \\text{ MeV}", "units": "u, MeV", "notes": "Binding energy per nucleon peaks around Fe-56 (~8.75 MeV)" }
+                ]
+            },
+            {
+                "chapter_num": 14,
+                "chapter": "Semiconductor Electronics",
+                "items": [
+                    { "name": "Mass Action Law in Semiconductors", "formula": "n_e \\cdot n_h = n_i^2", "units": "m^-6", "notes": "At thermal equilibrium; intrinsic carrier density ni" },
+                    { "name": "Conductivity of Semiconductor", "formula": "\\sigma = e(n_e \\mu_e + n_h \\mu_h)", "units": "\\Omega^{-1}\\text{m}^{-1}", "notes": "Total current I = Ie + Ih" }
+                ]
+            }
+        ],
+        "Chemistry": [
+            {
+                "chapter_num": 1,
+                "chapter": "Solutions",
+                "items": [
+                    { "name": "Henry's Law", "formula": "p = K_H \\cdot x", "units": "bar", "notes": "Solubility of gas in liquid is proportional to partial pressure" },
+                    { "name": "Relative Lowering of Vapour Pressure", "formula": "\\frac{P_1^\\circ - P_1}{P_1^\\circ} = x_2 = \\frac{w_2 M_1}{M_2 w_1}", "units": "-", "notes": "x2 is mole fraction of non-volatile solute" },
+                    { "name": "Elevation in Boiling Point", "formula": "\\Delta T_b = i \\cdot K_b \\cdot m = i \\frac{1000 K_b w_2}{M_2 w_1}", "units": "K", "notes": "Kb is ebullioscopic constant (K kg mol^-1)" },
+                    { "name": "Depression in Freezing Point", "formula": "\\Delta T_f = i \\cdot K_f \\cdot m = i \\frac{1000 K_f w_2}{M_2 w_1}", "units": "K", "notes": "Kf is cryoscopic constant" },
+                    { "name": "Osmotic Pressure", "formula": "\\Pi = i C R T = i \\frac{n_2}{V} R T", "units": "atm / bar", "notes": "Best colligative property for determining biomolecule molecular mass" },
+                    { "name": "Van 't Hoff Factor & Dissociation Degree", "formula": "i = 1 + (n - 1)\\alpha \\implies \\alpha = \\frac{i - 1}{n - 1}", "units": "-", "notes": "n is number of ions formed per formula unit" }
+                ]
+            },
+            {
+                "chapter_num": 2,
+                "chapter": "Electrochemistry",
+                "items": [
+                    { "name": "Nernst Equation at 298 K", "formula": "E_{\\text{cell}} = E^\\circ_{\\text{cell}} - \\frac{0.0591}{n}\\log_{10} Q", "units": "V", "notes": "n is electrons exchanged in balanced redox reaction" },
+                    { "name": "Gibbs Energy & Cell Potential", "formula": "\\Delta G^\\circ = -n F E^\\circ_{\\text{cell}} = -2.303 R T \\log_{10} K_c", "units": "J/mol", "notes": "F = 96487 C/mol; spontaneous when E° > 0" },
+                    { "name": "Kohlrausch's Law", "formula": "\\Lambda_m^\\circ = \\nu_+ \\lambda_+^\\circ + \\nu_- \\lambda_-^\\circ, \\quad \\alpha = \\frac{\\Lambda_m}{\\Lambda_m^\\circ}", "units": "S cm^2/mol", "notes": "Dissociation constant Ka = (c α^2)/(1 - α)" },
+                    { "name": "Molar Conductivity", "formula": "\\Lambda_m = \\frac{1000 \\cdot \\kappa}{M}", "units": "S cm^2 mol^-1", "notes": "κ = conductivity (S cm^-1), M = molarity" }
+                ]
+            },
+            {
+                "chapter_num": 3,
+                "chapter": "Chemical Kinetics",
+                "items": [
+                    { "name": "First-Order Rate Equation", "formula": "k = \\frac{2.303}{t}\\log_{10}\\left(\\frac{[R]_0}{[R]}\\right)", "units": "s^-1", "notes": "Concentration drops exponentially: [R] = [R]0 e^-kt" },
+                    { "name": "First-Order Half-Life", "formula": "t_{1/2} = \\frac{\\ln 2}{k} = \\frac{0.693}{k}", "units": "s", "notes": "Independent of initial reactant concentration" },
+                    { "name": "Zero-Order Integrated Rate Law", "formula": "k = \\frac{[R]_0 - [R]}{t}, \\quad t_{1/2} = \\frac{[R]_0}{2k}", "units": "mol L^-1 s^-1", "notes": "Rate is independent of reactant concentration" },
+                    { "name": "Arrhenius Equation", "formula": "\\log_{10}\\left(\\frac{k_2}{k_1}\\right) = \\frac{E_a}{2.303 R}\\left(\\frac{1}{T_1} - \\frac{1}{T_2}\\right)", "units": "-", "notes": "Ea = activation energy (J/mol), R = 8.314 J K^-1 mol^-1" }
+                ]
+            },
+            {
+                "chapter_num": 4,
+                "chapter": "d- and f-Block Elements",
+                "items": [
+                    { "name": "Spin-Only Magnetic Moment", "formula": "\\mu_s = \\sqrt{n(n + 2)} \\text{ B.M.}", "units": "BM", "notes": "n is number of unpaired d-electrons; 1 BM = 9.27 * 10^-24 J/T" }
+                ]
+            },
+            {
+                "chapter_num": 5,
+                "chapter": "Coordination Compounds",
+                "items": [
+                    { "name": "Crystal Field Stabilization Energy (Octahedral)", "formula": "\\text{CFSE} = (-0.4 n_{t_{2g}} + 0.6 n_{e_g})\\Delta_o + mP", "units": "kJ/mol", "notes": "Δo > P implies low-spin (strong field); Δo < P implies high-spin" }
+                ]
+            }
+        ],
+        "Mathematics": [
+            {
+                "chapter_num": 1,
+                "chapter": "Relations and Functions",
+                "items": [
+                    { "name": "Equivalence Relation Condition", "formula": "(a, a) \\in R \\;(\\text{Refl}), \\; (a,b)\\in R \\Rightarrow (b,a)\\in R \\;(\\text{Symm}), \\; (a,b),(b,c)\\in R \\Rightarrow (a,c)\\in R \\;(\\text{Trans})", "units": "-", "notes": "Must satisfy all three conditions simultaneously" }
+                ]
+            },
+            {
+                "chapter_num": 2,
+                "chapter": "Inverse Trigonometric Functions",
+                "items": [
+                    { "name": "Principal Value Branches", "formula": "\\sin^{-1} x \\in [-\\pi/2, \\pi/2], \\quad \\cos^{-1} x \\in [0, \\pi], \\quad \\tan^{-1} x \\in (-\\pi/2, \\pi/2)", "units": "rad", "notes": "Always select values inside the designated principal domain" },
+                    { "name": "Complementary Angles Theorem", "formula": "\\sin^{-1} x + \\cos^{-1} x = \\frac{\\pi}{2}, \\quad \\tan^{-1} x + \\cot^{-1} x = \\frac{\\pi}{2}", "units": "rad", "notes": "Valid for x in respective domains" }
+                ]
+            },
+            {
+                "chapter_num": 3,
+                "chapter": "Matrices",
+                "items": [
+                    { "name": "Matrix Multiplication & Transpose Invariance", "formula": "(AB)^T = B^T A^T, \\quad (AB)^{-1} = B^{-1} A^{-1}", "units": "-", "notes": "Order reverses in transpose and inverse multiplication" }
+                ]
+            },
+            {
+                "chapter_num": 4,
+                "chapter": "Determinants",
+                "items": [
+                    { "name": "Matrix Inverse Theorem", "formula": "A^{-1} = \\frac{1}{|A|}\\text{adj}(A) \\quad (|A| \\neq 0)", "units": "-", "notes": "A * adj(A) = adj(A) * A = |A| * I_n" },
+                    { "name": "Adjoint Determinant Properties", "formula": "|\\text{adj}(A)| = |A|^{n-1}, \\quad |\\text{adj}(\\text{adj}A)| = |A|^{(n-1)^2}", "units": "-", "notes": "For an n x n square matrix" }
+                ]
+            },
+            {
+                "chapter_num": 5,
+                "chapter": "Continuity and Differentiability",
+                "items": [
+                    { "name": "Chain Rule & Logarithmic Differentiation", "formula": "\\frac{dy}{dx} = \\frac{dy}{du} \\cdot \\frac{du}{dx}, \\quad \\frac{d}{dx}[u(x)^{v(x)}] = u^v\\left(v'\\ln u + \\frac{v u'}{u}\\right)", "units": "-", "notes": "Essential for functions of form y = f(x)^g(x)" }
+                ]
+            },
+            {
+                "chapter_num": 6,
+                "chapter": "Applications of Derivatives",
+                "items": [
+                    { "name": "First & Second Derivative Test for Extrema", "formula": "f'(c) = 0; \\quad f''(c) < 0 \\implies \\text{Local Max}; \\quad f''(c) > 0 \\implies \\text{Local Min}", "units": "-", "notes": "If f''(c) = 0, test is inconclusive (check sign change of f')" }
+                ]
+            },
+            {
+                "chapter_num": 7,
+                "chapter": "Integrals",
+                "items": [
+                    { "name": "King's Property", "formula": "\\int_a^b f(x)dx = \\int_a^b f(a + b - x)dx", "units": "-", "notes": "Standard special case: ∫_0^a f(x)dx = ∫_0^a f(a-x)dx" },
+                    { "name": "Even/Odd Symmetry Property", "formula": "\\int_{-a}^a f(x)dx = 2\\int_0^a f(x)dx \\; (\\text{even}), \\quad 0 \\; (\\text{odd})", "units": "-", "notes": "f(-x) = f(x) for even; f(-x) = -f(x) for odd" },
+                    { "name": "Integration by Parts", "formula": "\\int u v dx = u \\int v dx - \\int \\left(u' \\int v dx\\right) dx", "units": "-", "notes": "ILATE rule: Inverse, Log, Algebraic, Trig, Exponential" }
+                ]
+            },
+            {
+                "chapter_num": 8,
+                "chapter": "Application of Integrals",
+                "items": [
+                    { "name": "Area Enclosed by Curves", "formula": "A = \\int_a^b [y_{\\text{upper}} - y_{\\text{lower}}] dx = \\int_c^d [x_{\\text{right}} - x_{\\text{left}}] dy", "units": "sq units", "notes": "Split integral at intersection points if curves cross" }
+                ]
+            },
+            {
+                "chapter_num": 9,
+                "chapter": "Differential Equations",
+                "items": [
+                    { "name": "Linear Differential Equation Solution", "formula": "\\frac{dy}{dx} + P(x)y = Q(x) \\implies y \\cdot e^{\\int P dx} = \\int Q \\cdot e^{\\int P dx} dx + C", "units": "-", "notes": "Integrating factor I.F. = e^(∫ P dx)" }
+                ]
+            },
+            {
+                "chapter_num": 10,
+                "chapter": "Vector Algebra",
+                "items": [
+                    { "name": "Scalar & Vector Cross Product", "formula": "\\vec{a} \\cdot \\vec{b} = |a||b|\\cos\\theta, \\quad \\vec{a} \\times \\vec{b} = |a||b|\\sin\\theta \\;\\hat{n}", "units": "-", "notes": "Area of parallelogram = |a x b|; Area of triangle = 1/2 |a x b|" }
+                ]
+            },
+            {
+                "chapter_num": 11,
+                "chapter": "Three-Dimensional Geometry",
+                "items": [
+                    { "name": "Shortest Distance between Skew Lines", "formula": "d = \\left|\\frac{(\\vec{b}_1 \\times \\vec{b}_2) \\cdot (\\vec{a}_2 - \\vec{a}_1)}{|\\vec{b}_1 \\times \\vec{b}_2|}\\right|", "units": "units", "notes": "Lines intersect if (b1 x b2) · (a2 - a1) = 0" },
+                    { "name": "Distance between Parallel Lines", "formula": "d = \\frac{|\\vec{b} \\times (\\vec{a}_2 - \\vec{a}_1)|}{|\\vec{b}|}", "units": "units", "notes": "When direction vectors are parallel" }
+                ]
+            },
+            {
+                "chapter_num": 12,
+                "chapter": "Linear Programming",
+                "items": [
+                    { "name": "Corner Point Theorem", "formula": "Z_{\\text{opt}} = \\text{opt}\\{ax_i + by_i \\mid (x_i, y_i) \\in \\text{Vertices of Feasible Region}\\}", "units": "-", "notes": "Optimum value of objective function occurs at a corner point" }
+                ]
+            },
+            {
+                "chapter_num": 13,
+                "chapter": "Probability",
+                "items": [
+                    { "name": "Bayes' Theorem", "formula": "P(E_i|A) = \\frac{P(E_i)P(A|E_i)}{\\sum_{j=1}^n P(E_j)P(A|E_j)}", "units": "-", "notes": "E1..En form a partition of sample space" },
+                    { "name": "Conditional Probability", "formula": "P(A|B) = \\frac{P(A \\cap B)}{P(B)} \\quad (P(B) > 0)", "units": "-", "notes": "Independent events: P(A ∩ B) = P(A) * P(B)" }
+                ]
+            }
+        ]
+    }
+
+    with open('data/formulas_cbse_12.json', 'w', encoding='utf-8') as f:
+        json.dump(formulas, f, indent=2, ensure_ascii=False)
+    print("Generated data/formulas_cbse_12.json successfully.")
+
+if __name__ == '__main__':
+    build_formulas()
+
