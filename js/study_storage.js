@@ -282,16 +282,18 @@ function getMockHistory() {
 // 8. MOBILE DRAWER CONTROLLER
 // -----------------------------------------------------------------------------
 function toggleMobileDrawer(forceOpen) {
-  const drawer = document.getElementById('mobileNavDrawer');
-  const backdrop = document.getElementById('drawerBackdrop');
+  const drawer = document.getElementById('mobileNavDrawer') || document.querySelector('.mobile-drawer');
+  const backdrop = document.getElementById('drawerBackdrop') || document.querySelector('.drawer-backdrop');
   if (!drawer) return;
 
   const isOpen = drawer.classList.contains('open');
   const shouldOpen = typeof forceOpen === 'boolean' ? forceOpen : !isOpen;
 
   drawer.classList.toggle('open', shouldOpen);
+  drawer.style.right = shouldOpen ? '0' : '-420px';
   if (backdrop) {
     backdrop.classList.toggle('active', shouldOpen);
+    backdrop.style.display = shouldOpen ? 'block' : 'none';
   }
   document.body.style.overflow = shouldOpen ? 'hidden' : '';
 }
@@ -302,6 +304,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const goal = getActiveGoal();
   updateGoalSwitcherUI(goal);
   syncBookmarkBadges();
+
+  const drawer = document.getElementById('mobileNavDrawer') || document.querySelector('.mobile-drawer');
+  if (drawer && !drawer.classList.contains('open')) {
+    drawer.style.position = 'fixed';
+    drawer.style.top = '0';
+    drawer.style.right = '-420px';
+    drawer.style.zIndex = '9999';
+  }
 
   // Close drawer on escape key
   document.addEventListener('keydown', (e) => {

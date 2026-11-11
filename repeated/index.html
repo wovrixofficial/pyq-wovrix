@@ -1199,17 +1199,6 @@
         </div>
       `;
 
-          <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-top:20px; padding-top:14px; border-top:1px solid var(--border-light);">
-            <a href="/practice/?exam=${currentExam}&subject=${currentSubject}&chapter=${encodeURIComponent(q.chapter_name || q.ncert_chapter || 'all')}" class="btn-dark-pill" style="padding:10px 20px; font-size:13.5px; text-decoration:none;">
-              🎯 Practice Similar Questions in Hub ➔
-            </a>
-            <button class="btn-outline-pill" onclick="shareQuestion('${q.id}', '${escapeHtml(title)}')" style="padding:10px 18px; font-size:13px;">
-              🔗 Share Recurrence
-            </button>
-          </div>
-        </div>
-      `;
-
       if (window.renderMathInElement) {
         renderMathInElement(container, {
           delimiters: [{left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}, {left: '\\(', right: '\\)', display: false}, {left: '\\[', right: '\\]', display: true}],
