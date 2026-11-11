@@ -5,3 +5,7 @@ graphify-out/
 .env
 .env*
 *.env
+
+# AI Training Datasets & Master SQLite DBs (Preserved locally)
+*.db
+*.jsonl
