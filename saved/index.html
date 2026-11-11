@@ -534,6 +534,9 @@
         if (btn) btn.classList.toggle('active', isMatch);
         if (pane) pane.classList.toggle('active', isMatch);
       });
+      if (tab.toLowerCase() === 'mastery') {
+        renderMasteryProgress();
+      }
     }
 
     function promptStudentName() {
@@ -682,6 +685,7 @@ function renderDashboard() {
       document.getElementById('statMasteredCount').textContent = completed.length;
       document.getElementById('statFoldersCount').textContent = folders.length;
       document.getElementById('statMocksCount').textContent = mocks.length;
+      renderMasteryProgress();
 
       // Render Folder Pills
       const foldersCont = document.getElementById('foldersContainer');
