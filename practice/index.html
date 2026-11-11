@@ -1695,6 +1695,8 @@
     // 3. STAGE 2: SUBJECT SELECTION
     // ---------------------------------------------------------
     function renderSubjectScreen() {
+      const isCbse = currentExam === 'cbse';
+      const isNeet = currentExam === 'neet';
       const examNames = {
         'cbse': 'CBSE Class 12',
         'neet': 'NEET UG',
