@@ -45,27 +45,21 @@
       ]
     },
     {
-      "source": "/((?!assets|data|.*\.[a-zA-Z0-9]+$).*)",
+      "source": "/:path*",
       "headers": [
         { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }
       ]
     },
     {
-      "source": "/(.*).html",
-      "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }
-      ]
-    },
-    {
-      "source": "/",
-      "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }
-      ]
-    },
-    {
-      "source": "/data/(.*)",
+      "source": "/data/:path*",
       "headers": [
         { "key": "Cache-Control", "value": "public, max-age=60, stale-while-revalidate=300" }
+      ]
+    },
+    {
+      "source": "/assets/:path*",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=86400" }
       ]
     }
   ]
