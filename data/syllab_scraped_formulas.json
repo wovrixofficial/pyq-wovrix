@@ -1,0 +1,3054 @@
+[
+  {
+    "slug": "class-10-biology-heredity",
+    "path": "/formula-sheets/class-10-biology-heredity",
+    "title": "Class 10 Biology: Heredity Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 10 biology: heredity formulas — all 4 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Traits",
+        "expression": "Characteristics passed from parents to offspring through genes."
+      },
+      {
+        "name": "Dominant vs recessive",
+        "expression": "A dominant trait shows even with one copy; a recessive trait needs two copies."
+      },
+      {
+        "name": "Genotype vs phenotype",
+        "expression": "Genotype = the genes (e.g., Tt) · Phenotype = the visible trait (e.g., tall)"
+      },
+      {
+        "name": "Mendel's monohybrid ratio",
+        "expression": "Crossing Tt × Tt gives a 3 : 1 phenotype ratio in the F₂ generation."
+      }
+    ],
+    "count": 4
+  },
+  {
+    "slug": "class-10-maths",
+    "path": "/formula-sheets/class-10-maths",
+    "title": "Class 10 Maths Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 10 maths formulas — all 44 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Euclid's Division Algorithm",
+        "expression": "a = bq + r, where 0 ≤ r < b — For finding HCF of two numbers"
+      },
+      {
+        "name": "Fundamental Theorem of Arithmetic",
+        "expression": "Every positive integer > 1 is a product of primes, unique up to order — Used for HCF and LCM"
+      },
+      {
+        "name": "Quadratic Formula",
+        "expression": "x = (-b ± √(b² - 4ac)) / 2a — For ax² + bx + c = 0, discriminant D = b² - 4ac"
+      },
+      {
+        "name": "Sum of roots",
+        "expression": "α + β = -b/a — For quadratic ax² + bx + c = 0"
+      },
+      {
+        "name": "Product of roots",
+        "expression": "αβ = c/a — For quadratic ax² + bx + c = 0"
+      },
+      {
+        "name": "Polynomial division identity",
+        "expression": "p(x) = g(x) × q(x) + r(x) — where deg(r) < deg(g)"
+      }
+    ],
+    "count": 6
+  },
+  {
+    "slug": "class-10-maths-applications-of-trigonometry",
+    "path": "/formula-sheets/class-10-maths-applications-of-trigonometry",
+    "title": "Class 10 Maths: Applications of Trigonometry Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 10 maths: applications of trigonometry formulas — all 3 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Angle of elevation",
+        "expression": "The angle UP from the horizontal to an object above you."
+      },
+      {
+        "name": "Angle of depression",
+        "expression": "The angle DOWN from the horizontal to an object below you."
+      },
+      {
+        "name": "The key relation",
+        "expression": "Use tan θ = height / horizontal distance (draw the right triangle first)."
+      }
+    ],
+    "count": 3
+  },
+  {
+    "slug": "class-10-chemistry-acids-bases-salts",
+    "path": "/formula-sheets/class-10-chemistry-acids-bases-salts",
+    "title": "Class 10 Chemistry: Acids, Bases & Salts Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 10 chemistry: acids, bases & salts formulas — all 4 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "The pH scale",
+        "expression": "0 to 14 · pH < 7 = acidic · pH = 7 = neutral · pH > 7 = basic"
+      },
+      {
+        "name": "Neutralisation",
+        "expression": "Acid + Base → Salt + Water (e.g., HCl + NaOH → NaCl + H₂O)"
+      },
+      {
+        "name": "Acid + metal",
+        "expression": "Acid + Metal → Salt + Hydrogen gas"
+      },
+      {
+        "name": "Acid + carbonate",
+        "expression": "Acid + Metal carbonate → Salt + Water + Carbon dioxide"
+      }
+    ],
+    "count": 4
+  },
+  {
+    "slug": "class-10-chemistry-acids-bases-and-salts",
+    "path": "/formula-sheets/class-10-chemistry-acids-bases-and-salts",
+    "title": "Class 10 Chemistry: Acids Bases and Salts Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 10 chemistry: acids bases and salts formulas — all 7 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Acid definition (Arrhenius)",
+        "expression": "Substance producing H⁺ in aqueous solution"
+      },
+      {
+        "name": "Base definition (Arrhenius)",
+        "expression": "Substance producing OH⁻ in aqueous solution"
+      },
+      {
+        "name": "pH scale",
+        "expression": "pH = -log[H⁺]; acidic < 7 < basic; neutral = 7"
+      },
+      {
+        "name": "Strong vs weak acids",
+        "expression": "Strong: HCl, HNO₃, H₂SO₄ (complete ionization); weak: acetic, carbonic"
+      },
+      {
+        "name": "Neutralization reaction",
+        "expression": "Acid + Base → Salt + Water"
+      },
+      {
+        "name": "Salt definition",
+        "expression": "Ionic compound from acid + base; neutral if from strong acid/base"
+      },
+      {
+        "name": "Indicators",
+        "expression": "Litmus, phenolphthalein, methyl orange change color in acid/base"
+      }
+    ],
+    "count": 7
+  },
+  {
+    "slug": "class-10-chemistry-carbon-its-compounds",
+    "path": "/formula-sheets/class-10-chemistry-carbon-its-compounds",
+    "title": "Class 10 Chemistry: Carbon & its Compounds Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 10 chemistry: carbon & its compounds formulas — all 4 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Tetravalency",
+        "expression": "Carbon has 4 valence electrons, so it forms 4 covalent bonds."
+      },
+      {
+        "name": "Catenation",
+        "expression": "Carbon atoms link with each other to form long chains, branches and rings."
+      },
+      {
+        "name": "Covalent bonding",
+        "expression": "Carbon shares electrons (doesn't gain/lose), forming strong covalent bonds."
+      },
+      {
+        "name": "Homologous series",
+        "expression": "A series of compounds with the same general formula, differing by CH₂."
+      }
+    ],
+    "count": 4
+  },
+  {
+    "slug": "class-10-biology-life-processes",
+    "path": "/formula-sheets/class-10-biology-life-processes",
+    "title": "Class 10 Biology: Life Processes Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 10 biology: life processes formulas — all 7 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Photosynthesis equation",
+        "expression": "6CO₂ + 6H₂O + light → C₆H₁₂O₆ + 6O₂"
+      },
+      {
+        "name": "Photosynthesis location",
+        "expression": "Light reaction in thylakoid; dark reaction (Calvin cycle) in stroma"
+      },
+      {
+        "name": "Respiration (aerobic)",
+        "expression": "C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O + energy (ATP)"
+      },
+      {
+        "name": "Respiration location",
+        "expression": "Glycolysis (cytoplasm); Krebs cycle + ETC (mitochondrial matrix/cristae)"
+      },
+      {
+        "name": "Anaerobic respiration (fermentation)",
+        "expression": "Glucose → lactate (animals) or ethanol (plants) without O₂"
+      },
+      {
+        "name": "Digestion: carbohydrate",
+        "expression": "Mouth (amylase) → stomach → small intestine; glucose absorbed"
+      },
+      {
+        "name": "Excretion: kidney structure",
+        "expression": "Glomerulus → Bowman → proximal tubule → loop of Henle → collecting duct"
+      }
+    ],
+    "count": 7
+  },
+  {
+    "slug": "class-10-chemistry-chemical-reactions-equations",
+    "path": "/formula-sheets/class-10-chemistry-chemical-reactions-equations",
+    "title": "Class 10 Chemistry: Chemical Reactions & Equations Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 10 chemistry: chemical reactions & equations formulas — all 5 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Combination",
+        "expression": "Two or more substances combine into one (A + B → AB)"
+      },
+      {
+        "name": "Decomposition",
+        "expression": "One substance breaks into two or more (AB → A + B)"
+      },
+      {
+        "name": "Displacement",
+        "expression": "A more reactive element displaces a less reactive one (A + BC → AC + B)"
+      },
+      {
+        "name": "Double displacement",
+        "expression": "Ions are exchanged between two compounds (AB + CD → AD + CB)"
+      },
+      {
+        "name": "Oxidation & reduction (Redox)",
+        "expression": "Oxidation = gain of oxygen / loss of hydrogen · Reduction = the opposite"
+      }
+    ],
+    "count": 5
+  },
+  {
+    "slug": "class-10-chemistry-periodic-classification",
+    "path": "/formula-sheets/class-10-chemistry-periodic-classification",
+    "title": "Class 10 Chemistry: Periodic Classification Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 10 chemistry: periodic classification formulas — all 4 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Modern periodic law",
+        "expression": "Properties of elements are a periodic function of their ATOMIC NUMBER."
+      },
+      {
+        "name": "Structure",
+        "expression": "18 vertical groups · 7 horizontal periods"
+      },
+      {
+        "name": "Across a period (→)",
+        "expression": "Atomic size decreases · metallic character decreases · non-metallic character increases"
+      },
+      {
+        "name": "Down a group (↓)",
+        "expression": "Atomic size increases · metallic character increases"
+      }
+    ],
+    "count": 4
+  },
+  {
+    "slug": "class-10-chemistry-carbon-and-its-compounds",
+    "path": "/formula-sheets/class-10-chemistry-carbon-and-its-compounds",
+    "title": "Class 10 Chemistry: Carbon and its Compounds Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 10 chemistry: carbon and its compounds formulas — all 7 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Covalent bonding in carbon",
+        "expression": "4 valence e⁻; forms 4 covalent bonds; strong C-C chains"
+      },
+      {
+        "name": "Saturated hydrocarbon (alkane)",
+        "expression": "C_nH_{2n+2}; single C-C bonds; CnH2n+2"
+      },
+      {
+        "name": "Unsaturated hydrocarbon (alkene)",
+        "expression": "C_nH_{2n}; C=C double bond"
+      },
+      {
+        "name": "Alkyne formula",
+        "expression": "C_nH_{2n-2}; C≡C triple bond"
+      },
+      {
+        "name": "Functional groups",
+        "expression": "-OH (alcohol), -COOH (carboxylic acid), -CHO (aldehyde)"
+      },
+      {
+        "name": "Combustion of hydrocarbons",
+        "expression": "CₙH₂ₘ + O₂ → CO₂ + H₂O (balance by atoms)"
+      },
+      {
+        "name": "Esterification",
+        "expression": "Alcohol + carboxylic acid → ester + water (reversible, acid-catalyzed)"
+      }
+    ],
+    "count": 7
+  },
+  {
+    "slug": "class-10-chemistry-metals-and-non-metals",
+    "path": "/formula-sheets/class-10-chemistry-metals-and-non-metals",
+    "title": "Class 10 Chemistry: Metals and Non-Metals Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 10 chemistry: metals and non-metals formulas — all 4 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Reactivity series",
+        "expression": "K > Na > Ca > Mg > Al > Zn > Fe > Pb > (H) > Cu > Ag > Au (most → least reactive)"
+      },
+      {
+        "name": "Ionic compounds",
+        "expression": "Formed by transfer of electrons (metal + non-metal); high melting points; conduct when molten."
+      },
+      {
+        "name": "Corrosion",
+        "expression": "Metals react with air/moisture (e.g., iron rusts). Prevented by painting, galvanising, alloying."
+      },
+      {
+        "name": "Alloys",
+        "expression": "A mixture of a metal with other elements (e.g., steel, brass) — often stronger / rust-resistant."
+      }
+    ],
+    "count": 4
+  },
+  {
+    "slug": "class-10-chemistry-chemical-reactions-and-equations",
+    "path": "/formula-sheets/class-10-chemistry-chemical-reactions-and-equations",
+    "title": "Class 10 Chemistry: Chemical Reactions and Equations Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 10 chemistry: chemical reactions and equations formulas — all 6 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Chemical equation balance",
+        "expression": "Same atoms on both sides; use coefficients, NOT subscripts"
+      },
+      {
+        "name": "Types of reactions",
+        "expression": "Combustion (O₂), decomposition, combination, displacement, redox"
+      },
+      {
+        "name": "Exothermic reaction",
+        "expression": "Releases heat/energy to surroundings (ΔH < 0)"
+      },
+      {
+        "name": "Endothermic reaction",
+        "expression": "Absorbs heat/energy from surroundings (ΔH > 0)"
+      },
+      {
+        "name": "Redox definition",
+        "expression": "Oxidation = loss of e⁻; reduction = gain of e⁻"
+      },
+      {
+        "name": "Oxidation state rules",
+        "expression": "Element = 0; monoatomic ion = charge; O usually -2; H usually +1"
+      }
+    ],
+    "count": 6
+  },
+  {
+    "slug": "class-10-maths-areas-related-to-circles",
+    "path": "/formula-sheets/class-10-maths-areas-related-to-circles",
+    "title": "Class 10 Maths: Areas Related to Circles Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 10 maths: areas related to circles formulas — all 4 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Circle basics",
+        "expression": "Area = πr² · Circumference = 2πr"
+      },
+      {
+        "name": "Area of a sector",
+        "expression": "Area of sector = (θ/360) × πr², where θ = angle of the sector"
+      },
+      {
+        "name": "Length of an arc",
+        "expression": "Arc length = (θ/360) × 2πr"
+      },
+      {
+        "name": "Area of a segment",
+        "expression": "Area of segment = area of sector − area of the triangle formed"
+      }
+    ],
+    "count": 4
+  },
+  {
+    "slug": "class-10-maths-circles",
+    "path": "/formula-sheets/class-10-maths-circles",
+    "title": "Class 10 Maths: Circles Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 10 maths: circles formulas — all 3 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Tangent ⟂ radius",
+        "expression": "A tangent is perpendicular to the radius at the point of contact."
+      },
+      {
+        "name": "Equal tangents",
+        "expression": "The lengths of two tangents drawn from an external point are equal."
+      },
+      {
+        "name": "Tangent length",
+        "expression": "Length of tangent = √(d² − r²), where d = distance of point from centre, r = radius."
+      }
+    ],
+    "count": 3
+  },
+  {
+    "slug": "class-10-maths-arithmetic-progressions",
+    "path": "/formula-sheets/class-10-maths-arithmetic-progressions",
+    "title": "Class 10 Maths: Arithmetic Progressions Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 10 maths: arithmetic progressions formulas — all 7 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "AP definition",
+        "expression": "Sequence where a_n - a_(n-1) = d (constant common difference)"
+      },
+      {
+        "name": "nth term",
+        "expression": "a_n = a₁ + (n-1)d"
+      },
+      {
+        "name": "Sum of n terms",
+        "expression": "S_n = n/2[2a + (n-1)d] = n/2(first + last)"
+      },
+      {
+        "name": "Common difference",
+        "expression": "d = a₂ - a₁ (or any a_n - a_(n-1))"
+      },
+      {
+        "name": "Arithmetic mean",
+        "expression": "Between a and b: AM = (a+b)/2"
+      },
+      {
+        "name": "AP of 3 terms",
+        "expression": "Let (a-d), a, (a+d); then 3a = sum"
+      },
+      {
+        "name": "AP property",
+        "expression": "For AP: a_n = (a_(n-1) + a_(n+1))/2"
+      }
+    ],
+    "count": 7
+  },
+  {
+    "slug": "class-10-maths-probability",
+    "path": "/formula-sheets/class-10-maths-probability",
+    "title": "Class 10 Maths: Probability Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 10 maths: probability formulas — all 6 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Probability definition",
+        "expression": "P(E) = (# favorable outcomes) / (# total outcomes)"
+      },
+      {
+        "name": "Complement rule",
+        "expression": "P(E') = 1 - P(E)"
+      },
+      {
+        "name": "Certain event",
+        "expression": "P(E) = 1 (always happens)"
+      },
+      {
+        "name": "Impossible event",
+        "expression": "P(E) = 0 (never happens)"
+      },
+      {
+        "name": "Range of probability",
+        "expression": "0 ≤ P(E) ≤ 1"
+      },
+      {
+        "name": "Independent events",
+        "expression": "P(A ∩ B) = P(A) × P(B)"
+      }
+    ],
+    "count": 6
+  },
+  {
+    "slug": "class-10-maths-quadratic-equations",
+    "path": "/formula-sheets/class-10-maths-quadratic-equations",
+    "title": "Class 10 Maths: Quadratic Equations Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 10 maths: quadratic equations formulas — all 7 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Quadratic formula",
+        "expression": "x = (-b ± √(b² - 4ac)) / 2a"
+      },
+      {
+        "name": "Discriminant (Δ)",
+        "expression": "Δ = b² - 4ac; Δ > 0: 2 roots; Δ = 0: 1 root; Δ < 0: no real roots"
+      },
+      {
+        "name": "Nature of roots",
+        "expression": "Δ = perfect square → rational; Δ < 0 → imaginary"
+      },
+      {
+        "name": "Sum of roots (α + β)",
+        "expression": "α + β = -b/a"
+      },
+      {
+        "name": "Product of roots (αβ)",
+        "expression": "αβ = c/a"
+      },
+      {
+        "name": "Quadratic with given roots",
+        "expression": "x² - (α+β)x + αβ = 0"
+      },
+      {
+        "name": "Completing the square",
+        "expression": "ax² + bx + c = a(x + b/2a)² - (b²/4a) + c"
+      }
+    ],
+    "count": 7
+  },
+  {
+    "slug": "class-10-maths-pair-of-linear-equations",
+    "path": "/formula-sheets/class-10-maths-pair-of-linear-equations",
+    "title": "Class 10 Maths: Pair of Linear Equations Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 10 maths: pair of linear equations formulas — all 6 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Graphical solution",
+        "expression": "Plot both lines; intersection = solution (x, y)"
+      },
+      {
+        "name": "Algebraic: substitution",
+        "expression": "Express one variable, substitute in other; solve"
+      },
+      {
+        "name": "Algebraic: elimination",
+        "expression": "Multiply equations to cancel variable, add/subtract"
+      },
+      {
+        "name": "Consistency check (a₁x + b₁y + c₁ = 0)",
+        "expression": "a₁/a₂ ≠ b₁/b₂ → unique sol; a₁/a₂ = b₁/b₂ ≠ c₁/c₂ → no sol"
+      },
+      {
+        "name": "Cross-multiplication",
+        "expression": "x/(b₁c₂-b₂c₁) = y/(c₁a₂-c₂a₁) = 1/(a₁b₂-a₂b₁)"
+      },
+      {
+        "name": "Dependent equations",
+        "expression": "a₁/a₂ = b₁/b₂ = c₁/c₂ → infinitely many solutions"
+      }
+    ],
+    "count": 6
+  },
+  {
+    "slug": "class-10-maths-coordinate-geometry",
+    "path": "/formula-sheets/class-10-maths-coordinate-geometry",
+    "title": "Class 10 Maths: Coordinate Geometry Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 10 maths: coordinate geometry formulas — all 7 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Distance formula",
+        "expression": "d = √[(x₂-x₁)² + (y₂-y₁)²]"
+      },
+      {
+        "name": "Section formula (internal)",
+        "expression": "P = ((m₁x₂+m₂x₁)/(m₁+m₂), (m₁y₂+m₂y₁)/(m₁+m₂))"
+      },
+      {
+        "name": "Midpoint formula",
+        "expression": "M = ((x₁+x₂)/2, (y₁+y₂)/2)"
+      },
+      {
+        "name": "Centroid of triangle",
+        "expression": "G = ((x₁+x₂+x₃)/3, (y₁+y₂+y₃)/3)"
+      },
+      {
+        "name": "Area of triangle (3 points)",
+        "expression": "A = ½|x₁(y₂-y₃) + x₂(y₃-y₁) + x₃(y₁-y₂)|"
+      },
+      {
+        "name": "Collinearity test",
+        "expression": "A = 0 ⟹ points are collinear"
+      },
+      {
+        "name": "Slope of line",
+        "expression": "m = (y₂-y₁)/(x₂-x₁)"
+      }
+    ],
+    "count": 7
+  },
+  {
+    "slug": "class-10-maths-real-numbers",
+    "path": "/formula-sheets/class-10-maths-real-numbers",
+    "title": "Class 10 Maths: Real Numbers Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 10 maths: real numbers formulas — all 5 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Euclid's division lemma",
+        "expression": "For a, b ∈ ℤ, b ≠ 0: a = bq + r, 0 ≤ r < |b|"
+      },
+      {
+        "name": "HCF via Euclidean algorithm",
+        "expression": "Repeat a = bq + r until r = 0; last non-zero r is HCF"
+      },
+      {
+        "name": "Fundamental theorem",
+        "expression": "Every composite n = product of primes (unique factorization)"
+      },
+      {
+        "name": "LCM × HCF",
+        "expression": "For a, b: a × b = HCF(a,b) × LCM(a,b)"
+      },
+      {
+        "name": "Irrational proof",
+        "expression": "√p irrational if p is prime (contrapositive: assume rational, derive contradiction)"
+      }
+    ],
+    "count": 5
+  },
+  {
+    "slug": "class-10-maths-polynomials",
+    "path": "/formula-sheets/class-10-maths-polynomials",
+    "title": "Class 10 Maths: Polynomials Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 10 maths: polynomials formulas — all 6 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Degree of polynomial",
+        "expression": "Highest power of variable; e.g. 3x² + 2x + 1 has degree 2"
+      },
+      {
+        "name": "Factor theorem",
+        "expression": "(x - a) is factor of p(x) ⟺ p(a) = 0"
+      },
+      {
+        "name": "Remainder theorem",
+        "expression": "p(x) ÷ (x - a) gives remainder p(a)"
+      },
+      {
+        "name": "Sum & product of roots (quadratic)",
+        "expression": "ax² + bx + c: sum = -b/a, product = c/a"
+      },
+      {
+        "name": "Sum of roots (cubic)",
+        "expression": "ax³ + bx² + cx + d: sum = -b/a"
+      },
+      {
+        "name": "Relationship roots & coefficients",
+        "expression": "For αβ roots: α + β = -b/a, αβ = c/a"
+      }
+    ],
+    "count": 6
+  },
+  {
+    "slug": "class-10-maths-introduction-to-trigonometry",
+    "path": "/formula-sheets/class-10-maths-introduction-to-trigonometry",
+    "title": "Class 10 Maths: Introduction to Trigonometry Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 10 maths: introduction to trigonometry formulas — all 12 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Basic ratios",
+        "expression": "sin θ = opp/hyp, cos θ = adj/hyp, tan θ = opp/adj"
+      },
+      {
+        "name": "Reciprocal ratios",
+        "expression": "cosec θ = 1/sin θ, sec θ = 1/cos θ, cot θ = 1/tan θ"
+      },
+      {
+        "name": "Fundamental identity",
+        "expression": "sin²θ + cos²θ = 1"
+      },
+      {
+        "name": "Identity: tan",
+        "expression": "tan²θ + 1 = sec²θ"
+      },
+      {
+        "name": "Identity: cot",
+        "expression": "1 + cot²θ = cosec²θ"
+      },
+      {
+        "name": "Complementary angles",
+        "expression": "sin(90°-θ) = cos θ, cos(90°-θ) = sin θ, tan(90°-θ) = cot θ"
+      },
+      {
+        "name": "Ratio relationships",
+        "expression": "tan θ = sin θ/cos θ, cot θ = cos θ/sin θ"
+      },
+      {
+        "name": "Special angles",
+        "expression": "0°, 30°, 45°, 60°, 90° — memorize sin/cos/tan values"
+      },
+      {
+        "name": "The 3 main ratios",
+        "expression": "sin θ = opposite/hypotenuse · cos θ = adjacent/hypotenuse · tan θ = opposite/adjacent"
+      },
+      {
+        "name": "The 3 identities",
+        "expression": "sin²θ + cos²θ = 1 · 1 + tan²θ = sec²θ · 1 + cot²θ = cosec²θ"
+      },
+      {
+        "name": "Standard values of sin",
+        "expression": "sin 0°=0, sin 30°=1/2, sin 45°=1/√2, sin 60°=√3/2, sin 90°=1"
+      },
+      {
+        "name": "Standard values of cos",
+        "expression": "cos 0°=1, cos 30°=√3/2, cos 45°=1/√2, cos 60°=1/2, cos 90°=0"
+      }
+    ],
+    "count": 12
+  },
+  {
+    "slug": "class-10-maths-surface-areas-and-volumes",
+    "path": "/formula-sheets/class-10-maths-surface-areas-and-volumes",
+    "title": "Class 10 Maths: Surface Areas and Volumes Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 10 maths: surface areas and volumes formulas — all 6 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Cube: surface & volume",
+        "expression": "SA = 6a², V = a³"
+      },
+      {
+        "name": "Cuboid: surface & volume",
+        "expression": "SA = 2(lb + bh + hl), V = l × b × h"
+      },
+      {
+        "name": "Cylinder: surface & volume",
+        "expression": "CSA = 2πrh, TSA = 2πr(r+h), V = πr²h"
+      },
+      {
+        "name": "Cone: surface & volume",
+        "expression": "CSA = πrl, TSA = πr(r+l), V = ⅓πr²h (l = slant height)"
+      },
+      {
+        "name": "Sphere: surface & volume",
+        "expression": "SA = 4πr², V = ⁴⁄₃πr³"
+      },
+      {
+        "name": "Hemisphere: surface & volume",
+        "expression": "CSA = 2πr², TSA = 3πr², V = ⅔πr³"
+      }
+    ],
+    "count": 6
+  },
+  {
+    "slug": "class-10-physics-electricity",
+    "path": "/formula-sheets/class-10-physics-electricity",
+    "title": "Class 10 Physics: Electricity Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 10 physics: electricity formulas — all 7 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Electric current definition",
+        "expression": "I = Q/t; unit = Ampere (A); flow of charge per unit time"
+      },
+      {
+        "name": "Ohm's law",
+        "expression": "V = IR; resistance R = V/I; unit = Ohm (Ω)"
+      },
+      {
+        "name": "Resistivity",
+        "expression": "R = ρL/A; ρ = resistivity, L = length, A = cross-section area"
+      },
+      {
+        "name": "Series resistance",
+        "expression": "R_total = R₁ + R₂ + ... (same current, V divides)"
+      },
+      {
+        "name": "Parallel resistance",
+        "expression": "1/R_total = 1/R₁ + 1/R₂ + ... (same V, I divides)"
+      },
+      {
+        "name": "Power of electric current",
+        "expression": "P = VI = I²R = V²/R; unit = Watt (W)"
+      },
+      {
+        "name": "Joule's heating law",
+        "expression": "H = I²Rt; heat produced in resistor"
+      }
+    ],
+    "count": 7
+  },
+  {
+    "slug": "class-10-maths-triangles",
+    "path": "/formula-sheets/class-10-maths-triangles",
+    "title": "Class 10 Maths: Triangles Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 10 maths: triangles formulas — all 7 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Similarity criterion: AA",
+        "expression": "Two angles equal → triangles similar"
+      },
+      {
+        "name": "Similarity criterion: SSS",
+        "expression": "All sides proportional → triangles similar"
+      },
+      {
+        "name": "Similarity criterion: SAS",
+        "expression": "Two sides proportional + included angle equal → similar"
+      },
+      {
+        "name": "Basic Proportionality Theorem (Thales)",
+        "expression": "Line || to side divides other sides proportionally"
+      },
+      {
+        "name": "Pythagoras theorem",
+        "expression": "In right △: a² + b² = c² (c = hypotenuse)"
+      },
+      {
+        "name": "Converse Pythagoras",
+        "expression": "If a² + b² = c² then △ is right-angled"
+      },
+      {
+        "name": "Area ratio & similarity",
+        "expression": "If triangles ~ with ratio k, area ratio = k²"
+      }
+    ],
+    "count": 7
+  },
+  {
+    "slug": "class-10-maths-statistics",
+    "path": "/formula-sheets/class-10-maths-statistics",
+    "title": "Class 10 Maths: Statistics Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 10 maths: statistics formulas — all 6 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Mean (arithmetic)",
+        "expression": "x̄ = (Σx) / n or (Σfx) / Σf (grouped data)"
+      },
+      {
+        "name": "Median",
+        "expression": "Middle value when data sorted; for grouped: l + ((n/2 - F)/f) × w"
+      },
+      {
+        "name": "Mode",
+        "expression": "Most frequently occurring value"
+      },
+      {
+        "name": "Range",
+        "expression": "Range = Maximum - Minimum"
+      },
+      {
+        "name": "Variance",
+        "expression": "σ² = Σ(x - x̄)² / n"
+      },
+      {
+        "name": "Standard deviation",
+        "expression": "σ = √variance"
+      }
+    ],
+    "count": 6
+  },
+  {
+    "slug": "class-10-maths-triangles-similarity",
+    "path": "/formula-sheets/class-10-maths-triangles-similarity",
+    "title": "Class 10 Maths: Triangles (Similarity) Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 10 maths: triangles (similarity) formulas — all 4 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Similarity criteria",
+        "expression": "AA (or AAA) · SSS · SAS — any one proves two triangles are similar"
+      },
+      {
+        "name": "Basic Proportionality Theorem",
+        "expression": "A line parallel to one side divides the other two sides in the same ratio (Thales)."
+      },
+      {
+        "name": "Ratio of areas",
+        "expression": "Areas of two similar triangles are in the ratio of the SQUARES of corresponding sides."
+      },
+      {
+        "name": "Pythagoras theorem",
+        "expression": "In a right triangle: hypotenuse² = base² + perpendicular²"
+      }
+    ],
+    "count": 4
+  },
+  {
+    "slug": "class-10-maths-some-applications-of-trigonometry",
+    "path": "/formula-sheets/class-10-maths-some-applications-of-trigonometry",
+    "title": "Class 10 Maths: Some Applications of Trigonometry Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 10 maths: some applications of trigonometry formulas — all 7 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Line of sight",
+        "expression": "Angle of elevation/depression measured from horizontal"
+      },
+      {
+        "name": "Angle of elevation",
+        "expression": "Above horizontal (e.g. eye to top of building)"
+      },
+      {
+        "name": "Angle of depression",
+        "expression": "Below horizontal (e.g. cliff edge to ship)"
+      },
+      {
+        "name": "Height/distance formula",
+        "expression": "Use tan θ = opposite/adjacent; solve for unknown"
+      },
+      {
+        "name": "Multiple angles problem",
+        "expression": "Two angles from one/two points; use ratio method"
+      },
+      {
+        "name": "Clinometer/theodolite setup",
+        "expression": "Measure angle of elevation, apply tan rule"
+      },
+      {
+        "name": "The key relation",
+        "expression": "Use tan θ = height / horizontal distance (draw the right triangle first)."
+      }
+    ],
+    "count": 7
+  },
+  {
+    "slug": "class-10-physics-human-eye-defects",
+    "path": "/formula-sheets/class-10-physics-human-eye-defects",
+    "title": "Class 10 Physics: Human Eye & Defects Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 10 physics: human eye & defects formulas — all 4 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Near & far point",
+        "expression": "Normal near point = 25 cm · Far point = infinity"
+      },
+      {
+        "name": "Myopia (short-sightedness)",
+        "expression": "Can't see distant objects clearly · Corrected using a concave (diverging) lens"
+      },
+      {
+        "name": "Hypermetropia (long-sightedness)",
+        "expression": "Can't see near objects clearly · Corrected using a convex (converging) lens"
+      },
+      {
+        "name": "Power of accommodation",
+        "expression": "The eye lens changes its focal length to focus on near and far objects."
+      }
+    ],
+    "count": 4
+  },
+  {
+    "slug": "class-10-physics-human-eye-and-colourful-world",
+    "path": "/formula-sheets/class-10-physics-human-eye-and-colourful-world",
+    "title": "Class 10 Physics: Human Eye and Colourful World Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 10 physics: human eye and colourful world formulas — all 6 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Eye structure",
+        "expression": "Cornea (refraction) → lens (accommodation) → retina (image) → optic nerve"
+      },
+      {
+        "name": "Accommodation",
+        "expression": "Ciliary muscles change lens shape; near point ≈ 25 cm, far point ≈ ∞"
+      },
+      {
+        "name": "Myopia (short-sight)",
+        "expression": "Image forms before retina; far point < ∞; corrected by concave lens"
+      },
+      {
+        "name": "Hyperopia (far-sight)",
+        "expression": "Image forms behind retina; near point > 25 cm; corrected by convex lens"
+      },
+      {
+        "name": "Presbyopia",
+        "expression": "Age-related; lens loses flexibility; corrected by bifocal lens"
+      },
+      {
+        "name": "Dispersion of light",
+        "expression": "White light splits into spectrum (VIBGYOR) by different refractive indices"
+      }
+    ],
+    "count": 6
+  },
+  {
+    "slug": "class-10-maths-trigonometry",
+    "path": "/formula-sheets/class-10-maths-trigonometry",
+    "title": "Class 10 Maths: Trigonometry Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 10 maths: trigonometry formulas — all 6 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "The 3 main ratios",
+        "expression": "sin θ = opposite/hypotenuse · cos θ = adjacent/hypotenuse · tan θ = opposite/adjacent"
+      },
+      {
+        "name": "Reciprocals",
+        "expression": "cosec θ = 1/sin θ · sec θ = 1/cos θ · cot θ = 1/tan θ"
+      },
+      {
+        "name": "Quotient relations",
+        "expression": "tan θ = sin θ / cos θ · cot θ = cos θ / sin θ"
+      },
+      {
+        "name": "The 3 identities",
+        "expression": "sin²θ + cos²θ = 1 · 1 + tan²θ = sec²θ · 1 + cot²θ = cosec²θ"
+      },
+      {
+        "name": "Standard values of sin",
+        "expression": "sin 0°=0, sin 30°=1/2, sin 45°=1/√2, sin 60°=√3/2, sin 90°=1"
+      },
+      {
+        "name": "Standard values of cos",
+        "expression": "cos 0°=1, cos 30°=√3/2, cos 45°=1/√2, cos 60°=1/2, cos 90°=0"
+      }
+    ],
+    "count": 6
+  },
+  {
+    "slug": "class-10-science",
+    "path": "/formula-sheets/class-10-science",
+    "title": "Class 10 Physics & Numerics Formula Sheet (PDF) — All Important Formulas Free",
+    "description": "Free class 10 physics & numerics formula sheet — all 31 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Mirror Formula",
+        "expression": "1/f = 1/u + 1/v — f = focal length, u = object distance, v = image distance. Sign convention: real (+), virtual (-)"
+      },
+      {
+        "name": "Magnification (Mirror)",
+        "expression": "m = -v/u = h'/h — h = object height, h' = image height. m negative = inverted image"
+      },
+      {
+        "name": "Focal Length",
+        "expression": "f = R/2 — R = radius of curvature. Concave mirror f > 0, convex f < 0"
+      }
+    ],
+    "count": 3
+  },
+  {
+    "slug": "class-10-physics-magnetic-effects-of-electric-current",
+    "path": "/formula-sheets/class-10-physics-magnetic-effects-of-electric-current",
+    "title": "Class 10 Physics: Magnetic Effects of Electric Current Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 10 physics: magnetic effects of electric current formulas — all 4 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Right-hand thumb rule",
+        "expression": "Thumb points along the current; curled fingers show the direction of the magnetic field."
+      },
+      {
+        "name": "Fleming's left-hand rule",
+        "expression": "Force on a current-carrying conductor in a field: Thumb = force, Forefinger = field, Middle = current."
+      },
+      {
+        "name": "Fleming's right-hand rule",
+        "expression": "Direction of induced current in a generator (electromagnetic induction)."
+      },
+      {
+        "name": "Solenoid",
+        "expression": "A coil of wire acts like a bar magnet when current flows; field inside is uniform."
+      }
+    ],
+    "count": 4
+  },
+  {
+    "slug": "class-10-physics-light-reflection-and-refraction",
+    "path": "/formula-sheets/class-10-physics-light-reflection-and-refraction",
+    "title": "Class 10 Physics: Light – Reflection and Refraction Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 10 physics: light – reflection and refraction formulas — all 7 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Law of reflection",
+        "expression": "Angle of incidence = angle of reflection (∠i = ∠r)"
+      },
+      {
+        "name": "Mirror formula",
+        "expression": "1/f = 1/v + 1/u; f = R/2 (R = radius of curvature)"
+      },
+      {
+        "name": "Magnification (mirror)",
+        "expression": "m = h'/h = -v/u (- means inverted)"
+      },
+      {
+        "name": "Snell's law",
+        "expression": "n₁sin(θ₁) = n₂sin(θ₂); n = c/v"
+      },
+      {
+        "name": "Lens formula",
+        "expression": "1/f = 1/v + 1/u (same as mirror)"
+      },
+      {
+        "name": "Lens power",
+        "expression": "P = 1/f (diopters, D); convex +, concave -"
+      },
+      {
+        "name": "Critical angle & TIR",
+        "expression": "sin(θc) = n₂/n₁; total internal reflection if θ > θc"
+      }
+    ],
+    "count": 7
+  },
+  {
+    "slug": "class-10-physics-light-reflection-refraction",
+    "path": "/formula-sheets/class-10-physics-light-reflection-refraction",
+    "title": "Class 10 Physics: Light – Reflection & Refraction Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 10 physics: light – reflection & refraction formulas — all 6 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Mirror formula",
+        "expression": "1/v + 1/u = 1/f  (v = image distance, u = object distance, f = focal length)"
+      },
+      {
+        "name": "Magnification (mirror)",
+        "expression": "m = −v/u = height of image / height of object"
+      },
+      {
+        "name": "Lens formula",
+        "expression": "1/v − 1/u = 1/f"
+      },
+      {
+        "name": "Magnification (lens)",
+        "expression": "m = v/u = height of image / height of object"
+      },
+      {
+        "name": "Power of a lens",
+        "expression": "P = 1/f (f in metres) · Unit: dioptre (D) · Convex = +, Concave = −"
+      },
+      {
+        "name": "Refractive index",
+        "expression": "n = speed of light in vacuum / speed in medium = sin i / sin r"
+      }
+    ],
+    "count": 6
+  },
+  {
+    "slug": "class-11-chemistry-structure-of-atom",
+    "path": "/formula-sheets/class-11-chemistry-structure-of-atom",
+    "title": "Class 11 Chemistry: Structure of Atom Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 11 chemistry: structure of atom formulas — all 6 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Bohr's Model Energy",
+        "expression": "E_n = −13.6/n² eV"
+      },
+      {
+        "name": "Bohr Radius",
+        "expression": "a₀ = 0.529 Å (Angstroms)"
+      },
+      {
+        "name": "Frequency of Photon",
+        "expression": "ν = ΔE/h"
+      },
+      {
+        "name": "Wavelength of Light",
+        "expression": "λ = c/ν"
+      },
+      {
+        "name": "de Broglie Wavelength",
+        "expression": "λ = h/(mv)"
+      },
+      {
+        "name": "Planck's Constant",
+        "expression": "h = 6.626 × 10⁻³⁴ J·s"
+      }
+    ],
+    "count": 6
+  },
+  {
+    "slug": "class-11-chemistry-some-basic-concepts-of-chemistry",
+    "path": "/formula-sheets/class-11-chemistry-some-basic-concepts-of-chemistry",
+    "title": "Class 11 Chemistry: Some Basic Concepts of Chemistry Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 11 chemistry: some basic concepts of chemistry formulas — all 7 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Molar Mass",
+        "expression": "M = mass/moles (in g/mol)"
+      },
+      {
+        "name": "Avogadro's Number",
+        "expression": "N_A = 6.022 × 10²³ mol⁻¹"
+      },
+      {
+        "name": "Number of Moles",
+        "expression": "n = m/M = N/N_A"
+      },
+      {
+        "name": "Molarity",
+        "expression": "M = moles/volume(L)"
+      },
+      {
+        "name": "Molality",
+        "expression": "m = moles/mass of solvent(kg)"
+      },
+      {
+        "name": "Atomic Mass Unit",
+        "expression": "1 amu = 1.66054 × 10⁻²⁷ kg"
+      },
+      {
+        "name": "Percentage Composition",
+        "expression": "% = (mass of element/molar mass) × 100"
+      }
+    ],
+    "count": 7
+  },
+  {
+    "slug": "class-11-chemistry-thermodynamics-chemistry",
+    "path": "/formula-sheets/class-11-chemistry-thermodynamics-chemistry",
+    "title": "Class 11 Chemistry: Thermodynamics (Chemistry) Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 11 chemistry: thermodynamics (chemistry) formulas — all 6 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Enthalpy",
+        "expression": "H = U + PV"
+      },
+      {
+        "name": "Enthalpy Change",
+        "expression": "ΔH = ΔU + ΔnRT"
+      },
+      {
+        "name": "Hess's Law",
+        "expression": "ΔH_reaction = Σ ΔH_products − Σ ΔH_reactants"
+      },
+      {
+        "name": "Internal Energy Change",
+        "expression": "ΔU = q − w"
+      },
+      {
+        "name": "Specific Heat Capacity",
+        "expression": "q = mcΔT"
+      },
+      {
+        "name": "Entropy",
+        "expression": "ΔS = q_rev/T"
+      }
+    ],
+    "count": 6
+  },
+  {
+    "slug": "class-11-mathematics-limits-and-derivatives",
+    "path": "/formula-sheets/class-11-mathematics-limits-and-derivatives",
+    "title": "Class 11 Mathematics: Limits and Derivatives Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 11 mathematics: limits and derivatives formulas — all 7 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Limit Definition",
+        "expression": "lim(x→a) f(x) = L"
+      },
+      {
+        "name": "Limit Laws: Addition",
+        "expression": "lim(f+g) = lim(f) + lim(g)"
+      },
+      {
+        "name": "Derivative Definition",
+        "expression": "f'(x) = lim(h→0) [f(x+h)−f(x)]/h"
+      },
+      {
+        "name": "Power Rule",
+        "expression": "d/dx(x^n) = nx^(n−1)"
+      },
+      {
+        "name": "Constant Rule",
+        "expression": "d/dx(c) = 0"
+      },
+      {
+        "name": "Sum Rule",
+        "expression": "d/dx(f+g) = f'(x) + g'(x)"
+      },
+      {
+        "name": "Product Rule",
+        "expression": "d/dx(fg) = f·g' + g·f'"
+      }
+    ],
+    "count": 7
+  },
+  {
+    "slug": "class-11-mathematics-permutations-and-combinations",
+    "path": "/formula-sheets/class-11-mathematics-permutations-and-combinations",
+    "title": "Class 11 Mathematics: Permutations and Combinations Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 11 mathematics: permutations and combinations formulas — all 6 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Factorial",
+        "expression": "n! = n × (n−1) × (n−2) × ... × 1"
+      },
+      {
+        "name": "Permutations",
+        "expression": "P(n,r) = n!/(n−r)!"
+      },
+      {
+        "name": "Combinations",
+        "expression": "C(n,r) = n!/(r!(n−r)!)"
+      },
+      {
+        "name": "Permutation Property",
+        "expression": "P(n,r) = r! × C(n,r)"
+      },
+      {
+        "name": "Circular Permutations",
+        "expression": "P = (n−1)!"
+      },
+      {
+        "name": "Pascal's Identity",
+        "expression": "C(n,r) = C(n−1,r−1) + C(n−1,r)"
+      }
+    ],
+    "count": 6
+  },
+  {
+    "slug": "class-11-chemistry",
+    "path": "/formula-sheets/class-11-chemistry",
+    "title": "Class 11 Chemistry: Essential Formulas & Concepts (PDF) — All Important Formulas Free",
+    "description": "Free class 11 chemistry: essential formulas & concepts — all 64 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Number of moles from mass",
+        "expression": "n = given mass (g) / molar mass (g/mol) — n is always in moles; divide grams by atomic/molecular weight"
+      },
+      {
+        "name": "Number of moles from particles",
+        "expression": "n = N / Nₐ — N = number of particles, Nₐ = Avogadro's number = 6.022 × 10²³"
+      },
+      {
+        "name": "Molar mass from density",
+        "expression": "M = dRT / P — d = density (g/L), R = 0.0821 L·atm/(mol·K), T in Kelvin, P in atm"
+      },
+      {
+        "name": "Percentage composition",
+        "expression": "% element = (atomic mass × no. of atoms / molar mass) × 100 — Sum of all percentages = 100%"
+      },
+      {
+        "name": "Empirical formula mass",
+        "expression": "n = molar mass / empirical formula mass — Molecular formula = (empirical formula)ₙ"
+      },
+      {
+        "name": "Stoichiometric ratio",
+        "expression": "mol A / mol B = coefficient A / coefficient B — From balanced chemical equation"
+      },
+      {
+        "name": "Limiting reagent",
+        "expression": "Compare moles of reactant / stoichiometric coefficient — Smallest ratio is limiting; controls theoretical yield"
+      },
+      {
+        "name": "Percent yield",
+        "expression": "% yield = (actual yield / theoretical yield) × 100 — Actual from experiment; theoretical from stoichiometry"
+      }
+    ],
+    "count": 8
+  },
+  {
+    "slug": "class-11-chemistry-equilibrium",
+    "path": "/formula-sheets/class-11-chemistry-equilibrium",
+    "title": "Class 11 Chemistry: Equilibrium Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 11 chemistry: equilibrium formulas — all 6 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Equilibrium Constant",
+        "expression": "K_c = [C]^c[D]^d / [A]^a[B]^b"
+      },
+      {
+        "name": "Le Chatelier Principle",
+        "expression": "System shifts to counteract stress"
+      },
+      {
+        "name": "Ionization Constant (K_a)",
+        "expression": "K_a = [H⁺][A⁻]/[HA]"
+      },
+      {
+        "name": "pH Definition",
+        "expression": "pH = −log[H⁺]"
+      },
+      {
+        "name": "pOH Definition",
+        "expression": "pOH = −log[OH⁻]"
+      },
+      {
+        "name": "pH + pOH",
+        "expression": "pH + pOH = 14 (at 25°C)"
+      }
+    ],
+    "count": 6
+  },
+  {
+    "slug": "class-11-mathematics-straight-lines",
+    "path": "/formula-sheets/class-11-mathematics-straight-lines",
+    "title": "Class 11 Mathematics: Straight Lines Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 11 mathematics: straight lines formulas — all 7 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Slope of Line",
+        "expression": "m = (y₂ − y₁)/(x₂ − x₁)"
+      },
+      {
+        "name": "Point-Slope Form",
+        "expression": "y − y₁ = m(x − x₁)"
+      },
+      {
+        "name": "Slope-Intercept Form",
+        "expression": "y = mx + c"
+      },
+      {
+        "name": "General Form",
+        "expression": "ax + by + c = 0"
+      },
+      {
+        "name": "Distance Between Points",
+        "expression": "d = √((x₂ − x₁)² + (y₂ − y₁)²)"
+      },
+      {
+        "name": "Distance Point to Line",
+        "expression": "d = |ax₀ + by₀ + c|/√(a² + b²)"
+      },
+      {
+        "name": "Angle Between Lines",
+        "expression": "tanθ = |(m₁ − m₂)/(1 + m₁m₂)|"
+      }
+    ],
+    "count": 7
+  },
+  {
+    "slug": "class-11-mathematics-sequences-and-series",
+    "path": "/formula-sheets/class-11-mathematics-sequences-and-series",
+    "title": "Class 11 Mathematics: Sequences and Series Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 11 mathematics: sequences and series formulas — all 7 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Arithmetic Progression",
+        "expression": "a_n = a + (n−1)d"
+      },
+      {
+        "name": "Sum of AP",
+        "expression": "S_n = (n/2)(2a + (n−1)d)"
+      },
+      {
+        "name": "Geometric Progression",
+        "expression": "a_n = ar^(n−1)"
+      },
+      {
+        "name": "Sum of GP",
+        "expression": "S_n = a(r^n − 1)/(r − 1)"
+      },
+      {
+        "name": "Infinite GP Sum",
+        "expression": "S_∞ = a/(1−r) when |r| < 1"
+      },
+      {
+        "name": "Arithmetic Mean",
+        "expression": "AM = (a + b)/2"
+      },
+      {
+        "name": "Geometric Mean",
+        "expression": "GM = √(ab)"
+      }
+    ],
+    "count": 7
+  },
+  {
+    "slug": "class-11-mathematics-sets",
+    "path": "/formula-sheets/class-11-mathematics-sets",
+    "title": "Class 11 Mathematics: Sets Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 11 mathematics: sets formulas — all 6 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Union of Sets",
+        "expression": "A ∪ B = {x | x ∈ A or x ∈ B}"
+      },
+      {
+        "name": "Intersection of Sets",
+        "expression": "A ∩ B = {x | x ∈ A and x ∈ B}"
+      },
+      {
+        "name": "Complement of Set",
+        "expression": "A' = {x | x ∈ U and x ∉ A}"
+      },
+      {
+        "name": "De Morgan's Law 1",
+        "expression": "(A ∪ B)' = A' ∩ B'"
+      },
+      {
+        "name": "De Morgan's Law 2",
+        "expression": "(A ∩ B)' = A' ∪ B'"
+      },
+      {
+        "name": "Cardinality",
+        "expression": "n(A ∪ B) = n(A) + n(B) − n(A ∩ B)"
+      }
+    ],
+    "count": 6
+  },
+  {
+    "slug": "class-11-mathematics-trigonometric-functions",
+    "path": "/formula-sheets/class-11-mathematics-trigonometric-functions",
+    "title": "Class 11 Mathematics: Trigonometric Functions Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 11 mathematics: trigonometric functions formulas — all 7 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Sine Function",
+        "expression": "sinθ = opposite/hypotenuse"
+      },
+      {
+        "name": "Cosine Function",
+        "expression": "cosθ = adjacent/hypotenuse"
+      },
+      {
+        "name": "Tangent Function",
+        "expression": "tanθ = sinθ/cosθ = opposite/adjacent"
+      },
+      {
+        "name": "Pythagorean Identity",
+        "expression": "sin²θ + cos²θ = 1"
+      },
+      {
+        "name": "Double Angle: Sine",
+        "expression": "sin(2θ) = 2sinθ cosθ"
+      },
+      {
+        "name": "Double Angle: Cosine",
+        "expression": "cos(2θ) = cos²θ − sin²θ"
+      },
+      {
+        "name": "Double Angle: Tangent",
+        "expression": "tan(2θ) = 2tanθ/(1 − tan²θ)"
+      }
+    ],
+    "count": 7
+  },
+  {
+    "slug": "class-11-physics",
+    "path": "/formula-sheets/class-11-physics",
+    "title": "Class 11 Physics Formula Sheet (PDF) — All Important Formulas Free",
+    "description": "Free class 11 physics formula sheet — all 69 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Dimensional Analysis",
+        "expression": "[M^a L^b T^c I^d K^e] — M = mass, L = length, T = time, I = current, K = temperature, N = amount of substance"
+      },
+      {
+        "name": "Standard Units",
+        "expression": "Length (m), Mass (kg), Time (s), Current (A), Temperature (K) — SI base units. Derived units combine these: velocity (m/s), force (N=kg⋅m/s²)"
+      },
+      {
+        "name": "Uncertainty & Errors",
+        "expression": "Δx/x = ±(Δa/a + Δb/b) for products/quotients — Percentage error = (Δx/x)×100%. Random errors reduce with multiple measurements."
+      }
+    ],
+    "count": 3
+  },
+  {
+    "slug": "class-11-physics-gravitation",
+    "path": "/formula-sheets/class-11-physics-gravitation",
+    "title": "Class 11 Physics: Gravitation Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 11 physics: gravitation formulas — all 7 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Newton's Gravitational Law",
+        "expression": "F = G(m₁m₂)/r²"
+      },
+      {
+        "name": "Gravitational Constant",
+        "expression": "G = 6.67 × 10⁻¹¹ N·m²/kg²"
+      },
+      {
+        "name": "Gravitational Field",
+        "expression": "I = F/m = GM/r²"
+      },
+      {
+        "name": "Gravitational Potential",
+        "expression": "V = −GM/r"
+      },
+      {
+        "name": "Escape Velocity",
+        "expression": "v_e = √(2GM/R) = √(2gR)"
+      },
+      {
+        "name": "Orbital Velocity",
+        "expression": "v_o = √(GM/r)"
+      },
+      {
+        "name": "Kepler's Third Law",
+        "expression": "T² ∝ r³ (period² proportional to radius³)"
+      }
+    ],
+    "count": 7
+  },
+  {
+    "slug": "class-11-maths",
+    "path": "/formula-sheets/class-11-maths",
+    "title": "Class 11 Maths Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 11 maths formulas — all 53 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Addition formulas",
+        "expression": "sin(A + B) = sin A cos B + cos A sin B; sin(A - B) = sin A cos B - cos A sin B — Similarly for cos and tan"
+      },
+      {
+        "name": "Cosine addition",
+        "expression": "cos(A + B) = cos A cos B - sin A sin B; cos(A - B) = cos A cos B + sin A sin B"
+      },
+      {
+        "name": "Tangent addition",
+        "expression": "tan(A + B) = (tan A + tan B)/(1 - tan A tan B); tan(A - B) = (tan A - tan B)/(1 + tan A tan B)"
+      },
+      {
+        "name": "Double angle formulas",
+        "expression": "sin 2A = 2 sin A cos A; cos 2A = cos² A - sin² A = 2cos² A - 1 = 1 - 2sin² A; tan 2A = 2tan A/(1 - tan² A)"
+      },
+      {
+        "name": "Triple angle formulas",
+        "expression": "sin 3A = 3 sin A - 4 sin³ A; cos 3A = 4 cos³ A - 3 cos A; tan 3A = (3tan A - tan³ A)/(1 - 3tan² A)"
+      },
+      {
+        "name": "Sum to product",
+        "expression": "sin C + sin D = 2 sin((C + D)/2) cos((C - D)/2); cos C + cos D = 2 cos((C + D)/2) cos((C - D)/2) — Useful for simplifying trigonometric expressions"
+      },
+      {
+        "name": "Product to sum",
+        "expression": "2 sin A cos B = sin(A + B) + sin(A - B); 2 cos A cos B = cos(A + B) + cos(A - B)"
+      }
+    ],
+    "count": 7
+  },
+  {
+    "slug": "class-11-physics-thermodynamics",
+    "path": "/formula-sheets/class-11-physics-thermodynamics",
+    "title": "Class 11 Physics: Thermodynamics Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 11 physics: thermodynamics formulas — all 7 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Heat Capacity",
+        "expression": "C = Q/ΔT"
+      },
+      {
+        "name": "Specific Heat",
+        "expression": "c = Q/(mΔT)"
+      },
+      {
+        "name": "Temperature Conversion",
+        "expression": "°C = (°F − 32) × 5/9"
+      },
+      {
+        "name": "Thermal Expansion (Linear)",
+        "expression": "ΔL = αL₀ΔT"
+      },
+      {
+        "name": "Thermal Expansion (Volume)",
+        "expression": "ΔV = γV₀ΔT"
+      },
+      {
+        "name": "First Law Thermodynamics",
+        "expression": "ΔU = Q − W (internal energy change)"
+      },
+      {
+        "name": "Work in Isothermal Process",
+        "expression": "W = nRT × ln(V_f/V_i)"
+      }
+    ],
+    "count": 7
+  },
+  {
+    "slug": "class-11-physics-oscillations",
+    "path": "/formula-sheets/class-11-physics-oscillations",
+    "title": "Class 11 Physics: Oscillations Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 11 physics: oscillations formulas — all 7 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Simple Harmonic Motion",
+        "expression": "x = A sin(ωt + φ)"
+      },
+      {
+        "name": "Velocity in SHM",
+        "expression": "v = dx/dt = Aω cos(ωt + φ)"
+      },
+      {
+        "name": "Acceleration in SHM",
+        "expression": "a = −ω²x"
+      },
+      {
+        "name": "Angular Frequency",
+        "expression": "ω = 2πf = 2π/T"
+      },
+      {
+        "name": "Period of Pendulum",
+        "expression": "T = 2π√(L/g)"
+      },
+      {
+        "name": "Period of Spring",
+        "expression": "T = 2π√(m/k)"
+      },
+      {
+        "name": "Energy in SHM",
+        "expression": "E = ½kA² = ½mω²A²"
+      }
+    ],
+    "count": 7
+  },
+  {
+    "slug": "class-11-physics-motion-in-a-straight-line",
+    "path": "/formula-sheets/class-11-physics-motion-in-a-straight-line",
+    "title": "Class 11 Physics: Motion in a Straight Line Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 11 physics: motion in a straight line formulas — all 7 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Velocity",
+        "expression": "v = Δs/Δt (change in displacement/time)"
+      },
+      {
+        "name": "Acceleration",
+        "expression": "a = Δv/Δt (change in velocity/time)"
+      },
+      {
+        "name": "First Equation of Motion",
+        "expression": "v = u + at"
+      },
+      {
+        "name": "Second Equation of Motion",
+        "expression": "s = ut + ½at²"
+      },
+      {
+        "name": "Third Equation of Motion",
+        "expression": "v² − u² = 2as"
+      },
+      {
+        "name": "Average Velocity",
+        "expression": "v_avg = (u + v)/2"
+      },
+      {
+        "name": "Relative Velocity",
+        "expression": "v_AB = v_A − v_B"
+      }
+    ],
+    "count": 7
+  },
+  {
+    "slug": "class-11-physics-laws-of-motion",
+    "path": "/formula-sheets/class-11-physics-laws-of-motion",
+    "title": "Class 11 Physics: Laws of Motion Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 11 physics: laws of motion formulas — all 7 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Newton's First Law",
+        "expression": "Object stays at rest/motion unless force applied"
+      },
+      {
+        "name": "Newton's Second Law",
+        "expression": "F = ma (force = mass × acceleration)"
+      },
+      {
+        "name": "Newton's Third Law",
+        "expression": "Action = −Reaction (equal & opposite)"
+      },
+      {
+        "name": "Momentum",
+        "expression": "p = mv"
+      },
+      {
+        "name": "Impulse",
+        "expression": "J = FΔt = Δp"
+      },
+      {
+        "name": "Friction Force",
+        "expression": "f = μN (friction coeff. × normal force)"
+      },
+      {
+        "name": "Tension in Rope",
+        "expression": "T = m(g ± a)"
+      }
+    ],
+    "count": 7
+  },
+  {
+    "slug": "class-12-chemistry-solutions",
+    "path": "/formula-sheets/class-12-chemistry-solutions",
+    "title": "Class 12 Chemistry: Solutions Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 12 chemistry: solutions formulas — all 8 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Molarity",
+        "expression": "M = moles of solute/litres of solution"
+      },
+      {
+        "name": "Molality",
+        "expression": "m = moles of solute/kg of solvent"
+      },
+      {
+        "name": "Mole Fraction",
+        "expression": "x_A = moles of A/(total moles)"
+      },
+      {
+        "name": "Normality",
+        "expression": "N = equivalent of solute/litres of solution"
+      },
+      {
+        "name": "Raoult's Law",
+        "expression": "P_A = x_A × P°_A"
+      },
+      {
+        "name": "Elevation of Boiling Point",
+        "expression": "ΔT_b = K_b × m"
+      },
+      {
+        "name": "Depression of Freezing Point",
+        "expression": "ΔT_f = K_f × m"
+      },
+      {
+        "name": "Osmotic Pressure",
+        "expression": "π = CRT = iMRT"
+      }
+    ],
+    "count": 8
+  },
+  {
+    "slug": "class-12-chemistry-electrochemistry",
+    "path": "/formula-sheets/class-12-chemistry-electrochemistry",
+    "title": "Class 12 Chemistry: Electrochemistry Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 12 chemistry: electrochemistry formulas — all 6 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Faraday's First Law",
+        "expression": "w = (M × i × t)/(n × F)"
+      },
+      {
+        "name": "Faraday Constant",
+        "expression": "F = 96485 coulombs/mol"
+      },
+      {
+        "name": "Cell EMF",
+        "expression": "E°_cell = E°_cathode − E°_anode"
+      },
+      {
+        "name": "Nernst Equation",
+        "expression": "E = E° − (0.0592/n) × logQ (25°C)"
+      },
+      {
+        "name": "Gibbs Free Energy",
+        "expression": "ΔG° = −nFE°"
+      },
+      {
+        "name": "Degree of Dissociation",
+        "expression": "α = (initial − final)/initial"
+      }
+    ],
+    "count": 6
+  },
+  {
+    "slug": "class-12-mathematics-3d-geometry",
+    "path": "/formula-sheets/class-12-mathematics-3d-geometry",
+    "title": "Class 12 Mathematics: 3D Geometry Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 12 mathematics: 3d geometry formulas — all 5 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Distance Formula",
+        "expression": "d = √((x₂−x₁)² + (y₂−y₁)² + (z₂−z₁)²)"
+      },
+      {
+        "name": "Equation of Line",
+        "expression": "(x−x₁)/a = (y−y₁)/b = (z−z₁)/c"
+      },
+      {
+        "name": "Equation of Plane",
+        "expression": "ax + by + cz + d = 0"
+      },
+      {
+        "name": "Distance Point to Plane",
+        "expression": "d = |ax₀ + by₀ + cz₀ + d|/√(a² + b² + c²)"
+      },
+      {
+        "name": "Angle Between Lines",
+        "expression": "cosθ = |a₁a₂ + b₁b₂ + c₁c₂|/(√(a₁² + b₁² + c₁²) × √(a₂² + b₂² + c₂²))"
+      }
+    ],
+    "count": 5
+  },
+  {
+    "slug": "class-12-mathematics-continuity-and-differentiability",
+    "path": "/formula-sheets/class-12-mathematics-continuity-and-differentiability",
+    "title": "Class 12 Mathematics: Continuity and Differentiability Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 12 mathematics: continuity and differentiability formulas — all 6 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Definition of Continuity",
+        "expression": "f is continuous if lim(x→a) f(x) = f(a)"
+      },
+      {
+        "name": "Definition of Derivative",
+        "expression": "f'(x) = lim(h→0) [f(x+h)−f(x)]/h"
+      },
+      {
+        "name": "Power Rule",
+        "expression": "d/dx(x^n) = nx^(n−1)"
+      },
+      {
+        "name": "Product Rule",
+        "expression": "d/dx(uv) = u·dv/dx + v·du/dx"
+      },
+      {
+        "name": "Quotient Rule",
+        "expression": "d/dx(u/v) = (v·du − u·dv)/(v²)"
+      },
+      {
+        "name": "Chain Rule",
+        "expression": "dy/dx = (dy/du) × (du/dx)"
+      }
+    ],
+    "count": 6
+  },
+  {
+    "slug": "class-12-mathematics-application-of-derivatives",
+    "path": "/formula-sheets/class-12-mathematics-application-of-derivatives",
+    "title": "Class 12 Mathematics: Application of Derivatives Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 12 mathematics: application of derivatives formulas — all 5 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Increasing/Decreasing",
+        "expression": "f'(x) > 0 ⟹ increasing; f'(x) < 0 ⟹ decreasing"
+      },
+      {
+        "name": "Local Maxima",
+        "expression": "f'(x) = 0 and f''(x) < 0"
+      },
+      {
+        "name": "Local Minima",
+        "expression": "f'(x) = 0 and f''(x) > 0"
+      },
+      {
+        "name": "Tangent Line Slope",
+        "expression": "m = f'(x) at point (x, f(x))"
+      },
+      {
+        "name": "Rate of Change",
+        "expression": "v = dx/dt, a = dv/dt = d²x/dt²"
+      }
+    ],
+    "count": 5
+  },
+  {
+    "slug": "class-12-mathematics-differential-equations",
+    "path": "/formula-sheets/class-12-mathematics-differential-equations",
+    "title": "Class 12 Mathematics: Differential Equations Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 12 mathematics: differential equations formulas — all 3 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Separable Form",
+        "expression": "f(y)dy = g(x)dx"
+      },
+      {
+        "name": "Linear DE (1st Order)",
+        "expression": "dy/dx + Py = Q (integrating factor = e^∫P dx)"
+      },
+      {
+        "name": "Solution Method",
+        "expression": "y·(IF) = ∫Q·(IF) dx"
+      }
+    ],
+    "count": 3
+  },
+  {
+    "slug": "class-12-mathematics-matrices-and-determinants",
+    "path": "/formula-sheets/class-12-mathematics-matrices-and-determinants",
+    "title": "Class 12 Mathematics: Matrices and Determinants Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 12 mathematics: matrices and determinants formulas — all 6 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Matrix Addition",
+        "expression": "(A + B)_ij = A_ij + B_ij"
+      },
+      {
+        "name": "Matrix Multiplication",
+        "expression": "(AB)_ij = Σ A_ik × B_kj"
+      },
+      {
+        "name": "Determinant (2×2)",
+        "expression": "|A| = ad − bc"
+      },
+      {
+        "name": "Determinant (3×3)",
+        "expression": "|A| = a(ei−fh) − b(di−fg) + c(dh−eg)"
+      },
+      {
+        "name": "Adjoint Matrix",
+        "expression": "adj(A) = [C_ij]^T (cofactor matrix transpose)"
+      },
+      {
+        "name": "Inverse Matrix",
+        "expression": "A^−1 = adj(A)/|A|"
+      }
+    ],
+    "count": 6
+  },
+  {
+    "slug": "class-12-chemistry-chemical-kinetics",
+    "path": "/formula-sheets/class-12-chemistry-chemical-kinetics",
+    "title": "Class 12 Chemistry: Chemical Kinetics Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 12 chemistry: chemical kinetics formulas — all 6 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Rate of Reaction",
+        "expression": "r = −d[A]/dt = k[A]^n"
+      },
+      {
+        "name": "First Order Kinetics",
+        "expression": "k = (2.303/t) × log([A]₀/[A])"
+      },
+      {
+        "name": "Second Order Kinetics",
+        "expression": "k = (1/t) × (1/[A] − 1/[A]₀)"
+      },
+      {
+        "name": "Half-Life (1st Order)",
+        "expression": "t_½ = 0.693/k"
+      },
+      {
+        "name": "Activation Energy",
+        "expression": "E_a = 2.303RT × log(k₂/k₁)/(T₂−T₁)"
+      },
+      {
+        "name": "Temperature Effect",
+        "expression": "k₂/k₁ = e^(E_a/R × (T₂−T₁)/T₁T₂)"
+      }
+    ],
+    "count": 6
+  },
+  {
+    "slug": "class-12-mathematics-probability",
+    "path": "/formula-sheets/class-12-mathematics-probability",
+    "title": "Class 12 Mathematics: Probability Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 12 mathematics: probability formulas — all 7 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Basic Probability",
+        "expression": "P(A) = n(A)/n(S)"
+      },
+      {
+        "name": "Addition Rule",
+        "expression": "P(A∪B) = P(A) + P(B) − P(A∩B)"
+      },
+      {
+        "name": "Multiplication Rule",
+        "expression": "P(A∩B) = P(A) × P(B|A)"
+      },
+      {
+        "name": "Conditional Probability",
+        "expression": "P(A|B) = P(A∩B)/P(B)"
+      },
+      {
+        "name": "Bayes' Theorem",
+        "expression": "P(A|B) = P(B|A) × P(A)/P(B)"
+      },
+      {
+        "name": "Binomial Probability",
+        "expression": "P(X=r) = C(n,r) × p^r × q^(n−r)"
+      },
+      {
+        "name": "Expected Value",
+        "expression": "E(X) = Σ x_i × P(x_i)"
+      }
+    ],
+    "count": 7
+  },
+  {
+    "slug": "class-12-maths",
+    "path": "/formula-sheets/class-12-maths",
+    "title": "Class 12 Maths Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 12 maths formulas — all 63 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Domain and range of inverse trig functions",
+        "expression": "sin⁻¹: [-1, 1] → [-π/2, π/2]; cos⁻¹: [-1, 1] → [0, π]; tan⁻¹: ℝ → (-π/2, π/2) — cot⁻¹: ℝ → (0, π); sec⁻¹: ℝ∖(-1,1) → [0,π]∖{π/2}; cosec⁻¹: ℝ∖(-1,1) → [-π/2,π/2]∖{0}"
+      },
+      {
+        "name": "Complementary inverse trig relations",
+        "expression": "sin⁻¹ x + cos⁻¹ x = π/2; tan⁻¹ x + cot⁻¹ x = π/2; sec⁻¹ x + cosec⁻¹ x = π/2 — For x in appropriate domains"
+      },
+      {
+        "name": "Inverse trig sum formulas",
+        "expression": "tan⁻¹ x + tan⁻¹ y = tan⁻¹((x + y)/(1 - xy)) if xy < 1; = π + tan⁻¹((x + y)/(1 - xy)) if xy > 1, x > 0"
+      },
+      {
+        "name": "sin⁻¹ x + sin⁻¹ y formula",
+        "expression": "sin⁻¹ x + sin⁻¹ y = sin⁻¹(x√(1-y²) + y√(1-x²)) if x² + y² ≤ 1"
+      },
+      {
+        "name": "Derivatives of inverse trig functions",
+        "expression": "d/dx(sin⁻¹ x) = 1/√(1-x²); d/dx(cos⁻¹ x) = -1/√(1-x²); d/dx(tan⁻¹ x) = 1/(1+x²) — d/dx(cot⁻¹ x) = -1/(1+x²); d/dx(sec⁻¹ x) = 1/(|x|√(x²-1)); d/dx(cosec⁻¹ x) = -1/(|x|√(x²-1))"
+      }
+    ],
+    "count": 5
+  },
+  {
+    "slug": "class-12-mathematics-vectors",
+    "path": "/formula-sheets/class-12-mathematics-vectors",
+    "title": "Class 12 Mathematics: Vectors Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 12 mathematics: vectors formulas — all 5 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Magnitude of Vector",
+        "expression": "|a| = √(a₁² + a₂² + a₃²)"
+      },
+      {
+        "name": "Dot Product",
+        "expression": "a·b = |a||b|cosθ = a₁b₁ + a₂b₂ + a₃b₃"
+      },
+      {
+        "name": "Cross Product",
+        "expression": "a×b = |a||b|sinθ × n̂"
+      },
+      {
+        "name": "Scalar Triple Product",
+        "expression": "[a b c] = a·(b×c)"
+      },
+      {
+        "name": "Vector Projection",
+        "expression": "proj_b(a) = (a·b/|b|²) × b"
+      }
+    ],
+    "count": 5
+  },
+  {
+    "slug": "class-11-physics-work-energy-power",
+    "path": "/formula-sheets/class-11-physics-work-energy-power",
+    "title": "Class 11 Physics: Work Energy Power Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 11 physics: work energy power formulas — all 7 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Work",
+        "expression": "W = F·s·cosθ (force × displacement × cosine)"
+      },
+      {
+        "name": "Kinetic Energy",
+        "expression": "K.E = ½mv²"
+      },
+      {
+        "name": "Potential Energy",
+        "expression": "P.E = mgh"
+      },
+      {
+        "name": "Work-Energy Theorem",
+        "expression": "W_net = ΔK.E"
+      },
+      {
+        "name": "Power",
+        "expression": "P = W/t (work/time, in watts)"
+      },
+      {
+        "name": "Mechanical Energy",
+        "expression": "E_total = K.E + P.E (constant in isolation)"
+      },
+      {
+        "name": "Elastic Potential Energy",
+        "expression": "U = ½kx² (spring constant × compression²)"
+      }
+    ],
+    "count": 7
+  },
+  {
+    "slug": "class-12-chemistry",
+    "path": "/formula-sheets/class-12-chemistry",
+    "title": "Class 12 Chemistry: Solutions, Kinetics & Electrochemistry (PDF) — All Important Formulas Free",
+    "description": "Free class 12 chemistry: solutions, kinetics & electrochemistry — all 56 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Raoult's Law for ideal solutions",
+        "expression": "P_A = χ_A × P°_A — P_A = partial pressure of A, χ_A = mole fraction, P°_A = vapour pressure of pure A"
+      },
+      {
+        "name": "Relative lowering of vapour pressure",
+        "expression": "ΔP/P° = χ_solute = n_solute / (n_solute + n_solvent) — Independent of identity of solute (colligative); for non-volatile solutes"
+      },
+      {
+        "name": "Boiling point elevation",
+        "expression": "ΔTb = Kb × m — Kb = molal boiling point elevation constant (°C·kg/mol), m = molality"
+      },
+      {
+        "name": "Freezing point depression",
+        "expression": "ΔTf = Kf × m — Kf = molal freezing point depression constant (°C·kg/mol), m = molality"
+      },
+      {
+        "name": "Osmotic pressure",
+        "expression": "π = CRT = (n/V)RT — C = molarity, R = 0.0821 L·atm/(mol·K), T in Kelvin; most direct colligative property"
+      },
+      {
+        "name": "van't Hoff factor",
+        "expression": "i = observed colligative effect / expected effect for 1 mol solute — i ≈ 1 for nonelectrolytes, i > 1 for electrolytes (ions); ΔTb = i·Kb·m"
+      },
+      {
+        "name": "Degree of dissociation (electrolytes)",
+        "expression": "α = (initial moles − final moles) / initial moles — i = 1 + (n−1)α where n = number of ions per formula unit"
+      },
+      {
+        "name": "Henry's Law for gas solubility",
+        "expression": "c = Kₕ × P_gas — c = concentration (mol/L), Kₕ = Henry's law constant, P in atm"
+      },
+      {
+        "name": "Solubility and common ion effect",
+        "expression": "s = √(Ksp) (pure water); Ksp = [A⁺]^a × [B⁻]^b for AB — Adding common ion decreases solubility; Ksp independent of concentration"
+      }
+    ],
+    "count": 9
+  },
+  {
+    "slug": "class-12-maths-integrals-calculus",
+    "path": "/formula-sheets/class-12-maths-integrals-calculus",
+    "title": "Class 12 Maths: Integrals (Calculus) Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 12 maths: integrals (calculus) formulas — all 5 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Power rule",
+        "expression": "∫ xⁿ dx = xⁿ⁺¹/(n+1) + C, where n ≠ −1"
+      },
+      {
+        "name": "Reciprocal",
+        "expression": "∫ (1/x) dx = ln|x| + C"
+      },
+      {
+        "name": "Exponential",
+        "expression": "∫ eˣ dx = eˣ + C"
+      },
+      {
+        "name": "Trig integrals",
+        "expression": "∫ sin x dx = −cos x + C · ∫ cos x dx = sin x + C · ∫ sec²x dx = tan x + C"
+      },
+      {
+        "name": "Integration by parts",
+        "expression": "∫ u·v dx = u∫v dx − ∫ (u′ · ∫v dx) dx"
+      }
+    ],
+    "count": 5
+  },
+  {
+    "slug": "class-12-maths-derivatives-calculus",
+    "path": "/formula-sheets/class-12-maths-derivatives-calculus",
+    "title": "Class 12 Maths: Derivatives (Calculus) Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 12 maths: derivatives (calculus) formulas — all 6 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Power rule",
+        "expression": "d/dx (xⁿ) = n·xⁿ⁻¹"
+      },
+      {
+        "name": "Trig derivatives",
+        "expression": "d/dx (sin x) = cos x · d/dx (cos x) = −sin x · d/dx (tan x) = sec²x"
+      },
+      {
+        "name": "Exponential & log",
+        "expression": "d/dx (eˣ) = eˣ · d/dx (ln x) = 1/x"
+      },
+      {
+        "name": "Product rule",
+        "expression": "(uv)′ = u′v + uv′"
+      },
+      {
+        "name": "Quotient rule",
+        "expression": "(u/v)′ = (u′v − uv′) / v²"
+      },
+      {
+        "name": "Chain rule",
+        "expression": "dy/dx = (dy/du) × (du/dx)"
+      }
+    ],
+    "count": 6
+  },
+  {
+    "slug": "class-12-maths-vectors",
+    "path": "/formula-sheets/class-12-maths-vectors",
+    "title": "Class 12 Maths: Vectors Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 12 maths: vectors formulas — all 4 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Dot (scalar) product",
+        "expression": "a · b = |a||b| cos θ = a₁b₁ + a₂b₂ + a₃b₃ (gives a number)"
+      },
+      {
+        "name": "Cross (vector) product",
+        "expression": "|a × b| = |a||b| sin θ (gives a vector ⟂ to both)"
+      },
+      {
+        "name": "Perpendicular & parallel",
+        "expression": "a · b = 0 ⇒ perpendicular · a × b = 0 ⇒ parallel"
+      },
+      {
+        "name": "Projection",
+        "expression": "Projection of a on b = (a · b) / |b|"
+      }
+    ],
+    "count": 4
+  },
+  {
+    "slug": "class-12-maths-probability",
+    "path": "/formula-sheets/class-12-maths-probability",
+    "title": "Class 12 Maths: Probability Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 12 maths: probability formulas — all 4 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Conditional probability",
+        "expression": "P(A|B) = P(A ∩ B) / P(B), where P(B) ≠ 0"
+      },
+      {
+        "name": "Multiplication theorem",
+        "expression": "P(A ∩ B) = P(A) · P(B|A)"
+      },
+      {
+        "name": "Independent events",
+        "expression": "If A and B are independent: P(A ∩ B) = P(A) · P(B)"
+      },
+      {
+        "name": "Bayes' theorem (idea)",
+        "expression": "Updates the probability of a cause given an observed event, using prior probabilities."
+      }
+    ],
+    "count": 4
+  },
+  {
+    "slug": "class-12-physics-alternating-current",
+    "path": "/formula-sheets/class-12-physics-alternating-current",
+    "title": "Class 12 Physics: Alternating Current Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 12 physics: alternating current formulas — all 8 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "AC Voltage",
+        "expression": "V = V₀ sin(ωt + φ)"
+      },
+      {
+        "name": "RMS Value",
+        "expression": "V_rms = V₀/√2"
+      },
+      {
+        "name": "AC Power",
+        "expression": "P = V_rms × I_rms × cosφ"
+      },
+      {
+        "name": "Impedance",
+        "expression": "Z = √(R² + (X_L − X_C)²)"
+      },
+      {
+        "name": "Capacitive Reactance",
+        "expression": "X_C = 1/ωC"
+      },
+      {
+        "name": "Inductive Reactance",
+        "expression": "X_L = ωL"
+      },
+      {
+        "name": "Phase Angle",
+        "expression": "tanφ = (X_L − X_C)/R"
+      },
+      {
+        "name": "Resonant Frequency",
+        "expression": "f = 1/(2π√LC)"
+      }
+    ],
+    "count": 8
+  },
+  {
+    "slug": "class-12-physics-atoms-and-nuclei",
+    "path": "/formula-sheets/class-12-physics-atoms-and-nuclei",
+    "title": "Class 12 Physics: Atoms and Nuclei Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 12 physics: atoms and nuclei formulas — all 7 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Bohr's Radius",
+        "expression": "a₀ = 4πε₀ℏ²/m_e e²"
+      },
+      {
+        "name": "Energy Levels",
+        "expression": "E_n = −13.6/n² eV"
+      },
+      {
+        "name": "Frequency of Photon",
+        "expression": "ν = (E₂−E₁)/h"
+      },
+      {
+        "name": "Mass Defect",
+        "expression": "ΔM = (Zm_p + Nm_n) − M_nucleus"
+      },
+      {
+        "name": "Binding Energy",
+        "expression": "BE = ΔM × c²"
+      },
+      {
+        "name": "Radioactive Decay",
+        "expression": "N = N₀e^(−λt)"
+      },
+      {
+        "name": "Half-Life",
+        "expression": "t_½ = 0.693/λ"
+      }
+    ],
+    "count": 7
+  },
+  {
+    "slug": "class-12-physics-current-electricity",
+    "path": "/formula-sheets/class-12-physics-current-electricity",
+    "title": "Class 12 Physics: Current Electricity Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 12 physics: current electricity formulas — all 8 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Electric Current",
+        "expression": "I = Q/t (in amperes)"
+      },
+      {
+        "name": "Ohm's Law",
+        "expression": "V = IR"
+      },
+      {
+        "name": "Resistivity",
+        "expression": "R = ρL/A"
+      },
+      {
+        "name": "Resistances in Series",
+        "expression": "R_total = R₁ + R₂ + R₃"
+      },
+      {
+        "name": "Resistances in Parallel",
+        "expression": "1/R_total = 1/R₁ + 1/R₂ + 1/R₃"
+      },
+      {
+        "name": "Kirchhoff's First Law",
+        "expression": "ΣI_in = ΣI_out (at junction)"
+      },
+      {
+        "name": "Kirchhoff's Second Law",
+        "expression": "ΣE = ΣIR (around loop)"
+      },
+      {
+        "name": "Power Dissipated",
+        "expression": "P = VI = I²R = V²/R"
+      }
+    ],
+    "count": 8
+  },
+  {
+    "slug": "class-12-physics",
+    "path": "/formula-sheets/class-12-physics",
+    "title": "Class 12 Physics Formula Sheet (PDF) — All Important Formulas Free",
+    "description": "Free class 12 physics formula sheet — all 93 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Coulomb's Law",
+        "expression": "F = kq₁q₂/r² = (1/(4πε₀))(q₁q₂/r²) — k ≈ 9×10⁹ N⋅m²/C², ε₀ = 8.85×10⁻¹² F/m"
+      },
+      {
+        "name": "Electric Field",
+        "expression": "E = F/q = kQ/r² (point charge) — E in N/C. Direction: away from +ve, toward -ve charge"
+      },
+      {
+        "name": "Electric Potential",
+        "expression": "V = kQ/r, V = W/q (work per unit charge) — V in volts (J/C). Potential energy U = qV = kQq/r"
+      },
+      {
+        "name": "Electric Dipole Moment",
+        "expression": "p = qd (magnitude) — q = charge magnitude, d = separation. Direction from -ve to +ve charge"
+      },
+      {
+        "name": "Dipole Potential",
+        "expression": "V = (kp cos θ)/r² = (1/(4πε₀))(p⃗·r̂)/r² — θ = angle from dipole axis. V depends on angle and distance"
+      },
+      {
+        "name": "Dipole Torque in Field",
+        "expression": "τ = pE sin θ = p⃗ × E⃗ — τ rotates dipole to align with field"
+      },
+      {
+        "name": "Dipole in Uniform Field",
+        "expression": "U = -pE cos θ = -p⃗·E⃗ — Minimum (stable) when aligned with field"
+      }
+    ],
+    "count": 7
+  },
+  {
+    "slug": "class-12-physics-dual-nature-modern-physics",
+    "path": "/formula-sheets/class-12-physics-dual-nature-modern-physics",
+    "title": "Class 12 Physics: Dual Nature & Modern Physics Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 12 physics: dual nature & modern physics formulas — all 4 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Photon energy",
+        "expression": "E = hν = hc/λ, where h = 6.63 × 10⁻³⁴ J·s"
+      },
+      {
+        "name": "Photoelectric equation",
+        "expression": "hν = φ₀ + ½mv²max (Einstein's equation, φ₀ = work function)"
+      },
+      {
+        "name": "de Broglie wavelength",
+        "expression": "λ = h/p = h/(mv) — matter behaves like a wave"
+      },
+      {
+        "name": "Mass–energy equivalence",
+        "expression": "E = mc² (Einstein)"
+      }
+    ],
+    "count": 4
+  },
+  {
+    "slug": "class-12-physics-electrostatics",
+    "path": "/formula-sheets/class-12-physics-electrostatics",
+    "title": "Class 12 Physics: Electrostatics Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 12 physics: electrostatics formulas — all 4 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Coulomb's law",
+        "expression": "F = (1/4πε₀) · (q₁q₂ / r²), where k = 1/4πε₀ = 9 × 10⁹ N·m²/C²"
+      },
+      {
+        "name": "Electric field",
+        "expression": "E = F/q = kq / r² · Unit: N/C or V/m"
+      },
+      {
+        "name": "Electric potential",
+        "expression": "V = kq / r · Unit: volt (V)"
+      },
+      {
+        "name": "Relation E and V",
+        "expression": "E = −dV/dr (field points from high to low potential)"
+      }
+    ],
+    "count": 4
+  },
+  {
+    "slug": "class-12-physics-dual-nature-of-radiation",
+    "path": "/formula-sheets/class-12-physics-dual-nature-of-radiation",
+    "title": "Class 12 Physics: Dual Nature of Radiation Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 12 physics: dual nature of radiation formulas — all 5 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Photoelectric Effect",
+        "expression": "hν = Φ + K.E_max"
+      },
+      {
+        "name": "Work Function",
+        "expression": "Φ = hν₀ (threshold frequency)"
+      },
+      {
+        "name": "de Broglie Wavelength",
+        "expression": "λ = h/p = h/mv"
+      },
+      {
+        "name": "Kinetic Energy (Electrons)",
+        "expression": "K.E = ½mv² = eV"
+      },
+      {
+        "name": "Stopping Potential",
+        "expression": "eV_s = hν − Φ"
+      }
+    ],
+    "count": 5
+  },
+  {
+    "slug": "class-12-physics-electrostatic-potential-and-capacitance",
+    "path": "/formula-sheets/class-12-physics-electrostatic-potential-and-capacitance",
+    "title": "Class 12 Physics: Electrostatic Potential and Capacitance Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 12 physics: electrostatic potential and capacitance formulas — all 7 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Electric Potential",
+        "expression": "V = W/q = (1/4πε₀) × (Q/r)"
+      },
+      {
+        "name": "Potential Difference",
+        "expression": "V_AB = V_A − V_B = −∫E·dr"
+      },
+      {
+        "name": "Capacitance",
+        "expression": "C = Q/V (in farads)"
+      },
+      {
+        "name": "Parallel Plate Capacitor",
+        "expression": "C = ε₀εᵣA/d"
+      },
+      {
+        "name": "Energy in Capacitor",
+        "expression": "U = ½QV = ½CV² = Q²/2C"
+      },
+      {
+        "name": "Capacitors in Series",
+        "expression": "1/C_total = 1/C₁ + 1/C₂ + 1/C₃"
+      },
+      {
+        "name": "Capacitors in Parallel",
+        "expression": "C_total = C₁ + C₂ + C₃"
+      }
+    ],
+    "count": 7
+  },
+  {
+    "slug": "class-12-physics-electric-charges-and-fields",
+    "path": "/formula-sheets/class-12-physics-electric-charges-and-fields",
+    "title": "Class 12 Physics: Electric Charges and Fields Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 12 physics: electric charges and fields formulas — all 6 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Coulomb's Law",
+        "expression": "F = (1/4πε₀) × (q₁q₂/r²)"
+      },
+      {
+        "name": "Electric Field",
+        "expression": "E = F/q = (1/4πε₀) × (Q/r²)"
+      },
+      {
+        "name": "Electric Field Superposition",
+        "expression": "E_net = √(E₁² + E₂² + 2E₁E₂cosθ)"
+      },
+      {
+        "name": "Dipole Moment",
+        "expression": "p = q × d (in coulomb-metre)"
+      },
+      {
+        "name": "Electric Field on Axis",
+        "expression": "E = (1/4πε₀) × (2pr)/(r² − a²)²"
+      },
+      {
+        "name": "Gauss's Law",
+        "expression": "∮E·dA = Q_enclosed/ε₀"
+      }
+    ],
+    "count": 6
+  },
+  {
+    "slug": "class-12-physics-electromagnetic-induction",
+    "path": "/formula-sheets/class-12-physics-electromagnetic-induction",
+    "title": "Class 12 Physics: Electromagnetic Induction Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 12 physics: electromagnetic induction formulas — all 7 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Magnetic Flux",
+        "expression": "Φ = BA cosθ (in weber)"
+      },
+      {
+        "name": "Faraday's Law",
+        "expression": "ε = −dΦ/dt"
+      },
+      {
+        "name": "Lenz's Law",
+        "expression": "Induced EMF opposes change in flux"
+      },
+      {
+        "name": "Motional EMF",
+        "expression": "ε = BLv"
+      },
+      {
+        "name": "Self Inductance",
+        "expression": "L = NΦ/I (in henry)"
+      },
+      {
+        "name": "Mutual Inductance",
+        "expression": "M = N₂Φ₂₁/I₁"
+      },
+      {
+        "name": "Energy in Inductor",
+        "expression": "U = ½LI²"
+      }
+    ],
+    "count": 7
+  },
+  {
+    "slug": "class-12-physics-moving-charges-and-magnetism",
+    "path": "/formula-sheets/class-12-physics-moving-charges-and-magnetism",
+    "title": "Class 12 Physics: Moving Charges and Magnetism Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 12 physics: moving charges and magnetism formulas — all 7 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Magnetic Force on Charge",
+        "expression": "F = qvB sinθ"
+      },
+      {
+        "name": "Lorentz Force",
+        "expression": "F = q(E + v×B)"
+      },
+      {
+        "name": "Radius of Circular Motion",
+        "expression": "r = mv/qB"
+      },
+      {
+        "name": "Magnetic Force on Wire",
+        "expression": "F = BIL sinθ"
+      },
+      {
+        "name": "Biot-Savart Law",
+        "expression": "dB = (μ₀/4π) × (Idl×r̂)/r²"
+      },
+      {
+        "name": "Magnetic Field (Long Wire)",
+        "expression": "B = (μ₀I)/(2πr)"
+      },
+      {
+        "name": "Magnetic Field (Solenoid)",
+        "expression": "B = μ₀nI"
+      }
+    ],
+    "count": 7
+  },
+  {
+    "slug": "class-12-physics-ray-optics",
+    "path": "/formula-sheets/class-12-physics-ray-optics",
+    "title": "Class 12 Physics: Ray Optics Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 12 physics: ray optics formulas — all 4 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Lens formula",
+        "expression": "1/v − 1/u = 1/f"
+      },
+      {
+        "name": "Lens maker's formula",
+        "expression": "1/f = (n − 1)(1/R₁ − 1/R₂)"
+      },
+      {
+        "name": "Magnification",
+        "expression": "m = v/u = height of image / height of object"
+      },
+      {
+        "name": "Power of a lens",
+        "expression": "P = 1/f (f in metres) · Unit: dioptre (D)"
+      }
+    ],
+    "count": 4
+  },
+  {
+    "slug": "class-12-physics-wave-optics",
+    "path": "/formula-sheets/class-12-physics-wave-optics",
+    "title": "Class 12 Physics: Wave Optics Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 12 physics: wave optics formulas — all 6 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Double Slit Interference",
+        "expression": "Path difference = 2d sinθ"
+      },
+      {
+        "name": "Young's Double Slit",
+        "expression": "λ = (2d × D)/Δx"
+      },
+      {
+        "name": "Single Slit Diffraction",
+        "expression": "a sinθ = nλ (minima)"
+      },
+      {
+        "name": "Resolving Power",
+        "expression": "R = λ_min/Δλ"
+      },
+      {
+        "name": "Brewster's Law",
+        "expression": "tanθ_B = n₂/n₁"
+      },
+      {
+        "name": "Fringe Width",
+        "expression": "w = λD/d"
+      }
+    ],
+    "count": 6
+  },
+  {
+    "slug": "class-11-physics-units-and-measurements",
+    "path": "/formula-sheets/class-11-physics-units-and-measurements",
+    "title": "Class 11 Physics: Units and Measurements Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 11 physics: units and measurements formulas — all 4 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "SI Base Units",
+        "expression": "Length: metre (m), Time: second (s), Mass: kg"
+      },
+      {
+        "name": "Dimensional Analysis",
+        "expression": "[M] [L] [T] — fundamental dimensions"
+      },
+      {
+        "name": "Precision and Accuracy",
+        "expression": "Error = |measured − true|/true × 100%"
+      },
+      {
+        "name": "Significant Figures",
+        "expression": "Non-zero digits + zeros between them"
+      }
+    ],
+    "count": 4
+  },
+  {
+    "slug": "class-9-biology-the-fundamental-unit-of-life-cell",
+    "path": "/formula-sheets/class-9-biology-the-fundamental-unit-of-life-cell",
+    "title": "Class 9 Biology: The Fundamental Unit of Life (Cell) Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 9 biology: the fundamental unit of life (cell) formulas — all 4 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Cell",
+        "expression": "The basic structural and functional unit of all living organisms."
+      },
+      {
+        "name": "Prokaryotic vs Eukaryotic",
+        "expression": "Prokaryotic: no true nucleus (bacteria) · Eukaryotic: has a nucleus (plants, animals)"
+      },
+      {
+        "name": "Key organelles",
+        "expression": "Nucleus (control) · Mitochondria (powerhouse) · Chloroplast (photosynthesis) · Ribosome (protein)"
+      },
+      {
+        "name": "Plant vs animal cell",
+        "expression": "Plant cells also have a cell wall, large vacuole and chloroplasts."
+      }
+    ],
+    "count": 4
+  },
+  {
+    "slug": "class-11-physics-waves",
+    "path": "/formula-sheets/class-11-physics-waves",
+    "title": "Class 11 Physics: Waves Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 11 physics: waves formulas — all 6 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Wave Equation",
+        "expression": "v = fλ (velocity = frequency × wavelength)"
+      },
+      {
+        "name": "Wave Speed (String)",
+        "expression": "v = √(T/μ) (tension/linear mass density)"
+      },
+      {
+        "name": "Intensity",
+        "expression": "I = P/A = ½ρvω²A²"
+      },
+      {
+        "name": "Doppler Effect",
+        "expression": "f' = f × (v ± v_observer)/(v ± v_source)"
+      },
+      {
+        "name": "Beats",
+        "expression": "f_beat = |f₁ − f₂|"
+      },
+      {
+        "name": "Sound Intensity Level",
+        "expression": "β = 10 log(I/I₀) dB"
+      }
+    ],
+    "count": 6
+  },
+  {
+    "slug": "class-9-chemistry-atoms-and-molecules",
+    "path": "/formula-sheets/class-9-chemistry-atoms-and-molecules",
+    "title": "Class 9 Chemistry: Atoms and Molecules Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 9 chemistry: atoms and molecules formulas — all 3 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Avogadro's number",
+        "expression": "1 mole = 6.022 × 10²³ particles (atoms/molecules/ions)"
+      },
+      {
+        "name": "Number of moles",
+        "expression": "moles = given mass / molar mass"
+      },
+      {
+        "name": "Molar mass",
+        "expression": "Mass of 1 mole in grams = atomic/molecular mass (e.g., water = 18 g/mol)"
+      }
+    ],
+    "count": 3
+  },
+  {
+    "slug": "class-9-biology-tissues",
+    "path": "/formula-sheets/class-9-biology-tissues",
+    "title": "Class 9 Biology: Tissues Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 9 biology: tissues formulas — all 3 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Plant tissues",
+        "expression": "Meristematic (cause growth) · Permanent (parenchyma, collenchyma, sclerenchyma)"
+      },
+      {
+        "name": "Animal tissues",
+        "expression": "Epithelial (covering) · Connective (support) · Muscular (movement) · Nervous (control)"
+      },
+      {
+        "name": "What a tissue is",
+        "expression": "A group of similar cells performing a specific function together."
+      }
+    ],
+    "count": 3
+  },
+  {
+    "slug": "class-9-chemistry-structure-of-the-atom",
+    "path": "/formula-sheets/class-9-chemistry-structure-of-the-atom",
+    "title": "Class 9 Chemistry: Structure of the Atom Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 9 chemistry: structure of the atom formulas — all 4 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Atomic number (Z)",
+        "expression": "Z = number of protons (= number of electrons in a neutral atom)"
+      },
+      {
+        "name": "Mass number (A)",
+        "expression": "A = number of protons + number of neutrons"
+      },
+      {
+        "name": "Electron shells",
+        "expression": "Maximum electrons in shell n = 2n² (K=2, L=8, M=18…)"
+      },
+      {
+        "name": "Subatomic particles",
+        "expression": "Proton (+, in nucleus) · Neutron (neutral, in nucleus) · Electron (−, around nucleus)"
+      }
+    ],
+    "count": 4
+  },
+  {
+    "slug": "class-9-maths-algebraic-identities",
+    "path": "/formula-sheets/class-9-maths-algebraic-identities",
+    "title": "Class 9 Maths: Algebraic Identities Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 9 maths: algebraic identities formulas — all 6 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Square of a sum/difference",
+        "expression": "(a + b)² = a² + 2ab + b² · (a − b)² = a² − 2ab + b²"
+      },
+      {
+        "name": "Difference of squares",
+        "expression": "a² − b² = (a + b)(a − b)"
+      },
+      {
+        "name": "Square of three terms",
+        "expression": "(a + b + c)² = a² + b² + c² + 2ab + 2bc + 2ca"
+      },
+      {
+        "name": "Cubes",
+        "expression": "(a + b)³ = a³ + b³ + 3ab(a + b) · (a − b)³ = a³ − b³ − 3ab(a − b)"
+      },
+      {
+        "name": "Sum & difference of cubes",
+        "expression": "a³ + b³ = (a + b)(a² − ab + b²) · a³ − b³ = (a − b)(a² + ab + b²)"
+      },
+      {
+        "name": "Special identity",
+        "expression": "a³ + b³ + c³ − 3abc = (a + b + c)(a² + b² + c² − ab − bc − ca)"
+      }
+    ],
+    "count": 6
+  },
+  {
+    "slug": "class-9-maths-heron-s-formula",
+    "path": "/formula-sheets/class-9-maths-heron-s-formula",
+    "title": "Class 9 Maths: Heron's Formula Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 9 maths: heron's formula formulas — all 3 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Semi-perimeter",
+        "expression": "s = (a + b + c) / 2, where a, b, c are the three sides"
+      },
+      {
+        "name": "Heron's formula",
+        "expression": "Area = √[ s(s − a)(s − b)(s − c) ]"
+      },
+      {
+        "name": "Why it's useful",
+        "expression": "It works for any triangle when you know all 3 sides — no height needed."
+      }
+    ],
+    "count": 3
+  },
+  {
+    "slug": "class-9-physics-force-laws-of-motion",
+    "path": "/formula-sheets/class-9-physics-force-laws-of-motion",
+    "title": "Class 9 Physics: Force & Laws of Motion Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 9 physics: force & laws of motion formulas — all 4 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Newton's three laws",
+        "expression": "1: inertia · 2: F = ma · 3: every action has an equal & opposite reaction"
+      },
+      {
+        "name": "Force",
+        "expression": "F = m × a · Unit: newton (N)"
+      },
+      {
+        "name": "Momentum",
+        "expression": "p = m × v · Unit: kg·m/s"
+      },
+      {
+        "name": "Impulse",
+        "expression": "Impulse = Force × time = change in momentum"
+      }
+    ],
+    "count": 4
+  },
+  {
+    "slug": "class-9-physics-gravitation",
+    "path": "/formula-sheets/class-9-physics-gravitation",
+    "title": "Class 9 Physics: Gravitation Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 9 physics: gravitation formulas — all 4 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Universal law of gravitation",
+        "expression": "F = G·(m₁m₂)/r², where G = 6.67 × 10⁻¹¹ N·m²/kg²"
+      },
+      {
+        "name": "Acceleration due to gravity",
+        "expression": "g = 9.8 m/s² on Earth's surface · g = GM/R²"
+      },
+      {
+        "name": "Weight",
+        "expression": "W = m × g  (weight changes with g; mass does not)"
+      },
+      {
+        "name": "Mass vs weight",
+        "expression": "Mass is the amount of matter (kg); weight is the gravitational pull on it (N)."
+      }
+    ],
+    "count": 4
+  },
+  {
+    "slug": "class-9-physics-motion",
+    "path": "/formula-sheets/class-9-physics-motion",
+    "title": "Class 9 Physics: Motion Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 9 physics: motion formulas — all 4 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "First equation",
+        "expression": "v = u + at  (final velocity)"
+      },
+      {
+        "name": "Second equation",
+        "expression": "s = ut + ½at²  (displacement)"
+      },
+      {
+        "name": "Third equation",
+        "expression": "v² = u² + 2as  (no time needed)"
+      },
+      {
+        "name": "Acceleration & speed",
+        "expression": "a = (v − u)/t · average speed = total distance / total time"
+      }
+    ],
+    "count": 4
+  },
+  {
+    "slug": "class-9-physics-work-energy-power",
+    "path": "/formula-sheets/class-9-physics-work-energy-power",
+    "title": "Class 9 Physics: Work, Energy & Power Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 9 physics: work, energy & power formulas — all 4 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Work",
+        "expression": "W = Force × displacement (in the direction of force) · Unit: joule (J)"
+      },
+      {
+        "name": "Kinetic energy",
+        "expression": "KE = ½ m v²  (energy of motion)"
+      },
+      {
+        "name": "Potential energy",
+        "expression": "PE = m g h  (energy due to height)"
+      },
+      {
+        "name": "Power",
+        "expression": "P = Work / time · Unit: watt (W) · 1 kWh = 3.6 × 10⁶ J"
+      }
+    ],
+    "count": 4
+  },
+  {
+    "slug": "class-12-mathematics-integration",
+    "path": "/formula-sheets/class-12-mathematics-integration",
+    "title": "Class 12 Mathematics: Integration Formulas (PDF) — All Important Formulas Free",
+    "description": "Free class 12 mathematics: integration formulas — all 6 key formulas on one page, downloadable as PDF for fast revision before CBSE board exams. No signup.",
+    "formulas": [
+      {
+        "name": "Power Rule Integration",
+        "expression": "∫x^n dx = x^(n+1)/(n+1) + C"
+      },
+      {
+        "name": "Exponential Integration",
+        "expression": "∫e^x dx = e^x + C"
+      },
+      {
+        "name": "Logarithmic Integration",
+        "expression": "∫(1/x) dx = ln|x| + C"
+      },
+      {
+        "name": "Integration by Parts",
+        "expression": "∫u·dv = uv − ∫v·du"
+      },
+      {
+        "name": "Definite Integral",
+        "expression": "∫ₐᵇ f(x)dx = F(b) − F(a)"
+      },
+      {
+        "name": "Area Under Curve",
+        "expression": "A = ∫ₐᵇ f(x)dx"
+      }
+    ],
+    "count": 6
+  }
+]

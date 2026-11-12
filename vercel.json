@@ -35,16 +35,6 @@
       "permanent": true
     },
     {
-      "source": "/formula-sheets",
-      "destination": "/syllabus/",
-      "permanent": true
-    },
-    {
-      "source": "/formula-sheets/",
-      "destination": "/syllabus/",
-      "permanent": true
-    },
-    {
       "source": "/q/the-threshold-voltage-silicon-diode-operated-:id/",
       "destination": "/q/the-threshold-voltage-silicon-diode-operated-this-a605c8/",
       "permanent": true
