@@ -44,26 +44,8 @@ with open(prob_path, 'w', encoding='utf-8') as f:
     f.write(prob)
 print("✔ Fixed probability HTML")
 
-# 5. Formula sheets redirect page
-fs_path = 'E:/PYQ_Wovrix_Portal/pyq-wovrix/formula-sheets/index.html'
-fs_content = """<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Official Syllabus & Formulas Blueprint | Learnosha</title>
-  <meta name="description" content="Redirecting to official CBSE Class 12, NEET UG, and JEE Main syllabus and formulas vault.">
-  <meta http-equiv="refresh" content="0; url=/syllabus/">
-  <link rel="canonical" href="https://learnosha.in/syllabus/">
-  <script>window.location.replace('/syllabus/');</script>
-</head>
-<body style="font-family: sans-serif; text-align: center; padding: 40px;">
-  <p>Redirecting to <a href="/syllabus/">Official Syllabus & Formulas Blueprint</a>...</p>
-</body>
-</html>
-"""
-with open(fs_path, 'w', encoding='utf-8') as f:
-    f.write(fs_content)
-print("✔ Converted formula-sheets/index.html to instant redirect")
+# 5. Formula sheets: keep active handwritten vault (do not redirect)
+print("✔ Formula sheets active handwritten vault preserved")
 
 # 6. Titles for paper-maker and syllabus
 pm_path = 'E:/PYQ_Wovrix_Portal/pyq-wovrix/paper-maker/index.html'

@@ -24,11 +24,12 @@ for rel, path in sorted(html_files):
         content = f.read()
 
     # 1. Check title
-    m_title = re.search(r'<title>(.*?)</title>', content, re.IGNORECASE)
-    if not m_title or not m_title.group(1).strip():
-        errors.append((rel, "Missing <title>"))
-    elif len(m_title.group(1).strip()) > 75 and 'google' not in rel:
-        warnings.append((rel, f"Title long ({len(m_title.group(1).strip())} chars): {m_title.group(1)[:50]}..."))
+    if 'google' not in rel:
+        m_title = re.search(r'<title>(.*?)</title>', content, re.IGNORECASE)
+        if not m_title or not m_title.group(1).strip():
+            errors.append((rel, "Missing <title>"))
+        elif len(m_title.group(1).strip()) > 75:
+            warnings.append((rel, f"Title long ({len(m_title.group(1).strip())} chars): {m_title.group(1)[:50]}..."))
 
     # 2. Check meta description
     if 'google' not in rel and '404' not in rel:
@@ -48,9 +49,8 @@ for rel, path in sorted(html_files):
         if matches:
             errors.append((rel, f"Contains old domain links: {matches[:3]}"))
 
-    # 5. Check for formula-sheets link
-    if "/formula-sheets/" in content or "/formula-sheets" in content:
-        errors.append((rel, "Contains link to old /formula-sheets/"))
+    # 5. Formula sheets portal is active and valid at /formula-sheets/
+    # (Previously an old redirect, now the active handwritten formula sheets vault)
 
     # 6. Check for stale "Class 10 (Soon)"
     if "Class 10 (Soon)" in content:
