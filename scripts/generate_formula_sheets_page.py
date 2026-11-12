@@ -8,7 +8,6 @@ with open('E:/PYQ_Wovrix_Portal/pyq-wovrix/data/formulas_master.json', 'r', enco
 
 chapters = master['chapters']
 
-# Highlighter color rotation
 HIGHLIGHT_CLASSES = ['highlight-yellow', 'highlight-blue', 'highlight-green', 'highlight-peach']
 
 def escape(s):
@@ -22,7 +21,6 @@ def render_formula_item(f, chap_subject):
     high_yield = f.get('high_yield', False)
     
     star_badge = '<span class="star-pill" title="Highly Repeated in Exams">⭐ High-Yield</span>' if high_yield else ''
-    
     note_html = f'<div class="formula-note"><span class="handwritten-accent">Note:</span> {note}</div>' if note else ''
     
     return f'''
@@ -51,7 +49,6 @@ def render_chapter_card(ch, idx):
     topper_tip = escape(ch['formulas'][0].get('topper_tip', '⭐ Master this chapter for guaranteed marks in board and competitive exams!'))
     
     hl_class = HIGHLIGHT_CLASSES[idx % len(HIGHLIGHT_CLASSES)]
-    
     formulas_html = "\n".join(render_formula_item(f, ch['subject']) for f in ch['formulas'])
     
     return f'''
@@ -86,12 +83,12 @@ def render_chapter_card(ch, idx):
 
 print("[2/3] Generating initial SSR HTML cards...")
 ssr_cards = []
-for idx, ch in enumerate(chapters[:30]): # Initial 30 high-yield chapters SSR
+for idx, ch in enumerate(chapters[:30]):
     ssr_cards.append(render_chapter_card(ch, idx))
 
 ssr_html_content = "\n".join(ssr_cards)
 
-print("[3/3] Assembling complete formula-sheets/index.html...")
+print("[3/3] Assembling complete formula-sheets/index.html with mobile viewport fixes...")
 
 full_html = f'''<!DOCTYPE html>
 <html lang="en">
@@ -104,7 +101,7 @@ full_html = f'''<!DOCTYPE html>
     gtag('js', new Date());
   </script>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
   <title>Handwritten Formula Sheets & Revision Vault (Class 9–12 Maths, Physics, Chemistry) | Learnosha</title>
   <meta name="description" content="Free handcrafted topper formula sheets and cheat sheets for Class 9, 10, 11 & 12 (Physics, Chemistry, Maths & Biology). Authentic handwritten style, KaTeX math, memory tricks, common exam traps, and 1-click PYQ practice.">
   <link rel="canonical" href="https://learnosha.in/formula-sheets/">
@@ -124,7 +121,19 @@ full_html = f'''<!DOCTYPE html>
   <link rel="stylesheet" href="/report-modal.css">
 
   <style>
-    /* Handwritten Vault Specific Styles */
+    /* Global Viewport & Mobile Normalization */
+    html, body {{
+      max-width: 100vw;
+      overflow-x: hidden;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }}
+
+    *, *:before, *:after {{
+      box-sizing: inherit;
+    }}
+
     :root {{
       --paper-bg: #fdfbf7;
       --paper-border: #e8e3d5;
@@ -149,9 +158,10 @@ full_html = f'''<!DOCTYPE html>
 
     .formula-hero {{
       text-align: center;
-      padding: 44px 20px 24px;
+      padding: 36px 16px 20px;
       max-width: 960px;
       margin: 0 auto;
+      box-sizing: border-box;
     }}
 
     .handwritten-badge {{
@@ -160,7 +170,7 @@ full_html = f'''<!DOCTYPE html>
       gap: 6px;
       padding: 5px 14px;
       border-radius: 9999px;
-      font-size: 12.5px;
+      font-size: 12px;
       font-weight: 800;
       letter-spacing: 0.04em;
       text-transform: uppercase;
@@ -168,6 +178,7 @@ full_html = f'''<!DOCTYPE html>
       color: #b45309;
       margin-bottom: 12px;
       border: 1px solid rgba(217, 119, 6, 0.25);
+      max-width: 100%;
     }}
 
     [data-theme="dark"] .handwritten-badge {{
@@ -177,7 +188,7 @@ full_html = f'''<!DOCTYPE html>
     }}
 
     .formula-hero-title {{
-      font-size: clamp(28px, 4.5vw, 42px);
+      font-size: clamp(25px, 5vw, 42px);
       font-weight: 800;
       letter-spacing: -0.025em;
       line-height: 1.2;
@@ -196,29 +207,31 @@ full_html = f'''<!DOCTYPE html>
     }}
 
     .formula-hero-subtitle {{
-      font-size: 15.5px;
+      font-size: 14.5px;
       color: var(--text-muted);
       line-height: 1.6;
       max-width: 760px;
-      margin: 0 auto 22px;
+      margin: 0 auto 20px;
+      padding: 0 8px;
     }}
 
     /* Hero Quick Highlights */
     .hero-stat-pills {{
       display: flex;
       justify-content: center;
-      gap: 12px;
+      gap: 8px;
       flex-wrap: wrap;
-      margin-bottom: 26px;
+      margin-bottom: 22px;
+      padding: 0 4px;
     }}
 
     .hero-stat-pill {{
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      padding: 5px 12px;
+      padding: 4px 10px;
       border-radius: 9999px;
-      font-size: 12px;
+      font-size: 11.5px;
       font-weight: 700;
       background: var(--surface);
       border: 1px solid var(--border);
@@ -228,20 +241,20 @@ full_html = f'''<!DOCTYPE html>
     .hero-actions {{
       display: flex;
       justify-content: center;
-      gap: 12px;
+      gap: 10px;
       flex-wrap: wrap;
-      margin-bottom: 28px;
+      margin-bottom: 24px;
     }}
 
     .btn-print-vault {{
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      padding: 10px 22px;
+      padding: 9px 20px;
       border-radius: 9999px;
       background: #0f172a;
       color: #ffffff;
-      font-size: 13.5px;
+      font-size: 13px;
       font-weight: 700;
       border: none;
       cursor: pointer;
@@ -256,52 +269,52 @@ full_html = f'''<!DOCTYPE html>
 
     .btn-print-vault:hover {{
       transform: translateY(-1px);
-      box-shadow: 0 6px 16px rgba(15, 23, 42, 0.25);
     }}
 
     .btn-view-toggle {{
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      padding: 9px 18px;
+      padding: 8px 16px;
       border-radius: 9999px;
       background: var(--surface);
       border: 1px solid var(--border);
       color: var(--text);
-      font-size: 13.5px;
+      font-size: 13px;
       font-weight: 700;
       cursor: pointer;
       transition: all 0.2s ease;
     }}
 
-    .btn-view-toggle:hover {{
-      border-color: var(--accent);
-    }}
-
     /* Search & Filter Container */
     .filter-section {{
       max-width: 1080px;
-      margin: 0 auto 32px;
-      padding: 0 20px;
+      margin: 0 auto 28px;
+      padding: 0 16px;
+      box-sizing: border-box;
+      width: 100%;
     }}
 
     .search-box-wrap {{
       max-width: 600px;
-      margin: 0 auto 20px;
+      margin: 0 auto 16px;
       position: relative;
+      width: 100%;
+      box-sizing: border-box;
     }}
 
     .search-input {{
       width: 100%;
-      padding: 13px 20px 13px 46px;
+      padding: 12px 18px 12px 44px;
       border-radius: 9999px;
       border: 1px solid var(--border);
       background: var(--surface);
       color: var(--text);
-      font-size: 14.5px;
+      font-size: 14px;
       box-shadow: var(--shadow-subtle);
       outline: none;
       transition: all 0.2s ease;
+      box-sizing: border-box;
     }}
 
     .search-input:focus {{
@@ -311,14 +324,14 @@ full_html = f'''<!DOCTYPE html>
 
     .search-icon-svg {{
       position: absolute;
-      left: 17px;
+      left: 16px;
       top: 50%;
       transform: translateY(-50%);
       color: var(--text-muted);
       pointer-events: none;
     }}
 
-    /* Class Tabs */
+    /* Class Tabs with Clean Horizontal Scroll on Mobile */
     .class-tabs-bar {{
       display: flex;
       justify-content: center;
@@ -328,14 +341,30 @@ full_html = f'''<!DOCTYPE html>
       border: 1px solid var(--border);
       border-radius: 9999px;
       max-width: 660px;
-      margin: 0 auto 16px;
+      margin: 0 auto 14px;
       overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+      box-sizing: border-box;
+    }}
+
+    .class-tabs-bar::-webkit-scrollbar {{
+      display: none;
+    }}
+
+    @media (max-width: 640px) {{
+      .class-tabs-bar {{
+        justify-content: flex-start;
+        border-radius: 12px;
+        padding: 5px;
+        width: 100%;
+      }}
     }}
 
     .class-tab-btn {{
-      padding: 7px 16px;
+      padding: 7px 14px;
       border-radius: 9999px;
-      font-size: 13px;
+      font-size: 12.5px;
       font-weight: 700;
       color: var(--text-muted);
       border: none;
@@ -343,6 +372,7 @@ full_html = f'''<!DOCTYPE html>
       cursor: pointer;
       transition: all 0.2s ease;
       white-space: nowrap;
+      flex-shrink: 0;
     }}
 
     .class-tab-btn:hover {{
@@ -361,18 +391,36 @@ full_html = f'''<!DOCTYPE html>
       justify-content: center;
       gap: 8px;
       flex-wrap: wrap;
+      box-sizing: border-box;
+    }}
+
+    @media (max-width: 640px) {{
+      .subject-chips-bar {{
+        justify-content: flex-start;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        padding-bottom: 4px;
+        width: 100%;
+      }}
+      .subject-chips-bar::-webkit-scrollbar {{
+        display: none;
+      }}
     }}
 
     .subject-chip {{
-      padding: 6px 14px;
+      padding: 6px 13px;
       border-radius: 9999px;
       border: 1px solid var(--border);
       background: var(--surface);
       color: var(--text);
-      font-size: 12.5px;
+      font-size: 12px;
       font-weight: 700;
       cursor: pointer;
       transition: all 0.15s ease;
+      white-space: nowrap;
+      flex-shrink: 0;
     }}
 
     .subject-chip:hover {{
@@ -385,29 +433,32 @@ full_html = f'''<!DOCTYPE html>
       border-color: var(--accent);
     }}
 
-    /* Vault Cards Grid */
+    /* Vault Cards Grid with minmax(0, 1fr) to prevent blowout */
     .vault-grid {{
       max-width: 1200px;
       margin: 0 auto;
-      padding: 0 20px 60px;
+      padding: 0 16px 60px;
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
-      gap: 28px;
+      grid-template-columns: repeat(auto-fill, minmax(min(100%, 360px), 1fr));
+      gap: 26px;
+      width: 100%;
+      box-sizing: border-box;
     }}
 
     @media (max-width: 768px) {{
       .vault-grid {{
-        grid-template-columns: 1fr;
-        gap: 22px;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 20px;
+        padding: 0 12px 40px;
       }}
     }}
 
-    /* Handwritten Card Styles */
+    /* Handwritten Card Styles - STRICT SIZING */
     .handwritten-card {{
       background-color: var(--paper-bg);
       border: 1.5px solid var(--paper-border);
       border-radius: 14px;
-      padding: 24px 22px 20px;
+      padding: 22px 18px 18px;
       position: relative;
       box-shadow: 0 4px 18px rgba(0, 0, 0, 0.035);
       transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -415,6 +466,18 @@ full_html = f'''<!DOCTYPE html>
       flex-direction: column;
       background-image: radial-gradient(var(--paper-grid) 1.2px, transparent 1.2px);
       background-size: 18px 18px;
+      min-width: 0;
+      max-width: 100%;
+      width: 100%;
+      box-sizing: border-box;
+      overflow: hidden;
+      word-break: break-word;
+    }}
+
+    @media (max-width: 480px) {{
+      .handwritten-card {{
+        padding: 20px 14px 16px;
+      }}
     }}
 
     .handwritten-card:hover {{
@@ -455,8 +518,8 @@ full_html = f'''<!DOCTYPE html>
       top: -10px;
       left: 50%;
       transform: translateX(-50%) rotate(-1deg);
-      width: 90px;
-      height: 20px;
+      width: 85px;
+      height: 18px;
       background: rgba(254, 240, 138, 0.55);
       border: 1px dashed rgba(202, 138, 4, 0.4);
       backdrop-filter: blur(2px);
@@ -474,11 +537,13 @@ full_html = f'''<!DOCTYPE html>
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 12px;
+      margin-bottom: 10px;
+      gap: 6px;
+      flex-wrap: wrap;
     }}
 
     .sheet-tag {{
-      font-size: 11.5px;
+      font-size: 11px;
       font-weight: 800;
       letter-spacing: 0.04em;
       text-transform: uppercase;
@@ -486,9 +551,9 @@ full_html = f'''<!DOCTYPE html>
     }}
 
     .count-pill {{
-      font-size: 11.5px;
+      font-size: 11px;
       font-weight: 700;
-      padding: 3px 8px;
+      padding: 2px 7px;
       border-radius: 9999px;
       background: rgba(0,0,0,0.05);
       color: var(--ink-muted);
@@ -499,13 +564,15 @@ full_html = f'''<!DOCTYPE html>
     }}
 
     .chapter-heading {{
-      margin: 0 0 16px 0;
+      margin: 0 0 14px 0;
       line-height: 1.25;
+      max-width: 100%;
+      word-break: break-word;
     }}
 
     .chapter-heading span {{
       font-family: 'Caveat', cursive;
-      font-size: 26px;
+      font-size: clamp(22px, 4.5vw, 26px);
       font-weight: 700;
       color: #0f172a;
       display: inline-block;
@@ -555,16 +622,24 @@ full_html = f'''<!DOCTYPE html>
     .formulas-container {{
       display: flex;
       flex-direction: column;
-      gap: 14px;
+      gap: 12px;
       flex: 1;
+      min-width: 0;
+      max-width: 100%;
+      width: 100%;
+      box-sizing: border-box;
     }}
 
     .formula-item {{
-      background: rgba(255, 255, 255, 0.65);
+      background: rgba(255, 255, 255, 0.7);
       border: 1px solid var(--paper-border);
       border-radius: 8px;
-      padding: 12px 14px;
+      padding: 10px 12px;
       position: relative;
+      min-width: 0;
+      max-width: 100%;
+      width: 100%;
+      box-sizing: border-box;
     }}
 
     [data-theme="dark"] .formula-item {{
@@ -575,32 +650,41 @@ full_html = f'''<!DOCTYPE html>
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 6px;
+      margin-bottom: 4px;
       gap: 8px;
+      min-width: 0;
+      max-width: 100%;
+      box-sizing: border-box;
     }}
 
     .formula-name {{
       font-family: 'Caveat', cursive;
-      font-size: 20px;
+      font-size: 19px;
       font-weight: 700;
       color: var(--ink-color);
       line-height: 1.2;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      min-width: 0;
+      flex: 1;
     }}
 
     .formula-badges {{
       display: flex;
       align-items: center;
-      gap: 6px;
+      gap: 5px;
       flex-shrink: 0;
     }}
 
     .star-pill {{
-      font-size: 10.5px;
+      font-size: 10px;
       font-weight: 800;
-      padding: 2px 6px;
+      padding: 2px 5px;
       border-radius: 4px;
       background: #fef3c7;
       color: #92400e;
+      white-space: nowrap;
     }}
 
     [data-theme="dark"] .star-pill {{
@@ -609,15 +693,16 @@ full_html = f'''<!DOCTYPE html>
     }}
 
     .btn-copy-latex {{
-      font-size: 11px;
+      font-size: 10.5px;
       font-weight: 600;
-      padding: 2px 7px;
+      padding: 2px 6px;
       border-radius: 4px;
       border: 1px solid var(--border);
       background: var(--surface);
       color: var(--text-muted);
       cursor: pointer;
       transition: all 0.15s ease;
+      white-space: nowrap;
     }}
 
     .btn-copy-latex:hover {{
@@ -625,19 +710,36 @@ full_html = f'''<!DOCTYPE html>
       color: var(--text);
     }}
 
+    /* Math Display - Auto Horizontal Scroll for Long Formulas */
     .math-display {{
       overflow-x: auto;
-      padding: 6px 0;
+      overflow-y: hidden;
+      -webkit-overflow-scrolling: touch;
+      padding: 4px 2px;
       color: var(--ink-color);
-      font-size: 15px;
+      font-size: 14.5px;
+      min-width: 0;
+      max-width: 100%;
+      width: 100%;
+      box-sizing: border-box;
+      text-align: center;
+    }}
+
+    .math-display .katex-display {{
+      margin: 0.25em 0 !important;
+      overflow-x: auto !important;
+      overflow-y: hidden !important;
+      -webkit-overflow-scrolling: touch !important;
+      max-width: 100% !important;
     }}
 
     .formula-note {{
       font-family: 'Kalam', cursive;
-      font-size: 13.5px;
+      font-size: 13px;
       color: var(--ink-muted);
       margin-top: 4px;
       line-height: 1.4;
+      word-break: break-word;
     }}
 
     .handwritten-accent {{
@@ -651,12 +753,16 @@ full_html = f'''<!DOCTYPE html>
       border: 1px solid var(--sticky-border);
       border-left: 4px solid #eab308;
       border-radius: 6px;
-      padding: 12px 14px;
-      margin-top: 16px;
+      padding: 10px 12px;
+      margin-top: 14px;
       color: var(--sticky-text);
       position: relative;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
       transform: rotate(-0.5deg);
+      min-width: 0;
+      max-width: 100%;
+      box-sizing: border-box;
+      word-break: break-word;
     }}
 
     .sticky-pin {{
@@ -668,7 +774,7 @@ full_html = f'''<!DOCTYPE html>
 
     .sticky-title {{
       font-family: 'Caveat', cursive;
-      font-size: 18px;
+      font-size: 17px;
       font-weight: 700;
       margin-bottom: 2px;
       letter-spacing: 0.02em;
@@ -676,15 +782,17 @@ full_html = f'''<!DOCTYPE html>
 
     .sticky-text {{
       font-family: 'Kalam', cursive;
-      font-size: 13.5px;
+      font-size: 13px;
       line-height: 1.45;
     }}
 
     /* Card Footer Practice Action */
     .card-footer-actions {{
-      margin-top: 16px;
-      padding-top: 12px;
+      margin-top: 14px;
+      padding-top: 10px;
       border-top: 1px dashed var(--paper-border);
+      min-width: 0;
+      max-width: 100%;
     }}
 
     .btn-practice-pyq {{
@@ -693,14 +801,16 @@ full_html = f'''<!DOCTYPE html>
       align-items: center;
       gap: 6px;
       width: 100%;
-      padding: 9px 14px;
+      padding: 9px 12px;
       border-radius: 8px;
       background: #0f172a;
       color: #ffffff;
-      font-size: 13px;
+      font-size: 12.5px;
       font-weight: 700;
       text-decoration: none;
       transition: all 0.2s ease;
+      box-sizing: border-box;
+      text-align: center;
     }}
 
     [data-theme="dark"] .btn-practice-pyq {{
@@ -709,20 +819,19 @@ full_html = f'''<!DOCTYPE html>
 
     .btn-practice-pyq:hover {{
       transform: translateY(-1px);
-      box-shadow: 0 4px 12px rgba(15, 23, 42, 0.15);
     }}
 
     /* Empty state */
     .empty-state {{
       text-align: center;
-      padding: 60px 20px;
+      padding: 50px 16px;
       color: var(--text-muted);
       grid-column: 1 / -1;
     }}
 
     .empty-state-icon {{
-      font-size: 42px;
-      margin-bottom: 12px;
+      font-size: 38px;
+      margin-bottom: 10px;
     }}
 
     /* Print Stylesheet */
@@ -1243,8 +1352,12 @@ full_html = f'''<!DOCTYPE html>
       grid.innerHTML = html;
 
       // Re-trigger KaTeX rendering on new cards
+      triggerMathRender(grid);
+    }}
+
+    function triggerMathRender(root) {{
       if (window.renderMathInElement) {{
-        renderMathInElement(grid, {{
+        renderMathInElement(root || document.body, {{
           delimiters: [
             {{left: '$$', right: '$$', display: true}},
             {{left: '$', right: '$', display: false}},
@@ -1253,6 +1366,9 @@ full_html = f'''<!DOCTYPE html>
           ],
           throwOnError: false
         }});
+      }} else {{
+        // Retry in case KaTeX CDN script is still downloading over slow mobile connection
+        setTimeout(() => triggerMathRender(root), 250);
       }}
     }}
 
@@ -1270,23 +1386,18 @@ full_html = f'''<!DOCTYPE html>
       return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
     }}
 
-    // Auto-render math on DOM load
+    // Auto-render math on DOM load with retry polling for slow networks
     document.addEventListener("DOMContentLoaded", function() {{
       const savedTheme = localStorage.getItem('theme');
       if (savedTheme) {{
         document.documentElement.setAttribute('data-theme', savedTheme);
       }}
-      if (window.renderMathInElement) {{
-        renderMathInElement(document.body, {{
-          delimiters: [
-            {{left: '$$', right: '$$', display: true}},
-            {{left: '$', right: '$', display: false}},
-            {{left: '\\(', right: '\\)', display: false}},
-            {{left: '\\[', right: '\\]', display: true}}
-          ],
-          throwOnError: false
-        }});
-      }}
+      triggerMathRender();
+    }});
+
+    // Also trigger math render on window load as extra guard
+    window.addEventListener("load", function() {{
+      triggerMathRender();
     }});
   </script>
 </body>

@@ -6,7 +6,6 @@ print("[1/4] Loading scraped formula dataset...")
 with open('E:/PYQ_Wovrix_Portal/pyq-wovrix/data/syllab_scraped_formulas.json', 'r', encoding='utf-8') as f:
     raw_items = json.load(f)
 
-# Common toppers' tips and traps dictionary for major topics
 TOPPER_TIPS = {
     "coulomb's law": "⚠️ Common Trap: Always express distance 'r' in meters (not cm or mm), and ensure charges are in Coulombs (convert µC by 10⁻⁶). In a dielectric medium of constant K, F_med = F_air / K.",
     "electric field": "⭐ Pro Tip: Electric field due to a point charge follows the inverse-square law. Field lines never intersect because at the intersection point there would be two directions of field, which is impossible.",
@@ -64,30 +63,34 @@ def format_latex(name, expr):
         note = parts[1].strip()
 
     latex = clean
-    replacements = [
+    # First Unicode normalization
+    unicode_replacements = [
         ('×', r' \times '),
         ('·', r' \cdot '),
-        ('ε₀', r'\varepsilon_0'),
-        ('ε', r'\varepsilon'),
-        ('π', r'\pi'),
-        ('λ', r'\lambda'),
-        ('ν', r'\nu'),
-        ('μ', r'\mu'),
-        ('ρ', r'\rho'),
-        ('σ', r'\sigma'),
-        ('θ', r'\theta'),
+        ('ε₀', r'\varepsilon_0 '),
+        ('ε', r'\varepsilon '),
+        ('π', r'\pi '),
+        ('λ', r'\lambda '),
+        ('ν', r'\nu '),
+        ('μ', r'\mu '),
+        ('µ', r'\mu '),
+        ('ρ', r'\rho '),
+        ('σ', r'\sigma '),
+        ('θ', r'\theta '),
+        ('φ', r'\phi '),
+        ('ϕ', r'\phi '),
         ('ω', r'\omega '),
         ('Δ', r'\Delta '),
-        ('Φ', r'\Phi'),
-        ('α', r'\alpha'),
-        ('β', r'\beta'),
-        ('γ', r'\gamma'),
+        ('Φ', r'\Phi '),
+        ('α', r'\alpha '),
+        ('β', r'\beta '),
+        ('γ', r'\gamma '),
         ('Σ', r'\sum '),
         ('½', r'\frac{1}{2}'),
         ('⅓', r'\frac{1}{3}'),
         ('¼', r'\frac{1}{4}'),
-        ('√', r'\sqrt'),
-        ('°', r'^\circ'),
+        ('—', '-'),
+        ('–', '-'),
         ('−', '-'),
         ('²', '^2'),
         ('³', '^3'),
@@ -99,9 +102,19 @@ def format_latex(name, expr):
         ('ₐ', '_a'),
         ('ᵇ', '^b'),
         ('ˣ', '^x'),
+        ('′', "'"),
+        ('%', r'\%'),
     ]
-    for orig, rep in replacements:
+    for orig, rep in unicode_replacements:
         latex = latex.replace(orig, rep)
+
+    # Combining vector arrows
+    latex = re.sub(r'([A-Za-z])\u20d7', r'\\vec{\1}', latex)
+
+    # Unicode square root √ symbol
+    latex = re.sub(r'√\s*([0-9A-Za-z_]+)', r'\\sqrt{\1}', latex)
+    latex = re.sub(r'√\((.*?)\)', r'\\sqrt{\1}', latex)
+    latex = latex.replace('√', r'\sqrt')
 
     nm = name.lower()
     if "ohm's law" in nm:
@@ -190,13 +203,34 @@ def format_latex(name, expr):
         latex = r"V = V_0 \sin(\omega t + \phi)"
     elif "ac current" in nm:
         latex = r"I = I_0 \sin(\omega t + \phi)"
+    elif "rms value" in nm or "rms voltage" in nm:
+        latex = r"V_{\text{rms}} = \frac{V_0}{\sqrt{2}} \approx 0.707 V_0"
     elif "rms current" in nm:
         latex = r"I_{\text{rms}} = \frac{I_0}{\sqrt{2}} \approx 0.707 I_0"
-    elif "rms voltage" in nm:
-        latex = r"V_{\text{rms}} = \frac{V_0}{\sqrt{2}} \approx 0.707 V_0"
+    elif "ac power" in nm:
+        latex = r"P_{\text{avg}} = V_{\text{rms}} \cdot I_{\text{rms}} \cos\phi"
+    elif "impedance" in nm:
+        latex = r"Z = \sqrt{R^2 + (X_L - X_C)^2}"
+    elif "capacitive reactance" in nm:
+        latex = r"X_C = \frac{1}{\omega C} = \frac{1}{2\pi f C}"
+    elif "inductive reactance" in nm:
+        latex = r"X_L = \omega L = 2\pi f L"
+    elif "phase angle" in nm:
+        latex = r"\tan\phi = \frac{X_L - X_C}{R}"
+    elif "resonant frequency" in nm:
+        latex = r"f_r = \frac{1}{2\pi \sqrt{LC}}, \quad \omega_r = \frac{1}{\sqrt{LC}}"
 
+    # Subscripts formatting
+    latex = latex.replace('_rms', r'_{\text{rms}}')
+    latex = latex.replace('_total', r'_{\text{total}}')
+    latex = latex.replace('_eq', r'_{\text{eq}}')
+    latex = latex.replace('_max', r'_{\max}')
+    latex = latex.replace('_min', r'_{\min}')
+
+    # Function formatting
     latex = re.sub(r'(?<!\\)(sin|cos|tan|cot|sec|csc|ln|log)\(', r'\\\1(', latex)
 
+    # Fractions formatting
     if '/' in latex and r'\frac' not in latex and len(latex) < 60:
         latex = re.sub(r'([A-Za-z0-9_]+)\s*/\s*([A-Za-z0-9_]+)', r'\\frac{\1}{\2}', latex)
 

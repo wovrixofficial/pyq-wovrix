@@ -37,7 +37,7 @@
         {
           "name": "RMS Value",
           "expression_raw": "V_rms = V₀/√2",
-          "latex": "V_rms = V_0/\\sqrt2",
+          "latex": "V_{\\text{rms}} = \\frac{V_0}{\\sqrt{2}} \\approx 0.707 V_0",
           "note": "",
           "topper_tip": "⭐ Peak vs RMS: Always remember AC ammeters and voltmeters measure RMS values (I_rms = I_0 / √2 ≈ 0.707 I_0), not peak values!",
           "high_yield": true
@@ -45,7 +45,7 @@
         {
           "name": "AC Power",
           "expression_raw": "P = V_rms × I_rms × cosφ",
-          "latex": "P = V_rms  \\times  I_rms  \\times  cosφ",
+          "latex": "P_{\\text{avg}} = V_{\\text{rms}} \\cdot I_{\\text{rms}} \\cos\\phi",
           "note": "",
           "topper_tip": "⭐ Peak vs RMS: Always remember AC ammeters and voltmeters measure RMS values (I_rms = I_0 / √2 ≈ 0.707 I_0), not peak values!",
           "high_yield": false
@@ -53,7 +53,7 @@
         {
           "name": "Impedance",
           "expression_raw": "Z = √(R² + (X_L − X_C)²)",
-          "latex": "Z = \\sqrt(R^2 + (X_L - X_C)^2)",
+          "latex": "Z = \\sqrt{R^2 + (X_L - X_C)^2}",
           "note": "",
           "topper_tip": "⭐ Peak vs RMS: Always remember AC ammeters and voltmeters measure RMS values (I_rms = I_0 / √2 ≈ 0.707 I_0), not peak values!",
           "high_yield": false
@@ -61,7 +61,7 @@
         {
           "name": "Capacitive Reactance",
           "expression_raw": "X_C = 1/ωC",
-          "latex": "X_C = 1/\\omega C",
+          "latex": "X_C = \\frac{1}{\\omega C} = \\frac{1}{2\\pi f C}",
           "note": "",
           "topper_tip": "⭐ Peak vs RMS: Always remember AC ammeters and voltmeters measure RMS values (I_rms = I_0 / √2 ≈ 0.707 I_0), not peak values!",
           "high_yield": false
@@ -69,7 +69,7 @@
         {
           "name": "Inductive Reactance",
           "expression_raw": "X_L = ωL",
-          "latex": "X_L = \\omega L",
+          "latex": "X_L = \\omega L = 2\\pi f L",
           "note": "",
           "topper_tip": "⭐ Peak vs RMS: Always remember AC ammeters and voltmeters measure RMS values (I_rms = I_0 / √2 ≈ 0.707 I_0), not peak values!",
           "high_yield": false
@@ -77,7 +77,7 @@
         {
           "name": "Phase Angle",
           "expression_raw": "tanφ = (X_L − X_C)/R",
-          "latex": "tanφ = (X_L - X_C)/R",
+          "latex": "\\tan\\phi = \\frac{X_L - X_C}{R}",
           "note": "",
           "topper_tip": "⭐ Peak vs RMS: Always remember AC ammeters and voltmeters measure RMS values (I_rms = I_0 / √2 ≈ 0.707 I_0), not peak values!",
           "high_yield": false
@@ -85,7 +85,7 @@
         {
           "name": "Resonant Frequency",
           "expression_raw": "f = 1/(2π√LC)",
-          "latex": "f = 1/(2\\pi\\sqrtLC)",
+          "latex": "f_r = \\frac{1}{2\\pi \\sqrt{LC}}, \\quad \\omega_r = \\frac{1}{\\sqrt{LC}}",
           "note": "",
           "topper_tip": "⭐ Peak vs RMS: Always remember AC ammeters and voltmeters measure RMS values (I_rms = I_0 / √2 ≈ 0.707 I_0), not peak values!",
           "high_yield": false
@@ -106,7 +106,7 @@
         {
           "name": "Bohr's Radius",
           "expression_raw": "a₀ = 4πε₀ℏ²/m_e e²",
-          "latex": "a_0 = 4\\pi\\varepsilon_0ℏ^\\frac{2}{m_e} e^2",
+          "latex": "a_0 = 4\\pi \\varepsilon_0 ℏ^\\frac{2}{m_e} e^2",
           "note": "",
           "topper_tip": "⭐ Quick Revision Note: Master this formula for 1-mark objective and 3-mark derivation questions in board and competitive exams.",
           "high_yield": false
@@ -122,7 +122,7 @@
         {
           "name": "Frequency of Photon",
           "expression_raw": "ν = (E₂−E₁)/h",
-          "latex": "\\nu = (E_2-E_1)/h",
+          "latex": "\\nu  = (E_2-E_1)/h",
           "note": "",
           "topper_tip": "⭐ Quick Revision Note: Master this formula for 1-mark objective and 3-mark derivation questions in board and competitive exams.",
           "high_yield": false
@@ -154,7 +154,7 @@
         {
           "name": "Half-Life",
           "expression_raw": "t_½ = 0.693/λ",
-          "latex": "t_\\frac{1}{2} = 0.693/\\lambda",
+          "latex": "t_\\frac{1}{2} = 0.693/\\lambda ",
           "note": "",
           "topper_tip": "⭐ Quick Revision Note: Master this formula for 1-mark objective and 3-mark derivation questions in board and competitive exams.",
           "high_yield": false
@@ -183,7 +183,7 @@
         {
           "name": "Electric Field",
           "expression_raw": "E = F/q = kQ/r² (point charge) — E in N/C. Direction: away from +ve, toward -ve charge",
-          "latex": "E = F/q = kQ/r^2 (point charge) — E in N/C. Direction: away from +ve, toward -ve charge",
+          "latex": "E = F/q = kQ/r^2 (point charge) - E in N/C. Direction: away from +ve, toward -ve charge",
           "note": "",
           "topper_tip": "⭐ Pro Tip: Electric field due to a point charge follows the inverse-square law. Field lines never intersect because at the intersection point there would be two directions of field, which is impossible.",
           "high_yield": false
@@ -199,7 +199,7 @@
         {
           "name": "Electric Dipole Moment",
           "expression_raw": "p = qd (magnitude) — q = charge magnitude, d = separation. Direction from -ve to +ve charge",
-          "latex": "p = qd (magnitude) — q = charge magnitude, d = separation. Direction from -ve to +ve charge",
+          "latex": "p = qd (magnitude) - q = charge magnitude, d = separation. Direction from -ve to +ve charge",
           "note": "",
           "topper_tip": "⭐ Quick Revision Note: Master this formula for 1-mark objective and 3-mark derivation questions in board and competitive exams.",
           "high_yield": false
@@ -207,7 +207,7 @@
         {
           "name": "Dipole Potential",
           "expression_raw": "V = (kp cos θ)/r² = (1/(4πε₀))(p⃗·r̂)/r² — θ = angle from dipole axis. V depends on angle and distance",
-          "latex": "V = (kp cos \\theta)/r^2 = (1/(4\\pi\\varepsilon_0))(p⃗ \\cdot r̂)/r^2 — \\theta = angle from dipole axis. V depends on angle and distance",
+          "latex": "V = (kp cos \\theta )/r^2 = (1/(4\\pi \\varepsilon_0 ))(\\vec{p} \\cdot r̂)/r^2 - \\theta  = angle from dipole axis. V depends on angle and distance",
           "note": "",
           "topper_tip": "⭐ Quick Revision Note: Master this formula for 1-mark objective and 3-mark derivation questions in board and competitive exams.",
           "high_yield": false
@@ -215,7 +215,7 @@
         {
           "name": "Dipole Torque in Field",
           "expression_raw": "τ = pE sin θ = p⃗ × E⃗ — τ rotates dipole to align with field",
-          "latex": "τ = pE sin \\theta = p⃗  \\times  E⃗ — τ rotates dipole to align with field",
+          "latex": "τ = pE sin \\theta  = \\vec{p}  \\times  \\vec{E} - τ rotates dipole to align with field",
           "note": "",
           "topper_tip": "⭐ Quick Revision Note: Master this formula for 1-mark objective and 3-mark derivation questions in board and competitive exams.",
           "high_yield": false
@@ -223,7 +223,7 @@
         {
           "name": "Dipole in Uniform Field",
           "expression_raw": "U = -pE cos θ = -p⃗·E⃗ — Minimum (stable) when aligned with field",
-          "latex": "U = -pE cos \\theta = -p⃗ \\cdot E⃗ — Minimum (stable) when aligned with field",
+          "latex": "U = -pE cos \\theta  = -\\vec{p} \\cdot \\vec{E} - Minimum (stable) when aligned with field",
           "note": "",
           "topper_tip": "⭐ Quick Revision Note: Master this formula for 1-mark objective and 3-mark derivation questions in board and competitive exams.",
           "high_yield": false
@@ -321,7 +321,7 @@
         {
           "name": "Photon energy",
           "expression_raw": "E = hν = hc/λ, where h = 6.63 × 10⁻³⁴ J·s",
-          "latex": "E = h\\nu = hc/\\lambda",
+          "latex": "E = h\\nu  = hc/\\lambda ",
           "note": "where h = 6.63 × 10⁻³⁴ J·s",
           "topper_tip": "⭐ High-Yield Rule: Always verify dimensional consistency before finalizing your answer in numericals. Check that units on both sides of the '=' match!",
           "high_yield": false
@@ -374,7 +374,7 @@
         {
           "name": "Work Function",
           "expression_raw": "Φ = hν₀ (threshold frequency)",
-          "latex": "\\Phi = h\\nu_0 (threshold frequency)",
+          "latex": "\\Phi  = h\\nu _0 (threshold frequency)",
           "note": "",
           "topper_tip": "⭐ Quick Revision Note: Master this formula for 1-mark objective and 3-mark derivation questions in board and competitive exams.",
           "high_yield": false
@@ -398,7 +398,7 @@
         {
           "name": "Stopping Potential",
           "expression_raw": "eV_s = hν − Φ",
-          "latex": "eV_s = h\\nu - \\Phi",
+          "latex": "eV_s = h\\nu  - \\Phi ",
           "note": "",
           "topper_tip": "⭐ Quick Revision Note: Master this formula for 1-mark objective and 3-mark derivation questions in board and competitive exams.",
           "high_yield": false
@@ -427,7 +427,7 @@
         {
           "name": "Electric Field",
           "expression_raw": "E = F/q = (1/4πε₀) × (Q/r²)",
-          "latex": "E = \\frac{F}{q} = (\\frac{1}{4}\\pi\\varepsilon_0)  \\times  (\\frac{Q}{r}^2)",
+          "latex": "E = \\frac{F}{q} = (\\frac{1}{4}\\pi \\varepsilon_0 )  \\times  (\\frac{Q}{r}^2)",
           "note": "",
           "topper_tip": "⭐ Pro Tip: Electric field due to a point charge follows the inverse-square law. Field lines never intersect because at the intersection point there would be two directions of field, which is impossible.",
           "high_yield": false
@@ -435,7 +435,7 @@
         {
           "name": "Electric Field Superposition",
           "expression_raw": "E_net = √(E₁² + E₂² + 2E₁E₂cosθ)",
-          "latex": "E_net = \\sqrt(E_1^2 + E_2^2 + 2E_1E_2cos\\theta)",
+          "latex": "E_net = \\sqrt{E_1^2 + E_2^2 + 2E_1E_2cos\\theta }",
           "note": "",
           "topper_tip": "⭐ Pro Tip: Electric field due to a point charge follows the inverse-square law. Field lines never intersect because at the intersection point there would be two directions of field, which is impossible.",
           "high_yield": false
@@ -451,7 +451,7 @@
         {
           "name": "Electric Field on Axis",
           "expression_raw": "E = (1/4πε₀) × (2pr)/(r² − a²)²",
-          "latex": "E = (\\frac{1}{4}\\pi\\varepsilon_0)  \\times  (2pr)/(r^2 - a^2)^2",
+          "latex": "E = (\\frac{1}{4}\\pi \\varepsilon_0 )  \\times  (2pr)/(r^2 - a^2)^2",
           "note": "",
           "topper_tip": "⭐ Pro Tip: Electric field due to a point charge follows the inverse-square law. Field lines never intersect because at the intersection point there would be two directions of field, which is impossible.",
           "high_yield": false
@@ -459,7 +459,7 @@
         {
           "name": "Gauss's Law",
           "expression_raw": "∮E·dA = Q_enclosed/ε₀",
-          "latex": "∮E \\cdot dA = Q_enclosed/\\varepsilon_0",
+          "latex": "∮E \\cdot dA = Q_enclosed/\\varepsilon_0 ",
           "note": "",
           "topper_tip": "⭐ Quick Revision Note: Master this formula for 1-mark objective and 3-mark derivation questions in board and competitive exams.",
           "high_yield": true
@@ -480,7 +480,7 @@
         {
           "name": "Magnetic Flux",
           "expression_raw": "Φ = BA cosθ (in weber)",
-          "latex": "\\Phi = BA cos\\theta (in weber)",
+          "latex": "\\Phi  = BA cos\\theta  (in weber)",
           "note": "",
           "topper_tip": "⭐ Quick Revision Note: Master this formula for 1-mark objective and 3-mark derivation questions in board and competitive exams.",
           "high_yield": false
@@ -488,7 +488,7 @@
         {
           "name": "Faraday's Law",
           "expression_raw": "ε = −dΦ/dt",
-          "latex": "\\varepsilon = -d\\\\frac{Phi}{dt}",
+          "latex": "\\varepsilon  = -d\\\\frac{Phi}{dt}",
           "note": "",
           "topper_tip": "⭐ Quick Revision Note: Master this formula for 1-mark objective and 3-mark derivation questions in board and competitive exams.",
           "high_yield": true
@@ -504,7 +504,7 @@
         {
           "name": "Motional EMF",
           "expression_raw": "ε = BLv",
-          "latex": "\\varepsilon = BLv",
+          "latex": "\\varepsilon  = BLv",
           "note": "",
           "topper_tip": "⭐ Quick Revision Note: Master this formula for 1-mark objective and 3-mark derivation questions in board and competitive exams.",
           "high_yield": false
@@ -520,7 +520,7 @@
         {
           "name": "Mutual Inductance",
           "expression_raw": "M = N₂Φ₂₁/I₁",
-          "latex": "M = N_2\\\\frac{Phi_2_1}{I_1}",
+          "latex": "M = N_2\\Phi \\frac{_2_1}{I_1}",
           "note": "",
           "topper_tip": "⭐ Quick Revision Note: Master this formula for 1-mark objective and 3-mark derivation questions in board and competitive exams.",
           "high_yield": false
@@ -549,7 +549,7 @@
         {
           "name": "Electric Potential",
           "expression_raw": "V = W/q = (1/4πε₀) × (Q/r)",
-          "latex": "V = \\frac{W}{q} = (\\frac{1}{4}\\pi\\varepsilon_0)  \\times  (\\frac{Q}{r})",
+          "latex": "V = \\frac{W}{q} = (\\frac{1}{4}\\pi \\varepsilon_0 )  \\times  (\\frac{Q}{r})",
           "note": "",
           "topper_tip": "⭐ Pro Tip: Electric potential is a scalar quantity! When finding net potential at a point, calculate algebraically with sign (positive for +q, negative for -q).",
           "high_yield": false
@@ -573,7 +573,7 @@
         {
           "name": "Parallel Plate Capacitor",
           "expression_raw": "C = ε₀εᵣA/d",
-          "latex": "C = \\varepsilon_0\\varepsilonᵣ\\frac{A}{d}",
+          "latex": "C = \\varepsilon_0 \\varepsilon ᵣ\\frac{A}{d}",
           "note": "",
           "topper_tip": "⚠️ Watch out: When a dielectric slab (dielectric constant K) is inserted: if battery remains connected, V is constant and C increases by K; if battery is disconnected, Q is constant and V decreases by 1/K.",
           "high_yield": false
@@ -589,7 +589,7 @@
         {
           "name": "Capacitors in Series",
           "expression_raw": "1/C_total = 1/C₁ + 1/C₂ + 1/C₃",
-          "latex": "\\frac{1}{C_total} = \\frac{1}{C_1} + \\frac{1}{C_2} + \\frac{1}{C_3}",
+          "latex": "\\frac{1}{C_}{\\text{total}} = \\frac{1}{C_1} + \\frac{1}{C_2} + \\frac{1}{C_3}",
           "note": "",
           "topper_tip": "⚠️ Watch out: When a dielectric slab (dielectric constant K) is inserted: if battery remains connected, V is constant and C increases by K; if battery is disconnected, Q is constant and V decreases by 1/K.",
           "high_yield": false
@@ -597,7 +597,7 @@
         {
           "name": "Capacitors in Parallel",
           "expression_raw": "C_total = C₁ + C₂ + C₃",
-          "latex": "C_total = C_1 + C_2 + C_3",
+          "latex": "C_{\\text{total}} = C_1 + C_2 + C_3",
           "note": "",
           "topper_tip": "⚠️ Watch out: When a dielectric slab (dielectric constant K) is inserted: if battery remains connected, V is constant and C increases by K; if battery is disconnected, Q is constant and V decreases by 1/K.",
           "high_yield": false
@@ -687,7 +687,7 @@
         {
           "name": "Magnetic Force on Wire",
           "expression_raw": "F = BIL sinθ",
-          "latex": "F = BIL sin\\theta",
+          "latex": "F = BIL sin\\theta ",
           "note": "",
           "topper_tip": "⭐ Quick Revision Note: Master this formula for 1-mark objective and 3-mark derivation questions in board and competitive exams.",
           "high_yield": false
@@ -695,7 +695,7 @@
         {
           "name": "Biot-Savart Law",
           "expression_raw": "dB = (μ₀/4π) × (Idl×r̂)/r²",
-          "latex": "dB = (\\\\frac{mu_0}{4}\\pi)  \\times  (Idl \\times r̂)/r^2",
+          "latex": "dB = (\\mu \\frac{_0}{4}\\pi )  \\times  (Idl \\times r̂)/r^2",
           "note": "",
           "topper_tip": "⭐ Quick Revision Note: Master this formula for 1-mark objective and 3-mark derivation questions in board and competitive exams.",
           "high_yield": true
@@ -703,7 +703,7 @@
         {
           "name": "Magnetic Field (Long Wire)",
           "expression_raw": "B = (μ₀I)/(2πr)",
-          "latex": "B = (\\mu_0I)/(2\\pir)",
+          "latex": "B = (\\mu _0I)/(2\\pi r)",
           "note": "",
           "topper_tip": "⭐ Quick Revision Note: Master this formula for 1-mark objective and 3-mark derivation questions in board and competitive exams.",
           "high_yield": false
@@ -711,7 +711,7 @@
         {
           "name": "Magnetic Field (Solenoid)",
           "expression_raw": "B = μ₀nI",
-          "latex": "B = \\mu_0nI",
+          "latex": "B = \\mu _0nI",
           "note": "",
           "topper_tip": "⭐ Quick Revision Note: Master this formula for 1-mark objective and 3-mark derivation questions in board and competitive exams.",
           "high_yield": false
@@ -777,7 +777,7 @@
         {
           "name": "Double Slit Interference",
           "expression_raw": "Path difference = 2d sinθ",
-          "latex": "Path difference = 2d sin\\theta",
+          "latex": "Path difference = 2d sin\\theta ",
           "note": "",
           "topper_tip": "⭐ Fringe Width: β = λD/d. To increase fringe width, increase distance between screen and slits (D) or decrease distance between slits (d).",
           "high_yield": false
@@ -785,7 +785,7 @@
         {
           "name": "Young's Double Slit",
           "expression_raw": "λ = (2d × D)/Δx",
-          "latex": "\\lambda = (2d  \\times  D)/\\Delta x",
+          "latex": "\\lambda  = (2d  \\times  D)/\\Delta x",
           "note": "",
           "topper_tip": "⭐ Quick Revision Note: Master this formula for 1-mark objective and 3-mark derivation questions in board and competitive exams.",
           "high_yield": false
@@ -793,7 +793,7 @@
         {
           "name": "Single Slit Diffraction",
           "expression_raw": "a sinθ = nλ (minima)",
-          "latex": "a sin\\theta = n\\lambda (minima)",
+          "latex": "a sin\\theta  = n\\lambda  (minima)",
           "note": "",
           "topper_tip": "⭐ Quick Revision Note: Master this formula for 1-mark objective and 3-mark derivation questions in board and competitive exams.",
           "high_yield": false
@@ -801,7 +801,7 @@
         {
           "name": "Resolving Power",
           "expression_raw": "R = λ_min/Δλ",
-          "latex": "R = \\lambda_min/\\Delta \\lambda",
+          "latex": "R = \\lambda _{\\min}/\\Delta \\lambda ",
           "note": "",
           "topper_tip": "⭐ Quick Revision Note: Master this formula for 1-mark objective and 3-mark derivation questions in board and competitive exams.",
           "high_yield": false
@@ -809,7 +809,7 @@
         {
           "name": "Brewster's Law",
           "expression_raw": "tanθ_B = n₂/n₁",
-          "latex": "tan\\theta_B = \\frac{n_2}{n_1}",
+          "latex": "tan\\theta _B = \\frac{n_2}{n_1}",
           "note": "",
           "topper_tip": "⭐ Quick Revision Note: Master this formula for 1-mark objective and 3-mark derivation questions in board and competitive exams.",
           "high_yield": true
@@ -817,7 +817,7 @@
         {
           "name": "Fringe Width",
           "expression_raw": "w = λD/d",
-          "latex": "w = \\\\frac{lambdaD}{d}",
+          "latex": "w = \\lambda \\frac{D}{d}",
           "note": "",
           "topper_tip": "⭐ Quick Revision Note: Master this formula for 1-mark objective and 3-mark derivation questions in board and competitive exams.",
           "high_yield": false
@@ -939,7 +939,7 @@
         {
           "name": "Degree of Dissociation",
           "expression_raw": "α = (initial − final)/initial",
-          "latex": "\\alpha = (initial - final)/initial",
+          "latex": "\\alpha  = (initial - final)/initial",
           "note": "",
           "topper_tip": "⭐ Topper Tip: Check state symbols (aq, s, l, g) and remember temperature must be converted to Kelvin (T = °C + 273.15) for all thermodynamic and kinetic formulas.",
           "high_yield": false
@@ -1045,7 +1045,7 @@
         {
           "name": "Relative lowering of vapour pressure",
           "expression_raw": "ΔP/P° = χ_solute = n_solute / (n_solute + n_solvent) — Independent of identity of solute (colligative); for non-volatile solutes",
-          "latex": "\\Delta P/P^\\circ = χ_solute = n_solute / (n_solute + n_solvent) — Independent of identity of solute (colligative)",
+          "latex": "\\Delta P/P° = χ_solute = n_solute / (n_solute + n_solvent) - Independent of identity of solute (colligative)",
           "note": "for non-volatile solutes",
           "topper_tip": "⭐ Topper Tip: Check state symbols (aq, s, l, g) and remember temperature must be converted to Kelvin (T = °C + 273.15) for all thermodynamic and kinetic formulas.",
           "high_yield": false
@@ -1053,7 +1053,7 @@
         {
           "name": "Boiling point elevation",
           "expression_raw": "ΔTb = Kb × m — Kb = molal boiling point elevation constant (°C·kg/mol), m = molality",
-          "latex": "\\Delta Tb = Kb  \\times  m — Kb = molal boiling point elevation constant (^\\circC \\cdot kg/mol), m = molality",
+          "latex": "\\Delta Tb = Kb  \\times  m - Kb = molal boiling point elevation constant (°C \\cdot kg/mol), m = molality",
           "note": "",
           "topper_tip": "⭐ Topper Tip: Check state symbols (aq, s, l, g) and remember temperature must be converted to Kelvin (T = °C + 273.15) for all thermodynamic and kinetic formulas.",
           "high_yield": false
@@ -1061,7 +1061,7 @@
         {
           "name": "Freezing point depression",
           "expression_raw": "ΔTf = Kf × m — Kf = molal freezing point depression constant (°C·kg/mol), m = molality",
-          "latex": "\\Delta Tf = Kf  \\times  m — Kf = molal freezing point depression constant (^\\circC \\cdot kg/mol), m = molality",
+          "latex": "\\Delta Tf = Kf  \\times  m - Kf = molal freezing point depression constant (°C \\cdot kg/mol), m = molality",
           "note": "",
           "topper_tip": "⭐ Topper Tip: Check state symbols (aq, s, l, g) and remember temperature must be converted to Kelvin (T = °C + 273.15) for all thermodynamic and kinetic formulas.",
           "high_yield": false
@@ -1077,7 +1077,7 @@
         {
           "name": "van't Hoff factor",
           "expression_raw": "i = observed colligative effect / expected effect for 1 mol solute — i ≈ 1 for nonelectrolytes, i > 1 for electrolytes (ions); ΔTb = i·Kb·m",
-          "latex": "i = observed colligative effect / expected effect for 1 mol solute — i ≈ 1 for nonelectrolytes, i > 1 for electrolytes (ions)",
+          "latex": "i = observed colligative effect / expected effect for 1 mol solute - i ≈ 1 for nonelectrolytes, i > 1 for electrolytes (ions)",
           "note": "ΔTb = i·Kb·m",
           "topper_tip": "⭐ Topper Tip: Check state symbols (aq, s, l, g) and remember temperature must be converted to Kelvin (T = °C + 273.15) for all thermodynamic and kinetic formulas.",
           "high_yield": false
@@ -1085,7 +1085,7 @@
         {
           "name": "Degree of dissociation (electrolytes)",
           "expression_raw": "α = (initial moles − final moles) / initial moles — i = 1 + (n−1)α where n = number of ions per formula unit",
-          "latex": "\\alpha = (initial moles - final moles) / initial moles — i = 1 + (n-1)\\alpha where n = number of ions per formula unit",
+          "latex": "\\alpha  = (initial moles - final moles) / initial moles - i = 1 + (n-1)\\alpha  where n = number of ions per formula unit",
           "note": "",
           "topper_tip": "⭐ Topper Tip: Check state symbols (aq, s, l, g) and remember temperature must be converted to Kelvin (T = °C + 273.15) for all thermodynamic and kinetic formulas.",
           "high_yield": false
@@ -1093,7 +1093,7 @@
         {
           "name": "Henry's Law for gas solubility",
           "expression_raw": "c = Kₕ × P_gas — c = concentration (mol/L), Kₕ = Henry's law constant, P in atm",
-          "latex": "c = Kₕ  \\times  P_gas — c = concentration (mol/L), Kₕ = Henry's law constant, P in atm",
+          "latex": "c = Kₕ  \\times  P_gas - c = concentration (mol/L), Kₕ = Henry's law constant, P in atm",
           "note": "",
           "topper_tip": "⭐ Topper Tip: Check state symbols (aq, s, l, g) and remember temperature must be converted to Kelvin (T = °C + 273.15) for all thermodynamic and kinetic formulas.",
           "high_yield": true
@@ -1101,7 +1101,7 @@
         {
           "name": "Solubility and common ion effect",
           "expression_raw": "s = √(Ksp) (pure water); Ksp = [A⁺]^a × [B⁻]^b for AB — Adding common ion decreases solubility; Ksp independent of concentration",
-          "latex": "s = \\sqrt(Ksp) (pure water)",
+          "latex": "s = \\sqrt{Ksp} (pure water)",
           "note": "Ksp = [A⁺]^a × [B⁻]^b for AB — Adding common ion decreases solubility; Ksp independent of concentration",
           "topper_tip": "⭐ Topper Tip: Check state symbols (aq, s, l, g) and remember temperature must be converted to Kelvin (T = °C + 273.15) for all thermodynamic and kinetic formulas.",
           "high_yield": true
@@ -1146,7 +1146,7 @@
         {
           "name": "Distance Point to Plane",
           "expression_raw": "d = |ax₀ + by₀ + cz₀ + d|/√(a² + b² + c²)",
-          "latex": "d = |ax_0 + by_0 + cz_0 + d|/\\sqrt(a^2 + b^2 + c^2)",
+          "latex": "d = |ax_0 + by_0 + cz_0 + d|/\\sqrt{a^2 + b^2 + c^2}",
           "note": "",
           "topper_tip": "⭐ Quick Revision Note: Master this formula for 1-mark objective and 3-mark derivation questions in board and competitive exams.",
           "high_yield": false
@@ -1154,7 +1154,7 @@
         {
           "name": "Angle Between Lines",
           "expression_raw": "cosθ = |a₁a₂ + b₁b₂ + c₁c₂|/(√(a₁² + b₁² + c₁²) × √(a₂² + b₂² + c₂²))",
-          "latex": "cos\\theta = |a_1a_2 + b_1b_2 + c_1c_2|/(\\sqrt(a_1^2 + b_1^2 + c_1^2)  \\times  \\sqrt(a_2^2 + b_2^2 + c_2^2))",
+          "latex": "cos\\theta  = |a_1a_2 + b_1b_2 + c_1c_2|/(\\sqrt{a_1^2 + b_1^2 + c_1^2}  \\times  \\sqrt{a_2^2 + b_2^2 + c_2^2})",
           "note": "",
           "topper_tip": "⭐ Quick Revision Note: Master this formula for 1-mark objective and 3-mark derivation questions in board and competitive exams.",
           "high_yield": false
@@ -1252,7 +1252,7 @@
         {
           "name": "sin⁻¹ x + sin⁻¹ y formula",
           "expression_raw": "sin⁻¹ x + sin⁻¹ y = sin⁻¹(x√(1-y²) + y√(1-x²)) if x² + y² ≤ 1",
-          "latex": "sin⁻¹ x + sin⁻¹ y = sin⁻¹(x\\sqrt(1-y^2) + y\\sqrt(1-x^2)) if x^2 + y^2 ≤ 1",
+          "latex": "sin⁻¹ x + sin⁻¹ y = sin⁻¹(x\\sqrt{1-y^2} + y\\sqrt{1-x^2}) if x^2 + y^2 ≤ 1",
           "note": "",
           "topper_tip": "⭐ Pro Shortcut: Look for symmetry or domain restrictions before expanding. Always add '+ C' in indefinite integrals to avoid losing 1 mark!",
           "high_yield": true
@@ -1260,7 +1260,7 @@
         {
           "name": "Derivatives of inverse trig functions",
           "expression_raw": "d/dx(sin⁻¹ x) = 1/√(1-x²); d/dx(cos⁻¹ x) = -1/√(1-x²); d/dx(tan⁻¹ x) = 1/(1+x²) — d/dx(cot⁻¹ x) = -1/(1+x²); d/dx(sec⁻¹ x) = 1/(|x|√(x²-1)); d/dx(cosec⁻¹ x) = -1/(|x|√(x²-1))",
-          "latex": "\\frac{d}{dx}(sin⁻¹ x) = 1/\\sqrt(1-x^2)",
+          "latex": "\\frac{d}{dx}(sin⁻¹ x) = 1/\\sqrt{1-x^2}",
           "note": "d/dx(cos⁻¹ x) = -1/√(1-x²); d/dx(tan⁻¹ x) = 1/(1+x²) — d/dx(cot⁻¹ x) = -1/(1+x²); d/dx(sec⁻¹ x) = 1/(|x|√(x²-1)); d/dx(cosec⁻¹ x) = -1/(|x|√(x²-1))",
           "topper_tip": "⭐ Pro Shortcut: Look for symmetry or domain restrictions before expanding. Always add '+ C' in indefinite integrals to avoid losing 1 mark!",
           "high_yield": false
@@ -1305,7 +1305,7 @@
         {
           "name": "Product rule",
           "expression_raw": "(uv)′ = u′v + uv′",
-          "latex": "(uv)′ = u′v + uv′",
+          "latex": "(uv)' = u'v + uv'",
           "note": "",
           "topper_tip": "⭐ Pro Shortcut: Look for symmetry or domain restrictions before expanding. Always add '+ C' in indefinite integrals to avoid losing 1 mark!",
           "high_yield": true
@@ -1313,7 +1313,7 @@
         {
           "name": "Quotient rule",
           "expression_raw": "(u/v)′ = (u′v − uv′) / v²",
-          "latex": "(\\frac{u}{v})′ = (u′v - uv′) / v^2",
+          "latex": "(\\frac{u}{v})' = (u'v - uv') / v^2",
           "note": "",
           "topper_tip": "⭐ Pro Shortcut: Look for symmetry or domain restrictions before expanding. Always add '+ C' in indefinite integrals to avoid losing 1 mark!",
           "high_yield": true
@@ -1684,7 +1684,7 @@
         {
           "name": "Magnitude of Vector",
           "expression_raw": "|a| = √(a₁² + a₂² + a₃²)",
-          "latex": "|a| = \\sqrt(a_1^2 + a_2^2 + a_3^2)",
+          "latex": "|a| = \\sqrt{a_1^2 + a_2^2 + a_3^2}",
           "note": "",
           "topper_tip": "⭐ Quick Revision Note: Master this formula for 1-mark objective and 3-mark derivation questions in board and competitive exams.",
           "high_yield": false
@@ -1692,7 +1692,7 @@
         {
           "name": "Dot Product",
           "expression_raw": "a·b = |a||b|cosθ = a₁b₁ + a₂b₂ + a₃b₃",
-          "latex": "a \\cdot b = |a||b|cos\\theta = a_1b_1 + a_2b_2 + a_3b_3",
+          "latex": "a \\cdot b = |a||b|cos\\theta  = a_1b_1 + a_2b_2 + a_3b_3",
           "note": "",
           "topper_tip": "⭐ Quick Revision Note: Master this formula for 1-mark objective and 3-mark derivation questions in board and competitive exams.",
           "high_yield": false
@@ -1700,7 +1700,7 @@
         {
           "name": "Cross Product",
           "expression_raw": "a×b = |a||b|sinθ × n̂",
-          "latex": "a \\times b = |a||b|sin\\theta  \\times  n̂",
+          "latex": "a \\times b = |a||b|sin\\theta   \\times  n̂",
           "note": "",
           "topper_tip": "⭐ Quick Revision Note: Master this formula for 1-mark objective and 3-mark derivation questions in board and competitive exams.",
           "high_yield": false
@@ -1737,7 +1737,7 @@
         {
           "name": "Dimensional Analysis",
           "expression_raw": "[M^a L^b T^c I^d K^e] — M = mass, L = length, T = time, I = current, K = temperature, N = amount of substance",
-          "latex": "[M^a L^b T^c I^d K^e] — M = mass, L = length, T = time, I = current, K = temperature, N = amount of substance",
+          "latex": "[M^a L^b T^c I^d K^e] - M = mass, L = length, T = time, I = current, K = temperature, N = amount of substance",
           "note": "",
           "topper_tip": "⭐ Quick Revision Note: Master this formula for 1-mark objective and 3-mark derivation questions in board and competitive exams.",
           "high_yield": false
@@ -1753,7 +1753,7 @@
         {
           "name": "Uncertainty & Errors",
           "expression_raw": "Δx/x = ±(Δa/a + Δb/b) for products/quotients — Percentage error = (Δx/x)×100%. Random errors reduce with multiple measurements.",
-          "latex": "\\Delta x/x = ±(\\Delta a/a + \\Delta b/b) for products/quotients — Percentage error = (\\Delta x/x) \\times 100%. Random errors reduce with multiple measurements.",
+          "latex": "\\Delta x/x = ±(\\Delta a/a + \\Delta b/b) for products/quotients - Percentage error = (\\Delta x/x) \\times 100\\%. Random errors reduce with multiple measurements.",
           "note": "",
           "topper_tip": "⭐ Quick Revision Note: Master this formula for 1-mark objective and 3-mark derivation questions in board and competitive exams.",
           "high_yield": false
@@ -1883,7 +1883,7 @@
         {
           "name": "Friction Force",
           "expression_raw": "f = μN (friction coeff. × normal force)",
-          "latex": "f = \\muN (friction coeff.  \\times  normal force)",
+          "latex": "f = \\mu N (friction coeff.  \\times  normal force)",
           "note": "",
           "topper_tip": "⭐ Quick Revision Note: Master this formula for 1-mark objective and 3-mark derivation questions in board and competitive exams.",
           "high_yield": false
@@ -1981,7 +1981,7 @@
         {
           "name": "Simple Harmonic Motion",
           "expression_raw": "x = A sin(ωt + φ)",
-          "latex": "x = A \\sin(\\omega t + φ)",
+          "latex": "x = A \\sin(\\omega t + \\phi )",
           "note": "",
           "topper_tip": "⭐ Quick Revision Note: Master this formula for 1-mark objective and 3-mark derivation questions in board and competitive exams.",
           "high_yield": false
@@ -1989,7 +1989,7 @@
         {
           "name": "Velocity in SHM",
           "expression_raw": "v = dx/dt = Aω cos(ωt + φ)",
-          "latex": "v = \\frac{dx}{dt} = A\\omega  \\cos(\\omega t + φ)",
+          "latex": "v = \\frac{dx}{dt} = A\\omega  \\cos(\\omega t + \\phi )",
           "note": "",
           "topper_tip": "⭐ Quick Revision Note: Master this formula for 1-mark objective and 3-mark derivation questions in board and competitive exams.",
           "high_yield": false
@@ -2005,7 +2005,7 @@
         {
           "name": "Angular Frequency",
           "expression_raw": "ω = 2πf = 2π/T",
-          "latex": "\\omega  = 2\\pif = 2\\\\frac{pi}{T}",
+          "latex": "\\omega  = 2\\pi f = 2\\\\frac{pi}{T}",
           "note": "",
           "topper_tip": "⭐ Quick Revision Note: Master this formula for 1-mark objective and 3-mark derivation questions in board and competitive exams.",
           "high_yield": false
@@ -2013,7 +2013,7 @@
         {
           "name": "Period of Pendulum",
           "expression_raw": "T = 2π√(L/g)",
-          "latex": "T = 2\\pi\\sqrt(\\frac{L}{g})",
+          "latex": "T = 2\\pi \\sqrt{\\frac{L}{g}}",
           "note": "",
           "topper_tip": "⭐ Quick Revision Note: Master this formula for 1-mark objective and 3-mark derivation questions in board and competitive exams.",
           "high_yield": false
@@ -2021,7 +2021,7 @@
         {
           "name": "Period of Spring",
           "expression_raw": "T = 2π√(m/k)",
-          "latex": "T = 2\\pi\\sqrt(\\frac{m}{k})",
+          "latex": "T = 2\\pi \\sqrt{\\frac{m}{k}}",
           "note": "",
           "topper_tip": "⭐ Quick Revision Note: Master this formula for 1-mark objective and 3-mark derivation questions in board and competitive exams.",
           "high_yield": false
@@ -2066,7 +2066,7 @@
         {
           "name": "Temperature Conversion",
           "expression_raw": "°C = (°F − 32) × 5/9",
-          "latex": "^\\circC = (^\\circF - 32)  \\times  \\frac{5}{9}",
+          "latex": "°C = (°F - 32)  \\times  \\frac{5}{9}",
           "note": "",
           "topper_tip": "⭐ Quick Revision Note: Master this formula for 1-mark objective and 3-mark derivation questions in board and competitive exams.",
           "high_yield": false
@@ -2074,7 +2074,7 @@
         {
           "name": "Thermal Expansion (Linear)",
           "expression_raw": "ΔL = αL₀ΔT",
-          "latex": "\\Delta L = \\alphaL_0\\Delta T",
+          "latex": "\\Delta L = \\alpha L_0\\Delta T",
           "note": "",
           "topper_tip": "⭐ Quick Revision Note: Master this formula for 1-mark objective and 3-mark derivation questions in board and competitive exams.",
           "high_yield": false
@@ -2082,7 +2082,7 @@
         {
           "name": "Thermal Expansion (Volume)",
           "expression_raw": "ΔV = γV₀ΔT",
-          "latex": "\\Delta V = \\gammaV_0\\Delta T",
+          "latex": "\\Delta V = \\gamma V_0\\Delta T",
           "note": "",
           "topper_tip": "⭐ Quick Revision Note: Master this formula for 1-mark objective and 3-mark derivation questions in board and competitive exams.",
           "high_yield": false
@@ -2127,7 +2127,7 @@
         {
           "name": "Dimensional Analysis",
           "expression_raw": "[M] [L] [T] — fundamental dimensions",
-          "latex": "[M] [L] [T] — fundamental dimensions",
+          "latex": "[M] [L] [T] - fundamental dimensions",
           "note": "",
           "topper_tip": "⭐ Quick Revision Note: Master this formula for 1-mark objective and 3-mark derivation questions in board and competitive exams.",
           "high_yield": false
@@ -2135,7 +2135,7 @@
         {
           "name": "Precision and Accuracy",
           "expression_raw": "Error = |measured − true|/true × 100%",
-          "latex": "Error = |measured - true|/true  \\times  100%",
+          "latex": "Error = |measured - true|/true  \\times  100\\%",
           "note": "",
           "topper_tip": "⭐ Quick Revision Note: Master this formula for 1-mark objective and 3-mark derivation questions in board and competitive exams.",
           "high_yield": false
@@ -2164,7 +2164,7 @@
         {
           "name": "Wave Equation",
           "expression_raw": "v = fλ (velocity = frequency × wavelength)",
-          "latex": "v = f\\lambda (velocity = frequency  \\times  wavelength)",
+          "latex": "v = f\\lambda  (velocity = frequency  \\times  wavelength)",
           "note": "",
           "topper_tip": "⭐ Quick Revision Note: Master this formula for 1-mark objective and 3-mark derivation questions in board and competitive exams.",
           "high_yield": true
@@ -2172,7 +2172,7 @@
         {
           "name": "Wave Speed (String)",
           "expression_raw": "v = √(T/μ) (tension/linear mass density)",
-          "latex": "v = \\sqrt(T/\\mu) (\\frac{tension}{linear} mass density)",
+          "latex": "v = \\sqrt{T/\\mu } (\\frac{tension}{linear} mass density)",
           "note": "",
           "topper_tip": "⭐ Quick Revision Note: Master this formula for 1-mark objective and 3-mark derivation questions in board and competitive exams.",
           "high_yield": false
@@ -2180,7 +2180,7 @@
         {
           "name": "Intensity",
           "expression_raw": "I = P/A = ½ρvω²A²",
-          "latex": "I = P/A = \\frac{1}{2}\\rhov\\omega ^2A^2",
+          "latex": "I = P/A = \\frac{1}{2}\\rho v\\omega ^2A^2",
           "note": "",
           "topper_tip": "⭐ Quick Revision Note: Master this formula for 1-mark objective and 3-mark derivation questions in board and competitive exams.",
           "high_yield": false
@@ -2204,7 +2204,7 @@
         {
           "name": "Sound Intensity Level",
           "expression_raw": "β = 10 log(I/I₀) dB",
-          "latex": "\\beta = 10 \\log(\\frac{I}{I_0}) dB",
+          "latex": "\\beta  = 10 \\log(\\frac{I}{I_0}) dB",
           "note": "",
           "topper_tip": "⭐ Quick Revision Note: Master this formula for 1-mark objective and 3-mark derivation questions in board and competitive exams.",
           "high_yield": false
@@ -2225,7 +2225,7 @@
         {
           "name": "Work",
           "expression_raw": "W = F·s·cosθ (force × displacement × cosine)",
-          "latex": "W = F \\cdot s \\cdot cos\\theta (force  \\times  displacement  \\times  cosine)",
+          "latex": "W = F \\cdot s \\cdot cos\\theta  (force  \\times  displacement  \\times  cosine)",
           "note": "",
           "topper_tip": "⭐ Quick Revision Note: Master this formula for 1-mark objective and 3-mark derivation questions in board and competitive exams.",
           "high_yield": false
@@ -2265,7 +2265,7 @@
         {
           "name": "Mechanical Energy",
           "expression_raw": "E_total = K.E + P.E (constant in isolation)",
-          "latex": "E_total = K.E + P.E (constant in isolation)",
+          "latex": "E_{\\text{total}} = K.E + P.E (constant in isolation)",
           "note": "",
           "topper_tip": "⭐ Quick Revision Note: Master this formula for 1-mark objective and 3-mark derivation questions in board and competitive exams.",
           "high_yield": false
@@ -2334,7 +2334,7 @@
         {
           "name": "pH + pOH",
           "expression_raw": "pH + pOH = 14 (at 25°C)",
-          "latex": "pH + pOH = 14 (at 25^\\circC)",
+          "latex": "pH + pOH = 14 (at 25°C)",
           "note": "",
           "topper_tip": "⭐ Quick Revision Note: Master this formula for 1-mark objective and 3-mark derivation questions in board and competitive exams.",
           "high_yield": false
@@ -2355,7 +2355,7 @@
         {
           "name": "Number of moles from mass",
           "expression_raw": "n = given mass (g) / molar mass (g/mol) — n is always in moles; divide grams by atomic/molecular weight",
-          "latex": "n = given mass (g) / molar mass (g/mol) — n is always in moles",
+          "latex": "n = given mass (g) / molar mass (g/mol) - n is always in moles",
           "note": "divide grams by atomic/molecular weight",
           "topper_tip": "⭐ Quick Revision Note: Master this formula for 1-mark objective and 3-mark derivation questions in board and competitive exams.",
           "high_yield": false
@@ -2363,7 +2363,7 @@
         {
           "name": "Number of moles from particles",
           "expression_raw": "n = N / Nₐ — N = number of particles, Nₐ = Avogadro's number = 6.022 × 10²³",
-          "latex": "n = N / N_a — N = number of particles, N_a = Avogadro's number = 6.022  \\times  10^2^3",
+          "latex": "n = N / N_a - N = number of particles, N_a = Avogadro's number = 6.022  \\times  10^2^3",
           "note": "",
           "topper_tip": "⭐ Quick Revision Note: Master this formula for 1-mark objective and 3-mark derivation questions in board and competitive exams.",
           "high_yield": false
@@ -2371,7 +2371,7 @@
         {
           "name": "Molar mass from density",
           "expression_raw": "M = dRT / P — d = density (g/L), R = 0.0821 L·atm/(mol·K), T in Kelvin, P in atm",
-          "latex": "M = dRT / P — d = density (g/L), R = 0.0821 L \\cdot atm/(mol \\cdot K), T in Kelvin, P in atm",
+          "latex": "M = dRT / P - d = density (g/L), R = 0.0821 L \\cdot atm/(mol \\cdot K), T in Kelvin, P in atm",
           "note": "",
           "topper_tip": "⭐ Quick Revision Note: Master this formula for 1-mark objective and 3-mark derivation questions in board and competitive exams.",
           "high_yield": false
@@ -2379,7 +2379,7 @@
         {
           "name": "Percentage composition",
           "expression_raw": "% element = (atomic mass × no. of atoms / molar mass) × 100 — Sum of all percentages = 100%",
-          "latex": "% element = (atomic mass  \\times  no. of atoms / molar mass)  \\times  100 — Sum of all percentages = 100%",
+          "latex": "\\% element = (atomic mass  \\times  no. of atoms / molar mass)  \\times  100 - Sum of all percentages = 100\\%",
           "note": "",
           "topper_tip": "⭐ Quick Revision Note: Master this formula for 1-mark objective and 3-mark derivation questions in board and competitive exams.",
           "high_yield": false
@@ -2387,7 +2387,7 @@
         {
           "name": "Empirical formula mass",
           "expression_raw": "n = molar mass / empirical formula mass — Molecular formula = (empirical formula)ₙ",
-          "latex": "n = molar mass / empirical formula mass — Molecular formula = (empirical formula)ₙ",
+          "latex": "n = molar mass / empirical formula mass - Molecular formula = (empirical formula)ₙ",
           "note": "",
           "topper_tip": "⭐ Quick Revision Note: Master this formula for 1-mark objective and 3-mark derivation questions in board and competitive exams.",
           "high_yield": true
@@ -2395,7 +2395,7 @@
         {
           "name": "Stoichiometric ratio",
           "expression_raw": "mol A / mol B = coefficient A / coefficient B — From balanced chemical equation",
-          "latex": "mol A / mol B = coefficient A / coefficient B — From balanced chemical equation",
+          "latex": "mol A / mol B = coefficient A / coefficient B - From balanced chemical equation",
           "note": "",
           "topper_tip": "⭐ Quick Revision Note: Master this formula for 1-mark objective and 3-mark derivation questions in board and competitive exams.",
           "high_yield": false
@@ -2403,7 +2403,7 @@
         {
           "name": "Limiting reagent",
           "expression_raw": "Compare moles of reactant / stoichiometric coefficient — Smallest ratio is limiting; controls theoretical yield",
-          "latex": "Compare moles of reactant / stoichiometric coefficient — Smallest ratio is limiting",
+          "latex": "Compare moles of reactant / stoichiometric coefficient - Smallest ratio is limiting",
           "note": "controls theoretical yield",
           "topper_tip": "⭐ Quick Revision Note: Master this formula for 1-mark objective and 3-mark derivation questions in board and competitive exams.",
           "high_yield": false
@@ -2411,7 +2411,7 @@
         {
           "name": "Percent yield",
           "expression_raw": "% yield = (actual yield / theoretical yield) × 100 — Actual from experiment; theoretical from stoichiometry",
-          "latex": "% yield = (actual yield / theoretical yield)  \\times  100 — Actual from experiment",
+          "latex": "\\% yield = (actual yield / theoretical yield)  \\times  100 - Actual from experiment",
           "note": "theoretical from stoichiometry",
           "topper_tip": "⭐ Quick Revision Note: Master this formula for 1-mark objective and 3-mark derivation questions in board and competitive exams.",
           "high_yield": false
@@ -2480,7 +2480,7 @@
         {
           "name": "Percentage Composition",
           "expression_raw": "% = (mass of element/molar mass) × 100",
-          "latex": "% = (mass of \\frac{element}{molar} mass)  \\times  100",
+          "latex": "\\% = (mass of \\frac{element}{molar} mass)  \\times  100",
           "note": "",
           "topper_tip": "⭐ Topper Tip: Check state symbols (aq, s, l, g) and remember temperature must be converted to Kelvin (T = °C + 273.15) for all thermodynamic and kinetic formulas.",
           "high_yield": false
@@ -2517,7 +2517,7 @@
         {
           "name": "Frequency of Photon",
           "expression_raw": "ν = ΔE/h",
-          "latex": "\\nu = \\Delta \\frac{E}{h}",
+          "latex": "\\nu  = \\Delta \\frac{E}{h}",
           "note": "",
           "topper_tip": "⭐ Quick Revision Note: Master this formula for 1-mark objective and 3-mark derivation questions in board and competitive exams.",
           "high_yield": false
@@ -2525,7 +2525,7 @@
         {
           "name": "Wavelength of Light",
           "expression_raw": "λ = c/ν",
-          "latex": "\\lambda = c/\\nu",
+          "latex": "\\lambda  = c/\\nu ",
           "note": "",
           "topper_tip": "⭐ Quick Revision Note: Master this formula for 1-mark objective and 3-mark derivation questions in board and competitive exams.",
           "high_yield": false
@@ -2870,7 +2870,7 @@
         {
           "name": "Geometric Mean",
           "expression_raw": "GM = √(ab)",
-          "latex": "GM = \\sqrt(ab)",
+          "latex": "GM = \\sqrt{ab}",
           "note": "",
           "topper_tip": "⭐ Quick Revision Note: Master this formula for 1-mark objective and 3-mark derivation questions in board and competitive exams.",
           "high_yield": false
@@ -2984,7 +2984,7 @@
         {
           "name": "Distance Between Points",
           "expression_raw": "d = √((x₂ − x₁)² + (y₂ − y₁)²)",
-          "latex": "d = \\sqrt((x_2 - x_1)^2 + (y_2 - y_1)^2)",
+          "latex": "d = \\sqrt{(x_2 - x_1}^2 + (y_2 - y_1)^2)",
           "note": "",
           "topper_tip": "⭐ Quick Revision Note: Master this formula for 1-mark objective and 3-mark derivation questions in board and competitive exams.",
           "high_yield": false
@@ -2992,7 +2992,7 @@
         {
           "name": "Distance Point to Line",
           "expression_raw": "d = |ax₀ + by₀ + c|/√(a² + b²)",
-          "latex": "d = |ax_0 + by_0 + c|/\\sqrt(a^2 + b^2)",
+          "latex": "d = |ax_0 + by_0 + c|/\\sqrt{a^2 + b^2}",
           "note": "",
           "topper_tip": "⭐ Quick Revision Note: Master this formula for 1-mark objective and 3-mark derivation questions in board and competitive exams.",
           "high_yield": false
@@ -3000,7 +3000,7 @@
         {
           "name": "Angle Between Lines",
           "expression_raw": "tanθ = |(m₁ − m₂)/(1 + m₁m₂)|",
-          "latex": "tan\\theta = |(m_1 - m_2)/(1 + m_1m_2)|",
+          "latex": "tan\\theta  = |(m_1 - m_2)/(1 + m_1m_2)|",
           "note": "",
           "topper_tip": "⭐ Quick Revision Note: Master this formula for 1-mark objective and 3-mark derivation questions in board and competitive exams.",
           "high_yield": false
@@ -3021,7 +3021,7 @@
         {
           "name": "Sine Function",
           "expression_raw": "sinθ = opposite/hypotenuse",
-          "latex": "sin\\theta = \\frac{opposite}{hypotenuse}",
+          "latex": "sin\\theta  = \\frac{opposite}{hypotenuse}",
           "note": "",
           "topper_tip": "⭐ Quick Revision Note: Master this formula for 1-mark objective and 3-mark derivation questions in board and competitive exams.",
           "high_yield": false
@@ -3029,7 +3029,7 @@
         {
           "name": "Cosine Function",
           "expression_raw": "cosθ = adjacent/hypotenuse",
-          "latex": "cos\\theta = \\frac{adjacent}{hypotenuse}",
+          "latex": "cos\\theta  = \\frac{adjacent}{hypotenuse}",
           "note": "",
           "topper_tip": "⭐ Quick Revision Note: Master this formula for 1-mark objective and 3-mark derivation questions in board and competitive exams.",
           "high_yield": false
@@ -3037,7 +3037,7 @@
         {
           "name": "Tangent Function",
           "expression_raw": "tanθ = sinθ/cosθ = opposite/adjacent",
-          "latex": "tan\\theta = sin\\\\frac{theta}{cos}\\theta = \\frac{opposite}{adjacent}",
+          "latex": "tan\\theta  = sin\\\\frac{theta}{cos}\\theta  = \\frac{opposite}{adjacent}",
           "note": "",
           "topper_tip": "⭐ Quick Revision Note: Master this formula for 1-mark objective and 3-mark derivation questions in board and competitive exams.",
           "high_yield": false
@@ -3045,7 +3045,7 @@
         {
           "name": "Pythagorean Identity",
           "expression_raw": "sin²θ + cos²θ = 1",
-          "latex": "sin^2\\theta + cos^2\\theta = 1",
+          "latex": "sin^2\\theta  + cos^2\\theta  = 1",
           "note": "",
           "topper_tip": "⭐ Quick Revision Note: Master this formula for 1-mark objective and 3-mark derivation questions in board and competitive exams.",
           "high_yield": false
@@ -3053,7 +3053,7 @@
         {
           "name": "Double Angle: Sine",
           "expression_raw": "sin(2θ) = 2sinθ cosθ",
-          "latex": "\\sin(2\\theta) = 2sin\\theta cos\\theta",
+          "latex": "\\sin(2\\theta ) = 2sin\\theta  cos\\theta ",
           "note": "",
           "topper_tip": "⭐ Quick Revision Note: Master this formula for 1-mark objective and 3-mark derivation questions in board and competitive exams.",
           "high_yield": false
@@ -3061,7 +3061,7 @@
         {
           "name": "Double Angle: Cosine",
           "expression_raw": "cos(2θ) = cos²θ − sin²θ",
-          "latex": "\\cos(2\\theta) = cos^2\\theta - sin^2\\theta",
+          "latex": "\\cos(2\\theta ) = cos^2\\theta  - sin^2\\theta ",
           "note": "",
           "topper_tip": "⭐ Quick Revision Note: Master this formula for 1-mark objective and 3-mark derivation questions in board and competitive exams.",
           "high_yield": false
@@ -3069,7 +3069,7 @@
         {
           "name": "Double Angle: Tangent",
           "expression_raw": "tan(2θ) = 2tanθ/(1 − tan²θ)",
-          "latex": "\\tan(2\\theta) = 2tan\\theta/(1 - tan^2\\theta)",
+          "latex": "\\tan(2\\theta ) = 2tan\\theta /(1 - tan^2\\theta )",
           "note": "",
           "topper_tip": "⭐ Quick Revision Note: Master this formula for 1-mark objective and 3-mark derivation questions in board and competitive exams.",
           "high_yield": false
@@ -3313,7 +3313,7 @@
         {
           "name": "Critical angle & TIR",
           "expression_raw": "sin(θc) = n₂/n₁; total internal reflection if θ > θc",
-          "latex": "\\sin(\\thetac) = \\frac{n_2}{n_1}",
+          "latex": "\\sin(\\theta c) = \\frac{n_2}{n_1}",
           "note": "total internal reflection if θ > θc",
           "topper_tip": "⭐ Quick Revision Note: Master this formula for 1-mark objective and 3-mark derivation questions in board and competitive exams.",
           "high_yield": false
@@ -3546,7 +3546,7 @@
         {
           "name": "Alloys",
           "expression_raw": "A mixture of a metal with other elements (e.g., steel, brass) — often stronger / rust-resistant.",
-          "latex": "A mixture of a metal with other elements (e.g., steel, brass) — often stronger / rust-resistant.",
+          "latex": "A mixture of a metal with other elements (e.g., steel, brass) - often stronger / rust-resistant.",
           "note": "",
           "topper_tip": "⭐ Quick Revision Note: Master this formula for 1-mark objective and 3-mark derivation questions in board and competitive exams.",
           "high_yield": false
@@ -3620,7 +3620,7 @@
         {
           "name": "Fundamental Theorem of Arithmetic",
           "expression_raw": "Every positive integer > 1 is a product of primes, unique up to order — Used for HCF and LCM",
-          "latex": "Every positive integer > 1 is a product of primes, unique up to order — Used for HCF and LCM",
+          "latex": "Every positive integer > 1 is a product of primes, unique up to order - Used for HCF and LCM",
           "note": "",
           "topper_tip": "⭐ Pro Shortcut: Look for symmetry or domain restrictions before expanding. Always add '+ C' in indefinite integrals to avoid losing 1 mark!",
           "high_yield": true
@@ -3636,7 +3636,7 @@
         {
           "name": "Sum of roots",
           "expression_raw": "α + β = -b/a — For quadratic ax² + bx + c = 0",
-          "latex": "\\alpha + \\beta = -\\frac{b}{a} — For quadratic ax^2 + bx + c = 0",
+          "latex": "\\alpha  + \\beta  = -\\frac{b}{a} - For quadratic ax^2 + bx + c = 0",
           "note": "",
           "topper_tip": "⭐ Pro Shortcut: Look for symmetry or domain restrictions before expanding. Always add '+ C' in indefinite integrals to avoid losing 1 mark!",
           "high_yield": false
@@ -3644,7 +3644,7 @@
         {
           "name": "Product of roots",
           "expression_raw": "αβ = c/a — For quadratic ax² + bx + c = 0",
-          "latex": "\\alpha\\beta = \\frac{c}{a} — For quadratic ax^2 + bx + c = 0",
+          "latex": "\\alpha \\beta  = \\frac{c}{a} - For quadratic ax^2 + bx + c = 0",
           "note": "",
           "topper_tip": "⭐ Pro Shortcut: Look for symmetry or domain restrictions before expanding. Always add '+ C' in indefinite integrals to avoid losing 1 mark!",
           "high_yield": false
@@ -3652,7 +3652,7 @@
         {
           "name": "Polynomial division identity",
           "expression_raw": "p(x) = g(x) × q(x) + r(x) — where deg(r) < deg(g)",
-          "latex": "p(x) = g(x)  \\times  q(x) + r(x) — where deg(r) < deg(g)",
+          "latex": "p(x) = g(x)  \\times  q(x) + r(x) - where deg(r) < deg(g)",
           "note": "",
           "topper_tip": "⭐ Pro Shortcut: Look for symmetry or domain restrictions before expanding. Always add '+ C' in indefinite integrals to avoid losing 1 mark!",
           "high_yield": false
@@ -3689,7 +3689,7 @@
         {
           "name": "The key relation",
           "expression_raw": "Use tan θ = height / horizontal distance (draw the right triangle first).",
-          "latex": "Use tan \\theta = height / horizontal distance (draw the right triangle first).",
+          "latex": "Use tan \\theta  = height / horizontal distance (draw the right triangle first).",
           "note": "",
           "topper_tip": "⭐ Pro Shortcut: Look for symmetry or domain restrictions before expanding. Always add '+ C' in indefinite integrals to avoid losing 1 mark!",
           "high_yield": false
@@ -3710,7 +3710,7 @@
         {
           "name": "Circle basics",
           "expression_raw": "Area = πr² · Circumference = 2πr",
-          "latex": "Area = \\pir^2  \\cdot  Circumference = 2\\pir",
+          "latex": "Area = \\pi r^2  \\cdot  Circumference = 2\\pi r",
           "note": "",
           "topper_tip": "⭐ Pro Shortcut: Look for symmetry or domain restrictions before expanding. Always add '+ C' in indefinite integrals to avoid losing 1 mark!",
           "high_yield": false
@@ -3718,7 +3718,7 @@
         {
           "name": "Area of a sector",
           "expression_raw": "Area of sector = (θ/360) × πr², where θ = angle of the sector",
-          "latex": "Area of sector = (\\\\frac{theta}{360})  \\times  \\pir^2",
+          "latex": "Area of sector = (\\\\frac{theta}{360})  \\times  \\pi r^2",
           "note": "where θ = angle of the sector",
           "topper_tip": "⭐ Pro Shortcut: Look for symmetry or domain restrictions before expanding. Always add '+ C' in indefinite integrals to avoid losing 1 mark!",
           "high_yield": false
@@ -3726,7 +3726,7 @@
         {
           "name": "Length of an arc",
           "expression_raw": "Arc length = (θ/360) × 2πr",
-          "latex": "Arc length = (\\\\frac{theta}{360})  \\times  2\\pir",
+          "latex": "Arc length = (\\\\frac{theta}{360})  \\times  2\\pi r",
           "note": "",
           "topper_tip": "⭐ Pro Shortcut: Look for symmetry or domain restrictions before expanding. Always add '+ C' in indefinite integrals to avoid losing 1 mark!",
           "high_yield": false
@@ -3840,7 +3840,7 @@
         {
           "name": "Tangent length",
           "expression_raw": "Length of tangent = √(d² − r²), where d = distance of point from centre, r = radius.",
-          "latex": "Length of tangent = \\sqrt(d^2 - r^2)",
+          "latex": "Length of tangent = \\sqrt{d^2 - r^2}",
           "note": "where d = distance of point from centre, r = radius.",
           "topper_tip": "⭐ Pro Shortcut: Look for symmetry or domain restrictions before expanding. Always add '+ C' in indefinite integrals to avoid losing 1 mark!",
           "high_yield": false
@@ -3930,7 +3930,7 @@
         {
           "name": "Basic ratios",
           "expression_raw": "sin θ = opp/hyp, cos θ = adj/hyp, tan θ = opp/adj",
-          "latex": "sin \\theta = opp/hyp, cos \\theta = adj/hyp, tan \\theta = opp/adj",
+          "latex": "sin \\theta  = opp/hyp, cos \\theta  = adj/hyp, tan \\theta  = opp/adj",
           "note": "",
           "topper_tip": "⭐ Pro Shortcut: Look for symmetry or domain restrictions before expanding. Always add '+ C' in indefinite integrals to avoid losing 1 mark!",
           "high_yield": false
@@ -3938,7 +3938,7 @@
         {
           "name": "Reciprocal ratios",
           "expression_raw": "cosec θ = 1/sin θ, sec θ = 1/cos θ, cot θ = 1/tan θ",
-          "latex": "cosec \\theta = 1/sin \\theta, sec \\theta = 1/cos \\theta, cot \\theta = 1/tan \\theta",
+          "latex": "cosec \\theta  = 1/sin \\theta , sec \\theta  = 1/cos \\theta , cot \\theta  = 1/tan \\theta ",
           "note": "",
           "topper_tip": "⭐ Pro Shortcut: Look for symmetry or domain restrictions before expanding. Always add '+ C' in indefinite integrals to avoid losing 1 mark!",
           "high_yield": false
@@ -3946,7 +3946,7 @@
         {
           "name": "Fundamental identity",
           "expression_raw": "sin²θ + cos²θ = 1",
-          "latex": "sin^2\\theta + cos^2\\theta = 1",
+          "latex": "sin^2\\theta  + cos^2\\theta  = 1",
           "note": "",
           "topper_tip": "⭐ Pro Shortcut: Look for symmetry or domain restrictions before expanding. Always add '+ C' in indefinite integrals to avoid losing 1 mark!",
           "high_yield": false
@@ -3954,7 +3954,7 @@
         {
           "name": "Identity: tan",
           "expression_raw": "tan²θ + 1 = sec²θ",
-          "latex": "tan^2\\theta + 1 = sec^2\\theta",
+          "latex": "tan^2\\theta  + 1 = sec^2\\theta ",
           "note": "",
           "topper_tip": "⭐ Pro Shortcut: Look for symmetry or domain restrictions before expanding. Always add '+ C' in indefinite integrals to avoid losing 1 mark!",
           "high_yield": false
@@ -3962,7 +3962,7 @@
         {
           "name": "Identity: cot",
           "expression_raw": "1 + cot²θ = cosec²θ",
-          "latex": "1 + cot^2\\theta = cosec^2\\theta",
+          "latex": "1 + cot^2\\theta  = cosec^2\\theta ",
           "note": "",
           "topper_tip": "⭐ Pro Shortcut: Look for symmetry or domain restrictions before expanding. Always add '+ C' in indefinite integrals to avoid losing 1 mark!",
           "high_yield": false
@@ -3970,7 +3970,7 @@
         {
           "name": "Complementary angles",
           "expression_raw": "sin(90°-θ) = cos θ, cos(90°-θ) = sin θ, tan(90°-θ) = cot θ",
-          "latex": "\\sin(90^\\circ-\\theta) = cos \\theta, \\cos(90^\\circ-\\theta) = sin \\theta, \\tan(90^\\circ-\\theta) = cot \\theta",
+          "latex": "\\sin(90°-\\theta ) = cos \\theta , \\cos(90°-\\theta ) = sin \\theta , \\tan(90°-\\theta ) = cot \\theta ",
           "note": "",
           "topper_tip": "⭐ Pro Shortcut: Look for symmetry or domain restrictions before expanding. Always add '+ C' in indefinite integrals to avoid losing 1 mark!",
           "high_yield": false
@@ -3978,7 +3978,7 @@
         {
           "name": "Ratio relationships",
           "expression_raw": "tan θ = sin θ/cos θ, cot θ = cos θ/sin θ",
-          "latex": "tan \\theta = sin \\theta/cos \\theta, cot \\theta = cos \\theta/sin \\theta",
+          "latex": "tan \\theta  = sin \\theta /cos \\theta , cot \\theta  = cos \\theta /sin \\theta ",
           "note": "",
           "topper_tip": "⭐ Pro Shortcut: Look for symmetry or domain restrictions before expanding. Always add '+ C' in indefinite integrals to avoid losing 1 mark!",
           "high_yield": false
@@ -3986,7 +3986,7 @@
         {
           "name": "Special angles",
           "expression_raw": "0°, 30°, 45°, 60°, 90° — memorize sin/cos/tan values",
-          "latex": "0^\\circ, 30^\\circ, 45^\\circ, 60^\\circ, 90^\\circ — memorize sin/cos/tan values",
+          "latex": "0°, 30°, 45°, 60°, 90° - memorize \\frac{sin}{cos}/tan values",
           "note": "",
           "topper_tip": "⭐ Pro Shortcut: Look for symmetry or domain restrictions before expanding. Always add '+ C' in indefinite integrals to avoid losing 1 mark!",
           "high_yield": false
@@ -3994,7 +3994,7 @@
         {
           "name": "The 3 main ratios",
           "expression_raw": "sin θ = opposite/hypotenuse · cos θ = adjacent/hypotenuse · tan θ = opposite/adjacent",
-          "latex": "sin \\theta = opposite/hypotenuse  \\cdot  cos \\theta = adjacent/hypotenuse  \\cdot  tan \\theta = opposite/adjacent",
+          "latex": "sin \\theta  = opposite/hypotenuse  \\cdot  cos \\theta  = adjacent/hypotenuse  \\cdot  tan \\theta  = opposite/adjacent",
           "note": "",
           "topper_tip": "⭐ Pro Shortcut: Look for symmetry or domain restrictions before expanding. Always add '+ C' in indefinite integrals to avoid losing 1 mark!",
           "high_yield": false
@@ -4002,7 +4002,7 @@
         {
           "name": "The 3 identities",
           "expression_raw": "sin²θ + cos²θ = 1 · 1 + tan²θ = sec²θ · 1 + cot²θ = cosec²θ",
-          "latex": "sin^2\\theta + cos^2\\theta = 1  \\cdot  1 + tan^2\\theta = sec^2\\theta  \\cdot  1 + cot^2\\theta = cosec^2\\theta",
+          "latex": "sin^2\\theta  + cos^2\\theta  = 1  \\cdot  1 + tan^2\\theta  = sec^2\\theta   \\cdot  1 + cot^2\\theta  = cosec^2\\theta ",
           "note": "",
           "topper_tip": "⭐ Pro Shortcut: Look for symmetry or domain restrictions before expanding. Always add '+ C' in indefinite integrals to avoid losing 1 mark!",
           "high_yield": false
@@ -4010,7 +4010,7 @@
         {
           "name": "Standard values of sin",
           "expression_raw": "sin 0°=0, sin 30°=1/2, sin 45°=1/√2, sin 60°=√3/2, sin 90°=1",
-          "latex": "sin 0^\\circ=0, sin 30^\\circ=1/2, sin 45^\\circ=1/\\sqrt2, sin 60^\\circ=\\sqrt3/2, sin 90^\\circ=1",
+          "latex": "sin 0°=0, sin 30°=1/2, sin 45°=1/\\sqrt{2}, sin 60°=\\sqrt{3}/2, sin 90°=1",
           "note": "",
           "topper_tip": "⭐ Pro Shortcut: Look for symmetry or domain restrictions before expanding. Always add '+ C' in indefinite integrals to avoid losing 1 mark!",
           "high_yield": false
@@ -4018,7 +4018,7 @@
         {
           "name": "Standard values of cos",
           "expression_raw": "cos 0°=1, cos 30°=√3/2, cos 45°=1/√2, cos 60°=1/2, cos 90°=0",
-          "latex": "cos 0^\\circ=1, cos 30^\\circ=\\sqrt3/2, cos 45^\\circ=1/\\sqrt2, cos 60^\\circ=1/2, cos 90^\\circ=0",
+          "latex": "cos 0°=1, cos 30°=\\sqrt{3}/2, cos 45°=1/\\sqrt{2}, cos 60°=1/2, cos 90°=0",
           "note": "",
           "topper_tip": "⭐ Pro Shortcut: Look for symmetry or domain restrictions before expanding. Always add '+ C' in indefinite integrals to avoid losing 1 mark!",
           "high_yield": false
@@ -4140,7 +4140,7 @@
         {
           "name": "Relationship roots & coefficients",
           "expression_raw": "For αβ roots: α + β = -b/a, αβ = c/a",
-          "latex": "For \\alpha\\beta roots: \\alpha + \\beta = -b/a, \\alpha\\beta = c/a",
+          "latex": "For \\alpha \\beta  roots: \\alpha  + \\beta  = -b/a, \\alpha \\beta  = c/a",
           "note": "",
           "topper_tip": "⭐ Pro Shortcut: Look for symmetry or domain restrictions before expanding. Always add '+ C' in indefinite integrals to avoid losing 1 mark!",
           "high_yield": false
@@ -4246,7 +4246,7 @@
         {
           "name": "Sum of roots (α + β)",
           "expression_raw": "α + β = -b/a",
-          "latex": "\\alpha + \\beta = -\\frac{b}{a}",
+          "latex": "\\alpha  + \\beta  = -\\frac{b}{a}",
           "note": "",
           "topper_tip": "⭐ Pro Shortcut: Look for symmetry or domain restrictions before expanding. Always add '+ C' in indefinite integrals to avoid losing 1 mark!",
           "high_yield": false
@@ -4254,7 +4254,7 @@
         {
           "name": "Product of roots (αβ)",
           "expression_raw": "αβ = c/a",
-          "latex": "\\alpha\\beta = \\frac{c}{a}",
+          "latex": "\\alpha \\beta  = \\frac{c}{a}",
           "note": "",
           "topper_tip": "⭐ Pro Shortcut: Look for symmetry or domain restrictions before expanding. Always add '+ C' in indefinite integrals to avoid losing 1 mark!",
           "high_yield": false
@@ -4262,7 +4262,7 @@
         {
           "name": "Quadratic with given roots",
           "expression_raw": "x² - (α+β)x + αβ = 0",
-          "latex": "x^2 - (\\alpha+\\beta)x + \\alpha\\beta = 0",
+          "latex": "x^2 - (\\alpha +\\beta )x + \\alpha \\beta  = 0",
           "note": "",
           "topper_tip": "⭐ Pro Shortcut: Look for symmetry or domain restrictions before expanding. Always add '+ C' in indefinite integrals to avoid losing 1 mark!",
           "high_yield": false
@@ -4323,7 +4323,7 @@
         {
           "name": "Irrational proof",
           "expression_raw": "√p irrational if p is prime (contrapositive: assume rational, derive contradiction)",
-          "latex": "\\sqrtp irrational if p is prime (contrapositive: assume rational, derive contradiction)",
+          "latex": "\\sqrt{p} irrational if p is prime (contrapositive: assume rational, derive contradiction)",
           "note": "",
           "topper_tip": "⭐ Pro Shortcut: Look for symmetry or domain restrictions before expanding. Always add '+ C' in indefinite integrals to avoid losing 1 mark!",
           "high_yield": false
@@ -4392,7 +4392,7 @@
         {
           "name": "The key relation",
           "expression_raw": "Use tan θ = height / horizontal distance (draw the right triangle first).",
-          "latex": "Use tan \\theta = height / horizontal distance (draw the right triangle first).",
+          "latex": "Use tan \\theta  = height / horizontal distance (draw the right triangle first).",
           "note": "",
           "topper_tip": "⭐ Pro Shortcut: Look for symmetry or domain restrictions before expanding. Always add '+ C' in indefinite integrals to avoid losing 1 mark!",
           "high_yield": false
@@ -4445,7 +4445,7 @@
         {
           "name": "Variance",
           "expression_raw": "σ² = Σ(x - x̄)² / n",
-          "latex": "\\sigma^2 = \\sum (x - x̄)^\\frac{2}{n}",
+          "latex": "\\sigma ^2 = \\sum (x - x̄)^\\frac{2}{n}",
           "note": "",
           "topper_tip": "⭐ Pro Shortcut: Look for symmetry or domain restrictions before expanding. Always add '+ C' in indefinite integrals to avoid losing 1 mark!",
           "high_yield": false
@@ -4453,7 +4453,7 @@
         {
           "name": "Standard deviation",
           "expression_raw": "σ = √variance",
-          "latex": "\\sigma = \\sqrtvariance",
+          "latex": "\\sigma  = \\sqrt{variance}",
           "note": "",
           "topper_tip": "⭐ Pro Shortcut: Look for symmetry or domain restrictions before expanding. Always add '+ C' in indefinite integrals to avoid losing 1 mark!",
           "high_yield": false
@@ -4490,7 +4490,7 @@
         {
           "name": "Cylinder: surface & volume",
           "expression_raw": "CSA = 2πrh, TSA = 2πr(r+h), V = πr²h",
-          "latex": "CSA = 2\\pirh, TSA = 2\\pir(r+h), V = \\pir^2h",
+          "latex": "CSA = 2\\pi rh, TSA = 2\\pi r(r+h), V = \\pi r^2h",
           "note": "",
           "topper_tip": "⭐ Pro Shortcut: Look for symmetry or domain restrictions before expanding. Always add '+ C' in indefinite integrals to avoid losing 1 mark!",
           "high_yield": false
@@ -4498,7 +4498,7 @@
         {
           "name": "Cone: surface & volume",
           "expression_raw": "CSA = πrl, TSA = πr(r+l), V = ⅓πr²h (l = slant height)",
-          "latex": "CSA = \\pirl, TSA = \\pir(r+l), V = \\frac{1}{3}\\pir^2h (l = slant height)",
+          "latex": "CSA = \\pi rl, TSA = \\pi r(r+l), V = \\frac{1}{3}\\pi r^2h (l = slant height)",
           "note": "",
           "topper_tip": "⭐ Pro Shortcut: Look for symmetry or domain restrictions before expanding. Always add '+ C' in indefinite integrals to avoid losing 1 mark!",
           "high_yield": false
@@ -4506,7 +4506,7 @@
         {
           "name": "Sphere: surface & volume",
           "expression_raw": "SA = 4πr², V = ⁴⁄₃πr³",
-          "latex": "SA = 4\\pir^2, V = ⁴⁄_3\\pir^3",
+          "latex": "SA = 4\\pi r^2, V = ⁴⁄_3\\pi r^3",
           "note": "",
           "topper_tip": "⭐ Pro Shortcut: Look for symmetry or domain restrictions before expanding. Always add '+ C' in indefinite integrals to avoid losing 1 mark!",
           "high_yield": false
@@ -4514,7 +4514,7 @@
         {
           "name": "Hemisphere: surface & volume",
           "expression_raw": "CSA = 2πr², TSA = 3πr², V = ⅔πr³",
-          "latex": "CSA = 2\\pir^2, TSA = 3\\pir^2, V = ⅔\\pir^3",
+          "latex": "CSA = 2\\pi r^2, TSA = 3\\pi r^2, V = ⅔\\pi r^3",
           "note": "",
           "topper_tip": "⭐ Pro Shortcut: Look for symmetry or domain restrictions before expanding. Always add '+ C' in indefinite integrals to avoid losing 1 mark!",
           "high_yield": false
@@ -4604,7 +4604,7 @@
         {
           "name": "Similarity criteria",
           "expression_raw": "AA (or AAA) · SSS · SAS — any one proves two triangles are similar",
-          "latex": "AA (or AAA)  \\cdot  SSS  \\cdot  SAS — any one proves two triangles are similar",
+          "latex": "AA (or AAA)  \\cdot  SSS  \\cdot  SAS - any one proves two triangles are similar",
           "note": "",
           "topper_tip": "⭐ Pro Shortcut: Look for symmetry or domain restrictions before expanding. Always add '+ C' in indefinite integrals to avoid losing 1 mark!",
           "high_yield": false
@@ -4649,7 +4649,7 @@
         {
           "name": "The 3 main ratios",
           "expression_raw": "sin θ = opposite/hypotenuse · cos θ = adjacent/hypotenuse · tan θ = opposite/adjacent",
-          "latex": "sin \\theta = opposite/hypotenuse  \\cdot  cos \\theta = adjacent/hypotenuse  \\cdot  tan \\theta = opposite/adjacent",
+          "latex": "sin \\theta  = opposite/hypotenuse  \\cdot  cos \\theta  = adjacent/hypotenuse  \\cdot  tan \\theta  = opposite/adjacent",
           "note": "",
           "topper_tip": "⭐ Pro Shortcut: Look for symmetry or domain restrictions before expanding. Always add '+ C' in indefinite integrals to avoid losing 1 mark!",
           "high_yield": false
@@ -4657,7 +4657,7 @@
         {
           "name": "Reciprocals",
           "expression_raw": "cosec θ = 1/sin θ · sec θ = 1/cos θ · cot θ = 1/tan θ",
-          "latex": "cosec \\theta = 1/sin \\theta  \\cdot  sec \\theta = 1/cos \\theta  \\cdot  cot \\theta = 1/tan \\theta",
+          "latex": "cosec \\theta  = 1/sin \\theta   \\cdot  sec \\theta  = 1/cos \\theta   \\cdot  cot \\theta  = 1/tan \\theta ",
           "note": "",
           "topper_tip": "⭐ Pro Shortcut: Look for symmetry or domain restrictions before expanding. Always add '+ C' in indefinite integrals to avoid losing 1 mark!",
           "high_yield": false
@@ -4665,7 +4665,7 @@
         {
           "name": "Quotient relations",
           "expression_raw": "tan θ = sin θ / cos θ · cot θ = cos θ / sin θ",
-          "latex": "tan \\theta = sin \\theta / cos \\theta  \\cdot  cot \\theta = cos \\theta / sin \\theta",
+          "latex": "tan \\theta  = sin \\theta  / cos \\theta   \\cdot  cot \\theta  = cos \\theta  / sin \\theta ",
           "note": "",
           "topper_tip": "⭐ Pro Shortcut: Look for symmetry or domain restrictions before expanding. Always add '+ C' in indefinite integrals to avoid losing 1 mark!",
           "high_yield": false
@@ -4673,7 +4673,7 @@
         {
           "name": "The 3 identities",
           "expression_raw": "sin²θ + cos²θ = 1 · 1 + tan²θ = sec²θ · 1 + cot²θ = cosec²θ",
-          "latex": "sin^2\\theta + cos^2\\theta = 1  \\cdot  1 + tan^2\\theta = sec^2\\theta  \\cdot  1 + cot^2\\theta = cosec^2\\theta",
+          "latex": "sin^2\\theta  + cos^2\\theta  = 1  \\cdot  1 + tan^2\\theta  = sec^2\\theta   \\cdot  1 + cot^2\\theta  = cosec^2\\theta ",
           "note": "",
           "topper_tip": "⭐ Pro Shortcut: Look for symmetry or domain restrictions before expanding. Always add '+ C' in indefinite integrals to avoid losing 1 mark!",
           "high_yield": false
@@ -4681,7 +4681,7 @@
         {
           "name": "Standard values of sin",
           "expression_raw": "sin 0°=0, sin 30°=1/2, sin 45°=1/√2, sin 60°=√3/2, sin 90°=1",
-          "latex": "sin 0^\\circ=0, sin 30^\\circ=1/2, sin 45^\\circ=1/\\sqrt2, sin 60^\\circ=\\sqrt3/2, sin 90^\\circ=1",
+          "latex": "sin 0°=0, sin 30°=1/2, sin 45°=1/\\sqrt{2}, sin 60°=\\sqrt{3}/2, sin 90°=1",
           "note": "",
           "topper_tip": "⭐ Pro Shortcut: Look for symmetry or domain restrictions before expanding. Always add '+ C' in indefinite integrals to avoid losing 1 mark!",
           "high_yield": false
@@ -4689,7 +4689,7 @@
         {
           "name": "Standard values of cos",
           "expression_raw": "cos 0°=1, cos 30°=√3/2, cos 45°=1/√2, cos 60°=1/2, cos 90°=0",
-          "latex": "cos 0^\\circ=1, cos 30^\\circ=\\sqrt3/2, cos 45^\\circ=1/\\sqrt2, cos 60^\\circ=1/2, cos 90^\\circ=0",
+          "latex": "cos 0°=1, cos 30°=\\sqrt{3}/2, cos 45°=1/\\sqrt{2}, cos 60°=1/2, cos 90°=0",
           "note": "",
           "topper_tip": "⭐ Pro Shortcut: Look for symmetry or domain restrictions before expanding. Always add '+ C' in indefinite integrals to avoid losing 1 mark!",
           "high_yield": false
@@ -4832,7 +4832,7 @@
         {
           "name": "Magnification (Mirror)",
           "expression_raw": "m = -v/u = h'/h — h = object height, h' = image height. m negative = inverted image",
-          "latex": "m = -v/u = h'/h — h = object height, h' = image height. m negative = inverted image",
+          "latex": "m = -v/u = h'/h - h = object height, h' = image height. m negative = inverted image",
           "note": "",
           "topper_tip": "⭐ Quick Revision Note: Master this formula for 1-mark objective and 3-mark derivation questions in board and competitive exams.",
           "high_yield": false
@@ -4840,7 +4840,7 @@
         {
           "name": "Focal Length",
           "expression_raw": "f = R/2 — R = radius of curvature. Concave mirror f > 0, convex f < 0",
-          "latex": "f = R/2 — R = radius of curvature. Concave mirror f > 0, convex f < 0",
+          "latex": "f = R/2 - R = radius of curvature. Concave mirror f > 0, convex f < 0",
           "note": "",
           "topper_tip": "⭐ Quick Revision Note: Master this formula for 1-mark objective and 3-mark derivation questions in board and competitive exams.",
           "high_yield": false
@@ -5200,7 +5200,7 @@
         {
           "name": "Why it's useful",
           "expression_raw": "It works for any triangle when you know all 3 sides — no height needed.",
-          "latex": "It works for any triangle when you know all 3 sides — no height needed.",
+          "latex": "It works for any triangle when you know all 3 sides - no height needed.",
           "note": "",
           "topper_tip": "⭐ Pro Shortcut: Look for symmetry or domain restrictions before expanding. Always add '+ C' in indefinite integrals to avoid losing 1 mark!",
           "high_yield": false
