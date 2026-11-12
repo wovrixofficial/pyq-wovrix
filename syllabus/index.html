@@ -267,6 +267,123 @@
       color: var(--text);
     }
 
+    
+    /* Official PDF Download Card & Badges */
+    .official-pdf-card {
+      background: linear-gradient(135deg, rgba(37, 99, 235, 0.07) 0%, rgba(30, 64, 175, 0.03) 100%);
+      border: 1px solid rgba(37, 99, 235, 0.22);
+      border-radius: var(--radius-md);
+      padding: 16px 20px;
+      margin-bottom: 22px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 14px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+    }
+    .pdf-meta {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      min-width: 260px;
+      flex: 1;
+    }
+    .pdf-icon-box {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      background: #dc2626;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 13px;
+      letter-spacing: 0.5px;
+      box-shadow: 0 4px 10px rgba(220, 38, 38, 0.25);
+      flex-shrink: 0;
+    }
+    .pdf-details-title {
+      font-size: 14.5px;
+      font-weight: 700;
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .pdf-details-sub {
+      font-size: 12.5px;
+      color: var(--text-muted);
+      margin-top: 3px;
+      line-height: 1.4;
+    }
+    .btn-download-pdf {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #dc2626;
+      color: #ffffff !important;
+      padding: 9px 18px;
+      border-radius: 9999px;
+      font-size: 13px;
+      font-weight: 700;
+      text-decoration: none;
+      box-shadow: 0 2px 8px rgba(220, 38, 38, 0.25);
+      transition: all 0.15s ease;
+      white-space: nowrap;
+    }
+    .btn-download-pdf:hover {
+      background: #b91c1c;
+      transform: translateY(-1px);
+      box-shadow: 0 4px 14px rgba(220, 38, 38, 0.35);
+    }
+    .class-badge {
+      display: inline-block;
+      padding: 2px 7px;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: 700;
+      background: rgba(100, 116, 139, 0.12);
+      color: var(--text-muted);
+      margin-right: 4px;
+    }
+    .priority-badge {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.02em;
+    }
+    .priority-paramount {
+      background: rgba(220, 38, 38, 0.1);
+      color: #dc2626;
+      border: 1px solid rgba(220, 38, 38, 0.25);
+    }
+    .priority-guaranteed {
+      background: rgba(37, 99, 235, 0.1);
+      color: #2563eb;
+      border: 1px solid rgba(37, 99, 235, 0.25);
+    }
+    .priority-high {
+      background: rgba(16, 185, 129, 0.1);
+      color: #059669;
+      border: 1px solid rgba(16, 185, 129, 0.25);
+    }
+    .status-badge {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 11.5px;
+      font-weight: 600;
+      background: rgba(245, 158, 11, 0.1);
+      color: #d97706;
+      border: 1px solid rgba(245, 158, 11, 0.25);
+      margin-top: 5px;
+    }
+
     /* Collapsible Official Topics */
     .topics-collapse {
       border: 1px solid var(--border-light);
@@ -536,6 +653,25 @@
           <a href="/practice/?exam=cbse&subject=Chemistry" class="btn-action-pyq">⚡ Practice All Chemistry PYQs ➔</a>
         </div>
       </div>
+
+      <div class="official-pdf-card">
+        <div class="pdf-meta">
+          <div class="pdf-icon-box">PDF</div>
+          <div>
+            <div class="pdf-details-title">
+              Official CBSE Class 12 Chemistry Curriculum Document
+              <span style="font-size:11px; font-weight:700; color:#2563eb; background:rgba(37,99,235,0.08); padding:2px 8px; border-radius:4px;">Official Board Release</span>
+            </div>
+            <div class="pdf-details-sub">
+              Central Board of Secondary Education (CBSE Delhi) • Senior School Curriculum 2025–2026 • Verified PDF (931 KB)
+            </div>
+          </div>
+        </div>
+        <a href="/curriculum_pdf/Class12_Chemistry.pdf" target="_blank" download="CBSE_Class12_Chemistry.pdf" class="btn-download-pdf">
+          📥 Download Official PDF
+        </a>
+      </div>
+
 
       <div class="unit-section">
         <div class="unit-header">
@@ -863,9 +999,9 @@
     async function loadAllSyllabusData() {
       try {
         const [r12, r10, rEnt] = await Promise.all([
-          fetch('/data/syllabus_cbse_12.json?v=20261111_6').then(r => r.json()),
-          fetch('/data/syllabus_cbse_10.json?v=20261111_6').then(r => r.json()),
-          fetch('/data/syllabus_entrance.json?v=20261111_6').then(r => r.json())
+          fetch('/data/syllabus_cbse_12.json?v=20261112_1').then(r => r.json()),
+          fetch('/data/syllabus_cbse_10.json?v=20261112_1').then(r => r.json()),
+          fetch('/data/syllabus_entrance.json?v=20261112_1').then(r => r.json())
         ]);
         dataCbse12 = r12;
         dataCbse10 = r10;
@@ -998,7 +1134,7 @@
       }
     }
 
-    function renderCbse12View(container) {
+        function renderCbse12View(container) {
       if (!dataCbse12 || !dataCbse12[currentSubject]) {
         container.innerHTML = '<div style="text-align:center; padding:40px; color:var(--text-muted);">Loading curriculum data...</div>';
         return;
@@ -1021,19 +1157,39 @@
       chapters.forEach(ch => {
         const uKey = `${ch.unit_no || 'I'}: ${ch.unit_name || ch.chapter}`;
         if (!unitsMap[uKey]) unitsMap[uKey] = { unit: ch.unit_no, name: ch.unit_name, chapters: [] };
-        unitsMap[uKey].chapters.append ? unitsMap[uKey].chapters.append(ch) : unitsMap[uKey].chapters.push(ch);
+        unitsMap[uKey].chapters.push(ch);
       });
 
       let html = `
-        <div style="background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-md); padding:16px 20px; margin-bottom:20px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;">
+        <div style="background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-md); padding:16px 20px; margin-bottom:16px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;">
           <div>
-            <h2 style="font-size:18px; font-weight:800; color:var(--text); margin:0;">CBSE Class 12 ${currentSubject} (Code ${subData.code})</h2>
-            <p style="font-size:13px; color:var(--text-muted); margin:4px 0 0 0;">Official Examination Blueprint: ${subData.theory_marks} Marks Theory + ${subData.internal_marks} Marks Practical/Internal.</p>
+            <h2 style="font-size:18px; font-weight:800; color:var(--text); margin:0;">CBSE Class 12 ${currentSubject} (Subject Code ${subData.code})</h2>
+            <p style="font-size:13px; color:var(--text-muted); margin:4px 0 0 0;">Official Examination Blueprint: ${subData.theory_marks} Marks Theory + ${subData.internal_marks} Marks Practical/Internal = ${subData.total_marks} Marks.</p>
           </div>
           <div style="display:flex; gap:8px;">
             <a href="/practice/?exam=cbse&subject=${currentSubject}" class="btn-action-pyq">⚡ Practice All ${currentSubject} PYQs ➔</a>
           </div>
         </div>
+
+        ${subData.pdf_url ? `
+          <div class="official-pdf-card">
+            <div class="pdf-meta">
+              <div class="pdf-icon-box">PDF</div>
+              <div>
+                <div class="pdf-details-title">
+                  Official CBSE Class 12 ${currentSubject} Curriculum Document
+                  <span style="font-size:11px; font-weight:700; color:#2563eb; background:rgba(37,99,235,0.08); padding:2px 8px; border-radius:4px;">Official Board Release</span>
+                </div>
+                <div class="pdf-details-sub">
+                  Central Board of Secondary Education (CBSE Delhi) • Senior School Curriculum 2025–2026 • Verified PDF (${subData.pdf_size || 'Downloadable'})
+                </div>
+              </div>
+            </div>
+            <a href="${subData.pdf_url}" target="_blank" download="${subData.pdf_name || 'CBSE_Class12_' + currentSubject + '.pdf'}" class="btn-download-pdf">
+              📥 Download Official PDF
+            </a>
+          </div>
+        ` : ''}
       `;
 
       Object.keys(unitsMap).forEach(uKey => {
@@ -1065,7 +1221,7 @@
                   </div>
 
                   ${ch.official_topics ? `
-                    <details class="topics-collapse">
+                    <details class="topics-collapse" ${searchQuery ? 'open' : ''}>
                       <summary>▶ Prescribed Official Syllabus Topics (cbseacademic.nic.in)</summary>
                       <div class="topics-body">
                         ${ch.official_topics}
@@ -1091,7 +1247,7 @@
       container.innerHTML = html;
     }
 
-    function renderCbse10View(container) {
+        function renderCbse10View(container) {
       if (!dataCbse10 || !dataCbse10[currentSubject]) {
         container.innerHTML = '<div style="text-align:center; padding:40px; color:var(--text-muted);">Loading Class 10 Foundation curriculum...</div>';
         return;
@@ -1109,10 +1265,35 @@
       }
 
       let html = `
-        <div style="background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-md); padding:16px 20px; margin-bottom:20px;">
-          <h2 style="font-size:18px; font-weight:800; color:var(--text); margin:0;">CBSE Class 10 ${currentSubject} (Subject Code ${subData.code})</h2>
-          <p style="font-size:13px; color:var(--text-muted); margin:4px 0 0 0;">Official Secondary School Blueprint: 80 Marks Theory + 20 Marks Internal Assessment = 100 Marks.</p>
+        <div style="background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-md); padding:16px 20px; margin-bottom:16px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;">
+          <div>
+            <h2 style="font-size:18px; font-weight:800; color:var(--text); margin:0;">CBSE Class 10 ${currentSubject} (Subject Code ${subData.code})</h2>
+            <p style="font-size:13px; color:var(--text-muted); margin:4px 0 0 0;">Official Secondary School Blueprint: 80 Marks Theory + 20 Marks Internal Assessment = 100 Marks.</p>
+          </div>
+          <div style="display:flex; gap:8px;">
+            <a href="/practice/?exam=cbse&subject=${currentSubject}" class="btn-action-pyq">⚡ Practice All ${currentSubject} PYQs ➔</a>
+          </div>
         </div>
+
+        ${subData.pdf_url ? `
+          <div class="official-pdf-card">
+            <div class="pdf-meta">
+              <div class="pdf-icon-box">PDF</div>
+              <div>
+                <div class="pdf-details-title">
+                  Official CBSE Class 10 ${currentSubject} Curriculum Document
+                  <span style="font-size:11px; font-weight:700; color:#2563eb; background:rgba(37,99,235,0.08); padding:2px 8px; border-radius:4px;">Official Board Release</span>
+                </div>
+                <div class="pdf-details-sub">
+                  Central Board of Secondary Education (CBSE Delhi) • Secondary School Curriculum (IX-X) • Verified PDF (${subData.pdf_size || 'Downloadable'})
+                </div>
+              </div>
+            </div>
+            <a href="${subData.pdf_url}" target="_blank" download="${subData.pdf_name || 'CBSE_Class10_' + currentSubject + '.pdf'}" class="btn-download-pdf">
+              📥 Download Official PDF
+            </a>
+          </div>
+        ` : ''}
       `;
 
       html += `
@@ -1128,8 +1309,8 @@
               </div>
 
               ${ch.official_topics ? `
-                <details class="topics-collapse" open>
-                  <summary>▶ Prescribed Syllabus & Derivations</summary>
+                <details class="topics-collapse" ${searchQuery ? 'open' : ''}>
+                  <summary>▶ Prescribed Syllabus & Key Derivations (cbseacademic.nic.in)</summary>
                   <div class="topics-body">
                     ${ch.official_topics}
                   </div>
@@ -1149,102 +1330,200 @@
       container.innerHTML = html;
     }
 
-    function renderNeetView(container) {
+        function renderNeetView(container) {
       if (!dataEntrance || !dataEntrance.neet) return;
       const neet = dataEntrance.neet;
-      const subList = neet.subjects[currentSubject] || [];
+      let subList = neet.subjects[currentSubject] || [];
+
+      if (searchQuery) {
+        subList = subList.filter(unit =>
+          (unit.chapter && unit.chapter.toLowerCase().includes(searchQuery)) ||
+          (unit.unit_name && unit.unit_name.toLowerCase().includes(searchQuery)) ||
+          (unit.official_topics && unit.official_topics.toLowerCase().includes(searchQuery)) ||
+          (unit.concept_archetype_sample && unit.concept_archetype_sample.toLowerCase().includes(searchQuery)) ||
+          (unit.official_status && unit.official_status.toLowerCase().includes(searchQuery))
+        );
+      }
 
       let html = `
-        <div style="background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-md); padding:18px 20px; margin-bottom:20px;">
+        <div style="background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-md); padding:18px 20px; margin-bottom:16px;">
           <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;">
             <div>
-              <h2 style="font-size:18px; font-weight:800; color:var(--text); margin:0;">🩺 NEET UG ${currentSubject} Blueprint (NTA National Archive)</h2>
-              <p style="font-size:13px; color:var(--text-muted); margin:4px 0 0 0;">Total Exam: 720 Marks (180 Questions to attempt in 200 Minutes). Scoring: +4 for correct, -1 for negative.</p>
+              <h2 style="font-size:18px; font-weight:800; color:var(--text); margin:0;">🩺 NEET UG ${currentSubject} Official Curriculum Blueprint</h2>
+              <p style="font-size:13px; color:var(--text-muted); margin:4px 0 0 0;">
+                National Medical Commission (NMC) & NTA • Total Exam: 720 Marks (180 Questions to attempt in 200 Minutes). Scoring: +4 correct, -1 negative.
+              </p>
             </div>
-            <a href="/practice/?exam=neet&subject=${currentSubject}" class="btn-action-pyq">Practice All NEET ${currentSubject} PYQs ➔</a>
+            <a href="/practice/?exam=neet&subject=${encodeURIComponent(currentSubject)}" class="btn-action-pyq">Practice All NEET ${currentSubject} PYQs ➔</a>
           </div>
         </div>
 
-        <div class="unit-section">
-          ${subList.map(unit => `
-            <div class="chapter-row">
-              <div class="chapter-meta-bar">
-                <div class="chapter-title-group">
-                  <h3>${unit.name}</h3>
-                  <div class="chapter-typology-tag"><strong>Key Tested Topics:</strong> ${unit.top_topics}</div>
-                </div>
-                <div style="text-align:right;">
-                  <span class="chapter-marks-pill">${unit.marks} (${unit.weightage_pct})</span>
-                  <div style="font-size:11px; font-weight:700; color:var(--accent); margin-top:2px;">${unit.avg_qs}</div>
-                </div>
+        <div class="official-pdf-card">
+          <div class="pdf-meta">
+            <div class="pdf-icon-box">PDF</div>
+            <div>
+              <div class="pdf-details-title">
+                NEET (UG) Official Prescribed Curriculum & Statutory Chapter Weightage Document
+                <span style="font-size:11px; font-weight:700; color:#dc2626; background:rgba(220,38,38,0.08); padding:2px 8px; border-radius:4px;">NMC Official</span>
               </div>
-
-              <div class="cross-exam-box">
-                <span class="cross-exam-title">🔥 Recurrence Tier:</span>
-                <span class="overlap-chip" style="color:#dc2626; font-weight:800;">${unit.yield_tier}</span>
-              </div>
-
-              <div class="chapter-actions">
-                <a href="/practice/?exam=neet&subject=${currentSubject}&chapter=${encodeURIComponent(unit.name)}" class="btn-action-pyq">
-                  ⚡ Practice ${unit.name} ➔
-                </a>
-                <a href="/repeated/?exam=neet&subject=${currentSubject}" class="btn-action-mock">
-                  🔥 View Recurrence Radar
-                </a>
+              <div class="pdf-details-sub">
+                Under Graduate Medical Education Board (UGMEB), NMC & National Testing Agency • 41 Chapter Distribution & Rationalization Ledger (19 KB PDF)
               </div>
             </div>
-          `).join('')}
+          </div>
+          <a href="/curriculum_pdf/NEET_UG_Official_Curriculum_and_Weightage.pdf" target="_blank" download="NEET_UG_Official_Curriculum_and_Weightage.pdf" class="btn-download-pdf">
+            📥 Download Official NEET PDF
+          </a>
+        </div>
+
+        <div class="unit-section">
+          ${subList.map(unit => {
+            const pTier = unit.priority_tier || unit.yield_tier || 'Guaranteed Core';
+            const pClass = pTier === 'Paramount Core' ? 'priority-paramount' : pTier === 'High Yield' ? 'priority-high' : 'priority-guaranteed';
+            const chName = unit.chapter || unit.name || 'Core Unit';
+            const qsText = unit.question_count_avg || unit.avg_qs || '2 Qs';
+            const marksText = unit.mark_weightage_range || unit.marks || '8 Marks';
+            const archetype = unit.concept_archetype_sample || unit.top_topics || '';
+
+            return `
+              <div class="chapter-row">
+                <div class="chapter-meta-bar">
+                  <div class="chapter-title-group">
+                    <div style="display:flex; align-items:center; gap:6px; flex-wrap:wrap; margin-bottom:4px;">
+                      ${unit.class_level ? `<span class="class-badge">Class ${unit.class_level}</span>` : ''}
+                      <span class="priority-badge ${pClass}">${pTier}</span>
+                      ${unit.unit_name ? `<span style="font-size:12px; color:var(--text-muted); font-weight:600;">${unit.unit_name}</span>` : ''}
+                    </div>
+                    <h3 style="margin:2px 0 4px 0;">${chName}</h3>
+                    ${unit.official_status && unit.official_status !== 'Active' ? `<div class="status-badge">⚠️ ${unit.official_status}</div>` : ''}
+                    ${archetype ? `<div class="chapter-typology-tag" style="margin-top:6px;"><strong>Tested Archetype:</strong> ${archetype}</div>` : ''}
+                  </div>
+                  <div style="text-align:right; flex-shrink:0;">
+                    <span class="chapter-marks-pill">${marksText}</span>
+                    <div style="font-size:11.5px; font-weight:700; color:var(--accent); margin-top:3px;">${qsText}</div>
+                  </div>
+                </div>
+
+                ${unit.official_topics ? `
+                  <details class="topics-collapse" ${searchQuery ? 'open' : ''} style="margin-top:10px;">
+                    <summary>▶ Prescribed Official Syllabus Topics (NMC UGMEB)</summary>
+                    <div class="topics-body">
+                      ${unit.official_topics}
+                    </div>
+                  </details>
+                ` : ''}
+
+                <div class="chapter-actions">
+                  <a href="/practice/?exam=neet&subject=${encodeURIComponent(currentSubject)}&chapter=${encodeURIComponent(chName)}" class="btn-action-pyq">
+                    ⚡ Practice ${chName} ➔
+                  </a>
+                  <a href="/repeated/?exam=neet&subject=${encodeURIComponent(currentSubject)}" class="btn-action-mock">
+                    🔥 View Recurrence Radar
+                  </a>
+                </div>
+              </div>
+            `;
+          }).join('')}
         </div>
       `;
 
       container.innerHTML = html;
     }
 
-    function renderJeeMainView(container) {
+        function renderJeeMainView(container) {
       if (!dataEntrance || !dataEntrance.jee_main) return;
       const jee = dataEntrance.jee_main;
-      const subList = jee.subjects[currentSubject] || [];
+      let subList = jee.subjects[currentSubject] || [];
+
+      if (searchQuery) {
+        subList = subList.filter(unit =>
+          (unit.chapter && unit.chapter.toLowerCase().includes(searchQuery)) ||
+          (unit.unit_name && unit.unit_name.toLowerCase().includes(searchQuery)) ||
+          (unit.official_topics && unit.official_topics.toLowerCase().includes(searchQuery)) ||
+          (unit.concept_archetype_sample && unit.concept_archetype_sample.toLowerCase().includes(searchQuery)) ||
+          (unit.official_status && unit.official_status.toLowerCase().includes(searchQuery))
+        );
+      }
 
       let html = `
-        <div style="background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-md); padding:18px 20px; margin-bottom:20px;">
+        <div style="background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-md); padding:18px 20px; margin-bottom:16px;">
           <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;">
             <div>
-              <h2 style="font-size:18px; font-weight:800; color:var(--text); margin:0;">⚡ JEE Main ${currentSubject} Blueprint (186 Shifts • 12,667 Qs)</h2>
-              <p style="font-size:13px; color:var(--text-muted); margin:4px 0 0 0;">Total Exam: 300 Marks (75 Questions to attempt in 180 Minutes). +4 for correct, -1 for negative (MCQ & NVQ).</p>
+              <h2 style="font-size:18px; font-weight:800; color:var(--text); margin:0;">⚡ JEE Main ${currentSubject} Official Curriculum Blueprint</h2>
+              <p style="font-size:13px; color:var(--text-muted); margin:4px 0 0 0;">
+                National Testing Agency (NTA) • 186 CBT Shifts Archive (12,667 Questions). Exam: 300 Marks (75 Questions to attempt in 180 Minutes). +4 for correct, -1 for negative.
+              </p>
             </div>
-            <a href="/practice/?exam=jee&subject=${currentSubject}" class="btn-action-pyq">Practice JEE ${currentSubject} PYQs ➔</a>
+            <a href="/practice/?exam=jee&subject=${encodeURIComponent(currentSubject)}" class="btn-action-pyq">Practice JEE ${currentSubject} PYQs ➔</a>
           </div>
         </div>
 
-        <div class="unit-section">
-          ${subList.map(unit => `
-            <div class="chapter-row">
-              <div class="chapter-meta-bar">
-                <div class="chapter-title-group">
-                  <h3>${unit.name}</h3>
-                  <div class="chapter-typology-tag"><strong>High-Frequency Sub-topics:</strong> ${unit.top_topics}</div>
-                </div>
-                <div style="text-align:right;">
-                  <span class="chapter-marks-pill">${unit.shift_appearances}</span>
-                  <div style="font-size:11px; font-weight:700; color:var(--accent); margin-top:2px;">${unit.avg_qs}</div>
-                </div>
+        <div class="official-pdf-card">
+          <div class="pdf-meta">
+            <div class="pdf-icon-box">PDF</div>
+            <div>
+              <div class="pdf-details-title">
+                JEE (Main) Official Prescribed Curriculum & 186-Shift Frequency Blueprint
+                <span style="font-size:11px; font-weight:700; color:#2563eb; background:rgba(37,99,235,0.08); padding:2px 8px; border-radius:4px;">NTA Official</span>
               </div>
-
-              <div class="cross-exam-box">
-                <span class="cross-exam-title">⚡ Invariance Status:</span>
-                <span class="overlap-chip" style="color:#d97706; font-weight:800;">${unit.yield_tier}</span>
-              </div>
-
-              <div class="chapter-actions">
-                <a href="/practice/?exam=jee&subject=${currentSubject}&chapter=${encodeURIComponent(unit.name)}" class="btn-action-pyq">
-                  ⚡ Practice ${unit.name} ➔
-                </a>
-                <a href="/paper-maker/?exam=jee&subject=${currentSubject}" class="btn-action-mock">
-                  📝 3-Hour CBT Simulator
-                </a>
+              <div class="pdf-details-sub">
+                National Testing Agency (NTA) • 54 Unit Empirical Frequency & Rationalization Ledger (32 KB PDF)
               </div>
             </div>
-          `).join('')}
+          </div>
+          <a href="/curriculum_pdf/JEE_Main_Official_Curriculum_and_Weightage.pdf" target="_blank" download="JEE_Main_Official_Curriculum_and_Weightage.pdf" class="btn-download-pdf">
+            📥 Download Official JEE PDF
+          </a>
+        </div>
+
+        <div class="unit-section">
+          ${subList.map(unit => {
+            const pTier = unit.priority_tier || unit.yield_tier || 'Guaranteed Core';
+            const pClass = pTier === 'Paramount Core' ? 'priority-paramount' : pTier === 'High Yield' ? 'priority-high' : 'priority-guaranteed';
+            const chName = unit.chapter || unit.name || 'Core Unit';
+            const qsText = unit.question_count_avg || unit.avg_qs || '1 - 2 Qs';
+            const marksText = unit.mark_weightage_range || unit.shift_appearances || '4 - 8 Marks';
+            const archetype = unit.concept_archetype_sample || unit.top_topics || '';
+
+            return `
+              <div class="chapter-row">
+                <div class="chapter-meta-bar">
+                  <div class="chapter-title-group">
+                    <div style="display:flex; align-items:center; gap:6px; flex-wrap:wrap; margin-bottom:4px;">
+                      ${unit.class_level ? `<span class="class-badge">Class ${unit.class_level}</span>` : ''}
+                      <span class="priority-badge ${pClass}">${pTier}</span>
+                      ${unit.unit_name ? `<span style="font-size:12px; color:var(--text-muted); font-weight:600;">${unit.unit_name}</span>` : ''}
+                    </div>
+                    <h3 style="margin:2px 0 4px 0;">${chName}</h3>
+                    ${unit.official_status && unit.official_status !== 'Active' ? `<div class="status-badge">⚠️ ${unit.official_status}</div>` : ''}
+                    ${archetype ? `<div class="chapter-typology-tag" style="margin-top:6px;"><strong>High-Frequency Tested Typology:</strong> ${archetype}</div>` : ''}
+                  </div>
+                  <div style="text-align:right; flex-shrink:0;">
+                    <span class="chapter-marks-pill">${marksText}</span>
+                    <div style="font-size:11.5px; font-weight:700; color:var(--accent); margin-top:3px;">${qsText}</div>
+                  </div>
+                </div>
+
+                ${unit.official_topics ? `
+                  <details class="topics-collapse" ${searchQuery ? 'open' : ''} style="margin-top:10px;">
+                    <summary>▶ Prescribed Official Syllabus Topics (NTA)</summary>
+                    <div class="topics-body">
+                      ${unit.official_topics}
+                    </div>
+                  </details>
+                ` : ''}
+
+                <div class="chapter-actions">
+                  <a href="/practice/?exam=jee&subject=${encodeURIComponent(currentSubject)}&chapter=${encodeURIComponent(chName)}" class="btn-action-pyq">
+                    ⚡ Practice ${chName} ➔
+                  </a>
+                  <a href="/paper-maker/?exam=jee&subject=${encodeURIComponent(currentSubject)}" class="btn-action-mock">
+                    📝 3-Hour CBT Simulator
+                  </a>
+                </div>
+              </div>
+            `;
+          }).join('')}
         </div>
       `;
 

@@ -19,7 +19,8 @@
         "jee_overlap": "High (JEE Main 4M, Adv 8M)",
         "neet_overlap": "High (8-12M)",
         "bitsat_overlap": "High (2-3 Qs)",
-        "id": "CBSE_C12_PHY_UI_039"
+        "id": "CBSE_C12_PHY_UI_039",
+        "official_topics": "Electric charges and conservation, Coulomb's law force between two point charges, superposition principle, continuous charge distribution. Electric field, electric field lines, electric dipole, electric field due to a dipole, torque on a dipole in uniform field. Electric flux, statement of Gauss's theorem and applications to uniformly charged infinite wire, infinite plane sheet, and thin spherical shell."
       },
       {
         "class": 12,
@@ -35,7 +36,8 @@
         "jee_overlap": "High (JEE Main 4M, Adv 8M)",
         "neet_overlap": "High (8M)",
         "bitsat_overlap": "High (2 Qs)",
-        "id": "CBSE_C12_PHY_UI_040"
+        "id": "CBSE_C12_PHY_UI_040",
+        "official_topics": "Electric potential, potential difference, electric potential due to point charge, dipole and system of charges; equipotential surfaces, electrical potential energy of a system of two point charges and electric dipoles in electrostatic field. Conductors and dielectrics, free charges and bound charges inside conductor, capacitors and capacitance, combination of capacitors in series and parallel, capacitance of parallel plate capacitor with/without dielectric, energy stored in capacitor."
       },
       {
         "class": 12,
@@ -51,7 +53,8 @@
         "jee_overlap": "Guaranteed Core (JEE Main 4-8M)",
         "neet_overlap": "Guaranteed Core (12-16M)",
         "bitsat_overlap": "Evergreen (3 Qs)",
-        "id": "CBSE_C12_PHY_UII_041"
+        "id": "CBSE_C12_PHY_UII_041",
+        "official_topics": "Electric current, drift velocity, mobility and relation with current; Ohm's law, electrical resistance, V-I characteristics (linear and non-linear), electrical energy and power, resistivity and conductivity, temperature dependence of resistance. Internal resistance of cell, potential difference and EMF of cell, combination of cells in series and parallel, Kirchhoff's laws and simple applications, Wheatstone bridge."
       },
       {
         "class": 12,
@@ -67,7 +70,8 @@
         "jee_overlap": "High (JEE Main 4M, Adv 6M)",
         "neet_overlap": "High (8-12M)",
         "bitsat_overlap": "High (2 Qs)",
-        "id": "CBSE_C12_PHY_UIII_042"
+        "id": "CBSE_C12_PHY_UIII_042",
+        "official_topics": "Concept of magnetic field, Oersted's experiment. Biot-Savart law and application to current carrying circular loop. Ampere's law and application to infinitely long straight wire and solenoid. Force on moving charge in uniform magnetic and electric fields. Force on current-carrying conductor in uniform magnetic field, force between two parallel current-carrying conductors (definition of ampere), torque on current loop in magnetic field; moving coil galvanometer (current sensitivity and conversion to ammeter/voltmeter)."
       },
       {
         "class": 12,
@@ -83,7 +87,8 @@
         "jee_overlap": "Moderate (JEE Main 4M)",
         "neet_overlap": "Moderate (4M)",
         "bitsat_overlap": "Direct Speed (1 Q)",
-        "id": "CBSE_C12_PHY_UIII_043"
+        "id": "CBSE_C12_PHY_UIII_043",
+        "official_topics": "Bar magnet as equivalent solenoid qualitative, magnetic field lines, magnetic dipole moment of revolving electron; magnetic properties of materials: Para-, Dia- and Ferromagnetic substances with examples, magnetization, saturation, effect of temperature."
       },
       {
         "class": 12,
@@ -99,7 +104,8 @@
         "jee_overlap": "High (JEE Main 4M, Adv 4M)",
         "neet_overlap": "High (4-8M)",
         "bitsat_overlap": "High (1-2 Qs)",
-        "id": "CBSE_C12_PHY_UIV_044"
+        "id": "CBSE_C12_PHY_UIV_044",
+        "official_topics": "Electromagnetic induction; Faraday's laws, induced EMF and current; Lenz's Law, Eddy currents. Self and mutual induction."
       },
       {
         "class": 12,
@@ -115,7 +121,8 @@
         "jee_overlap": "Guaranteed Core (JEE Main 4M)",
         "neet_overlap": "Guaranteed Core (8M)",
         "bitsat_overlap": "Direct Formula (2 Qs)",
-        "id": "CBSE_C12_PHY_UIV_045"
+        "id": "CBSE_C12_PHY_UIV_045",
+        "official_topics": "Alternating currents, peak and RMS value of AC; reactance and impedance; LCR series circuit (phasor diagram only), resonance; power in AC circuits, power factor, wattless current. AC generator and transformer."
       },
       {
         "class": 12,
@@ -131,7 +138,8 @@
         "jee_overlap": "Guaranteed Easy 4M (JEE Main)",
         "neet_overlap": "Guaranteed Easy 4M",
         "bitsat_overlap": "Direct Speed (1 Q)",
-        "id": "CBSE_C12_PHY_UV_046"
+        "id": "CBSE_C12_PHY_UV_046",
+        "official_topics": "Basic idea of displacement current, Electromagnetic waves, their characteristics, their transverse nature (qualitative idea only). Electromagnetic spectrum (radio waves, microwaves, infrared, visible, ultraviolet, X-rays, gamma rays) including elementary facts about their uses."
       },
       {
         "class": 12,
@@ -147,7 +155,8 @@
         "jee_overlap": "Critical (JEE Main 8M, Adv 8-12M)",
         "neet_overlap": "Critical (12-16M)",
         "bitsat_overlap": "High-Yield (3 Qs)",
-        "id": "CBSE_C12_PHY_UVI_047"
+        "id": "CBSE_C12_PHY_UVI_047",
+        "official_topics": "Ray Optics: Reflection of light, spherical mirrors, mirror formula, refraction of light, total internal reflection and optical fibers, refraction at spherical surfaces, lenses, thin lens formula, lensmaker's formula, magnification, power of a lens, combination of thin lenses in contact, refraction of light through a prism. Optical instruments: Microscopes and astronomical telescopes (reflecting and refracting) and their magnifying powers."
       },
       {
         "class": 12,
@@ -163,7 +172,8 @@
         "jee_overlap": "High (JEE Main 4M, Adv 4-6M)",
         "neet_overlap": "High (8M)",
         "bitsat_overlap": "Direct Formula (2 Qs)",
-        "id": "CBSE_C12_PHY_UVI_048"
+        "id": "CBSE_C12_PHY_UVI_048",
+        "official_topics": "Wave Optics: Wave front and Huygens principle, reflection and refraction of plane wave at a plane surface using wave fronts. Proof of laws of reflection and refraction using Huygens principle. Interference, Young's double slit experiment and expression for fringe width, coherent sources and sustained interference of light. Diffraction due to a single slit, width of central maximum."
       },
       {
         "class": 12,
@@ -179,7 +189,8 @@
         "jee_overlap": "Guaranteed Core (JEE Main 4M)",
         "neet_overlap": "Guaranteed Core (8M)",
         "bitsat_overlap": "Direct Speed (2 Qs)",
-        "id": "CBSE_C12_PHY_UVII_049"
+        "id": "CBSE_C12_PHY_UVII_049",
+        "official_topics": "Dual nature of radiation, Photoelectric effect, Hertz and Lenard's observations; Einstein's photoelectric equation-particle nature of light. Experimental study of photoelectric effect, matter waves-wave nature of particles, de-Broglie relation."
       },
       {
         "class": 12,
@@ -195,7 +206,8 @@
         "jee_overlap": "High (JEE Main 4M)",
         "neet_overlap": "High (4M)",
         "bitsat_overlap": "Direct Formula (1-2 Qs)",
-        "id": "CBSE_C12_PHY_UVIII_050"
+        "id": "CBSE_C12_PHY_UVIII_050",
+        "official_topics": "Alpha-particle scattering experiment; Rutherford's model of atom; Bohr model of hydrogen atom, energy levels, hydrogen spectrum, de-Broglie explanation of Bohr second postulate of quantization."
       },
       {
         "class": 12,
@@ -211,7 +223,8 @@
         "jee_overlap": "Moderate (JEE Main 4M)",
         "neet_overlap": "High (4-8M)",
         "bitsat_overlap": "Direct Speed (1 Q)",
-        "id": "CBSE_C12_PHY_UVIII_051"
+        "id": "CBSE_C12_PHY_UVIII_051",
+        "official_topics": "Composition and size of nucleus, nuclear force, mass-energy relation, mass defect; binding energy per nucleon and its variation with mass number, nuclear fission, nuclear fusion."
       },
       {
         "class": 12,
@@ -227,9 +240,15 @@
         "jee_overlap": "Guaranteed Core (JEE Main 4M)",
         "neet_overlap": "Guaranteed Core (12M)",
         "bitsat_overlap": "Direct Conceptual (2 Qs)",
-        "id": "CBSE_C12_PHY_UIX_052"
+        "id": "CBSE_C12_PHY_UIX_052",
+        "official_topics": "Energy bands in conductors, semiconductors and insulators (qualitative ideas only). Intrinsic and extrinsic semiconductors- p and n type, p-n junction diode: I-V characteristics in forward and reverse bias, application of diode as a rectifier (half wave and full wave)."
       }
-    ]
+    ],
+    "pdf_url": "/curriculum_pdf/Class12_Physics.pdf",
+    "pdf_name": "Class12_Physics.pdf",
+    "pdf_size": "189 KB",
+    "official_board": "Central Board of Secondary Education (CBSE, Delhi)",
+    "official_citation": "CBSE Senior School Curriculum 2025-2026 (Circular Acad-39/2025)"
   },
   "Chemistry": {
     "subject": "Chemistry",
@@ -251,7 +270,8 @@
         "jee_overlap": "High (JEE Main 4M, Adv 4M)",
         "neet_overlap": "High (8M)",
         "bitsat_overlap": "Direct Formula (2 Qs)",
-        "id": "CBSE_C12_CHE_UI_053"
+        "id": "CBSE_C12_CHE_UI_053",
+        "official_topics": "Types of solutions, concentration expressions of solids in liquids, solubility of gases in liquids (Henry's law), solid solutions, Raoult's law, colligative properties (relative lowering of VP, elevation of BP, depression of FP, osmotic pressure), determination of molecular mass, abnormal molecular mass, Van't Hoff factor."
       },
       {
         "class": 12,
@@ -267,7 +287,8 @@
         "jee_overlap": "Critical (JEE Main 4-8M, Adv 8M)",
         "neet_overlap": "Critical (8-12M)",
         "bitsat_overlap": "High-Yield (3 Qs)",
-        "id": "CBSE_C12_CHE_UII_054"
+        "id": "CBSE_C12_CHE_UII_054",
+        "official_topics": "Redox reactions, EMF of a cell, standard electrode potential, Nernst equation and applications to chemical cells, relation between Gibbs energy and EMF, conductance in electrolytic solutions, specific and molar conductivity, variations with concentration, Kohlrausch's Law, electrolysis laws, dry cells, Galvanic cells, lead accumulator, fuel cells, corrosion."
       },
       {
         "class": 12,
@@ -283,7 +304,8 @@
         "jee_overlap": "High (JEE Main 4M, Adv 4M)",
         "neet_overlap": "High (8M)",
         "bitsat_overlap": "Direct Speed (2 Qs)",
-        "id": "CBSE_C12_CHE_UIII_055"
+        "id": "CBSE_C12_CHE_UIII_055",
+        "official_topics": "Rate of reaction (average and instantaneous), factors affecting rate (concentration, temperature, catalyst), order and molecularity, rate law and specific rate constant, integrated rate equations and half-life (zero and first order only), collision theory (elementary qualitative), activation energy, Arrhenius equation."
       },
       {
         "class": 12,
@@ -299,7 +321,8 @@
         "jee_overlap": "Guaranteed Core (JEE Main 4M, Adv 4M)",
         "neet_overlap": "Guaranteed Core (8M)",
         "bitsat_overlap": "Direct NCERT Factual (2 Qs)",
-        "id": "CBSE_C12_CHE_UIV_056"
+        "id": "CBSE_C12_CHE_UIV_056",
+        "official_topics": "Electronic configuration, occurrence, characteristics of transition metals, general trends in first row (metallic character, ionization enthalpy, oxidation states, ionic radii, colour, catalytic properties, magnetic properties, interstitial compounds, alloy formation). Preparation and properties of K2Cr2O7 and KMnO4. Lanthanoids (electronic config, oxidation states, lanthanoid contraction consequences). Actinoids comparison."
       },
       {
         "class": 12,
@@ -315,7 +338,8 @@
         "jee_overlap": "Critical (JEE Main 8M, Adv 8M)",
         "neet_overlap": "Critical (12M)",
         "bitsat_overlap": "High-Yield (3 Qs)",
-        "id": "CBSE_C12_CHE_UV_057"
+        "id": "CBSE_C12_CHE_UV_057",
+        "official_topics": "Ligands, coordination number, colour, magnetic properties and shapes, IUPAC nomenclature of mononuclear complexes. Bonding: Werner's theory, VBT, and CFT; structure and stereoisomerism, importance in qualitative analysis, extraction of metals and biological systems."
       },
       {
         "class": 12,
@@ -331,7 +355,8 @@
         "jee_overlap": "High (JEE Main 4M, Adv 4M)",
         "neet_overlap": "High (4-8M)",
         "bitsat_overlap": "Direct Organic (2 Qs)",
-        "id": "CBSE_C12_CHE_UVI_058"
+        "id": "CBSE_C12_CHE_UVI_058",
+        "official_topics": "Haloalkanes: Nomenclature, nature of C-X bond, physical and chemical properties, optical rotation mechanism (SN1 and SN2). Haloarenes: Nature of C-X bond, substitution reactions (directive influence in monosubstituted). Uses/environmental effects of dichloromethane, chloroform, iodoform, freons, DDT."
       },
       {
         "class": 12,
@@ -347,7 +372,8 @@
         "jee_overlap": "High (JEE Main 4M, Adv 4M)",
         "neet_overlap": "High (8M)",
         "bitsat_overlap": "Direct Organic (2 Qs)",
-        "id": "CBSE_C12_CHE_UVII_059"
+        "id": "CBSE_C12_CHE_UVII_059",
+        "official_topics": "Alcohols: Nomenclature, preparation, properties of primary alcohols, test for 1°, 2°, 3°, dehydration mechanism, uses of methanol/ethanol. Phenols: Preparation, properties, acidic nature, electrophilic substitution, Kolbe, Reimer-Tiemann, uses. Ethers: Nomenclature, preparation, physical/chemical properties, Williamson synthesis."
       },
       {
         "class": 12,
@@ -363,7 +389,8 @@
         "jee_overlap": "Highest Yield Organic (JEE Main 8M, Adv 8M)",
         "neet_overlap": "Highest Yield Organic (12-16M)",
         "bitsat_overlap": "Critical (3 Qs)",
-        "id": "CBSE_C12_CHE_UVIII_060"
+        "id": "CBSE_C12_CHE_UVIII_060",
+        "official_topics": "Aldehydes and Ketones: Nomenclature, carbonyl nature, preparation, properties, nucleophilic addition mechanism, alpha-hydrogen reactivity, uses. Carboxylic Acids: Nomenclature, acidic nature, preparation, properties, HVZ reaction, uses."
       },
       {
         "class": 12,
@@ -379,7 +406,8 @@
         "jee_overlap": "High (JEE Main 4M, Adv 4M)",
         "neet_overlap": "High (8M)",
         "bitsat_overlap": "Direct Speed (2 Qs)",
-        "id": "CBSE_C12_CHE_UIX_061"
+        "id": "CBSE_C12_CHE_UIX_061",
+        "official_topics": "Nomenclature, classification, structure, preparation, properties, identification of 1°, 2°, 3° amines. Diazonium salts: Preparation, chemical reactions and synthetic importance."
       },
       {
         "class": 12,
@@ -395,9 +423,15 @@
         "jee_overlap": "Guaranteed Easy 4M (JEE Main)",
         "neet_overlap": "High Interdisciplinary (8M)",
         "bitsat_overlap": "Direct NCERT Factual (2 Qs)",
-        "id": "CBSE_C12_CHE_UX_062"
+        "id": "CBSE_C12_CHE_UX_062",
+        "official_topics": "Carbohydrates (aldoses/ketoses, monosaccharides: glucose/fructose, D-L config, oligosaccharides, polysaccharides: starch, cellulose, glycogen). Proteins (amino acids, peptide bond, primary/secondary/tertiary/quaternary structure qualitative, denaturation, enzymes). Hormones, Vitamins (classification), Nucleic Acids (DNA & RNA)."
       }
-    ]
+    ],
+    "pdf_url": "/curriculum_pdf/Class12_Chemistry.pdf",
+    "pdf_name": "Class12_Chemistry.pdf",
+    "pdf_size": "931 KB",
+    "official_board": "Central Board of Secondary Education (CBSE, Delhi)",
+    "official_citation": "CBSE Senior School Curriculum 2025-2026 (Circular Acad-39/2025)"
   },
   "Mathematics": {
     "subject": "Mathematics",
@@ -419,7 +453,8 @@
         "jee_overlap": "High (JEE Main 4M)",
         "neet_overlap": "N/A",
         "bitsat_overlap": "Direct Speed (1-2 Qs)",
-        "id": "CBSE_C12_MAT_UI_063"
+        "id": "CBSE_C12_MAT_UI_063",
+        "official_topics": "Types of relations: reflexive, symmetric, transitive and equivalence relations. One to one and onto functions."
       },
       {
         "class": 12,
@@ -435,7 +470,8 @@
         "jee_overlap": "High (JEE Main 4M, Adv 4M)",
         "neet_overlap": "N/A",
         "bitsat_overlap": "Direct Formula (1-2 Qs)",
-        "id": "CBSE_C12_MAT_UI_064"
+        "id": "CBSE_C12_MAT_UI_064",
+        "official_topics": "Definition, range, domain, principal value branch. Graphs of inverse trigonometric functions."
       },
       {
         "class": 12,
@@ -451,7 +487,8 @@
         "jee_overlap": "Guaranteed Core (JEE Main 4M)",
         "neet_overlap": "N/A",
         "bitsat_overlap": "Direct Calculation (2 Qs)",
-        "id": "CBSE_C12_MAT_UII_065"
+        "id": "CBSE_C12_MAT_UII_065",
+        "official_topics": "Concept, notation, order, equality, types of matrices, zero and identity matrix, transpose of a matrix, symmetric and skew symmetric matrices. Operation on matrices: Addition and multiplication and multiplication with a scalar. Non-commutativity of multiplication of matrices, invertible matrices and proof of the uniqueness of inverse."
       },
       {
         "class": 12,
@@ -467,7 +504,8 @@
         "jee_overlap": "Guaranteed Core (JEE Main 4M, Adv 4-8M)",
         "neet_overlap": "N/A",
         "bitsat_overlap": "Direct Calculation (2 Qs)",
-        "id": "CBSE_C12_MAT_UII_066"
+        "id": "CBSE_C12_MAT_UII_066",
+        "official_topics": "Determinant of a square matrix (up to 3 x 3 matrices), minors, co-factors and applications of determinants in finding the area of a triangle. Adjoint and inverse of a square matrix. Solving system of linear equations in two or three variables (having unique solution) using inverse of a matrix."
       },
       {
         "class": 12,
@@ -483,7 +521,8 @@
         "jee_overlap": "Critical Foundation (JEE Main 8M)",
         "neet_overlap": "Basic Physics Differentiation",
         "bitsat_overlap": "High-Yield (3 Qs)",
-        "id": "CBSE_C12_MAT_UIII_067"
+        "id": "CBSE_C12_MAT_UIII_067",
+        "official_topics": "Continuity and differentiability, derivative of composite functions, chain rule, derivative of inverse trigonometric functions, derivative of implicit functions. Concept of exponential and logarithmic functions. Derivatives of logarithmic and exponential functions. Logarithmic differentiation, derivative of functions expressed in parametric forms. Second order derivatives."
       },
       {
         "class": 12,
@@ -499,7 +538,8 @@
         "jee_overlap": "Critical (JEE Main 8M, Adv 8M)",
         "neet_overlap": "Physics Min/Max Problems",
         "bitsat_overlap": "High-Yield (3 Qs)",
-        "id": "CBSE_C12_MAT_UIII_068"
+        "id": "CBSE_C12_MAT_UIII_068",
+        "official_topics": "Applications of derivatives: rate of change of bodies, increasing/decreasing functions, maxima and minima (first derivative test motivated geometrically and second derivative test given as a provable tool). Simple problems."
       },
       {
         "class": 12,
@@ -515,7 +555,8 @@
         "jee_overlap": "Highest Historical Weight (JEE Main 8-12M, Adv 12M)",
         "neet_overlap": "Basic Physics Integrals",
         "bitsat_overlap": "Heavy Yield (4 Qs)",
-        "id": "CBSE_C12_MAT_UIII_069"
+        "id": "CBSE_C12_MAT_UIII_069",
+        "official_topics": "Integration as inverse process of differentiation. Integration of a variety of functions by substitution, by partial fractions and by parts. Fundamental Theorem of Calculus (without proof). Basic properties of definite integrals and evaluation of definite integrals."
       },
       {
         "class": 12,
@@ -531,7 +572,8 @@
         "jee_overlap": "Guaranteed Core (JEE Main 4M, Adv 4M)",
         "neet_overlap": "PV Work Areas",
         "bitsat_overlap": "Direct Formula (1-2 Qs)",
-        "id": "CBSE_C12_MAT_UIII_070"
+        "id": "CBSE_C12_MAT_UIII_070",
+        "official_topics": "Applications in finding the area under simple curves, especially lines, circles/parabolas/ellipses (in standard form only)."
       },
       {
         "class": 12,
@@ -547,7 +589,8 @@
         "jee_overlap": "Guaranteed Core (JEE Main 4M, Adv 4-6M)",
         "neet_overlap": "Radioactivity Rates",
         "bitsat_overlap": "Direct Speed (2 Qs)",
-        "id": "CBSE_C12_MAT_UIII_071"
+        "id": "CBSE_C12_MAT_UIII_071",
+        "official_topics": "Definition, order and degree, general and particular solutions of a differential equation. Formation of differential equation whose general solution is given. Solution of differential equations by method of separation of variables, solutions of homogeneous differential equations of first order and first degree. Solutions of linear differential equation of the type: dy/dx + py = q."
       },
       {
         "class": 12,
@@ -563,7 +606,8 @@
         "jee_overlap": "Guaranteed Core (JEE Main 4M, Adv 4M)",
         "neet_overlap": "Physics Vector Math",
         "bitsat_overlap": "High-Yield (2-3 Qs)",
-        "id": "CBSE_C12_MAT_UIV_072"
+        "id": "CBSE_C12_MAT_UIV_072",
+        "official_topics": "Vectors and scalars, magnitude and direction of a vector. Direction cosines and direction ratios of a vector. Types of vectors (equal, unit, zero, parallel and collinear vectors), position vector of a point, negative of a vector, components of a vector, addition of vectors, multiplication of a vector by a scalar, position vector of a point dividing a line segment in a given ratio. Definition, properties and application of scalar (dot) product of vectors, vector (cross) product of vectors."
       },
       {
         "class": 12,
@@ -579,7 +623,8 @@
         "jee_overlap": "Critical (JEE Main 8M, Adv 6-8M)",
         "neet_overlap": "N/A",
         "bitsat_overlap": "Heavy Yield (3 Qs)",
-        "id": "CBSE_C12_MAT_UIV_073"
+        "id": "CBSE_C12_MAT_UIV_073",
+        "official_topics": "Direction cosines and direction ratios of a line joining two points. Cartesian equation and vector equation of a line, coplanar and skew lines, shortest distance between two lines. Angle between two lines."
       },
       {
         "class": 12,
@@ -595,7 +640,8 @@
         "jee_overlap": "Direct Easy (JEE Main 4M)",
         "neet_overlap": "N/A",
         "bitsat_overlap": "Direct Speed (1 Q)",
-        "id": "CBSE_C12_MAT_UV_074"
+        "id": "CBSE_C12_MAT_UV_074",
+        "official_topics": "Introduction, related terminology such as constraints, objective function, optimization, graphical method of solution for problems in two variables, feasible and infeasible regions (bounded or unbounded), feasible and infeasible solutions, optimal feasible solutions (up to three non-trivial constraints)."
       },
       {
         "class": 12,
@@ -611,9 +657,15 @@
         "jee_overlap": "Critical (JEE Main 4-8M, Adv 8M)",
         "neet_overlap": "Genetics Crosses",
         "bitsat_overlap": "High-Yield (2-3 Qs)",
-        "id": "CBSE_C12_MAT_UVI_075"
+        "id": "CBSE_C12_MAT_UVI_075",
+        "official_topics": "Conditional probability, multiplication rule on probability, independent events, total probability, Bayes' theorem, Random variable and its probability distribution, mean of random variable."
       }
-    ]
+    ],
+    "pdf_url": "/curriculum_pdf/Class12_Maths.pdf",
+    "pdf_name": "Class12_Maths.pdf",
+    "pdf_size": "694 KB",
+    "official_board": "Central Board of Secondary Education (CBSE, Delhi)",
+    "official_citation": "CBSE Senior School Curriculum 2025-2026 (Circular Acad-39/2025)"
   },
   "Biology": {
     "subject": "Biology",
@@ -635,7 +687,8 @@
         "jee_overlap": "N/A",
         "neet_overlap": "High Yield (16-20M)",
         "bitsat_overlap": "B.Pharm Stream",
-        "id": "CBSE_C12_BIO_UVI_076"
+        "id": "CBSE_C12_BIO_UVI_076",
+        "official_topics": "Flower structure; development of male and female gametophytes; pollination - types, agencies and examples; outbreeding devices; pollen-pistil interaction; double fertilization; post fertilization events - development of endosperm and embryo, development of seed and formation of fruit; special modes - apomixis, parthenocarpy, polyembryony; Significance of seed dispersal and fruit formation."
       },
       {
         "class": 12,
@@ -651,7 +704,8 @@
         "jee_overlap": "N/A",
         "neet_overlap": "High Yield (12-16M)",
         "bitsat_overlap": "B.Pharm Stream",
-        "id": "CBSE_C12_BIO_UVI_077"
+        "id": "CBSE_C12_BIO_UVI_077",
+        "official_topics": "Male and female reproductive systems; microscopic anatomy of testis and ovary; gametogenesis - spermatogenesis and oogenesis; menstrual cycle; fertilisation, embryo development up to blastocyst formation, implantation; pregnancy and placenta formation; parturition; lactation."
       },
       {
         "class": 12,
@@ -667,7 +721,8 @@
         "jee_overlap": "N/A",
         "neet_overlap": "Direct NCERT (8-12M)",
         "bitsat_overlap": "B.Pharm Stream",
-        "id": "CBSE_C12_BIO_UVI_078"
+        "id": "CBSE_C12_BIO_UVI_078",
+        "official_topics": "Need for reproductive health and prevention of Sexually Transmitted Infections (STIs); birth control - need and methods, contraception and medical termination of pregnancy (MTP); amniocentesis; infertility and assisted reproductive technologies - IVF, ZIFT, GIFT."
       },
       {
         "class": 12,
@@ -683,7 +738,8 @@
         "jee_overlap": "N/A",
         "neet_overlap": "Super Core (20-24M)",
         "bitsat_overlap": "B.Pharm Stream",
-        "id": "CBSE_C12_BIO_UVII_079"
+        "id": "CBSE_C12_BIO_UVII_079",
+        "official_topics": "Heredity and variation: Mendelian inheritance; deviations from Mendelism - incomplete dominance, co-dominance, multiple alleles and inheritance of blood groups, pleiotropy; elementary idea of polygenic inheritance; chromosome theory of inheritance; chromosomes and genes; Sex determination - in humans, birds and honey bee; linkage and crossing over; sex linked inheritance - haemophilia, colour blindness; Mendelian disorders in humans - thalassemia, phenylketonuria, sickle cell anemia; chromosomal disorders in humans: Down's, Turner's and Klinefelter's syndromes."
       },
       {
         "class": 12,
@@ -699,7 +755,8 @@
         "jee_overlap": "Biomolecules Chemistry overlap",
         "neet_overlap": "Highest Single Chapter in NEET (32-40M)",
         "bitsat_overlap": "B.Pharm Stream",
-        "id": "CBSE_C12_BIO_UVII_080"
+        "id": "CBSE_C12_BIO_UVII_080",
+        "official_topics": "Search for genetic material and DNA as genetic material; Structure of DNA and RNA; DNA packaging; DNA replication; Central Dogma; transcription, genetic code, translation; gene expression and regulation - lac operon; Genome, Human and rice genome projects; DNA fingerprinting."
       },
       {
         "class": 12,
@@ -715,7 +772,8 @@
         "jee_overlap": "N/A",
         "neet_overlap": "Core (12-16M)",
         "bitsat_overlap": "B.Pharm Stream",
-        "id": "CBSE_C12_BIO_UVII_081"
+        "id": "CBSE_C12_BIO_UVII_081",
+        "official_topics": "Origin of life; biological evolution and evidences for biological evolution (paleontology, comparative anatomy, embryology and molecular evidences); Darwin's contribution, modern synthetic theory of evolution; mechanism of evolution - variation (mutation and recombination) and natural selection with examples, types of natural selection; Gene flow and genetic drift; Hardy-Weinberg's principle; adaptive radiation; human evolution."
       },
       {
         "class": 12,
@@ -731,7 +789,8 @@
         "jee_overlap": "N/A",
         "neet_overlap": "High Yield (12-16M)",
         "bitsat_overlap": "B.Pharm Stream",
-        "id": "CBSE_C12_BIO_UVIII_082"
+        "id": "CBSE_C12_BIO_UVIII_082",
+        "official_topics": "Pathogens; parasites causing human diseases (malaria, dengue, chikungunya, filariasis, ascariasis, typhoid, pneumonia, common cold, amoebiasis, ring worm) and their control; Basic concepts of immunology - vaccines; cancer, HIV and AIDS; Adolescence - drug and alcohol abuse."
       },
       {
         "class": 12,
@@ -747,7 +806,8 @@
         "jee_overlap": "N/A",
         "neet_overlap": "Direct NCERT Recall (8-12M)",
         "bitsat_overlap": "B.Pharm Stream",
-        "id": "CBSE_C12_BIO_UVIII_083"
+        "id": "CBSE_C12_BIO_UVIII_083",
+        "official_topics": "Microbes in food processing, industrial production, sewage treatment, energy generation and as biocontrol agents and biofertilizers. Antibiotics; production and judicious use."
       },
       {
         "class": 12,
@@ -763,7 +823,8 @@
         "jee_overlap": "N/A",
         "neet_overlap": "Critical (16-20M)",
         "bitsat_overlap": "B.Pharm Stream",
-        "id": "CBSE_C12_BIO_UIX_084"
+        "id": "CBSE_C12_BIO_UIX_084",
+        "official_topics": "Genetic Engineering (Recombinant DNA Technology). Restriction enzymes, cloning vectors, competent host transformation, processes of recombinant DNA technology (isolation of DNA, PCR, insertion, bioreactors, downstream processing)."
       },
       {
         "class": 12,
@@ -779,7 +840,8 @@
         "jee_overlap": "N/A",
         "neet_overlap": "High Yield (12M)",
         "bitsat_overlap": "B.Pharm Stream",
-        "id": "CBSE_C12_BIO_UIX_085"
+        "id": "CBSE_C12_BIO_UIX_085",
+        "official_topics": "Application of biotechnology in health and agriculture: Human insulin and vaccine production, stem cell technology, gene therapy; genetically modified organisms - Bt crops; transgenic animals; biosafety issues, biopiracy and patents."
       },
       {
         "class": 12,
@@ -795,7 +857,8 @@
         "jee_overlap": "N/A",
         "neet_overlap": "High Yield (12M)",
         "bitsat_overlap": "B.Pharm Stream",
-        "id": "CBSE_C12_BIO_UX_086"
+        "id": "CBSE_C12_BIO_UX_086",
+        "official_topics": "Organisms and environment: Habitat and niche, abiotic factors, adaptations; populations: population attributes, growth, birth rate, death rate, age distribution. Population interactions - mutualism, competition, predation, parasitism; population attributes - growth, birth rate and death rate, age distribution."
       },
       {
         "class": 12,
@@ -811,7 +874,8 @@
         "jee_overlap": "N/A",
         "neet_overlap": "High Yield (8-12M)",
         "bitsat_overlap": "B.Pharm Stream",
-        "id": "CBSE_C12_BIO_UX_087"
+        "id": "CBSE_C12_BIO_UX_087",
+        "official_topics": "Ecosystems: Patterns, components; productivity and decomposition; energy flow; pyramids of number, biomass, energy (nutrients cycling excluded)."
       },
       {
         "class": 12,
@@ -827,9 +891,15 @@
         "jee_overlap": "N/A",
         "neet_overlap": "Direct NCERT Recall (8-12M)",
         "bitsat_overlap": "B.Pharm Stream",
-        "id": "CBSE_C12_BIO_UX_088"
+        "id": "CBSE_C12_BIO_UX_088",
+        "official_topics": "Concept of biodiversity; patterns of biodiversity; importance of biodiversity; loss of biodiversity; biodiversity conservation; hotspots, endangered organisms, extinction, Red Data Book, Sacred Groves, biosphere reserves, national parks, wildlife, sanctuaries and Ramsar sites."
       }
-    ]
+    ],
+    "pdf_url": "/curriculum_pdf/Class12_Biology.pdf",
+    "pdf_name": "Class12_Biology.pdf",
+    "pdf_size": "398 KB",
+    "official_board": "Central Board of Secondary Education (CBSE, Delhi)",
+    "official_citation": "CBSE Senior School Curriculum 2025-2026 (Circular Acad-39/2025)"
   },
   "Computer Science": {
     "subject": "Computer Science",
@@ -851,7 +921,8 @@
         "jee_overlap": "College CS / UGEE Algorithmic",
         "neet_overlap": "N/A",
         "bitsat_overlap": "Aptitude Coding",
-        "id": "CBSE_C12_COM_UI_089"
+        "id": "CBSE_C12_COM_UI_089",
+        "official_topics": "Review of Python basics, conditional statements, loops, strings, lists, tuples, dictionaries. Functions: scope, parameter passing, default parameters, positional arguments, return values."
       },
       {
         "class": 12,
@@ -867,7 +938,8 @@
         "jee_overlap": "Practical Software Eng",
         "neet_overlap": "N/A",
         "bitsat_overlap": "N/A",
-        "id": "CBSE_C12_COM_UI_090"
+        "id": "CBSE_C12_COM_UI_090",
+        "official_topics": "Need for data file handling, types of files (text, binary, CSV). Text file: opening, closing, read(), readline(), readlines(), write(), writelines(). Binary file: pickle module (dump, load). CSV file: csv module (reader, writer, delimiter)."
       },
       {
         "class": 12,
@@ -883,7 +955,8 @@
         "jee_overlap": "Data Structures & Algorithms",
         "neet_overlap": "N/A",
         "bitsat_overlap": "N/A",
-        "id": "CBSE_C12_COM_UI_091"
+        "id": "CBSE_C12_COM_UI_091",
+        "official_topics": "Stack operations: Push, Pop, Peek using Python list. Applications of stack in expression evaluation and reversal."
       },
       {
         "class": 12,
@@ -899,7 +972,8 @@
         "jee_overlap": "B.Tech Core Subjects",
         "neet_overlap": "N/A",
         "bitsat_overlap": "IT Aptitude",
-        "id": "CBSE_C12_COM_UII_092"
+        "id": "CBSE_C12_COM_UII_092",
+        "official_topics": "Evolution of networking, data communication terminologies, transmission media (wired & wireless), network devices (hub, switch, router, gateway), topologies (bus, star, tree), protocols (TCP/IP, HTTP, FTP, DNS), network security concepts."
       },
       {
         "class": 12,
@@ -915,7 +989,8 @@
         "jee_overlap": "Databases & RAG Architectures",
         "neet_overlap": "N/A",
         "bitsat_overlap": "Logical Queries",
-        "id": "CBSE_C12_COM_UIII_093"
+        "id": "CBSE_C12_COM_UIII_093",
+        "official_topics": "Relational data model, domain, tuple, relation, keys (primary, candidate, alternate, foreign). SQL: DDL, DML commands, SELECT with WHERE, ORDER BY, GROUP BY, HAVING, aggregate functions (COUNT, SUM, AVG, MIN, MAX), JOINS (Cartesian product, Equi-join, Natural join)."
       },
       {
         "class": 12,
@@ -931,9 +1006,15 @@
         "jee_overlap": "Backend Engineering",
         "neet_overlap": "N/A",
         "bitsat_overlap": "N/A",
-        "id": "CBSE_C12_COM_UIII_094"
+        "id": "CBSE_C12_COM_UIII_094",
+        "official_topics": "Connecting Python with MySQL database using mysql.connector, establishing connection, creating cursor, executing queries (fetch, insert, update, delete), commit and rollback."
       }
-    ]
+    ],
+    "pdf_url": "/curriculum_pdf/Class12_Computer_Science.pdf",
+    "pdf_name": "Class12_Computer_Science.pdf",
+    "pdf_size": "459 KB",
+    "official_board": "Central Board of Secondary Education (CBSE, Delhi)",
+    "official_citation": "CBSE Senior School Curriculum 2025-2026 (Circular Acad-39/2025)"
   },
   "English Core": {
     "subject": "English Core",
@@ -955,7 +1036,8 @@
         "jee_overlap": "BITSAT Reading Comprehension",
         "neet_overlap": "Passage Speed",
         "bitsat_overlap": "Direct English (10 Qs)",
-        "id": "CBSE_C12_ENG_USec A_095"
+        "id": "CBSE_C12_ENG_USec A_095",
+        "official_topics": "Unseen factual and discursive passages (with conceptual understanding, decoding, analyzing, inferring, interpreting and vocabulary). Case-based factual passages with visual data/charts."
       },
       {
         "class": 12,
@@ -971,7 +1053,8 @@
         "jee_overlap": "Professional Writing",
         "neet_overlap": "N/A",
         "bitsat_overlap": "Grammar & Expression",
-        "id": "CBSE_C12_ENG_USec B_096"
+        "id": "CBSE_C12_ENG_USec B_096",
+        "official_topics": "Short writing tasks: Notice writing, formal/informal invitation and reply. Long writing tasks: Letters based on verbal/visual input (Application for a job with bio-data/resume, Letter to Editor), Article writing and Report writing."
       },
       {
         "class": 12,
@@ -987,8 +1070,14 @@
         "jee_overlap": "Verbal Reasoning",
         "neet_overlap": "N/A",
         "bitsat_overlap": "Verbal Speed",
-        "id": "CBSE_C12_ENG_USec C_097"
+        "id": "CBSE_C12_ENG_USec C_097",
+        "official_topics": "Flamingo Prose: The Last Lesson, Lost Spring, Deep Water, The Rattrap, Indigo, Poets and Pancakes, The Interview, Going Places. Flamingo Poetry: My Mother at Sixty-Six, Keeping Quiet, A Thing of Beauty, A Roadside Stand, Aunt Jennifer's Tigers. Vistas Supplementary: The Third Level, The Tiger King, Journey to the End of the Earth, The Enemy, On the Face of It, Memories of Childhood."
       }
-    ]
+    ],
+    "pdf_url": "/curriculum_pdf/Class12_English_Core.pdf",
+    "pdf_name": "Class12_English_Core.pdf",
+    "pdf_size": "854 KB",
+    "official_board": "Central Board of Secondary Education (CBSE, Delhi)",
+    "official_citation": "CBSE Senior School Curriculum 2025-2026 (Circular Acad-39/2025)"
   }
 }

@@ -19,7 +19,8 @@
         "jee_overlap": "Foundational",
         "neet_overlap": "N/A",
         "id": "CBSE_C10_MAT_UI_001",
-        "bitsat_overlap": "Aptitude / General"
+        "bitsat_overlap": "Aptitude / General",
+        "official_topics": "Fundamental Theorem of Arithmetic - statements after reviewing work done earlier and after illustrating and motivating through examples, Proofs of irrationality of sqrt(2), sqrt(3), sqrt(5)."
       },
       {
         "class": 10,
@@ -35,7 +36,8 @@
         "jee_overlap": "Direct (Quadratic / Polynomials)",
         "neet_overlap": "N/A",
         "id": "CBSE_C10_MAT_UII_002",
-        "bitsat_overlap": "Aptitude / General"
+        "bitsat_overlap": "Aptitude / General",
+        "official_topics": "Zeros of a polynomial. Relationship between zeros and coefficients of quadratic polynomials."
       },
       {
         "class": 10,
@@ -51,7 +53,8 @@
         "jee_overlap": "Direct (Systems of Equations)",
         "neet_overlap": "N/A",
         "id": "CBSE_C10_MAT_UII_003",
-        "bitsat_overlap": "Aptitude / General"
+        "bitsat_overlap": "Aptitude / General",
+        "official_topics": "Pair of linear equations in two variables and graphical method of their solution, consistency/inconsistency. Algebraic conditions for number of solutions. Solution of a pair of linear equations in two variables algebraically - by substitution, by elimination. Simple situational problems."
       },
       {
         "class": 10,
@@ -67,7 +70,8 @@
         "jee_overlap": "Critical (Roots Analysis)",
         "neet_overlap": "Basic Physics Math",
         "id": "CBSE_C10_MAT_UII_004",
-        "bitsat_overlap": "Aptitude / General"
+        "bitsat_overlap": "Aptitude / General",
+        "official_topics": "Standard form of a quadratic equation ax^2 + bx + c = 0, (a != 0). Solutions of quadratic equations (only real roots) by factorization, and by using quadratic formula. Relationship between discriminant and nature of roots. Situational problems based on quadratic equations related to day to day activities to be incorporated."
       },
       {
         "class": 10,
@@ -83,7 +87,8 @@
         "jee_overlap": "Direct (Sequences & Series)",
         "neet_overlap": "N/A",
         "id": "CBSE_C10_MAT_UII_005",
-        "bitsat_overlap": "Aptitude / General"
+        "bitsat_overlap": "Aptitude / General",
+        "official_topics": "Motivation for studying Arithmetic Progression Derivation of the nth term and sum of the first n terms of A.P. and their application in solving daily life problems."
       },
       {
         "class": 10,
@@ -99,7 +104,8 @@
         "jee_overlap": "Direct (Straight Lines Foundation)",
         "neet_overlap": "Graphing Mechanics",
         "id": "CBSE_C10_MAT_UIII_006",
-        "bitsat_overlap": "Aptitude / General"
+        "bitsat_overlap": "Aptitude / General",
+        "official_topics": "Review: Concepts of coordinate geometry, graphs of linear equations. Distance formula. Section formula (internal division)."
       },
       {
         "class": 10,
@@ -115,7 +121,8 @@
         "jee_overlap": "Geometry & Trig Properties",
         "neet_overlap": "N/A",
         "id": "CBSE_C10_MAT_UIV_007",
-        "bitsat_overlap": "Aptitude / General"
+        "bitsat_overlap": "Aptitude / General",
+        "official_topics": "Definitions, examples, counter examples of similar triangles. 1. (Prove) If a line is drawn parallel to one side of a triangle to intersect the other two sides in distinct points, the other two sides are divided in the same ratio. 2. (Motivate) If a line divides two sides of a triangle in the same ratio, the line is parallel to the third side. 3. (Motivate) If in two triangles, corresponding angles are equal, their corresponding sides are proportional and the triangles are similar (AAA/AA criterion). 4. (Motivate) SSS and SAS similarity criterion."
       },
       {
         "class": 10,
@@ -131,7 +138,8 @@
         "jee_overlap": "Direct (Conics & Circles)",
         "neet_overlap": "N/A",
         "id": "CBSE_C10_MAT_UIV_008",
-        "bitsat_overlap": "Aptitude / General"
+        "bitsat_overlap": "Aptitude / General",
+        "official_topics": "Tangent to a circle at, point of contact. 1. (Prove) The tangent at any point of a circle is perpendicular to the radius through the point of contact. 2. (Prove) The lengths of tangents drawn from an external point to a circle are equal."
       },
       {
         "class": 10,
@@ -147,7 +155,8 @@
         "jee_overlap": "Critical (Calculus Foundation)",
         "neet_overlap": "Vector Resolutions",
         "id": "CBSE_C10_MAT_UV_009",
-        "bitsat_overlap": "Aptitude / General"
+        "bitsat_overlap": "Aptitude / General",
+        "official_topics": "Trigonometric ratios of an acute angle of a right-angled triangle. Proof of their existence (well defined); values of the trigonometric ratios of 30°, 45° and 60°. Relationships between the ratios. Proof and applications of the identity sin^2(A) + cos^2(A) = 1. Only simple identities to be given."
       },
       {
         "class": 10,
@@ -163,7 +172,8 @@
         "jee_overlap": "Direct (Heights & Distances)",
         "neet_overlap": "Vector Optics",
         "id": "CBSE_C10_MAT_UV_010",
-        "bitsat_overlap": "Aptitude / General"
+        "bitsat_overlap": "Aptitude / General",
+        "official_topics": "Simple problems on heights and distances. Problems should not involve more than two right triangles. Angles of elevation / depression should be only 30°, 45°, and 60°."
       },
       {
         "class": 10,
@@ -179,7 +189,8 @@
         "jee_overlap": "Integration Area Foundation",
         "neet_overlap": "N/A",
         "id": "CBSE_C10_MAT_UVI_011",
-        "bitsat_overlap": "Aptitude / General"
+        "bitsat_overlap": "Aptitude / General",
+        "official_topics": "Area of sectors and segments of a circle. Problems based on areas and perimeter / circumference of the above said plane figures. (In calculating area of segment of a circle, problems should be restricted to central angle of 60°, 90° and 120° only)."
       },
       {
         "class": 10,
@@ -195,7 +206,8 @@
         "jee_overlap": "Calculus Optimization Models",
         "neet_overlap": "Fluids & Density",
         "id": "CBSE_C10_MAT_UVI_012",
-        "bitsat_overlap": "Aptitude / General"
+        "bitsat_overlap": "Aptitude / General",
+        "official_topics": "Surface areas and volumes of combinations of any two of the following: cubes, cuboids, spheres, hemispheres and right circular cylinders/cones."
       },
       {
         "class": 10,
@@ -211,7 +223,8 @@
         "jee_overlap": "Direct (JEE Statistics 4M)",
         "neet_overlap": "Experimental Data",
         "id": "CBSE_C10_MAT_UVII_013",
-        "bitsat_overlap": "Aptitude / General"
+        "bitsat_overlap": "Aptitude / General",
+        "official_topics": "Mean, median and mode of grouped data (bimodal situation to be avoided)."
       },
       {
         "class": 10,
@@ -227,9 +240,15 @@
         "jee_overlap": "Direct (Probability Foundation)",
         "neet_overlap": "Genetics Crosses",
         "id": "CBSE_C10_MAT_UVII_014",
-        "bitsat_overlap": "Aptitude / General"
+        "bitsat_overlap": "Aptitude / General",
+        "official_topics": "Classical definition of probability. Simple problems on finding the probability of an event."
       }
-    ]
+    ],
+    "pdf_url": "/curriculum_pdf/Class10_Maths.pdf",
+    "pdf_name": "Class10_Maths.pdf",
+    "pdf_size": "1.0 MB",
+    "official_board": "Central Board of Secondary Education (CBSE, Delhi)",
+    "official_citation": "CBSE Secondary School Curriculum 2025-2026 (Classes IX-X)"
   },
   "Science": {
     "subject": "Science",
@@ -251,7 +270,8 @@
         "jee_overlap": "Redox & Stoichiometry",
         "neet_overlap": "Basic Chemical Principles",
         "id": "CBSE_C10_SCI_UI_015",
-        "bitsat_overlap": "Aptitude / General"
+        "bitsat_overlap": "Aptitude / General",
+        "official_topics": "Chemical equation, Balanced chemical equation, implications of a balanced chemical equation, types of chemical reactions: combination, decomposition, displacement, double displacement, precipitation, endothermic exothermic reactions, oxidation and reduction."
       },
       {
         "class": 10,
@@ -267,7 +287,8 @@
         "jee_overlap": "Ionic Equilibrium",
         "neet_overlap": "Inorganic Salts & pH",
         "id": "CBSE_C10_SCI_UI_016",
-        "bitsat_overlap": "Aptitude / General"
+        "bitsat_overlap": "Aptitude / General",
+        "official_topics": "Their definitions in terms of furnishing of H+ and OH- ions, General properties, examples and uses, neutralization, concept of pH scale (Definition relating to logarithm not required), importance of pH in everyday life; preparation and uses of Sodium Hydroxide, Bleaching powder, Baking soda, Washing soda and Plaster of Paris."
       },
       {
         "class": 10,
@@ -283,7 +304,8 @@
         "jee_overlap": "Metallurgy & s/p Block",
         "neet_overlap": "Inorganic Chemistry",
         "id": "CBSE_C10_SCI_UI_017",
-        "bitsat_overlap": "Aptitude / General"
+        "bitsat_overlap": "Aptitude / General",
+        "official_topics": "Properties of metals and non-metals; Reactivity series; Formation and properties of ionic compounds; Basic metallurgical processes; Corrosion and its prevention."
       },
       {
         "class": 10,
@@ -299,7 +321,8 @@
         "jee_overlap": "Critical (Organic Foundations)",
         "neet_overlap": "Core Organic Chemistry",
         "id": "CBSE_C10_SCI_UI_018",
-        "bitsat_overlap": "Aptitude / General"
+        "bitsat_overlap": "Aptitude / General",
+        "official_topics": "Covalent bonding in carbon compounds. Versatile nature of carbon. Homologous series. Nomenclature of carbon compounds containing functional groups (halogens, alcohol, ketones, aldehydes, alkanes and alkynes), difference between saturated hydrocarbons and unsaturated hydrocarbons. Chemical properties of carbon compounds (combustion, oxidation, addition and substitution reaction). Ethanol and Ethanoic acid (only properties and uses), soaps and detergents."
       },
       {
         "class": 10,
@@ -315,7 +338,8 @@
         "jee_overlap": "N/A",
         "neet_overlap": "Core Human Physiology (High)",
         "id": "CBSE_C10_SCI_UII_019",
-        "bitsat_overlap": "Aptitude / General"
+        "bitsat_overlap": "Aptitude / General",
+        "official_topics": "'Living Being'. Basic concept of nutrition, respiration, transport and excretion in plants and animals."
       },
       {
         "class": 10,
@@ -331,7 +355,8 @@
         "jee_overlap": "N/A",
         "neet_overlap": "Core Neural & Chemical Control",
         "id": "CBSE_C10_SCI_UII_020",
-        "bitsat_overlap": "Aptitude / General"
+        "bitsat_overlap": "Aptitude / General",
+        "official_topics": "Tropic movements in plants; Introduction of plant hormones; Control and co-ordination in animals: Nervous system; Voluntary, involuntary and reflex action; Chemical co-ordination: animal hormones."
       },
       {
         "class": 10,
@@ -347,7 +372,8 @@
         "jee_overlap": "N/A",
         "neet_overlap": "Core Reproduction Unit (16M)",
         "id": "CBSE_C10_SCI_UII_021",
-        "bitsat_overlap": "Aptitude / General"
+        "bitsat_overlap": "Aptitude / General",
+        "official_topics": "Reproduction in animals and plants (asexual and sexual) reproductive health - need and methods of family planning. Safe sex vs HIV/AIDS. Child bearing and women's health."
       },
       {
         "class": 10,
@@ -363,7 +389,8 @@
         "jee_overlap": "N/A",
         "neet_overlap": "Genetics (Highest Yield in NEET)",
         "id": "CBSE_C10_SCI_UII_022",
-        "bitsat_overlap": "Aptitude / General"
+        "bitsat_overlap": "Aptitude / General",
+        "official_topics": "Heredity; Mendel's contribution- Laws for inheritance of traits: Sex determination: brief introduction: (topics related to evolution omitted from board curriculum)."
       },
       {
         "class": 10,
@@ -379,7 +406,8 @@
         "jee_overlap": "Critical (Ray Optics 8M)",
         "neet_overlap": "Ray Optics (16M in NEET)",
         "id": "CBSE_C10_SCI_UIII_023",
-        "bitsat_overlap": "Aptitude / General"
+        "bitsat_overlap": "Aptitude / General",
+        "official_topics": "Reflection of light by curved surfaces; Images formed by spherical mirrors, centre of curvature, principal axis, principal focus, focal length, mirror formula (Derivation not required), magnification. Refraction; Laws of refraction, refractive index. Refraction of light by spherical lens; Image formed by spherical lenses; Lens formula (Derivation not required); Magnification. Power of a lens."
       },
       {
         "class": 10,
@@ -395,7 +423,8 @@
         "jee_overlap": "Direct (Optical Phenomena)",
         "neet_overlap": "Ray Optics Optical Instruments",
         "id": "CBSE_C10_SCI_UIII_024",
-        "bitsat_overlap": "Aptitude / General"
+        "bitsat_overlap": "Aptitude / General",
+        "official_topics": "Functioning of a lens in human eye, defects of vision and their corrections, applications of spherical mirrors and lenses. Refraction of light through a prism, dispersion of light, scattering of light, applications in daily life (excluding color of the sun at sunrise and sunset)."
       },
       {
         "class": 10,
@@ -411,7 +440,8 @@
         "jee_overlap": "Critical (Current Electricity)",
         "neet_overlap": "Current Electricity (12-16M)",
         "id": "CBSE_C10_SCI_UIV_025",
-        "bitsat_overlap": "Aptitude / General"
+        "bitsat_overlap": "Aptitude / General",
+        "official_topics": "Electric current, potential difference and electric current. Ohm's law; Resistance, Resistivity, Factors on which the resistance of a conductor depends. Series combination of resistors, parallel combination of resistors and its applications in daily life. Heating effect of electric current and its applications in daily life. Electric power, Interrelation between P, V, I and R."
       },
       {
         "class": 10,
@@ -427,7 +457,8 @@
         "jee_overlap": "Critical (Magnetism)",
         "neet_overlap": "Magnetic Effects of Current",
         "id": "CBSE_C10_SCI_UIV_026",
-        "bitsat_overlap": "Aptitude / General"
+        "bitsat_overlap": "Aptitude / General",
+        "official_topics": "Magnetic field, field lines, field due to a current carrying conductor, field due to current carrying coil or solenoid; Force on current carrying conductor, Fleming's Left Hand Rule, Direct current. Alternating current: frequency of AC. Advantage of AC over DC. Domestic electric circuits."
       },
       {
         "class": 10,
@@ -443,9 +474,15 @@
         "jee_overlap": "N/A",
         "neet_overlap": "Core Ecology Unit (10-12M)",
         "id": "CBSE_C10_SCI_UV_027",
-        "bitsat_overlap": "Aptitude / General"
+        "bitsat_overlap": "Aptitude / General",
+        "official_topics": "Eco-system, Environmental problems, Ozone depletion, waste production and their solutions. Biodegradable and non-biodegradable substances."
       }
-    ]
+    ],
+    "pdf_url": "/curriculum_pdf/Class10_Science.pdf",
+    "pdf_name": "Class10_Science.pdf",
+    "pdf_size": "288 KB",
+    "official_board": "Central Board of Secondary Education (CBSE, Delhi)",
+    "official_citation": "CBSE Secondary School Curriculum 2025-2026 (Classes IX-X)"
   },
   "Social Science": {
     "subject": "Social Science",
@@ -467,7 +504,8 @@
         "jee_overlap": "NDA / General Aptitude",
         "neet_overlap": "N/A",
         "id": "CBSE_C10_SOC_UI_028",
-        "bitsat_overlap": "Aptitude / General"
+        "bitsat_overlap": "Aptitude / General",
+        "official_topics": "The French Revolution and the Idea of the Nation, The Making of Nationalism in Europe, The Age of Revolutions: 1830-1848, The Making of Germany and Italy, Visualizing the Nation, Nationalism and Imperialism. First World War, Khilafat and Non-Cooperation, Differing Strands within the Movement, Towards Civil Disobedience, The Sense of Collective Belonging."
       },
       {
         "class": 10,
@@ -483,7 +521,8 @@
         "jee_overlap": "NDA / UPSC GAT",
         "neet_overlap": "N/A",
         "id": "CBSE_C10_SOC_UI_029",
-        "bitsat_overlap": "Aptitude / General"
+        "bitsat_overlap": "Aptitude / General",
+        "official_topics": "The Pre-modern world, The Nineteenth Century (1815-1914), The Inter-war Economy, Rebuilding a World Economy: The Post-War Era. The First Printed Books, Print Comes to Europe, The Print Revolution and its Impact, The Reading Mania, The Nineteenth Century, India and the World of Print, Religious Reform and Public Debates, New Forms of Publication, Print and Censorship."
       },
       {
         "class": 10,
@@ -499,7 +538,8 @@
         "jee_overlap": "NDA / UPSC GAT",
         "neet_overlap": "N/A",
         "id": "CBSE_C10_SOC_UII_030",
-        "bitsat_overlap": "Aptitude / General"
+        "bitsat_overlap": "Aptitude / General",
+        "official_topics": "Types of Resources, Development of Resources, Resource Planning in India, Land Resources, Land Utilization, Land Degradation and Conservation Measures, Soil as a Resource, Classification of Soils, Soil Erosion and Conservation. Conservation of forest and wildlife in India, Types and distribution of forests and wildlife resources, Community and Conservation. Water Scarcity, Multi-purpose projects and integrated water resources management, Rainwater Harvesting. Types of farming, Cropping Pattern, Major Crops, Food Security, Technological and Institutional Reforms."
       },
       {
         "class": 10,
@@ -515,7 +555,8 @@
         "jee_overlap": "NDA / UPSC GAT",
         "neet_overlap": "N/A",
         "id": "CBSE_C10_SOC_UII_031",
-        "bitsat_overlap": "Aptitude / General"
+        "bitsat_overlap": "Aptitude / General",
+        "official_topics": "What is a mineral, Mode of occurrence of minerals, Ferrous and Non-Ferrous Minerals, Non-Metallic Minerals, Rock Minerals, Conservation of Minerals, Conventional and Non-Conventional Sources of Energy. Importance of manufacturing, Industrial location, Classification of industries, Spatial distribution, Industrial pollution and environmental degradation. Roadways, Railways, Pipelines, Waterways, Major Sea Ports, Airways, Communication, International Trade, Tourism as a Trade."
       },
       {
         "class": 10,
@@ -531,7 +572,8 @@
         "jee_overlap": "CLAT / Civil Services",
         "neet_overlap": "N/A",
         "id": "CBSE_C10_SOC_UIII_032",
-        "bitsat_overlap": "Aptitude / General"
+        "bitsat_overlap": "Aptitude / General",
+        "official_topics": "Case Studies of Belgium and Sri Lanka, Why power sharing is desirable, Forms of Power Sharing. What is Federalism, What makes India a Federal Country, How is Federalism practiced, Decentralization in India."
       },
       {
         "class": 10,
@@ -547,7 +589,8 @@
         "jee_overlap": "CLAT / Civil Services",
         "neet_overlap": "N/A",
         "id": "CBSE_C10_SOC_UIII_033",
-        "bitsat_overlap": "Aptitude / General"
+        "bitsat_overlap": "Aptitude / General",
+        "official_topics": "Gender and Politics: Public/Private division, Women's political representation. Religion, Communalism and Politics: Communalism, Secular State. Caste and Politics: Caste inequalities, Caste in politics, Politics in caste. Why do we need Political Parties, How many parties should we have, National Parties, State Parties, Challenges to Political Parties, How can Parties be reformed."
       },
       {
         "class": 10,
@@ -563,7 +606,8 @@
         "jee_overlap": "CLAT / Business Entrances",
         "neet_overlap": "N/A",
         "id": "CBSE_C10_SOC_UIV_034",
-        "bitsat_overlap": "Aptitude / General"
+        "bitsat_overlap": "Aptitude / General",
+        "official_topics": "What Development Promises - Different People Different Goals, Income and other Goals, National Development, How to compare different countries or states, Income and other criteria, Public Facilities, Sustainability of Development. Sectors of Economic Activities, Comparing the three sectors, Primary, Secondary and Tertiary Sectors in India, Division of sectors as organized and unorganized, Sectors in terms of ownership: Public and Private Sectors."
       },
       {
         "class": 10,
@@ -579,9 +623,15 @@
         "jee_overlap": "CLAT / Business Entrances",
         "neet_overlap": "N/A",
         "id": "CBSE_C10_SOC_UIV_035",
-        "bitsat_overlap": "Aptitude / General"
+        "bitsat_overlap": "Aptitude / General",
+        "official_topics": "Money as a medium of exchange, Modern forms of money, Loan activities of Banks, Two different credit situations, Terms of credit, Formal sector credit in India, Self Help Groups (SHGs) for the poor. Production across countries, Interlinking production across countries, Foreign Trade and integration of markets, What is Globalization, Factors that have enabled Globalization, World Trade Organization (WTO), Impact of Globalization in India, The Struggle for a fair Globalization."
       }
-    ]
+    ],
+    "pdf_url": "/curriculum_pdf/Class10_Social_Science.pdf",
+    "pdf_name": "Class10_Social_Science.pdf",
+    "pdf_size": "1.1 MB",
+    "official_board": "Central Board of Secondary Education (CBSE, Delhi)",
+    "official_citation": "CBSE Secondary School Curriculum 2025-2026 (Classes IX-X)"
   },
   "English Language & Literature": {
     "subject": "English Language & Literature",
@@ -603,7 +653,8 @@
         "jee_overlap": "BITSAT English / UGEE REAP",
         "neet_overlap": "Scientific Reading",
         "id": "CBSE_C10_ENG_USec A_036",
-        "bitsat_overlap": "Aptitude / General"
+        "bitsat_overlap": "Aptitude / General",
+        "official_topics": "Multiple Choice Questions / Objective Type Questions and Short Answer Questions to assess comprehension, interpretation, analysis, inference, evaluation and vocabulary. Unseen discursive passage (400-450 words) and Case-based factual passage with visual input / statistical data / chart (200-250 words)."
       },
       {
         "class": 10,
@@ -619,7 +670,8 @@
         "jee_overlap": "BITSAT English Proficiency",
         "neet_overlap": "N/A",
         "id": "CBSE_C10_ENG_USec B_037",
-        "bitsat_overlap": "Aptitude / General"
+        "bitsat_overlap": "Aptitude / General",
+        "official_topics": "Formal Letter based on given situations in 100-120 words (Letter to Editor, Complaint Letter, Enquiry Letter, Order Letter). Writing an Analytical Paragraph (100-120 words) on a given Map/Chart/Graph/Cue. Integrated Grammar: Tenses, Modals, Subject-verb concord, Reported speech (Commands and requests, Statements, Questions), Determiners, Gap filling, Editing or omission exercises."
       },
       {
         "class": 10,
@@ -635,8 +687,14 @@
         "jee_overlap": "Verbal Aptitude",
         "neet_overlap": "N/A",
         "id": "CBSE_C10_ENG_USec C_038",
-        "bitsat_overlap": "Aptitude / General"
+        "bitsat_overlap": "Aptitude / General",
+        "official_topics": "First Flight Prose: A Letter to God, Nelson Mandela, Two Stories about Flying, From the Diary of Anne Frank, Glimpses of India, Mijbil the Otter, Madam Rides the Bus, The Sermon at Benares, The Proposal. First Flight Poetry: Dust of Snow, Fire and Ice, A Tiger in the Zoo, How to Tell Wild Animals, The Ball Poem, Amanda!, The Trees, Fog, The Tale of Custard the Dragon, For Anne Gregory. Footprints without Feet Supplementary: A Triumph of Surgery, The Thief's Story, The Midnight Visitor, A Question of Trust, Footprints without Feet, The Making of a Scientist, The Necklace, Bholi, The Book that Saved the Earth."
       }
-    ]
+    ],
+    "pdf_url": "/curriculum_pdf/Class10_English.pdf",
+    "pdf_name": "Class10_English.pdf",
+    "pdf_size": "885 KB",
+    "official_board": "Central Board of Secondary Education (CBSE, Delhi)",
+    "official_citation": "CBSE Secondary School Curriculum 2025-2026 (Classes IX-X)"
   }
 }
