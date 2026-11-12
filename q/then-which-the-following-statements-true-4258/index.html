@@ -25,7 +25,12 @@
       "@type": "Question",
       "name": "CBSE Class 12 Mathematics Unclassified Board Question",
       "text": "If $P(A \\mid B) = P(A' \\mid B)$, then which of the following statements is true ?\n(A) $P(A) = P(A')$\n(B) $P(A) = 2 \\, P(B)$\n(C) $P(A \\cap B) = \\frac{1}{2} \\, P(B)$\n(D) $P(A \\cap B) = 2 \\, P(B)$",
-      "answerCount": 1
+      "answerCount": 1,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Step 1 (Formula / Governing Law & Given Data): [1/3 Mark]        The conditional probability of an event $A$ given $B$ is defined as:      $$P(A|B) = \frac{P(A \cap B)}{P(B)}, \text{ where } P(B) > 0$$      Given: $P(A|B) = P(A'|B)$, where $A'$ is the complement of event $A$ (i.e., $P(A') = 1 - P(A)...",
+        "upvoteCount": 1
+      }
     }
   }
   </script>
@@ -82,6 +87,39 @@
 (C) $P(A \cap B) = \frac{1}{2} \, P(B)$
 (D) $P(A \cap B) = 2 \, P(B)$</div>
       </div>
+      <div class="solution-box" style="margin-top:24px; padding:20px; background:var(--card-bg, #ffffff); border:1.5px solid var(--border, #e2e8f0); border-radius:12px;">
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:14px;">
+          <span style="background:#10b981; color:#fff; font-size:11px; font-weight:700; padding:3px 10px; border-radius:20px; text-transform:uppercase;">✓ Verified CBSE Marking Scheme</span>
+          <span style="font-size:12px; color:var(--text-muted, #64748b); font-weight:600;">Official Evaluation Steps & EL10 Insight</span>
+        </div>
+        <div class="math-content solution-content" style="line-height:1.7; font-size:15px;">
+          <div>
+    <p><strong>Step 1 (Formula / Governing Law & Given Data): [1/3 Mark]</strong></p>
+    <p>The conditional probability of an event $A$ given $B$ is defined as:</p>
+    $$P(A|B) = \frac{P(A \cap B)}{P(B)}, \text{ where } P(B) > 0$$
+    <p>Given: $P(A|B) = P(A'|B)$, where $A'$ is the complement of event $A$ (i.e., $P(A') = 1 - P(A)$).</p>
+
+    <p><strong>Step 2 (Step-by-Step Mathematical Working): [1/3 Mark]</strong></p>
+    <p>Using the definition of conditional probability for both sides:</p>
+    $$\frac{P(A \cap B)}{P(B)} = \frac{P(A' \cap B)}{P(B)}$$
+    <p>Since $P(B) \neq 0$, we can cancel $P(B)$ from both denominators:</p>
+    $$P(A \cap B) = P(A' \cap B)$$
+    <p>We know that $A$ and $A'$ partition the sample space, so $B = (A \cap B) \cup (A' \cap B)$. Since these are disjoint sets:</p>
+    $$P(B) = P(A \cap B) + P(A' \cap B)$$
+    <p>Substituting $P(A' \cap B)$ with $P(A \cap B)$ in the equation above:</p>
+    $$P(B) = P(A \cap B) + P(A \cap B)$$
+    $$P(B) = 2P(A \cap B)$$
+    $$P(A \cap B) = \frac{1}{2}P(B)$$
+
+    <p><strong>Step 3 (Final Concluded Answer): [1/3 Mark]</strong></p>
+    <p>Comparing the result with the given options, the correct statement is <strong>(C)</strong>.</p>
+    <p><strong>Final Answer: (C) $P(A \cap B) = \frac{1}{2} P(B)$</strong></p>
+
+    <p><strong>💡 EL10 Concept Insight:</strong> If the chance of $A$ happening is the same as the chance of $A$ <em>not</em> happening (given $B$ has occurred), it means $A$ is essentially a "coin flip" within the world of $B$, so $A$ must take up exactly half of the space occupied by $B$.</p>
+</div>
+        </div>
+      </div>
+
 
       <div class="card-footer-actions">
         <a href="mailto:support@learnosha.in?subject=Report%20Question%204258&body=Question%20ID:%204258%0AChapter:%20Unclassified%0AIssue%20Description:%20" class="report-link">

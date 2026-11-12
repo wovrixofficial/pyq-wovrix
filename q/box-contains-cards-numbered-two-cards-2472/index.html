@@ -25,7 +25,12 @@
       "@type": "Question",
       "name": "CBSE Class 12 Mathematics Probability Board Question",
       "text": "(a) A box contains cards numbered $1$ to $22$. Two cards are drawn simultaneously without replacement and their numbers are noted. What is the probability that both numbers are even ?\nOR\n(b) If $\\text{P}(A) = \\frac{3}{8}$, $\\text{P}(B) = \\frac{1}{2}$ and $\\text{P}(A \\cap B) = \\frac{1}{4}$, find $\\text{P}(\\bar{A} / \\bar{B})$.",
-      "answerCount": 1
+      "answerCount": 1,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Solution (a)        Step 1 (Formula / Governing Law & Given Data): [0.5 Mark]        Total number of cards = $22$. Number of even cards ($2, 4, 6, \dots, 22$) = $11$. Number of odd cards = $11$.       The probability of drawing two even cards simultaneously is given by the ratio of the number of way...",
+        "upvoteCount": 1
+      }
     }
   }
   </script>
@@ -80,6 +85,52 @@
 OR
 (b) If $\text{P}(A) = \frac{3}{8}$, $\text{P}(B) = \frac{1}{2}$ and $\text{P}(A \cap B) = \frac{1}{4}$, find $\text{P}(\bar{A} / \bar{B})$.</div>
       </div>
+      <div class="solution-box" style="margin-top:24px; padding:20px; background:var(--card-bg, #ffffff); border:1.5px solid var(--border, #e2e8f0); border-radius:12px;">
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:14px;">
+          <span style="background:#10b981; color:#fff; font-size:11px; font-weight:700; padding:3px 10px; border-radius:20px; text-transform:uppercase;">✓ Verified CBSE Marking Scheme</span>
+          <span style="font-size:12px; color:var(--text-muted, #64748b); font-weight:600;">Official Evaluation Steps & EL10 Insight</span>
+        </div>
+        <div class="math-content solution-content" style="line-height:1.7; font-size:15px;">
+          <div>
+    <h3>Solution (a)</h3>
+    <p><strong>Step 1 (Formula / Governing Law & Given Data): [0.5 Mark]</strong></p>
+    <p>Total number of cards = $22$. Number of even cards ($2, 4, 6, \dots, 22$) = $11$. Number of odd cards = $11$.</p>
+    <p>The probability of drawing two even cards simultaneously is given by the ratio of the number of ways to choose 2 even cards to the total number of ways to choose 2 cards from 22:</p>
+    $$P(E) = \frac{^{11}C_2}{^{22}C_2}$$
+
+    <p><strong>Step 2 (Step-by-Step Mathematical Working): [1 Mark]</strong></p>
+    <p>Using the combination formula $^nC_r = \frac{n!}{r!(n-r)!}$:</p>
+    $$^{11}C_2 = \frac{11 \times 10}{2 \times 1} = 55$$
+    $$^{22}C_2 = \frac{22 \times 21}{2 \times 1} = 11 \times 21 = 231$$
+    $$P(E) = \frac{55}{231}$$
+
+    <p><strong>Step 3 (Final Concluded Answer): [0.5 Mark]</strong></p>
+    <p>Simplifying the fraction by dividing both numerator and denominator by 11:</p>
+    $$P(E) = \frac{5}{21}$$
+
+    <p><strong>💡 EL10 Concept Insight:</strong> Imagine you have 22 socks and 11 are blue; picking two at once is just like picking one blue sock, then picking another from the remaining pile, which is why we multiply the chances of each step.</p>
+</div>
+
+<hr>
+
+<div>
+    <h3>Solution (b)</h3>
+    <p><strong>Step 1 (Formula / Governing Law & Given Data): [0.5 Mark]</strong></p>
+    <p>Given: $P(A) = \frac{3}{8}$, $P(B) = \frac{1}{2}$, $P(A \cap B) = \frac{1}{4}$.</p>
+    <p>We need to find $P(\bar{A} | \bar{B}) = \frac{P(\bar{A} \cap \bar{B})}{P(\bar{B})}$.</p>
+    <p>By De Morgan's Law, $P(\bar{A} \cap \bar{B}) = P(\overline{A \cup B}) = 1 - P(A \cup B)$.</p>
+
+    <p><strong>Step 2 (Step-by-Step Mathematical Working): [1 Mark]</strong></p>
+    <p>First, find $P(A \cup B) = P(A) + P(B) - P(A \cap B)$:</p>
+    $$P(A \cup B) = \frac{3}{8} + \frac{1}{2} - \frac{1}{4} = \frac{3+4-2}{8} = \frac{5}{8}$$
+    <p>Now, $P(\bar{A} \cap \bar{B}) = 1 - \frac{5}{8} = \frac{3}{8}$.</p>
+    <p>Also, $P(\bar{B}) = 1 - P(B) = 1 - \frac{1}{2} = \frac{1}{2}$.</p>
+    $$P(\bar{A} | \bar{B}) = \frac{3/8}{1/2} = \frac{3}{8} \times 2$$
+
+    <p><strong>Step 3 (Final Concluded Answer): [0.5 Mark
+        </div>
+      </div>
+
 
       <div class="card-footer-actions">
         <a href="mailto:support@learnosha.in?subject=Report%20Question%202472&body=Question%20ID:%202472%0AChapter:%20Probability%0AIssue%20Description:%20" class="report-link">

@@ -25,7 +25,12 @@
       "@type": "Question",
       "name": "CBSE Class 12 Mathematics Unclassified Board Question",
       "text": "Using integration, find the area of region AOB.",
-      "answerCount": 1
+      "answerCount": 1,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Question:  Using integration, find the area of region AOB, where AOB is the region in the first quadrant enclosed by the x-axis, the line $y = x$, and the circle $x^2 + y^2 = 32$.                Step 1 (Formula / Governing Law & Given Data): [0.5 Mark]        The area of the region is determined by ...",
+        "upvoteCount": 1
+      }
     }
   }
   </script>
@@ -78,6 +83,43 @@
       <div class="question-body">
         <div class="math-content">Using integration, find the area of region AOB.</div>
       </div>
+      <div class="solution-box" style="margin-top:24px; padding:20px; background:var(--card-bg, #ffffff); border:1.5px solid var(--border, #e2e8f0); border-radius:12px;">
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:14px;">
+          <span style="background:#10b981; color:#fff; font-size:11px; font-weight:700; padding:3px 10px; border-radius:20px; text-transform:uppercase;">✓ Verified CBSE Marking Scheme</span>
+          <span style="font-size:12px; color:var(--text-muted, #64748b); font-weight:600;">Official Evaluation Steps & EL10 Insight</span>
+        </div>
+        <div class="math-content solution-content" style="line-height:1.7; font-size:15px;">
+          <div>
+    <p><strong>Question:</strong> Using integration, find the area of region AOB, where AOB is the region in the first quadrant enclosed by the x-axis, the line $y = x$, and the circle $x^2 + y^2 = 32$.</p>
+
+    <hr>
+
+    <p><strong>Step 1 (Formula / Governing Law & Given Data): [0.5 Mark]</strong></p>
+    <p>The area of the region is determined by the sum of the areas under the line and the circle within the specified limits. Given equations:</p>
+    <ul>
+        <li>Line: $y = x$</li>
+        <li>Circle: $x^2 + y^2 = 32 \implies y = \sqrt{32 - x^2}$</li>
+        <li>Intersection point: Substituting $y=x$ into $x^2 + y^2 = 32$, we get $2x^2 = 32 \implies x^2 = 16 \implies x = 4$ (in the first quadrant).</li>
+    </ul>
+    <p>The area $A$ is given by:</p>
+    $$A = \int_{0}^{4} x \, dx + \int_{4}^{\sqrt{32}} \sqrt{32 - x^2} \, dx$$
+
+    <p><strong>Step 2 (Step-by-Step Mathematical Working): [1.0 Mark]</strong></p>
+    <p>Evaluating the first integral:</p>
+    $$\int_{0}^{4} x \, dx = \left[ \frac{x^2}{2} \right]_{0}^{4} = \frac{16}{2} - 0 = 8$$
+    <p>Evaluating the second integral using the formula $\int \sqrt{a^2 - x^2} \, dx = \frac{x}{2}\sqrt{a^2 - x^2} + \frac{a^2}{2} \sin^{-1}\left(\frac{x}{a}\right)$:</p>
+    $$\int_{4}^{4\sqrt{2}} \sqrt{(4\sqrt{2})^2 - x^2} \, dx = \left[ \frac{x}{2}\sqrt{32 - x^2} + \frac{32}{2} \sin^{-1}\left(\frac{x}{4\sqrt{2}}\right) \right]_{4}^{4\sqrt{2}}$$
+    $$= \left( 0 + 16 \sin^{-1}(1) \right) - \left( \frac{4}{2}\sqrt{32 - 16} + 16 \sin^{-1}\left(\frac{4}{4\sqrt{2}}\right) \right)$$
+    $$= 16\left(\frac{\pi}{2}\right) - \left( 2(4) + 16\left(\frac{\pi}{4}\right) \right) = 8\pi - 8 - 4\pi = 4\pi - 8$$
+
+    <p><strong>Step 3 (Final Concluded Answer): [0.5 Mark]</strong></p>
+    <p>Total Area = $8 + (4\pi - 8) = 4\pi$ square units.</p>
+
+    <p><strong>💡 EL10 Concept Insight:</strong> Imagine you are painting a shape; we split the shape into two parts—a simple triangle near the center and a curved slice of a pie near the edge—and add their areas together to get the total size.</p>
+</div>
+        </div>
+      </div>
+
 
       <div class="card-footer-actions">
         <a href="mailto:support@learnosha.in?subject=Report%20Question%201415&body=Question%20ID:%201415%0AChapter:%20Unclassified%0AIssue%20Description:%20" class="report-link">

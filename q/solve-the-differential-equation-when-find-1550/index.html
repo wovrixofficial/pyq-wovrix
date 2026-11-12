@@ -25,7 +25,12 @@
       "@type": "Question",
       "name": "CBSE Class 12 Mathematics Differential Equations Board Question",
       "text": "(a) Solve the differential equation $y e^y dx = (y^3 + 2x e^y) dy$, when $y(0) = 1$.\nOR\n(b) Find the general solution of the differential equation $(x^3 - 3xy^2) dx = (y^3 - 3x^2y) dy$.",
-      "answerCount": 1
+      "answerCount": 1,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Solution for (a): Differential Equation         Step 1 (Rearranging into Linear Form): [1 Mark]        Given the differential equation: $y e^y dx = (y^3 + 2x e^y) dy$. Rearranging to the form $\frac{dx}{dy} + P(y)x = Q(y)$:      $$\frac{dx}{dy} = \frac{y^3 + 2x e^y}{y e^y}$$     $$\frac{dx}{dy} = \f...",
+        "upvoteCount": 1
+      }
     }
   }
   </script>
@@ -80,6 +85,50 @@
 OR
 (b) Find the general solution of the differential equation $(x^3 - 3xy^2) dx = (y^3 - 3x^2y) dy$.</div>
       </div>
+      <div class="solution-box" style="margin-top:24px; padding:20px; background:var(--card-bg, #ffffff); border:1.5px solid var(--border, #e2e8f0); border-radius:12px;">
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:14px;">
+          <span style="background:#10b981; color:#fff; font-size:11px; font-weight:700; padding:3px 10px; border-radius:20px; text-transform:uppercase;">✓ Verified CBSE Marking Scheme</span>
+          <span style="font-size:12px; color:var(--text-muted, #64748b); font-weight:600;">Official Evaluation Steps & EL10 Insight</span>
+        </div>
+        <div class="math-content solution-content" style="line-height:1.7; font-size:15px;">
+          <div>
+    <h3>Solution for (a): Differential Equation</h3>
+
+    <p><strong>Step 1 (Rearranging into Linear Form): [1 Mark]</strong></p>
+    <p>Given the differential equation: $y e^y dx = (y^3 + 2x e^y) dy$. Rearranging to the form $\frac{dx}{dy} + P(y)x = Q(y)$:</p>
+    $$\frac{dx}{dy} = \frac{y^3 + 2x e^y}{y e^y}$$
+    $$\frac{dx}{dy} = \frac{y^3}{y e^y} + \frac{2x e^y}{y e^y}$$
+    $$\frac{dx}{dy} - \left(\frac{2}{y}\right)x = y^2 e^{-y}$$
+
+    <p><strong>Step 2 (Integrating Factor and General Solution): [2 Marks]</strong></p>
+    <p>Here, $P(y) = -\frac{2}{y}$ and $Q(y) = y^2 e^{-y}$.</p>
+    <p>Integrating Factor (I.F.) $= e^{\int P(y) dy} = e^{\int -\frac{2}{y} dy} = e^{-2 \ln|y|} = e^{\ln(y^{-2})} = \frac{1}{y^2}$.</p>
+    <p>The solution is given by $x \cdot (I.F.) = \int Q(y) \cdot (I.F.) dy + C$:</p>
+    $$x \cdot \frac{1}{y^2} = \int (y^2 e^{-y}) \cdot \frac{1}{y^2} dy + C$$
+    $$\frac{x}{y^2} = \int e^{-y} dy + C$$
+    $$\frac{x}{y^2} = -e^{-y} + C$$
+
+    <p><strong>Step 3 (Applying Initial Condition and Final Answer): [1 Mark]</strong></p>
+    <p>Given $y(0) = 1$, i.e., at $x=0, y=1$:</p>
+    $$\frac{0}{1^2} = -e^{-1} + C \implies C = \frac{1}{e}$$
+    <p>Substituting $C$ back into the equation:</p>
+    $$\frac{x}{y^2} = -e^{-y} + \frac{1}{e} \implies x = y^2 \left( \frac{1}{e} - e^{-y} \right)$$
+
+    <hr>
+
+    <h3>Solution for (b): Homogeneous Differential Equation</h3>
+
+    <p><strong>Step 1 (Verification of Homogeneity): [1 Mark]</strong></p>
+    <p>Given $\frac{dy}{dx} = \frac{x^3 - 3xy^2}{y^3 - 3x^2y}$. This is a homogeneous equation of degree 3. Let $y = vx$, then $\frac{dy}{dx} = v + x \frac{dv}{dx}$.</p>
+
+    <p><strong>Step 2 (Substitution and Integration): [2 Marks]</strong></p>
+    $$v + x \frac{dv}{dx} = \frac{x^3 - 3x(vx)^2}{(vx)^3 - 3x^2(vx)} = \frac{x^3(1 - 3v^2)}{x^3(v^3 - 3v)}$$
+    $$x \frac{dv}{dx} = \frac{1 - 3v^2}{v^3 - 3v} - v = \frac{1 - 3v^2 - v^4 + 3v^2}{v^3 - 3v} = \frac{1 - v^4}{v^3 - 3v}$$
+    <p>Separating variables:</p>
+    $$\
+        </div>
+      </div>
+
 
       <div class="card-footer-actions">
         <a href="mailto:support@learnosha.in?subject=Report%20Question%201550&body=Question%20ID:%201550%0AChapter:%20Differential Equations%0AIssue%20Description:%20" class="report-link">

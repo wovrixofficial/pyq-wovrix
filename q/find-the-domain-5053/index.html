@@ -25,7 +25,12 @@
       "@type": "Question",
       "name": "CBSE Class 12 Mathematics Relations and Functions Board Question",
       "text": "Find the domain of $f(x) = \\sin^{-1} (-x^2)$.",
-      "answerCount": 1
+      "answerCount": 1,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Step 1 (Formula / Governing Law & Given Data): [0.5 Mark]        The function is given by $f(x) = \sin^{-1}(-x^2)$. We know that the domain of the inverse sine function, $f(x) = \sin^{-1}(u)$, is defined for all $u$ such that:      $$-1 \leq u \leq 1$$      In this specific case, $u = -x^2$. Therefo...",
+        "upvoteCount": 1
+      }
     }
   }
   </script>
@@ -78,6 +83,49 @@
       <div class="question-body">
         <div class="math-content">Find the domain of $f(x) = \sin^{-1} (-x^2)$.</div>
       </div>
+      <div class="solution-box" style="margin-top:24px; padding:20px; background:var(--card-bg, #ffffff); border:1.5px solid var(--border, #e2e8f0); border-radius:12px;">
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:14px;">
+          <span style="background:#10b981; color:#fff; font-size:11px; font-weight:700; padding:3px 10px; border-radius:20px; text-transform:uppercase;">✓ Verified CBSE Marking Scheme</span>
+          <span style="font-size:12px; color:var(--text-muted, #64748b); font-weight:600;">Official Evaluation Steps & EL10 Insight</span>
+        </div>
+        <div class="math-content solution-content" style="line-height:1.7; font-size:15px;">
+          <div>
+    <p><strong>Step 1 (Formula / Governing Law & Given Data): [0.5 Mark]</strong></p>
+    <p>The function is given by $f(x) = \sin^{-1}(-x^2)$. We know that the domain of the inverse sine function, $f(x) = \sin^{-1}(u)$, is defined for all $u$ such that:</p>
+    $$-1 \leq u \leq 1$$
+    <p>In this specific case, $u = -x^2$. Therefore, for $f(x)$ to be defined, we must satisfy the inequality:</p>
+    $$-1 \leq -x^2 \leq 1$$
+
+    <p><strong>Step 2 (Step-by-Step Mathematical Working): [1.0 Mark]</strong></p>
+    <p>We solve the compound inequality $-1 \leq -x^2 \leq 1$:</p>
+    <ul>
+        <li>Multiply the entire inequality by $-1$ (remembering to reverse the inequality signs):
+            $$1 \geq x^2 \geq -1$$
+        </li>
+        <li>This can be rewritten as:
+            $$-1 \leq x^2 \leq 1$$
+        </li>
+        <li>Since $x^2$ is a square of a real number, it is always non-negative ($x^2 \geq 0$). Thus, the condition $x^2 \geq -1$ is always true for all $x \in \mathbb{R}$.</li>
+        <li>We only need to solve the remaining part:
+            $$x^2 \leq 1$$
+            $$x^2 - 1 \leq 0$$
+            $$(x - 1)(x + 1) \leq 0$$
+        </li>
+        <li>Using the wavy curve method (sign scheme), the inequality holds when $x$ lies between the roots:
+            $$-1 \leq x \leq 1$$
+        </li>
+    </ul>
+
+    <p><strong>Step 3 (Final Concluded Answer): [0.5 Mark]</strong></p>
+    <p>The domain of the function $f(x) = \sin^{-1}(-x^2)$ is the set of all values of $x$ in the interval:</p>
+    $$x \in [-1, 1]$$
+
+    <p><strong>💡 EL10 Concept Insight:</strong></p>
+    <p>Think of $\sin^{-1}$ as a machine that only accepts inputs between -1 and 1; since squaring any number makes it positive, $-x^2$ will always be between 0 and -1, which fits perfectly inside that "safe" zone as long as $x$ isn't larger than 1 or smaller than -1.</p>
+</div>
+        </div>
+      </div>
+
 
       <div class="card-footer-actions">
         <a href="mailto:support@learnosha.in?subject=Report%20Question%205053&body=Question%20ID:%205053%0AChapter:%20Relations and Functions%0AIssue%20Description:%20" class="report-link">

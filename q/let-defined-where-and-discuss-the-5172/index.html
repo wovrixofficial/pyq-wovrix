@@ -25,7 +25,12 @@
       "@type": "Question",
       "name": "CBSE Class 12 Mathematics Relations and Functions Board Question",
       "text": "Let $f : A \\to B$ be defined by $f(x) = \\frac{x - 2}{x - 3}$, where $A = \\mathbb{R} - \\{3\\}$ and $B = \\mathbb{R} - \\{1\\}$. Discuss the bijectivity of the function.",
-      "answerCount": 1
+      "answerCount": 1,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Step 1 (Governing Definitions): [0.5 Mark]        A function $f: A \to B$ is  bijective  if it is both  injective  (one-one) and  surjective  (onto).                  Injective:  $f(x_1) = f(x_2) \implies x_1 = x_2$ for all $x_1, x_2 \in A$.            Surjective:  For every $y \in B$, there exists ...",
+        "upvoteCount": 1
+      }
     }
   }
   </script>
@@ -78,6 +83,48 @@
       <div class="question-body">
         <div class="math-content">Let $f : A \to B$ be defined by $f(x) = \frac{x - 2}{x - 3}$, where $A = \mathbb{R} - \{3\}$ and $B = \mathbb{R} - \{1\}$. Discuss the bijectivity of the function.</div>
       </div>
+      <div class="solution-box" style="margin-top:24px; padding:20px; background:var(--card-bg, #ffffff); border:1.5px solid var(--border, #e2e8f0); border-radius:12px;">
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:14px;">
+          <span style="background:#10b981; color:#fff; font-size:11px; font-weight:700; padding:3px 10px; border-radius:20px; text-transform:uppercase;">✓ Verified CBSE Marking Scheme</span>
+          <span style="font-size:12px; color:var(--text-muted, #64748b); font-weight:600;">Official Evaluation Steps & EL10 Insight</span>
+        </div>
+        <div class="math-content solution-content" style="line-height:1.7; font-size:15px;">
+          <div>
+    <p><strong>Step 1 (Governing Definitions): [0.5 Mark]</strong></p>
+    <p>A function $f: A \to B$ is <strong>bijective</strong> if it is both <strong>injective</strong> (one-one) and <strong>surjective</strong> (onto).</p>
+    <ul>
+        <li><strong>Injective:</strong> $f(x_1) = f(x_2) \implies x_1 = x_2$ for all $x_1, x_2 \in A$.</li>
+        <li><strong>Surjective:</strong> For every $y \in B$, there exists at least one $x \in A$ such that $f(x) = y$.</li>
+    </ul>
+
+    <p><strong>Step 2 (Step-by-Step Mathematical Working): [1 Mark]</strong></p>
+    <p><strong>(i) Checking for Injective (One-One):</strong></p>
+    <p>Let $f(x_1) = f(x_2)$</p>
+    $$\frac{x_1 - 2}{x_1 - 3} = \frac{x_2 - 2}{x_2 - 3}$$
+    <p>Cross-multiplying:</p>
+    $$(x_1 - 2)(x_2 - 3) = (x_2 - 2)(x_1 - 3)$$
+    $$x_1x_2 - 3x_1 - 2x_2 + 6 = x_1x_2 - 3x_2 - 2x_1 + 6$$
+    $$-3x_1 - 2x_2 = -3x_2 - 2x_1$$
+    $$-x_1 = -x_2 \implies x_1 = x_2$$
+    <p>Since $f(x_1) = f(x_2) \implies x_1 = x_2$, the function is <strong>injective</strong>.</p>
+
+    <p><strong>(ii) Checking for Surjective (Onto):</strong></p>
+    <p>Let $y = \frac{x - 2}{x - 3}$. Solve for $x$ in terms of $y$:</p>
+    $$y(x - 3) = x - 2$$
+    $$yx - 3y = x - 2$$
+    $$yx - x = 3y - 2$$
+    $$x(y - 1) = 3y - 2 \implies x = \frac{3y - 2}{y - 1}$$
+    <p>For any $y \in B$ (where $y \neq 1$), $x$ is well-defined and $x \in A$ (since $x \neq 3$). Thus, the function is <strong>surjective</strong>.</p>
+
+    <p><strong>Step 3 (Final Concluded Answer): [0.5 Mark]</strong></p>
+    <p>Since the function $f$ is both injective and surjective, it is a <strong>bijective</strong> function.</p>
+
+    <p><strong>💡 EL10 Concept Insight:</strong></p>
+    <p>Think of this function like a perfect pairing: "Injective" means no two inputs share the same output, and "Surjective" means every possible output has an input waiting for it. Because every input has exactly one unique output and every output is covered, the function is a perfect one-to-one match, making it bijective.</p>
+</div>
+        </div>
+      </div>
+
 
       <div class="card-footer-actions">
         <a href="mailto:support@learnosha.in?subject=Report%20Question%205172&body=Question%20ID:%205172%0AChapter:%20Relations and Functions%0AIssue%20Description:%20" class="report-link">

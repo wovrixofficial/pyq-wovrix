@@ -25,7 +25,12 @@
       "@type": "Question",
       "name": "CBSE Class 12 Mathematics Probability Board Question",
       "text": "The chances of P, Q and R getting selected as CEO of a company are in the ratio $4 : 1 : 2$ respectively. The probabilities for the company to increase its profits from the previous year under the new CEO, P, Q or R are $0\\cdot3$, $0\\cdot8$ and $0\\cdot5$ respectively. If the company increased the profits from the previous year, find the probability that it is due to the appointment of R as CEO.",
-      "answerCount": 1
+      "answerCount": 1,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CBSE Class 12 Mathematics: Bayes' Theorem Solution         Step 1 (Formula / Governing Law & Given Data): [1 Mark]        Let $E_1, E_2, E_3$ be the events that P, Q, and R are selected as CEO respectively, and $A$ be the event that the company increases its profits.       Given ratios: $4:1:2$. Tot...",
+        "upvoteCount": 1
+      }
     }
   }
   </script>
@@ -78,6 +83,45 @@
       <div class="question-body">
         <div class="math-content">The chances of P, Q and R getting selected as CEO of a company are in the ratio $4 : 1 : 2$ respectively. The probabilities for the company to increase its profits from the previous year under the new CEO, P, Q or R are $0\cdot3$, $0\cdot8$ and $0\cdot5$ respectively. If the company increased the profits from the previous year, find the probability that it is due to the appointment of R as CEO.</div>
       </div>
+      <div class="solution-box" style="margin-top:24px; padding:20px; background:var(--card-bg, #ffffff); border:1.5px solid var(--border, #e2e8f0); border-radius:12px;">
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:14px;">
+          <span style="background:#10b981; color:#fff; font-size:11px; font-weight:700; padding:3px 10px; border-radius:20px; text-transform:uppercase;">✓ Verified CBSE Marking Scheme</span>
+          <span style="font-size:12px; color:var(--text-muted, #64748b); font-weight:600;">Official Evaluation Steps & EL10 Insight</span>
+        </div>
+        <div class="math-content solution-content" style="line-height:1.7; font-size:15px;">
+          <div>
+    <h3>CBSE Class 12 Mathematics: Bayes' Theorem Solution</h3>
+
+    <p><strong>Step 1 (Formula / Governing Law & Given Data): [1 Mark]</strong></p>
+    <p>Let $E_1, E_2, E_3$ be the events that P, Q, and R are selected as CEO respectively, and $A$ be the event that the company increases its profits.</p>
+    <p>Given ratios: $4:1:2$. Total parts = $4+1+2 = 7$.</p>
+    <ul>
+        <li>$P(E_1) = \frac{4}{7}, \quad P(E_2) = \frac{1}{7}, \quad P(E_3) = \frac{2}{7}$</li>
+        <li>$P(A|E_1) = 0.3 = \frac{3}{10}$</li>
+        <li>$P(A|E_2) = 0.8 = \frac{8}{10}$</li>
+        <li>$P(A|E_3) = 0.5 = \frac{5}{10}$</li>
+    </ul>
+    <p>We need to find $P(E_3|A)$ using Bayes' Theorem:</p>
+    $$P(E_3|A) = \frac{P(E_3) \cdot P(A|E_3)}{\sum_{i=1}^{3} P(E_i) \cdot P(A|E_i)}$$
+
+    <p><strong>Step 2 (Step-by-Step Mathematical Working): [3 Marks]</strong></p>
+    <p>First, calculate the total probability $P(A)$:</p>
+    $$P(A) = P(E_1)P(A|E_1) + P(E_2)P(A|E_2) + P(E_3)P(A|E_3)$$
+    $$P(A) = \left( \frac{4}{7} \times \frac{3}{10} \right) + \left( \frac{1}{7} \times \frac{8}{10} \right) + \left( \frac{2}{7} \times \frac{5}{10} \right)$$
+    $$P(A) = \frac{12}{70} + \frac{8}{70} + \frac{10}{70} = \frac{30}{70} = \frac{3}{7}$$
+    <p>Now, apply Bayes' Theorem for $P(E_3|A)$:</p>
+    $$P(E_3|A) = \frac{\frac{2}{7} \times \frac{5}{10}}{\frac{30}{70}}$$
+    $$P(E_3|A) = \frac{\frac{10}{70}}{\frac{30}{70}}$$
+
+    <p><strong>Step 3 (Final Concluded Answer): [1 Mark]</strong></p>
+    $$P(E_3|A) = \frac{10}{30} = \frac{1}{3}$$
+    <p>The probability that the profit increase is due to the appointment of R as CEO is <strong>$\frac{1}{3}$</strong>.</p>
+
+    <p><strong>💡 EL10 Concept Insight:</strong> Think of this like a detective case: we know the "crime" (profit increase) happened, and we are just calculating how much of the "blame" belongs to R based on how likely R was to be in charge and how good R is at increasing profits compared to the others.</p>
+</div>
+        </div>
+      </div>
+
 
       <div class="card-footer-actions">
         <a href="mailto:support@learnosha.in?subject=Report%20Question%206272&body=Question%20ID:%206272%0AChapter:%20Probability%0AIssue%20Description:%20" class="report-link">

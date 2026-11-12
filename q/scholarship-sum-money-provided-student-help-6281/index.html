@@ -25,7 +25,12 @@
       "@type": "Question",
       "name": "CBSE Class 12 Mathematics Matrices Board Question",
       "text": "A scholarship is a sum of money provided to a student to help him or her pay for education. Some students are granted scholarships based on their academic achievements, while others are rewarded based on their financial needs. Every year a school offers scholarships to girl children and meritorious achievers based on certain criteria. In the session 2022 - 23, the school offered monthly scholarship of \u20b9 3,000 each to some girl students and \u20b9 4,000 each to meritorious achievers in academics as well as sports. In all, 50 students were given the scholarships and monthly expenditure incurred by the school on scholarships was \u20b9 1,80,000. Based on the above information, answer the following questions : (i) Express the given information algebraically using matrices. (ii) Check whether the system of matrix equations so obtained is consistent or not. (iii) (a) Find the number of scholarships of each kind given by the school, using matrices. OR (iii) (b) Had the amount of scholarship given to each girl child and meritorious student been interchanged, what would be the monthly expenditure incurred by the school ?",
-      "answerCount": 1
+      "answerCount": 1,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CBSE Class 12 Mathematics: Matrix Application Marking Scheme         (i) Express the given information algebraically using matrices: [1 Mark]        Let $x$ be the number of girl students and $y$ be the number of meritorious achievers.       From the problem statement:                 Total students...",
+        "upvoteCount": 1
+      }
     }
   }
   </script>
@@ -78,6 +83,46 @@
       <div class="question-body">
         <div class="math-content">A scholarship is a sum of money provided to a student to help him or her pay for education. Some students are granted scholarships based on their academic achievements, while others are rewarded based on their financial needs. Every year a school offers scholarships to girl children and meritorious achievers based on certain criteria. In the session 2022 - 23, the school offered monthly scholarship of ₹ 3,000 each to some girl students and ₹ 4,000 each to meritorious achievers in academics as well as sports. In all, 50 students were given the scholarships and monthly expenditure incurred by the school on scholarships was ₹ 1,80,000. Based on the above information, answer the following questions : (i) Express the given information algebraically using matrices. (ii) Check whether the system of matrix equations so obtained is consistent or not. (iii) (a) Find the number of scholarships of each kind given by the school, using matrices. OR (iii) (b) Had the amount of scholarship given to each girl child and meritorious student been interchanged, what would be the monthly expenditure incurred by the school ?</div>
       </div>
+      <div class="solution-box" style="margin-top:24px; padding:20px; background:var(--card-bg, #ffffff); border:1.5px solid var(--border, #e2e8f0); border-radius:12px;">
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:14px;">
+          <span style="background:#10b981; color:#fff; font-size:11px; font-weight:700; padding:3px 10px; border-radius:20px; text-transform:uppercase;">✓ Verified CBSE Marking Scheme</span>
+          <span style="font-size:12px; color:var(--text-muted, #64748b); font-weight:600;">Official Evaluation Steps & EL10 Insight</span>
+        </div>
+        <div class="math-content solution-content" style="line-height:1.7; font-size:15px;">
+          <div>
+    <h3>CBSE Class 12 Mathematics: Matrix Application Marking Scheme</h3>
+
+    <p><strong>(i) Express the given information algebraically using matrices: [1 Mark]</strong></p>
+    <p>Let $x$ be the number of girl students and $y$ be the number of meritorious achievers.</p>
+    <p>From the problem statement:</p>
+    <ul>
+        <li>Total students: $x + y = 50$</li>
+        <li>Total expenditure: $3000x + 4000y = 180000$</li>
+    </ul>
+    <p>This can be written in the matrix form $AX = B$:</p>
+    $$\begin{bmatrix} 1 & 1 \\ 3000 & 4000 \end{bmatrix} \begin{bmatrix} x \\ y \end{bmatrix} = \begin{bmatrix} 50 \\ 180000 \end{bmatrix}$$
+
+    <p><strong>(ii) Check for consistency: [1 Mark]</strong></p>
+    <p>A system is consistent if $|A| \neq 0$.</p>
+    $$|A| = (1 \times 4000) - (1 \times 3000) = 4000 - 3000 = 1000$$
+    <p>Since $|A| = 1000 \neq 0$, the matrix $A$ is non-singular and invertible. Therefore, the system is <strong>consistent</strong> and has a unique solution.</p>
+
+    <p><strong>(iii) (a) Find the number of scholarships of each kind using matrices: [3 Marks]</strong></p>
+    <p><strong>Step 1 (Formula):</strong> $X = A^{-1}B$, where $A^{-1} = \frac{1}{|A|} \text{adj}(A)$.</p>
+    <p><strong>Step 2 (Working):</strong></p>
+    <p>$\text{adj}(A) = \begin{bmatrix} 4000 & -1 \\ -3000 & 1 \end{bmatrix}$</p>
+    $$X = \frac{1}{1000} \begin{bmatrix} 4000 & -1 \\ -3000 & 1 \end{bmatrix} \begin{bmatrix} 50 \\ 180000 \end{bmatrix}$$
+    $$X = \frac{1}{1000} \begin{bmatrix} (4000 \times 50) + (-1 \times 180000) \\ (-3000 \times 50) + (1 \times 180000) \end{bmatrix}$$
+    $$X = \frac{1}{1000} \begin{bmatrix} 200000 - 180000 \\ -150000 + 180000 \end{bmatrix} = \frac{1}{1000} \begin{bmatrix} 20000 \\ 30000 \end{bmatrix} = \begin{bmatrix} 20 \\ 30 \end{bmatrix}$$
+    <p><strong>Step 3 (Final Answer):</strong> The number of girl students ($x$) is <strong>20</strong> and the number of meritorious achievers ($y$) is <strong>30</strong>.</p>
+
+    <hr>
+
+    <p><strong>💡 EL10 Concept Insight:</strong> Think of this like a balancing scale; because we know the total number of students and the total money spent, we can "reverse-engineer" the exact count of each group by using the inverse matrix as a mathematical key to unlock the hidden values.</p>
+</div>
+        </div>
+      </div>
+
 
       <div class="card-footer-actions">
         <a href="mailto:support@learnosha.in?subject=Report%20Question%206281&body=Question%20ID:%206281%0AChapter:%20Matrices%0AIssue%20Description:%20" class="report-link">

@@ -25,7 +25,12 @@
       "@type": "Question",
       "name": "CBSE Class 12 Mathematics Unclassified Board Question",
       "text": "For a positive constant 'a', differentiate $a^{t+\\frac{1}{t}}$ with respect to $\\left$t+\\frac{1}{t}\\right$^a$, where t is a non-zero real number.",
-      "answerCount": 1
+      "answerCount": 1,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Question:  For a positive constant  a , differentiate $a^{t+\frac{1}{t}}$ with respect to $\left(t+\frac{1}{t}\right)^a$, where  t  is a non-zero real number.                Step 1 (Formula / Governing Law & Given Data): [1 Mark]        To differentiate a function $u(t)$ with respect to another func...",
+        "upvoteCount": 1
+      }
     }
   }
   </script>
@@ -78,6 +83,43 @@
       <div class="question-body">
         <div class="math-content">For a positive constant &#x27;a&#x27;, differentiate $a^{t+\frac{1}{t}}$ with respect to $\left$t+\frac{1}{t}\right$^a$, where t is a non-zero real number.</div>
       </div>
+      <div class="solution-box" style="margin-top:24px; padding:20px; background:var(--card-bg, #ffffff); border:1.5px solid var(--border, #e2e8f0); border-radius:12px;">
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:14px;">
+          <span style="background:#10b981; color:#fff; font-size:11px; font-weight:700; padding:3px 10px; border-radius:20px; text-transform:uppercase;">✓ Verified CBSE Marking Scheme</span>
+          <span style="font-size:12px; color:var(--text-muted, #64748b); font-weight:600;">Official Evaluation Steps & EL10 Insight</span>
+        </div>
+        <div class="math-content solution-content" style="line-height:1.7; font-size:15px;">
+          <div>
+    <p><strong>Question:</strong> For a positive constant <em>a</em>, differentiate $a^{t+\frac{1}{t}}$ with respect to $\left(t+\frac{1}{t}\right)^a$, where <em>t</em> is a non-zero real number.</p>
+
+    <hr>
+
+    <p><strong>Step 1 (Formula / Governing Law & Given Data): [1 Mark]</strong></p>
+    <p>To differentiate a function $u(t)$ with respect to another function $v(t)$, we use the chain rule formula:</p>
+    $$\frac{du}{dv} = \frac{du/dt}{dv/dt}$$
+    <p>Let $u = a^{t+\frac{1}{t}}$ and $v = \left(t+\frac{1}{t}\right)^a$. We define $x = t + \frac{1}{t}$.</p>
+
+    <p><strong>Step 2 (Step-by-Step Mathematical Working): [2 Marks]</strong></p>
+    <p>First, differentiate $u$ with respect to $t$:</p>
+    $$u = a^x \implies \frac{du}{dt} = \frac{du}{dx} \cdot \frac{dx}{dt} = (a^x \ln a) \cdot \left(1 - \frac{1}{t^2}\right)$$
+    <p>Next, differentiate $v$ with respect to $t$:</p>
+    $$v = x^a \implies \frac{dv}{dt} = \frac{dv}{dx} \cdot \frac{dx}{dt} = (a \cdot x^{a-1}) \cdot \left(1 - \frac{1}{t^2}\right)$$
+    <p>Now, compute the ratio $\frac{du}{dv}$:</p>
+    $$\frac{du}{dv} = \frac{a^x \ln a \cdot \left(1 - \frac{1}{t^2}\right)}{a \cdot x^{a-1} \cdot \left(1 - \frac{1}{t^2}\right)}$$
+    <p>Canceling the common term $\left(1 - \frac{1}{t^2}\right)$ (since $t \neq 0$ and $t \neq \pm 1$ for the derivative to be non-zero):</p>
+    $$\frac{du}{dv} = \frac{a^x \ln a}{a \cdot x^{a-1}}$$
+
+    <p><strong>Step 3 (Final Concluded Answer): [1 Mark]</strong></p>
+    <p>Substituting $x = t + \frac{1}{t}$ back into the expression, we get the final result:</p>
+    $$\frac{du}{dv} = \frac{a^{t+\frac{1}{t}} \cdot \ln a}{a \cdot \left(t+\frac{1}{t}\right)^{a-1}}$$
+
+    <hr>
+
+    <p><strong>💡 EL10 Concept Insight:</strong> Think of this like finding how fast one car is moving compared to another; instead of looking at time, we just compare their speeds directly by dividing their individual rates of change.</p>
+</div>
+        </div>
+      </div>
+
 
       <div class="card-footer-actions">
         <a href="mailto:support@learnosha.in?subject=Report%20Question%204933&body=Question%20ID:%204933%0AChapter:%20Unclassified%0AIssue%20Description:%20" class="report-link">

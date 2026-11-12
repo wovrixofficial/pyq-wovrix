@@ -25,7 +25,12 @@
       "@type": "Question",
       "name": "CBSE Class 12 Mathematics Relations and Functions Board Question",
       "text": "Show that $f(x) = e^x - e^{-x} + x - \\tan^{-1} x$ is strictly increasing in its domain.",
-      "answerCount": 1
+      "answerCount": 1,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Question:  Show that $f(x) = e^x - e^{-x} + x - \tan^{-1} x$ is strictly increasing in its domain.         Step 1 (Formula / Governing Law & Given Data): [0.5 Mark]        A function $f(x)$ is strictly increasing in its domain if its first derivative $f'(x) > 0$ for all $x$ in the domain. The domain...",
+        "upvoteCount": 1
+      }
     }
   }
   </script>
@@ -78,6 +83,42 @@
       <div class="question-body">
         <div class="math-content">Show that $f(x) = e^x - e^{-x} + x - \tan^{-1} x$ is strictly increasing in its domain.</div>
       </div>
+      <div class="solution-box" style="margin-top:24px; padding:20px; background:var(--card-bg, #ffffff); border:1.5px solid var(--border, #e2e8f0); border-radius:12px;">
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:14px;">
+          <span style="background:#10b981; color:#fff; font-size:11px; font-weight:700; padding:3px 10px; border-radius:20px; text-transform:uppercase;">✓ Verified CBSE Marking Scheme</span>
+          <span style="font-size:12px; color:var(--text-muted, #64748b); font-weight:600;">Official Evaluation Steps & EL10 Insight</span>
+        </div>
+        <div class="math-content solution-content" style="line-height:1.7; font-size:15px;">
+          <div>
+    <p><strong>Question:</strong> Show that $f(x) = e^x - e^{-x} + x - \tan^{-1} x$ is strictly increasing in its domain.</p>
+
+    <p><strong>Step 1 (Formula / Governing Law & Given Data): [0.5 Mark]</strong></p>
+    <p>A function $f(x)$ is strictly increasing in its domain if its first derivative $f'(x) > 0$ for all $x$ in the domain. The domain of the given function is $x \in \mathbb{R}$.</p>
+
+    <p><strong>Step 2 (Step-by-Step Mathematical Working): [1.0 Mark]</strong></p>
+    <p>Differentiating $f(x)$ with respect to $x$:</p>
+    $$f'(x) = \frac{d}{dx}(e^x) - \frac{d}{dx}(e^{-x}) + \frac{d}{dx}(x) - \frac{d}{dx}(\tan^{-1} x)$$
+    <p>Applying standard derivatives:</p>
+    $$f'(x) = e^x - (e^{-x} \cdot (-1)) + 1 - \frac{1}{1+x^2}$$
+    $$f'(x) = e^x + e^{-x} + 1 - \frac{1}{1+x^2}$$
+    <p>Rearranging the terms:</p>
+    $$f'(x) = (e^x + e^{-x}) + \left(1 - \frac{1}{1+x^2}\right)$$
+    <p>Simplifying the second part:</p>
+    $$f'(x) = (e^x + e^{-x}) + \left(\frac{1+x^2-1}{1+x^2}\right) = (e^x + e^{-x}) + \frac{x^2}{1+x^2}$$
+
+    <p><strong>Step 3 (Final Concluded Answer): [0.5 Mark]</strong></p>
+    <ul>
+        <li>We know that $e^x > 0$ and $e^{-x} > 0$ for all $x \in \mathbb{R}$, so $(e^x + e^{-x}) > 0$.</li>
+        <li>Also, $x^2 \ge 0$ and $1+x^2 > 0$, so $\frac{x^2}{1+x^2} \ge 0$.</li>
+        <li>Since $f'(x) = (\text{positive value}) + (\text{non-negative value})$, it follows that $f'(x) > 0$ for all $x \in \mathbb{R}$.</li>
+        <li><strong>Conclusion:</strong> Since $f'(x) > 0$, the function $f(x)$ is strictly increasing in its domain.</li>
+    </ul>
+
+    <p><strong>💡 EL10 Concept Insight:</strong> Think of the derivative as the "speedometer" of a function; because our math shows the speed is always positive (it never hits zero or goes backward), the function is always climbing uphill, making it strictly increasing.</p>
+</div>
+        </div>
+      </div>
+
 
       <div class="card-footer-actions">
         <a href="mailto:support@learnosha.in?subject=Report%20Question%205626&body=Question%20ID:%205626%0AChapter:%20Relations and Functions%0AIssue%20Description:%20" class="report-link">

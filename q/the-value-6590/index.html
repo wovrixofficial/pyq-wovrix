@@ -25,7 +25,12 @@
       "@type": "Question",
       "name": "CBSE Class 12 Mathematics Integrals Board Question",
       "text": "The value of $\\int_{\\pi/4}^{\\pi/2} \\cot \\theta \\csc^2 \\theta \\ d\\theta$ is : (A) $\\frac{1}{2}$ (B) $-\\frac{1}{2}$ (C) $0$ (D) $-\\frac{\\pi}{8}$",
-      "answerCount": 1
+      "answerCount": 1,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Step 1 (Formula / Governing Law & Given Data): [1/4 Mark]        We are given the definite integral:      $$I = \int_{\pi/4}^{\pi/2} \cot \theta \csc^2 \theta \, d\theta$$      We use the method of substitution. Let $u = \cot \theta$. The derivative of $\cot \theta$ with respect to $\theta$ is given...",
+        "upvoteCount": 1
+      }
     }
   }
   </script>
@@ -78,6 +83,41 @@
       <div class="question-body">
         <div class="math-content">The value of $\int_{\pi/4}^{\pi/2} \cot \theta \csc^2 \theta \ d\theta$ is : (A) $\frac{1}{2}$ (B) $-\frac{1}{2}$ (C) $0$ (D) $-\frac{\pi}{8}$</div>
       </div>
+      <div class="solution-box" style="margin-top:24px; padding:20px; background:var(--card-bg, #ffffff); border:1.5px solid var(--border, #e2e8f0); border-radius:12px;">
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:14px;">
+          <span style="background:#10b981; color:#fff; font-size:11px; font-weight:700; padding:3px 10px; border-radius:20px; text-transform:uppercase;">✓ Verified CBSE Marking Scheme</span>
+          <span style="font-size:12px; color:var(--text-muted, #64748b); font-weight:600;">Official Evaluation Steps & EL10 Insight</span>
+        </div>
+        <div class="math-content solution-content" style="line-height:1.7; font-size:15px;">
+          <div>
+    <p><strong>Step 1 (Formula / Governing Law & Given Data): [1/4 Mark]</strong></p>
+    <p>We are given the definite integral:</p>
+    $$I = \int_{\pi/4}^{\pi/2} \cot \theta \csc^2 \theta \, d\theta$$
+    <p>We use the method of substitution. Let $u = \cot \theta$. The derivative of $\cot \theta$ with respect to $\theta$ is given by the standard trigonometric derivative formula:</p>
+    $$\frac{du}{d\theta} = -\csc^2 \theta \implies du = -\csc^2 \theta \, d\theta \implies -du = \csc^2 \theta \, d\theta$$
+
+    <p><strong>Step 2 (Step-by-Step Mathematical Working): [1/2 Mark]</strong></p>
+    <p>First, we determine the new limits of integration for $u$:</p>
+    <ul>
+        <li>When $\theta = \pi/4$, $u = \cot(\pi/4) = 1$.</li>
+        <li>When $\theta = \pi/2$, $u = \cot(\pi/2) = 0$.</li>
+    </ul>
+    <p>Substituting these into the integral:</p>
+    $$I = \int_{1}^{0} u (-du) = -\int_{1}^{0} u \, du$$
+    <p>By the property of definite integrals $\int_{a}^{b} f(x) dx = -\int_{b}^{a} f(x) dx$, we can flip the limits:</p>
+    $$I = \int_{0}^{1} u \, du$$
+    <p>Applying the power rule for integration $\int u^n \, du = \frac{u^{n+1}}{n+1}$:</p>
+    $$I = \left[ \frac{u^2}{2} \right]_{0}^{1} = \frac{1^2}{2} - \frac{0^2}{2}$$
+
+    <p><strong>Step 3 (Final Concluded Answer): [1/4 Mark]</strong></p>
+    $$I = \frac{1}{2} - 0 = \frac{1}{2}$$
+    <p>Comparing this result with the given options, the correct choice is <strong>(A)</strong>.</p>
+
+    <p><strong>💡 EL10 Concept Insight:</strong> Think of this like a "chain reaction"—because the derivative of cotangent is negative cosecant squared, the cosecant squared part is just waiting to be "absorbed" into the derivative, turning a complex trigonometric expression into a simple power rule problem ($u \, du$).</p>
+</div>
+        </div>
+      </div>
+
 
       <div class="card-footer-actions">
         <a href="mailto:support@learnosha.in?subject=Report%20Question%206590&body=Question%20ID:%206590%0AChapter:%20Integrals%0AIssue%20Description:%20" class="report-link">

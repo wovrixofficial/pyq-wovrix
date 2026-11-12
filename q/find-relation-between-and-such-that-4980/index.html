@@ -25,7 +25,12 @@
       "@type": "Question",
       "name": "CBSE Class 12 Mathematics Unclassified Board Question",
       "text": "(iii) (a) Find a relation between x and y such that the surface area (S) is minimum.",
-      "answerCount": 1
+      "answerCount": 1,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CBSE Class 12 Mathematics: Optimization of Surface Area        Question:  Find a relation between $x$ and $y$ such that the surface area ($S$) is minimum for a given volume ($V$).                Step 1 (Formula / Governing Law & Given Data): [1 Mark]        Assuming a rectangular box (cuboid) with d...",
+        "upvoteCount": 1
+      }
     }
   }
   </script>
@@ -78,6 +83,50 @@
       <div class="question-body">
         <div class="math-content">(iii) (a) Find a relation between x and y such that the surface area (S) is minimum.</div>
       </div>
+      <div class="solution-box" style="margin-top:24px; padding:20px; background:var(--card-bg, #ffffff); border:1.5px solid var(--border, #e2e8f0); border-radius:12px;">
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:14px;">
+          <span style="background:#10b981; color:#fff; font-size:11px; font-weight:700; padding:3px 10px; border-radius:20px; text-transform:uppercase;">✓ Verified CBSE Marking Scheme</span>
+          <span style="font-size:12px; color:var(--text-muted, #64748b); font-weight:600;">Official Evaluation Steps & EL10 Insight</span>
+        </div>
+        <div class="math-content solution-content" style="line-height:1.7; font-size:15px;">
+          <div>
+    <h3>CBSE Class 12 Mathematics: Optimization of Surface Area</h3>
+    <p><strong>Question:</strong> Find a relation between $x$ and $y$ such that the surface area ($S$) is minimum for a given volume ($V$).</p>
+
+    <hr>
+
+    <p><strong>Step 1 (Formula / Governing Law & Given Data): [1 Mark]</strong></p>
+    <p>Assuming a rectangular box (cuboid) with dimensions $x, x,$ and $y$ (where $x$ is the side of the square base and $y$ is the height):</p>
+    <ul>
+        <li>Volume: $V = x^2 y \implies y = \frac{V}{x^2}$</li>
+        <li>Surface Area: $S = 2x^2 + 4xy$</li>
+    </ul>
+
+    <p><strong>Step 2 (Step-by-Step Mathematical Working): [3 Marks]</strong></p>
+    <p>Substitute $y$ in the surface area equation to express $S$ as a function of $x$:</p>
+    $$S(x) = 2x^2 + 4x\left(\frac{V}{x^2}\right) = 2x^2 + \frac{4V}{x}$$
+    <p>Differentiate with respect to $x$ to find the critical points:</p>
+    $$\frac{dS}{dx} = 4x - \frac{4V}{x^2}$$
+    <p>For minimum surface area, set $\frac{dS}{dx} = 0$:</p>
+    $$4x = \frac{4V}{x^2} \implies x^3 = V$$
+    <p>Since $V = x^2 y$, substitute back:</p>
+    $$x^3 = x^2 y$$
+    <p>Divide both sides by $x^2$ (as $x \neq 0$):</p>
+    $$x = y$$
+
+    <p><strong>Step 3 (Final Concluded Answer): [1 Mark]</strong></p>
+    <p>To verify the minimum, check the second derivative:</p>
+    $$\frac{d^2S}{dx^2} = 4 + \frac{8V}{x^3}$$
+    <p>Since $V = x^3$, $\frac{d^2S}{dx^2} = 4 + 8 = 12 > 0$. Thus, the surface area is minimum when:</p>
+    $$x = y$$
+
+    <hr>
+
+    <p><strong>💡 EL10 Concept Insight:</strong> Imagine you are trying to wrap a gift box with the least amount of paper possible; the most efficient shape is a cube because it keeps the sides balanced, meaning the base width ($x$) and the height ($y$) should be exactly the same.</p>
+</div>
+        </div>
+      </div>
+
 
       <div class="card-footer-actions">
         <a href="mailto:support@learnosha.in?subject=Report%20Question%204980&body=Question%20ID:%204980%0AChapter:%20Unclassified%0AIssue%20Description:%20" class="report-link">

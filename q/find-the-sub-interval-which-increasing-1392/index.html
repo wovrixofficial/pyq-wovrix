@@ -25,7 +25,12 @@
       "@type": "Question",
       "name": "CBSE Class 12 Mathematics Relations and Functions Board Question",
       "text": "Find the sub-interval of $(0, \\infty)$ in which $f(x) = x^2 e^{-x}$ is increasing.",
-      "answerCount": 1
+      "answerCount": 1,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Step 1 (Formula / Governing Law & Given Data): [1 Mark]        For a function $f(x)$ to be strictly increasing on an interval, the first derivative $f'(x)$ must be greater than zero ($f'(x) > 0$). Given the function:      $$f(x) = x^2 e^{-x}$$      We apply the Product Rule of differentiation: $\fra...",
+        "upvoteCount": 1
+      }
     }
   }
   </script>
@@ -78,6 +83,47 @@
       <div class="question-body">
         <div class="math-content">Find the sub-interval of $(0, \infty)$ in which $f(x) = x^2 e^{-x}$ is increasing.</div>
       </div>
+      <div class="solution-box" style="margin-top:24px; padding:20px; background:var(--card-bg, #ffffff); border:1.5px solid var(--border, #e2e8f0); border-radius:12px;">
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:14px;">
+          <span style="background:#10b981; color:#fff; font-size:11px; font-weight:700; padding:3px 10px; border-radius:20px; text-transform:uppercase;">✓ Verified CBSE Marking Scheme</span>
+          <span style="font-size:12px; color:var(--text-muted, #64748b); font-weight:600;">Official Evaluation Steps & EL10 Insight</span>
+        </div>
+        <div class="math-content solution-content" style="line-height:1.7; font-size:15px;">
+          <div>
+    <p><strong>Step 1 (Formula / Governing Law & Given Data): [1 Mark]</strong></p>
+    <p>For a function $f(x)$ to be strictly increasing on an interval, the first derivative $f'(x)$ must be greater than zero ($f'(x) > 0$). Given the function:</p>
+    $$f(x) = x^2 e^{-x}$$
+    <p>We apply the Product Rule of differentiation: $\frac{d}{dx}[u \cdot v] = u \frac{dv}{dx} + v \frac{du}{dx}$.</p>
+
+    <p><strong>Step 2 (Step-by-Step Mathematical Working): [1.5 Marks]</strong></p>
+    <ul>
+        <li>Differentiating $f(x)$ with respect to $x$:
+            $$f'(x) = \frac{d}{dx}(x^2) \cdot e^{-x} + x^2 \cdot \frac{d}{dx}(e^{-x})$$
+            $$f'(x) = 2x e^{-x} + x^2 (-e^{-x})$$
+        </li>
+        <li>Factoring out common terms:
+            $$f'(x) = x e^{-x} (2 - x)$$
+        </li>
+        <li>To find the critical points, set $f'(x) = 0$:
+            $$x e^{-x} (2 - x) = 0$$
+            Since $e^{-x} \neq 0$ for any real $x$, we have $x = 0$ or $x = 2$.
+        </li>
+        <li>Given the domain $(0, \infty)$, we test the sign of $f'(x)$ in the interval $(0, 2)$ and $(2, \infty)$:
+            <ul>
+                <li>For $x \in (0, 2)$, choose $x=1$: $f'(1) = (1)e^{-1}(2-1) = e^{-1} > 0$.</li>
+                <li>For $x \in (2, \infty)$, choose $x=3$: $f'(3) = (3)e^{-3}(2-3) = -3e^{-3} < 0$.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <p><strong>Step 3 (Final Concluded Answer): [0.5 Mark]</strong></p>
+    <p>Since $f'(x) > 0$ for $x \in (0, 2)$, the function $f(x)$ is strictly increasing in the interval <strong>$(0, 2)$</strong>.</p>
+
+    <p><strong>💡 EL10 Concept Insight:</strong> Think of the derivative as the "slope" of the graph; when the slope is positive, the graph is climbing uphill. By finding where the slope is positive, we identify the exact "stretch" of the x-axis where the function is moving upward.</p>
+</div>
+        </div>
+      </div>
+
 
       <div class="card-footer-actions">
         <a href="mailto:support@learnosha.in?subject=Report%20Question%201392&body=Question%20ID:%201392%0AChapter:%20Relations and Functions%0AIssue%20Description:%20" class="report-link">

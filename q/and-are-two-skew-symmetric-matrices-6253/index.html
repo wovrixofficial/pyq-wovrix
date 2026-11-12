@@ -25,7 +25,12 @@
       "@type": "Question",
       "name": "CBSE Class 12 Mathematics Matrices Board Question",
       "text": "If A and B are two skew symmetric matrices, then (AB + BA) is :\n(A) a skew symmetric matrix\n(B) a symmetric matrix\n(C) a null matrix\n(D) an identity matrix",
-      "answerCount": 1
+      "answerCount": 1,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Question:  If A and B are two skew symmetric matrices, then (AB + BA) is :             Step 1 (Formula / Governing Law & Given Data): [0.25 Mark]        Given that $A$ and $B$ are skew-symmetric matrices, by definition:                 $A^T = -A$           $B^T = -B$             A matrix $M$ is symm...",
+        "upvoteCount": 1
+      }
     }
   }
   </script>
@@ -82,6 +87,44 @@
 (C) a null matrix
 (D) an identity matrix</div>
       </div>
+      <div class="solution-box" style="margin-top:24px; padding:20px; background:var(--card-bg, #ffffff); border:1.5px solid var(--border, #e2e8f0); border-radius:12px;">
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:14px;">
+          <span style="background:#10b981; color:#fff; font-size:11px; font-weight:700; padding:3px 10px; border-radius:20px; text-transform:uppercase;">✓ Verified CBSE Marking Scheme</span>
+          <span style="font-size:12px; color:var(--text-muted, #64748b); font-weight:600;">Official Evaluation Steps & EL10 Insight</span>
+        </div>
+        <div class="math-content solution-content" style="line-height:1.7; font-size:15px;">
+          <div>
+    <p><strong>Question:</strong> If A and B are two skew symmetric matrices, then (AB + BA) is :</p>
+    
+    <p><strong>Step 1 (Formula / Governing Law & Given Data): [0.25 Mark]</strong></p>
+    <p>Given that $A$ and $B$ are skew-symmetric matrices, by definition:</p>
+    <ul>
+        <li>$A^T = -A$</li>
+        <li>$B^T = -B$</li>
+    </ul>
+    <p>A matrix $M$ is symmetric if $M^T = M$ and skew-symmetric if $M^T = -M$.</p>
+
+    <p><strong>Step 2 (Step-by-Step Mathematical Working): [0.5 Mark]</strong></p>
+    <p>Let $X = AB + BA$. To check for symmetry, we find the transpose $X^T$:</p>
+    $$X^T = (AB + BA)^T$$
+    <p>Using the property of transpose $(P + Q)^T = P^T + Q^T$ and $(PQ)^T = Q^T P^T$:</p>
+    $$X^T = (AB)^T + (BA)^T$$
+    $$X^T = B^T A^T + A^T B^T$$
+    <p>Substituting the given conditions $A^T = -A$ and $B^T = -B$:</p>
+    $$X^T = (-B)(-A) + (-A)(-B)$$
+    $$X^T = BA + AB$$
+    $$X^T = AB + BA$$
+    $$X^T = X$$
+
+    <p><strong>Step 3 (Final Concluded Answer): [0.25 Mark]</strong></p>
+    <p>Since $(AB + BA)^T = (AB + BA)$, the matrix $(AB + BA)$ is a <strong>symmetric matrix</strong>.</p>
+    <p><strong>Correct Option: (B)</strong></p>
+
+    <p><strong>💡 EL10 Concept Insight:</strong> Think of the transpose as a "mirror reflection." When you flip the order of two skew-symmetric matrices, the two negative signs cancel each other out (like $-1 \times -1 = 1$), making the final result look exactly like the original, which is the definition of symmetry!</p>
+</div>
+        </div>
+      </div>
+
 
       <div class="card-footer-actions">
         <a href="mailto:support@learnosha.in?subject=Report%20Question%206253&body=Question%20ID:%206253%0AChapter:%20Matrices%0AIssue%20Description:%20" class="report-link">

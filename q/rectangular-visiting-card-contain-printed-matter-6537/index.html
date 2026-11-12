@@ -25,7 +25,12 @@
       "@type": "Question",
       "name": "CBSE Class 12 Mathematics Unclassified Board Question",
       "text": "A rectangular visiting card is to contain 24 sq.cm. of printed matter. The margins at the top and bottom of the card are to be 1 cm and the margins on the left and right are to be 1\u00bd cm as shown below : On the basis of the above information, answer the following questions : (i) Write the expression for the area of the visiting card in terms of x. (ii) Obtain the dimensions of the card of minimum area.",
-      "answerCount": 1
+      "answerCount": 1,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CBSE Class 12 Mathematics: Application of Derivatives (Optimization)             Given:  Area of printed matter = $24 \text{ cm}^2$. Let the dimensions of the printed matter be $x$ cm (width) and $y$ cm (height).             Step 1 (Formulation of the Area Function): [1 Mark]        The printed matt...",
+        "upvoteCount": 1
+      }
     }
   }
   </script>
@@ -78,6 +83,50 @@
       <div class="question-body">
         <div class="math-content">A rectangular visiting card is to contain 24 sq.cm. of printed matter. The margins at the top and bottom of the card are to be 1 cm and the margins on the left and right are to be 1½ cm as shown below : On the basis of the above information, answer the following questions : (i) Write the expression for the area of the visiting card in terms of x. (ii) Obtain the dimensions of the card of minimum area.</div>
       </div>
+      <div class="solution-box" style="margin-top:24px; padding:20px; background:var(--card-bg, #ffffff); border:1.5px solid var(--border, #e2e8f0); border-radius:12px;">
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:14px;">
+          <span style="background:#10b981; color:#fff; font-size:11px; font-weight:700; padding:3px 10px; border-radius:20px; text-transform:uppercase;">✓ Verified CBSE Marking Scheme</span>
+          <span style="font-size:12px; color:var(--text-muted, #64748b); font-weight:600;">Official Evaluation Steps & EL10 Insight</span>
+        </div>
+        <div class="math-content solution-content" style="line-height:1.7; font-size:15px;">
+          <div>
+    <h3>CBSE Class 12 Mathematics: Application of Derivatives (Optimization)</h3>
+    
+    <p><strong>Given:</strong> Area of printed matter = $24 \text{ cm}^2$. Let the dimensions of the printed matter be $x$ cm (width) and $y$ cm (height).</p>
+    
+    <p><strong>Step 1 (Formulation of the Area Function): [1 Mark]</strong></p>
+    <p>The printed matter has dimensions $x$ and $y$. Given $xy = 24$, so $y = \frac{24}{x}$.</p>
+    <p>The margins are 1 cm at the top and bottom (total height = $y + 2$) and 1.5 cm at the left and right (total width = $x + 3$).</p>
+    <p>The total area $A$ of the card is:</p>
+    $$A(x) = (x + 3)(y + 2)$$
+    <p>Substituting $y = \frac{24}{x}$:</p>
+    $$A(x) = (x + 3)\left(\frac{24}{x} + 2\right) = 24 + 2x + \frac{72}{x} + 6 = 2x + \frac{72}{x} + 30$$
+    
+    <p><strong>Step 2 (Differentiation and Critical Points): [2 Marks]</strong></p>
+    <p>To find the minimum area, differentiate $A(x)$ with respect to $x$:</p>
+    $$A'(x) = 2 - \frac{72}{x^2}$$
+    <p>Set $A'(x) = 0$ for critical points:</p>
+    $$2 = \frac{72}{x^2} \implies x^2 = 36 \implies x = 6 \text{ (since width cannot be negative)}$$
+    <p>Check for minima using the second derivative test:</p>
+    $$A''(x) = \frac{144}{x^3}$$
+    <p>At $x = 6$, $A''(6) = \frac{144}{216} > 0$. Since the second derivative is positive, the area is minimum at $x = 6$.</p>
+    
+    <p><strong>Step 3 (Final Concluded Answer): [1 Mark]</strong></p>
+    <p>When $x = 6$ cm, the height $y = \frac{24}{6} = 4$ cm.</p>
+    <p>The dimensions of the card are:</p>
+    <ul>
+        <li>Width = $x + 3 = 6 + 3 = 9 \text{ cm}$</li>
+        <li>Height = $y + 2 = 4 + 2 = 6 \text{ cm}$</li>
+    </ul>
+    <p><strong>Final Answer:</strong> The dimensions of the card of minimum area are <strong>9 cm by 6 cm</strong>.</p>
+
+    <div style="background-color: #f0f8ff; padding: 10px; border-left: 5px solid #007bff;">
+        <p><strong>💡 EL10 Concept Insight:</strong> Think of it like balancing a seesaw; if you make the card too thin, the height has to be huge to keep the area, and if you make it too short, the width has to be huge. The "minimum area" is the sweet spot where the width and height are perfectly balanced to use the least amount of paper while still fitting your 24 sq.cm of text inside!</p>
+    </div>
+</div>
+        </div>
+      </div>
+
 
       <div class="card-footer-actions">
         <a href="mailto:support@learnosha.in?subject=Report%20Question%206537&body=Question%20ID:%206537%0AChapter:%20Unclassified%0AIssue%20Description:%20" class="report-link">

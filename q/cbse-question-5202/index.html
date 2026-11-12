@@ -25,7 +25,12 @@
       "@type": "Question",
       "name": "CBSE Class 12 Mathematics Integrals Board Question",
       "text": "$\\int \\frac{e^{9 \\log x} - e^{8 \\log x}}{e^{6 \\log x} - e^{5 \\log x}} \\, \\text{d}x$ is equal to :\n(A) $x + C$\n(B) $\\frac{x^2}{2} + C$\n(C) $\\frac{x^4}{4} + C$\n(D) $\\frac{x^3}{3} + C$",
-      "answerCount": 1
+      "answerCount": 1,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Step 1 (Formula / Governing Law & Given Data): [1/4 Mark]        We use the fundamental logarithmic property:      $$a \log_e b = \log_e (b^a)$$     and the definition of the natural logarithm:     $$e^{\log_e f(x)} = f(x)$$              Step 2 (Step-by-Step Mathematical Working): [1/2 Mark]        ...",
+        "upvoteCount": 1
+      }
     }
   }
   </script>
@@ -82,6 +87,45 @@
 (C) $\frac{x^4}{4} + C$
 (D) $\frac{x^3}{3} + C$</div>
       </div>
+      <div class="solution-box" style="margin-top:24px; padding:20px; background:var(--card-bg, #ffffff); border:1.5px solid var(--border, #e2e8f0); border-radius:12px;">
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:14px;">
+          <span style="background:#10b981; color:#fff; font-size:11px; font-weight:700; padding:3px 10px; border-radius:20px; text-transform:uppercase;">✓ Verified CBSE Marking Scheme</span>
+          <span style="font-size:12px; color:var(--text-muted, #64748b); font-weight:600;">Official Evaluation Steps & EL10 Insight</span>
+        </div>
+        <div class="math-content solution-content" style="line-height:1.7; font-size:15px;">
+          <div>
+    <p><strong>Step 1 (Formula / Governing Law & Given Data): [1/4 Mark]</strong></p>
+    <p>We use the fundamental logarithmic property: 
+    $$a \log_e b = \log_e (b^a)$$
+    and the definition of the natural logarithm:
+    $$e^{\log_e f(x)} = f(x)$$
+    </p>
+
+    <p><strong>Step 2 (Step-by-Step Mathematical Working): [1/2 Mark]</strong></p>
+    <p>Applying the logarithmic property to the integrand:</p>
+    <ul>
+        <li>$e^{9 \log x} = e^{\log x^9} = x^9$</li>
+        <li>$e^{8 \log x} = e^{\log x^8} = x^8$</li>
+        <li>$e^{6 \log x} = e^{\log x^6} = x^6$</li>
+        <li>$e^{5 \log x} = e^{\log x^5} = x^5$</li>
+    </ul>
+    <p>Substituting these into the integral:</p>
+    $$I = \int \frac{x^9 - x^8}{x^6 - x^5} \, dx$$
+    <p>Factoring out the common terms from the numerator and denominator:</p>
+    $$I = \int \frac{x^8(x - 1)}{x^5(x - 1)} \, dx$$
+    <p>Canceling the common term $(x - 1)$ (assuming $x \neq 1$):</p>
+    $$I = \int \frac{x^8}{x^5} \, dx = \int x^3 \, dx$$
+    <p>Applying the power rule for integration $\int x^n \, dx = \frac{x^{n+1}}{n+1} + C$:</p>
+    $$I = \frac{x^{3+1}}{3+1} + C = \frac{x^4}{4} + C$$
+
+    <p><strong>Step 3 (Final Concluded Answer): [1/4 Mark]</strong></p>
+    <p>The final result is <strong>(C) $\frac{x^4}{4} + C$</strong>.</p>
+
+    <p><strong>💡 EL10 Concept Insight:</strong> Think of the $e$ and the $\log$ as "opposites" that cancel each other out, but you have to move the number in front of the log to the exponent first. Once you clean up those messy exponents, the problem turns into a simple fraction that simplifies down to just $x^3$, which is very easy to integrate!</p>
+</div>
+        </div>
+      </div>
+
 
       <div class="card-footer-actions">
         <a href="mailto:support@learnosha.in?subject=Report%20Question%205202&body=Question%20ID:%205202%0AChapter:%20Integrals%0AIssue%20Description:%20" class="report-link">

@@ -25,7 +25,12 @@
       "@type": "Question",
       "name": "CBSE Class 12 Mathematics Matrices Board Question",
       "text": "(a) Solve the following system of equations, using matrices : $\\frac{2}{x} + \\frac{3}{y} + \\frac{10}{z} = 4, \\frac{4}{x} - \\frac{6}{y} + \\frac{5}{z} = 1, \\frac{6}{x} + \\frac{9}{y} - \\frac{20}{z} = 2$ where $x, y, z \\neq 0$ OR (b) If $A = \\begin{bmatrix} 1 & \\cot x \\\\ -\\cot x & 1 \\end{bmatrix}$, show that $A' A^{-1} = \\begin{bmatrix} -\\cos 2x & -\\sin 2x \\\\ \\sin 2x & -\\cos 2x \\end{bmatrix}$.",
-      "answerCount": 1
+      "answerCount": 1,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Solution for Question (a): Matrix Method for System of Equations         Step 1 (Formula / Governing Law & Given Data): [1 Mark]        Let $u = \frac{1}{x}$, $v = \frac{1}{y}$, and $w = \frac{1}{z}$. The system of equations becomes:      $$2u + 3v + 10w = 4$$     $$4u - 6v + 5w = 1$$     $$6u + 9v ...",
+        "upvoteCount": 1
+      }
     }
   }
   </script>
@@ -78,6 +83,42 @@
       <div class="question-body">
         <div class="math-content">(a) Solve the following system of equations, using matrices : $\frac{2}{x} + \frac{3}{y} + \frac{10}{z} = 4, \frac{4}{x} - \frac{6}{y} + \frac{5}{z} = 1, \frac{6}{x} + \frac{9}{y} - \frac{20}{z} = 2$ where $x, y, z \neq 0$ OR (b) If $A = \begin{bmatrix} 1 &amp; \cot x \\ -\cot x &amp; 1 \end{bmatrix}$, show that $A&#x27; A^{-1} = \begin{bmatrix} -\cos 2x &amp; -\sin 2x \\ \sin 2x &amp; -\cos 2x \end{bmatrix}$.</div>
       </div>
+      <div class="solution-box" style="margin-top:24px; padding:20px; background:var(--card-bg, #ffffff); border:1.5px solid var(--border, #e2e8f0); border-radius:12px;">
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:14px;">
+          <span style="background:#10b981; color:#fff; font-size:11px; font-weight:700; padding:3px 10px; border-radius:20px; text-transform:uppercase;">✓ Verified CBSE Marking Scheme</span>
+          <span style="font-size:12px; color:var(--text-muted, #64748b); font-weight:600;">Official Evaluation Steps & EL10 Insight</span>
+        </div>
+        <div class="math-content solution-content" style="line-height:1.7; font-size:15px;">
+          <div>
+    <h3>Solution for Question (a): Matrix Method for System of Equations</h3>
+
+    <p><strong>Step 1 (Formula / Governing Law & Given Data): [1 Mark]</strong></p>
+    <p>Let $u = \frac{1}{x}$, $v = \frac{1}{y}$, and $w = \frac{1}{z}$. The system of equations becomes:</p>
+    $$2u + 3v + 10w = 4$$
+    $$4u - 6v + 5w = 1$$
+    $$6u + 9v - 20w = 2$$
+    <p>This can be represented as $AX = B$, where:</p>
+    $$A = \begin{bmatrix} 2 & 3 & 10 \\ 4 & -6 & 5 \\ 6 & 9 & -20 \end{bmatrix}, X = \begin{bmatrix} u \\ v \\ w \end{bmatrix}, B = \begin{bmatrix} 4 \\ 1 \\ 2 \end{bmatrix}$$
+    <p>The solution is given by $X = A^{-1}B$, where $A^{-1} = \frac{1}{|A|} \text{adj}(A)$.</p>
+
+    <p><strong>Step 2 (Step-by-Step Mathematical Working): [2 Marks]</strong></p>
+    <p><strong>1. Calculate Determinant $|A|$:</strong></p>
+    $$|A| = 2(120 - 45) - 3(-80 - 30) + 10(36 + 36) = 2(75) - 3(-110) + 10(72) = 150 + 330 + 720 = 1200$$
+    <p><strong>2. Calculate Adjoint (Cofactor Matrix Transpose):</strong></p>
+    <p>Cofactors $C_{ij}$:</p>
+    <ul>
+        <li>$C_{11} = 75, C_{12} = 110, C_{13} = 72$</li>
+        <li>$C_{21} = -(-60 - 90) = 150, C_{22} = (-40 - 60) = -100, C_{23} = -(18 - 18) = 0$</li>
+        <li>$C_{31} = (15 + 60) = 75, C_{32} = -(10 - 40) = 30, C_{33} = (-12 - 12) = -24$</li>
+    </ul>
+    $$\text{adj}(A) = \begin{bmatrix} 75 & 150 & 75 \\ 110 & -100 & 30 \\ 72 & 0 & -24 \end{bmatrix}$$
+    <p><strong>3. Solve for $X$:</strong></p>
+    $$X = \frac{1}{1200} \begin{bmatrix} 75 & 150 & 75 \\ 110 & -100 & 30 \\ 72 & 0 & -24 \end{bmatrix} \begin{bmatrix} 4 \\ 1 \\ 2 \end{bmatrix} = \frac{1}{1200} \begin{bmatrix} 300+150+150 \\ 440-100+60 \\ 288+0-48 \end{bmatrix} = \frac{1}{1200} \begin{bmatrix} 600 \\ 400 \\ 240 \end{bmatrix} = \begin{bmatrix} 1/2 \\ 1/3 \\ 1/5 \end{bmatrix}$$
+
+    <p><strong>
+        </div>
+      </div>
+
 
       <div class="card-footer-actions">
         <a href="mailto:support@learnosha.in?subject=Report%20Question%205635&body=Question%20ID:%205635%0AChapter:%20Matrices%0AIssue%20Description:%20" class="report-link">

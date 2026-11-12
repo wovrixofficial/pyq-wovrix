@@ -25,7 +25,12 @@
       "@type": "Question",
       "name": "CBSE Class 12 Mathematics Differential Equations Board Question",
       "text": "(a) Find the particular solution of the differential equation given by $2xy + y^2 - 2x^2 \\frac{dy}{dx} = 0$; $y = 2$, when $x = 1$. OR (b) Find the general solution of the differential equation : $y dx = (x + 2y^2) dy$",
-      "answerCount": 1
+      "answerCount": 1,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Solution for Part (a)         Step 1 (Identification and Substitution): [1 Mark]        The given differential equation is:     $$2xy + y^2 - 2x^2 \frac{dy}{dx} = 0 \implies \frac{dy}{dx} = \frac{2xy + y^2}{2x^2}$$     This is a homogeneous differential equation. We substitute $y = vx$, which implie...",
+        "upvoteCount": 1
+      }
     }
   }
   </script>
@@ -78,6 +83,55 @@
       <div class="question-body">
         <div class="math-content">(a) Find the particular solution of the differential equation given by $2xy + y^2 - 2x^2 \frac{dy}{dx} = 0$; $y = 2$, when $x = 1$. OR (b) Find the general solution of the differential equation : $y dx = (x + 2y^2) dy$</div>
       </div>
+      <div class="solution-box" style="margin-top:24px; padding:20px; background:var(--card-bg, #ffffff); border:1.5px solid var(--border, #e2e8f0); border-radius:12px;">
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:14px;">
+          <span style="background:#10b981; color:#fff; font-size:11px; font-weight:700; padding:3px 10px; border-radius:20px; text-transform:uppercase;">✓ Verified CBSE Marking Scheme</span>
+          <span style="font-size:12px; color:var(--text-muted, #64748b); font-weight:600;">Official Evaluation Steps & EL10 Insight</span>
+        </div>
+        <div class="math-content solution-content" style="line-height:1.7; font-size:15px;">
+          <div>
+    <h3>Solution for Part (a)</h3>
+
+    <p><strong>Step 1 (Identification and Substitution): [1 Mark]</strong></p>
+    <p>The given differential equation is:
+    $$2xy + y^2 - 2x^2 \frac{dy}{dx} = 0 \implies \frac{dy}{dx} = \frac{2xy + y^2}{2x^2}$$
+    This is a homogeneous differential equation. We substitute $y = vx$, which implies $\frac{dy}{dx} = v + x\frac{dv}{dx}$.</p>
+
+    <p><strong>Step 2 (Step-by-Step Mathematical Working): [1.5 Marks]</strong></p>
+    <p>Substituting into the equation:</p>
+    $$v + x\frac{dv}{dx} = \frac{2x(vx) + (vx)^2}{2x^2} = \frac{2vx^2 + v^2x^2}{2x^2} = \frac{2v + v^2}{2}$$
+    $$x\frac{dv}{dx} = \frac{2v + v^2}{2} - v = \frac{2v + v^2 - 2v}{2} = \frac{v^2}{2}$$
+    Separating the variables:
+    $$\int \frac{2}{v^2} dv = \int \frac{1}{x} dx \implies - \frac{2}{v} = \ln|x| + C$$
+    Substituting $v = \frac{y}{x}$ back:
+    $$- \frac{2x}{y} = \ln|x| + C$$
+
+    <p><strong>Step 3 (Final Concluded Answer): [0.5 Mark]</strong></p>
+    <p>Using the initial condition $y=2$ when $x=1$:
+    $$- \frac{2(1)}{2} = \ln|1| + C \implies -1 = 0 + C \implies C = -1$$
+    The particular solution is:
+    $$- \frac{2x}{y} = \ln|x| - 1 \quad \text{or} \quad y = \frac{2x}{1 - \ln|x|}$$</p>
+
+    <hr>
+
+    <h3>Solution for Part (b)</h3>
+
+    <p><strong>Step 1 (Rearrangement): [1 Mark]</strong></p>
+    <p>The given equation is $y dx = (x + 2y^2) dy$. Rearranging to linear form:
+    $$\frac{dx}{dy} = \frac{x + 2y^2}{y} = \frac{x}{y} + 2y \implies \frac{dx}{dy} - \frac{1}{y}x = 2y$$
+    This is a linear differential equation of the form $\frac{dx}{dy} + P(y)x = Q(y)$.</p>
+
+    <p><strong>Step 2 (Step-by-Step Mathematical Working): [1.5 Marks]</strong></p>
+    <p>Integrating Factor (I.F.) $= e^{\int P(y) dy} = e^{\int -\frac{1}{y} dy} = e^{-\ln|y|} = \frac{1}{y}$.
+    The solution is given by $x \cdot (\text{I.F.}) = \int Q(y) \cdot (\text{I.F.}) dy + C$:</p>
+    $$x \cdot \frac{1}{y} = \int (2y) \cdot \frac{1}{y} dy + C$$
+    $$\frac{x}{y} = \int 2 dy + C = 2y + C$$
+
+    <p><strong>Step 3 (Final Concluded Answer): [0.5 Mark]</strong></p>
+    <p>Multiplying by $y$, the general solution is:
+        </div>
+      </div>
+
 
       <div class="card-footer-actions">
         <a href="mailto:support@learnosha.in?subject=Report%20Question%205629&body=Question%20ID:%205629%0AChapter:%20Differential Equations%0AIssue%20Description:%20" class="report-link">

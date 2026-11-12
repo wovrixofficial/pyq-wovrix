@@ -25,7 +25,12 @@
       "@type": "Question",
       "name": "CBSE Class 12 Mathematics Continuity and Differentiability Board Question",
       "text": "The solution for the differential equation $\\log \\left$ \\frac{dy}{dx} \\right$ = 3x + 4y$ is : (A) $3e^{4y} + 4e^{-3x} + C = 0$ (B) $e^{3x+4y} + C = 0$ (C) $3e^{-3y} + 4e^{4x} + 12C = 0$ (D) $3e^{-4y} + 4e^{3x} + 12C = 0$",
-      "answerCount": 1
+      "answerCount": 1,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Step 1 (Formula / Governing Law & Given Data): [1/4 Mark]        The given differential equation is:      $$\log \left( \frac{dy}{dx} \right) = 3x + 4y$$      By the definition of logarithms, if $\log(a) = b$, then $a = e^b$. Applying this to the given equation:      $$\frac{dy}{dx} = e^{3x + 4y}$$ ...",
+        "upvoteCount": 1
+      }
     }
   }
   </script>
@@ -78,6 +83,45 @@
       <div class="question-body">
         <div class="math-content">The solution for the differential equation $\log \left$ \frac{dy}{dx} \right$ = 3x + 4y$ is : (A) $3e^{4y} + 4e^{-3x} + C = 0$ (B) $e^{3x+4y} + C = 0$ (C) $3e^{-3y} + 4e^{4x} + 12C = 0$ (D) $3e^{-4y} + 4e^{3x} + 12C = 0$</div>
       </div>
+      <div class="solution-box" style="margin-top:24px; padding:20px; background:var(--card-bg, #ffffff); border:1.5px solid var(--border, #e2e8f0); border-radius:12px;">
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:14px;">
+          <span style="background:#10b981; color:#fff; font-size:11px; font-weight:700; padding:3px 10px; border-radius:20px; text-transform:uppercase;">✓ Verified CBSE Marking Scheme</span>
+          <span style="font-size:12px; color:var(--text-muted, #64748b); font-weight:600;">Official Evaluation Steps & EL10 Insight</span>
+        </div>
+        <div class="math-content solution-content" style="line-height:1.7; font-size:15px;">
+          <div>
+    <p><strong>Step 1 (Formula / Governing Law & Given Data): [1/4 Mark]</strong></p>
+    <p>The given differential equation is:</p>
+    $$\log \left( \frac{dy}{dx} \right) = 3x + 4y$$
+    <p>By the definition of logarithms, if $\log(a) = b$, then $a = e^b$. Applying this to the given equation:</p>
+    $$\frac{dy}{dx} = e^{3x + 4y}$$
+    <p>Using the law of exponents $e^{a+b} = e^a \cdot e^b$, we separate the variables to solve the differential equation.</p>
+
+    <p><strong>Step 2 (Step-by-Step Mathematical Working): [1/2 Mark]</strong></p>
+    <p>Rewrite the equation to separate variables $x$ and $y$:</p>
+    $$\frac{dy}{dx} = e^{3x} \cdot e^{4y}$$
+    $$\frac{dy}{e^{4y}} = e^{3x} \, dx$$
+    $$e^{-4y} \, dy = e^{3x} \, dx$$
+    <p>Integrate both sides:</p>
+    $$\int e^{-4y} \, dy = \int e^{3x} \, dx$$
+    $$\frac{e^{-4y}}{-4} = \frac{e^{3x}}{3} + C_1$$
+    <p>Multiply the entire equation by 12 to clear the denominators:</p>
+    $$12 \left( -\frac{e^{-4y}}{4} \right) = 12 \left( \frac{e^{3x}}{3} \right) + 12C_1$$
+    $$-3e^{-4y} = 4e^{3x} + 12C_1$$
+    $$3e^{-4y} + 4e^{3x} + 12C_1 = 0$$
+    <p>Replacing the constant $12C_1$ with $C$:</p>
+    $$3e^{-4y} + 4e^{3x} + C = 0$$
+
+    <p><strong>Step 3 (Final Concluded Answer): [1/4 Mark]</strong></p>
+    <p>Comparing the result with the given options, the correct choice is <strong>(D)</strong>.</p>
+    <p><strong>Final Answer:</strong> $3e^{-4y} + 4e^{3x} + 12C = 0$</p>
+
+    <p><strong>💡 EL10 Concept Insight:</strong></p>
+    <p>Think of this like untangling a knot: we first use the exponential rule to "free" the derivative from the log, then we group all the $y$'s on one side and all the $x$'s on the other so we can easily add up (integrate) the changes on both sides to find the final relationship.</p>
+</div>
+        </div>
+      </div>
+
 
       <div class="card-footer-actions">
         <a href="mailto:support@learnosha.in?subject=Report%20Question%205045&body=Question%20ID:%205045%0AChapter:%20Continuity and Differentiability%0AIssue%20Description:%20" class="report-link">

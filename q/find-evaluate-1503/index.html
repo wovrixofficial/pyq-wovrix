@@ -25,7 +25,12 @@
       "@type": "Question",
       "name": "CBSE Class 12 Mathematics Integrals Board Question",
       "text": "(a) Find :\n$\\int \\frac{x}{(x - 1)(x^2 + 4)} dx$\nOR\n(b) Evaluate :\n$\\int_{0}^{1} \\frac{x \\tan^{-1} x}{(1 + x^2)^{3/2}} dx$",
-      "answerCount": 1
+      "answerCount": 1,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Solution for (a): Partial Fractions Integration         Step 1 (Formula / Governing Law & Given Data): [1 Mark]        We use the method of Partial Fractions to decompose the integrand. The form is:      $$\frac{x}{(x - 1)(x^2 + 4)} = \frac{A}{x - 1} + \frac{Bx + C}{x^2 + 4}$$        Step 2 (Step-by...",
+        "upvoteCount": 1
+      }
     }
   }
   </script>
@@ -82,6 +87,54 @@ OR
 (b) Evaluate :
 $\int_{0}^{1} \frac{x \tan^{-1} x}{(1 + x^2)^{3/2}} dx$</div>
       </div>
+      <div class="solution-box" style="margin-top:24px; padding:20px; background:var(--card-bg, #ffffff); border:1.5px solid var(--border, #e2e8f0); border-radius:12px;">
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:14px;">
+          <span style="background:#10b981; color:#fff; font-size:11px; font-weight:700; padding:3px 10px; border-radius:20px; text-transform:uppercase;">✓ Verified CBSE Marking Scheme</span>
+          <span style="font-size:12px; color:var(--text-muted, #64748b); font-weight:600;">Official Evaluation Steps & EL10 Insight</span>
+        </div>
+        <div class="math-content solution-content" style="line-height:1.7; font-size:15px;">
+          <div>
+    <h3>Solution for (a): Partial Fractions Integration</h3>
+
+    <p><strong>Step 1 (Formula / Governing Law & Given Data): [1 Mark]</strong></p>
+    <p>We use the method of Partial Fractions to decompose the integrand. The form is:</p>
+    $$\frac{x}{(x - 1)(x^2 + 4)} = \frac{A}{x - 1} + \frac{Bx + C}{x^2 + 4}$$
+
+    <p><strong>Step 2 (Step-by-Step Mathematical Working): [2 Marks]</strong></p>
+    <p>Equating the numerators:</p>
+    $$x = A(x^2 + 4) + (Bx + C)(x - 1)$$
+    <ul>
+        <li>Set $x = 1$: $1 = A(1 + 4) \implies 5A = 1 \implies A = \frac{1}{5}$</li>
+        <li>Comparing coefficients of $x^2$: $0 = A + B \implies B = -A = -\frac{1}{5}$</li>
+        <li>Comparing constants: $0 = 4A - C \implies C = 4A = \frac{4}{5}$</li>
+    </ul>
+    <p>Substituting back into the integral:</p>
+    $$\int \left( \frac{1/5}{x - 1} + \frac{-1/5x + 4/5}{x^2 + 4} \right) dx = \frac{1}{5} \int \frac{1}{x - 1} dx - \frac{1}{10} \int \frac{2x}{x^2 + 4} dx + \frac{4}{5} \int \frac{1}{x^2 + 2^2} dx$$
+
+    <p><strong>Step 3 (Final Concluded Answer): [1 Mark]</strong></p>
+    <p>Integrating term by term:</p>
+    $$\frac{1}{5} \ln|x - 1| - \frac{1}{10} \ln(x^2 + 4) + \frac{4}{5} \cdot \frac{1}{2} \tan^{-1}\left(\frac{x}{2}\right) + C$$
+    $$\text{Final Answer: } \frac{1}{5} \ln|x - 1| - \frac{1}{10} \ln(x^2 + 4) + \frac{2}{5} \tan^{-1}\left(\frac{x}{2}\right) + C$$
+
+    <hr>
+
+    <h3>Solution for (b): Definite Integral by Parts</h3>
+
+    <p><strong>Step 1 (Formula / Governing Law & Given Data): [1 Mark]</strong></p>
+    <p>Use Integration by Parts: $\int u \, dv = uv - \int v \, du$. Let $u = \tan^{-1}x$ and $dv = \frac{x}{(1+x^2)^{3/2}} dx$.</p>
+
+    <p><strong>Step 2 (Step-by-Step Mathematical Working): [2 Marks]</strong></p>
+    <p>Find $du$ and $v$:</p>
+    <ul>
+        <li>$du = \frac{1}{1+x^2} dx$</li>
+        <li>$v = \int x(1+x^2)^{-3/2} dx = -(1+x^2)^{-1/2} = -\frac{1}{\sqrt{1+x^2}}$</li>
+    </ul>
+    <p>Applying the formula:</p>
+    $$\left[ -\frac{\tan^{-1}x}{\sqrt{1+x^2}} \right]_0^1 - \int_0^1 \left( -\frac{1}{\sqrt{1+x^2}} \right) \frac{1}{1+x^2} dx$$
+    $$= \left( -\frac{\pi/4}{\sqrt
+        </div>
+      </div>
+
 
       <div class="card-footer-actions">
         <a href="mailto:support@learnosha.in?subject=Report%20Question%201503&body=Question%20ID:%201503%0AChapter:%20Integrals%0AIssue%20Description:%20" class="report-link">

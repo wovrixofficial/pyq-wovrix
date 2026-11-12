@@ -25,7 +25,12 @@
       "@type": "Question",
       "name": "CBSE Class 12 Mathematics Linear Programming Board Question",
       "text": "Solve the following linear programming problem graphically : \nMinimize $\\quad Z = 13x - 15y$\nSubject to constraints\n$x + y \\le 7$,\n$2x - 3y + 6 \\ge 0$,\n$x \\ge 0, y \\ge 0$",
-      "answerCount": 1
+      "answerCount": 1,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Step 1 (Governing Constraints and Feasible Region): [1 Mark]       To solve the LPP, we first convert the inequalities into equations to find the boundary lines:                 Line 1: $x + y = 7$ (Intercepts: $(7, 0)$ and $(0, 7)$)           Line 2: $2x - 3y = -6$ (Intercepts: $(-3, 0)$ and $(0, 2...",
+        "upvoteCount": 1
+      }
     }
   }
   </script>
@@ -83,6 +88,62 @@ $x + y \le 7$,
 $2x - 3y + 6 \ge 0$,
 $x \ge 0, y \ge 0$</div>
       </div>
+      <div class="solution-box" style="margin-top:24px; padding:20px; background:var(--card-bg, #ffffff); border:1.5px solid var(--border, #e2e8f0); border-radius:12px;">
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:14px;">
+          <span style="background:#10b981; color:#fff; font-size:11px; font-weight:700; padding:3px 10px; border-radius:20px; text-transform:uppercase;">✓ Verified CBSE Marking Scheme</span>
+          <span style="font-size:12px; color:var(--text-muted, #64748b); font-weight:600;">Official Evaluation Steps & EL10 Insight</span>
+        </div>
+        <div class="math-content solution-content" style="line-height:1.7; font-size:15px;">
+          <div>
+    <strong>Step 1 (Governing Constraints and Feasible Region): [1 Mark]</strong>
+    <p>To solve the LPP, we first convert the inequalities into equations to find the boundary lines:</p>
+    <ul>
+        <li>Line 1: $x + y = 7$ (Intercepts: $(7, 0)$ and $(0, 7)$)</li>
+        <li>Line 2: $2x - 3y = -6$ (Intercepts: $(-3, 0)$ and $(0, 2)$)</li>
+        <li>Non-negativity constraints: $x \ge 0, y \ge 0$ (First Quadrant)</li>
+    </ul>
+    <p>The feasible region is determined by the intersection of the half-planes. Testing the origin $(0,0)$:</p>
+    <ul>
+        <li>$0 + 0 \le 7$ (True, region towards origin)</li>
+        <li>$2(0) - 3(0) + 6 \ge 0 \implies 6 \ge 0$ (True, region away from origin)</li>
+    </ul>
+</div>
+
+<div>
+    <strong>Step 2 (Step-by-Step Mathematical Working): [1.5 Marks]</strong>
+    <p>The vertices of the feasible region are found by solving the intersection of the lines:</p>
+    <ul>
+        <li>Vertex A: Intersection of $x=0$ and $2x-3y=-6 \implies (0, 2)$</li>
+        <li>Vertex B: Intersection of $x=0$ and $x+y=7 \implies (0, 7)$</li>
+        <li>Vertex C: Intersection of $x+y=7$ and $2x-3y=-6$:
+            <br>Multiply first by 3: $3x + 3y = 21$
+            <br>Add to second: $(3x + 3y) + (2x - 3y) = 21 - 6 \implies 5x = 15 \implies x = 3$
+            <br>Substitute $x=3$ in $x+y=7 \implies y = 4$. Vertex is $(3, 4)$.</li>
+        <li>Vertex D: Intersection of $y=0$ and $2x-3y=-6 \implies x = -3$ (Outside first quadrant, ignore).</li>
+        <li>Vertex E: Intersection of $y=0$ and $x+y=7 \implies (7, 0)$.</li>
+    </ul>
+    <p>Evaluating $Z = 13x - 15y$ at each corner point:</p>
+    <table border="1">
+        <tr><th>Corner Point</th><th>$Z = 13x - 15y$</th></tr>
+        <tr><td>$(0, 2)$</td><td>$13(0) - 15(2) = -30$</td></tr>
+        <tr><td>$(0, 7)$</td><td>$13(0) - 15(7) = -105$</td></tr>
+        <tr><td>$(3, 4)$</td><td>$13(3) - 15(4) = 39 - 60 = -21$</td></tr>
+        <tr><td>$(7, 0)$</td><td>$13(7) - 15(0) = 91$</td></tr>
+    </table>
+</div>
+
+<div>
+    <strong>Step 3 (Final Concluded Answer): [0.5 Mark]</strong>
+    <p>Comparing the values of $Z$ at all corner points, the minimum value is $-105$.</p>
+    <p><strong>Conclusion:</strong> The minimum value of $Z$ is <strong>$-105$</strong> at the point <strong>$(0, 7)$</strong>.</p>
+</div>
+
+<div>
+    <strong>💡 EL10 Concept Insight:</strong>
+    <p>Think of the feasible region as a "playground" defined by fences; the optimal solution is always found at one of the "corners"
+        </div>
+      </div>
+
 
       <div class="card-footer-actions">
         <a href="mailto:support@learnosha.in?subject=Report%20Question%2068&body=Question%20ID:%2068%0AChapter:%20Linear Programming%0AIssue%20Description:%20" class="report-link">

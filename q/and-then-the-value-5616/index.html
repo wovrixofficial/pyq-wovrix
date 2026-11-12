@@ -25,7 +25,12 @@
       "@type": "Question",
       "name": "CBSE Class 12 Mathematics Matrices Board Question",
       "text": "If $F(x) = \\begin{bmatrix} \\cos x & -\\sin x & 0 \\\\ \\sin x & \\cos x & 0 \\\\ 0 & 0 & 1 \\end{bmatrix}$ and $[F(x)]^2 = F(kx)$, then the value of k is : (A) 1 (B) 2 (C) 0 (D) -2",
-      "answerCount": 1
+      "answerCount": 1,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Step 1 (Formula / Governing Law & Given Data): [0.25 Mark]        Given the matrix function:      $$F(x) = \begin{bmatrix} \cos x & -\sin x & 0 \\ \sin x & \cos x & 0 \\ 0 & 0 & 1 \end{bmatrix}$$      We are required to find $k$ such that $[F(x)]^2 = F(kx)$. The governing principle here is the matri...",
+        "upvoteCount": 1
+      }
     }
   }
   </script>
@@ -78,6 +83,40 @@
       <div class="question-body">
         <div class="math-content">If $F(x) = \begin{bmatrix} \cos x &amp; -\sin x &amp; 0 \\ \sin x &amp; \cos x &amp; 0 \\ 0 &amp; 0 &amp; 1 \end{bmatrix}$ and $[F(x)]^2 = F(kx)$, then the value of k is : (A) 1 (B) 2 (C) 0 (D) -2</div>
       </div>
+      <div class="solution-box" style="margin-top:24px; padding:20px; background:var(--card-bg, #ffffff); border:1.5px solid var(--border, #e2e8f0); border-radius:12px;">
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:14px;">
+          <span style="background:#10b981; color:#fff; font-size:11px; font-weight:700; padding:3px 10px; border-radius:20px; text-transform:uppercase;">✓ Verified CBSE Marking Scheme</span>
+          <span style="font-size:12px; color:var(--text-muted, #64748b); font-weight:600;">Official Evaluation Steps & EL10 Insight</span>
+        </div>
+        <div class="math-content solution-content" style="line-height:1.7; font-size:15px;">
+          <div>
+    <p><strong>Step 1 (Formula / Governing Law & Given Data): [0.25 Mark]</strong></p>
+    <p>Given the matrix function:</p>
+    $$F(x) = \begin{bmatrix} \cos x & -\sin x & 0 \\ \sin x & \cos x & 0 \\ 0 & 0 & 1 \end{bmatrix}$$
+    <p>We are required to find $k$ such that $[F(x)]^2 = F(kx)$. The governing principle here is the matrix multiplication rule for trigonometric identities.</p>
+
+    <p><strong>Step 2 (Step-by-Step Mathematical Working): [0.5 Mark]</strong></p>
+    <p>Perform the matrix multiplication $[F(x)] \cdot [F(x)]$:</p>
+    $$[F(x)]^2 = \begin{bmatrix} \cos x & -\sin x & 0 \\ \sin x & \cos x & 0 \\ 0 & 0 & 1 \end{bmatrix} \begin{bmatrix} \cos x & -\sin x & 0 \\ \sin x & \cos x & 0 \\ 0 & 0 & 1 \end{bmatrix}$$
+    <p>Calculating the elements using row-by-column multiplication:</p>
+    <ul>
+        <li>$R_1C_1: (\cos x)(\cos x) + (-\sin x)(\sin x) + 0 = \cos^2 x - \sin^2 x = \cos(2x)$</li>
+        <li>$R_1C_2: (\cos x)(-\sin x) + (-\sin x)(\cos x) + 0 = -(\sin x \cos x + \sin x \cos x) = -\sin(2x)$</li>
+        <li>$R_2C_1: (\sin x)(\cos x) + (\cos x)(\sin x) + 0 = \sin(2x)$</li>
+        <li>$R_2C_2: (\sin x)(-\sin x) + (\cos x)(\cos x) + 0 = \cos^2 x - \sin^2 x = \cos(2x)$</li>
+    </ul>
+    <p>Thus, the resulting matrix is:</p>
+    $$[F(x)]^2 = \begin{bmatrix} \cos(2x) & -\sin(2x) & 0 \\ \sin(2x) & \cos(2x) & 0 \\ 0 & 0 & 1 \end{bmatrix}$$
+
+    <p><strong>Step 3 (Final Concluded Answer): [0.25 Mark]</strong></p>
+    <p>Comparing $[F(x)]^2$ with $F(kx) = \begin{bmatrix} \cos(kx) & -\sin(kx) & 0 \\ \sin(kx) & \cos(kx) & 0 \\ 0 & 0 & 1 \end{bmatrix}$, we observe that $kx = 2x$. Therefore, <strong>$k = 2$</strong>.</p>
+    <p>The correct option is <strong>(B)</strong>.</p>
+
+    <p><strong>💡 EL10 Concept Insight:</strong> Think of this matrix as a "rotation machine." When you apply the rotation twice (squaring it), it’s the same as rotating by double the angle, which is why the $x$ inside the sine and cosine functions becomes $2x$.</p>
+</div>
+        </div>
+      </div>
+
 
       <div class="card-footer-actions">
         <a href="mailto:support@learnosha.in?subject=Report%20Question%205616&body=Question%20ID:%205616%0AChapter:%20Matrices%0AIssue%20Description:%20" class="report-link">
