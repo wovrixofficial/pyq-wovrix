@@ -1224,52 +1224,76 @@
   <!-- Architectural Footer -->
   <footer class="site-footer">
     <div class="footer-top-grid">
-      <div class="footer-brand-column">
-        <div class="brand">
+      <div class="footer-col-brand">
+        <div class="footer-brand-title">
           <svg class="brand-logo-icon" width="22" height="23" viewBox="8 6 48 51" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M19 17V46H45" fill="none" stroke="currentColor" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round"/>
           <path d="M29 26.5A10 10 0 0 1 39 36.5" fill="none" stroke="#D97706" stroke-width="3.5" stroke-linecap="round"/>
           <path d="M29 18.5A18 18 0 0 1 47 36.5" fill="none" stroke="#D97706" stroke-opacity=".6" stroke-width="3.5" stroke-linecap="round"/>
           <circle cx="29" cy="36.5" r="3" fill="#D97706"/>
         </svg>
-          <span class="brand-name">LEARNOSHA</span>
+          <span>Learnosha</span>
         </div>
         <p class="footer-brand-desc">
-          Official past paper intelligence for CBSE Class 12, NEET UG, and JEE Main. Pure NCERT alignment, multi-year frequency filters, and zero distractions.
+          Unified previous year questions archive for CBSE Class 12 PCM, NEET UG, and JEE Main. Pure study material organized by NCERT curriculum with repeat analytics and CBT simulation.
         </p>
       </div>
 
       <div class="footer-col">
-        <h4 class="footer-heading">Platform Hubs</h4>
-        <ul class="footer-links">
-          <li><a href="/practice/?exam=cbse">CBSE 12 Practice Hub</a></li>
-          <li><a href="/practice/?exam=neet">NEET UG Practice Hub</a></li>
-          <li><a href="/practice/?exam=jee">JEE Main Practice Hub</a></li>
-          <li><a href="/paper-maker/?exam=jee">JEE CBT Mock Simulator</a></li>
-          <li><a href="/repeated/">Repeats Radar</a></li>
-          <li><a href="/paper-maker/">Custom Mock Maker</a></li>
-          <li><a href="/saved/">Personal Saved Dashboard</a></li>
+        <span class="footer-col-heading">CBSE Class 12</span>
+        <ul class="footer-links-list">
+          <li><a href="/cbse-12/physics/electric-charges-and-fields/">Physics (14 Chapters)</a></li>
+          <li><a href="/cbse-12/chemistry/solutions/">Chemistry (10 Chapters)</a></li>
+          <li><a href="/cbse-12/mathematics/relations-and-functions/">Mathematics (13 Chapters)</a></li>
+          <li><a href="/practice/?exam=cbse">Interactive Practice Hub</a></li>
         </ul>
       </div>
 
       <div class="footer-col">
-        <h4 class="footer-heading">Trust & Security</h4>
-        <ul class="footer-links">
-          <li><a href="/about/">About Learnosha</a></li>
-          <li><a href="/privacy/">Privacy Policy</a></li>
-          <li><a href="/contact/">Contact & Feedback</a></li>
-          <li><a href="/takedown/">DMCA & Takedown</a></li>
+        <span class="footer-col-heading">Medical (NEET UG)</span>
+        <ul class="footer-links-list">
+          <li><a href="/practice/?exam=neet">NEET UG 11-Year Archive</a></li>
+          <li><a href="/practice/?exam=neet&subject=Physics">NEET Physics</a></li>
+          <li><a href="/practice/?exam=neet&subject=Chemistry">NEET Chemistry</a></li>
+          <li><a href="/practice/?exam=neet&subject=Botany">NEET Botany</a></li>
+          <li><a href="/practice/?exam=neet&subject=Zoology">NEET Zoology</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <span class="footer-col-heading">Engineering (JEE Main)</span>
+        <ul class="footer-links-list">
+          <li><a href="/practice/?exam=jee&subject=Physics">JEE Physics (5,398 Qs)</a></li>
+          <li><a href="/practice/?exam=jee&subject=Chemistry">JEE Chemistry (3,727 Qs)</a></li>
+          <li><a href="/practice/?exam=jee&subject=Mathematics">JEE Mathematics (3,542 Qs)</a></li>
+          <li><a href="/paper-maker/?exam=jee">3-Hour CBT Simulator</a></li>
+          <li><a href="/repeated/?exam=jee">JEE Recurring Concepts</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <span class="footer-col-heading">Study Tools</span>
+        <ul class="footer-links-list">
+          <li><a href="/paper-maker/">Custom Paper & CBT Maker</a></li>
+          <li><a href="/repeated/">Repeats & Radar</a></li>
+          <li><a href="/saved/">Saved Questions Dashboard</a></li>
+          <li><a href="mailto:support@learnosha.in">Report Question Correction</a></li>
         </ul>
       </div>
     </div>
 
-    <div class="footer-bottom-bar">
-      <div class="footer-copy">
-        © 2026 Learnosha (learnosha.in) • Free, No-Login Educational Past Paper Archive.
+    <div class="footer-legal-bar">
+      <p class="disclaimer">
+        Disclaimer: Independent study resource providing NCERT-aligned past paper revision, repeat pattern analytics, and step-by-step solutions for CBSE and competitive exams. Not affiliated with, endorsed by, or connected to the Central Board of Secondary Education (CBSE) or the National Testing Agency (NTA).
+      </p>
+      <div class="footer-copy-row">
+        <span>© 2026 Learnosha (learnosha.in) • All Rights Reserved.</span>
+        <span>Built for calm, focused revision.</span>
       </div>
-      <div class="footer-bottom-links">
-        <a href="#top">Back to Top ↑</a>
-      </div>
+    </div>
+
+    <div class="footer-massive-learnosha">
+      <span>LEARNOSHA</span>
     </div>
   </footer>
 
@@ -1542,6 +1566,7 @@
     let currentSearch = '';
     let showRepeatsOnly = false;
     let currentTopic = 'all';
+    let targetQuestionId = null;
     let chapterTopicsCache = null;
     fetch('/data/chapter_topics.json')
       .then(r => r.ok ? r.json() : null)
@@ -1580,6 +1605,7 @@
       const urlSubj = p.get('subject');
       const urlCh = p.get('chapter');
       const urlQ = p.get('q');
+      targetQuestionId = urlQ ? String(urlQ).trim() : null;
 
       if (urlExam && (urlExam === 'cbse' || urlExam === 'neet' || urlExam === 'jee' || urlExam === 'jee-adv' || urlExam === 'bitsat')) {
         currentExam = urlExam;
@@ -1589,7 +1615,22 @@
       }
 
       if (urlSubj) {
-        currentSubject = urlSubj.charAt(0).toUpperCase() + urlSubj.slice(1).toLowerCase();
+        const canonicalList = [
+          'Physics', 'Chemistry', 'Mathematics', 'Biology', 'Botany', 'Zoology',
+          'English Proficiency', 'Logical Reasoning', 'Computer Science', 'English Core',
+          'Social Science', 'Science', 'English Language & Literature'
+        ];
+        const clean = decodeURIComponent(urlSubj).trim();
+        if (clean.toLowerCase().includes('english') && clean.toLowerCase().includes('logic')) {
+          currentSubject = 'English Proficiency';
+        } else if (clean.toLowerCase().includes('botany')) {
+          currentSubject = 'Botany';
+        } else if (clean.toLowerCase().includes('zoology')) {
+          currentSubject = 'Zoology';
+        } else {
+          const found = canonicalList.find(s => s.toLowerCase() === clean.toLowerCase());
+          currentSubject = found || (clean.charAt(0).toUpperCase() + clean.slice(1));
+        }
       }
 
       // Self-healing: prevent invalid exam/subject pairing
@@ -1716,9 +1757,17 @@
       const badgeText = badgeMap[currentExam] || 'LEARNOSHA';
       document.getElementById('subjStageBadge').innerText = `${badgeText} • STEP 2 OF 3`;
       document.getElementById('subjStageHeading').innerText = `Select ${examNames[currentExam] || 'Exam'} Subject`;
-      document.getElementById('subjStageSubtitle').innerText = isCbse
-        ? 'Choose Physics, Chemistry, or Mathematics to practice board questions with step-wise derivations.'
-        : (isNeet ? 'Choose Physics, Chemistry, Botany, or Zoology with verified NTA answer keys.' : 'Choose Physics, Chemistry, or Mathematics with official NTA answer keys, MCQs and NVQs.');
+      if (currentExam === 'cbse') {
+        document.getElementById('subjStageSubtitle').innerText = 'Choose Physics, Chemistry, or Mathematics to practice board questions with step-wise derivations.';
+      } else if (currentExam === 'neet') {
+        document.getElementById('subjStageSubtitle').innerText = 'Choose Physics, Chemistry, Botany, or Zoology with verified NTA answer keys.';
+      } else if (currentExam === 'bitsat') {
+        document.getElementById('subjStageSubtitle').innerText = 'Choose Physics, Chemistry, Mathematics, English Proficiency, or Logical Reasoning for BITSAT speed drills.';
+      } else if (currentExam === 'jee-adv') {
+        document.getElementById('subjStageSubtitle').innerText = 'Choose Physics, Chemistry, or Mathematics with official IIT JEE Advanced question papers.';
+      } else {
+        document.getElementById('subjStageSubtitle').innerText = 'Choose Physics, Chemistry, or Mathematics with official NTA answer keys, MCQs and NVQs.';
+      }
 
       
 
@@ -1789,9 +1838,14 @@
     // 4. STAGE 3: CHAPTER SELECTION
     // ---------------------------------------------------------
     function renderChapterScreen() {
-      const isCbse = currentExam === 'cbse';
-      const isNeet = currentExam === 'neet';
-      const label = isCbse ? 'CBSE 12' : (isNeet ? 'NEET UG' : 'JEE Main');
+      const examLabels = {
+        'cbse': 'CBSE 12',
+        'neet': 'NEET UG',
+        'jee': 'JEE Main',
+        'jee-adv': 'JEE Advanced',
+        'bitsat': 'BITSAT'
+      };
+      const label = examLabels[currentExam] || 'CBSE 12';
       document.getElementById('chapterStageHeading').innerText = `${currentSubject} Chapters (${label})`;
       document.getElementById('chapterStageSubtitle').innerText = `Select any chapter below to load its questions, or practice all chapters combined.`;
 
@@ -1807,7 +1861,10 @@
       const isNeet = currentExam === 'neet';
       let list = [];
       if (currentExam === 'cbse') list = CHAPTERS_CBSE[currentSubject];
-      else if (currentExam === 'neet') list = CHAPTERS_NEET[currentSubject];
+      else if (currentExam === 'neet') {
+        const k = currentSubject.includes('Botany') ? 'Botany' : (currentSubject.includes('Zoology') ? 'Zoology' : currentSubject);
+        list = CHAPTERS_NEET[k] || CHAPTERS_NEET[currentSubject] || [];
+      }
       else if (currentExam === 'jee-adv') list = CHAPTERS_JEE_ADV[currentSubject] || [];
       else if (currentExam === 'bitsat') list = CHAPTERS_BITSAT[currentSubject] || [];
       else list = CHAPTERS_JEE[currentSubject];
@@ -2063,11 +2120,14 @@ function setStreamSection(sec, btn) {
           }
         } else {
           const normTarget = currentChapter.toLowerCase().replace(/\(.*?\)/g, '').replace(/&/g, 'and').replace(/[^a-z0-9]/g, ' ').replace(/\s+/g, ' ').trim();
+          const targetWords = normTarget.split(' ').filter(w => w.length > 2);
           list = list.filter(q => {
-            const raw = (q.ncert_chapter || '').toLowerCase();
+            const raw = (q.ncert_chapter || q.chapter_name || q.chapter || '').toLowerCase();
             if (raw.includes(currentChapter.toLowerCase())) return true;
             const normRaw = raw.replace(/\(.*?\)/g, '').replace(/&/g, 'and').replace(/[^a-z0-9]/g, ' ').replace(/\s+/g, ' ').trim();
-            return normRaw.includes(normTarget) || normTarget.includes(normRaw);
+            if (normRaw.includes(normTarget) || normTarget.includes(normRaw)) return true;
+            const matchCount = targetWords.filter(w => normRaw.includes(w)).length;
+            return matchCount >= Math.min(2, targetWords.length);
           });
         }
       }
@@ -2133,6 +2193,17 @@ function setStreamSection(sec, btn) {
           }
           return false;
         });
+      }
+
+      
+      // Deep Link Pinning: If targetQuestionId is present, pin that question to index 0
+      if (targetQuestionId) {
+        const targetQ = loadedQuestions.find(q => String(q.id) === targetQuestionId);
+        if (targetQ) {
+          targetQ._isPinned = true;
+          list = list.filter(q => String(q.id) !== targetQuestionId);
+          list.unshift(targetQ);
+        }
       }
 
       filteredQuestions = list;
@@ -2235,8 +2306,24 @@ function setStreamSection(sec, btn) {
         const isBmd = typeof isBookmarked === 'function' && isBookmarked(qId);
         const isDn = typeof isDone === 'function' && isDone(qId);
 
+        const isPinnedTarget = (targetQuestionId && String(qId) === targetQuestionId) || q._isPinned;
+        const pinnedBanner = isPinnedTarget ? `
+          <div class="pinned-question-banner" style="background:#eff6ff; border:1px solid #93c5fd; border-radius:8px; padding:10px 14px; margin-bottom:12px; display:flex; align-items:center; justify-content:space-between; gap:10px;">
+            <div style="display:flex; align-items:center; gap:8px;">
+              <span style="font-size:18px;">🎯</span>
+              <div>
+                <strong style="color:#1d4ed8; font-size:13px;">Selected Question #${escapeHtml(qId)}</strong>
+                <span style="color:#475569; font-size:12px; margin-left:6px;">— Pinned to #1 for direct practice</span>
+              </div>
+            </div>
+            <span style="background:#2563eb; color:#ffffff; font-size:11px; font-weight:700; padding:3px 8px; border-radius:999px;">Direct Match</span>
+          </div>
+        ` : '';
+        const cardStyle = isPinnedTarget ? 'style="border: 2px solid #2563eb; box-shadow: 0 4px 16px rgba(37,99,235,0.18);"' : '';
+
         html += `
-          <div class="question-card" id="${qId}">
+          ${pinnedBanner}
+          <div class="question-card" id="${qId}" ${cardStyle}>
             <div class="q-meta-top">
               <div class="q-badges-left">
                 <span class="q-source-pill">#${globalNum} · ${year}</span>

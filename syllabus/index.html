@@ -268,10 +268,56 @@
     }
 
     
-    /* Official PDF Download Card & Badges */
+    
+    /* Premium Minimalist Track Bar */
+    .syllabus-track-bar {
+      display: flex;
+      gap: 6px;
+      background: var(--surface-alt);
+      padding: 6px;
+      border-radius: 9999px;
+      border: 1px solid var(--border);
+      max-width: 980px;
+      margin: 24px auto 26px;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .syllabus-track-bar::-webkit-scrollbar {
+      display: none;
+    }
+    .syllabus-track-btn {
+      padding: 8px 16px;
+      border-radius: 9999px;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text-muted);
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      white-space: nowrap;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .syllabus-track-btn:hover {
+      color: var(--text);
+      background: rgba(0, 0, 0, 0.04);
+    }
+    .syllabus-track-btn.active {
+      background: var(--surface);
+      color: var(--text);
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+      font-weight: 800;
+    }
+
+    /* Sleek Document Header Card (Apple/Linear Aesthetic) */
     .official-pdf-card {
-      background: linear-gradient(135deg, rgba(37, 99, 235, 0.07) 0%, rgba(30, 64, 175, 0.03) 100%);
-      border: 1px solid rgba(37, 99, 235, 0.22);
+      background: var(--surface);
+      border: 1px solid var(--border);
       border-radius: var(--radius-md);
       padding: 16px 20px;
       margin-bottom: 22px;
@@ -279,8 +325,9 @@
       justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
-      gap: 14px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+      gap: 16px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+      position: relative;
     }
     .pdf-meta {
       display: flex;
@@ -289,23 +336,28 @@
       min-width: 260px;
       flex: 1;
     }
-    .pdf-icon-box {
-      width: 44px;
-      height: 44px;
-      border-radius: 10px;
-      background: #dc2626;
-      color: #ffffff;
+    .pdf-icon-badge {
+      width: 40px;
+      height: 40px;
+      border-radius: 8px;
+      background: #f1f5f9;
+      color: #0f172a;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
-      font-weight: 800;
-      font-size: 13px;
-      letter-spacing: 0.5px;
-      box-shadow: 0 4px 10px rgba(220, 38, 38, 0.25);
+      border: 1px solid #e2e8f0;
       flex-shrink: 0;
     }
+    .pdf-icon-badge span {
+      font-size: 8.5px;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      margin-top: -2px;
+      color: #dc2626;
+    }
     .pdf-details-title {
-      font-size: 14.5px;
+      font-size: 14px;
       font-weight: 700;
       color: var(--text);
       display: flex;
@@ -313,8 +365,17 @@
       gap: 8px;
       flex-wrap: wrap;
     }
+    .badge-session {
+      font-size: 11px;
+      font-weight: 700;
+      color: #2563eb;
+      background: rgba(37, 99, 235, 0.08);
+      padding: 2px 7px;
+      border-radius: 4px;
+      border: 1px solid rgba(37, 99, 235, 0.2);
+    }
     .pdf-details-sub {
-      font-size: 12.5px;
+      font-size: 12px;
       color: var(--text-muted);
       margin-top: 3px;
       line-height: 1.4;
@@ -322,67 +383,98 @@
     .btn-download-pdf {
       display: inline-flex;
       align-items: center;
-      gap: 8px;
-      background: #dc2626;
+      gap: 7px;
+      background: #0f172a;
       color: #ffffff !important;
-      padding: 9px 18px;
+      padding: 8px 16px;
       border-radius: 9999px;
-      font-size: 13px;
+      font-size: 12.5px;
       font-weight: 700;
       text-decoration: none;
-      box-shadow: 0 2px 8px rgba(220, 38, 38, 0.25);
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
       transition: all 0.15s ease;
       white-space: nowrap;
     }
     .btn-download-pdf:hover {
-      background: #b91c1c;
+      background: #1e293b;
       transform: translateY(-1px);
-      box-shadow: 0 4px 14px rgba(220, 38, 38, 0.35);
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
     }
+
+    /* Refined Muted Badges */
     .class-badge {
       display: inline-block;
       padding: 2px 7px;
       border-radius: 4px;
       font-size: 11px;
       font-weight: 700;
-      background: rgba(100, 116, 139, 0.12);
-      color: var(--text-muted);
-      margin-right: 4px;
+      background: #f1f5f9;
+      color: #475569;
+      border: 1px solid #e2e8f0;
     }
     .priority-badge {
       display: inline-block;
-      padding: 2px 8px;
+      padding: 2px 7px;
       border-radius: 4px;
       font-size: 11px;
       font-weight: 800;
       letter-spacing: 0.02em;
     }
     .priority-paramount {
-      background: rgba(220, 38, 38, 0.1);
-      color: #dc2626;
-      border: 1px solid rgba(220, 38, 38, 0.25);
+      background: #fef2f2;
+      color: #be123c;
+      border: 1px solid #fecdd3;
     }
     .priority-guaranteed {
-      background: rgba(37, 99, 235, 0.1);
-      color: #2563eb;
-      border: 1px solid rgba(37, 99, 235, 0.25);
+      background: #eff6ff;
+      color: #1d4ed8;
+      border: 1px solid #bfdbfe;
     }
     .priority-high {
-      background: rgba(16, 185, 129, 0.1);
-      color: #059669;
-      border: 1px solid rgba(16, 185, 129, 0.25);
+      background: #f0fdf4;
+      color: #047857;
+      border: 1px solid #bbf7d0;
     }
     .status-badge {
       display: inline-block;
-      padding: 2px 8px;
+      padding: 2px 7px;
       border-radius: 4px;
       font-size: 11.5px;
       font-weight: 600;
-      background: rgba(245, 158, 11, 0.1);
-      color: #d97706;
-      border: 1px solid rgba(245, 158, 11, 0.25);
+      background: #fffbeb;
+      color: #b45309;
+      border: 1px solid #fde68a;
       margin-top: 5px;
     }
+
+    /* Refined Collapsible Topics */
+    .topics-collapse {
+      border: 1px solid var(--border-light);
+      border-radius: 6px;
+      overflow: hidden;
+      background: var(--surface);
+      margin-top: 10px;
+    }
+    .topics-collapse summary {
+      padding: 8px 12px;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--accent);
+      cursor: pointer;
+      background: rgba(37, 99, 235, 0.03);
+      user-select: none;
+    }
+    .topics-collapse summary:hover {
+      background: rgba(37, 99, 235, 0.06);
+    }
+    .topics-body {
+      padding: 10px 14px;
+      font-size: 12px;
+      color: var(--text-muted);
+      line-height: 1.6;
+      border-top: 1px solid var(--border-light);
+    }
+
 
     /* Collapsible Official Topics */
     .topics-collapse {
@@ -614,7 +706,7 @@
   <!-- Hero Section -->
   <main class="page-container" style="max-width: 1040px; padding-top: 10px;">
     <div class="syllabus-hero">
-      <span class="syllabus-badge">📋 OFFICIAL CURRICULUM BLUEPRINTS • AY 2025–2026</span>
+      <span class="syllabus-badge">📋 OFFICIAL CURRICULUM & WEIGHTAGE BLUEPRINTS • ACADEMIC SESSION 2026–2027</span>
       <h1 class="syllabus-title">Official Syllabus & Marks Weightage Blueprints</h1>
       <p class="syllabus-subtitle">
         Prescribed CBSE chapter marks, official NTA NEET UG unit weights, JEE shift-frequency rankings, and BITSAT speed blueprints. Plan your revision with verified mark allocations and launch 1-click PYQ practice.
@@ -643,337 +735,484 @@
 
     <!-- Active Blueprint Container -->
     <div id="blueprintContainer">
-      <!-- Pre-rendered Static SSR Content for Fast First Paint & Search Engines -->
-      <div style="background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-md); padding:16px 20px; margin-bottom:20px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;">
-        <div>
-          <h2 style="font-size:18px; font-weight:800; color:var(--text); margin:0;">CBSE Class 12 Chemistry (Code 043)</h2>
-          <p style="font-size:13px; color:var(--text-muted); margin:4px 0 0 0;">Official Examination Blueprint: 70 Marks Theory + 30 Marks Practical/Internal.</p>
+
+      <!-- Static SSR Content for Search Engines & Fast First Paint -->
+      <div class="official-citation-box" style="background:var(--surface); border:1px solid var(--border); border-left:4px solid var(--accent); border-radius:var(--radius-md); padding:16px 20px; margin-bottom:24px;">
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:6px;">
+          <span style="font-size:16px;">📜</span>
+          <strong style="font-size:14px; color:var(--text);">Official Statutory Curriculum Citation</strong>
+          <span style="font-size:11px; font-weight:700; color:#16a34a; background:#dcfce7; padding:2px 8px; border-radius:4px;">Verified 2026–2027</span>
         </div>
-        <div style="display:flex; gap:8px;">
-          <a href="/practice/?exam=cbse&subject=Chemistry" class="btn-action-pyq">⚡ Practice All Chemistry PYQs ➔</a>
-        </div>
+        <p style="font-size:13px; color:var(--text-muted); line-height:1.6; margin:0;">
+          All syllabus allocations, prescribed topics, and mark distributions are sourced directly from official statutory board releases:
+          <br>• <strong>CBSE Class 12:</strong> Central Board of Secondary Education Delhi Circular No. <strong>Acad-39/2025</strong> (<a href="https://cbseacademic.nic.in/curriculum_2026.html" target="_blank" rel="noopener" style="color:var(--accent);">cbseacademic.nic.in</a> Senior School Curriculum).
+          <br>• <strong>NEET UG (Medical):</strong> National Testing Agency (NTA) official Information Bulletin 2026–2027 (<a href="https://exams.nta.ac.in/NEET/" target="_blank" rel="noopener" style="color:var(--accent);">exams.nta.ac.in/NEET</a>) aligning with NMC guidelines.
+          <br>• <strong>JEE Main:</strong> NTA JEE (Main) official Information Bulletin 2026–2027 (<a href="https://jeemain.nta.nic.in/" target="_blank" rel="noopener" style="color:var(--accent);">jeemain.nta.nic.in</a>).
+        </p>
       </div>
 
-      <div class="official-pdf-card">
-        <div class="pdf-meta">
-          <div class="pdf-icon-box">PDF</div>
+      <div class="subject-blueprint-section" style="margin-bottom:32px;">
+        <div style="background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-md); padding:16px 20px; margin-bottom:16px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;">
           <div>
-            <div class="pdf-details-title">
-              Official CBSE Class 12 Chemistry Curriculum Document
-              <span style="font-size:11px; font-weight:700; color:#2563eb; background:rgba(37,99,235,0.08); padding:2px 8px; border-radius:4px;">Official Board Release</span>
-            </div>
-            <div class="pdf-details-sub">
-              Central Board of Secondary Education (CBSE Delhi) • Senior School Curriculum 2025–2026 • Verified PDF (931 KB)
-            </div>
+            <h2 style="font-size:18px; font-weight:800; color:var(--text); margin:0;">CBSE Class 12 Chemistry (Subject Code 043)</h2>
+            <p style="font-size:13px; color:var(--text-muted); margin:4px 0 0 0;">Official Examination Blueprint: 70 Marks Theory + 30 Marks Practical/Internal = 100 Marks.</p>
+          </div>
+          <div style="display:flex; gap:8px;">
+            <a href="/practice/?exam=cbse&subject=Chemistry" class="btn-action-pyq" style="background:var(--accent); color:#ffffff; padding:8px 14px; border-radius:6px; font-size:12px; font-weight:700; text-decoration:none;">⚡ Practice All Chemistry PYQs ➔</a>
           </div>
         </div>
-        <a href="/curriculum_pdf/Class12_Chemistry.pdf" target="_blank" download="CBSE_Class12_Chemistry.pdf" class="btn-download-pdf">
-          📥 Download Official PDF
-        </a>
-      </div>
 
-
-      <div class="unit-section">
-        <div class="unit-header">
-          <span class="unit-title">📖 Unit I: Solutions</span>
-          <span class="unit-marks-badge">7 Marks</span>
+        <!-- Semantic Accessible Marks Weightage Table for Google Indexing -->
+        <div style="overflow-x:auto; margin-bottom:16px;">
+          <table style="width:100%; border-collapse:collapse; background:var(--surface); border:1px solid var(--border); border-radius:8px; font-size:13px;">
+            <thead>
+              <tr style="background:var(--surface-hover); border-bottom:1px solid var(--border); text-align:left;">
+                <th style="padding:10px 14px; color:var(--text); font-weight:700;">Unit</th>
+                <th style="padding:10px 14px; color:var(--text); font-weight:700;">Chapter</th>
+                <th style="padding:10px 14px; color:var(--text); font-weight:700; text-align:center;">Theory Marks</th>
+                <th style="padding:10px 14px; color:var(--text); font-weight:700;">Expected Typology</th>
+                <th style="padding:10px 14px; color:var(--text); font-weight:700;">Entrance Overlap</th>
+              </tr>
+            </thead>
+            <tbody>
+    
+              <tr style="border-bottom:1px solid var(--border);">
+                <td style="padding:10px 14px; color:var(--text-muted); font-weight:600;">I</td>
+                <td style="padding:10px 14px; color:var(--text); font-weight:700;">Solutions</td>
+                <td style="padding:10px 14px; color:var(--accent); font-weight:800; text-align:center;">7</td>
+                <td style="padding:10px 14px; color:var(--text-muted);">Henry's Law, Raoult's Law, Colligative Properties, Van't Hoff Factor</td>
+                <td style="padding:10px 14px; color:var(--text-muted);"><span style="background:var(--surface-hover); padding:2px 6px; border-radius:4px; font-size:11px; font-weight:600;">JEE: High (JEE Main 4M, Adv 4M) | NEET: High (8M)</span></td>
+              </tr>
+        
+              <tr style="border-bottom:1px solid var(--border);">
+                <td style="padding:10px 14px; color:var(--text-muted); font-weight:600;">II</td>
+                <td style="padding:10px 14px; color:var(--text); font-weight:700;">Electrochemistry</td>
+                <td style="padding:10px 14px; color:var(--accent); font-weight:800; text-align:center;">9</td>
+                <td style="padding:10px 14px; color:var(--text-muted);">Kohlrausch Law, Nernst Equation, Cell EMF, Gibbs Energy, Fuel Cells & Corrosion</td>
+                <td style="padding:10px 14px; color:var(--text-muted);"><span style="background:var(--surface-hover); padding:2px 6px; border-radius:4px; font-size:11px; font-weight:600;">JEE: Critical (JEE Main 4-8M, Adv 8M) | NEET: Critical (8-12M)</span></td>
+              </tr>
+        
+              <tr style="border-bottom:1px solid var(--border);">
+                <td style="padding:10px 14px; color:var(--text-muted); font-weight:600;">III</td>
+                <td style="padding:10px 14px; color:var(--text); font-weight:700;">Chemical Kinetics</td>
+                <td style="padding:10px 14px; color:var(--accent); font-weight:800; text-align:center;">7</td>
+                <td style="padding:10px 14px; color:var(--text-muted);">Rate Law, Order and Molecularity, Integrated Rate Equations (0 & 1st Order), Arrhenius Activation Energy</td>
+                <td style="padding:10px 14px; color:var(--text-muted);"><span style="background:var(--surface-hover); padding:2px 6px; border-radius:4px; font-size:11px; font-weight:600;">JEE: High (JEE Main 4M, Adv 4M) | NEET: High (8M)</span></td>
+              </tr>
+        
+              <tr style="border-bottom:1px solid var(--border);">
+                <td style="padding:10px 14px; color:var(--text-muted); font-weight:600;">IV</td>
+                <td style="padding:10px 14px; color:var(--text); font-weight:700;">d- and f-Block Elements</td>
+                <td style="padding:10px 14px; color:var(--accent); font-weight:800; text-align:center;">7</td>
+                <td style="padding:10px 14px; color:var(--text-muted);">Electronic Configuration, Transition Properties, Lanthanoid Contraction, KMnO4 & K2Cr2O7</td>
+                <td style="padding:10px 14px; color:var(--text-muted);"><span style="background:var(--surface-hover); padding:2px 6px; border-radius:4px; font-size:11px; font-weight:600;">JEE: Guaranteed Core (JEE Main 4M, Adv 4M) | NEET: Guaranteed Core (8M)</span></td>
+              </tr>
+        
+              <tr style="border-bottom:1px solid var(--border);">
+                <td style="padding:10px 14px; color:var(--text-muted); font-weight:600;">V</td>
+                <td style="padding:10px 14px; color:var(--text); font-weight:700;">Coordination Compounds</td>
+                <td style="padding:10px 14px; color:var(--accent); font-weight:800; text-align:center;">7</td>
+                <td style="padding:10px 14px; color:var(--text-muted);">IUPAC Nomenclature, Isomerism, Valence Bond Theory (VBT), Crystal Field Theory (CFT), Spectrochemical Series</td>
+                <td style="padding:10px 14px; color:var(--text-muted);"><span style="background:var(--surface-hover); padding:2px 6px; border-radius:4px; font-size:11px; font-weight:600;">JEE: Critical (JEE Main 8M, Adv 8M) | NEET: Critical (12M)</span></td>
+              </tr>
+        
+              <tr style="border-bottom:1px solid var(--border);">
+                <td style="padding:10px 14px; color:var(--text-muted); font-weight:600;">VI</td>
+                <td style="padding:10px 14px; color:var(--text); font-weight:700;">Haloalkanes and Haloarenes</td>
+                <td style="padding:10px 14px; color:var(--accent); font-weight:800; text-align:center;">6</td>
+                <td style="padding:10px 14px; color:var(--text-muted);">SN1 & SN2 Mechanisms, Stereochemistry, Elimination, Polyhalogen Compounds</td>
+                <td style="padding:10px 14px; color:var(--text-muted);"><span style="background:var(--surface-hover); padding:2px 6px; border-radius:4px; font-size:11px; font-weight:600;">JEE: High (JEE Main 4M, Adv 4M) | NEET: High (4-8M)</span></td>
+              </tr>
+        
+              <tr style="border-bottom:1px solid var(--border);">
+                <td style="padding:10px 14px; color:var(--text-muted); font-weight:600;">VII</td>
+                <td style="padding:10px 14px; color:var(--text); font-weight:700;">Alcohols, Phenols and Ethers</td>
+                <td style="padding:10px 14px; color:var(--accent); font-weight:800; text-align:center;">6</td>
+                <td style="padding:10px 14px; color:var(--text-muted);">Acidity of Phenols, Reimer-Tiemann, Kolbe, Williamson Synthesis, Lucas Test</td>
+                <td style="padding:10px 14px; color:var(--text-muted);"><span style="background:var(--surface-hover); padding:2px 6px; border-radius:4px; font-size:11px; font-weight:600;">JEE: High (JEE Main 4M, Adv 4M) | NEET: High (8M)</span></td>
+              </tr>
+        
+              <tr style="border-bottom:1px solid var(--border);">
+                <td style="padding:10px 14px; color:var(--text-muted); font-weight:600;">VIII</td>
+                <td style="padding:10px 14px; color:var(--text); font-weight:700;">Aldehydes, Ketones and Carboxylic Acids</td>
+                <td style="padding:10px 14px; color:var(--accent); font-weight:800; text-align:center;">8</td>
+                <td style="padding:10px 14px; color:var(--text-muted);">Nucleophilic Addition, Aldol, Cannizzaro, Clemmensen, Hell-Volhard-Zelinsky (HVZ)</td>
+                <td style="padding:10px 14px; color:var(--text-muted);"><span style="background:var(--surface-hover); padding:2px 6px; border-radius:4px; font-size:11px; font-weight:600;">JEE: Highest Yield Organic (JEE Main 8M, Adv 8M) | NEET: Highest Yield Organic (12-16M)</span></td>
+              </tr>
+        
+              <tr style="border-bottom:1px solid var(--border);">
+                <td style="padding:10px 14px; color:var(--text-muted); font-weight:600;">IX</td>
+                <td style="padding:10px 14px; color:var(--text); font-weight:700;">Amines</td>
+                <td style="padding:10px 14px; color:var(--accent); font-weight:800; text-align:center;">6</td>
+                <td style="padding:10px 14px; color:var(--text-muted);">Basicity Order, Hoffmann Bromamide, Carbylamine, Diazonium Salts & Coupling Reactions</td>
+                <td style="padding:10px 14px; color:var(--text-muted);"><span style="background:var(--surface-hover); padding:2px 6px; border-radius:4px; font-size:11px; font-weight:600;">JEE: High (JEE Main 4M, Adv 4M) | NEET: High (8M)</span></td>
+              </tr>
+        
+              <tr style="border-bottom:1px solid var(--border);">
+                <td style="padding:10px 14px; color:var(--text-muted); font-weight:600;">X</td>
+                <td style="padding:10px 14px; color:var(--text); font-weight:700;">Biomolecules</td>
+                <td style="padding:10px 14px; color:var(--accent); font-weight:800; text-align:center;">7</td>
+                <td style="padding:10px 14px; color:var(--text-muted);">Glucose Structure, D/L Config, Amino Acids (Zwitterion), Proteins (Peptide bond, Denaturation), DNA/RNA, Vitamins</td>
+                <td style="padding:10px 14px; color:var(--text-muted);"><span style="background:var(--surface-hover); padding:2px 6px; border-radius:4px; font-size:11px; font-weight:600;">JEE: Guaranteed Easy 4M (JEE Main) | NEET: High Interdisciplinary (8M)</span></td>
+              </tr>
+        
+            </tbody>
+          </table>
         </div>
-        <div>
-
-          <div class="chapter-row">
-            <div class="chapter-meta-bar">
-              <div class="chapter-title-group">
-                <h3>Solutions</h3>
-                <div class="chapter-typology-tag"><strong>High-Probability Typology:</strong> Henry's Law, Raoult's Law, Colligative Properties, Van't Hoff Factor</div>
-              </div>
-              <span class="chapter-marks-pill">7 Theory Marks</span>
-            </div>
-
-            <div class="cross-exam-box">
-              <span class="cross-exam-title">🎯 Entrance Overlap:</span>
-              <span class="overlap-chip">JEE Main: <strong>High (JEE Main 4M, Adv 4M)</strong></span><span class="overlap-chip">NEET UG: <strong>High (8M)</strong></span><span class="overlap-chip">BITSAT: <strong>Direct Formula (2 Qs)</strong></span>
-            </div>
-            
+      </div>
+    
+      <div class="subject-blueprint-section" style="margin-bottom:32px;">
+        <div style="background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-md); padding:16px 20px; margin-bottom:16px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;">
+          <div>
+            <h2 style="font-size:18px; font-weight:800; color:var(--text); margin:0;">CBSE Class 12 Physics (Subject Code 042)</h2>
+            <p style="font-size:13px; color:var(--text-muted); margin:4px 0 0 0;">Official Examination Blueprint: 70 Marks Theory + 30 Marks Practical/Internal = 100 Marks.</p>
           </div>
-
-        </div>
-      </div>
-
-      <div class="unit-section">
-        <div class="unit-header">
-          <span class="unit-title">📖 Unit II: Electrochemistry</span>
-          <span class="unit-marks-badge">9 Marks</span>
-        </div>
-        <div>
-
-          <div class="chapter-row">
-            <div class="chapter-meta-bar">
-              <div class="chapter-title-group">
-                <h3>Electrochemistry</h3>
-                <div class="chapter-typology-tag"><strong>High-Probability Typology:</strong> Kohlrausch Law, Nernst Equation, Cell EMF, Gibbs Energy, Fuel Cells & Corrosion</div>
-              </div>
-              <span class="chapter-marks-pill">9 Theory Marks</span>
-            </div>
-
-            <div class="cross-exam-box">
-              <span class="cross-exam-title">🎯 Entrance Overlap:</span>
-              <span class="overlap-chip">JEE Main: <strong>Critical (JEE Main 4-8M, Adv 8M)</strong></span><span class="overlap-chip">NEET UG: <strong>Critical (8-12M)</strong></span><span class="overlap-chip">BITSAT: <strong>High-Yield (3 Qs)</strong></span>
-            </div>
-            
+          <div style="display:flex; gap:8px;">
+            <a href="/practice/?exam=cbse&subject=Physics" class="btn-action-pyq" style="background:var(--accent); color:#ffffff; padding:8px 14px; border-radius:6px; font-size:12px; font-weight:700; text-decoration:none;">⚡ Practice All Physics PYQs ➔</a>
           </div>
+        </div>
 
+        <!-- Semantic Accessible Marks Weightage Table for Google Indexing -->
+        <div style="overflow-x:auto; margin-bottom:16px;">
+          <table style="width:100%; border-collapse:collapse; background:var(--surface); border:1px solid var(--border); border-radius:8px; font-size:13px;">
+            <thead>
+              <tr style="background:var(--surface-hover); border-bottom:1px solid var(--border); text-align:left;">
+                <th style="padding:10px 14px; color:var(--text); font-weight:700;">Unit</th>
+                <th style="padding:10px 14px; color:var(--text); font-weight:700;">Chapter</th>
+                <th style="padding:10px 14px; color:var(--text); font-weight:700; text-align:center;">Theory Marks</th>
+                <th style="padding:10px 14px; color:var(--text); font-weight:700;">Expected Typology</th>
+                <th style="padding:10px 14px; color:var(--text); font-weight:700;">Entrance Overlap</th>
+              </tr>
+            </thead>
+            <tbody>
+    
+              <tr style="border-bottom:1px solid var(--border);">
+                <td style="padding:10px 14px; color:var(--text-muted); font-weight:600;">I</td>
+                <td style="padding:10px 14px; color:var(--text); font-weight:700;">Electric Charges and Fields</td>
+                <td style="padding:10px 14px; color:var(--accent); font-weight:800; text-align:center;">8</td>
+                <td style="padding:10px 14px; color:var(--text-muted);">Gauss Law Derivations, Dipole Field & Torque, Flux</td>
+                <td style="padding:10px 14px; color:var(--text-muted);"><span style="background:var(--surface-hover); padding:2px 6px; border-radius:4px; font-size:11px; font-weight:600;">JEE: High (JEE Main 4M, Adv 8M) | NEET: High (8-12M)</span></td>
+              </tr>
+        
+              <tr style="border-bottom:1px solid var(--border);">
+                <td style="padding:10px 14px; color:var(--text-muted); font-weight:600;">I</td>
+                <td style="padding:10px 14px; color:var(--text); font-weight:700;">Electrostatic Potential and Capacitance</td>
+                <td style="padding:10px 14px; color:var(--accent); font-weight:800; text-align:center;">8</td>
+                <td style="padding:10px 14px; color:var(--text-muted);">Dielectrics, Parallel Plate Capacitors, Energy Density, Equipotential Surfaces</td>
+                <td style="padding:10px 14px; color:var(--text-muted);"><span style="background:var(--surface-hover); padding:2px 6px; border-radius:4px; font-size:11px; font-weight:600;">JEE: High (JEE Main 4M, Adv 8M) | NEET: High (8M)</span></td>
+              </tr>
+        
+              <tr style="border-bottom:1px solid var(--border);">
+                <td style="padding:10px 14px; color:var(--text-muted); font-weight:600;">II</td>
+                <td style="padding:10px 14px; color:var(--text); font-weight:700;">Current Electricity</td>
+                <td style="padding:10px 14px; color:var(--accent); font-weight:800; text-align:center;">8</td>
+                <td style="padding:10px 14px; color:var(--text-muted);">Drift Velocity, Kirchhoff's Rules, Wheatstone Bridge, Temperature Coefficient</td>
+                <td style="padding:10px 14px; color:var(--text-muted);"><span style="background:var(--surface-hover); padding:2px 6px; border-radius:4px; font-size:11px; font-weight:600;">JEE: Guaranteed Core (JEE Main 4-8M) | NEET: Guaranteed Core (12-16M)</span></td>
+              </tr>
+        
+              <tr style="border-bottom:1px solid var(--border);">
+                <td style="padding:10px 14px; color:var(--text-muted); font-weight:600;">III</td>
+                <td style="padding:10px 14px; color:var(--text); font-weight:700;">Moving Charges and Magnetism</td>
+                <td style="padding:10px 14px; color:var(--accent); font-weight:800; text-align:center;">9</td>
+                <td style="padding:10px 14px; color:var(--text-muted);">Biot-Savart Law, Ampere's Law, Solenoid, Force on Parallel Conductors, Galvanometer to Ammeter/Voltmeter</td>
+                <td style="padding:10px 14px; color:var(--text-muted);"><span style="background:var(--surface-hover); padding:2px 6px; border-radius:4px; font-size:11px; font-weight:600;">JEE: High (JEE Main 4M, Adv 6M) | NEET: High (8-12M)</span></td>
+              </tr>
+        
+              <tr style="border-bottom:1px solid var(--border);">
+                <td style="padding:10px 14px; color:var(--text-muted); font-weight:600;">III</td>
+                <td style="padding:10px 14px; color:var(--text); font-weight:700;">Magnetism and Matter</td>
+                <td style="padding:10px 14px; color:var(--accent); font-weight:800; text-align:center;">3</td>
+                <td style="padding:10px 14px; color:var(--text-muted);">Magnetic Dipole, Earth's Magnetism, Para/Dia/Ferromagnetic Properties</td>
+                <td style="padding:10px 14px; color:var(--text-muted);"><span style="background:var(--surface-hover); padding:2px 6px; border-radius:4px; font-size:11px; font-weight:600;">JEE: Moderate (JEE Main 4M) | NEET: Moderate (4M)</span></td>
+              </tr>
+        
+              <tr style="border-bottom:1px solid var(--border);">
+                <td style="padding:10px 14px; color:var(--text-muted); font-weight:600;">IV</td>
+                <td style="padding:10px 14px; color:var(--text); font-weight:700;">Electromagnetic Induction</td>
+                <td style="padding:10px 14px; color:var(--accent); font-weight:800; text-align:center;">4</td>
+                <td style="padding:10px 14px; color:var(--text-muted);">Faraday & Lenz Law, Motional EMF, Self & Mutual Inductance</td>
+                <td style="padding:10px 14px; color:var(--text-muted);"><span style="background:var(--surface-hover); padding:2px 6px; border-radius:4px; font-size:11px; font-weight:600;">JEE: High (JEE Main 4M, Adv 4M) | NEET: High (4-8M)</span></td>
+              </tr>
+        
+              <tr style="border-bottom:1px solid var(--border);">
+                <td style="padding:10px 14px; color:var(--text-muted); font-weight:600;">IV</td>
+                <td style="padding:10px 14px; color:var(--text); font-weight:700;">Alternating Current</td>
+                <td style="padding:10px 14px; color:var(--accent); font-weight:800; text-align:center;">5</td>
+                <td style="padding:10px 14px; color:var(--text-muted);">LCR Series Circuit, Phasors, Resonance, Power Factor, Transformer</td>
+                <td style="padding:10px 14px; color:var(--text-muted);"><span style="background:var(--surface-hover); padding:2px 6px; border-radius:4px; font-size:11px; font-weight:600;">JEE: Guaranteed Core (JEE Main 4M) | NEET: Guaranteed Core (8M)</span></td>
+              </tr>
+        
+              <tr style="border-bottom:1px solid var(--border);">
+                <td style="padding:10px 14px; color:var(--text-muted); font-weight:600;">V</td>
+                <td style="padding:10px 14px; color:var(--text); font-weight:700;">Electromagnetic Waves</td>
+                <td style="padding:10px 14px; color:var(--accent); font-weight:800; text-align:center;">3</td>
+                <td style="padding:10px 14px; color:var(--text-muted);">Displacement Current, EM Spectrum Characteristics & Frequency Bands</td>
+                <td style="padding:10px 14px; color:var(--text-muted);"><span style="background:var(--surface-hover); padding:2px 6px; border-radius:4px; font-size:11px; font-weight:600;">JEE: Guaranteed Easy 4M (JEE Main) | NEET: Guaranteed Easy 4M</span></td>
+              </tr>
+        
+              <tr style="border-bottom:1px solid var(--border);">
+                <td style="padding:10px 14px; color:var(--text-muted); font-weight:600;">VI</td>
+                <td style="padding:10px 14px; color:var(--text); font-weight:700;">Ray Optics and Optical Instruments</td>
+                <td style="padding:10px 14px; color:var(--accent); font-weight:800; text-align:center;">9</td>
+                <td style="padding:10px 14px; color:var(--text-muted);">Refraction at Spherical Surfaces, Lens Maker Formula, Prism, Astronomical Telescope, Compound Microscope</td>
+                <td style="padding:10px 14px; color:var(--text-muted);"><span style="background:var(--surface-hover); padding:2px 6px; border-radius:4px; font-size:11px; font-weight:600;">JEE: Critical (JEE Main 8M, Adv 8-12M) | NEET: Critical (12-16M)</span></td>
+              </tr>
+        
+              <tr style="border-bottom:1px solid var(--border);">
+                <td style="padding:10px 14px; color:var(--text-muted); font-weight:600;">VI</td>
+                <td style="padding:10px 14px; color:var(--text); font-weight:700;">Wave Optics</td>
+                <td style="padding:10px 14px; color:var(--accent); font-weight:800; text-align:center;">6</td>
+                <td style="padding:10px 14px; color:var(--text-muted);">Huygens Principle Wavefronts, Young's Double Slit Experiment (YDSE), Single Slit Diffraction</td>
+                <td style="padding:10px 14px; color:var(--text-muted);"><span style="background:var(--surface-hover); padding:2px 6px; border-radius:4px; font-size:11px; font-weight:600;">JEE: High (JEE Main 4M, Adv 4-6M) | NEET: High (8M)</span></td>
+              </tr>
+        
+              <tr style="border-bottom:1px solid var(--border);">
+                <td style="padding:10px 14px; color:var(--text-muted); font-weight:600;">VII</td>
+                <td style="padding:10px 14px; color:var(--text); font-weight:700;">Dual Nature of Radiation and Matter</td>
+                <td style="padding:10px 14px; color:var(--accent); font-weight:800; text-align:center;">5</td>
+                <td style="padding:10px 14px; color:var(--text-muted);">Photoelectric Effect Graphs, Einstein Equation, de Broglie Wavelength</td>
+                <td style="padding:10px 14px; color:var(--text-muted);"><span style="background:var(--surface-hover); padding:2px 6px; border-radius:4px; font-size:11px; font-weight:600;">JEE: Guaranteed Core (JEE Main 4M) | NEET: Guaranteed Core (8M)</span></td>
+              </tr>
+        
+              <tr style="border-bottom:1px solid var(--border);">
+                <td style="padding:10px 14px; color:var(--text-muted); font-weight:600;">VIII</td>
+                <td style="padding:10px 14px; color:var(--text); font-weight:700;">Atoms</td>
+                <td style="padding:10px 14px; color:var(--accent); font-weight:800; text-align:center;">3</td>
+                <td style="padding:10px 14px; color:var(--text-muted);">Rutherford Model, Bohr Postulates, Hydrogen Line Spectrum (Rydberg Formula)</td>
+                <td style="padding:10px 14px; color:var(--text-muted);"><span style="background:var(--surface-hover); padding:2px 6px; border-radius:4px; font-size:11px; font-weight:600;">JEE: High (JEE Main 4M) | NEET: High (4M)</span></td>
+              </tr>
+        
+              <tr style="border-bottom:1px solid var(--border);">
+                <td style="padding:10px 14px; color:var(--text-muted); font-weight:600;">VIII</td>
+                <td style="padding:10px 14px; color:var(--text); font-weight:700;">Nuclei</td>
+                <td style="padding:10px 14px; color:var(--accent); font-weight:800; text-align:center;">4</td>
+                <td style="padding:10px 14px; color:var(--text-muted);">Nuclear Density, Mass Defect & Binding Energy per Nucleon, Nuclear Fission/Fusion</td>
+                <td style="padding:10px 14px; color:var(--text-muted);"><span style="background:var(--surface-hover); padding:2px 6px; border-radius:4px; font-size:11px; font-weight:600;">JEE: Moderate (JEE Main 4M) | NEET: High (4-8M)</span></td>
+              </tr>
+        
+              <tr style="border-bottom:1px solid var(--border);">
+                <td style="padding:10px 14px; color:var(--text-muted); font-weight:600;">IX</td>
+                <td style="padding:10px 14px; color:var(--text); font-weight:700;">Semiconductor Electronics: Materials, Devices and Simple Circuits</td>
+                <td style="padding:10px 14px; color:var(--accent); font-weight:800; text-align:center;">7</td>
+                <td style="padding:10px 14px; color:var(--text-muted);">Energy Bands, p-n Junction Diode (Forward/Reverse), Half/Full Wave Rectifier</td>
+                <td style="padding:10px 14px; color:var(--text-muted);"><span style="background:var(--surface-hover); padding:2px 6px; border-radius:4px; font-size:11px; font-weight:600;">JEE: Guaranteed Core (JEE Main 4M) | NEET: Guaranteed Core (12M)</span></td>
+              </tr>
+        
+            </tbody>
+          </table>
         </div>
       </div>
-
-      <div class="unit-section">
-        <div class="unit-header">
-          <span class="unit-title">📖 Unit III: Chemical Kinetics</span>
-          <span class="unit-marks-badge">7 Marks</span>
-        </div>
-        <div>
-
-          <div class="chapter-row">
-            <div class="chapter-meta-bar">
-              <div class="chapter-title-group">
-                <h3>Chemical Kinetics</h3>
-                <div class="chapter-typology-tag"><strong>High-Probability Typology:</strong> Rate Law, Order and Molecularity, Integrated Rate Equations (0 & 1st Order), Arrhenius Activation Energy</div>
-              </div>
-              <span class="chapter-marks-pill">7 Theory Marks</span>
-            </div>
-
-            <div class="cross-exam-box">
-              <span class="cross-exam-title">🎯 Entrance Overlap:</span>
-              <span class="overlap-chip">JEE Main: <strong>High (JEE Main 4M, Adv 4M)</strong></span><span class="overlap-chip">NEET UG: <strong>High (8M)</strong></span><span class="overlap-chip">BITSAT: <strong>Direct Speed (2 Qs)</strong></span>
-            </div>
-            
+    
+      <div class="subject-blueprint-section" style="margin-bottom:32px;">
+        <div style="background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-md); padding:16px 20px; margin-bottom:16px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;">
+          <div>
+            <h2 style="font-size:18px; font-weight:800; color:var(--text); margin:0;">CBSE Class 12 Mathematics (Subject Code 041)</h2>
+            <p style="font-size:13px; color:var(--text-muted); margin:4px 0 0 0;">Official Examination Blueprint: 80 Marks Theory + 20 Marks Practical/Internal = 100 Marks.</p>
           </div>
-
-        </div>
-      </div>
-
-      <div class="unit-section">
-        <div class="unit-header">
-          <span class="unit-title">📖 Unit IV: d- and f-Block Elements</span>
-          <span class="unit-marks-badge">7 Marks</span>
-        </div>
-        <div>
-
-          <div class="chapter-row">
-            <div class="chapter-meta-bar">
-              <div class="chapter-title-group">
-                <h3>d- and f-Block Elements</h3>
-                <div class="chapter-typology-tag"><strong>High-Probability Typology:</strong> Electronic Configuration, Transition Properties, Lanthanoid Contraction, KMnO4 & K2Cr2O7</div>
-              </div>
-              <span class="chapter-marks-pill">7 Theory Marks</span>
-            </div>
-
-            <div class="cross-exam-box">
-              <span class="cross-exam-title">🎯 Entrance Overlap:</span>
-              <span class="overlap-chip">JEE Main: <strong>Guaranteed Core (JEE Main 4M, Adv 4M)</strong></span><span class="overlap-chip">NEET UG: <strong>Guaranteed Core (8M)</strong></span><span class="overlap-chip">BITSAT: <strong>Direct NCERT Factual (2 Qs)</strong></span>
-            </div>
-            
+          <div style="display:flex; gap:8px;">
+            <a href="/practice/?exam=cbse&subject=Mathematics" class="btn-action-pyq" style="background:var(--accent); color:#ffffff; padding:8px 14px; border-radius:6px; font-size:12px; font-weight:700; text-decoration:none;">⚡ Practice All Mathematics PYQs ➔</a>
           </div>
+        </div>
 
+        <!-- Semantic Accessible Marks Weightage Table for Google Indexing -->
+        <div style="overflow-x:auto; margin-bottom:16px;">
+          <table style="width:100%; border-collapse:collapse; background:var(--surface); border:1px solid var(--border); border-radius:8px; font-size:13px;">
+            <thead>
+              <tr style="background:var(--surface-hover); border-bottom:1px solid var(--border); text-align:left;">
+                <th style="padding:10px 14px; color:var(--text); font-weight:700;">Unit</th>
+                <th style="padding:10px 14px; color:var(--text); font-weight:700;">Chapter</th>
+                <th style="padding:10px 14px; color:var(--text); font-weight:700; text-align:center;">Theory Marks</th>
+                <th style="padding:10px 14px; color:var(--text); font-weight:700;">Expected Typology</th>
+                <th style="padding:10px 14px; color:var(--text); font-weight:700;">Entrance Overlap</th>
+              </tr>
+            </thead>
+            <tbody>
+    
+              <tr style="border-bottom:1px solid var(--border);">
+                <td style="padding:10px 14px; color:var(--text-muted); font-weight:600;">I</td>
+                <td style="padding:10px 14px; color:var(--text); font-weight:700;">Relations and Functions</td>
+                <td style="padding:10px 14px; color:var(--accent); font-weight:800; text-align:center;">4</td>
+                <td style="padding:10px 14px; color:var(--text-muted);">Equivalence Relations, Reflexive/Symmetric/Transitive, One-One and Onto Functions</td>
+                <td style="padding:10px 14px; color:var(--text-muted);"><span style="background:var(--surface-hover); padding:2px 6px; border-radius:4px; font-size:11px; font-weight:600;">JEE: High (JEE Main 4M) | NEET: N/A</span></td>
+              </tr>
+        
+              <tr style="border-bottom:1px solid var(--border);">
+                <td style="padding:10px 14px; color:var(--text-muted); font-weight:600;">I</td>
+                <td style="padding:10px 14px; color:var(--text); font-weight:700;">Inverse Trigonometric Functions</td>
+                <td style="padding:10px 14px; color:var(--accent); font-weight:800; text-align:center;">4</td>
+                <td style="padding:10px 14px; color:var(--text-muted);">Definition, Range, Domain, Principal Value Branches</td>
+                <td style="padding:10px 14px; color:var(--text-muted);"><span style="background:var(--surface-hover); padding:2px 6px; border-radius:4px; font-size:11px; font-weight:600;">JEE: High (JEE Main 4M, Adv 4M) | NEET: N/A</span></td>
+              </tr>
+        
+              <tr style="border-bottom:1px solid var(--border);">
+                <td style="padding:10px 14px; color:var(--text-muted); font-weight:600;">II</td>
+                <td style="padding:10px 14px; color:var(--text); font-weight:700;">Matrices</td>
+                <td style="padding:10px 14px; color:var(--accent); font-weight:800; text-align:center;">5</td>
+                <td style="padding:10px 14px; color:var(--text-muted);">Matrix Operations, Transpose, Symmetric/Skew Symmetric, Invertible Matrices</td>
+                <td style="padding:10px 14px; color:var(--text-muted);"><span style="background:var(--surface-hover); padding:2px 6px; border-radius:4px; font-size:11px; font-weight:600;">JEE: Guaranteed Core (JEE Main 4M) | NEET: N/A</span></td>
+              </tr>
+        
+              <tr style="border-bottom:1px solid var(--border);">
+                <td style="padding:10px 14px; color:var(--text-muted); font-weight:600;">II</td>
+                <td style="padding:10px 14px; color:var(--text); font-weight:700;">Determinants</td>
+                <td style="padding:10px 14px; color:var(--accent); font-weight:800; text-align:center;">5</td>
+                <td style="padding:10px 14px; color:var(--text-muted);">Determinant Evaluation, Adjoint, Inverse, System of Linear Equations using Matrix Method</td>
+                <td style="padding:10px 14px; color:var(--text-muted);"><span style="background:var(--surface-hover); padding:2px 6px; border-radius:4px; font-size:11px; font-weight:600;">JEE: Guaranteed Core (JEE Main 4M, Adv 4-8M) | NEET: N/A</span></td>
+              </tr>
+        
+              <tr style="border-bottom:1px solid var(--border);">
+                <td style="padding:10px 14px; color:var(--text-muted); font-weight:600;">III</td>
+                <td style="padding:10px 14px; color:var(--text); font-weight:700;">Continuity and Differentiability</td>
+                <td style="padding:10px 14px; color:var(--accent); font-weight:800; text-align:center;">9</td>
+                <td style="padding:10px 14px; color:var(--text-muted);">Continuity at a Point, Chain Rule, Implicit Differentiation, Logarithmic Differentiation, Second Order Derivatives</td>
+                <td style="padding:10px 14px; color:var(--text-muted);"><span style="background:var(--surface-hover); padding:2px 6px; border-radius:4px; font-size:11px; font-weight:600;">JEE: Critical Foundation (JEE Main 8M) | NEET: Basic Physics Differentiation</span></td>
+              </tr>
+        
+              <tr style="border-bottom:1px solid var(--border);">
+                <td style="padding:10px 14px; color:var(--text-muted); font-weight:600;">III</td>
+                <td style="padding:10px 14px; color:var(--text); font-weight:700;">Application of Derivatives (AOD)</td>
+                <td style="padding:10px 14px; color:var(--accent); font-weight:800; text-align:center;">8</td>
+                <td style="padding:10px 14px; color:var(--text-muted);">Rate of Change, Increasing/Decreasing Functions, Maxima and Minima (First/Second Derivative Tests)</td>
+                <td style="padding:10px 14px; color:var(--text-muted);"><span style="background:var(--surface-hover); padding:2px 6px; border-radius:4px; font-size:11px; font-weight:600;">JEE: Critical (JEE Main 8M, Adv 8M) | NEET: Physics Min/Max Problems</span></td>
+              </tr>
+        
+              <tr style="border-bottom:1px solid var(--border);">
+                <td style="padding:10px 14px; color:var(--text-muted); font-weight:600;">III</td>
+                <td style="padding:10px 14px; color:var(--text); font-weight:700;">Integrals</td>
+                <td style="padding:10px 14px; color:var(--accent); font-weight:800; text-align:center;">9</td>
+                <td style="padding:10px 14px; color:var(--text-muted);">Integration by Substitution, Partial Fractions, By Parts, Definite Integrals Properties (King's Rule)</td>
+                <td style="padding:10px 14px; color:var(--text-muted);"><span style="background:var(--surface-hover); padding:2px 6px; border-radius:4px; font-size:11px; font-weight:600;">JEE: Highest Historical Weight (JEE Main 8-12M, Adv 12M) | NEET: Basic Physics Integrals</span></td>
+              </tr>
+        
+              <tr style="border-bottom:1px solid var(--border);">
+                <td style="padding:10px 14px; color:var(--text-muted); font-weight:600;">III</td>
+                <td style="padding:10px 14px; color:var(--text); font-weight:700;">Applications of the Integrals (Area under Curves)</td>
+                <td style="padding:10px 14px; color:var(--accent); font-weight:800; text-align:center;">4</td>
+                <td style="padding:10px 14px; color:var(--text-muted);">Area bounded by simple curves (Circles, Parabolas, Ellipses, Lines)</td>
+                <td style="padding:10px 14px; color:var(--text-muted);"><span style="background:var(--surface-hover); padding:2px 6px; border-radius:4px; font-size:11px; font-weight:600;">JEE: Guaranteed Core (JEE Main 4M, Adv 4M) | NEET: PV Work Areas</span></td>
+              </tr>
+        
+              <tr style="border-bottom:1px solid var(--border);">
+                <td style="padding:10px 14px; color:var(--text-muted); font-weight:600;">III</td>
+                <td style="padding:10px 14px; color:var(--text); font-weight:700;">Differential Equations</td>
+                <td style="padding:10px 14px; color:var(--accent); font-weight:800; text-align:center;">5</td>
+                <td style="padding:10px 14px; color:var(--text-muted);">Order & Degree, Variable Separable, Homogeneous, Linear Differential Equations (Integrating Factor)</td>
+                <td style="padding:10px 14px; color:var(--text-muted);"><span style="background:var(--surface-hover); padding:2px 6px; border-radius:4px; font-size:11px; font-weight:600;">JEE: Guaranteed Core (JEE Main 4M, Adv 4-6M) | NEET: Radioactivity Rates</span></td>
+              </tr>
+        
+              <tr style="border-bottom:1px solid var(--border);">
+                <td style="padding:10px 14px; color:var(--text-muted); font-weight:600;">IV</td>
+                <td style="padding:10px 14px; color:var(--text); font-weight:700;">Vectors</td>
+                <td style="padding:10px 14px; color:var(--accent); font-weight:800; text-align:center;">7</td>
+                <td style="padding:10px 14px; color:var(--text-muted);">Dot Product, Cross Product, Projection of a Vector on a Line, Direction Cosines</td>
+                <td style="padding:10px 14px; color:var(--text-muted);"><span style="background:var(--surface-hover); padding:2px 6px; border-radius:4px; font-size:11px; font-weight:600;">JEE: Guaranteed Core (JEE Main 4M, Adv 4M) | NEET: Physics Vector Math</span></td>
+              </tr>
+        
+              <tr style="border-bottom:1px solid var(--border);">
+                <td style="padding:10px 14px; color:var(--text-muted); font-weight:600;">IV</td>
+                <td style="padding:10px 14px; color:var(--text); font-weight:700;">Three Dimensional Geometry (3D)</td>
+                <td style="padding:10px 14px; color:var(--accent); font-weight:800; text-align:center;">7</td>
+                <td style="padding:10px 14px; color:var(--text-muted);">Equation of Line in Space, Angle between Lines, Shortest Distance between Skew Lines</td>
+                <td style="padding:10px 14px; color:var(--text-muted);"><span style="background:var(--surface-hover); padding:2px 6px; border-radius:4px; font-size:11px; font-weight:600;">JEE: Critical (JEE Main 8M, Adv 6-8M) | NEET: N/A</span></td>
+              </tr>
+        
+              <tr style="border-bottom:1px solid var(--border);">
+                <td style="padding:10px 14px; color:var(--text-muted); font-weight:600;">V</td>
+                <td style="padding:10px 14px; color:var(--text); font-weight:700;">Linear Programming</td>
+                <td style="padding:10px 14px; color:var(--accent); font-weight:800; text-align:center;">5</td>
+                <td style="padding:10px 14px; color:var(--text-muted);">Graphical Method, Feasible Region (Bounded/Unbounded), Objective Function Optimization</td>
+                <td style="padding:10px 14px; color:var(--text-muted);"><span style="background:var(--surface-hover); padding:2px 6px; border-radius:4px; font-size:11px; font-weight:600;">JEE: Direct Easy (JEE Main 4M) | NEET: N/A</span></td>
+              </tr>
+        
+              <tr style="border-bottom:1px solid var(--border);">
+                <td style="padding:10px 14px; color:var(--text-muted); font-weight:600;">VI</td>
+                <td style="padding:10px 14px; color:var(--text); font-weight:700;">Probability</td>
+                <td style="padding:10px 14px; color:var(--accent); font-weight:800; text-align:center;">8</td>
+                <td style="padding:10px 14px; color:var(--text-muted);">Conditional Probability, Multiplication Theorem, Independent Events, Total Probability, Bayes Theorem</td>
+                <td style="padding:10px 14px; color:var(--text-muted);"><span style="background:var(--surface-hover); padding:2px 6px; border-radius:4px; font-size:11px; font-weight:600;">JEE: Critical (JEE Main 4-8M, Adv 8M) | NEET: Genetics Crosses</span></td>
+              </tr>
+        
+            </tbody>
+          </table>
         </div>
       </div>
-
-      <div class="unit-section">
-        <div class="unit-header">
-          <span class="unit-title">📖 Unit V: Coordination Compounds</span>
-          <span class="unit-marks-badge">7 Marks</span>
-        </div>
-        <div>
-
-          <div class="chapter-row">
-            <div class="chapter-meta-bar">
-              <div class="chapter-title-group">
-                <h3>Coordination Compounds</h3>
-                <div class="chapter-typology-tag"><strong>High-Probability Typology:</strong> IUPAC Nomenclature, Isomerism, Valence Bond Theory (VBT), Crystal Field Theory (CFT), Spectrochemical Series</div>
-              </div>
-              <span class="chapter-marks-pill">7 Theory Marks</span>
-            </div>
-
-            <div class="cross-exam-box">
-              <span class="cross-exam-title">🎯 Entrance Overlap:</span>
-              <span class="overlap-chip">JEE Main: <strong>Critical (JEE Main 8M, Adv 8M)</strong></span><span class="overlap-chip">NEET UG: <strong>Critical (12M)</strong></span><span class="overlap-chip">BITSAT: <strong>High-Yield (3 Qs)</strong></span>
-            </div>
-            
-          </div>
-
-        </div>
-      </div>
-
-      <div class="unit-section">
-        <div class="unit-header">
-          <span class="unit-title">📖 Unit VI: Haloalkanes and Haloarenes</span>
-          <span class="unit-marks-badge">6 Marks</span>
-        </div>
-        <div>
-
-          <div class="chapter-row">
-            <div class="chapter-meta-bar">
-              <div class="chapter-title-group">
-                <h3>Haloalkanes and Haloarenes</h3>
-                <div class="chapter-typology-tag"><strong>High-Probability Typology:</strong> SN1 & SN2 Mechanisms, Stereochemistry, Elimination, Polyhalogen Compounds</div>
-              </div>
-              <span class="chapter-marks-pill">6 Theory Marks</span>
-            </div>
-
-            <div class="cross-exam-box">
-              <span class="cross-exam-title">🎯 Entrance Overlap:</span>
-              <span class="overlap-chip">JEE Main: <strong>High (JEE Main 4M, Adv 4M)</strong></span><span class="overlap-chip">NEET UG: <strong>High (4-8M)</strong></span><span class="overlap-chip">BITSAT: <strong>Direct Organic (2 Qs)</strong></span>
-            </div>
-            
-          </div>
-
-        </div>
-      </div>
-
-      <div class="unit-section">
-        <div class="unit-header">
-          <span class="unit-title">📖 Unit VII: Alcohols, Phenols and Ethers</span>
-          <span class="unit-marks-badge">6 Marks</span>
-        </div>
-        <div>
-
-          <div class="chapter-row">
-            <div class="chapter-meta-bar">
-              <div class="chapter-title-group">
-                <h3>Alcohols, Phenols and Ethers</h3>
-                <div class="chapter-typology-tag"><strong>High-Probability Typology:</strong> Acidity of Phenols, Reimer-Tiemann, Kolbe, Williamson Synthesis, Lucas Test</div>
-              </div>
-              <span class="chapter-marks-pill">6 Theory Marks</span>
-            </div>
-
-            <div class="cross-exam-box">
-              <span class="cross-exam-title">🎯 Entrance Overlap:</span>
-              <span class="overlap-chip">JEE Main: <strong>High (JEE Main 4M, Adv 4M)</strong></span><span class="overlap-chip">NEET UG: <strong>High (8M)</strong></span><span class="overlap-chip">BITSAT: <strong>Direct Organic (2 Qs)</strong></span>
-            </div>
-            
-          </div>
-
-        </div>
-      </div>
-
-      <div class="unit-section">
-        <div class="unit-header">
-          <span class="unit-title">📖 Unit VIII: Aldehydes, Ketones & Acids</span>
-          <span class="unit-marks-badge">8 Marks</span>
-        </div>
-        <div>
-
-          <div class="chapter-row">
-            <div class="chapter-meta-bar">
-              <div class="chapter-title-group">
-                <h3>Aldehydes, Ketones and Carboxylic Acids</h3>
-                <div class="chapter-typology-tag"><strong>High-Probability Typology:</strong> Nucleophilic Addition, Aldol, Cannizzaro, Clemmensen, Hell-Volhard-Zelinsky (HVZ)</div>
-              </div>
-              <span class="chapter-marks-pill">8 Theory Marks</span>
-            </div>
-
-            <div class="cross-exam-box">
-              <span class="cross-exam-title">🎯 Entrance Overlap:</span>
-              <span class="overlap-chip">JEE Main: <strong>Highest Yield Organic (JEE Main 8M, Adv 8M)</strong></span><span class="overlap-chip">NEET UG: <strong>Highest Yield Organic (12-16M)</strong></span><span class="overlap-chip">BITSAT: <strong>Critical (3 Qs)</strong></span>
-            </div>
-            
-          </div>
-
-        </div>
-      </div>
-
-      <div class="unit-section">
-        <div class="unit-header">
-          <span class="unit-title">📖 Unit IX: Amines</span>
-          <span class="unit-marks-badge">6 Marks</span>
-        </div>
-        <div>
-
-          <div class="chapter-row">
-            <div class="chapter-meta-bar">
-              <div class="chapter-title-group">
-                <h3>Amines</h3>
-                <div class="chapter-typology-tag"><strong>High-Probability Typology:</strong> Basicity Order, Hoffmann Bromamide, Carbylamine, Diazonium Salts & Coupling Reactions</div>
-              </div>
-              <span class="chapter-marks-pill">6 Theory Marks</span>
-            </div>
-
-            <div class="cross-exam-box">
-              <span class="cross-exam-title">🎯 Entrance Overlap:</span>
-              <span class="overlap-chip">JEE Main: <strong>High (JEE Main 4M, Adv 4M)</strong></span><span class="overlap-chip">NEET UG: <strong>High (8M)</strong></span><span class="overlap-chip">BITSAT: <strong>Direct Speed (2 Qs)</strong></span>
-            </div>
-            
-          </div>
-
-        </div>
-      </div>
-
-      <div class="unit-section">
-        <div class="unit-header">
-          <span class="unit-title">📖 Unit X: Biomolecules</span>
-          <span class="unit-marks-badge">7 Marks</span>
-        </div>
-        <div>
-
-          <div class="chapter-row">
-            <div class="chapter-meta-bar">
-              <div class="chapter-title-group">
-                <h3>Biomolecules</h3>
-                <div class="chapter-typology-tag"><strong>High-Probability Typology:</strong> Glucose Structure, D/L Config, Amino Acids (Zwitterion), Proteins (Peptide bond, Denaturation), DNA/RNA, Vitamins</div>
-              </div>
-              <span class="chapter-marks-pill">7 Theory Marks</span>
-            </div>
-
-            <div class="cross-exam-box">
-              <span class="cross-exam-title">🎯 Entrance Overlap:</span>
-              <span class="overlap-chip">JEE Main: <strong>Guaranteed Easy 4M (JEE Main)</strong></span><span class="overlap-chip">NEET UG: <strong>High Interdisciplinary (8M)</strong></span><span class="overlap-chip">BITSAT: <strong>Direct NCERT Factual (2 Qs)</strong></span>
-            </div>
-            
-          </div>
-
-        </div>
-      </div>
-
-      <div class="official-citation-footer" style="margin-top:28px; padding:18px 22px; background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-md); font-size:13px; color:var(--text-muted); line-height:1.6;">
-        <div style="font-weight:700; color:var(--text); margin-bottom:6px;">🏛️ Official CBSE Academic Reference & Curriculum Attribution:</div>
-        <div>All chapter unit boundaries, theory mark allocations, and question typologies are directly aligned with the official CBSE Senior Secondary Curriculum Notification (Circular No. Acad-39/2025) published by the Central Board of Secondary Education. For official source curriculum syllabi and sample question papers, visit the official portal at <a href="https://cbseacademic.nic.in/curriculum_2026.html" target="_blank" rel="noopener" style="color:var(--accent); text-decoration:underline; font-weight:600;">cbseacademic.nic.in</a>.</div>
-      </div>
-</div>
+    
+    </div>
   </main>
 
   <!-- Universal Footer -->
   <footer class="site-footer">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <div class="brand">
-          <span class="brand-name">LEARNOSHA</span>
+    <div class="footer-top-grid">
+      <div class="footer-col-brand">
+        <div class="footer-brand-title">
+          <svg class="brand-logo-icon" width="22" height="23" viewBox="8 6 48 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M19 17V46H45" fill="none" stroke="currentColor" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M29 26.5A10 10 0 0 1 39 36.5" fill="none" stroke="#D97706" stroke-width="3.5" stroke-linecap="round"/>
+          <path d="M29 18.5A18 18 0 0 1 47 36.5" fill="none" stroke="#D97706" stroke-opacity=".6" stroke-width="3.5" stroke-linecap="round"/>
+          <circle cx="29" cy="36.5" r="3" fill="#D97706"/>
+        </svg>
+          <span>Learnosha</span>
         </div>
         <p class="footer-brand-desc">
-          Official examination intelligence for CBSE Class 10 & 12, NEET UG, JEE Main, JEE Advanced, and BITSAT. Authentic curriculum alignments and zero distractions.
+          Unified previous year questions archive for CBSE Class 12 PCM, NEET UG, and JEE Main. Pure study material organized by NCERT curriculum with repeat analytics and CBT simulation.
         </p>
       </div>
+
       <div class="footer-col">
-        <h4 class="footer-heading">Platform Hubs</h4>
-        <ul class="footer-links">
-          <li><a href="/practice/?exam=cbse">CBSE 12 Practice Hub</a></li>
-          <li><a href="/practice/?exam=neet">NEET UG Practice Hub</a></li>
-          <li><a href="/practice/?exam=jee">JEE Main Practice Hub</a></li>
-          <li><a href="/practice/?exam=jee-adv">JEE Advanced Practice Hub</a></li>
-          <li><a href="/practice/?exam=bitsat">BITSAT Practice Hub</a></li>
-          <li><a href="/syllabus/">Syllabus & Weightage Vault</a></li>
+        <span class="footer-col-heading">CBSE Class 12</span>
+        <ul class="footer-links-list">
+          <li><a href="/cbse-12/physics/electric-charges-and-fields/">Physics (14 Chapters)</a></li>
+          <li><a href="/cbse-12/chemistry/solutions/">Chemistry (10 Chapters)</a></li>
+          <li><a href="/cbse-12/mathematics/relations-and-functions/">Mathematics (13 Chapters)</a></li>
+          <li><a href="/practice/?exam=cbse">Interactive Practice Hub</a></li>
         </ul>
       </div>
+
       <div class="footer-col">
-        <h4 class="footer-heading">Trust & Security</h4>
-        <ul class="footer-links">
-          <li><a href="/about/">About Learnosha</a></li>
-          <li><a href="/privacy/">Privacy Policy</a></li>
-          <li><a href="/contact/">Contact & Feedback</a></li>
-          <li><a href="/takedown/">Academic Fair Dealing</a></li>
+        <span class="footer-col-heading">Medical (NEET UG)</span>
+        <ul class="footer-links-list">
+          <li><a href="/practice/?exam=neet">NEET UG 11-Year Archive</a></li>
+          <li><a href="/practice/?exam=neet&subject=Physics">NEET Physics</a></li>
+          <li><a href="/practice/?exam=neet&subject=Chemistry">NEET Chemistry</a></li>
+          <li><a href="/practice/?exam=neet&subject=Botany">NEET Botany</a></li>
+          <li><a href="/practice/?exam=neet&subject=Zoology">NEET Zoology</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <span class="footer-col-heading">Engineering (JEE Main)</span>
+        <ul class="footer-links-list">
+          <li><a href="/practice/?exam=jee&subject=Physics">JEE Physics (5,398 Qs)</a></li>
+          <li><a href="/practice/?exam=jee&subject=Chemistry">JEE Chemistry (3,727 Qs)</a></li>
+          <li><a href="/practice/?exam=jee&subject=Mathematics">JEE Mathematics (3,542 Qs)</a></li>
+          <li><a href="/paper-maker/?exam=jee">3-Hour CBT Simulator</a></li>
+          <li><a href="/repeated/?exam=jee">JEE Recurring Concepts</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <span class="footer-col-heading">Study Tools</span>
+        <ul class="footer-links-list">
+          <li><a href="/paper-maker/">Custom Paper & CBT Maker</a></li>
+          <li><a href="/repeated/">Repeats & Radar</a></li>
+          <li><a href="/saved/">Saved Questions Dashboard</a></li>
+          <li><a href="mailto:support@learnosha.in">Report Question Correction</a></li>
         </ul>
       </div>
     </div>
-    <div class="footer-bottom">
-      <p>© 2026 Learnosha (learnosha.in) • Free, No-Login Educational Past Paper Archive.</p>
+
+    <div class="footer-legal-bar">
+      <p class="disclaimer">
+        Disclaimer: Independent study resource providing NCERT-aligned past paper revision, repeat pattern analytics, and step-by-step solutions for CBSE and competitive exams. Not affiliated with, endorsed by, or connected to the Central Board of Secondary Education (CBSE) or the National Testing Agency (NTA).
+      </p>
+      <div class="footer-copy-row">
+        <span>© 2026 Learnosha (learnosha.in) • All Rights Reserved.</span>
+        <span>Built for calm, focused revision.</span>
+      </div>
+    </div>
+
+    <div class="footer-massive-learnosha">
+      <span>LEARNOSHA</span>
     </div>
   </footer>
 
@@ -1173,17 +1412,26 @@
 
         ${subData.pdf_url ? `
           <div class="official-pdf-card">
-            <div class="pdf-meta">
-              <div class="pdf-icon-box">PDF</div>
-              <div>
-                <div class="pdf-details-title">
-                  Official CBSE Class 12 ${currentSubject} Curriculum Document
-                  <span style="font-size:11px; font-weight:700; color:#2563eb; background:rgba(37,99,235,0.08); padding:2px 8px; border-radius:4px;">Official Board Release</span>
-                </div>
-                <div class="pdf-details-sub">
-                  Central Board of Secondary Education (CBSE Delhi) • Senior School Curriculum 2025–2026 • Verified PDF (${subData.pdf_size || 'Downloadable'})
-                </div>
-              </div>
+        <div class="pdf-meta">
+          <div class="pdf-icon-badge">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+            <span>PDF</span>
+          </div>
+          <div>
+            <div class="pdf-details-title">
+              Official CBSE Class 12 Chemistry Curriculum Document
+              <span class="badge-session">Session 2026–2027</span>
+            </div>
+            <div class="pdf-details-sub">
+              Central Board of Secondary Education (CBSE Delhi) • Senior School Curriculum 2026–2027 • Verified PDF (931 KB)
+            </div>
+          </div>
+        </div>
+        <a href="/curriculum_pdf/Class12_Chemistry.pdf" target="_blank" download="CBSE_Class12_Chemistry_Syllabus_2026_27.pdf" class="btn-download-pdf">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          <span>Download Official PDF (2026–27)</span>
+        </a>
+      </div>
             </div>
             <a href="${subData.pdf_url}" target="_blank" download="${subData.pdf_name || 'CBSE_Class12_' + currentSubject + '.pdf'}" class="btn-download-pdf">
               📥 Download Official PDF
@@ -1430,7 +1678,7 @@
       container.innerHTML = html;
     }
 
-        function renderJeeMainView(container) {
+            function renderJeeMainView(container) {
       if (!dataEntrance || !dataEntrance.jee_main) return;
       const jee = dataEntrance.jee_main;
       let subList = jee.subjects[currentSubject] || [];
@@ -1446,12 +1694,12 @@
       }
 
       let html = `
-        <div style="background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-md); padding:18px 20px; margin-bottom:16px;">
-          <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;">
+        <div style="background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-md); padding:16px 20px; margin-bottom:16px;">
+          <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px;">
             <div>
               <h2 style="font-size:18px; font-weight:800; color:var(--text); margin:0;">⚡ JEE Main ${currentSubject} Official Curriculum Blueprint</h2>
               <p style="font-size:13px; color:var(--text-muted); margin:4px 0 0 0;">
-                National Testing Agency (NTA) • 186 CBT Shifts Archive (12,667 Questions). Exam: 300 Marks (75 Questions to attempt in 180 Minutes). +4 for correct, -1 for negative.
+                National Testing Agency (NTA) • Session 2026–2027 • 186 CBT Shifts Archive (12,667 Questions). Exam: 300 Marks (75 Questions to attempt in 180 Minutes). +4 for correct, -1 for negative.
               </p>
             </div>
             <a href="/practice/?exam=jee&subject=${encodeURIComponent(currentSubject)}" class="btn-action-pyq">Practice JEE ${currentSubject} PYQs ➔</a>
@@ -1460,19 +1708,23 @@
 
         <div class="official-pdf-card">
           <div class="pdf-meta">
-            <div class="pdf-icon-box">PDF</div>
+            <div class="pdf-icon-badge">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+              <span>PDF</span>
+            </div>
             <div>
               <div class="pdf-details-title">
                 JEE (Main) Official Prescribed Curriculum & 186-Shift Frequency Blueprint
-                <span style="font-size:11px; font-weight:700; color:#2563eb; background:rgba(37,99,235,0.08); padding:2px 8px; border-radius:4px;">NTA Official</span>
+                <span class="badge-session">Session 2026–2027</span>
               </div>
               <div class="pdf-details-sub">
                 National Testing Agency (NTA) • 54 Unit Empirical Frequency & Rationalization Ledger (32 KB PDF)
               </div>
             </div>
           </div>
-          <a href="/curriculum_pdf/JEE_Main_Official_Curriculum_and_Weightage.pdf" target="_blank" download="JEE_Main_Official_Curriculum_and_Weightage.pdf" class="btn-download-pdf">
-            📥 Download Official JEE PDF
+          <a href="/curriculum_pdf/JEE_Main_Official_Syllabus_2026_2027_NTA.pdf" target="_blank" download="JEE_Main_Official_Syllabus_2026_2027_NTA.pdf" class="btn-download-pdf">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            <span>Download Official PDF (2026–27)</span>
           </a>
         </div>
 
@@ -1506,7 +1758,7 @@
 
                 ${unit.official_topics ? `
                   <details class="topics-collapse" ${searchQuery ? 'open' : ''} style="margin-top:10px;">
-                    <summary>▶ Prescribed Official Syllabus Topics (NTA)</summary>
+                    <summary>▶ Prescribed Official Syllabus Topics (NTA 2026–2027)</summary>
                     <div class="topics-body">
                       ${unit.official_topics}
                     </div>
@@ -1566,40 +1818,61 @@
       container.innerHTML = html;
     }
 
-    function renderBitsatView(container) {
+        function renderBitsatView(container) {
       if (!dataEntrance || !dataEntrance.bitsat) return;
       const b = dataEntrance.bitsat;
 
       let html = `
-        <div style="background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-md); padding:18px 20px; margin-bottom:20px;">
+        <div style="background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-md); padding:16px 20px; margin-bottom:16px;">
           <h2 style="font-size:18px; font-weight:800; color:var(--text); margin:0;">🎯 BITSAT Speed Blueprint (130 Questions • 390 Marks • 180 Minutes)</h2>
           <p style="font-size:13px; color:var(--text-muted); margin:4px 0 0 0;">Scoring: Speed MCQ (+3 for correct, -1 for negative). Bonus 12 Questions unlock if all 130 questions are completed.</p>
         </div>
 
         <div class="unit-section">
-          ${b.sections.map(sec => `
-            <div class="chapter-row">
-              <div class="chapter-meta-bar">
-                <div class="chapter-title-group">
-                  <h3>${sec.part}: ${sec.name}</h3>
-                  <div class="chapter-typology-tag">Speed Benchmark: <strong>${sec.speed_target}</strong> ${sec.details ? '• ' + sec.details : ''}</div>
-                </div>
-                <div style="text-align:right;">
-                  <span class="chapter-marks-pill">${sec.marks} Marks</span>
-                  <div style="font-size:11px; font-weight:700; color:var(--accent); margin-top:2px;">${sec.questions} Questions</div>
-                </div>
-              </div>
-
-              <div class="chapter-actions">
-                <a href="/practice/?exam=bitsat&subject=${encodeURIComponent(sec.name)}" class="btn-action-pyq">
-                  ⚡ Practice Speed MCQs ➔
+          ${b.sections.map(sec => {
+            let actionsHtml = '';
+            if (sec.name.includes('English') && sec.name.includes('Logical')) {
+              actionsHtml = `
+                <a href="/practice/?exam=bitsat&subject=English+Proficiency" class="btn-action-pyq">
+                  ⚡ Practice English Proficiency (187 Qs) ➔
+                </a>
+                <a href="/practice/?exam=bitsat&subject=Logical+Reasoning" class="btn-action-pyq" style="background:#2563eb;">
+                  ⚡ Practice Logical Reasoning (164 Qs) ➔
                 </a>
                 <a href="/paper-maker/?exam=bitsat" class="btn-action-mock">
                   ⏱️ 130-Question Speed Mock
                 </a>
+              `;
+            } else {
+              actionsHtml = `
+                <a href="/practice/?exam=bitsat&subject=${encodeURIComponent(sec.name)}" class="btn-action-pyq">
+                  ⚡ Practice ${sec.name} MCQs ➔
+                </a>
+                <a href="/paper-maker/?exam=bitsat" class="btn-action-mock">
+                  ⏱️ Speed Test
+                </a>
+              `;
+            }
+
+            return `
+              <div class="chapter-row">
+                <div class="chapter-meta-bar">
+                  <div class="chapter-title-group">
+                    <h3>${sec.part}: ${sec.name}</h3>
+                    <div class="chapter-typology-tag">Speed Benchmark: <strong>${sec.speed_target}</strong> ${sec.details ? '• ' + sec.details : ''}</div>
+                  </div>
+                  <div style="text-align:right;">
+                    <span class="chapter-marks-pill">${sec.marks} Marks</span>
+                    <div style="font-size:11px; font-weight:700; color:var(--accent); margin-top:2px;">${sec.questions} Questions</div>
+                  </div>
+                </div>
+
+                <div class="chapter-actions">
+                  ${actionsHtml}
+                </div>
               </div>
-            </div>
-          `).join('')}
+            `;
+          }).join('')}
         </div>
       `;
 

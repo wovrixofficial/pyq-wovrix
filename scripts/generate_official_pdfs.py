@@ -1,10 +1,10 @@
 import os
 import json
-from reportlab.lib.pagesizes import letter, A4
+from reportlab.lib.pagesizes import A4
 from reportlab.lib import colors
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.platypus import (
-    SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle, PageBreak, KeepTogether, HRFlowable
+    SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle
 )
 from reportlab.pdfgen import canvas
 
@@ -34,22 +34,23 @@ class NumberedCanvas(canvas.Canvas):
 
     def draw_page_decorations(self, page_count):
         self.saveState()
-        self.setFont("Helvetica", 8)
-        self.setFillColor(colors.HexColor("#64748b"))
+        self.setFont("Helvetica-Bold", 8)
+        self.setFillColor(colors.HexColor("#475569"))
         # Header
-        self.drawString(36, 810, "LEARNOSHA.IN • OFFICIAL NATIONAL CURRICULUM & WEIGHTAGE ARCHIVE")
+        self.drawString(36, 810, "LEARNOSHA.IN • OFFICIAL NATIONAL CURRICULUM & WEIGHTAGE ARCHIVE (2026–2027)")
         self.setStrokeColor(colors.HexColor("#cbd5e1"))
         self.setLineWidth(0.5)
         self.line(36, 804, 559, 804)
         # Footer
         self.line(36, 38, 559, 38)
-        self.drawString(36, 26, "Official Academic Attribution: National Medical Commission (NMC) / National Testing Agency (NTA)")
+        self.setFont("Helvetica", 7.5)
+        self.drawString(36, 26, "Official Academic Attribution: National Medical Commission (NMC) / National Testing Agency (NTA) • Session 2026–2027")
         page_text = f"Page {self._pageNumber} of {page_count}"
         self.drawRightString(559, 26, page_text)
         self.restoreState()
 
-def build_neet_pdf():
-    pdf_path = os.path.join(PDF_DIR, "NEET_UG_Official_Curriculum_and_Weightage.pdf")
+def build_neet_pdf(filename):
+    pdf_path = os.path.join(PDF_DIR, filename)
     doc = SimpleDocTemplate(
         pdf_path,
         pagesize=A4,
@@ -64,10 +65,10 @@ def build_neet_pdf():
         'DocTitle',
         parent=styles['Heading1'],
         fontName='Helvetica-Bold',
-        fontSize=18,
-        leading=22,
+        fontSize=17,
+        leading=21,
         textColor=colors.HexColor('#0f172a'),
-        spaceAfter=4
+        spaceAfter=3
     )
     subtitle_style = ParagraphStyle(
         'DocSub',
@@ -82,16 +83,16 @@ def build_neet_pdf():
         'MetaBox',
         parent=styles['Normal'],
         fontName='Helvetica',
-        fontSize=8.5,
-        leading=12,
+        fontSize=8,
+        leading=11.5,
         textColor=colors.HexColor('#334155')
     )
     sec_heading = ParagraphStyle(
         'SecHead',
         parent=styles['Heading2'],
         fontName='Helvetica-Bold',
-        fontSize=12,
-        leading=16,
+        fontSize=11,
+        leading=15,
         textColor=colors.HexColor('#1e293b'),
         spaceBefore=10,
         spaceAfter=6
@@ -108,24 +109,16 @@ def build_neet_pdf():
         'TDCh',
         parent=styles['Normal'],
         fontName='Helvetica-Bold',
-        fontSize=8,
-        leading=10.5,
+        fontSize=7.5,
+        leading=10,
         textColor=colors.HexColor('#0f172a')
-    )
-    td_sub = ParagraphStyle(
-        'TDSub',
-        parent=styles['Normal'],
-        fontName='Helvetica-Oblique',
-        fontSize=7,
-        leading=9,
-        textColor=colors.HexColor('#64748b')
     )
     td_cell = ParagraphStyle(
         'TDCell',
         parent=styles['Normal'],
         fontName='Helvetica',
-        fontSize=7.5,
-        leading=10,
+        fontSize=7,
+        leading=9.5,
         textColor=colors.HexColor('#1e293b')
     )
     td_tier = ParagraphStyle(
@@ -146,33 +139,33 @@ def build_neet_pdf():
     )
 
     story = []
-    story.append(Paragraph("NEET (UG) Official Syllabus & Statutory Chapter Weightage", title_style))
-    story.append(Paragraph("ISSUED BY NATIONAL MEDICAL COMMISSION (NMC) & NATIONAL TESTING AGENCY (NTA)", subtitle_style))
+    story.append(Paragraph("NEET (UG) Official Syllabus & Statutory Chapter Weightage (2026–2027)", title_style))
+    story.append(Paragraph("NATIONAL MEDICAL COMMISSION (NMC) & NATIONAL TESTING AGENCY (NTA) • ACADEMIC SESSION 2026–2027", subtitle_style))
 
     meta_text = (
-        "<b>Examination Standard:</b> Total Marks: 720 | Total Questions: 200 (180 to Attempt) | Duration: 200 Minutes<br/>"
+        "<b>Examination Standard (2026–2027):</b> Total Marks: 720 | Questions: 200 (180 to Attempt) | Duration: 200 Minutes<br/>"
         "<b>Marking Scheme:</b> +4 for Correct Response, -1 for Incorrect, 0 for Unattempted.<br/>"
         "<b>Statutory Section Allocation:</b> Physics: 45 Qs (180 M) • Chemistry: 45 Qs (180 M) • Botany: 45 Qs (180 M) • Zoology: 45 Qs (180 M).<br/>"
-        "<b>Official Curriculum Notice:</b> Strictly verified against latest NMC Under Graduate Medical Education Board guidelines including rationalized and added topics."
+        "<b>Curriculum Status:</b> Validated for NEET (UG) 2026–2027 under NMC UGMEB guidelines including rationalized and added topics."
     )
     meta_table = Table([[Paragraph(meta_text, meta_box_style)]], colWidths=[523])
     meta_table.setStyle(TableStyle([
-        ('BACKGROUND', (0,0), (-1,-1), colors.HexColor('#f1f5f9')),
+        ('BACKGROUND', (0,0), (-1,-1), colors.HexColor('#f8fafc')),
         ('BOX', (0,0), (-1,-1), 1, colors.HexColor('#cbd5e1')),
-        ('TOPPADDING', (0,0), (-1,-1), 7),
-        ('BOTTOMPADDING', (0,0), (-1,-1), 7),
+        ('TOPPADDING', (0,0), (-1,-1), 6),
+        ('BOTTOMPADDING', (0,0), (-1,-1), 6),
         ('LEFTPADDING', (0,0), (-1,-1), 10),
         ('RIGHTPADDING', (0,0), (-1,-1), 10),
     ]))
     story.append(meta_table)
-    story.append(Spacer(1, 10))
+    story.append(Spacer(1, 8))
 
     neet_items = [x for x in master_data if x.get("exam_name") == "NEET UG"]
     subjects = ["Physics", "Chemistry", "Biology (Botany)", "Biology (Zoology)"]
 
     for subj in subjects:
         subj_items = [x for x in neet_items if x.get("subject") == subj]
-        story.append(Paragraph(f"Subject: {subj} ({len(subj_items)} Official Units/Chapters)", sec_heading))
+        story.append(Paragraph(f"Subject: {subj} ({len(subj_items)} Official Units/Chapters • Session 2026–2027)", sec_heading))
 
         table_data = [[
             Paragraph("Chapter / Unit", th_style),
@@ -180,7 +173,7 @@ def build_neet_pdf():
             Paragraph("Official Status", th_style),
             Paragraph("Qs & Marks", th_style),
             Paragraph("Priority Tier", th_style),
-            Paragraph("Prescribed Authorized Topics (NMC/NTA)", th_style)
+            Paragraph("Prescribed Authorized Topics (NMC/NTA 2026–2027)", th_style)
         ]]
 
         for item in subj_items:
@@ -196,7 +189,7 @@ def build_neet_pdf():
         col_widths = [115, 42, 70, 52, 64, 180]
         t = Table(table_data, colWidths=col_widths, repeatRows=1)
         t.setStyle(TableStyle([
-            ('BACKGROUND', (0, 0), (-1, 0), colors.HexColor('#1e293b')),
+            ('BACKGROUND', (0, 0), (-1, 0), colors.HexColor('#0f172a')),
             ('ALIGN', (1, 0), (3, -1), 'CENTER'),
             ('VALIGN', (0, 0), (-1, -1), 'TOP'),
             ('GRID', (0, 0), (-1, -1), 0.5, colors.HexColor('#e2e8f0')),
@@ -207,13 +200,13 @@ def build_neet_pdf():
             ('RIGHTPADDING', (0, 0), (-1, -1), 4),
         ]))
         story.append(t)
-        story.append(Spacer(1, 12))
+        story.append(Spacer(1, 10))
 
     doc.build(story, canvasmaker=NumberedCanvas)
     print("NEET UG PDF generated:", pdf_path, "Size:", os.path.getsize(pdf_path))
 
-def build_jee_pdf():
-    pdf_path = os.path.join(PDF_DIR, "JEE_Main_Official_Curriculum_and_Weightage.pdf")
+def build_jee_pdf(filename):
+    pdf_path = os.path.join(PDF_DIR, filename)
     doc = SimpleDocTemplate(
         pdf_path,
         pagesize=A4,
@@ -228,10 +221,10 @@ def build_jee_pdf():
         'DocTitle',
         parent=styles['Heading1'],
         fontName='Helvetica-Bold',
-        fontSize=18,
-        leading=22,
+        fontSize=17,
+        leading=21,
         textColor=colors.HexColor('#0f172a'),
-        spaceAfter=4
+        spaceAfter=3
     )
     subtitle_style = ParagraphStyle(
         'DocSub',
@@ -246,16 +239,16 @@ def build_jee_pdf():
         'MetaBox',
         parent=styles['Normal'],
         fontName='Helvetica',
-        fontSize=8.5,
-        leading=12,
+        fontSize=8,
+        leading=11.5,
         textColor=colors.HexColor('#334155')
     )
     sec_heading = ParagraphStyle(
         'SecHead',
         parent=styles['Heading2'],
         fontName='Helvetica-Bold',
-        fontSize=12,
-        leading=16,
+        fontSize=11,
+        leading=15,
         textColor=colors.HexColor('#1e293b'),
         spaceBefore=10,
         spaceAfter=6
@@ -272,16 +265,16 @@ def build_jee_pdf():
         'TDCh',
         parent=styles['Normal'],
         fontName='Helvetica-Bold',
-        fontSize=8,
-        leading=10.5,
+        fontSize=7.5,
+        leading=10,
         textColor=colors.HexColor('#0f172a')
     )
     td_cell = ParagraphStyle(
         'TDCell',
         parent=styles['Normal'],
         fontName='Helvetica',
-        fontSize=7.5,
-        leading=10,
+        fontSize=7,
+        leading=9.5,
         textColor=colors.HexColor('#1e293b')
     )
     td_tier = ParagraphStyle(
@@ -302,33 +295,33 @@ def build_jee_pdf():
     )
 
     story = []
-    story.append(Paragraph("JEE (Main) Official Syllabus & Empirical Chapter Weightage", title_style))
-    story.append(Paragraph("ISSUED BY NATIONAL TESTING AGENCY (NTA) • APEX BOARD FOR ENGINEERING ADMISSIONS", subtitle_style))
+    story.append(Paragraph("JEE (Main) Official Syllabus & Empirical Chapter Weightage (2026–2027)", title_style))
+    story.append(Paragraph("NATIONAL TESTING AGENCY (NTA) • APEX BOARD FOR ENGINEERING ADMISSIONS • ACADEMIC SESSION 2026–2027", subtitle_style))
 
     meta_text = (
-        "<b>Examination Standard:</b> Total Marks: 300 | Total Questions: 90 (75 to Attempt) | Duration: 180 Minutes<br/>"
-        "<b>Section Architecture:</b> 25 Questions per Subject (20 Section A MCQs + 5 out of 10 Section B Numerical Value Questions).<br/>"
+        "<b>Examination Standard (2026–2027):</b> Total Marks: 300 | Questions: 90 (75 to Attempt) | Duration: 180 Minutes<br/>"
+        "<b>Section Architecture:</b> 25 Questions per Subject (20 Section A MCQs + 5 out of 10 Section B NVQs).<br/>"
         "<b>Marking Scheme:</b> +4 for Correct, -1 for Incorrect (both MCQs & NVQs), 0 for Unattempted.<br/>"
-        "<b>Empirical Weightage Basis:</b> Derived across 186 official computer-based shifts and verified against latest NTA Information Bulletin."
+        "<b>Curriculum Status:</b> Validated for JEE (Main) 2026–2027 across 186 CBT shifts."
     )
     meta_table = Table([[Paragraph(meta_text, meta_box_style)]], colWidths=[523])
     meta_table.setStyle(TableStyle([
-        ('BACKGROUND', (0,0), (-1,-1), colors.HexColor('#f1f5f9')),
+        ('BACKGROUND', (0,0), (-1,-1), colors.HexColor('#f8fafc')),
         ('BOX', (0,0), (-1,-1), 1, colors.HexColor('#cbd5e1')),
-        ('TOPPADDING', (0,0), (-1,-1), 7),
-        ('BOTTOMPADDING', (0,0), (-1,-1), 7),
+        ('TOPPADDING', (0,0), (-1,-1), 6),
+        ('BOTTOMPADDING', (0,0), (-1,-1), 6),
         ('LEFTPADDING', (0,0), (-1,-1), 10),
         ('RIGHTPADDING', (0,0), (-1,-1), 10),
     ]))
     story.append(meta_table)
-    story.append(Spacer(1, 10))
+    story.append(Spacer(1, 8))
 
     jee_items = [x for x in master_data if x.get("exam_name") == "JEE Main"]
     subjects = ["Physics", "Chemistry", "Mathematics"]
 
     for subj in subjects:
         subj_items = [x for x in jee_items if x.get("subject") == subj]
-        story.append(Paragraph(f"Subject: {subj} ({len(subj_items)} Official Units/Chapters)", sec_heading))
+        story.append(Paragraph(f"Subject: {subj} ({len(subj_items)} Official Units/Chapters • Session 2026–2027)", sec_heading))
 
         table_data = [[
             Paragraph("Chapter / Unit", th_style),
@@ -336,7 +329,7 @@ def build_jee_pdf():
             Paragraph("Official Status", th_style),
             Paragraph("Qs & Marks", th_style),
             Paragraph("Priority Tier", th_style),
-            Paragraph("Prescribed Authorized Topics (NTA)", th_style)
+            Paragraph("Prescribed Authorized Topics (NTA 2026–2027)", th_style)
         ]]
 
         for item in subj_items:
@@ -352,7 +345,7 @@ def build_jee_pdf():
         col_widths = [115, 42, 70, 52, 64, 180]
         t = Table(table_data, colWidths=col_widths, repeatRows=1)
         t.setStyle(TableStyle([
-            ('BACKGROUND', (0, 0), (-1, 0), colors.HexColor('#1e293b')),
+            ('BACKGROUND', (0, 0), (-1, 0), colors.HexColor('#0f172a')),
             ('ALIGN', (1, 0), (3, -1), 'CENTER'),
             ('VALIGN', (0, 0), (-1, -1), 'TOP'),
             ('GRID', (0, 0), (-1, -1), 0.5, colors.HexColor('#e2e8f0')),
@@ -363,11 +356,13 @@ def build_jee_pdf():
             ('RIGHTPADDING', (0, 0), (-1, -1), 4),
         ]))
         story.append(t)
-        story.append(Spacer(1, 12))
+        story.append(Spacer(1, 10))
 
     doc.build(story, canvasmaker=NumberedCanvas)
     print("JEE Main PDF generated:", pdf_path, "Size:", os.path.getsize(pdf_path))
 
 if __name__ == "__main__":
-    build_neet_pdf()
-    build_jee_pdf()
+    build_neet_pdf("NEET_UG_Official_Curriculum_and_Weightage.pdf")
+    build_neet_pdf("NEET_UG_Official_Syllabus_2026_2027_NMC.pdf")
+    build_jee_pdf("JEE_Main_Official_Curriculum_and_Weightage.pdf")
+    build_jee_pdf("JEE_Main_Official_Syllabus_2026_2027_NTA.pdf")
