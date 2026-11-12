@@ -248,7 +248,8 @@
     "pdf_name": "Class12_Physics.pdf",
     "pdf_size": "189 KB",
     "official_board": "Central Board of Secondary Education (CBSE, Delhi)",
-    "official_citation": "CBSE Senior School Curriculum 2025-2026 (Circular Acad-39/2025)"
+    "official_citation": "CBSE Senior School Curriculum 2025-2026 (Circular Acad-39/2025)",
+    "total_marks": 100
   },
   "Chemistry": {
     "subject": "Chemistry",
@@ -431,7 +432,8 @@
     "pdf_name": "Class12_Chemistry.pdf",
     "pdf_size": "931 KB",
     "official_board": "Central Board of Secondary Education (CBSE, Delhi)",
-    "official_citation": "CBSE Senior School Curriculum 2025-2026 (Circular Acad-39/2025)"
+    "official_citation": "CBSE Senior School Curriculum 2025-2026 (Circular Acad-39/2025)",
+    "total_marks": 100
   },
   "Mathematics": {
     "subject": "Mathematics",
@@ -665,7 +667,8 @@
     "pdf_name": "Class12_Maths.pdf",
     "pdf_size": "694 KB",
     "official_board": "Central Board of Secondary Education (CBSE, Delhi)",
-    "official_citation": "CBSE Senior School Curriculum 2025-2026 (Circular Acad-39/2025)"
+    "official_citation": "CBSE Senior School Curriculum 2025-2026 (Circular Acad-39/2025)",
+    "total_marks": 100
   },
   "Biology": {
     "subject": "Biology",
@@ -899,7 +902,8 @@
     "pdf_name": "Class12_Biology.pdf",
     "pdf_size": "398 KB",
     "official_board": "Central Board of Secondary Education (CBSE, Delhi)",
-    "official_citation": "CBSE Senior School Curriculum 2025-2026 (Circular Acad-39/2025)"
+    "official_citation": "CBSE Senior School Curriculum 2025-2026 (Circular Acad-39/2025)",
+    "total_marks": 100
   },
   "Computer Science": {
     "subject": "Computer Science",
@@ -1014,7 +1018,8 @@
     "pdf_name": "Class12_Computer_Science.pdf",
     "pdf_size": "459 KB",
     "official_board": "Central Board of Secondary Education (CBSE, Delhi)",
-    "official_citation": "CBSE Senior School Curriculum 2025-2026 (Circular Acad-39/2025)"
+    "official_citation": "CBSE Senior School Curriculum 2025-2026 (Circular Acad-39/2025)",
+    "total_marks": 100
   },
   "English Core": {
     "subject": "English Core",
@@ -1078,6 +1083,7 @@
     "pdf_name": "Class12_English_Core.pdf",
     "pdf_size": "854 KB",
     "official_board": "Central Board of Secondary Education (CBSE, Delhi)",
-    "official_citation": "CBSE Senior School Curriculum 2025-2026 (Circular Acad-39/2025)"
+    "official_citation": "CBSE Senior School Curriculum 2025-2026 (Circular Acad-39/2025)",
+    "total_marks": 100
   }
 }

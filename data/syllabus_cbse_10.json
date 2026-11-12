@@ -248,7 +248,8 @@
     "pdf_name": "Class10_Maths.pdf",
     "pdf_size": "1.0 MB",
     "official_board": "Central Board of Secondary Education (CBSE, Delhi)",
-    "official_citation": "CBSE Secondary School Curriculum 2025-2026 (Classes IX-X)"
+    "official_citation": "CBSE Secondary School Curriculum 2025-2026 (Classes IX-X)",
+    "total_marks": 100
   },
   "Science": {
     "subject": "Science",
@@ -482,7 +483,8 @@
     "pdf_name": "Class10_Science.pdf",
     "pdf_size": "288 KB",
     "official_board": "Central Board of Secondary Education (CBSE, Delhi)",
-    "official_citation": "CBSE Secondary School Curriculum 2025-2026 (Classes IX-X)"
+    "official_citation": "CBSE Secondary School Curriculum 2025-2026 (Classes IX-X)",
+    "total_marks": 100
   },
   "Social Science": {
     "subject": "Social Science",
@@ -631,7 +633,8 @@
     "pdf_name": "Class10_Social_Science.pdf",
     "pdf_size": "1.1 MB",
     "official_board": "Central Board of Secondary Education (CBSE, Delhi)",
-    "official_citation": "CBSE Secondary School Curriculum 2025-2026 (Classes IX-X)"
+    "official_citation": "CBSE Secondary School Curriculum 2025-2026 (Classes IX-X)",
+    "total_marks": 100
   },
   "English Language & Literature": {
     "subject": "English Language & Literature",
@@ -695,6 +698,7 @@
     "pdf_name": "Class10_English.pdf",
     "pdf_size": "885 KB",
     "official_board": "Central Board of Secondary Education (CBSE, Delhi)",
-    "official_citation": "CBSE Secondary School Curriculum 2025-2026 (Classes IX-X)"
+    "official_citation": "CBSE Secondary School Curriculum 2025-2026 (Classes IX-X)",
+    "total_marks": 100
   }
 }

@@ -105,8 +105,8 @@ function verifyAll() {
   // 5. Verify syllabus/index.html
   const htmlPath = path.join(ROOT, 'syllabus', 'index.html');
   const html = fs.readFileSync(htmlPath, 'utf-8');
-  if (!html.includes('NEET_UG_Official_Curriculum_and_Weightage.pdf')) throw new Error('Missing NEET PDF link in html');
-  if (!html.includes('JEE_Main_Official_Curriculum_and_Weightage.pdf')) throw new Error('Missing JEE Main PDF link in html');
+  if (!html.includes('NEET_UG_Official_Curriculum_and_Weightage.pdf') && !html.includes('NEET_UG_Official_Syllabus_2026_2027_NMC.pdf')) throw new Error('Missing NEET PDF link in html');
+  if (!html.includes('JEE_Main_Official_Curriculum_and_Weightage.pdf') && !html.includes('JEE_Main_Official_Syllabus_2026_2027_NTA.pdf')) throw new Error('Missing JEE Main PDF link in html');
   if (!html.includes('official-pdf-card')) throw new Error('Missing official-pdf-card CSS class in html');
   if (!html.includes('priority-badge')) throw new Error('Missing priority-badge CSS class in html');
 
