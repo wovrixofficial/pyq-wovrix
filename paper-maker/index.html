@@ -607,9 +607,63 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 8px 20px;
-      margin-top: 8px;
+      margin-top: 10px;
       font-family: var(--font-sans);
       font-size: 13.5px;
+    }
+
+    .paper-opt-item {
+      display: flex;
+      gap: 8px;
+      align-items: baseline;
+      word-break: break-word;
+    }
+
+    .paper-opt-label {
+      font-weight: 700;
+      color: var(--text);
+      min-width: 26px;
+      flex-shrink: 0;
+    }
+
+    .paper-opt-text {
+      flex: 1;
+    }
+
+    .sub-count-badge {
+      display: inline-block;
+      padding: 1px 7px;
+      border-radius: 9999px;
+      font-size: 11px;
+      font-weight: 700;
+      background: var(--surface-alt);
+      color: var(--text-muted);
+      margin-left: 6px;
+      border: 1px solid var(--border);
+    }
+
+    .subject-pill.active .sub-count-badge {
+      background: var(--accent);
+      color: #ffffff;
+      border-color: var(--accent);
+    }
+
+    .quick-chip-btn {
+      background: var(--surface-alt);
+      border: 1px solid var(--border);
+      border-radius: 9999px;
+      padding: 6px 14px;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text);
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .quick-chip-btn:hover {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #ffffff;
     }
 
     @media (max-width: 600px) {
@@ -1158,6 +1212,21 @@
         box-shadow: none !important;
         padding: 0 !important;
         margin: 0 !important;
+        color: #000000 !important;
+        background: #ffffff !important;
+      }
+      .paper-q-item {
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+        margin-bottom: 16px !important;
+      }
+      .neet-paper-options-grid {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+        gap: 6px 16px !important;
+      }
+      .paper-opt-label {
+        color: #000000 !important;
       }
       .btn-no-print { display: none !important; }
     }
@@ -1395,20 +1464,24 @@
 
       <!-- STEP 2: Subject & Chapters -->
       <div class="wizard-step-pane" id="stepPane2">
-        <label style="font-size:12px; font-weight:800; text-transform:uppercase; letter-spacing:0.05em; color:var(--text-muted); display:block; margin-bottom:10px;">
-          Select Subject
-        </label>
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px; flex-wrap:wrap; gap:8px;">
+          <label style="font-size:12px; font-weight:800; text-transform:uppercase; letter-spacing:0.05em; color:var(--text-muted); margin:0;">
+            Select Subject & Custom Chapters
+          </label>
+          <div id="selectedSubjectBreakdown" style="font-size:12px; color:var(--accent); font-weight:700;"></div>
+        </div>
         <div class="subject-pill-bar" id="subjectPillBar">
           <!-- Injected dynamically by JS -->
         </div>
 
         <div class="chapter-selector-header">
           <label style="font-size:12px; font-weight:800; text-transform:uppercase; letter-spacing:0.05em; color:var(--text-muted); margin:0;">
-            Select Chapters to Include (<span id="selectedChaptersCount">0</span> selected)
+            Chapters in <span id="activeSubjectName" style="color:var(--text); font-weight:800;">Physics</span> (<span id="selectedChaptersCount">0</span> selected total across subjects)
           </label>
-          <div style="display:flex; gap:6px;">
-            <button type="button" class="chapter-filter-btn" onclick="filterChapters('all')">Select All</button>
-            <button type="button" class="chapter-filter-btn" onclick="filterChapters('highyield')">🔥 High-Yield Only</button>
+          <div style="display:flex; gap:6px; flex-wrap:wrap;">
+            <button type="button" class="chapter-filter-btn" onclick="filterChapters('all')">Select All (This Subject)</button>
+            <button type="button" class="chapter-filter-btn" onclick="filterChapters('all_all_subjects')" title="Select all chapters across all subjects for a full paper">🌐 Select All (All Subjects)</button>
+            <button type="button" class="chapter-filter-btn" onclick="filterChapters('highyield')">🔥 High-Yield</button>
             <button type="button" class="chapter-filter-btn" onclick="filterChapters('none')">Clear</button>
           </div>
         </div>
@@ -1425,10 +1498,21 @@
 
       <!-- STEP 3: Timing & Interactive Mode -->
       <div class="wizard-step-pane" id="stepPane3">
+        <div style="margin-bottom:14px;">
+          <label style="font-size:12px; font-weight:800; text-transform:uppercase; letter-spacing:0.05em; color:var(--text-muted); display:block; margin-bottom:8px;">
+            Quick Exam Preset Configuration
+          </label>
+          <div class="quick-preset-chips" style="display:flex; gap:8px; flex-wrap:wrap;">
+            <button type="button" class="quick-chip-btn" onclick="applyQuickConfig(75, 180)">🏆 Full 3-Subject Mock (75 Qs • 3 Hours)</button>
+            <button type="button" class="quick-chip-btn" onclick="applyQuickConfig(30, 60)">⚡ Rapid Test (30 Qs • 1 Hour)</button>
+            <button type="button" class="quick-chip-btn" onclick="applyQuickConfig(25, 60)">🎯 Single Subject (25 Qs • 1 Hour)</button>
+          </div>
+        </div>
+
         <div class="config-two-col">
           <div class="config-group">
             <label for="cfgDuration">Exam Time Duration</label>
-            <select id="cfgDuration">
+            <select id="cfgDuration" onchange="wizardState.duration = parseInt(this.value, 10);">
               <option value="180">180 Minutes (3 Hours - Full Paper)</option>
               <option value="120">120 Minutes (2 Hours)</option>
               <option value="90">90 Minutes (Half Mock)</option>
@@ -1440,7 +1524,8 @@
           </div>
           <div class="config-group">
             <label for="cfgQCount">Question Count</label>
-            <input type="number" id="cfgQCount" value="33" min="5" max="100">
+            <input type="number" id="cfgQCount" value="75" min="5" max="200" oninput="onQuestionCountInput(this.value)">
+            <div id="qDistributionHint" style="font-size:12px; font-weight:700; color:var(--accent); margin-top:6px;"></div>
           </div>
         </div>
 
@@ -1951,7 +2036,7 @@
       exam: 'cbse',
       subject: 'Physics',
       preset: 'standard',
-      selectedChapters: [],
+      selectedChaptersBySubject: {},
       duration: 180,
       qCount: 33,
       layout: 'cbt',
@@ -2008,6 +2093,50 @@
       setWizardExam(goal, true);
     }
 
+    function getExamChapterMap(exam) {
+      if (exam === 'cbse') return CHAPTERS_CBSE;
+      if (exam === 'neet') return CHAPTERS_NEET;
+      if (exam === 'jee') return CHAPTERS_JEE;
+      if (exam === 'jee-adv') return CHAPTERS_JEE_ADV;
+      if (exam === 'bitsat') return CHAPTERS_BITSAT;
+      return CHAPTERS_JEE;
+    }
+
+    function getAllSubjectsForExam(exam) {
+      if (exam === 'bitsat') {
+        return ['Physics', 'Chemistry', 'Mathematics', 'English Proficiency', 'Logical Reasoning'];
+      } else if (exam === 'neet') {
+        return ['Physics', 'Chemistry', 'Botany', 'Zoology'];
+      }
+      return ['Physics', 'Chemistry', 'Mathematics'];
+    }
+
+    function initSelectedChaptersForExam(exam) {
+      const chapterMap = getExamChapterMap(exam);
+      const subjects = getAllSubjectsForExam(exam);
+      wizardState.selectedChaptersBySubject = {};
+
+      subjects.forEach(sub => {
+        const list = chapterMap[sub] || [];
+        wizardState.selectedChaptersBySubject[sub] = list.map(c => c.name);
+      });
+    }
+
+    function getTotalSelectedChaptersCount() {
+      const subjects = getAllSubjectsForExam(wizardState.exam);
+      let count = 0;
+      subjects.forEach(s => {
+        count += (wizardState.selectedChaptersBySubject[s] || []).length;
+      });
+      return count;
+    }
+
+    function getActiveSubjects() {
+      const subjects = getAllSubjectsForExam(wizardState.exam);
+      const active = subjects.filter(s => (wizardState.selectedChaptersBySubject[s] || []).length > 0);
+      return active.length > 0 ? active : [wizardState.subject];
+    }
+
     // ---------------------------------------------------------
     // 2. WIZARD STEP CONTROLLER
     // ---------------------------------------------------------
@@ -2025,10 +2154,9 @@
 
     function nextStep(stepNum) {
       if (stepNum === 2) {
-        // Sync presets to default count/duration
         applyPresetSettings();
       } else if (stepNum === 3) {
-        if (wizardState.selectedChapters.length === 0) {
+        if (getTotalSelectedChaptersCount() === 0) {
           alert('Please select at least one chapter before proceeding.');
           return;
         }
@@ -2048,28 +2176,31 @@
       document.getElementById('examCardJeeAdv')?.classList.toggle('selected', exam === 'jee-adv');
       document.getElementById('examCardBitsat')?.classList.toggle('selected', exam === 'bitsat');
 
+      const subjects = getAllSubjectsForExam(exam);
+      wizardState.subject = subjects[0];
+
+      // Initialize all chapters selected by default across all subjects
+      initSelectedChaptersForExam(exam);
+
       // Update preset descriptions
       const stdDesc = document.getElementById('presetStandardDesc');
       if (exam === 'cbse') {
         stdDesc.innerText = "CBSE: 70 Marks, 33 Questions • 3 Hours. All syllabus chapters.";
-        wizardState.subject = 'Physics';
       } else if (exam === 'jee') {
-        stdDesc.innerText = "JEE Main: 100 Marks, 25 Questions (or 75 Qs 300M Full Shift) • NTA CBT Simulator.";
-        wizardState.subject = 'Physics';
+        stdDesc.innerText = "JEE Main: 300 Marks, 75 Questions (25P + 25C + 25M) • 3-Hour NTA CBT Simulator.";
       } else if (exam === 'jee-adv') {
         stdDesc.innerText = "JEE Advanced: 180 Marks, 54 Questions • 3 Hours (Paper 1 & 2 CBT). Multi-correct & numericals.";
-        wizardState.subject = 'Physics';
       } else if (exam === 'bitsat') {
         stdDesc.innerText = "BITSAT: 390 Marks, 130 Questions • 3 Hours Speed CBT (Physics 30, Chem 30, Maths 40, English 10, Logic 20).";
-        wizardState.subject = 'Physics';
       } else {
         stdDesc.innerText = "NEET UG: 720 Marks, 180 Questions • 3 Hours 20 Mins. Full PCB Syllabus.";
-        wizardState.subject = 'Physics';
       }
 
       applyPresetSettings();
       renderSubjectPills();
       renderChaptersGrid();
+      updateSelectedChaptersCounter();
+      updateQuestionDistributionHint();
     }
 
     function selectPreset(preset) {
@@ -2083,57 +2214,119 @@
     function applyPresetSettings() {
       const qInput = document.getElementById('cfgQCount');
       const dInput = document.getElementById('cfgDuration');
+      const chapterMap = getExamChapterMap(wizardState.exam);
+      const subjects = getAllSubjectsForExam(wizardState.exam);
 
       if (wizardState.preset === 'standard') {
         if (wizardState.exam === 'cbse') {
           qInput.value = 33;
           dInput.value = 180;
         } else if (wizardState.exam === 'jee') {
-          qInput.value = 25;
-          dInput.value = 60;
+          qInput.value = 75; // 25P + 25C + 25M
+          dInput.value = 180;
+        } else if (wizardState.exam === 'jee-adv') {
+          qInput.value = 54;
+          dInput.value = 180;
+        } else if (wizardState.exam === 'bitsat') {
+          qInput.value = 130;
+          dInput.value = 180;
         } else {
-          qInput.value = 50;
-          dInput.value = 60;
+          qInput.value = 180;
+          dInput.value = 200;
         }
-        filterChapters('all');
+        // Select all chapters across all subjects
+        subjects.forEach(sub => {
+          const list = chapterMap[sub] || [];
+          wizardState.selectedChaptersBySubject[sub] = list.map(c => c.name);
+        });
       } else if (wizardState.preset === 'highyield') {
         if (wizardState.exam === 'cbse') {
           qInput.value = 25;
           dInput.value = 120;
         } else if (wizardState.exam === 'jee') {
-          qInput.value = 20;
-          dInput.value = 45;
+          qInput.value = 45;
+          dInput.value = 90;
+        } else if (wizardState.exam === 'bitsat') {
+          qInput.value = 60;
+          dInput.value = 90;
         } else {
-          qInput.value = 40;
-          dInput.value = 45;
+          qInput.value = 90;
+          dInput.value = 90;
         }
-        filterChapters('highyield');
+        // Select high-yield chapters across all subjects
+        subjects.forEach(sub => {
+          const list = chapterMap[sub] || [];
+          wizardState.selectedChaptersBySubject[sub] = list.filter(c => c.highYield).map(c => c.name);
+        });
       } else if (wizardState.preset === 'sprint') {
         qInput.value = (wizardState.exam === 'jee' || wizardState.exam === 'cbse') ? 15 : 20;
         dInput.value = 30;
+      }
+
+      wizardState.qCount = parseInt(qInput.value, 10);
+      wizardState.duration = parseInt(dInput.value, 10);
+
+      renderSubjectPills();
+      renderChaptersGrid();
+      updateSelectedChaptersCounter();
+      updateQuestionDistributionHint();
+    }
+
+    function applyQuickConfig(q, d) {
+      const qInput = document.getElementById('cfgQCount');
+      const dInput = document.getElementById('cfgDuration');
+      if (qInput) qInput.value = q;
+      if (dInput) dInput.value = d;
+      wizardState.qCount = q;
+      wizardState.duration = d;
+      updateQuestionDistributionHint();
+    }
+
+    function onQuestionCountInput(val) {
+      wizardState.qCount = parseInt(val, 10) || 25;
+      updateQuestionDistributionHint();
+    }
+
+    function updateQuestionDistributionHint() {
+      const hintEl = document.getElementById('qDistributionHint');
+      if (!hintEl) return;
+
+      const activeSubs = getActiveSubjects();
+      const totalQ = wizardState.qCount || parseInt(document.getElementById('cfgQCount')?.value, 10) || 25;
+      const numSub = activeSubs.length;
+
+      if (numSub > 1) {
+        const base = Math.floor(totalQ / numSub);
+        const rem = totalQ % numSub;
+        const subShares = activeSubs.map((s, idx) => {
+          const count = base + (idx < rem ? 1 : 0);
+          return `${count} ${s}`;
+        });
+        hintEl.innerHTML = `⚡ <strong>Balanced Multi-Subject Distribution:</strong> ${subShares.join(' • ')} (${totalQ} total)`;
+      } else {
+        hintEl.innerHTML = `⚡ <strong>Single Subject Test:</strong> All ${totalQ} questions from ${activeSubs[0]}`;
       }
     }
 
     function renderSubjectPills() {
       const bar = document.getElementById('subjectPillBar');
-      let subjects = ['Physics', 'Chemistry', 'Mathematics'];
-      if (wizardState.exam === 'bitsat') {
-        subjects = ['Physics', 'Chemistry', 'Mathematics', 'English Proficiency', 'Logical Reasoning'];
-      } else if (wizardState.exam === 'neet') {
-        subjects = ['Physics', 'Chemistry', 'Botany', 'Zoology'];
-      }
+      const subjects = getAllSubjectsForExam(wizardState.exam);
 
       if (!subjects.includes(wizardState.subject)) {
         wizardState.subject = subjects[0];
       }
 
-      bar.innerHTML = subjects.map(s => `
-        <button class="subject-pill ${s === wizardState.subject ? 'active' : ''}" onclick="selectSubject('${s}')">
-          ${s}
-        </button>
-      `).join('');
+      const chapterMap = getExamChapterMap(wizardState.exam);
 
-      loadSubjectData();
+      bar.innerHTML = subjects.map(s => {
+        const selectedCount = (wizardState.selectedChaptersBySubject[s] || []).length;
+        const totalCount = (chapterMap[s] || []).length;
+        return `
+          <button type="button" class="subject-pill ${s === wizardState.subject ? 'active' : ''}" onclick="selectSubject('${s}')">
+            ${s} <span class="sub-count-badge">${selectedCount}/${totalCount}</span>
+          </button>
+        `;
+      }).join('');
     }
 
     function selectSubject(s) {
@@ -2144,45 +2337,84 @@
 
     function renderChaptersGrid() {
       const container = document.getElementById('chapterGridContainer');
-      const list = wizardState.exam === 'cbse' 
-        ? CHAPTERS_CBSE[wizardState.subject] 
-        : (wizardState.exam === 'jee' ? CHAPTERS_JEE[wizardState.subject] : CHAPTERS_NEET[wizardState.subject]);
-      if (!list) return;
+      const activeLabel = document.getElementById('activeSubjectName');
+      if (activeLabel) activeLabel.innerText = wizardState.subject;
+
+      const chapterMap = getExamChapterMap(wizardState.exam);
+      const list = chapterMap[wizardState.subject] || [];
+      const currentSelected = wizardState.selectedChaptersBySubject[wizardState.subject] || [];
 
       container.innerHTML = list.map((ch, idx) => `
         <label class="chapter-card-item">
-          <input type="checkbox" value="${ch.name}" onchange="onChapterCheckboxChange(this)" ${wizardState.selectedChapters.includes(ch.name) || wizardState.selectedChapters.length === 0 ? 'checked' : ''}>
-          <span class="chapter-name-text">${idx + 1}. ${ch.name}</span>
+          <input type="checkbox" value="${escapeHtml(ch.name)}" onchange="onChapterCheckboxChange(this)" ${currentSelected.includes(ch.name) ? 'checked' : ''}>
+          <span class="chapter-name-text">${idx + 1}. ${escapeHtml(ch.name)}</span>
           ${ch.highYield ? '<span class="chapter-repeat-pill">🔥 High Yield</span>' : ''}
         </label>
       `).join('');
 
-      syncSelectedChaptersList();
+      updateSelectedChaptersCounter();
     }
 
     function onChapterCheckboxChange() {
       syncSelectedChaptersList();
+      renderSubjectPills();
+      updateSelectedChaptersCounter();
+      updateQuestionDistributionHint();
     }
 
     function syncSelectedChaptersList() {
       const checked = Array.from(document.querySelectorAll('#chapterGridContainer input:checked')).map(c => c.value);
-      wizardState.selectedChapters = checked;
-      document.getElementById('selectedChaptersCount').innerText = checked.length;
+      wizardState.selectedChaptersBySubject[wizardState.subject] = checked;
     }
 
     function filterChapters(type) {
-      const checkboxes = document.querySelectorAll('#chapterGridContainer input');
-      const list = wizardState.exam === 'cbse' 
-        ? CHAPTERS_CBSE[wizardState.subject] 
-        : (wizardState.exam === 'jee' ? CHAPTERS_JEE[wizardState.subject] : CHAPTERS_NEET[wizardState.subject]);
-      const highYieldNames = list.filter(c => c.highYield).map(c => c.name);
+      const chapterMap = getExamChapterMap(wizardState.exam);
+      const list = chapterMap[wizardState.subject] || [];
 
-      checkboxes.forEach(cb => {
-        if (type === 'all') cb.checked = true;
-        else if (type === 'none') cb.checked = false;
-        else if (type === 'highyield') cb.checked = highYieldNames.includes(cb.value);
+      if (type === 'all') {
+        wizardState.selectedChaptersBySubject[wizardState.subject] = list.map(c => c.name);
+      } else if (type === 'none') {
+        wizardState.selectedChaptersBySubject[wizardState.subject] = [];
+      } else if (type === 'highyield') {
+        wizardState.selectedChaptersBySubject[wizardState.subject] = list.filter(c => c.highYield).map(c => c.name);
+      } else if (type === 'all_all_subjects') {
+        getAllSubjectsForExam(wizardState.exam).forEach(s => {
+          wizardState.selectedChaptersBySubject[s] = (chapterMap[s] || []).map(c => c.name);
+        });
+      }
+
+      renderSubjectPills();
+      renderChaptersGrid();
+      updateSelectedChaptersCounter();
+      updateQuestionDistributionHint();
+    }
+
+    function updateSelectedChaptersCounter() {
+      const subjects = getAllSubjectsForExam(wizardState.exam);
+      let totalSelected = 0;
+      const breakdown = [];
+
+      subjects.forEach(s => {
+        const count = (wizardState.selectedChaptersBySubject[s] || []).length;
+        if (count > 0) {
+          totalSelected += count;
+          breakdown.push(`${s} (${count})`);
+        }
       });
-      syncSelectedChaptersList();
+
+      const countEl = document.getElementById('selectedChaptersCount');
+      if (countEl) countEl.innerText = totalSelected;
+
+      const subSummaryEl = document.getElementById('selectedSubjectBreakdown');
+      if (subSummaryEl) {
+        if (breakdown.length > 1) {
+          subSummaryEl.innerHTML = `Multi-Subject Mode: <strong>${breakdown.join(' • ')}</strong>`;
+        } else if (breakdown.length === 1) {
+          subSummaryEl.innerHTML = `Single-Subject: <strong>${breakdown[0]}</strong>`;
+        } else {
+          subSummaryEl.innerHTML = `<span style="color:#ef4444;">⚠️ No chapters selected! Please check at least one chapter.</span>`;
+        }
+      }
     }
 
     function setLayoutPreference(layout) {
@@ -2192,45 +2424,71 @@
     }
 
     function updateStep4Summary() {
-      document.getElementById('summaryExam').innerText = wizardState.exam === 'cbse' ? 'CBSE Class 12' : (wizardState.exam === 'jee' ? 'JEE Main Engineering' : 'NEET UG Medical');
-      document.getElementById('summarySubject').innerText = wizardState.subject;
+      const examNames = {
+        'cbse': 'CBSE Class 12 Board',
+        'jee': 'JEE Main Engineering',
+        'jee-adv': 'JEE Advanced',
+        'neet': 'NEET UG Medical',
+        'bitsat': 'BITSAT Speed Test'
+      };
+      document.getElementById('summaryExam').innerText = examNames[wizardState.exam] || wizardState.exam.toUpperCase();
+
+      const activeSubs = getActiveSubjects();
+      let totalChs = 0;
+      activeSubs.forEach(s => totalChs += (wizardState.selectedChaptersBySubject[s] || []).length);
+
+      if (activeSubs.length > 1) {
+        document.getElementById('summarySubject').innerText = `Multi-Subject (${activeSubs.join(', ')})`;
+      } else if (activeSubs.length === 1) {
+        document.getElementById('summarySubject').innerText = activeSubs[0];
+      } else {
+        document.getElementById('summarySubject').innerText = 'None Selected';
+      }
+
       document.getElementById('summaryDuration').innerText = `${wizardState.duration} Minutes`;
       document.getElementById('summaryCount').innerText = `${wizardState.qCount} Questions`;
-      document.getElementById('summaryChapters').innerText = `${wizardState.selectedChapters.length} Chapters`;
+      document.getElementById('summaryChapters').innerText = `${totalChs} Chapters (${activeSubs.length} Subjects)`;
       document.getElementById('summaryLayout').innerText = wizardState.layout === 'cbt' ? 'NTA CBT Palette Mode' : 'Continuous Scroll Mode';
     }
 
     // ---------------------------------------------------------
-    // 3. DATA FETCHING & QUESTION SAMPLING
+    // 3. DATA FETCHING & MULTI-SUBJECT QUESTION SAMPLING
     // ---------------------------------------------------------
-    async function loadSubjectData() {
-      const cacheBust = '?v=20261111_3';
+    async function fetchQuestionsForSubject(exam, subject) {
+      const cacheBust = '?v=20261113_1';
       let url = '';
-      if (wizardState.exam === 'cbse') {
-        url = `/data/cbse_${wizardState.subject.toLowerCase()}.json${cacheBust}`;
-      } else if (wizardState.exam === 'neet') {
+      const subKey = subject.toLowerCase().replace(/ /g, '_');
+
+      if (exam === 'cbse') {
+        url = `/data/cbse_${subKey}.json${cacheBust}`;
+      } else if (exam === 'neet') {
         url = `/data/neet_all.json${cacheBust}`;
-      } else if (wizardState.exam === 'jee-adv') {
-        url = `/data/jee_adv_${wizardState.subject.toLowerCase()}.json${cacheBust}`;
-      } else if (wizardState.exam === 'bitsat') {
-        const subKey = wizardState.subject.toLowerCase().replace(/ /g, '_');
+      } else if (exam === 'jee-adv') {
+        url = `/data/jee_adv_${subKey}.json${cacheBust}`;
+      } else if (exam === 'bitsat') {
         url = `/data/bitsat_${subKey}.json${cacheBust}`;
       } else {
-        url = `/data/jee_${wizardState.subject.toLowerCase()}.json${cacheBust}`;
+        // JEE Main
+        url = `/data/jee_${subKey}.json${cacheBust}`;
       }
 
       try {
         if (!datasetCache[url]) {
           const res = await fetch(url);
+          if (!res.ok) throw new Error(`HTTP ${res.status}`);
           datasetCache[url] = await res.json();
         }
-        let data = datasetCache[url];
-        if (wizardState.exam === 'neet') {
-          data = data.filter(q => (q.subject || '').toLowerCase() === wizardState.subject.toLowerCase());
+        let data = datasetCache[url] || [];
+        if (exam === 'neet') {
+          data = data.filter(q => (q.subject || '').toLowerCase() === subject.toLowerCase());
         }
-        loadedQuestionsPool = data;
+        data.forEach(q => {
+          if (!q.subject) q.subject = subject;
+        });
+        return data;
       } catch (e) {
-        console.error('Failed to load dataset:', e);
+        console.error(`Failed to load dataset for ${exam} ${subject}:`, e);
+        return [];
       }
     }
 
@@ -2243,24 +2501,176 @@
       return copy;
     }
 
-    async function sampleQuestionsForTest() {
-      if (loadedQuestionsPool.length === 0) {
-        await loadSubjectData();
+    function matchesChapter(q, selectedList) {
+      if (!selectedList || selectedList.length === 0) return true;
+      const qCh = (q.chapter_name || q.ncert_chapter || '').toLowerCase().trim();
+      if (!qCh) return true;
+      return selectedList.some(sc => {
+        const s = sc.toLowerCase().trim();
+        return qCh.includes(s) || s.includes(qCh);
+      });
+    }
+
+    function getNormalizedOptions(q) {
+      if (!q) return null;
+
+      // 1. Array format
+      if (Array.isArray(q.options) && q.options.length > 0) {
+        const letters = ['A', 'B', 'C', 'D', 'E', 'F'];
+        return q.options.map((opt, i) => ({
+          key: String(i + 1),
+          letter: letters[i] || String(i + 1),
+          label: `(${letters[i] || (i + 1)})`,
+          text: typeof opt === 'string' ? opt : (opt.text || opt.value || '')
+        }));
       }
 
-      // Filter by selected chapters
-      const matched = loadedQuestionsPool.filter(q => {
-        const ch = (q.chapter_name || q.ncert_chapter || '').toLowerCase();
-        return wizardState.selectedChapters.some(sc => ch.includes(sc.toLowerCase()));
+      // 2. Object format
+      if (q.options && typeof q.options === 'object') {
+        // Numeric keys: '1', '2', '3', '4' (e.g. JEE Main)
+        if ('1' in q.options || '2' in q.options) {
+          const numToLetter = { '1': 'A', '2': 'B', '3': 'C', '4': 'D', '5': 'E' };
+          const keys = ['1', '2', '3', '4', '5'].filter(k => k in q.options);
+          return keys.map(k => ({
+            key: k,
+            letter: numToLetter[k] || k,
+            label: `(${numToLetter[k] || k})`,
+            text: String(q.options[k] || '')
+          }));
+        }
+
+        // Letter keys: 'A', 'B', 'C', 'D' (e.g. NEET, BITSAT)
+        const letters = ['A', 'B', 'C', 'D', 'E'];
+        const present = letters.filter(l => l in q.options || l.toLowerCase() in q.options);
+        if (present.length > 0) {
+          return present.map(l => ({
+            key: l,
+            letter: l,
+            label: `(${l})`,
+            text: String(q.options[l] ?? q.options[l.toLowerCase()] ?? '')
+          }));
+        }
+
+        // Generic sorted keys
+        const sortedKeys = Object.keys(q.options).sort();
+        if (sortedKeys.length > 0) {
+          return sortedKeys.map(k => ({
+            key: k,
+            letter: k,
+            label: `(${k})`,
+            text: String(q.options[k] || '')
+          }));
+        }
+      }
+
+      // 3. Fallback: Parse from question text if options formatted as (A)... (B)...
+      if (q.text && q.text.includes('(A)') && q.text.includes('(B)')) {
+        const regex = /\(([A-D])\)\s*([^(\n]+)/g;
+        let match;
+        const parsed = [];
+        while ((match = regex.exec(q.text)) !== null) {
+          parsed.push({
+            key: match[1],
+            letter: match[1],
+            label: `(${match[1]})`,
+            text: match[2].trim()
+          });
+        }
+        if (parsed.length >= 2) {
+          return parsed;
+        }
+      }
+
+      return null;
+    }
+
+    function isNumericalQuestion(q) {
+      if (!q) return false;
+      if (q.type === 'Numerical' || q.type === 'NVQ' || q.question_type === 'numerical') return true;
+      if ((q.section || '').toLowerCase().includes('section b')) return true;
+      if (/nearest integer|rounded off|numerical value|value of .* is _/i.test(q.text || '')) return true;
+      return false;
+    }
+
+    function isValidQuestionForPaper(q, exam) {
+      if (!q || !q.text || q.text.trim().length === 0) return false;
+      const normOptions = getNormalizedOptions(q);
+      if (normOptions && normOptions.length >= 2) return true;
+      if (isNumericalQuestion(q)) return true;
+      if (exam === 'cbse') return true;
+      return false;
+    }
+
+    function normalizeAnswerChoice(val) {
+      if (val === undefined || val === null) return '';
+      const s = String(val).trim().toUpperCase();
+      const numToLetter = { '1': 'A', '2': 'B', '3': 'C', '4': 'D', '5': 'E' };
+      return numToLetter[s] || s;
+    }
+
+    async function sampleQuestionsForTest() {
+      const activeSubjects = getActiveSubjects();
+      
+      // Load datasets for all active subjects in parallel
+      const poolsBySubject = {};
+      await Promise.all(activeSubjects.map(async (subj) => {
+        poolsBySubject[subj] = await fetchQuestionsForSubject(wizardState.exam, subj);
+      }));
+
+      const totalRequested = wizardState.qCount || parseInt(document.getElementById('cfgQCount')?.value, 10) || 75;
+      const numSub = activeSubjects.length;
+      const baseQuota = Math.floor(totalRequested / numSub);
+      let remainder = totalRequested % numSub;
+
+      let allSampled = [];
+      const sampledBySubject = {};
+
+      for (let i = 0; i < activeSubjects.length; i++) {
+        const subj = activeSubjects[i];
+        const quota = baseQuota + (remainder > 0 ? 1 : 0);
+        if (remainder > 0) remainder--;
+
+        const rawPool = poolsBySubject[subj] || [];
+        const validPool = rawPool.filter(q => isValidQuestionForPaper(q, wizardState.exam));
+        const pool = validPool.length > 0 ? validPool : rawPool;
+        const selectedChs = wizardState.selectedChaptersBySubject[subj] || [];
+
+        let matched = pool.filter(q => matchesChapter(q, selectedChs));
+        if (matched.length === 0) matched = pool;
+
+        matched.forEach(q => { if (!q.subject) q.subject = subj; });
+
+        const sampled = (wizardState.shuffle ? shuffleArray(matched) : [...matched]).slice(0, quota);
+        sampledBySubject[subj] = sampled;
+      }
+
+      // Group in standard subject section order: Physics -> Chemistry -> Mathematics
+      activeSubjects.forEach(subj => {
+        allSampled = allSampled.concat(sampledBySubject[subj] || []);
       });
 
-      if (matched.length === 0) {
+      // Backfill if any subject had fewer questions than quota
+      if (allSampled.length < totalRequested) {
+        for (const subj of activeSubjects) {
+          const rawPool = poolsBySubject[subj] || [];
+          const validPool = rawPool.filter(q => isValidQuestionForPaper(q, wizardState.exam));
+          const pool = validPool.length > 0 ? validPool : rawPool;
+          const existingIds = new Set(allSampled.map(q => q.id));
+          const available = pool.filter(q => !existingIds.has(q.id));
+          const needed = totalRequested - allSampled.length;
+          if (needed <= 0) break;
+          const extra = shuffleArray(available).slice(0, needed);
+          extra.forEach(q => { if (!q.subject) q.subject = subj; });
+          allSampled = allSampled.concat(extra);
+        }
+      }
+
+      if (allSampled.length === 0) {
         alert('No questions found in dataset matching your selected chapters.');
         return [];
       }
 
-      let sampled = wizardState.shuffle ? shuffleArray(matched) : [...matched];
-      return sampled.slice(0, wizardState.qCount);
+      return allSampled;
     }
 
     // ---------------------------------------------------------
@@ -2292,19 +2702,56 @@
       const instructions = document.getElementById('outInstructions');
       const container = document.getElementById('outPaperContent');
 
-      subMeta.innerText = `SUBJECT: ${wizardState.subject.toUpperCase()}`;
+      const distinctSubjects = [...new Set(generatedTestPaper.map(q => q.subject || wizardState.subject))];
+      if (distinctSubjects.length > 1) {
+        subMeta.innerText = `SUBJECTS: ${distinctSubjects.map(s => s.toUpperCase()).join(' • ')}`;
+      } else {
+        subMeta.innerText = `SUBJECT: ${(distinctSubjects[0] || wizardState.subject).toUpperCase()}`;
+      }
+
       timeMeta.innerText = `Time Allowed: ${wizardState.duration} Mins`;
 
       if (wizardState.exam === 'cbse') {
         orgTitle.innerText = "CENTRAL BOARD OF SECONDARY EDUCATION";
         examSub.innerText = "SENIOR SCHOOL CERTIFICATE EXAMINATION • OFFICIAL PRACTICE TEST";
-        marksMeta.innerText = `Maximum Marks: ${wizardState.qCount >= 33 ? '70' : wizardState.qCount * 2}`;
+        marksMeta.innerText = `Maximum Marks: ${generatedTestPaper.length >= 33 ? '70' : generatedTestPaper.length * 2}`;
         
         instructions.innerHTML = `
           <strong>General Instructions:</strong><br>
           1. This question paper contains <strong>${generatedTestPaper.length} questions</strong>.<br>
           2. Section A contains 1M questions; Section B contains 2M questions; Section C contains 3M questions; Section D contains 4M case questions; Section E contains 5M long questions.<br>
           3. Use of calculators is strictly prohibited.
+        `;
+      } else if (wizardState.exam === 'jee') {
+        orgTitle.innerText = "NATIONAL TESTING AGENCY (NTA)";
+        examSub.innerText = "JOINT ENTRANCE EXAMINATION (MAIN) • OFFICIAL PRACTICE PAPER";
+        marksMeta.innerText = `Maximum Marks: ${generatedTestPaper.length * 4}`;
+
+        instructions.innerHTML = `
+          <strong>General Instructions:</strong><br>
+          1. This question paper contains <strong>${generatedTestPaper.length} questions</strong> across Physics, Chemistry, and Mathematics.<br>
+          2. <strong>Marking Scheme:</strong> Correct Answer: <strong>+4 Marks</strong>, Incorrect Answer: <strong>-1 Mark</strong>, Unattempted: <strong>0 Marks</strong>.<br>
+          3. For Multiple Choice Questions, select the single best option. For Numerical Value Questions, enter the exact numerical answer in the space provided.
+        `;
+      } else if (wizardState.exam === 'jee-adv') {
+        orgTitle.innerText = "INDIAN INSTITUTES OF TECHNOLOGY (IITs)";
+        examSub.innerText = "JEE (ADVANCED) PRACTICE EXAMINATION";
+        marksMeta.innerText = `Maximum Marks: ${generatedTestPaper.length * 3}`;
+
+        instructions.innerHTML = `
+          <strong>General Instructions:</strong><br>
+          1. This paper contains <strong>${generatedTestPaper.length} questions</strong> with single-correct, multi-correct, and numerical answer sections.<br>
+          2. Marking scheme follows standard IIT-JEE Advanced evaluation regulations.
+        `;
+      } else if (wizardState.exam === 'bitsat') {
+        orgTitle.innerText = "BITS PILANI ADMISSION TEST (BITSAT)";
+        examSub.innerText = "BITSAT COMPUTER BASED SPEED PRACTICE TEST";
+        marksMeta.innerText = `Maximum Marks: ${generatedTestPaper.length * 3}`;
+
+        instructions.innerHTML = `
+          <strong>General Instructions:</strong><br>
+          1. This question paper contains <strong>${generatedTestPaper.length} Multiple Choice Questions</strong>.<br>
+          2. <strong>Marking Scheme:</strong> Correct Answer: <strong>+3 Marks</strong>, Incorrect Answer: <strong>-1 Mark</strong>, Unattempted: <strong>0 Marks</strong>.
         `;
       } else {
         orgTitle.innerText = "NATIONAL TESTING AGENCY (NTA)";
@@ -2327,38 +2774,70 @@
 
       if (window.renderMathInElement) {
         renderMathInElement(document.getElementById('paperSheet'), {
-          delimiters: [{left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}],
+          delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false},
+            {left: '\\(', right: '\\)', display: false},
+            {left: '\\[', right: '\\]', display: true}
+          ],
           throwOnError: false
         });
       }
     }
 
     function renderQuestionPaperOnly(container) {
-      let html = '<div class="paper-section-banner">SECTION — EXAMINATION QUESTIONS</div>';
+      let html = '';
+      let currentSectionSubject = '';
 
       generatedTestPaper.forEach((q, idx) => {
         const qNum = idx + 1;
-        const marks = q.marks || 4;
+        const marks = q.marks || (wizardState.exam === 'cbse' ? 1 : (wizardState.exam === 'bitsat' ? 3 : 4));
+        const subj = q.subject || wizardState.subject;
 
+        if (subj !== currentSectionSubject) {
+          currentSectionSubject = subj;
+          html += `
+            <div class="paper-section-banner">
+              SECTION: ${escapeHtml(subj.toUpperCase())}
+            </div>
+          `;
+        }
+
+        const normOptions = getNormalizedOptions(q);
         let optionsHtml = '';
-        if (q.options) {
+
+        if (normOptions && normOptions.length > 0) {
           optionsHtml = '<div class="neet-paper-options-grid">';
-          ['A', 'B', 'C', 'D'].forEach(opt => {
-            if (q.options[opt]) {
-              optionsHtml += `<div><strong>(${opt})</strong> ${escapeHtml(q.options[opt])}</div>`;
-            }
+          normOptions.forEach(opt => {
+            optionsHtml += `
+              <div class="paper-opt-item">
+                <span class="paper-opt-label"><strong>${opt.label}</strong></span>
+                <span class="paper-opt-text math-content">${escapeHtml(opt.text)}</span>
+              </div>
+            `;
           });
           optionsHtml += '</div>';
+        } else if (isNumericalQuestion(q)) {
+          optionsHtml = `
+            <div class="paper-nvq-box" style="margin-top:10px; padding:6px 14px; border:1px dashed #71717a; border-radius:6px; font-size:12.5px; color:#3f3f46; width:fit-content; background:#fafafa;">
+              ⚡ <strong>Numerical Value Answer:</strong> ____________________
+            </div>
+          `;
+        }
+
+        let displayText = q.text;
+        if (normOptions && (!q.options || Object.keys(q.options).length === 0) && q.text.includes('(A)') && q.text.includes('(B)')) {
+          displayText = q.text.split('(A)')[0].trim();
         }
 
         html += `
           <div class="paper-q-item">
             <span class="paper-q-num">${qNum}.</span>
             <div style="flex:1;">
-              <div class="math-content">${escapeHtml(q.text)}</div>
+              <div class="math-content">${escapeHtml(displayText)}</div>
               ${optionsHtml}
             </div>
-            <span class="paper-q-marks">[${marks}]</span>
+            <span class="paper-q-marks">[${marks}M]</span>
           </div>
         `;
       });
@@ -2369,27 +2848,54 @@
     function renderAnswerKeyOnly(container) {
       let html = '<div class="paper-section-banner">OFFICIAL ANSWER KEY & STEP-BY-STEP MARKING RUBRIC</div>';
 
-      if (wizardState.exam === 'neet') {
-        html += '<div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(130px, 1fr)); gap:10px; margin-bottom:28px;">';
-        generatedTestPaper.forEach((q, idx) => {
-          const qNum = idx + 1;
-          const key = q.correct_answer || 'A';
-          html += `
-            <div style="background:#f4f4f5; padding:8px 12px; border-radius:4px; text-align:center; font-family:var(--font-mono); font-size:13px;">
-              Q${qNum}: <strong>Option (${key})</strong>
-            </div>
-          `;
-        });
-        html += '</div>';
-      } else {
+      // 1. Answer Key Grid
+      html += '<div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(140px, 1fr)); gap:10px; margin-bottom:28px;">';
+      generatedTestPaper.forEach((q, idx) => {
+        const qNum = idx + 1;
+        const rawAns = q.correct_answer || (q.type === 'Numerical' ? 'NVQ' : 'N/A');
+        const numToLetter = { '1': 'A', '2': 'B', '3': 'C', '4': 'D', '5': 'E' };
+        let displayAns = rawAns;
+        if (numToLetter[String(rawAns).trim()]) {
+          displayAns = `Option (${numToLetter[String(rawAns).trim()]})`;
+        } else if (['A', 'B', 'C', 'D', 'E'].includes(String(rawAns).trim().toUpperCase())) {
+          displayAns = `Option (${String(rawAns).trim().toUpperCase()})`;
+        } else if (q.type === 'Numerical' || !q.options || Object.keys(q.options).length === 0) {
+          displayAns = `Ans: ${rawAns}`;
+        }
+
+        const subTag = q.subject ? `<div style="font-size:11px; color:#71717a; font-weight:600;">${escapeHtml(q.subject)}</div>` : '';
+
         html += `
-          <div style="font-size:14px; color:#3f3f46; line-height:1.6; margin-bottom:24px;">
-            <p><strong>CBSE Marking Scheme & Derivation Steps:</strong></p>
-            <ol style="padding-left:20px; line-height:1.7;">
+          <div style="background:#f4f4f5; border:1px solid #e4e4e7; padding:8px 10px; border-radius:6px; text-align:center; font-family:var(--font-mono); font-size:13px;">
+            <div style="font-weight:700; color:#18181b;">Q${qNum}</div>
+            <div style="color:#2563eb; font-weight:800; margin:3px 0;">${escapeHtml(displayAns)}</div>
+            ${subTag}
+          </div>
+        `;
+      });
+      html += '</div>';
+
+      // 2. Marking Rubric Details
+      if (wizardState.exam === 'cbse') {
+        html += `
+          <div style="font-size:14px; color:#3f3f46; line-height:1.6; margin-bottom:24px; padding:16px; background:#fafafa; border:1px solid #e5e7eb; border-radius:8px;">
+            <p style="margin:0 0 8px 0; font-weight:800; color:#18181b;">CBSE Marking Scheme & Derivation Guidelines:</p>
+            <ol style="padding-left:20px; margin:0; line-height:1.7;">
               <li><strong>Formula & Definition:</strong> Correct formula representation receives full 1/2 or 1 mark.</li>
               <li><strong>Step Substitution:</strong> Intermediate calculation substitutions without skipped algebraic steps receive partial marks.</li>
               <li><strong>Final Answer & SI Units:</strong> Numerical answers without correct SI units are subject to 1/2 mark deduction according to official board regulations.</li>
             </ol>
+          </div>
+        `;
+      } else {
+        html += `
+          <div style="font-size:14px; color:#3f3f46; line-height:1.6; margin-bottom:24px; padding:16px; background:#fafafa; border:1px solid #e5e7eb; border-radius:8px;">
+            <p style="margin:0 0 8px 0; font-weight:800; color:#18181b;">Official Scoring Rubric:</p>
+            <ul style="padding-left:20px; margin:0; line-height:1.7;">
+              <li><strong>Correct Option / Value:</strong> +4 Marks (BITSAT: +3 Marks)</li>
+              <li><strong>Incorrect Option (Negative Marking):</strong> -1 Mark</li>
+              <li><strong>Unattempted:</strong> 0 Marks</li>
+            </ul>
           </div>
         `;
       }
@@ -2424,7 +2930,10 @@
       mockSession.layout = wizardState.layout;
       mockSession.startTime = Date.now();
 
-      document.getElementById('mockExamName').innerText = `${mockSession.exam.toUpperCase()} Mock Exam — ${mockSession.subject}`;
+      const distinctSubs = [...new Set(questions.map(q => q.subject || wizardState.subject))];
+      const subTitleText = distinctSubs.length > 1 ? `Multi-Subject (${distinctSubs.join(' • ')})` : (distinctSubs[0] || mockSession.subject);
+
+      document.getElementById('mockExamName').innerText = `${mockSession.exam.toUpperCase()} Mock Exam — ${subTitleText}`;
       document.getElementById('mockSubjectSubtitle').innerText = `${questions.length} Questions • ${durationSec / 60} Minutes`;
       document.getElementById('mockExamIcon').innerText = mockSession.exam === 'jee' ? '⚡' : (mockSession.exam === 'neet' ? '🩺' : '🎯');
 
@@ -2484,36 +2993,30 @@
 
       mockSession.visited[mockSession.currentIndex] = true;
 
-      // Update badge
-      document.getElementById('cbtQBadge').innerText = `Question ${mockSession.currentIndex + 1} of ${mockSession.questions.length}`;
+      // Update badge with Subject
+      const qSub = q.subject || mockSession.subject || '';
+      document.getElementById('cbtQBadge').innerText = `Question ${mockSession.currentIndex + 1} of ${mockSession.questions.length}${qSub ? ' • ' + qSub : ''}`;
       document.getElementById('cbtQMarking').innerText = (mockSession.exam === 'neet' || mockSession.exam === 'jee') ? '+4 / -1 Mark' : `[${q.marks || 1} Mark]`;
 
       // Update text
       document.getElementById('cbtQText').innerHTML = escapeHtml(q.text);
 
-      // Render options
+      // Render options using universal normalizer
       const optContainer = document.getElementById('cbtOptionsGroup');
-      let options = q.options;
+      const normOptions = getNormalizedOptions(q);
 
-      // If CBSE without explicit options object, parse (A) (B) (C) (D)
-      if (!options && q.text.includes('(A)') && q.text.includes('(B)')) {
-        options = { 'A': 'Option A', 'B': 'Option B', 'C': 'Option C', 'D': 'Option D' };
-      }
-
-      if (options) {
-        const optKeys = options['1'] ? ['1', '2', '3', '4'] : ['A', 'B', 'C', 'D'];
-        optContainer.innerHTML = optKeys.map(opt => {
-          const val = options[opt];
-          if (!val) return '';
-          const isSelected = String(mockSession.userAnswers[mockSession.currentIndex]) === String(opt);
+      if (normOptions && normOptions.length > 0) {
+        optContainer.innerHTML = normOptions.map(opt => {
+          const userAns = String(mockSession.userAnswers[mockSession.currentIndex] || '');
+          const isSelected = (userAns === String(opt.letter) || userAns === String(opt.key) || userAns === `(${opt.letter})`);
           return `
-            <div class="mock-option-row ${isSelected ? 'selected' : ''}" onclick="cbtSelectOption('${opt}')">
-              <div class="mock-option-letter">${opt}</div>
-              <div style="flex:1;" class="math-content">${escapeHtml(val)}</div>
+            <div class="mock-option-row ${isSelected ? 'selected' : ''}" onclick="cbtSelectOption('${opt.letter}')">
+              <div class="mock-option-letter">${opt.letter}</div>
+              <div style="flex:1;" class="math-content">${escapeHtml(opt.text)}</div>
             </div>
           `;
         }).join('');
-      } else if (q.type === 'Numerical') {
+      } else if (isNumericalQuestion(q)) {
         const val = mockSession.userAnswers[mockSession.currentIndex] || '';
         optContainer.innerHTML = `
           <div style="background:var(--surface-alt); padding:16px; border-radius:var(--radius-md); font-size:14px; margin-top:8px;">
@@ -2587,7 +3090,7 @@
 
       grid.innerHTML = mockSession.questions.map((q, idx) => {
         const isCurrent = idx === mockSession.currentIndex;
-        const isAnswered = mockSession.userAnswers[idx] !== undefined;
+        const isAnswered = mockSession.userAnswers[idx] !== undefined && mockSession.userAnswers[idx] !== '';
         const isReview = !!mockSession.reviewFlags[idx];
         const isVisited = !!mockSession.visited[idx];
 
@@ -2649,24 +3152,35 @@
       const container = document.getElementById('mockScrollContainer');
       container.innerHTML = mockSession.questions.map((q, idx) => {
         const selected = mockSession.userAnswers[idx];
+        const normOptions = getNormalizedOptions(q);
         let optionsHtml = '';
-        if (q.options) {
+
+        if (normOptions && normOptions.length > 0) {
           optionsHtml = '<div style="display:flex; flex-direction:column; gap:8px; margin-top:12px;">';
-          ['A', 'B', 'C', 'D'].forEach(opt => {
+          normOptions.forEach(opt => {
+            const isChecked = (selected === opt.letter || selected === opt.key);
             optionsHtml += `
               <label style="display:flex; align-items:center; gap:8px; font-size:13.5px; cursor:pointer;">
-                <input type="radio" name="scroll_opt_${idx}" value="${opt}" ${selected === opt ? 'checked' : ''} onchange="mockSession.userAnswers[${idx}] = '${opt}'; saveOngoingSessionToStorage();">
-                <span><strong>(${opt})</strong> ${escapeHtml(q.options[opt])}</span>
+                <input type="radio" name="scroll_opt_${idx}" value="${opt.letter}" ${isChecked ? 'checked' : ''} onchange="mockSession.userAnswers[${idx}] = '${opt.letter}'; saveOngoingSessionToStorage();">
+                <span><strong>(${opt.letter})</strong> <span class="math-content">${escapeHtml(opt.text)}</span></span>
               </label>
             `;
           });
           optionsHtml += '</div>';
+        } else if (isNumericalQuestion(q)) {
+          optionsHtml = `
+            <div style="margin-top:10px;">
+              <input type="text" value="${escapeHtml(selected || '')}" placeholder="Type numerical answer..." style="padding:8px 12px; font-size:13.5px; border:1px solid var(--border); border-radius:6px; background:var(--surface); color:var(--text);" oninput="mockSession.userAnswers[${idx}] = this.value; saveOngoingSessionToStorage();">
+            </div>
+          `;
         }
+
+        const subj = q.subject || mockSession.subject || '';
 
         return `
           <div class="mock-question-card" style="margin-bottom:20px;">
             <div class="mock-q-meta-bar">
-              <span class="mock-q-badge">Question ${idx + 1}</span>
+              <span class="mock-q-badge">Question ${idx + 1}${subj ? ' • ' + subj : ''}</span>
               <span class="mock-q-marking">${mockSession.exam === 'neet' ? '+4 / -1' : `[${q.marks || 1}M]`}</span>
             </div>
             <div class="math-content">${escapeHtml(q.text)}</div>
@@ -2719,7 +3233,10 @@
         timerInterval: null
       };
 
-      document.getElementById('mockExamName').innerText = `${mockSession.exam.toUpperCase()} Mock Exam — ${mockSession.subject}`;
+      const distinctSubs = [...new Set(mockSession.questions.map(q => q.subject || mockSession.subject))];
+      const subTitleText = distinctSubs.length > 1 ? `Multi-Subject (${distinctSubs.join(' • ')})` : (distinctSubs[0] || mockSession.subject);
+
+      document.getElementById('mockExamName').innerText = `${mockSession.exam.toUpperCase()} Mock Exam — ${subTitleText}`;
       document.getElementById('mockSubjectSubtitle').innerText = `${mockSession.questions.length} Questions • ${Math.ceil(mockSession.remainingSec / 60)} Mins Remaining`;
       document.getElementById('mockExamModal').classList.add('active');
       document.body.style.overflow = 'hidden';
@@ -2736,7 +3253,7 @@
     }
 
     function confirmSubmitExam() {
-      const answeredCount = Object.keys(mockSession.userAnswers).length;
+      const answeredCount = Object.keys(mockSession.userAnswers).filter(k => mockSession.userAnswers[k] !== '').length;
       const total = mockSession.questions.length;
 
       const confirmed = confirm(`Are you sure you want to end your examination?\n\n• Answered: ${answeredCount} / ${total}\n• Unattempted: ${total - answeredCount}\n• Time Remaining: ${Math.floor(mockSession.remainingSec / 60)} minutes\n\nClick OK to submit and view your Diagnostic Report Card.`);
@@ -2777,11 +3294,14 @@
         let status = 'unattempted';
         let earned = 0;
 
+        const normUser = normalizeAnswerChoice(userChoice);
+        const normCorrect = normalizeAnswerChoice(correctChoice);
+
         if (userChoice === undefined || userChoice === '') {
           skipped++;
           status = 'unattempted';
           earned = 0;
-        } else if (String(userChoice).trim().toLowerCase() === String(correctChoice).trim().toLowerCase()) {
+        } else if (normUser !== '' && (normUser === normCorrect || String(userChoice).trim().toLowerCase() === String(correctChoice).trim().toLowerCase())) {
           correct++;
           status = 'correct';
           if (mockSession.exam === 'jee-adv') {
@@ -2813,8 +3333,8 @@
           <tr>
             <td><strong>Q${idx + 1}</strong></td>
             <td>${escapeHtml(chName)}</td>
-            <td>${userChoice ? `<strong>(${userChoice})</strong>` : '—'}</td>
-            <td><strong>(${correctChoice})</strong></td>
+            <td>${userChoice ? `<strong>(${normUser || userChoice})</strong>` : '—'}</td>
+            <td><strong>(${normCorrect || correctChoice})</strong></td>
             <td><span class="status-badge status-${status}">${status.toUpperCase()}</span></td>
             <td>${earned > 0 ? '+' + earned : earned}</td>
           </tr>
@@ -2826,9 +3346,12 @@
       const timeSpentSec = mockSession.durationSec - mockSession.remainingSec;
       const timeSpentStr = `${Math.floor(timeSpentSec / 60)}m ${timeSpentSec % 60}s`;
 
+      const distinctSubs = [...new Set(mockSession.questions.map(q => q.subject || mockSession.subject))];
+      const subTitleText = distinctSubs.length > 1 ? `Multi-Subject (${distinctSubs.join(', ')})` : (distinctSubs[0] || mockSession.subject);
+
       // Update Report Card UI
       document.getElementById('reportScoreHero').innerHTML = `${totalMarks} <span>/ ${maxMarks} Marks</span>`;
-      document.getElementById('reportSubtitle').innerText = `Subject: ${mockSession.subject} • Accuracy: ${accuracy}% • Time Spent: ${timeSpentStr}`;
+      document.getElementById('reportSubtitle').innerText = `Subject(s): ${subTitleText} • Accuracy: ${accuracy}% • Time Spent: ${timeSpentStr}`;
       document.getElementById('reportStatCorrect').innerText = correct;
       document.getElementById('reportStatIncorrect').innerText = incorrect;
       document.getElementById('reportStatSkipped').innerText = skipped;
@@ -2838,7 +3361,7 @@
       // Log to localStorage history for /saved/ dashboard
       saveMockResultToHistory({
         exam: mockSession.exam,
-        subject: mockSession.subject,
+        subject: subTitleText,
         score: totalMarks,
         maxScore: maxMarks,
         accuracy: accuracy,
