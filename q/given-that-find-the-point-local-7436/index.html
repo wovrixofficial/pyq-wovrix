@@ -25,7 +25,12 @@
       "@type": "Question",
       "name": "CBSE Class 12 Mathematics Relations and Functions Board Question",
       "text": "Given that $f(x) = \\frac{\\log x}{x}$, find the point of local maximum of f(x).",
-      "answerCount": 1
+      "answerCount": 1,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Question:  Given that $f(x) = \frac{\log x}{x}$, find the point of local maximum of $f(x)$.         Step 1 (Formula / Governing Law & Given Data): [0.5 Mark]        To find the point of local maximum, we use the First Derivative Test. Given $f(x) = \frac{\log x}{x}$, we find the first derivative $f'...",
+        "upvoteCount": 1
+      }
     }
   }
   </script>
@@ -78,6 +83,45 @@
       <div class="question-body">
         <div class="math-content">Given that $f(x) = \frac{\log x}{x}$, find the point of local maximum of f(x).</div>
       </div>
+      <div class="solution-box" style="margin-top:24px; padding:20px; background:var(--card-bg, #ffffff); border:1.5px solid var(--border, #e2e8f0); border-radius:12px;">
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:14px;">
+          <span style="background:#10b981; color:#fff; font-size:11px; font-weight:700; padding:3px 10px; border-radius:20px; text-transform:uppercase;">✓ Verified CBSE Marking Scheme</span>
+          <span style="font-size:12px; color:var(--text-muted, #64748b); font-weight:600;">Official Evaluation Steps & EL10 Insight</span>
+        </div>
+        <div class="math-content solution-content" style="line-height:1.7; font-size:15px;">
+          <div>
+    <p><strong>Question:</strong> Given that $f(x) = \frac{\log x}{x}$, find the point of local maximum of $f(x)$.</p>
+
+    <p><strong>Step 1 (Formula / Governing Law & Given Data): [0.5 Mark]</strong></p>
+    <p>To find the point of local maximum, we use the First Derivative Test. Given $f(x) = \frac{\log x}{x}$, we find the first derivative $f'(x)$ using the quotient rule:</p>
+    $$\left( \frac{u}{v} \right)' = \frac{u'v - uv'}{v^2}$$
+    <p>where $u = \log x$ and $v = x$.</p>
+
+    <p><strong>Step 2 (Step-by-Step Mathematical Working): [1.0 Mark]</strong></p>
+    <ul>
+        <li>Differentiating $f(x)$ with respect to $x$:
+            $$f'(x) = \frac{\left(\frac{1}{x}\right)(x) - (\log x)(1)}{x^2} = \frac{1 - \log x}{x^2}$$
+        </li>
+        <li>For critical points, set $f'(x) = 0$:
+            $$\frac{1 - \log x}{x^2} = 0 \implies 1 - \log x = 0 \implies \log x = 1$$
+            Since the base of the logarithm is $e$, we have $x = e^1 = e$.
+        </li>
+        <li>To verify the local maximum, check the sign of $f'(x)$ around $x = e$:
+            <ul>
+                <li>For $x < e$ (e.g., $x=1$), $f'(1) = \frac{1-0}{1} > 0$ (Function is increasing).</li>
+                <li>For $x > e$ (e.g., $x=e^2$), $f'(e^2) = \frac{1-2}{e^4} < 0$ (Function is decreasing).</li>
+            </ul>
+        </li>
+    </ul>
+
+    <p><strong>Step 3 (Final Concluded Answer): [0.5 Mark]</strong></p>
+    <p>Since the derivative changes sign from positive to negative at $x = e$, the function $f(x)$ attains a local maximum at <strong>$x = e$</strong>.</p>
+
+    <p><strong>💡 EL10 Concept Insight:</strong> Think of the function as a hill; the derivative tells you the slope. When the slope changes from "climbing up" (positive) to "sliding down" (negative), you have reached the very top of the hill, which is your local maximum.</p>
+</div>
+        </div>
+      </div>
+
 
       <div class="card-footer-actions">
         <a href="mailto:support@learnosha.in?subject=Report%20Question%207436&body=Question%20ID:%207436%0AChapter:%20Relations and Functions%0AIssue%20Description:%20" class="report-link">

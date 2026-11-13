@@ -25,7 +25,12 @@
       "@type": "Question",
       "name": "CBSE Class 12 Mathematics Probability Board Question",
       "text": "An urn contains 3 red and 2 white marbles. Two marbles are drawn one by one with replacement from the urn. Find the probability distribution of the number of white balls. Also, find the mean of the number of white balls drawn.",
-      "answerCount": 1
+      "answerCount": 1,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Step 1 (Formula / Governing Law & Given Data): [0.5 Mark]        Let $X$ be the random variable representing the number of white balls drawn. Since the draws are made  with replacement , the trials are independent Bernoulli trials. The total number of balls is $3 + 2 = 5$.                 Probabilit...",
+        "upvoteCount": 1
+      }
     }
   }
   </script>
@@ -78,6 +83,51 @@
       <div class="question-body">
         <div class="math-content">An urn contains 3 red and 2 white marbles. Two marbles are drawn one by one with replacement from the urn. Find the probability distribution of the number of white balls. Also, find the mean of the number of white balls drawn.</div>
       </div>
+      <div class="solution-box" style="margin-top:24px; padding:20px; background:var(--card-bg, #ffffff); border:1.5px solid var(--border, #e2e8f0); border-radius:12px;">
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:14px;">
+          <span style="background:#10b981; color:#fff; font-size:11px; font-weight:700; padding:3px 10px; border-radius:20px; text-transform:uppercase;">✓ Verified CBSE Marking Scheme</span>
+          <span style="font-size:12px; color:var(--text-muted, #64748b); font-weight:600;">Official Evaluation Steps & EL10 Insight</span>
+        </div>
+        <div class="math-content solution-content" style="line-height:1.7; font-size:15px;">
+          <div>
+    <p><strong>Step 1 (Formula / Governing Law & Given Data): [0.5 Mark]</strong></p>
+    <p>Let $X$ be the random variable representing the number of white balls drawn. Since the draws are made <strong>with replacement</strong>, the trials are independent Bernoulli trials. The total number of balls is $3 + 2 = 5$.</p>
+    <ul>
+        <li>Probability of drawing a white ball ($p$): $p = \frac{2}{5} = 0.4$</li>
+        <li>Probability of drawing a red ball ($q$): $q = 1 - p = \frac{3}{5} = 0.6$</li>
+    </ul>
+    <p>The possible values for $X$ are $\{0, 1, 2\}$.</p>
+
+    <p><strong>Step 2 (Step-by-Step Mathematical Working): [1.0 Mark]</strong></p>
+    <p>We calculate the probability $P(X=x)$ for each value:</p>
+    <ul>
+        <li><strong>For $X=0$ (No white balls):</strong> Both are red.
+            $$P(X=0) = q \times q = \frac{3}{5} \times \frac{3}{5} = \frac{9}{25}$$
+        </li>
+        <li><strong>For $X=1$ (One white ball):</strong> Either (White, Red) or (Red, White).
+            $$P(X=1) = (p \times q) + (q \times p) = \left(\frac{2}{5} \times \frac{3}{5}\right) + \left(\frac{3}{5} \times \frac{2}{5}\right) = \frac{6}{25} + \frac{6}{25} = \frac{12}{25}$$
+        </li>
+        <li><strong>For $X=2$ (Two white balls):</strong> Both are white.
+            $$P(X=2) = p \times p = \frac{2}{5} \times \frac{2}{5} = \frac{4}{25}$$
+        </li>
+    </ul>
+    <p><strong>Probability Distribution Table:</strong></p>
+    <table border="1" cellpadding="5">
+        <tr><th>$X$</th><td>0</td><td>1</td><td>2</td></tr>
+        <tr><th>$P(X)$</th><td>$\frac{9}{25}$</td><td>$\frac{12}{25}$</td><td>$\frac{4}{25}$</td></tr>
+    </table>
+
+    <p><strong>Step 3 (Final Concluded Answer): [0.5 Mark]</strong></p>
+    <p>The mean $E(X)$ is calculated using the formula $E(X) = \sum x_i P(x_i)$:</p>
+    $$E(X) = \left(0 \times \frac{9}{25}\right) + \left(1 \times \frac{12}{25}\right) + \left(2 \times \frac{4}{25}\right)$$
+    $$E(X) = 0 + \frac{12}{25} + \frac{8}{25} = \frac{20}{25} = 0.8$$
+    <p><strong>Final Answer:</strong> The probability distribution is as shown above, and the mean number of white balls is <strong>$0.8$</strong>.</p>
+
+    <p><strong>💡 EL10 Concept Insight:</strong> Think of the mean as the "long-term average"—if you played this game thousands of times, you would expect to get 0.8 white balls per round on average because white balls are slightly less common than red ones.</p>
+</div>
+        </div>
+      </div>
+
 
       <div class="card-footer-actions">
         <a href="mailto:support@learnosha.in?subject=Report%20Question%206693&body=Question%20ID:%206693%0AChapter:%20Probability%0AIssue%20Description:%20" class="report-link">

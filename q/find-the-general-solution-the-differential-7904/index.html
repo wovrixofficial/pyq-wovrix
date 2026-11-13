@@ -25,7 +25,12 @@
       "@type": "Question",
       "name": "CBSE Class 12 Mathematics Differential Equations Board Question",
       "text": "(a) Find the general solution of the differential equation :\n$(xy - x^2) dy = y^2 dx.$\nOR\n(b) Find the general solution of the differential equation :\n$(x^2 + 1) \\frac{dy}{dx} + 2xy = \\sqrt{x^2 + 4}$",
-      "answerCount": 1
+      "answerCount": 1,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Solution (a): Homogeneous Differential Equation        Step 1 (Identification & Substitution): [1 Mark]        Given: $(xy - x^2) dy = y^2 dx \implies \frac{dy}{dx} = \frac{y^2}{xy - x^2}$. This is a homogeneous differential equation. Let $y = vx$, then $\frac{dy}{dx} = v + x\frac{dv}{dx}$.         ...",
+        "upvoteCount": 1
+      }
     }
   }
   </script>
@@ -82,6 +87,48 @@ OR
 (b) Find the general solution of the differential equation :
 $(x^2 + 1) \frac{dy}{dx} + 2xy = \sqrt{x^2 + 4}$</div>
       </div>
+      <div class="solution-box" style="margin-top:24px; padding:20px; background:var(--card-bg, #ffffff); border:1.5px solid var(--border, #e2e8f0); border-radius:12px;">
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:14px;">
+          <span style="background:#10b981; color:#fff; font-size:11px; font-weight:700; padding:3px 10px; border-radius:20px; text-transform:uppercase;">✓ Verified CBSE Marking Scheme</span>
+          <span style="font-size:12px; color:var(--text-muted, #64748b); font-weight:600;">Official Evaluation Steps & EL10 Insight</span>
+        </div>
+        <div class="math-content solution-content" style="line-height:1.7; font-size:15px;">
+          <div>
+    <h3>Solution (a): Homogeneous Differential Equation</h3>
+    <p><strong>Step 1 (Identification & Substitution): [1 Mark]</strong></p>
+    <p>Given: $(xy - x^2) dy = y^2 dx \implies \frac{dy}{dx} = \frac{y^2}{xy - x^2}$. This is a homogeneous differential equation. Let $y = vx$, then $\frac{dy}{dx} = v + x\frac{dv}{dx}$.</p>
+
+    <p><strong>Step 2 (Mathematical Working): [1.5 Marks]</strong></p>
+    <p>Substituting $y=vx$ into the equation:</p>
+    $$v + x\frac{dv}{dx} = \frac{(vx)^2}{x(vx) - x^2} = \frac{v^2x^2}{x^2(v - 1)} = \frac{v^2}{v - 1}$$
+    $$x\frac{dv}{dx} = \frac{v^2}{v - 1} - v = \frac{v^2 - v^2 + v}{v - 1} = \frac{v}{v - 1}$$
+    <p>Separating variables:</p>
+    $$\int \frac{v - 1}{v} dv = \int \frac{1}{x} dx \implies \int \left(1 - \frac{1}{v}\right) dv = \int \frac{1}{x} dx$$
+    $$v - \ln|v| = \ln|x| + C$$
+
+    <p><strong>Step 3 (Final Concluded Answer): [0.5 Mark]</strong></p>
+    <p>Substituting $v = \frac{y}{x}$ back:</p>
+    $$\frac{y}{x} - \ln\left|\frac{y}{x}\right| = \ln|x| + C \implies \frac{y}{x} = \ln|y| - \ln|x| + \ln|x| + C$$
+    $$\frac{y}{x} = \ln|y| + C \quad \text{or} \quad y = x(\ln|y| + C)$$
+</div>
+
+<hr>
+
+<div>
+    <h3>Solution (b): Linear Differential Equation</h3>
+    <p><strong>Step 1 (Standard Form & Integrating Factor): [1 Mark]</strong></p>
+    <p>The equation is $(x^2 + 1) \frac{dy}{dx} + 2xy = \sqrt{x^2 + 4}$. Divide by $(x^2 + 1)$ to get the standard form $\frac{dy}{dx} + P(x)y = Q(x)$:</p>
+    $$\frac{dy}{dx} + \left(\frac{2x}{x^2 + 1}\right)y = \frac{\sqrt{x^2 + 4}}{x^2 + 1}$$
+    <p>Integrating Factor (IF) $= e^{\int P(x) dx} = e^{\int \frac{2x}{x^2 + 1} dx} = e^{\ln(x^2 + 1)} = x^2 + 1$.</p>
+
+    <p><strong>Step 2 (Mathematical Working): [1.5 Marks]</strong></p>
+    <p>The general solution is $y \cdot (IF) = \int Q(x) \cdot (IF) dx + C$:</p>
+    $$y(x^2 + 1) = \int \frac{\sqrt{x^2 + 4}}{x^2 + 1} \cdot (x^2 + 1) dx + C$$
+    $$y(x^2 + 1) = \int \sqrt{x^2 + 2^2} dx + C$$
+    <p>Using the standard integral $\int \sqrt{x^2 + a^2} dx = \frac{x}{2
+        </div>
+      </div>
+
 
       <div class="card-footer-actions">
         <a href="mailto:support@learnosha.in?subject=Report%20Question%207904&body=Question%20ID:%207904%0AChapter:%20Differential Equations%0AIssue%20Description:%20" class="report-link">

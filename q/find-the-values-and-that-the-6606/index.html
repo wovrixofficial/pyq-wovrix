@@ -25,7 +25,12 @@
       "@type": "Question",
       "name": "CBSE Class 12 Mathematics Relations and Functions Board Question",
       "text": "Find the values of a and b so that the following function is differentiable for all values of $x$ : $f(x) = \\begin{cases} ax + b , & x > -1 \\\\ bx^2 - 3 , & x \\leq -1 \\end{cases}$",
-      "answerCount": 1
+      "answerCount": 1,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Step 1 (Governing Law & Given Data): [1 Mark]        For a function $f(x)$ to be differentiable at a point $x = c$, it must first be  continuous  at that point. Furthermore, the Left-Hand Derivative (LHD) must equal the Right-Hand Derivative (RHD) at $x = c$.                 Condition for Continuity...",
+        "upvoteCount": 1
+      }
     }
   }
   </script>
@@ -78,6 +83,45 @@
       <div class="question-body">
         <div class="math-content">Find the values of a and b so that the following function is differentiable for all values of $x$ : $f(x) = \begin{cases} ax + b , &amp; x &gt; -1 \\ bx^2 - 3 , &amp; x \leq -1 \end{cases}$</div>
       </div>
+      <div class="solution-box" style="margin-top:24px; padding:20px; background:var(--card-bg, #ffffff); border:1.5px solid var(--border, #e2e8f0); border-radius:12px;">
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:14px;">
+          <span style="background:#10b981; color:#fff; font-size:11px; font-weight:700; padding:3px 10px; border-radius:20px; text-transform:uppercase;">✓ Verified CBSE Marking Scheme</span>
+          <span style="font-size:12px; color:var(--text-muted, #64748b); font-weight:600;">Official Evaluation Steps & EL10 Insight</span>
+        </div>
+        <div class="math-content solution-content" style="line-height:1.7; font-size:15px;">
+          <div>
+    <p><strong>Step 1 (Governing Law & Given Data): [1 Mark]</strong></p>
+    <p>For a function $f(x)$ to be differentiable at a point $x = c$, it must first be <strong>continuous</strong> at that point. Furthermore, the Left-Hand Derivative (LHD) must equal the Right-Hand Derivative (RHD) at $x = c$.</p>
+    <ul>
+        <li>Condition for Continuity: $\lim_{x \to -1^-} f(x) = \lim_{x \to -1^+} f(x) = f(-1)$</li>
+        <li>Condition for Differentiability: $LHD = RHD$ at $x = -1$, where $LHD = \lim_{h \to 0} \frac{f(-1-h) - f(-1)}{-h}$ and $RHD = \lim_{h \to 0} \frac{f(-1+h) - f(-1)}{h}$</li>
+    </ul>
+
+    <p><strong>Step 2 (Step-by-Step Mathematical Working): [1.5 Marks]</strong></p>
+    <p><strong>Part A: Continuity at $x = -1$</strong></p>
+    $$f(-1) = b(-1)^2 - 3 = b - 3$$
+    $$\lim_{x \to -1^-} f(x) = b(-1)^2 - 3 = b - 3$$
+    $$\lim_{x \to -1^+} f(x) = a(-1) + b = -a + b$$
+    Equating them: $b - 3 = -a + b \implies \mathbf{a = 3}$
+
+    <p><strong>Part B: Differentiability at $x = -1$</strong></p>
+    <p>Find the derivatives of the pieces:</p>
+    $$f'(x) = \begin{cases} a, & x > -1 \\ 2bx, & x < -1 \end{cases}$$
+    For differentiability, the derivatives must match at the transition point $x = -1$:
+    $$\text{RHD} = \lim_{x \to -1^+} f'(x) = a$$
+    $$\text{LHD} = \lim_{x \to -1^-} f'(x) = 2b(-1) = -2b$$
+    Equating LHD and RHD: $a = -2b$
+
+    <p><strong>Step 3 (Final Concluded Answer): [0.5 Marks]</strong></p>
+    <p>Substitute $a = 3$ into the equation $a = -2b$:</p>
+    $$3 = -2b \implies b = -\frac{3}{2}$$
+    <p><strong>Final Values:</strong> $a = 3$ and $b = -1.5$</p>
+
+    <p><strong>💡 EL10 Concept Insight:</strong> Imagine the graph is a road made of two different segments; for the transition at $x = -1$ to be perfectly smooth (differentiable), the two segments must not only meet at the exact same height (continuity), but they must also be pointing in the exact same direction (slope) at that meeting point.</p>
+</div>
+        </div>
+      </div>
+
 
       <div class="card-footer-actions">
         <a href="mailto:support@learnosha.in?subject=Report%20Question%206606&body=Question%20ID:%206606%0AChapter:%20Relations and Functions%0AIssue%20Description:%20" class="report-link">

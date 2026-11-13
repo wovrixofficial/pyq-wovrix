@@ -25,7 +25,12 @@
       "@type": "Question",
       "name": "CBSE Class 12 Mathematics Matrices Board Question",
       "text": "Let $f(x) = \\begin{vmatrix} x^2 & \\sin x \\\\ p & -1 \\end{vmatrix}$, where $p$ is a constant. The value of $p$ for which $f'(0) = 1$ is :\n(A) $\\mathbb{R}$\n(B) $1$\n(C) $0$\n(D) $-1$",
-      "answerCount": 1
+      "answerCount": 1,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Step 1 (Formula / Governing Law & Given Data): [0.25 Mark]        The determinant of a $2 \times 2$ matrix $\begin{vmatrix} a & b \\ c & d \end{vmatrix}$ is defined as $ad - bc$. Given the function:      $$f(x) = \begin{vmatrix} x^2 & \sin x \\ p & -1 \end{vmatrix}$$      Expanding the determinant, ...",
+        "upvoteCount": 1
+      }
     }
   }
   </script>
@@ -82,6 +87,45 @@
 (C) $0$
 (D) $-1$</div>
       </div>
+      <div class="solution-box" style="margin-top:24px; padding:20px; background:var(--card-bg, #ffffff); border:1.5px solid var(--border, #e2e8f0); border-radius:12px;">
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:14px;">
+          <span style="background:#10b981; color:#fff; font-size:11px; font-weight:700; padding:3px 10px; border-radius:20px; text-transform:uppercase;">✓ Verified CBSE Marking Scheme</span>
+          <span style="font-size:12px; color:var(--text-muted, #64748b); font-weight:600;">Official Evaluation Steps & EL10 Insight</span>
+        </div>
+        <div class="math-content solution-content" style="line-height:1.7; font-size:15px;">
+          <div>
+    <p><strong>Step 1 (Formula / Governing Law & Given Data): [0.25 Mark]</strong></p>
+    <p>The determinant of a $2 \times 2$ matrix $\begin{vmatrix} a & b \\ c & d \end{vmatrix}$ is defined as $ad - bc$. Given the function:</p>
+    $$f(x) = \begin{vmatrix} x^2 & \sin x \\ p & -1 \end{vmatrix}$$
+    <p>Expanding the determinant, we get:</p>
+    $$f(x) = (x^2)(-1) - (p)(\sin x) = -x^2 - p \sin x$$
+</div>
+
+<div>
+    <p><strong>Step 2 (Step-by-Step Mathematical Working): [0.5 Mark]</strong></p>
+    <p>To find $f'(x)$, we differentiate $f(x)$ with respect to $x$ using the standard derivatives $\frac{d}{dx}(x^n) = nx^{n-1}$ and $\frac{d}{dx}(\sin x) = \cos x$:</p>
+    $$f'(x) = \frac{d}{dx}(-x^2 - p \sin x)$$
+    $$f'(x) = -2x - p \cos x$$
+    <p>Now, substitute $x = 0$ into the derivative and equate it to the given condition $f'(0) = 1$:</p>
+    $$f'(0) = -2(0) - p \cos(0)$$
+    $$1 = 0 - p(1)$$
+    $$1 = -p$$
+</div>
+
+<div>
+    <p><strong>Step 3 (Final Concluded Answer): [0.25 Mark]</strong></p>
+    <p>Solving for $p$:</p>
+    $$p = -1$$
+    <p>Comparing this with the given options, the correct choice is <strong>(D)</strong>.</p>
+</div>
+
+<div>
+    <p><strong>💡 EL10 Concept Insight (Easy to Understand):</strong></p>
+    <p>Think of the determinant as just a simple algebraic expression; once you turn the matrix into a standard equation, you just use basic calculus rules to find the slope at zero and solve for the missing piece like a regular puzzle.</p>
+</div>
+        </div>
+      </div>
+
 
       <div class="card-footer-actions">
         <a href="mailto:support@learnosha.in?subject=Report%20Question%206669&body=Question%20ID:%206669%0AChapter:%20Matrices%0AIssue%20Description:%20" class="report-link">

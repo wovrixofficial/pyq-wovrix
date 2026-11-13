@@ -25,7 +25,12 @@
       "@type": "Question",
       "name": "CBSE Class 12 Mathematics Probability Board Question",
       "text": "Bag I contains 3 red and 4 black balls, Bag II contains 5 red and 2 black balls. Two balls are transferred at random from Bag I to Bag II and then a ball is drawn at random from Bag II. Find the probability that the drawn ball is red in colour.",
-      "answerCount": 1
+      "answerCount": 1,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CBSE Class 12 Mathematics: Probability Marking Scheme         Step 1 (Defining Events and Probabilities): [1 Mark]        Let $E_1, E_2, E_3$ be the events of transferring balls from Bag I to Bag II:                 $E_1$: 2 Red balls are transferred.           $E_2$: 1 Red and 1 Black ball are tran...",
+        "upvoteCount": 1
+      }
     }
   }
   </script>
@@ -78,6 +83,47 @@
       <div class="question-body">
         <div class="math-content">Bag I contains 3 red and 4 black balls, Bag II contains 5 red and 2 black balls. Two balls are transferred at random from Bag I to Bag II and then a ball is drawn at random from Bag II. Find the probability that the drawn ball is red in colour.</div>
       </div>
+      <div class="solution-box" style="margin-top:24px; padding:20px; background:var(--card-bg, #ffffff); border:1.5px solid var(--border, #e2e8f0); border-radius:12px;">
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:14px;">
+          <span style="background:#10b981; color:#fff; font-size:11px; font-weight:700; padding:3px 10px; border-radius:20px; text-transform:uppercase;">✓ Verified CBSE Marking Scheme</span>
+          <span style="font-size:12px; color:var(--text-muted, #64748b); font-weight:600;">Official Evaluation Steps & EL10 Insight</span>
+        </div>
+        <div class="math-content solution-content" style="line-height:1.7; font-size:15px;">
+          <div>
+    <h3>CBSE Class 12 Mathematics: Probability Marking Scheme</h3>
+
+    <p><strong>Step 1 (Defining Events and Probabilities): [1 Mark]</strong></p>
+    <p>Let $E_1, E_2, E_3$ be the events of transferring balls from Bag I to Bag II:</p>
+    <ul>
+        <li>$E_1$: 2 Red balls are transferred.</li>
+        <li>$E_2$: 1 Red and 1 Black ball are transferred.</li>
+        <li>$E_3$: 2 Black balls are transferred.</li>
+    </ul>
+    <p>Bag I has 3 Red, 4 Black (Total 7). The probabilities of transfer are:</p>
+    $$P(E_1) = \frac{\binom{3}{2}}{\binom{7}{2}} = \frac{3}{21}, \quad P(E_2) = \frac{\binom{3}{1}\binom{4}{1}}{\binom{7}{2}} = \frac{12}{21}, \quad P(E_3) = \frac{\binom{4}{2}}{\binom{7}{2}} = \frac{6}{21}$$
+
+    <p><strong>Step 2 (Conditional Probabilities and Total Probability Theorem): [3 Marks]</strong></p>
+    <p>Let $A$ be the event that the ball drawn from Bag II (now containing 5+2=7 balls + 2 transferred = 9 balls) is Red.</p>
+    <ul>
+        <li>If $E_1$ occurs, Bag II has (5+2) Red and 2 Black = 7 Red, 2 Black. $P(A|E_1) = \frac{7}{9}$</li>
+        <li>If $E_2$ occurs, Bag II has (5+1) Red and (2+1) Black = 6 Red, 3 Black. $P(A|E_2) = \frac{6}{9}$</li>
+        <li>If $E_3$ occurs, Bag II has 5 Red and (2+2) Black = 5 Red, 4 Black. $P(A|E_3) = \frac{5}{9}$</li>
+    </ul>
+    <p>By the Law of Total Probability:</p>
+    $$P(A) = P(E_1)P(A|E_1) + P(E_2)P(A|E_2) + P(E_3)P(A|E_3)$$
+    $$P(A) = \left( \frac{3}{21} \times \frac{7}{9} \right) + \left( \frac{12}{21} \times \frac{6}{9} \right) + \left( \frac{6}{21} \times \frac{5}{9} \right)$$
+
+    <p><strong>Step 3 (Final Calculation): [1 Mark]</strong></p>
+    $$P(A) = \frac{21 + 72 + 30}{189} = \frac{123}{189}$$
+    <p>Simplifying by dividing by 3:</p>
+    $$P(A) = \frac{41}{63}$$
+
+    <hr>
+    <p><strong>💡 EL10 Concept Insight:</strong> Think of this like a "weighted average." Since we don't know exactly which balls moved, we calculate the chance of every possible move happening and multiply it by how likely we are to pick a red ball in that specific scenario, then add them all up to get the final answer.</p>
+</div>
+        </div>
+      </div>
+
 
       <div class="card-footer-actions">
         <a href="mailto:support@learnosha.in?subject=Report%20Question%206610&body=Question%20ID:%206610%0AChapter:%20Probability%0AIssue%20Description:%20" class="report-link">

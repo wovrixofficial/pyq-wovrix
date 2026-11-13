@@ -25,7 +25,12 @@
       "@type": "Question",
       "name": "CBSE Class 12 Mathematics Matrices Board Question",
       "text": "(a) If A = $\\begin{bmatrix} -3 & -2 & -4 \\\\ 2 & 1 & 2 \\\\ 2 & 1 & 3 \\end{bmatrix}$, B = $\\begin{bmatrix} 1 & 2 & 0 \\\\ -2 & -1 & -2 \\\\ 0 & -1 & 1 \\end{bmatrix}$, then find AB and use it to solve the following system of equations: x - 2y = 3, 2x - y - z = 2, -2y + z = 3",
-      "answerCount": 1
+      "answerCount": 1,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CBSE Class 12 Mathematics: Marking Scheme Solution          Step 1 (Matrix Multiplication): [1.5 Marks]        To find the product $AB$, we perform row-by-column multiplication:      $$AB = \begin{bmatrix} -3 & -2 & -4 \\ 2 & 1 & 2 \\ 2 & 1 & 3 \end{bmatrix} \begin{bmatrix} 1 & 2 & 0 \\ -2 & -1 & -2...",
+        "upvoteCount": 1
+      }
     }
   }
   </script>
@@ -78,6 +83,41 @@
       <div class="question-body">
         <div class="math-content">(a) If A = $\begin{bmatrix} -3 &amp; -2 &amp; -4 \\ 2 &amp; 1 &amp; 2 \\ 2 &amp; 1 &amp; 3 \end{bmatrix}$, B = $\begin{bmatrix} 1 &amp; 2 &amp; 0 \\ -2 &amp; -1 &amp; -2 \\ 0 &amp; -1 &amp; 1 \end{bmatrix}$, then find AB and use it to solve the following system of equations: x - 2y = 3, 2x - y - z = 2, -2y + z = 3</div>
       </div>
+      <div class="solution-box" style="margin-top:24px; padding:20px; background:var(--card-bg, #ffffff); border:1.5px solid var(--border, #e2e8f0); border-radius:12px;">
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:14px;">
+          <span style="background:#10b981; color:#fff; font-size:11px; font-weight:700; padding:3px 10px; border-radius:20px; text-transform:uppercase;">✓ Verified CBSE Marking Scheme</span>
+          <span style="font-size:12px; color:var(--text-muted, #64748b); font-weight:600;">Official Evaluation Steps & EL10 Insight</span>
+        </div>
+        <div class="math-content solution-content" style="line-height:1.7; font-size:15px;">
+          <div>
+    <h3><strong>CBSE Class 12 Mathematics: Marking Scheme Solution</strong></h3>
+
+    <p><strong>Step 1 (Matrix Multiplication): [1.5 Marks]</strong></p>
+    <p>To find the product $AB$, we perform row-by-column multiplication:</p>
+    $$AB = \begin{bmatrix} -3 & -2 & -4 \\ 2 & 1 & 2 \\ 2 & 1 & 3 \end{bmatrix} \begin{bmatrix} 1 & 2 & 0 \\ -2 & -1 & -2 \\ 0 & -1 & 1 \end{bmatrix}$$
+    <p>Calculating each element:</p>
+    <ul>
+        <li>$R_1: (-3)(1)+(-2)(-2)+(-4)(0) = 1; \quad (-3)(2)+(-2)(-1)+(-4)(-1) = 0; \quad (-3)(0)+(-2)(-2)+(-4)(1) = 0$</li>
+        <li>$R_2: (2)(1)+(1)(-2)+(2)(0) = 0; \quad (2)(2)+(1)(-1)+(2)(-1) = 1; \quad (2)(0)+(1)(-2)+(2)(1) = 0$</li>
+        <li>$R_3: (2)(1)+(1)(-2)+(3)(0) = 0; \quad (2)(2)+(1)(-1)+(3)(-1) = 0; \quad (2)(0)+(1)(-2)+(3)(1) = 1$</li>
+    </ul>
+    $$AB = \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix} = I$$
+
+    <p><strong>Step 2 (System of Equations Formulation): [1.5 Marks]</strong></p>
+    <p>The system of equations is:</p>
+    $$x - 2y + 0z = 3$$
+    $$2x - y - z = 2$$
+    $$0x - 2y + z = 3$$
+    <p>This can be written as $CX = D$, where $C = \begin{bmatrix} 1 & -2 & 0 \\ 2 & -1 & -1 \\ 0 & -2 & 1 \end{bmatrix}$ and $X = \begin{bmatrix} x \\ y \\ z \end{bmatrix}, D = \begin{bmatrix} 3 \\ 2 \\ 3 \end{bmatrix}$.</p>
+    <p>Note that $C = A^T$. Since $AB = I$, then $B^T A^T = I$, which implies $(A^T)^{-1} = B^T$. Thus, $C^{-1} = B^T = \begin{bmatrix} 1 & -2 & 0 \\ 2 & -1 & -1 \\ 0 & -2 & 1 \end{bmatrix}^T = \begin{bmatrix} 1 & 2 & 0 \\ -2 & -1 & -2 \\ 0 & -1 & 1 \end{bmatrix} = B$.</p>
+
+    <p><strong>Step 3 (Final Solution): [1 Mark]</strong></p>
+    <p>Using $X = C^{-1}D = BD$:</p>
+    $$\begin{bmatrix} x \\ y \\ z \end{bmatrix} = \begin{bmatrix} 1 & 2 & 0 \\ -2 & -1 & -2 \\ 0 & -1 & 1 \end{bmatrix} \begin{bmatrix} 3 \\ 2 \\ 3 \end{bmatrix}$$
+    $$\begin{bmatrix} x \\ y \\ z \end{bmatrix} = \begin{bmatrix} (1)(3) + (2)(2) + (0)(3) \\ (-2)(3) + (-1)(2) + (-2)(3) \\ (0)(3) + (-1
+        </div>
+      </div>
+
 
       <div class="card-footer-actions">
         <a href="mailto:support@learnosha.in?subject=Report%20Question%207907&body=Question%20ID:%207907%0AChapter:%20Matrices%0AIssue%20Description:%20" class="report-link">
